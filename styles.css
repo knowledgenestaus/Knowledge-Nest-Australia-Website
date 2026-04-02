@@ -365,7 +365,7 @@ a:focus-visible {
 
 /* ===== PAGE HERO (sub-pages) ===== */
 .page-hero {
-  background: var(--navy); padding: 5rem 0 5.5rem;
+  background: var(--navy); padding: 4.5rem 0 5.5rem;
   position: relative; overflow: hidden;
   margin-bottom: -4px;
 }
@@ -376,20 +376,33 @@ a:focus-visible {
 .page-hero .container { position: relative; z-index: 3; }
 .page-hero .hero-tagline { color: var(--gold-light); font-size: clamp(0.85rem, 1.4vw, 1rem); }
 .page-hero h1 { color: white; margin-bottom: 0.75rem; }
-.page-hero > .container > p,
-.page-hero .container > p:not(.hero-tagline) {
+.page-hero-text p:not(.hero-tagline) {
   color: rgba(255,255,255,0.7); font-size: 1.1rem; max-width: 560px;
 }
-/* Thematic SVG illustrations for sub-page heroes */
-.page-hero-illustration {
-  position: absolute; right: 5%; top: 50%; transform: translateY(-50%);
-  width: 200px; height: 200px; pointer-events: none;
+
+/* Page hero grid — text + sticker side by side */
+.page-hero-grid {
+  display: grid; grid-template-columns: 1fr auto;
+  gap: 2rem; align-items: center;
 }
-.page-hero-illustration svg { width: 100%; height: 100%; }
-.page-hero-illustration img {
+.page-hero-text { position: relative; z-index: 2; }
+.page-hero-sticker {
+  display: flex; align-items: center; justify-content: center;
+  width: 160px; height: 160px;
+  position: relative;
+  animation: fadeIn 1s ease 0.3s both;
+}
+.page-hero-sticker img {
   width: 100%; height: 100%; object-fit: contain;
-  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15));
+  filter: drop-shadow(0 6px 20px rgba(0,0,0,0.25));
+  transition: transform 0.4s ease;
 }
+.page-hero-sticker:hover img {
+  transform: rotate(3deg) scale(1.05);
+}
+
+/* Old illustration class — no longer used but keep for safety */
+.page-hero-illustration { display: none; }
 
 /* ===== SECTIONS ===== */
 .section { padding: var(--section-pad) 0; position: relative; }
@@ -875,6 +888,9 @@ a:focus-visible {
   .hero-logo-blob { width: 280px; height: 225px; }
   .hero-logo-blob img { width: 100%; height: 100%; }
   .page-hero-illustration { display: none; }
+  .page-hero-grid { grid-template-columns: 1fr; text-align: center; }
+  .page-hero-text p:not(.hero-tagline) { margin: 0 auto; }
+  .page-hero-sticker { width: 100px; height: 100px; margin: 0 auto; }
   .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .profile-photo { max-width: 200px; margin: 0 auto; }
   .values-grid { grid-template-columns: 1fr; gap: 2rem; }
@@ -923,8 +939,9 @@ a:focus-visible {
   .hero-buttons { flex-direction: column; align-items: center; gap: 0.75rem; }
   .hero-buttons .btn { width: 100%; max-width: 320px; text-align: center; }
 
-  .page-hero { padding: 3rem 0 3.5rem; }
+  .page-hero { padding: 2.5rem 0 3.5rem; }
   .page-hero h1 { font-size: clamp(1.8rem, 5.5vw, 2.2rem); }
+  .page-hero-sticker { width: 80px; height: 80px; }
 
   .btn { padding: 1rem 2rem; font-size: 0.95rem; min-height: 48px; }
   .contact-row { flex-direction: column; align-items: center; gap: 1.5rem; }
