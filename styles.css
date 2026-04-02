@@ -382,7 +382,7 @@ a:focus-visible {
 
 /* Page hero grid — text + sticker side by side */
 .page-hero-grid {
-  display: grid; grid-template-columns: 1fr auto;
+  display: grid; grid-template-columns: auto 1fr;
   gap: 2rem; align-items: center;
 }
 .page-hero-text { position: relative; z-index: 2; }
