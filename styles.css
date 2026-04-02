@@ -254,16 +254,23 @@ h3 { font-size: clamp(1.3rem, 2.2vw, 1.5rem); font-weight: 600; }
   position: relative;
 }
 
-/* ===== WAVE DROP-SHADOWS — waves cast shadow onto section below ===== */
-/* Drop shadow only on waves going INTO navy sections (paper casting shadow onto navy) */
-.section-paper .wave-bottom {
-  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.08));
-  margin-bottom: -1px;
+/* ===== WAVE SEAM FIX ===== */
+/* Navy sections pull up to overlap the wave from the section above */
+.navy-ribbon,
+.connect-banner,
+.footer {
+  margin-top: -4px;
+  padding-top: calc(var(--section-pad, 3rem) + 4px);
 }
-/* Remove drop-shadow from waves directly before the footer to prevent visible seam */
-.section-paper:last-of-type .wave-bottom,
-.footer-wave-fix {
-  filter: none;
+/* White/paper sections that follow a navy wave also pull up */
+.navy-ribbon + .section,
+.navy-ribbon + .section-paper,
+.connect-banner + .section,
+.connect-banner + .section-paper,
+.connect-banner + .footer,
+.page-hero + .section {
+  margin-top: -4px;
+  padding-top: calc(var(--section-pad, 3rem) + 4px);
 }
 
 /* ===== BUTTONS - organic, rounded, generous padding ===== */
@@ -306,7 +313,7 @@ a:focus-visible {
 .hero {
   background: var(--sky-hero); position: relative;
   padding: 5rem 0 7rem;
-  margin-bottom: 0;
+  margin-bottom: -4px;
 }
 
 .hero-grid {
@@ -360,7 +367,7 @@ a:focus-visible {
 .page-hero {
   background: var(--navy); padding: 5rem 0 5.5rem;
   position: relative; overflow: hidden;
-  margin-bottom: -1px;
+  margin-bottom: -4px;
 }
 .page-hero::before {
   content: ''; position: absolute; inset: 0; pointer-events: none;
@@ -383,6 +390,11 @@ a:focus-visible {
 
 /* ===== SECTIONS ===== */
 .section { padding: var(--section-pad) 0; position: relative; }
+/* Ensure all adjacent sections overlap to prevent wave seams */
+.section + .section,
+.section-paper + .section-paper {
+  margin-top: -4px;
+}
 
 .section-linen { background: #ffffff; position: relative; }
 .section-sandstone-pale { background: var(--sandstone-pale); position: relative; }
@@ -456,7 +468,6 @@ a:focus-visible {
 .navy-ribbon {
   background: var(--navy); padding: 4rem 0 6rem;
   text-align: center; position: relative; overflow: hidden;
-  margin-top: -3px;
 }
 .navy-ribbon p {
   font-family: var(--font-display); font-style: italic; font-weight: 400;
@@ -800,7 +811,6 @@ a:focus-visible {
 .footer {
   background: var(--navy); color: rgba(255,255,255,0.7);
   padding: 3rem 0 2rem; position: relative;
-  margin-top: -3px;
 }
 .footer-compact {
   display: flex; align-items: flex-start; gap: 2.5rem;
