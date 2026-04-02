@@ -383,10 +383,13 @@ a:focus-visible {
 /* Thematic SVG illustrations for sub-page heroes */
 .page-hero-illustration {
   position: absolute; right: 5%; top: 50%; transform: translateY(-50%);
-  width: 220px; height: 220px; pointer-events: none;
-  opacity: 0.85;
+  width: 200px; height: 200px; pointer-events: none;
 }
 .page-hero-illustration svg { width: 100%; height: 100%; }
+.page-hero-illustration img {
+  width: 100%; height: 100%; object-fit: contain;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15));
+}
 
 /* ===== SECTIONS ===== */
 .section { padding: var(--section-pad) 0; position: relative; }
