@@ -299,7 +299,7 @@ a:focus-visible {
 /* ===== HERO ===== */
 .hero {
   background: var(--sky-hero); position: relative;
-  padding: 5rem 0 5rem;
+  padding: 5rem 0 7rem;
   margin-bottom: 0;
 }
 
@@ -321,7 +321,7 @@ a:focus-visible {
 }
 .hero-text h1 em { font-style: italic; color: #b5622a; }
 .hero-text > p {
-  color: var(--text-body); font-size: 1.1rem;
+  color: var(--text-body); font-size: 1.15rem;
   margin-bottom: 2.5rem; max-width: 500px;
 }
 .hero-buttons { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
@@ -333,7 +333,7 @@ a:focus-visible {
   position: relative;
 }
 .hero-logo-blob {
-  width: 420px; height: 340px; position: relative;
+  width: 440px; height: 360px; position: relative;
   display: flex; align-items: center; justify-content: center;
 }
 .hero-logo-blob img {
