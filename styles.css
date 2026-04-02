@@ -95,7 +95,7 @@ h3 { font-size: clamp(1.3rem, 2.2vw, 1.5rem); font-weight: 600; }
   line-height: 0; z-index: 2;
 }
 .wave-bottom {
-  position: absolute; bottom: -2px; left: 0; right: 0; overflow: hidden;
+  position: absolute; bottom: -3px; left: 0; right: 0; overflow: hidden;
   line-height: 0; z-index: 2;
 }
 .wave-top svg, .wave-bottom svg {
@@ -258,6 +258,7 @@ h3 { font-size: clamp(1.3rem, 2.2vw, 1.5rem); font-weight: 600; }
 /* Drop shadow only on waves going INTO navy sections (paper casting shadow onto navy) */
 .section-paper .wave-bottom {
   filter: drop-shadow(0 4px 6px rgba(0,0,0,0.08));
+  margin-bottom: -1px;
 }
 
 /* ===== BUTTONS - organic, rounded, generous padding ===== */
@@ -450,6 +451,7 @@ a:focus-visible {
 .navy-ribbon {
   background: var(--navy); padding: 4rem 0 6rem;
   text-align: center; position: relative; overflow: hidden;
+  margin-top: -1px;
 }
 .navy-ribbon p {
   font-family: var(--font-display); font-style: italic; font-weight: 400;
