@@ -10,7 +10,7 @@
   <meta property="og:image" content="assets/logo-circle.png">
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://knowledgenest.com.au/">
-  <link rel="stylesheet" href="styles.css?v=41">
+  <link rel="stylesheet" href="styles.css?v=42">
   <link rel="icon" href="assets/logo.png" type="image/png">
 <script type="application/ld+json">
 {
@@ -407,29 +407,42 @@
     const track = document.getElementById('carouselTrack');
     const nav = document.getElementById('carouselNav');
     const cards = track.querySelectorAll('.carousel-card');
-    const cardWidth = 340 + 24;
-    const visible = Math.max(1, Math.floor(track.parentElement.offsetWidth / cardWidth));
-    const totalDots = Math.max(1, cards.length - visible + 1);
-    let current = 0;
+    let current = 0, totalDots, cardStep;
 
-    for (let i = 0; i < totalDots; i++) {
-      const dot = document.createElement('button');
-      dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
-      dot.addEventListener('click', () => goTo(i));
-      nav.appendChild(dot);
+    function measure() {
+      const card = cards[0];
+      const style = getComputedStyle(track);
+      const gap = parseFloat(style.gap) || 24;
+      cardStep = card.offsetWidth + gap;
+      const visible = Math.max(1, Math.floor(track.parentElement.offsetWidth / cardStep));
+      totalDots = Math.max(1, cards.length - visible + 1);
+      nav.innerHTML = '';
+      for (let i = 0; i < totalDots; i++) {
+        const dot = document.createElement('button');
+        dot.className = 'carousel-dot' + (i === current ? ' active' : '');
+        dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+        dot.addEventListener('click', () => goTo(i));
+        nav.appendChild(dot);
+      }
+      if (current >= totalDots) current = totalDots - 1;
+      goTo(current);
     }
 
     function goTo(index) {
       current = Math.max(0, Math.min(index, totalDots - 1));
-      track.style.transform = 'translateX(-' + (current * cardWidth) + 'px)';
+      track.style.transform = 'translateX(-' + (current * cardStep) + 'px)';
       nav.querySelectorAll('.carousel-dot').forEach((d, i) => d.classList.toggle('active', i === current));
     }
+
+    measure();
+    let resizeTimer;
+    window.addEventListener('resize', () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(measure, 200); });
 
     let startX, isDragging = false;
     track.addEventListener('mousedown', e => { isDragging = true; startX = e.pageX; });
     track.addEventListener('mousemove', e => { if (isDragging) e.preventDefault(); });
     track.addEventListener('mouseup', e => { if (isDragging) { isDragging = false; if (e.pageX - startX < -50) goTo(current + 1); else if (e.pageX - startX > 50) goTo(current - 1); } });
-    track.addEventListener('touchstart', e => { startX = e.touches[0].pageX; });
+    track.addEventListener('touchstart', e => { startX = e.touches[0].pageX; }, {passive: true});
     track.addEventListener('touchend', e => { const diff = e.changedTouches[0].pageX - startX; if (diff < -50) goTo(current + 1); else if (diff > 50) goTo(current - 1); });
   })();
 </script>
