@@ -1,17 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Get in Touch | Knowledge Nest</title>
-  <meta name="description" content="Enquire about Knowledge Nest's educational consulting services. Tell us about your school and we'll discuss how we can help.">
-  <meta property="og:title" content="Get in Touch | Knowledge Nest">
-  <meta property="og:description" content="Enquire about Knowledge Nest's educational consulting services. Tell us about your school and we'll discuss how we can help.">
-  <meta property="og:image" content="assets/logo-circle.png">
-  <meta property="og:type" content="website">
+  <title>Get in Touch | Knowledge Nest Educational Consulting</title>
+  <meta name="description" content="Enquire about coaching, professional learning or a school partnership with Knowledge Nest, or book a free 20-minute chat with Jo Griffin.">
+  <meta name="author" content="Jo Griffin">
+  <meta name="theme-color" content="#112e5b">
   <link rel="canonical" href="https://knowledgenest.com.au/enquiry.html">
-  <link rel="stylesheet" href="styles.css?v=42">
-  <link rel="icon" href="assets/logo.png" type="image/png">
+  <meta property="og:site_name" content="Knowledge Nest">
+  <meta property="og:locale" content="en_AU">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://knowledgenest.com.au/enquiry.html">
+  <meta property="og:title" content="Get in Touch | Knowledge Nest Educational Consulting">
+  <meta property="og:description" content="Enquire about coaching, professional learning or a school partnership with Knowledge Nest, or book a free 20-minute chat with Jo Griffin.">
+  <meta property="og:image" content="https://knowledgenest.com.au/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Two children silhouetted at sunset, pointing at a bird taking flight">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="assets/favicon-192.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap">
+  <link rel="stylesheet" href="styles.css?v=50">
+  <script>document.documentElement.classList.add('js');</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ContactPage",
+      "url": "https://knowledgenest.com.au/enquiry.html",
+      "about": {
+        "@id": "https://knowledgenest.com.au/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://knowledgenest.com.au/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Get in Touch",
+          "item": "https://knowledgenest.com.au/enquiry.html"
+        }
+      ]
+    }
+  ]
+}
+  </script>
   <style>
   .enquiry-form {
     max-width: 680px;
@@ -37,7 +83,7 @@
   .enquiry-form textarea {
     width: 100%;
     padding: 0.85rem 1rem;
-    border: 1px solid var(--border);
+    border: 1px solid #8c8073;
     border-radius: 8px;
     font-family: var(--font-body);
     font-size: 1rem;
@@ -49,8 +95,16 @@
   .enquiry-form select:focus,
   .enquiry-form textarea:focus {
     border-color: var(--navy);
-    outline: none;
+    outline: 3px solid var(--gold);
+    outline-offset: 2px;
   }
+
+  .enquiry-form input[type="checkbox"]:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+
+  .checkbox-fieldset { border: none; padding: 0; margin: 0; }
+  .checkbox-fieldset legend { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.6rem; color: var(--text-dark); padding: 0; }
+  .req { color: #a0532f; font-weight: 700; }
+  .form-note { font-size: 0.95rem; color: var(--text-light); margin-bottom: 1.5rem; }
 
   .enquiry-form textarea {
     min-height: 120px;
@@ -100,35 +154,37 @@
 <!-- Top Bar -->
 <div class="top-bar">
   <div class="container-wide top-bar-inner">
-    <a href="mailto:jo@knowledgenest.com.au"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="4" width="16" height="12" rx="2"/><path d="M2 4l8 6 8-6"/></svg> jo@knowledgenest.com.au</a>
-    <a href="tel:+61437718906"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 3l3 0c.5 0 1 .3 1 .8l1 3c0 .4-.1.8-.4 1L6 9.5c1 2 3 4 5 5l1.5-1.5c.3-.3.7-.5 1.1-.4l3 1c.5.2.8.5.8 1v3c0 .5-.5 1-1 1C8 18.5 1.5 12 2 4c0-.5.5-1 1-1z"/></svg> 0437 718 906</a>
-    <a href="https://www.linkedin.com/in/jo-griffin-australia" target="_blank" rel="noopener"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="2" width="16" height="16" rx="3"/><path d="M6 8v6M6 6v.01M10 14v-4a2 2 0 014 0v4M10 8v6"/></svg> LinkedIn</a>
+    <a href="mailto:jo@knowledgenest.com.au"><svg aria-hidden="true" focusable="false" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="4" width="16" height="12" rx="2"/><path d="M2 4l8 6 8-6"/></svg> jo@knowledgenest.com.au</a>
+    <a href="https://www.linkedin.com/in/jo-griffin-australia" target="_blank" rel="noopener"><svg aria-hidden="true" focusable="false" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="2" width="16" height="16" rx="3"/><path d="M6 8v6M6 6v.01M10 14v-4a2 2 0 014 0v4M10 8v6"/></svg> LinkedIn<span class="sr-only"> (opens in a new tab)</span></a>
   </div>
 </div>
 
 <!-- Navigation -->
-<nav class="nav" id="nav" aria-label="Main navigation">
+<nav class="nav" id="nav" aria-label="Main">
   <div class="container-wide nav-inner">
     <a href="index.html" class="nav-brand">
-      <img src="assets/logo.png" alt="Knowledge Nest">
+      <img src="assets/logo-nav.webp" alt="" width="90" height="90">
       <div class="nav-brand-text">Knowledge Nest<span>Educational Consulting</span></div>
     </a>
-    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="services.html">Services</a></li>
+      <li><a href="secrets-of-how-we-learn.html">How We Learn</a></li>
       <li><a href="resources.html">Resources</a></li>
-      <li><a href="enquiry.html" class="nav-cta-link active">Get in Touch</a></li>
+      <li><a href="enquiry.html" class="nav-cta-link active" aria-current="page">Get in Touch</a></li>
     </ul>
   </div>
 </nav>
 
+<main id="main-content" tabindex="-1">
+
 <!-- Page Hero -->
-<section class="page-hero" id="main-content">
+<section class="page-hero">
   <div class="container page-hero-grid">
     <div class="page-hero-sticker">
-      <img src="assets/sticker-bird.png" alt="Bird illustration">
+      <img src="assets/sticker-bird.webp" alt="" width="480" height="320">
     </div>
     <div class="page-hero-text">
       <p class="hero-tagline">Enquire</p>
@@ -137,7 +193,7 @@
     </div>
   </div>
   <div class="wave-bottom">
-    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg aria-hidden="true" focusable="false" viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z" fill="#ffffff"/>
       <path d="M0,30 C240,65 480,-5 720,30 C960,65 1200,-5 1440,30" fill="none" stroke="rgba(232,213,183,0.3)" stroke-width="2" stroke-dasharray="8,10" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
     </svg>
@@ -148,7 +204,7 @@
 <section class="section section-paper textured">
   <div class="container">
     <div class="enquiry-form reveal" id="enquiry-form">
-      <div class="form-success" id="formSuccess" style="display:none; text-align:center; padding:3rem 2rem;">
+      <div class="form-success" id="formSuccess" tabindex="-1" style="display:none; text-align:center; padding:3rem 2rem;">
         <h2 style="color:var(--navy); margin-bottom:1rem;">Thank you!</h2>
         <p style="font-size:1.1rem; color:var(--text-body); margin-bottom:1.5rem;">Your enquiry has been sent. Jo will be in touch within 1-2 business days.</p>
         <a href="index.html" class="btn btn-primary">Back to Home</a>
@@ -158,34 +214,37 @@
            2. Create a new form, copy the form ID (e.g. "xwkgjqab")
            3. Replace YOUR_FORM_ID with that ID -->
       <form action="https://formspree.io/f/xdaplrjq" method="POST">
+        <p class="form-note">Fields marked <span class="req" aria-hidden="true">*</span><span class="sr-only">with an asterisk</span> are required.</p>
         <input type="hidden" name="_subject" value="New enquiry from Knowledge Nest website">
         <input type="hidden" name="_next" value="https://knowledgenest.com.au/enquiry.html?sent=true">
-        <input type="text" name="_gotcha" style="display:none">
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
 
-        <label for="name">Your Name <span style="color:var(--terracotta);">*</span></label>
-        <input type="text" id="name" name="name" required placeholder="Full name">
+        <label for="name">Your Name <span class="req" aria-hidden="true">*</span></label>
+        <input type="text" id="name" name="name" required autocomplete="name" placeholder="Full name">
 
-        <label for="email">Email Address <span style="color:var(--terracotta);">*</span></label>
-        <input type="email" id="email" name="email" required placeholder="you@school.edu.au">
+        <label for="email">Email Address <span class="req" aria-hidden="true">*</span></label>
+        <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@school.edu.au">
 
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" placeholder="Optional">
+        <label for="phone">Phone Number (optional)</label>
+        <input type="tel" id="phone" name="phone" autocomplete="tel">
 
-        <label for="school">School / Organisation Name <span style="color:var(--terracotta);">*</span></label>
-        <input type="text" id="school" name="school" required placeholder="e.g. Sunshine Primary School">
+        <label for="school">School / Organisation Name <span class="req" aria-hidden="true">*</span></label>
+        <input type="text" id="school" name="school" required autocomplete="organization" placeholder="e.g. Sunshine Primary School">
 
         <label for="role">Your Role</label>
-        <select id="role" name="role">
+        <select id="role" name="role" autocomplete="organization-title">
           <option value="" disabled selected>Select your role</option>
           <option value="Principal">Principal</option>
           <option value="Deputy Principal">Deputy Principal</option>
           <option value="Head of Department">Head of Department</option>
           <option value="Curriculum Leader">Curriculum Leader</option>
           <option value="Teacher">Teacher</option>
+          <option value="Parent / Carer">Parent / Carer</option>
           <option value="Other">Other</option>
         </select>
 
-        <label>Services of Interest</label>
+        <fieldset class="checkbox-fieldset">
+        <legend>Services of Interest</legend>
         <div class="checkbox-group">
           <label class="checkbox-label"><input type="checkbox" name="services" value="Science of Learning"> Science of Learning</label>
           <label class="checkbox-label"><input type="checkbox" name="services" value="Science of Reading"> Science of Reading</label>
@@ -193,7 +252,9 @@
           <label class="checkbox-label"><input type="checkbox" name="services" value="MTSS"> MTSS</label>
           <label class="checkbox-label"><input type="checkbox" name="services" value="Change Management & Implementation Science"> Change Management &amp; Implementation Science</label>
           <label class="checkbox-label"><input type="checkbox" name="services" value="Instructional Playbooks"> Instructional Playbooks</label>
+          <label class="checkbox-label"><input type="checkbox" name="services" value="The Secrets of How We Learn (student curriculum)" id="interest-secrets"> The Secrets of How We Learn (student curriculum)</label>
         </div>
+        </fieldset>
 
         <label for="engagement">Preferred Engagement Type</label>
         <select id="engagement" name="engagement">
@@ -219,19 +280,21 @@
     </div>
   </div>
   <div class="wave-bottom">
-    <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg aria-hidden="true" focusable="false" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,15 1440,30 L1440,60 L0,60 Z" fill="#ffffff"/>
       <path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,15 1440,30" fill="none" stroke="rgba(180,160,140,0.35)" stroke-width="2" stroke-dasharray="8,10" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
     </svg>
   </div>
 </section>
 
+</main>
+
 <!-- Footer -->
 <footer class="footer">
   <div class="container-wide">
     <div class="footer-compact">
       <div class="footer-logo-watermark">
-        <img src="assets/logo.png" alt="">
+        <img src="assets/logo-nav.webp" alt="" width="200" height="200" loading="lazy">
       </div>
       <div class="footer-compact-main">
         <div class="footer-brand-row">
@@ -239,19 +302,20 @@
           <span class="footer-brand-sub">Educational Consulting</span>
         </div>
         <p class="footer-tagline">Bridging the gap between research and practice.</p>
-        <nav class="footer-nav">
+        <nav class="footer-nav" aria-label="Footer">
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
           <a href="services.html">Services</a>
+          <a href="secrets-of-how-we-learn.html">How We Learn</a>
           <a href="resources.html">Resources</a>
           <a href="enquiry.html">Get in Touch</a>
         </nav>
         <div class="footer-connect-row">
           <a href="mailto:jo@knowledgenest.com.au">jo@knowledgenest.com.au</a>
           <span class="footer-sep">|</span>
-          <a href="https://www.linkedin.com/in/jo-griffin-australia" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/jo-griffin-australia" target="_blank" rel="noopener">LinkedIn<span class="sr-only"> (opens in a new tab)</span></a>
           <span class="footer-sep">|</span>
-          <a href="https://knowledgenestaustralia.substack.com/" target="_blank" rel="noopener">Substack</a>
+          <a href="https://knowledgenestaustralia.substack.com/" target="_blank" rel="noopener">Substack<span class="sr-only"> (opens in a new tab)</span></a>
         </div>
         <div class="footer-cta-row">
           <a href="enquiry.html" class="btn btn-sandstone btn-sm">Get in Touch</a>
@@ -264,16 +328,30 @@
 </footer>
 
 <script>
-  document.getElementById('navToggle').addEventListener('click', function() { this.classList.toggle('active'); document.getElementById('navLinks').classList.toggle('open'); });
+  (function() {
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    const setOpen = (open) => { toggle.classList.toggle('active', open); links.classList.toggle('open', open); toggle.setAttribute('aria-expanded', String(open)); };
+    toggle.addEventListener('click', () => setOpen(!links.classList.contains('open')));
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && links.classList.contains('open')) { setOpen(false); toggle.focus(); } });
+  })();
   window.addEventListener('scroll', () => { document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 20); });
   const obs = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } }); }, { threshold: 0.1 });
   document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+  // Arriving from a "register interest" link pre-ticks that option
+  if (new URLSearchParams(window.location.search).get('interest') === 'secrets') {
+    const box = document.getElementById('interest-secrets');
+    if (box) box.checked = true;
+  }
 
   // Show success message if redirected back after form submission
   if (window.location.search.includes('sent=true')) {
     document.querySelector('form').style.display = 'none';
     document.querySelector('.prefer-chat').style.display = 'none';
-    document.getElementById('formSuccess').style.display = 'block';
+    const success = document.getElementById('formSuccess');
+    success.style.display = 'block';
+    success.focus();
   }
 </script>
 

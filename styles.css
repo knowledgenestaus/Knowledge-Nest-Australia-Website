@@ -5,7 +5,7 @@
     meets the clarity of an educational resource"
    ============================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+/* Fonts are loaded with <link> tags in each page head (faster than @import) */
 
 :root {
   /* Brand navy - exact match from logo pixel sample */
@@ -36,7 +36,7 @@
   /* Text */
   --text-dark: #2a2a2a;
   --text-body: #4a4a4a;
-  --text-light: #7a7a7a;
+  --text-light: #5c5c5c; /* darkened from #7a7a7a to pass WCAG AA contrast */
   --text-on-navy: rgba(255,255,255,0.9);
 
   /* Other */
@@ -115,11 +115,12 @@ h3 { font-size: clamp(1.3rem, 2.2vw, 1.5rem); font-weight: 600; }
   0%, 100% { transform: rotate(-1deg); }
   50% { transform: rotate(1deg); }
 }
-.reveal {
+/* Only hide for the reveal animation when JS is running, so content is never stuck invisible */
+.js .reveal {
   opacity: 0; transform: translateY(30px);
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
-.reveal.visible { opacity: 1; transform: translateY(0); }
+.js .reveal.visible { opacity: 1; transform: translateY(0); }
 
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 
@@ -625,16 +626,20 @@ a:focus-visible {
   outline: 2px dashed var(--border);
   outline-offset: -8px;
 }
+.accordion-heading { margin: 0; }
 .accordion-header {
-  display: flex; align-items: center; justify-content: space-between;
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  width: 100%; background: none; border: none; text-align: left;
   padding: 1.2rem 1.5rem; cursor: pointer; transition: background 0.2s ease;
+  font-family: var(--font-body); font-size: 1.05rem; font-weight: 600; color: var(--text-dark);
 }
+.accordion-header:focus-visible { outline: 3px solid var(--gold); outline-offset: -4px; }
 .accordion-header:hover { background: var(--sandstone-pale); }
 .accordion-header h3 { font-family: var(--font-body); font-size: 1.05rem; font-weight: 600; color: var(--text-dark); }
 .accordion-header .chevron { width: 20px; height: 20px; color: var(--text-light); transition: transform 0.3s ease; }
 .accordion-item.open .chevron { transform: rotate(180deg); }
-.accordion-body { max-height: 0; overflow: hidden; padding: 0 1.5rem; transition: max-height 0.4s ease, padding 0.3s ease; }
-.accordion-item.open .accordion-body { max-height: 300px; padding: 0 1.5rem 1.25rem; }
+.accordion-body { max-height: 0; overflow: hidden; visibility: hidden; padding: 0 1.5rem; transition: max-height 0.4s ease, padding 0.3s ease, visibility 0.4s; }
+.accordion-item.open .accordion-body { max-height: 300px; visibility: visible; padding: 0 1.5rem 1.25rem; }
 .accordion-body p { color: var(--text-light); font-size: 1rem; }
 
 /* ===== FEATURED ARTICLES ===== */
@@ -1070,7 +1075,7 @@ a:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
   html { scroll-behavior: auto; }
-  .reveal { opacity: 1; transform: none; }
+  .js .reveal { opacity: 1; transform: none; }
 }
 
 /* ===== SKIP NAV ===== */
@@ -1081,3 +1086,117 @@ a:focus-visible {
   z-index: 10000; text-decoration: none;
 }
 .skip-nav:focus { top: 0; }
+
+/* ===== ACCESSIBILITY HELPERS (2026-10 upgrade) ===== */
+button:focus-visible, summary:focus-visible, [tabindex="-1"]:focus-visible {
+  outline: 3px solid var(--gold); outline-offset: 3px;
+}
+main:focus { outline: none; }
+.card-soon { background: var(--sandstone-pale); box-shadow: none; }
+.card-soon:hover { transform: none; box-shadow: none; }
+.soon-label {
+  margin-top: 1rem; font-size: 0.88rem; font-weight: 600; color: #a0532f;
+  text-transform: uppercase; letter-spacing: 0.1em;
+}
+
+/* ===== THE SECRETS OF HOW WE LEARN ===== */
+.status-pill {
+  display: inline-block; margin-top: 1.25rem;
+  padding: 0.4rem 1.1rem; border-radius: 50px;
+  background: rgba(255,255,255,0.12); color: white;
+  font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em;
+  border: 1.5px dashed rgba(255,255,255,0.45);
+}
+.page-hero .hero-subtitle {
+  font-family: var(--font-display); font-style: italic;
+  color: var(--gold-light) !important; font-size: clamp(1.15rem, 2vw, 1.4rem) !important;
+  margin-bottom: 0.75rem;
+}
+.split {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;
+}
+.split.split-reverse { align-items: start; }
+.split.split-reverse > :first-child { order: 2; }
+.split.split-reverse .episode-figure { margin-top: 4.5rem; }
+.split-text h2 { margin-bottom: 1.25rem; }
+.split-text p { margin-bottom: 1rem; }
+.split-text p:last-child { margin-bottom: 0; }
+.episode-figure { margin: 0; }
+.episode-figure img {
+  width: 100%; height: auto; border-radius: 16px; background: white;
+  box-shadow: 0 8px 30px var(--shadow);
+  outline: 2px dashed var(--border); outline-offset: -8px;
+}
+.episode-figure figcaption {
+  margin-top: 0.85rem; font-size: 0.95rem; line-height: 1.6;
+  color: var(--text-light); text-align: center; font-style: italic;
+}
+.episode-label {
+  font-size: 0.85rem; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.1em; color: #a0532f; margin-bottom: 0.5rem;
+}
+.big-ideas { list-style: none; counter-reset: idea; margin: 1.5rem 0 0; }
+.big-ideas li {
+  counter-increment: idea; position: relative;
+  padding: 0 0 1.1rem 3.25rem; line-height: 1.65;
+}
+.big-ideas li::before {
+  content: counter(idea);
+  position: absolute; left: 0; top: 0.1rem;
+  width: 2.2rem; height: 2.2rem; border-radius: 50%;
+  background: var(--navy); color: white;
+  font-family: var(--font-display); font-weight: 600; font-size: 1rem;
+  display: flex; align-items: center; justify-content: center;
+}
+.big-ideas strong { color: var(--text-dark); }
+.card-list { list-style: none; margin-top: 1rem; text-align: left; }
+.card-list li { position: relative; padding-left: 1.4rem; margin-bottom: 0.5rem; font-size: 1.02rem; color: var(--text-body); line-height: 1.6; }
+.card-list li::before { content: ''; position: absolute; left: 0; top: 0.6em; width: 8px; height: 8px; border-radius: 50%; background: var(--eucalyptus); }
+
+.faq { max-width: 760px; margin: 0 auto; }
+.faq details {
+  background: white; border-radius: 12px; margin-bottom: 0.75rem;
+  box-shadow: 0 2px 12px var(--shadow);
+  outline: 2px dashed var(--border); outline-offset: -8px;
+}
+.faq summary {
+  cursor: pointer; list-style: none; padding: 1.2rem 3.5rem 1.2rem 1.5rem; position: relative;
+  font-weight: 600; font-size: 1.08rem; color: var(--text-dark); border-radius: 12px;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+  content: '+'; position: absolute; right: 1.5rem; top: 50%; transform: translateY(-50%);
+  font-size: 1.6rem; font-weight: 400; color: var(--navy); line-height: 1;
+}
+.faq details[open] summary::after { content: '\2212'; }
+.faq summary:hover { background: var(--sandstone-pale); }
+.faq summary:focus-visible { outline-offset: -4px; }
+.faq details > div { padding: 0 1.5rem 1.25rem; }
+.faq details p { color: var(--text-body); font-size: 1.05rem; }
+
+.cta-panel {
+  max-width: 760px; margin: 0 auto; text-align: center;
+  background: var(--sandstone-pale); border-radius: 16px; padding: 3rem 2rem;
+  outline: 2.5px dashed var(--sandstone); outline-offset: -12px;
+}
+.cta-panel h2 { margin-bottom: 0.75rem; }
+.cta-panel p { margin-bottom: 1.75rem; }
+.cta-buttons { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+
+/* Home page feature band for the curriculum */
+.home-feature .split { gap: 3.5rem; }
+.home-feature .episode-label { margin-bottom: 0.75rem; }
+.home-feature h2 { margin-bottom: 0.5rem; }
+.home-feature .home-feature-sub {
+  font-family: var(--font-display); font-style: italic; color: var(--navy);
+  font-size: 1.2rem; margin-bottom: 1.25rem;
+}
+.home-feature .btn { margin-top: 1.5rem; }
+
+.resource-card h4 { font-size: 1.15rem; margin-bottom: 0.75rem; }
+
+@media (max-width: 900px) {
+  .split { grid-template-columns: 1fr; gap: 2rem; }
+  .split.split-reverse > :first-child { order: 0; }
+  .split.split-reverse .episode-figure { margin-top: 0; }
+}
