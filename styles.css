@@ -1200,3 +1200,223 @@ main:focus { outline: none; }
   .split.split-reverse > :first-child { order: 0; }
   .split.split-reverse .episode-figure { margin-top: 0; }
 }
+
+/* ===== VISUAL POLISH (2026-10-23 review) ===== */
+/* Nav: every link is an outlined pill button; hover lights up the outline,
+   the current page is filled; "Get in Touch" stays the solid primary button */
+.nav-inner { padding: 0.9rem 0; gap: 1.5rem; }
+.nav-brand { gap: 0.9rem; flex-shrink: 0; }
+.nav-brand img { height: 64px; }
+.nav-brand-text { font-size: 2rem; line-height: 1.15; white-space: nowrap; }
+.nav-brand-text span { font-size: 0.72rem; letter-spacing: 0.2em; margin-top: 4px; }
+.nav-links { gap: 0.5rem; }
+.nav-links a {
+  display: inline-flex; align-items: center; min-height: 44px;
+  padding: 0.45rem 1.1rem; border-radius: 50px;
+  border: 1.5px solid rgba(255,255,255,0.3);
+  font-size: 0.98rem; font-weight: 500; letter-spacing: 0.03em; line-height: 1.2;
+  color: rgba(255,255,255,0.92); white-space: nowrap;
+  transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+.nav-links a::after { display: none; }
+.nav-links a:hover {
+  color: white; border-color: var(--gold-light);
+  background: rgba(255,255,255,0.06);
+  box-shadow: 0 0 0 3px rgba(232,212,138,0.18);
+}
+.nav-links a.active {
+  color: var(--navy); background: white; border-color: white; font-weight: 600;
+}
+.nav-links a.active:hover { color: var(--navy); background: white; border-color: var(--gold-light); }
+.nav-links a:focus-visible { outline: 3px solid var(--gold-light); outline-offset: 3px; }
+.nav-links li:last-child { margin-left: 0.5rem; }
+.nav-links .nav-cta-link,
+.nav-links .nav-cta-link.active {
+  display: inline-flex; align-items: center;
+  padding: 0.45rem 1.4rem; font-size: 0.98rem; font-weight: 600;
+  background: var(--sandstone); color: var(--navy); border-color: var(--sandstone);
+  outline: none;
+}
+.nav-links .nav-cta-link:hover {
+  background: var(--gold-light); border-color: var(--gold-light); color: var(--navy);
+  box-shadow: 0 0 0 3px rgba(232,212,138,0.3); transform: none;
+}
+.nav-links .nav-cta-link.active { box-shadow: 0 0 0 3px rgba(255,255,255,0.35); }
+
+/* Below this width the six buttons can't fit on one line, so use the menu button */
+@media (max-width: 1180px) {
+  .nav-brand img { height: 52px; }
+  .nav-brand-text { font-size: 1.55rem; }
+  .nav-brand-text span { font-size: 0.66rem; letter-spacing: 0.16em; }
+  .nav-inner { padding: 0.7rem 0; }
+  .nav-links {
+    display: none; position: absolute; top: 100%; left: 0; right: 0;
+    background: var(--navy); flex-direction: column; align-items: stretch;
+    padding: 0.75rem 5vw 1.5rem; gap: 0.6rem;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+    max-height: calc(100vh - 80px); overflow-y: auto;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links li { width: 100%; }
+  .nav-links li:last-child { margin-left: 0; }
+  .nav-links a,
+  .nav-links .nav-cta-link,
+  .nav-links .nav-cta-link.active {
+    display: flex; justify-content: center; width: 100%;
+    min-height: 50px; padding: 0.7rem 1rem; font-size: 1.05rem;
+  }
+  .nav-toggle { display: block; padding: 0.75rem; min-width: 48px; min-height: 48px; margin-right: -0.75rem; }
+  .nav-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(4px, 6px); }
+  .nav-toggle.active span:nth-child(2) { opacity: 0; }
+  .nav-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(4px, -6px); }
+}
+@media (max-width: 420px) {
+  .nav-brand img { height: 44px; }
+  .nav-brand { gap: 0.65rem; }
+  .nav-brand-text { font-size: 1.3rem; }
+  .nav-brand-text span { font-size: 0.6rem; letter-spacing: 0.12em; }
+}
+
+/* Home hero: buttons line up with the left-aligned heading on desktop */
+@media (min-width: 901px) {
+  .hero-buttons { justify-content: flex-start; }
+}
+
+/* Card photos sit above the dashed stitch line instead of being striped by it */
+.resource-card > img, .featured-card-img { position: relative; z-index: 1; border-radius: 16px 16px 0 0; }
+.resource-card-accent { position: relative; z-index: 2; border-radius: 16px 16px 0 0; }
+
+/* Larger, easier-to-read expertise lists */
+.pillar-card ul li { font-size: 1.02rem; color: var(--text-body); }
+
+/* Bigger, clearer checkboxes */
+input[type="checkbox"] { width: 1.25rem !important; height: 1.25rem; accent-color: var(--navy); flex-shrink: 0; }
+
+/* Phones: swipe the article strip; arrows were covering the cards */
+@media (max-width: 600px) {
+  .strip-arrow { display: none; }
+  .footer-nav { gap: 0.25rem 1.25rem; }
+}
+
+/* ===== TYPE & SPACING SYSTEM (2026-10-23) =====
+   One scale for the whole site. Earlier rules used ~25 different text sizes
+   (15-20px) for the same kind of text; these tokens replace them. */
+:root {
+  --fs-body: 1.0625rem;   /* 17px - all paragraph and list text */
+  --fs-lead: 1.2rem;      /* intro lines under headings */
+  --fs-small: 0.92rem;    /* captions, meta, tags */
+  --fs-label: 0.8rem;     /* small uppercase labels */
+  --lh-body: 1.7;
+  --section-pad: clamp(2.75rem, 5vw, 4rem);
+}
+body { font-size: var(--fs-body); line-height: var(--lh-body); }
+h1 { font-size: clamp(2rem, 1.3rem + 2.4vw, 2.9rem); line-height: 1.2; }
+h2 { font-size: clamp(1.65rem, 1.2rem + 1.5vw, 2.25rem); line-height: 1.25; }
+h3 { font-size: clamp(1.2rem, 1.05rem + 0.45vw, 1.4rem); line-height: 1.3; }
+.hero-text h1 { font-size: clamp(2rem, 1.3rem + 2.4vw, 2.9rem); }
+.page-hero h1 { font-size: clamp(2rem, 1.3rem + 2.4vw, 2.9rem); }
+
+/* Paragraph text: one size everywhere */
+.card p, .service-item p, .pillar-desc, .pillar-card ul li, .value-item p,
+.resource-card p, .featured-card-body p, .accordion-body p, .about-text p,
+.faq details p, .card-list li, .big-ideas li, .split-text p, .contact-item,
+.home-feature .split-text p {
+  font-size: var(--fs-body); line-height: var(--lh-body);
+}
+.card p, .service-item p, .resource-card p, .featured-card-body p, .accordion-body p { color: var(--text-body); }
+
+/* Lead text under headings */
+.section-header p, .hero-text > p, .page-hero-text p:not(.hero-tagline):not(.status-pill),
+.cta-panel p { font-size: var(--fs-lead); line-height: 1.6; }
+.page-hero .hero-subtitle { font-size: clamp(1.15rem, 1rem + 0.6vw, 1.35rem) !important; line-height: 1.45; }
+
+/* Small text and labels */
+.episode-figure figcaption, .featured-card-meta, .tags li, .footer-tagline,
+.footer-connect-row a { font-size: var(--fs-small); }
+.featured-card-tag, .resource-card-tag, .episode-label, .soon-label { font-size: var(--fs-label); }
+.hero-tagline, .page-hero .hero-tagline { font-size: 0.9rem; letter-spacing: 0.16em; margin-bottom: 0.9rem; }
+
+/* Card and block headings */
+.resource-card h3, .resource-card h4, .featured-card-body h4 { font-size: 1.2rem; line-height: 1.3; }
+.value-item h3 { font-size: 1.3rem; }
+.featured-block-title { font-size: 1.35rem; }
+.mission-patch p { font-size: clamp(1.05rem, 1rem + 0.3vw, 1.15rem); line-height: 1.7; }
+.navy-ribbon p { font-size: clamp(1.15rem, 1rem + 0.8vw, 1.5rem); }
+
+/* Spacing: tighter, more even rhythm */
+.section { padding: var(--section-pad) 0 calc(var(--section-pad) + 2vw); }
+.section-header { margin-bottom: 2.5rem; }
+.section-header h2 { margin-bottom: 0.6rem; }
+.section-rule { margin-top: 0.85rem; }
+.hero { padding: 3.5rem 0 6rem; }
+.hero-text h1 { margin-bottom: 1.1rem; }
+.hero-text > p { margin-bottom: 2rem; }
+.page-hero { padding: 3rem 0 4.75rem; }
+.page-hero h1 { margin-bottom: 0.6rem; }
+.card { padding: 2.25rem 1.85rem; }
+.card-icon { width: 64px; height: 64px; margin-bottom: 1.1rem; }
+.card-icon svg { width: 30px; height: 30px; }
+.card h3 { margin-bottom: 0.6rem; }
+.card-grid { gap: 1.5rem; }
+.resource-card-body { padding: 1.6rem 1.75rem 1.75rem; }
+.resource-card .btn { margin-top: 1.25rem; }
+.mission-patch { margin-top: 2.5rem; padding: 2.25rem 3rem; }
+.mission-patch-title { margin-bottom: 1rem; }
+.featured-block { margin-bottom: 2.5rem; }
+.about-text h2 { margin-bottom: 1rem; }
+.pullquote { margin: 1.5rem 0; }
+.tags { margin-top: 1.5rem; }
+.big-ideas li { padding-bottom: 0.85rem; }
+.navy-ribbon { padding-top: 3rem; padding-bottom: 4.5rem; }
+.btn { padding: 0.95rem 2.2rem; }
+
+/* Announcement link in the home hero */
+.hero-announce {
+  display: inline-flex; align-items: center; gap: 0.6rem; flex-wrap: wrap;
+  margin-bottom: 1.25rem; padding: 0.35rem 1rem 0.35rem 0.4rem;
+  background: rgba(255,255,255,0.75); border: 1.5px solid rgba(17,46,91,0.15);
+  border-radius: 50px; color: var(--navy); font-size: 0.95rem; font-weight: 600;
+  line-height: 1.3; transition: border-color 0.2s ease, background 0.2s ease;
+}
+.hero-announce:hover { color: var(--navy); background: white; border-color: var(--gold); }
+.hero-announce-tag {
+  background: var(--navy); color: white; border-radius: 50px;
+  padding: 0.2rem 0.7rem; font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;
+}
+
+/* ===== PHONES (iPhone and similar, up to ~430px wide) ===== */
+@media (max-width: 600px) {
+  :root { --fs-body: 1.0625rem; --fs-lead: 1.1rem; --section-pad: 2.5rem; }
+  .section { padding-bottom: calc(var(--section-pad) + 3vw); }
+  h1, .hero-text h1, .page-hero h1 { font-size: clamp(1.85rem, 1.2rem + 3vw, 2.2rem); }
+  h2 { font-size: 1.6rem; }
+  .section-header { margin-bottom: 1.75rem; }
+  .hero { padding: 2.25rem 0 5rem; }
+  .page-hero { padding: 2rem 0 4rem; }
+  .page-hero-grid { gap: 1rem; }
+  .page-hero-sticker { width: 80px; height: 80px; }
+  .card { padding: 1.85rem 1.4rem; }
+  .card-grid { gap: 1.1rem; }
+  .mission-patch { padding: 2rem 1.4rem; }
+  .cta-panel { padding: 2.25rem 1.25rem; }
+  .resource-card-body { padding: 1.4rem 1.4rem 1.5rem; }
+  .btn { padding: 0.9rem 1.6rem; }
+  .cta-buttons .btn, .home-feature .btn { width: 100%; max-width: 340px; text-align: center; }
+  .hero-announce { font-size: 0.88rem; }
+  .navy-ribbon { padding-top: 2.25rem; padding-bottom: 3.5rem; }
+  .values-grid { gap: 1.75rem; }
+  .contact-row { gap: 1rem; flex-direction: column; align-items: center; }
+  /* Keep content clear of the iPhone notch/home bar in landscape */
+  .container, .container-wide { padding-left: env(safe-area-inset-left); padding-right: env(safe-area-inset-right); }
+  .footer { padding-bottom: calc(1.5rem + env(safe-area-inset-bottom)); }
+}
+/* Stops iOS Safari from enlarging text after rotating the phone */
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+.hero-announce { flex-wrap: nowrap; }
+.card:has(> .card-icon) { text-align: center; }
+@media (max-width: 900px) {
+  .hero-text { text-align: center; }
+}
+/* Ghost button: inset ring instead of border so it matches solid buttons' height */
+.btn-ghost-white { border: none; box-shadow: inset 0 0 0 2px rgba(255,255,255,0.35); }
+.btn-ghost-white:hover { box-shadow: inset 0 0 0 2px white; }
