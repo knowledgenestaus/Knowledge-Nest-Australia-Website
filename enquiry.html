@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Get in Touch | Knowledge Nest Educational Consulting</title>
-  <meta name="description" content="Enquire about coaching, professional learning or a school partnership with Knowledge Nest, or book a free 20-minute chat with Jo Griffin.">
+  <meta name="description" content="Get in touch with Jo Griffin at Knowledge Nest to share practice, ask a question, invite her to speak at an event, or book a free 20-minute chat.">
   <meta name="author" content="Jo Griffin">
   <meta name="theme-color" content="#112e5b">
   <link rel="canonical" href="https://knowledgenest.com.au/enquiry.html">
@@ -13,7 +13,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://knowledgenest.com.au/enquiry.html">
   <meta property="og:title" content="Get in Touch | Knowledge Nest Educational Consulting">
-  <meta property="og:description" content="Enquire about coaching, professional learning or a school partnership with Knowledge Nest, or book a free 20-minute chat with Jo Griffin.">
+  <meta property="og:description" content="Get in touch with Jo Griffin at Knowledge Nest to share practice, ask a question, invite her to speak at an event, or book a free 20-minute chat.">
   <meta property="og:image" content="https://knowledgenest.com.au/assets/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -25,7 +25,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap">
-  <link rel="stylesheet" href="styles.css?v=54">
+  <link rel="stylesheet" href="styles.css?v=55">
   <script>document.documentElement.classList.add('js');</script>
   <script type="application/ld+json">
 {
@@ -169,10 +169,10 @@
     <button class="nav-toggle" id="navToggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="secrets-of-how-we-learn.html">How We Learn</a></li>
       <li><a href="resources.html">Resources</a></li>
+      <li><a href="secrets-of-how-we-learn.html">How We Learn</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Speaking</a></li>
       <li><a href="enquiry.html" class="nav-cta-link active" aria-current="page">Get in Touch</a></li>
     </ul>
   </div>
@@ -187,9 +187,9 @@
       <img src="assets/sticker-bird.webp" alt="" width="480" height="320">
     </div>
     <div class="page-hero-text">
-      <p class="hero-tagline">Enquire</p>
+      <p class="hero-tagline">Connect</p>
       <h1>Get in Touch</h1>
-      <p>Tell us about your school and we'll be in touch to discuss how we can help.</p>
+      <p>Say hello, ask a question or share what you're working on. There is always more we can learn from one another.</p>
     </div>
   </div>
   <div class="wave-bottom">
@@ -206,16 +206,15 @@
     <div class="enquiry-form reveal" id="enquiry-form">
       <div class="form-success" id="formSuccess" tabindex="-1" style="display:none; text-align:center; padding:3rem 2rem;">
         <h2 style="color:var(--navy); margin-bottom:1rem;">Thank you!</h2>
-        <p style="font-size:1.1rem; color:var(--text-body); margin-bottom:1.5rem;">Your enquiry has been sent. Jo will be in touch within 1-2 business days.</p>
+        <p style="font-size:1.1rem; color:var(--text-body); margin-bottom:1.5rem;">Your message has been sent. Jo will be in touch as soon as she can.</p>
         <a href="index.html" class="btn btn-primary">Back to Home</a>
       </div>
-      <!-- FORMSPREE: Replace YOUR_FORM_ID below with your actual Formspree form ID.
-           1. Go to https://formspree.io and create a free account
-           2. Create a new form, copy the form ID (e.g. "xwkgjqab")
-           3. Replace YOUR_FORM_ID with that ID -->
+      <div class="availability-note">
+        <p>Jo is currently unavailable for independent consulting. She is open to speaking at events, and always happy to connect with other teachers and leaders to share practice.</p>
+      </div>
       <form action="https://formspree.io/f/xdaplrjq" method="POST">
         <p class="form-note">Fields marked <span class="req" aria-hidden="true">*</span><span class="sr-only">with an asterisk</span> are required.</p>
-        <input type="hidden" name="_subject" value="New enquiry from Knowledge Nest website">
+        <input type="hidden" name="_subject" value="New message from Knowledge Nest website">
         <input type="hidden" name="_next" value="https://knowledgenest.com.au/enquiry.html?sent=true">
         <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
 
@@ -228,8 +227,8 @@
         <label for="phone">Phone Number (optional)</label>
         <input type="tel" id="phone" name="phone" autocomplete="tel">
 
-        <label for="school">School / Organisation Name <span class="req" aria-hidden="true">*</span></label>
-        <input type="text" id="school" name="school" required autocomplete="organization" placeholder="e.g. Sunshine Primary School">
+        <label for="school">School / Organisation (optional)</label>
+        <input type="text" id="school" name="school" autocomplete="organization" placeholder="e.g. Sunshine Primary School">
 
         <label for="role">Your Role</label>
         <select id="role" name="role" autocomplete="organization-title">
@@ -244,37 +243,26 @@
         </select>
 
         <fieldset class="checkbox-fieldset">
-        <legend>Services of Interest</legend>
+        <legend>What would you like to talk about?</legend>
         <div class="checkbox-group">
-          <label class="checkbox-label"><input type="checkbox" name="services" value="Science of Learning"> Science of Learning</label>
-          <label class="checkbox-label"><input type="checkbox" name="services" value="Science of Reading"> Science of Reading</label>
-          <label class="checkbox-label"><input type="checkbox" name="services" value="Knowledge-Rich Curriculum"> Knowledge-Rich Curriculum</label>
-          <label class="checkbox-label"><input type="checkbox" name="services" value="MTSS"> MTSS</label>
-          <label class="checkbox-label"><input type="checkbox" name="services" value="Change Management & Implementation Science"> Change Management &amp; Implementation Science</label>
-          <label class="checkbox-label"><input type="checkbox" name="services" value="Instructional Playbooks"> Instructional Playbooks</label>
-          <label class="checkbox-label"><input type="checkbox" name="services" value="The Secrets of How We Learn (student curriculum)" id="interest-secrets"> The Secrets of How We Learn (student curriculum)</label>
+          <label class="checkbox-label"><input type="checkbox" name="topics" value="Speaking at an event"> Speaking at an event</label>
+          <label class="checkbox-label"><input type="checkbox" name="topics" value="Sharing practice or swapping ideas"> Sharing practice or swapping ideas</label>
+          <label class="checkbox-label"><input type="checkbox" name="topics" value="A question about a resource"> A question about a resource</label>
+          <label class="checkbox-label"><input type="checkbox" name="topics" value="Suggesting a resource for the library"> Suggesting a resource for the library</label>
+          <label class="checkbox-label"><input type="checkbox" name="topics" value="Coaching Nest"> Coaching Nest</label>
+          <label class="checkbox-label"><input type="checkbox" name="topics" value="The Secrets of How We Learn (student curriculum)" id="interest-secrets"> The Secrets of How We Learn (student curriculum)</label>
         </div>
         </fieldset>
 
-        <label for="engagement">Preferred Engagement Type</label>
-        <select id="engagement" name="engagement">
-          <option value="" disabled selected>Select engagement type</option>
-          <option value="Consultation Call">Consultation Call</option>
-          <option value="Professional Learning Workshop">Professional Learning Workshop</option>
-          <option value="1:1 Coaching">1:1 Coaching</option>
-          <option value="Ongoing Partnership">Ongoing Partnership</option>
-          <option value="Not Sure Yet">Not Sure Yet</option>
-        </select>
-
         <label for="message">Your Message</label>
-        <textarea id="message" name="message" placeholder="Tell us a bit about your school's needs or goals (optional)"></textarea>
+        <textarea id="message" name="message" placeholder="What's on your mind? (optional)"></textarea>
 
-        <button type="submit" class="btn btn-primary">Send Enquiry</button>
+        <button type="submit" class="btn btn-primary">Send Message</button>
       </form>
 
       <div class="prefer-chat">
         <h2>Prefer to chat?</h2>
-        <p>Sometimes a conversation is the best place to start. Book a free 20-minute discovery call to discuss your school's needs.</p>
+        <p>Sometimes a conversation is the best place to start. Book a free 20-minute chat to swap ideas and share practice.</p>
         <a href="https://calendly.com/jo-knowledgenest/20min" class="btn btn-coral">Book a Free Chat</a>
       </div>
     </div>
@@ -304,10 +292,10 @@
         <p class="footer-tagline">Bridging the gap between research and practice.</p>
         <nav class="footer-nav" aria-label="Footer">
           <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="services.html">Services</a>
-          <a href="secrets-of-how-we-learn.html">How We Learn</a>
           <a href="resources.html">Resources</a>
+          <a href="secrets-of-how-we-learn.html">How We Learn</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Speaking</a>
           <a href="https://coachingnest.com.au/">Coaching Nest</a>
           <a href="enquiry.html">Get in Touch</a>
         </nav>
