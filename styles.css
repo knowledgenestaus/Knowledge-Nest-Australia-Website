@@ -1668,3 +1668,14 @@ section[id] { scroll-margin-top: 90px; }
 .lib-listen a { padding: 0.2rem 0.8rem; border-radius: 50px; background: var(--navy); color: white; font-size: 0.85rem; font-weight: 700; }
 .lib-listen a:hover { background: var(--navy-light); color: white; }
 .lib-subhead { margin: 2rem 0 0.9rem; font-size: 1.25rem; }
+
+.lib-chips { margin-bottom: 1.1rem; }
+.lib-chips p { margin-bottom: 0.5rem; font-weight: 700; color: var(--navy); }
+.lib-chips div { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.lib-chip { min-height: 44px; padding: 0.45rem 1rem; border-radius: 50px; border: 2px solid var(--navy); background: white; color: var(--navy); font: inherit; font-size: 0.95rem; font-weight: 700; cursor: pointer; }
+.lib-chip span { margin-left: 0.25rem; font-weight: 600; opacity: 0.75; }
+.lib-chip:hover { background: var(--sandstone-pale); }
+.lib-chip[aria-pressed="true"] { background: var(--navy); color: white; }
+.lib-chip:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+.lib-group-lead a { font-weight: 700; text-decoration: underline; }
+.lib-subhead-first { margin-top: 2.5rem; font-size: 1.45rem; }

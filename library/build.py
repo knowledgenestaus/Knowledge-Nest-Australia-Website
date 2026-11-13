@@ -21,6 +21,34 @@ SITE = "https://knowledgenest.com.au/"
 EMAIL = "jo@knowledgenest.com.au"
 SUGGEST = "mailto:%s?subject=Library%%20suggestion" % EMAIL
 
+# Broad topics for filtering long lists, built from the focus areas.
+TOPICS = OrderedDict([
+    ("Literacy and English", [7, 8, 9, 10, 11]),
+    ("Maths", [12]),
+    ("Classroom teaching", [2, 3, 4, 5, 23, 24]),
+    ("How learning works", [1, 15]),
+    ("Curriculum", [6]),
+    ("Assessment and tiered support", [13, 14]),
+    ("Instructional coaching and professional learning", [16]),
+    ("Leadership and culture", [19, 20, 21]),
+    ("Implementation and change", [17, 22]),
+    ("Evidence and debates", [18]),
+])
+
+# How the other podcast shows are grouped on the Listen page.
+SHOW_GROUPS = OrderedDict([
+    ("Teaching and learning", ["General teaching", "How learning works", "Curriculum", "Leadership"]),
+    ("Literacy and English", ["Reading and phonics"]),
+    ("Maths", ["Maths"]),
+    ("Instructional coaching", ["Coaching and PL"]),
+    ("Behaviour, inclusion and support", ["Behaviour and culture", "Inclusion and support", "Tiered support"]),
+])
+
+
+def topics_of(x):
+    return [t for t, ns in TOPICS.items() if set(ns) & set(x["areas"])]
+
+
 # Shows featured at the top of the Listen page, in order.
 TOP_SHOWS = ["Sold a Story", "Jones & McLean", "Chalk Dust", "Education Research Reading Room", "Mind the Gap: Making Education Work Across the Globe"]
 
@@ -119,8 +147,8 @@ def card(x, show_type=True, level="h3", filterable=False):
     if filterable:
         topics = '<p class="lib-topics">%s</p>' % "".join('<a href="%s">%s</a>' % (area_page(AREA[n]), e(short_area(n))) for n in x["areas"]) if x["areas"] else ""
         text = " ".join([x["title"], x["by"], x.get("summary", ""), x.get("focus", ""), " ".join(x["meta"])] + [AREA[n]["name"] for n in x["areas"]]).lower()
-        data = ' data-areas="%s" data-bands="%s" data-subject="%s" data-region="%s" data-by="%s" data-text="%s"' % (
-            ",".join(str(n) for n in x["areas"]), ",".join(x.get("bands", [])), e(x.get("subject", "")), e(x.get("region", "")), e(x["by"]), e(text))
+        data = ' data-topics="%s" data-areas="%s" data-bands="%s" data-subject="%s" data-region="%s" data-by="%s" data-text="%s"' % (
+            e("|".join(topics_of(x))), ",".join(str(n) for n in x["areas"]), ",".join(x.get("bands", [])), e(x.get("subject", "")), e(x.get("region", "")), e(x["by"]), e(text))
     return (
         '<article class="lib-card" data-type="%s"%s>%s%s<%s class="lib-card-title"><a href="%s" target="_blank" rel="noopener">%s%s</a></%s>'
         '%s%s%s<p class="lib-card-foot">%s<span class="lib-source">Opens at %s</span></p></article>'
@@ -140,7 +168,10 @@ def options(values, all_label):
 def filter_bar(items, kind):
     """Filter controls for a long list. Works without JavaScript as a plain list."""
     area_ns = [a["n"] for d in DOMAIN_ORDER for a in AREAS if a["domain"] == d and any(a["n"] in x["areas"] for x in items)]
-    fields = ['<div class="lib-field"><label for="fArea">Focus area</label><select id="fArea" data-filter="areas">%s</select></div>'
+    topic_names = [t for t in TOPICS if any(t in topics_of(x) for x in items)]
+    fields = ['<div class="lib-field"><label for="fTopic">Topic</label><select id="fTopic" data-filter="topics">%s</select></div>'
+              % options([(t, t) for t in topic_names], "All topics")]
+    fields += ['<div class="lib-field"><label for="fArea">Focus area</label><select id="fArea" data-filter="areas">%s</select></div>'
               % options([(str(n), short_area(n)) for n in area_ns], "All focus areas")]
     if kind == "watch":
         fields.append('<div class="lib-field"><label for="fBand">Year level</label><select id="fBand" data-filter="bands">%s</select></div>'
@@ -157,7 +188,10 @@ def filter_bar(items, kind):
                   % (by_label, options([(v, v) for v in sources], "All %ss" % by_label.lower())))
     fields.append('<div class="lib-field lib-field-wide"><label for="fText">Search within this page</label>'
                   '<input type="search" id="fText" placeholder="e.g. worked examples" autocomplete="off"></div>')
-    return ('<form class="lib-filters" id="libFilters" hidden><div class="lib-filter-row">%s</div>'
+    chips = "".join('<button type="button" class="lib-chip" data-topic="%s">%s <span>%d</span></button>'
+                    % (e(t), e(t), sum(1 for x in items if t in topics_of(x))) for t in topic_names)
+    return ('<div class="lib-chips" id="libChips" hidden><p>Browse by topic</p><div>%s</div></div>' % chips +
+            '<form class="lib-filters" id="libFilters" hidden><div class="lib-filter-row">%s</div>'
             '<p class="lib-filter-status"><span id="fCount" role="status" aria-live="polite"></span> '
             '<button type="reset" class="lib-reset">Clear filters</button></p></form>' % "".join(fields))
 
@@ -168,7 +202,7 @@ def filtered_list(items, kind):
     return (filter_bar(items, kind) + '<div id="libList">%s</div>' % cards(items, False, "h3", True)
             + '<p class="lib-more" hidden><button type="button" class="btn btn-primary" id="libMore">Show more</button></p>'
             + '<p class="lib-empty" id="libEmpty" hidden>Nothing matches those filters yet. Try clearing one, or <a href="%s">email a suggestion</a>.</p>' % SUGGEST
-            + '<script src="library/filter.js?v=1" defer></script>')
+            + '<script src="library/filter.js?v=2" defer></script>')
 
 
 WAVE = ('<div class="wave-bottom"><svg aria-hidden="true" focusable="false" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">'
@@ -389,16 +423,19 @@ def build_types():
                         % (icon, e(s["url"]), e(s["title"]), NEWTAB, " &middot; ".join(e(b) for b in bits if b),
                            ('<p class="lib-summary">%s</p>' % e(s["desc"])) if s.get("desc") else "",
                            ('<p class="lib-listen">%s</p>' % "".join(listen)) if listen else "", e(domain_of(s["url"]))))
-            intro = ('<section class="lib-group" id="shows"><h2>Five must-listen podcasts</h2><p class="lib-group-lead">A place to start. Cover art belongs to each show.</p>'
-                     '<div class="lib-grid">%s</div>' % "".join(show_card(s) for s in top))
-            def region(s):
-                r = s["meta"][-1] if s["meta"] else ""
-                return "Australia" if r == "Australia" else "United Kingdom" if r == "UK" else "North America"
-            for label in ("Australia", "United Kingdom", "North America"):
-                group = sorted([s for s in rest if region(s) == label], key=lambda s: s["title"].lower())
+            intro = ('<section class="lib-group" id="shows"><h2>Five must-listen podcasts</h2><p class="lib-group-lead">These are currently my favourites, the ones in high rotation. '
+                     'I\'m always welcoming new suggestions too, so if you\'ve got a favourite that I\'ve neglected to include, '
+                     '<a href="mailto:%s?subject=Podcast%%20suggestion">shoot it my way</a> so I can get listening.</p>'
+                     '<div class="lib-grid">%s</div>' % (EMAIL, "".join(show_card(s) for s in top)))
+            intro += '<h3 class="lib-subhead lib-subhead-first">More shows, by category</h3><p class="lib-group-lead">Cover art belongs to each show.</p>'
+            for label, subjects in SHOW_GROUPS.items():
+                group = sorted([s for s in rest if (s["meta"][0] if s["meta"] else "") in subjects], key=lambda s: s["title"].lower())
                 if group:
-                    intro += ('<h3 class="lib-subhead">More from %s <span class="lib-count">%d</span></h3><div class="lib-grid">%s</div>'
-                              % ("the United Kingdom" if label == "United Kingdom" else label, len(group), "".join(show_card(s) for s in group)))
+                    intro += ('<h3 class="lib-subhead">%s <span class="lib-count">%d</span></h3><div class="lib-grid">%s</div>'
+                              % (e(label), len(group), "".join(show_card(s) for s in group)))
+            other = [s for s in rest if not any((s["meta"][0] if s["meta"] else "") in v for v in SHOW_GROUPS.values())]
+            if other:
+                intro += '<h3 class="lib-subhead">More</h3><div class="lib-grid">%s</div>' % "".join(show_card(s) for s in other)
             intro += "</section>"
         toc = ('<nav class="lib-toc" aria-label="On this page"><span>Jump to:</span>%s</nav>' % "".join('<a href="#%s">%s</a>' % (i, e(l)) for i, l in nav)) if nav else ""
         body = hero("Library", t["title"], lead, crumbs=[("Library", "library.html"), (t["title"], None)])

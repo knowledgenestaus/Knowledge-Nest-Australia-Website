@@ -19,7 +19,9 @@
       if (!want) continue;
       var key = selects[i].getAttribute('data-filter');
       var have = card.getAttribute('data-' + key) || '';
-      if (key === 'areas' || key === 'bands') {
+      if (key === 'topics') {
+        if (have.split('|').indexOf(want) === -1) return false;
+      } else if (key === 'areas' || key === 'bands') {
         if (have.split(',').indexOf(want) === -1) return false;
       } else if (have !== want) {
         return false;
@@ -66,6 +68,25 @@
   });
   if (initial.get('text')) text.value = initial.get('text');
 
+  // Topic buttons set the Topic filter.
+  var chipBox = document.getElementById('libChips');
+  var topicSelect = document.getElementById('fTopic');
+  var chips = chipBox ? Array.prototype.slice.call(chipBox.querySelectorAll('.lib-chip')) : [];
+  function syncChips() {
+    chips.forEach(function (c) { c.setAttribute('aria-pressed', String(topicSelect && c.getAttribute('data-topic') === topicSelect.value)); });
+  }
+  chips.forEach(function (c) {
+    c.addEventListener('click', function () {
+      var t = c.getAttribute('data-topic');
+      topicSelect.value = topicSelect.value === t ? '' : t;
+      changed(); syncChips();
+    });
+  });
+  if (topicSelect) topicSelect.addEventListener('change', syncChips);
+  form.addEventListener('reset', function () { setTimeout(syncChips, 0); });
+  if (chipBox) chipBox.hidden = false;
+
   form.hidden = false;
+  syncChips();
   apply();
 })();
