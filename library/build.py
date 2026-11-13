@@ -81,29 +81,47 @@ START_HERE = [
 AREAS = sorted(DATA["areas"], key=lambda a: a["n"])
 AREA = {a["n"]: a for a in AREAS}
 ENTRIES = DATA["entries"]
+
+def _load(name, default):
+    path = os.path.join(ROOT, "library", "data", name)
+    return json.load(open(path, encoding="utf8")) if os.path.exists(path) else default
+
+# Learn: webinars and longer professional learning. Some entries move across from Watch; others are listed in learn.json.
+LEARN = _load("learn.json", {"move": [], "entries": []})
+for x in ENTRIES:
+    if x["type"] == "watch" and x["title"] in LEARN["move"]:
+        x["type"] = "learn"
+for x in LEARN["entries"]:
+    ENTRIES.append(dict(x, type="learn"))
+SUBSTACKS = _load("substacks.json", [])
+# Jo's must-follow Substacks, by title, shown first on the Read page. Leave empty until chosen.
+MUST_SUBSTACKS = []
 SHOWS = DATA["shows"]
 VTLM = DATA["vtlm"]
 
 TYPES = OrderedDict([
-    ("watch", dict(label="Watch", page="library-watch.html", title="Classroom videos", noun="videos", colour="navy",
-                   blurb="Real classroom footage and webinars showing practice in action.",
-                   icon='<rect x="4" y="7" width="22" height="16" rx="2"/><path d="M13 11l6 4-6 4z"/>')),
-    ("listen", dict(label="Listen", page="library-listen.html", title="Podcasts", noun="podcast episodes", colour="terracotta",
-                    blurb="Podcast episodes sorted by subject and by practice.",
-                    icon='<path d="M6 17v-2a9 9 0 0118 0v2"/><rect x="4" y="17" width="5" height="8" rx="1.500"/><rect x="21" y="17" width="5" height="8" rx="1.500"/>')),
-    ("read", dict(label="Read", page="library-read.html", title="Articles and blogs", noun="articles and guides", colour="eucalyptus",
-                  blurb="Short reads, blogs, explainers and practice guides.",
-                  icon='<path d="M15 7C13 5 10 4 6 4v18c4 0 7 1 9 3 2-2 5-3 9-3V4c-4 0-7 1-9 3z"/><path d="M15 7v18"/>')),
-    ("research", dict(label="Research", page="library-research.html", title="Research", noun="papers and reviews", colour="gold",
-                      blurb="Foundational papers, reviews and meta-analyses.",
-                      icon='<circle cx="13" cy="13" r="8"/><path d="M19 19l7 7"/>')),
-    ("voice", dict(label="Voices", page="library-voices.html", title="Voices to follow", noun="people to follow", colour="navy",
-                   blurb="The researchers, teachers and writers worth your time.",
-                   icon='<circle cx="11" cy="10" r="4.500"/><path d="M3 25c.6-4.500 3.800-7 8-7s7.400 2.500 8 7"/><circle cx="22" cy="11" r="3"/><path d="M22 17c3 .2 4.800 2 5.200 5"/>')),
-    ("curriculum", dict(label="Curriculum", page="library-curriculum.html", title="Free curriculum", noun="curriculum collections", colour="terracotta",
-                        blurb="Openly available lesson materials, scope and sequences.",
-                        icon='<rect x="5" y="3" width="20" height="24" rx="2"/><path d="M10 10h10M10 15h10M10 20h6"/>')),
+    ("watch", dict(label="Watch", page="library-watch.html", title="Classroom videos", tile="Watch", noun="videos",
+                   blurb="Short classroom footage showing practice in action.")),
+    ("learn", dict(label="Learn", page="library-learn.html", title="Webinars and professional learning", tile="Learn", noun="sessions",
+                   blurb="Webinars and longer sessions to sit down with, alone or as a staff.")),
+    ("listen", dict(label="Listen", page="library-listen.html", title="Podcasts", tile="Listen", noun="episodes",
+                    blurb="Must-listen shows, and episodes sorted by category.")),
+    ("read", dict(label="Read", page="library-read.html", title="Articles, blogs and Substacks", tile="Read", noun="articles and guides",
+                  blurb="Short reads, practice guides and Substacks worth following.")),
+    ("research", dict(label="Research", page="library-research.html", title="Research", tile="Research", noun="papers and reviews",
+                      blurb="Foundational papers, reviews and meta-analyses.")),
+    ("voice", dict(label="Voices", page="library-voices.html", title="Voices to follow", tile="Voices", noun="people to follow",
+                   blurb="The researchers, teachers and writers worth your time.")),
+    ("curriculum", dict(label="Curriculum", page="library-curriculum.html", title="Free curriculum", tile="Free curriculum", noun="collections",
+                        blurb="Openly available lesson materials, scope and sequences.")),
 ])
+
+
+def illo(key, cls="kn-illo", size=320):
+    """A bespoke illustration, if one has been added at assets/illo/<key>.webp. Returns '' when it has not."""
+    if os.path.exists(os.path.join(ROOT, "assets", "illo", key + ".webp")):
+        return '<img class="%s" src="assets/illo/%s.webp" alt="" width="%d" height="%d" loading="lazy" decoding="async">' % (cls, key, size, size)
+    return ""
 
 DOMAIN_ORDER = []
 for a in AREAS:
@@ -196,7 +214,8 @@ def filter_bar(items, kind):
                   '<input type="search" id="fText" placeholder="e.g. worked examples" autocomplete="off"></div>')
     chips = "".join('<button type="button" class="lib-chip" data-topic="%s">%s <span>%d</span></button>'
                     % (e(t), e(t), sum(1 for x in items if t in topics_of(x))) for t in topic_names)
-    return ('<div class="lib-chips" id="libChips" hidden><p>Browse by category</p><div>%s</div></div>' % chips +
+    return ('<button type="button" class="lib-filter-toggle" id="libFilterToggle" aria-expanded="false" aria-controls="libFilters" hidden>Filter this list</button>'
+            + '<div class="lib-chips" id="libChips" hidden><p>Browse by category</p><div>%s</div></div>' % chips +
             '<form class="lib-filters" id="libFilters" hidden><div class="lib-filter-row">%s</div>'
             '<p class="lib-filter-status"><span id="fCount" role="status" aria-live="polite"></span> '
             '<button type="reset" class="lib-reset">Clear filters</button></p></form>' % "".join(fields))
@@ -208,22 +227,18 @@ def filtered_list(items, kind):
     return (filter_bar(items, kind) + '<div id="libList">%s</div>' % cards(items, False, "h3", True)
             + '<p class="lib-more" hidden><button type="button" class="btn btn-primary" id="libMore">Show more</button></p>'
             + '<p class="lib-empty" id="libEmpty" hidden>Nothing matches those filters yet. Try clearing one, or <a href="%s">email a suggestion</a>.</p>' % SUGGEST
-            + '<script src="library/filter.js?v=3" defer></script>')
+            + '<script src="library/filter.js?v=4" defer></script>')
 
 
-WAVE = ('<div class="wave-bottom"><svg aria-hidden="true" focusable="false" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">'
-        '<path d="M0,25 C240,55 480,5 720,30 C960,55 1200,8 1440,28 L1440,60 L0,60 Z" fill="#ffffff"/>'
-        '<path d="M0,25 C240,55 480,5 720,30 C960,55 1200,8 1440,28" fill="none" stroke="rgba(232,213,183,0.3)" stroke-width="2" stroke-dasharray="8,10" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></div>')
-
-
-def hero(tagline, h1, lead, crumbs=None, extra=""):
+def hero(tagline, h1, lead, crumbs=None, extra="", art=None):
     crumb = ""
     if crumbs:
-        parts = ['<a href="%s">%s</a>' % (h, e(l)) if h else e(l) for l, h in crumbs]
-        crumb = '<p class="lib-crumbs">%s</p>' % " <span aria-hidden=\"true\">/</span> ".join(parts)
-    return ('<section class="page-hero lib-hero"><div class="container"><div class="page-hero-text lib-hero-text">%s'
-            '<p class="hero-tagline">%s</p><h1>%s</h1><p>%s</p>%s</div></div>%s</section>'
-            % (crumb, e(tagline), e(h1), lead, extra, WAVE))
+        parts = ['<a href="%s">%s</a>' % (h, e(l)) if h else '<span aria-current="page">%s</span>' % e(l) for l, h in crumbs]
+        crumb = '<nav class="lib-crumbs" aria-label="Breadcrumb">%s</nav>' % " <span aria-hidden=\"true\">/</span> ".join(parts)
+    pic = illo(art, "page-hero-illo", 360) if art else ""
+    return ('<section class="page-hero lib-hero%s"><div class="container page-hero-inner"><div class="page-hero-text lib-hero-text">%s'
+            '<p class="hero-tagline">%s</p><h1>%s</h1><p class="page-hero-lead">%s</p>%s</div>%s</div></section>'
+            % (" has-illo" if pic else "", crumb, e(tagline), e(h1), lead, extra, pic))
 
 
 def start_here():
@@ -245,10 +260,10 @@ def start_here():
         lis = "".join('<li><span class="lib-type lib-type-%s">%s</span> <a href="%s" target="_blank" rel="noopener">%s%s</a></li>'
                       % (x["type"], TYPES[x["type"]]["label"], e(x["url"]), e(x["title"]), NEWTAB) for x in picks[:3])
         links = "".join('<a href="%s">%s</a>' % (area_page(AREA[n]), e(short_area(n))) for n in t["areas"])
-        cards_html.append('<article class="lib-start"><h3>%s</h3><p>%s</p><p class="lib-start-label">Three to begin with</p><ul>%s</ul>'
-                          '<p class="lib-start-label">See everything on</p><p class="lib-topics">%s</p></article>' % (e(t["title"]), e(t["text"]), lis, links))
-    return ('<section class="section" id="start"><div class="container"><div class="section-header"><h2>Start here</h2>'
-            '<p>Five starting points for a school\'s professional learning journey.</p><div class="section-rule"></div></div>'
+        cards_html.append('<article class="lib-start"><p class="lib-start-n" aria-hidden="true">%02d</p><h3>%s</h3><p>%s</p><p class="lib-start-label">Three to begin with</p><ul>%s</ul>'
+                          '<p class="lib-start-label">See everything on</p><p class="lib-topics">%s</p></article>' % (len(cards_html) + 1, e(t["title"]), e(t["text"]), lis, links))
+    return ('<section class="section" id="start"><div class="container"><div class="section-header"><p class="kn-eyebrow">Not sure where to begin?</p><h2>Start here</h2>'
+            '<p>Five starting points for a school\'s professional learning journey.</p></div>'
             '<div class="lib-starts">%s</div></div></section>' % "".join(cards_html))
 
 
@@ -265,12 +280,12 @@ def credit_panels():
             '<div class="lib-panel lib-panel-navy"><p class="lib-eyebrow">Help it grow</p><h2>Know something that belongs here?</h2>'
             "<p>This library is built by sharing. If there is a video, podcast, article or piece of research that has helped you or your team, "
             "send a quick email with the link and it can be added for everyone.</p>"
-            '<p><a href="%s" class="btn btn-sandstone">Email a suggestion</a></p></div></div></div></section>' % (EMAIL, SUGGEST))
+            '<p><a href="%s" class="btn btn-accent">Email a suggestion</a></p></div></div></div></section>' % (EMAIL, SUGGEST))
 
 
 def suggest_box():
     return ('<div class="lib-side-box"><h2>Something missing?</h2><p>This library is built by sharing. Send a quick email with a link and it can be added for everyone.</p>'
-            '<p><a href="%s" class="btn btn-primary btn-sm">Email a suggestion</a></p></div>' % SUGGEST)
+            '<p><a href="%s" class="btn btn-outline btn-sm">Email a suggestion</a></p></div>' % SUGGEST)
 
 
 # ---------- page shell, copied from about.html ----------
@@ -313,16 +328,18 @@ def count(t):
     return sum(1 for x in ENTRIES if x["type"] == t)
 
 
+def tile(href, key, title, blurb, n, noun):
+    art = illo(key, "kn-tile-illo", 240) or '<span class="kn-tile-num" aria-hidden="true">%d</span>' % n
+    return ('<a href="%s" class="kn-tile kn-tile-%s"><span class="kn-tile-art">%s</span><span class="kn-tile-body">'
+            '<span class="kn-tile-title">%s</span><span class="kn-tile-text">%s</span>'
+            '<span class="kn-tile-cta">%d %s %s</span></span></a>' % (href, key, art, e(title), e(blurb), n, e(noun), ARROW))
+
+
 def type_tiles():
-    out = []
-    for key, t in TYPES.items():
-        out.append(
-            '<a href="%s" class="explore-tile"><span class="card-icon %s"><svg aria-hidden="true" focusable="false" viewBox="0 0 30 30" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">%s</svg></span>'
-            '<span class="explore-tile-body"><span class="explore-tile-title">%s</span><span class="explore-tile-text">%s</span>'
-            '<span class="explore-tile-cta">%d %s %s</span></span></a>'
-            % (t["page"], t["colour"], t["icon"], e(t["label"] if key != "voice" else "Voices to follow") if key != "curriculum" else "Free curriculum",
-               e(t["blurb"]), count(key), e(t["noun"]), ARROW))
-    return '<div class="explore-grid">%s</div>' % "".join(out)
+    out = [tile(t["page"], key, t["tile"], t["blurb"], count(key), t["noun"]) for key, t in TYPES.items()]
+    n_areas = len(set(n for x in ENTRIES for n in x["areas"]))
+    out.append(tile("library.html#areas", "areas", "By area of practice", "Everything on one topic, from phonics to change management.", n_areas, "areas"))
+    return '<div class="kn-tiles">%s</div>' % "".join(out)
 
 
 def area_index(counts):
@@ -347,30 +364,30 @@ def build_home():
     search = ('<form class="lib-search" role="search" id="libSearch" action="library.html" method="get">'
               '<label for="q" class="sr-only">Search the library</label>'
               '<input type="search" id="q" name="q" placeholder="Search by topic, practice or person, e.g. hinge questions" autocomplete="off">'
-              '<button type="submit" class="btn btn-sandstone">Search</button></form>'
+              '<button type="submit" class="btn btn-primary">Search</button></form>'
               '<p class="page-hero-jump lib-popular"><span>Popular:</span>%s</p>' % chips)
     lead = ("Great professional learning resources are scattered all over the internet. This library gathers the best of other people's work "
             "in one place, sorted by topic, so you can spend your time learning instead of searching.")
-    body = hero("A curated collection, free for teachers and leaders", "The Knowledge Nest Library", lead, extra=search)
+    body = hero("A curated collection, free for teachers and leaders", "The Knowledge Nest Library", lead, extra=search, art="home")
     body += ('<section class="section lib-results-section" id="results" hidden><div class="container">'
              '<h2 id="resultsHeading" tabindex="-1">Search results</h2><p class="lib-results-note" id="resultsNote"></p>'
              '<div id="resultsList"></div><p><button type="button" class="btn btn-primary btn-sm" id="clearSearch">Clear search</button></p></div></section>')
-    body += start_here()
-    body += ('<section class="section section-sandstone-pale" id="types"><div class="container"><div class="section-header"><h2>Browse by type</h2>'
-             '<p>Know how you want to learn today? Start here.</p><div class="section-rule"></div></div>%s</div></section>' % type_tiles())
+    body += ('<section class="section" id="types"><div class="container"><div class="section-header"><p class="kn-eyebrow">%d resources, all free</p><h2>Browse the library</h2>'
+             '<p>Know how you want to learn today? Pick a shelf.</p></div>%s</div></section>' % (len(ENTRIES), type_tiles()))
+    body += start_here().replace('<section class="section" id="start">', '<section class="section section-tint" id="start">')
     body += ('<section class="section" id="areas"><div class="container"><div class="section-header"><h2>Browse by area</h2>'
-             '<p>Every area gathers videos, podcasts, reading and research in one place.</p><div class="section-rule"></div></div>%s</div></section>'
+             '<p>Every area gathers videos, podcasts, reading and research in one place.</p></div>%s</div></section>'
              % area_index(counts))
     elements = "".join('<span>%s</span>' % e(k) for frame in VTLM for k in VTLM[frame] if frame.startswith("VTLM"))
-    body += ('<section class="section section-sandstone-pale"><div class="container"><div class="lib-band"><div class="lib-band-text"><p class="lib-eyebrow">For Victorian schools</p>'
+    body += ('<section class="section section-tint"><div class="container"><div class="lib-band"><div class="lib-band-text"><p class="lib-eyebrow">For Victorian schools</p>'
              '<h2>Browse by the Victorian Teaching and Learning Model 2.0</h2>'
              '<p>Podcast episodes matched to each element of learning and teaching, and to current Victorian priorities.</p>'
-             '<p><a href="library-vtlm.html" class="btn btn-sandstone">Open the VTLM 2.0 view</a></p></div>'
+             '<p><a href="library-vtlm.html" class="btn btn-accent">Open the VTLM 2.0 view</a></p></div>'
              '<div class="lib-band-chips">%s</div></div>'
              '<p class="lib-own">Looking for Jo\'s own articles and downloadable guides? <a href="resources.html">Find them here</a>.</p>'
              '</div></section>' % elements)
     body += credit_panels()
-    body += '<script src="library/search.js?v=1" defer></script>'
+    body += '<script src="library/search.js?v=2" defer></script>'
     write("library.html", "The Knowledge Nest Library | Free Professional Learning Resources",
           "A free, curated library of videos, podcasts, blogs, research and curriculum materials to support your school's professional learning journey.",
           body)
@@ -402,6 +419,21 @@ def build_types():
         if key in ("voice", "curriculum"):
             items = sorted(items, key=lambda x: x["title"].lower())
             nav, sections = [], '<section class="lib-group">%s</section>' % cards(items, False, "h2")
+        elif key == "learn":
+            nav = []
+            staff = [x for x in items if x.get("staff")]
+            def staff_card(x):
+                return ('<article class="lib-card lib-staff"><h3 class="lib-card-title"><a href="%s" target="_blank" rel="noopener">%s%s</a></h3>'
+                        '<p class="lib-by">%s</p><p class="lib-start-label">Talk about it afterwards</p><ul>%s</ul>'
+                        '<p class="lib-card-foot"><span class="lib-source">Opens at %s</span></p></article>'
+                        % (e(x["url"]), e(x["title"]), NEWTAB, " &middot; ".join(e(b) for b in [x["by"]] + x["meta"] if b),
+                           "".join("<li>%s</li>" % e(q) for q in x["staff"]), e(domain_of(x["url"]))))
+            if staff:
+                intro = ('<section class="lib-group" id="staff"><h2>Run it as a staff session</h2><p class="lib-group-lead">Recordings that suit a whole-staff meeting, '
+                         'each with a couple of prompts to get the conversation going.</p><div class="lib-grid">%s</div></section>' % "".join(staff_card(x) for x in staff))
+            sections = ('<section class="lib-group" id="all"><h2>All sessions <span class="lib-count">%d</span></h2><p class="lib-group-lead">This shelf is new and still filling. '
+                        'If a webinar or recorded session has shaped your thinking, <a href="mailto:%s?subject=Learn%%20suggestion">send it my way</a>.</p>%s</section>'
+                        % (len(items), EMAIL, cards(sorted(items, key=lambda x: x["title"].lower()), False, "h3")))
         elif key in ("watch", "listen"):
             nav = []
             heading = "All videos" if key == "watch" else "Episodes by category"
@@ -411,6 +443,24 @@ def build_types():
                         % (heading, len(items), lead, filtered_list(items, key)))
         else:
             nav, sections = grouped_sections(items)
+        if key == "read" and SUBSTACKS:
+            def stack_card(x):
+                pace = "Posts most weeks" if x["n365"] >= 20 else ("A couple of posts a month" if x["n365"] >= 10 else "Posts now and then")
+                return ('<article class="lib-card lib-stack"><h3 class="lib-card-title"><a href="%s" target="_blank" rel="noopener">%s%s</a></h3><p class="lib-by">%s</p>'
+                        '<p class="lib-summary">%s</p><p class="lib-card-foot"><span class="lib-tag">%s</span><span class="lib-source">Opens at %s</span></p></article>'
+                        % (e(x["url"]), e(x["title"]), NEWTAB, e(x["by"]), e(x["desc"]), pace, e(domain_of(x["url"]))))
+            must = [x for name in MUST_SUBSTACKS for x in SUBSTACKS if x["title"] == name]
+            intro = ('<section class="lib-group" id="substacks"><h2>Substacks worth following <span class="lib-count">%d</span></h2>'
+                     '<p class="lib-group-lead">Some of the best thinking in education now arrives by newsletter. These are free to subscribe to, though some writers keep '
+                     'part of their work for paying subscribers. Know one that belongs here? <a href="mailto:%s?subject=Substack%%20suggestion">Send it my way</a>.</p>' % (len(SUBSTACKS), EMAIL))
+            if must:
+                intro += '<h3 class="lib-subhead">My must-follows</h3><div class="lib-grid">%s</div>' % "".join(stack_card(x) for x in must)
+            for region in ["Australia", "United Kingdom and Europe", "United States and Canada"]:
+                group = [x for x in SUBSTACKS if x["region"] == region and x not in must]
+                if group:
+                    intro += '<h3 class="lib-subhead">%s</h3><div class="lib-grid">%s</div>' % (e(region), "".join(stack_card(x) for x in group))
+            intro += '</section><h2 class="lib-frame" id="articles">Articles and guides by area</h2>'
+            nav = [("substacks", "Substacks")] + nav
         if key == "listen" and SHOWS:
             top = [s for name in TOP_SHOWS for s in SHOWS if s["title"] == name]
             rest = [s for s in SHOWS if s not in top]
@@ -419,8 +469,7 @@ def build_types():
                 if s.get("art"):
                     icon = '<img class="lib-show-art" src="%s" alt="" width="72" height="72" loading="lazy" decoding="async" referrerpolicy="no-referrer">' % e(s["art"])
                 else:
-                    icon = ('<span class="lib-show-icon" aria-hidden="true"><svg viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">%s</svg></span>'
-                            % TYPES["listen"]["icon"])
+                    icon = '<span class="lib-show-art lib-show-initial" aria-hidden="true">%s</span>' % e(s["title"][:1])
                 listen = []
                 if s.get("spotify"):
                     listen.append('<a href="%s" target="_blank" rel="noopener">Listen on Spotify%s</a>' % (e(s["spotify"]), NEWTAB))
@@ -442,7 +491,7 @@ def build_types():
                           % (len(rest), "".join(show_card(s) for s in sorted(rest, key=lambda s: s["title"].lower()))))
             intro += "</section>"
         toc = ('<nav class="lib-toc" aria-label="On this page"><span>Jump to:</span>%s</nav>' % "".join('<a href="#%s">%s</a>' % (i, e(l)) for i, l in nav)) if nav else ""
-        body = hero("Library", t["title"], lead, crumbs=[("Library", "library.html"), (t["title"], None)])
+        body = hero("Library", t["title"], lead, crumbs=[("Library", "library.html"), (t["title"], None)], art=key)
         body += '<section class="section lib-list"><div class="container">%s%s%s<div class="lib-end">%s</div></div></section>' % (toc, intro, sections, suggest_box())
         write(t["page"], "%s | The Knowledge Nest Library" % t["title"],
               "%d %s for teachers and school leaders, collected in the Knowledge Nest Library. Every entry links to the original source." % (len(items), t["noun"]),
@@ -509,10 +558,9 @@ def build_home_block():
     start, end = "<!-- LIBRARY:START (generated by library/build.py, do not edit by hand) -->", "<!-- LIBRARY:END -->"
     if start not in src or end not in src:
         return
-    block = ('<section class="section" id="types"><div class="container"><div class="section-header"><h2>Browse the library</h2>'
-             '<p>%d resources from across the internet, gathered in one place and free to use.</p><div class="section-rule"></div></div>%s'
-             '<p class="lib-own"><a href="library.html#areas">Or browse by area of practice</a></p></div></section>' % (len(ENTRIES), type_tiles())
-             + start_here().replace('<section class="section" id="start">', '<section class="section section-sandstone-pale" id="start">')
+    block = ('<section class="section" id="types"><div class="container"><div class="section-header"><p class="kn-eyebrow">%d resources, all free</p><h2>Browse the library</h2>'
+             '<p>Other people\'s brilliant work from across the internet, gathered in one place.</p></div>%s</div></section>' % (len(ENTRIES), type_tiles())
+             + start_here().replace('<section class="section" id="start">', '<section class="section section-tint" id="start">')
              + credit_panels())
     src = src[:src.index(start) + len(start)] + "\n" + block + "\n" + src[src.index(end):]
     open(path, "w", encoding="utf8").write(src)

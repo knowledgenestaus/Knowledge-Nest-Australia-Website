@@ -9,7 +9,7 @@
   var clear = document.getElementById('clearSearch');
   if (!form || !input || !section) return;
 
-  var LABELS = { watch: 'Watch', listen: 'Listen', read: 'Read', research: 'Research', voice: 'Voices', curriculum: 'Curriculum' };
+  var LABELS = { watch: 'Watch', listen: 'Listen', read: 'Read', research: 'Research', voice: 'Voices', curriculum: 'Curriculum', learn: 'Learn' };
   var MAX = 60;
   var index = null;
   var loading = null;

@@ -87,6 +87,8 @@
   if (chipBox) chipBox.hidden = false;
 
   form.hidden = false;
+  var tog = document.getElementById('libFilterToggle');
+  if (tog) { tog.hidden = false; tog.addEventListener('click', function () { var open = form.classList.toggle('open'); tog.setAttribute('aria-expanded', String(open)); tog.textContent = open ? 'Hide filters' : 'Filter this list'; }); }
   syncChips();
   apply();
 })();
