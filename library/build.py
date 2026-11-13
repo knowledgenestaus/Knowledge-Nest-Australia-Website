@@ -271,11 +271,11 @@ def start_here(limit=None):
         links = "".join('<a href="%s">%s</a>' % (area_page(AREA[n]), e(short_area(n))) for n in t["areas"])
         cards_html.append('<article class="lib-start"><p class="lib-start-n" aria-hidden="true">%02d</p><h3>%s</h3><p>%s</p><p class="lib-start-label">Three to begin with</p><ul>%s</ul>'
                           '<p class="lib-start-label">See everything on</p><p class="lib-topics">%s</p></article>' % (len(cards_html) + 1, e(t["title"]), e(t["text"]), lis, links))
-    return ('<section class="section" id="start"><div class="container"><div class="section-header"><p class="kn-eyebrow">Not sure where to begin?</p><h2>Start here</h2>'
-            '<p>Five starting points for a school\'s professional learning journey.</p></div>'
+    return ('<section class="section" id="start"><div class="container"><div class="section-header section-header-illo">ILLO_START<div><p class="kn-eyebrow">Not sure where to begin?</p><h2>Start here</h2>'
+            '<p>Five starting points for a school\'s professional learning journey.</p></div></div>'
             '<div class="lib-starts%s">%s</div>%s</div></section>' % (
                 " lib-starts-three" if limit == 3 else "", "".join(cards_html),
-                '<p class="lib-starts-more"><a href="library.html#start">See all %d starting points %s</a></p>' % (len(START_HERE), ARROW) if limit else ""))
+                '<p class="lib-starts-more"><a href="library.html#start">See all %d starting points %s</a></p>' % (len(START_HERE), ARROW) if limit else "")).replace("ILLO_START", illo("start", "section-illo", 200))
 
 
 def credit_panels():
@@ -288,15 +288,15 @@ def credit_panels():
             "and links straight to the original, and nothing is copied or hosted here.</p>"
             '<p class="lib-small">Is your work listed here? If you would like it described differently or removed, just '
             '<a href="mailto:%s?subject=Library%%20listing">let me know</a>.</p></div>'
-            '<div class="lib-panel lib-panel-navy"><p class="lib-eyebrow">Help it grow</p><h2>Know something that belongs here?</h2>'
+            '<div class="lib-panel lib-panel-grow">ILLO_SUGGEST<p class="lib-eyebrow">Help it grow</p><h2>Know something that belongs here?</h2>'
             "<p>This library is built by sharing. If there is a video, podcast, article or piece of research that has helped you or your team, "
             "send a quick email with the link and it can be added for everyone.</p>"
-            '<p><a href="%s" class="btn btn-accent">Email a suggestion</a></p></div></div></div></section>' % (EMAIL, SUGGEST))
+            '<p><a href="%s" class="btn btn-accent">Email a suggestion</a></p></div></div></div></section>' % (EMAIL, SUGGEST)).replace("ILLO_SUGGEST", illo("suggest", "lib-panel-illo", 220))
 
 
 def suggest_box():
-    return ('<div class="lib-side-box"><h2>Something missing?</h2><p>This library is built by sharing. Send a quick email with a link and it can be added for everyone.</p>'
-            '<p><a href="%s" class="btn btn-outline btn-sm">Email a suggestion</a></p></div>' % SUGGEST)
+    return ('<div class="lib-side-box">ILLO_SUGGEST<h2>Something missing?</h2><p>This library is built by sharing. Send a quick email with a link and it can be added for everyone.</p>'
+            '<p><a href="%s" class="btn btn-outline btn-sm">Email a suggestion</a></p></div>' % SUGGEST).replace("ILLO_SUGGEST", illo("suggest", "lib-side-illo", 160))
 
 
 # ---------- page shell, copied from about.html ----------
