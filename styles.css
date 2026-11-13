@@ -225,6 +225,10 @@ section[id], [id].lib-group { scroll-margin-top: 96px; }
 @media (min-width: 700px) { .lib-starts { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 1040px) { .lib-starts { grid-template-columns: repeat(6, 1fr); } .lib-start { grid-column: span 2; } .lib-start:nth-child(4) { grid-column: 2 / span 2; } }
 
+@media (min-width: 1040px) { .lib-starts-three .lib-start:nth-child(n) { grid-column: span 2; } }
+.lib-starts-more { margin-top: 1.5rem; font-weight: 700; }
+.lib-starts-more a { color: var(--accent-text); }
+
 /* ---------- Resource cards ---------- */
 .lib-list { padding-top: clamp(2rem, 4vw, 3rem); }
 .lib-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }

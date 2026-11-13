@@ -179,7 +179,7 @@ def card(x, show_type=True, level="h3", filterable=False):
         img = THUMBS.get(x["url"])
         pic = ('<img src="%s" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="480" height="270" '
                'onerror="this.remove()">' % e(img)) if img else ""
-        kind = "" if not img else (" lib-thumb-still" if "ytimg.com" in img else " lib-thumb-logo")
+        kind = "" if not img else (" lib-thumb-still" if ("ytimg.com" in img or "edresearch.edu.au" in img) else " lib-thumb-logo")
         thumb = ('<a class="lib-thumb%s" href="%s" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">'
                  '<span class="lib-thumb-name">%s</span>%s<span class="lib-thumb-play"></span></a>' % (kind, e(x["url"]), e(x["by"] or domain_of(x["url"])), pic))
     return (
@@ -250,9 +250,9 @@ def hero(tagline, h1, lead, crumbs=None, extra="", art=None):
             % (" has-illo" if pic else "", crumb, e(tagline), e(h1), lead, extra, pic))
 
 
-def start_here():
+def start_here(limit=None):
     cards_html = []
-    for t in START_HERE:
+    for t in (START_HERE[:limit] if limit else START_HERE):
         pool = [x for x in ENTRIES if set(x["areas"]) & set(t["areas"])]
         picks = []
         for p in t["picks"]:
@@ -273,7 +273,9 @@ def start_here():
                           '<p class="lib-start-label">See everything on</p><p class="lib-topics">%s</p></article>' % (len(cards_html) + 1, e(t["title"]), e(t["text"]), lis, links))
     return ('<section class="section" id="start"><div class="container"><div class="section-header"><p class="kn-eyebrow">Not sure where to begin?</p><h2>Start here</h2>'
             '<p>Five starting points for a school\'s professional learning journey.</p></div>'
-            '<div class="lib-starts">%s</div></div></section>' % "".join(cards_html))
+            '<div class="lib-starts%s">%s</div>%s</div></section>' % (
+                " lib-starts-three" if limit == 3 else "", "".join(cards_html),
+                '<p class="lib-starts-more"><a href="library.html#start">See all %d starting points %s</a></p>' % (len(START_HERE), ARROW) if limit else ""))
 
 
 def credit_panels():
@@ -582,7 +584,7 @@ def build_home_block():
         return
     block = ('<section class="section" id="types"><div class="container"><div class="section-header"><p class="kn-eyebrow">%d resources, all free</p><h2>Browse the library</h2>'
              '<p>Other people\'s brilliant work from across the internet, gathered in one place.</p></div>%s</div></section>' % (len(ENTRIES), type_tiles())
-             + start_here().replace('<section class="section" id="start">', '<section class="section section-tint" id="start">')
+             + start_here(3).replace('<section class="section" id="start">', '<section class="section section-tint" id="start">')
              + credit_panels())
     src = src[:src.index(start) + len(start)] + "\n" + block + "\n" + src[src.index(end):]
     open(path, "w", encoding="utf8").write(src)
