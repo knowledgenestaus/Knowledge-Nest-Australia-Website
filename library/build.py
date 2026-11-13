@@ -340,10 +340,11 @@ def count(t):
 
 
 def tile(href, key, title, blurb, n, noun):
-    art = illo(key, "kn-tile-illo", 240) or '<span class="kn-tile-num" aria-hidden="true">%d</span>' % n
-    return ('<a href="%s" class="kn-tile kn-tile-%s"><span class="kn-tile-art">%s</span><span class="kn-tile-body">'
+    pic = illo(key, "kn-tile-illo", 240)
+    art = pic or '<span class="kn-tile-num" aria-hidden="true">%d</span>' % n
+    return ('<a href="%s" class="kn-tile kn-tile-%s%s"><span class="kn-tile-art">%s</span><span class="kn-tile-body">'
             '<span class="kn-tile-title">%s</span><span class="kn-tile-text">%s</span>'
-            '<span class="kn-tile-cta">%d %s %s</span></span></a>' % (href, key, art, e(title), e(blurb), n, e(noun), ARROW))
+            '<span class="kn-tile-cta">%d %s %s</span></span></a>' % (href, key, " kn-tile-pic" if pic else "", art, e(title), e(blurb), n, e(noun), ARROW))
 
 
 def type_tiles():

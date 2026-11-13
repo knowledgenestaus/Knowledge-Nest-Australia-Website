@@ -181,7 +181,7 @@ section[id], [id].lib-group { scroll-margin-top: 96px; }
 .page-hero-grid, .page-hero-inner { display: flex; align-items: center; justify-content: space-between; gap: 2.5rem; }
 .page-hero-text { max-width: 780px; }
 .page-hero-text > p:not(.hero-tagline):not(.lib-practices):not(.page-hero-jump), .page-hero-lead { margin-top: 0.9rem; font-size: clamp(1.08rem, 1.5vw, 1.22rem); color: var(--body); max-width: 40em; }
-.page-hero-illo { flex: 0 0 auto; width: clamp(180px, 24vw, 300px); height: auto; }
+.page-hero-illo { flex: 0 0 auto; width: clamp(180px, 24vw, 300px); height: auto; padding: 1rem; background: white; border-radius: 24px; }
 .page-hero-jump { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin-top: 1.25rem; }
 .page-hero-jump a { display: inline-flex; align-items: center; min-height: 40px; padding: 0.3rem 1rem; border-radius: 50px; background: white; border: 1.5px solid var(--navy); font-size: 0.95rem; font-weight: 700; color: var(--navy); }
 .page-hero-jump a:hover { background: var(--navy); color: white; }
@@ -203,7 +203,8 @@ section[id], [id].lib-group { scroll-margin-top: 96px; }
 .kn-tile:nth-child(4n+4) .kn-tile-art { background: var(--navy); }
 .kn-tile-num { font-family: var(--font-display); font-weight: 500; font-style: italic; font-size: clamp(2.4rem, 6vw, 3.4rem); line-height: 1; color: var(--navy); }
 .kn-tile:nth-child(4n+4) .kn-tile-num { color: var(--sky); }
-.kn-tile-illo { width: 100%; max-width: 150px; height: auto; margin: 0 auto; }
+.kn-tile.kn-tile-pic .kn-tile-art { align-items: center; justify-content: center; min-height: 0; padding: 0.9rem 1rem 0.2rem; background: white; }
+.kn-tile-illo { width: 100%; max-width: 190px; height: auto; margin: 0 auto; }
 .kn-tile-body { display: flex; flex-direction: column; gap: 0.3rem; flex: 1; padding: 0.95rem 1rem 1.1rem; }
 .kn-tile-title { font-family: var(--font-display); font-weight: 600; font-size: 1.25rem; line-height: 1.2; color: var(--navy); }
 .kn-tile-text { font-size: 0.96rem; line-height: 1.45; color: var(--body); }
