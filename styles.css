@@ -1679,3 +1679,15 @@ section[id] { scroll-margin-top: 90px; }
 .lib-chip:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
 .lib-group-lead a { font-weight: 700; text-decoration: underline; }
 .lib-subhead-first { margin-top: 2.5rem; font-size: 1.45rem; }
+
+/* Home page search and the About page note */
+.hero-search { margin: 1.4rem auto 1.1rem; }
+.hero-search input { border-color: rgba(17,46,91,0.25); }
+.passion-note { max-width: 720px; margin: 0 auto; padding: 1.75rem; text-align: center; background: var(--sandstone-pale); border: 1.5px dashed var(--terracotta-light); border-radius: var(--radius); }
+.passion-note p { margin-bottom: 1rem; color: var(--text-body); font-size: 1.08rem; }
+.passion-note p:last-child { margin-bottom: 0; }
+
+.hero-textlink { align-self: center; font-weight: 700; color: var(--navy); text-decoration: underline; text-underline-offset: 4px; }
+.hero-textlink:hover { color: #a0532f; }
+.lib-starts { display: flex; flex-wrap: wrap; justify-content: center; }
+.lib-start { flex: 1 1 300px; max-width: 380px; }
