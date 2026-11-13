@@ -384,9 +384,10 @@ def build_types():
                 if s.get("apple") and s["apple"] != s["url"]:
                     listen.append('<a href="%s" target="_blank" rel="noopener">Listen on Apple Podcasts%s</a>' % (e(s["apple"]), NEWTAB))
                 bits = [s["by"]] + s["meta"] + ([s["note"]] if s.get("note") else [])
-                return ('<article class="lib-card lib-show">%s<div><h3 class="lib-card-title"><a href="%s" target="_blank" rel="noopener">%s%s</a></h3><p class="lib-by">%s</p>'
+                return ('<article class="lib-card lib-show">%s<div><h3 class="lib-card-title"><a href="%s" target="_blank" rel="noopener">%s%s</a></h3><p class="lib-by">%s</p>%s'
                         '%s<p class="lib-card-foot"><span class="lib-source">Opens at %s</span></p></div></article>'
                         % (icon, e(s["url"]), e(s["title"]), NEWTAB, " &middot; ".join(e(b) for b in bits if b),
+                           ('<p class="lib-summary">%s</p>' % e(s["desc"])) if s.get("desc") else "",
                            ('<p class="lib-listen">%s</p>' % "".join(listen)) if listen else "", e(domain_of(s["url"]))))
             intro = ('<section class="lib-group" id="shows"><h2>Five must-listen podcasts</h2><p class="lib-group-lead">A place to start. Cover art belongs to each show.</p>'
                      '<div class="lib-grid">%s</div>' % "".join(show_card(s) for s in top))

@@ -9786,7 +9786,8 @@
     "Australia"
    ],
    "spotify": "https://open.spotify.com/show/6C5FhDMLS6bWuMuOOO3N8C",
-   "art": "https://image-cdn-ak.spotifycdn.com/image/ab67656300005f1f5afd2099c7aea2cf4ea7c734"
+   "art": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1f5afd2099c7aea2cf4ea7c734",
+   "desc": "A short-form podcast of questions, insights and warm conversation about teaching. Each episode explores one theme raised by teachers and leaders."
   },
   {
    "title": "Knowledge for Teachers",
@@ -9797,7 +9798,8 @@
     "Australia"
    ],
    "spotify": "https://open.spotify.com/show/39ks1ntOQOqztQquJHW33J",
-   "art": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1f009da7adea8bbab412923f88"
+   "art": "https://image-cdn-ak.spotifycdn.com/image/ab67656300005f1f009da7adea8bbab412923f88",
+   "desc": "Brendan Lee talks with researchers, teachers and experts about evidence-informed education and what it takes to make it work in schools."
   },
   {
    "title": "Education Research Reading Room",
@@ -9808,7 +9810,8 @@
     "Australia"
    ],
    "spotify": "https://open.spotify.com/show/0FMZoHxEaVdn6ar6dhrDzh",
-   "art": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1fe685ddeb52dac3314aaf238f"
+   "art": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1fe685ddeb52dac3314aaf238f",
+   "desc": "Ollie Lovell goes deep on one area of education each episode with a leading thinker, from classroom teachers to professors."
   },
   {
    "title": "Chalk Dust",
@@ -9818,8 +9821,9 @@
     "General teaching",
     "Australia"
    ],
-   "apple": "https://podcasts.apple.com/au/podcast/chalk-dust/id1805097748",
-   "art": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/7a/5e/57/7a5e5707-f1f5-96a8-4c52-d962bfec238b/mza_15013255139132850357.jpeg/600x600bb.jpg"
+   "art": "https://image-cdn-fa.spotifycdn.com/image/ab6772ab000015bef566a5d11bd6c3d8a1d7d533",
+   "spotify": "https://open.spotify.com/show/06vOFMM67WjmUWuU7Spnk4",
+   "desc": "A front-row seat in some of the best classrooms in the world, looking closely at real teaching."
   },
   {
    "title": "The Structured Literacy Podcast",
@@ -9830,7 +9834,8 @@
     "Australia"
    ],
    "spotify": "https://open.spotify.com/show/2t9uJWY0qNJItFURjAEq7z",
-   "art": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1f2311c9a34cc46977065182fa"
+   "art": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1f2311c9a34cc46977065182fa",
+   "desc": "Jocelyn Seamer on evidence-informed reading and writing instruction, for teachers and school leaders."
   },
   {
    "title": "The Explicit Mathematics Podcast",
@@ -9839,7 +9844,10 @@
    "meta": [
     "Maths",
     "Australia"
-   ]
+   ],
+   "spotify": "https://open.spotify.com/show/48WijwF7rkTyTeQupvY8QG",
+   "art": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1fb08e5dabb0807eb9c96af41e",
+   "desc": "Helps teachers and leaders understand explicit maths teaching and put the Explicit Mathematics Program in place."
   },
   {
    "title": "The Art of Teaching",
@@ -9848,7 +9856,10 @@
    "meta": [
     "Leadership",
     "Australia"
-   ]
+   ],
+   "spotify": "https://open.spotify.com/show/033j4x1lBnxyB8CdLrfxFE",
+   "art": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1f95bfda44b643d3190874946f",
+   "desc": "Mathew Green interviews teachers and school leaders."
   },
   {
    "title": "Teacher Magazine (ACER)",
@@ -9857,7 +9868,10 @@
    "meta": [
     "General teaching",
     "Australia"
-   ]
+   ],
+   "spotify": "https://open.spotify.com/show/1Fe2cvTlb93jPLLjc6pqWh",
+   "art": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1f939855538ccd32d5cd490efe",
+   "desc": "Podcasts from ACER's Teacher magazine, including the School Improvement and Teacher Staffroom series."
   },
   {
    "title": "Dyscastia",
@@ -9866,7 +9880,10 @@
    "meta": [
     "Inclusion and support",
     "Australia"
-   ]
+   ],
+   "spotify": "https://open.spotify.com/show/1iEJmQLXeXMUqqYp82OHuj",
+   "art": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1f8ba90df7ae925ccbf2f1f900",
+   "desc": "For parents and educators, on supporting students with learning difficulties such as dyslexia. Hosted by specialist teacher Michael Shanahan."
   },
   {
    "title": "Mind the Gap: Making Education Work Across the Globe",
@@ -9886,7 +9903,9 @@
    "meta": [
     "Curriculum",
     "UK"
-   ]
+   ],
+   "apple": "https://podcasts.apple.com/au/podcast/thinking-deeply-about-primary-education/id1546748470",
+   "desc": "A look inside the thinking of primary teachers, for new teachers and experienced leaders alike."
   },
   {
    "title": "Evidence into Action",
@@ -9896,8 +9915,9 @@
     "General teaching",
     "UK"
    ],
-   "apple": "https://podcasts.apple.com/au/podcast/evidence-into-action/id1542740384",
-   "art": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts115/v4/df/10/d9/df10d9cc-6c3d-6d9f-0613-2c7aa5d18693/mza_4732804276198353716.png/600x600bb.jpg"
+   "art": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1fa8b4df91166d2926f5e79218",
+   "spotify": "https://open.spotify.com/show/6tOqAXPbrLsAzMDn5zwI56",
+   "desc": "The Education Endowment Foundation brings researchers together with teachers and school leaders."
   },
   {
    "title": "They Behave For Me",
@@ -9908,7 +9928,8 @@
     "UK"
    ],
    "spotify": "https://open.spotify.com/show/0FWXOO5a6aHTMNZmcjPELv",
-   "art": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1f310db5804995bd7857f9f8a1"
+   "art": "https://image-cdn-ak.spotifycdn.com/image/ab67656300005f1f310db5804995bd7857f9f8a1",
+   "desc": "Adam Boxer and Amy Forrester discuss policy, curriculum, teaching and learning, with a secondary school focus."
   },
   {
    "title": "Mr Barton Maths Podcast",
@@ -9919,7 +9940,8 @@
     "UK"
    ],
    "spotify": "https://open.spotify.com/show/55VZfVNogPJRgarLDv9TDn",
-   "art": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1f8eddc2c82f592bbb1457b840"
+   "art": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1f8eddc2c82f592bbb1457b840",
+   "desc": "Craig Barton interviews guests about their approaches to teaching and educational research."
   },
   {
    "title": "Chalk & Talk",
@@ -9930,7 +9952,8 @@
     "Canada"
    ],
    "spotify": "https://open.spotify.com/show/0bPpD7OIioLbAYhKNh1az0",
-   "art": "https://image-cdn-fa.spotifycdn.com/image/ab6772ab000015bed5af3b349ea9f03d6affc98c"
+   "art": "https://image-cdn-fa.spotifycdn.com/image/ab6772ab000015bed5af3b349ea9f03d6affc98c",
+   "desc": "Maths professor Anna Stokke talks with educators and researchers about what works in teaching maths, sorting myths from facts."
   },
   {
    "title": "Sold a Story",
@@ -9942,16 +9965,19 @@
    ],
    "note": "Seasons 1 and 2",
    "spotify": "https://open.spotify.com/show/0tcUMXBFMGMe8w79MM5QCI",
-   "art": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1f0da28702c013d469b0e78060"
+   "art": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1f0da28702c013d469b0e78060",
+   "desc": "An investigative series on how children learn and why the research often does not reach classrooms. Season 1 examines why so many children struggle to learn to read."
   },
   {
-   "title": "Triple R Teaching",
+   "title": "Reach All Readers (formerly Triple R Teaching)",
    "by": "Anna Geiger",
    "url": "https://reachallreaders.com/podcast-index/",
    "meta": [
     "Reading and phonics",
     "USA"
-   ]
+   ],
+   "apple": "https://podcasts.apple.com/au/podcast/reach-all-readers/id1498200908",
+   "desc": "Anna Geiger's practical conversations about teaching reading well and applying the science of reading in the classroom."
   },
   {
    "title": "Reading Road Trip",
@@ -9960,7 +9986,10 @@
    "meta": [
     "Reading and phonics",
     "Canada"
-   ]
+   ],
+   "spotify": "https://open.spotify.com/show/4jdqCmpwV3Lsqg8s2iZuyK",
+   "art": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1f27b6158a96a0b724e4c69889",
+   "desc": "Classroom teacher Kate Winn explores evidence-based literacy instruction with a guest each episode, from IDA Ontario."
   },
   {
    "title": "The Learning Scientists Podcast",
@@ -9971,7 +10000,8 @@
     "USA"
    ],
    "spotify": "https://open.spotify.com/show/3uA0quRZZtW75VAu001NZJ",
-   "art": "https://image-cdn-ak.spotifycdn.com/image/ab67656300005f1f1a1e22f3e945b14a0806c962"
+   "art": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1f1a1e22f3e945b14a0806c962",
+   "desc": "For teachers, students and parents, on evidence-based practice and learning."
   },
   {
    "title": "Coaching Conversations with Jim Knight",
@@ -9980,7 +10010,10 @@
    "meta": [
     "Coaching and PL",
     "USA"
-   ]
+   ],
+   "spotify": "https://open.spotify.com/show/4C2TRENn6cBW60FLAbCpfi",
+   "art": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1fb6011be101895189335d19ce",
+   "desc": "Jim Knight, founder of the Instructional Coaching Group, on coaching and a partnership approach to professional learning."
   },
   {
    "title": "EDVIEW360",
@@ -9989,7 +10022,10 @@
    "meta": [
     "Reading and phonics",
     "USA"
-   ]
+   ],
+   "spotify": "https://open.spotify.com/show/47TAvEJ1DD2wianx3OAvow",
+   "art": "https://image-cdn-ak.spotifycdn.com/image/ab67656300005f1f1d560de6bc04edea639fe6bf",
+   "desc": "Pam Austin hosts conversations with experienced educators and education leaders."
   },
   {
    "title": "Progressively Incorrect",
@@ -10000,7 +10036,8 @@
     "USA"
    ],
    "spotify": "https://open.spotify.com/show/3ZehlKNbKaJvoWdpVtwzFE",
-   "art": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1f8f0bd1b81fe024659d42c33d"
+   "art": "https://image-cdn-ak.spotifycdn.com/image/ab67656300005f1f8f0bd1b81fe024659d42c33d",
+   "desc": "Zach Groshell on the teacher-centred and the student-centred, the traditional and the progressive, in education."
   },
   {
    "title": "Science of Reading: The Podcast",
@@ -10011,18 +10048,20 @@
     "USA"
    ],
    "spotify": "https://open.spotify.com/show/37fvs1dgedM2DgRHkYWOyv",
-   "art": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1fcbc46eeb39a8b30dcd565f9f"
+   "art": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1fcbc46eeb39a8b30dcd565f9f",
+   "desc": "Amplify's podcast on the science of reading and how to teach it."
   },
   {
    "title": "Teacher Takeaway",
-   "by": "",
+   "by": "Four Australian teachers",
    "url": "https://podcasts.apple.com/au/podcast/teacher-takeaway/id1565473871",
    "meta": [
     "General teaching",
     "Australia"
    ],
-   "apple": "https://podcasts.apple.com/au/podcast/teacher-takeaway/id1565473871",
-   "art": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts126/v4/07/a1/cb/07a1cbd5-bd84-2296-6164-8755a90b4bcf/mza_6791898673874378242.jpg/600x600bb.jpg"
+   "art": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1f834da482d4f124882e92bcfb",
+   "spotify": "https://open.spotify.com/show/1YGfJ56fKQn9J5R8xd1qf9",
+   "desc": "Four Australian teachers share practical takeaway ideas to use in your classroom or school."
   },
   {
    "title": "Schoolin' Around",
@@ -10032,8 +10071,9 @@
     "Tiered support",
     "USA"
    ],
-   "apple": "https://podcasts.apple.com/au/podcast/schoolin-around/id1653176434",
-   "art": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/08/a2/f3/08a2f3d0-24b2-b1d9-93d7-e0ff195e50c6/mza_17381813647258982487.png/600x600bb.jpg"
+   "art": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1f054905a5cb75ad9635e1684c",
+   "spotify": "https://open.spotify.com/show/508YOGvq6UITpubPTsexaR",
+   "desc": "A weekly podcast from Branching Minds, with leaders and experts on current challenges in school education."
   }
  ],
  "vtlm": {
