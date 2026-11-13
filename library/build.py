@@ -94,6 +94,7 @@ for x in ENTRIES:
 for x in LEARN["entries"]:
     ENTRIES.append(dict(x, type="learn"))
 SUBSTACKS = _load("substacks.json", [])
+THUMBS = _load("thumbs.json", {})  # video url -> preview image url (linked, never copied); see tools/thumbs.py
 # Jo's must-follow Substacks, by title, shown first on the Read page. Leave empty until chosen.
 MUST_SUBSTACKS = []
 SHOWS = DATA["shows"]
@@ -173,10 +174,18 @@ def card(x, show_type=True, level="h3", filterable=False):
         text = " ".join([x["title"], x["by"], x.get("summary", ""), x.get("focus", ""), " ".join(x["meta"])] + [AREA[n]["name"] for n in x["areas"]]).lower()
         data = ' data-topics="%s" data-areas="%s" data-bands="%s" data-subject="%s" data-region="%s" data-by="%s" data-text="%s"' % (
             e("|".join(topics_of(x))), ",".join(str(n) for n in x["areas"]), ",".join(x.get("bands", [])), e(x.get("subject", "")), e(x.get("region", "")), e(x["by"]), e(text))
+    thumb = ""
+    if x["type"] in ("watch", "learn"):
+        img = THUMBS.get(x["url"])
+        pic = ('<img src="%s" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="480" height="270" '
+               'onerror="this.remove()">' % e(img)) if img else ""
+        kind = "" if not img else (" lib-thumb-still" if "ytimg.com" in img else " lib-thumb-logo")
+        thumb = ('<a class="lib-thumb%s" href="%s" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">'
+                 '<span class="lib-thumb-name">%s</span>%s<span class="lib-thumb-play"></span></a>' % (kind, e(x["url"]), e(x["by"] or domain_of(x["url"])), pic))
     return (
-        '<article class="lib-card" data-type="%s"%s>%s%s<%s class="lib-card-title"><a href="%s" target="_blank" rel="noopener">%s%s</a></%s>'
+        '<article class="lib-card%s" data-type="%s"%s>%s%s%s<%s class="lib-card-title"><a href="%s" target="_blank" rel="noopener">%s%s</a></%s>'
         '%s%s%s<p class="lib-card-foot">%s<span class="lib-source">Opens at %s</span></p></article>'
-        % (x["type"], data, badge, focus, level, e(x["url"]), e(x["title"]), NEWTAB, level,
+        % (" has-thumb" if thumb else "", x["type"], data, thumb, badge, focus, level, e(x["url"]), e(x["title"]), NEWTAB, level,
            ('<p class="lib-by">%s</p>' % line) if line else "", summary, topics, tags, e(domain_of(x["url"])))
     )
 
@@ -588,7 +597,7 @@ def build_search_index():
 
 
 def build_sitemap():
-    static = ["", "library.html", "resources.html", "about.html", "services.html", "enquiry.html"]
+    static = ["", "library.html", "resources.html", "about.html", "enquiry.html"]
     pages = static + [p for p in BUILT if p != "library.html"]
     today = date.today().isoformat()
     xml = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
