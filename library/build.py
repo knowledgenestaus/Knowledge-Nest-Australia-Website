@@ -21,32 +21,38 @@ SITE = "https://knowledgenest.com.au/"
 EMAIL = "jo@knowledgenest.com.au"
 SUGGEST = "mailto:%s?subject=Library%%20suggestion" % EMAIL
 
-# Broad topics for filtering long lists, built from the focus areas.
+# Categories for filtering long lists, built from the focus areas.
 TOPICS = OrderedDict([
-    ("Literacy and English", [7, 8, 9, 10, 11]),
+    ("Explicit instruction", [2, 3, 4, 23, 24]),
+    ("Cognitive science", [1, 3, 15]),
+    ("English", [7, 8, 9, 10, 11]),
     ("Maths", [12]),
-    ("Classroom teaching", [2, 3, 4, 5, 23, 24]),
-    ("How learning works", [1, 15]),
+    ("Multi-tiered systems of support", []),   # split out of area 14 by keyword, below
+    ("Inclusion and support", []),             # split out of area 14 by keyword, below
+    ("Behaviour", [5, 20]),
+    ("Instructional coaching", [16]),
+    ("Change management and implementation", [17, 22]),
+    ("Leadership and culture", [19, 21]),
     ("Curriculum", [6]),
-    ("Assessment and tiered support", [13, 14]),
-    ("Instructional coaching and professional learning", [16]),
-    ("Leadership and culture", [19, 20, 21]),
-    ("Implementation and change", [17, 22]),
+    ("Assessment and data", [13]),
     ("Evidence and debates", [18]),
 ])
-
-# How the other podcast shows are grouped on the Listen page.
-SHOW_GROUPS = OrderedDict([
-    ("Teaching and learning", ["General teaching", "How learning works", "Curriculum", "Leadership"]),
-    ("Literacy and English", ["Reading and phonics"]),
-    ("Maths", ["Maths"]),
-    ("Instructional coaching", ["Coaching and PL"]),
-    ("Behaviour, inclusion and support", ["Behaviour and culture", "Inclusion and support", "Tiered support"]),
-])
+MTSS_WORDS = re.compile(r"mtss|multi-tiered|\btier|screen|intervention|progress monitoring|response to intervention", re.I)
+INCLUSION_WORDS = re.compile(r"dyslexi|inclusi|special educational|\bsend\b|adaptive|diverse|twice|exceptional|teaching assistant|learning difficult|neurodiv|disabilit", re.I)
 
 
 def topics_of(x):
-    return [t for t, ns in TOPICS.items() if set(ns) & set(x["areas"])]
+    out = [t for t, ns in TOPICS.items() if set(ns) & set(x["areas"])]
+    text = " ".join([x["title"], x.get("focus", ""), x.get("summary", "")])
+    mtss = bool(MTSS_WORDS.search(text))
+    incl = bool(INCLUSION_WORDS.search(text))
+    if 14 in x["areas"] and not (mtss or incl):
+        incl = True
+    if mtss and (14 in x["areas"] or 13 in x["areas"] or re.search(r"mtss|multi-tiered", text, re.I)):
+        out.append("Multi-tiered systems of support")
+    if incl and (14 in x["areas"] or INCLUSION_WORDS.search(x["title"])):
+        out.append("Inclusion and support")
+    return [t for t in TOPICS if t in out]
 
 
 # Shows featured at the top of the Listen page, in order.
@@ -169,8 +175,8 @@ def filter_bar(items, kind):
     """Filter controls for a long list. Works without JavaScript as a plain list."""
     area_ns = [a["n"] for d in DOMAIN_ORDER for a in AREAS if a["domain"] == d and any(a["n"] in x["areas"] for x in items)]
     topic_names = [t for t in TOPICS if any(t in topics_of(x) for x in items)]
-    fields = ['<div class="lib-field"><label for="fTopic">Topic</label><select id="fTopic" data-filter="topics">%s</select></div>'
-              % options([(t, t) for t in topic_names], "All topics")]
+    fields = ['<div class="lib-field"><label for="fTopic">Category</label><select id="fTopic" data-filter="topics">%s</select></div>'
+              % options([(t, t) for t in topic_names], "All categories")]
     fields += ['<div class="lib-field"><label for="fArea">Focus area</label><select id="fArea" data-filter="areas">%s</select></div>'
               % options([(str(n), short_area(n)) for n in area_ns], "All focus areas")]
     if kind == "watch":
@@ -190,7 +196,7 @@ def filter_bar(items, kind):
                   '<input type="search" id="fText" placeholder="e.g. worked examples" autocomplete="off"></div>')
     chips = "".join('<button type="button" class="lib-chip" data-topic="%s">%s <span>%d</span></button>'
                     % (e(t), e(t), sum(1 for x in items if t in topics_of(x))) for t in topic_names)
-    return ('<div class="lib-chips" id="libChips" hidden><p>Browse by topic</p><div>%s</div></div>' % chips +
+    return ('<div class="lib-chips" id="libChips" hidden><p>Browse by category</p><div>%s</div></div>' % chips +
             '<form class="lib-filters" id="libFilters" hidden><div class="lib-filter-row">%s</div>'
             '<p class="lib-filter-status"><span id="fCount" role="status" aria-live="polite"></span> '
             '<button type="reset" class="lib-reset">Clear filters</button></p></form>' % "".join(fields))
@@ -202,7 +208,7 @@ def filtered_list(items, kind):
     return (filter_bar(items, kind) + '<div id="libList">%s</div>' % cards(items, False, "h3", True)
             + '<p class="lib-more" hidden><button type="button" class="btn btn-primary" id="libMore">Show more</button></p>'
             + '<p class="lib-empty" id="libEmpty" hidden>Nothing matches those filters yet. Try clearing one, or <a href="%s">email a suggestion</a>.</p>' % SUGGEST
-            + '<script src="library/filter.js?v=2" defer></script>')
+            + '<script src="library/filter.js?v=3" defer></script>')
 
 
 WAVE = ('<div class="wave-bottom"><svg aria-hidden="true" focusable="false" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">'
@@ -398,8 +404,11 @@ def build_types():
             nav, sections = [], '<section class="lib-group">%s</section>' % cards(items, False, "h2")
         elif key in ("watch", "listen"):
             nav = []
-            heading = "All videos" if key == "watch" else "Episodes by topic"
-            sections = '<section class="lib-group" id="all"><h2>%s <span class="lib-count">%d</span></h2>%s</section>' % (heading, len(items), filtered_list(items, key))
+            heading = "All videos" if key == "watch" else "Episodes by category"
+            lead = ("If there's something specific you're after, try our little search and category tools below and take a look at what we've found."
+                    if key == "listen" else "Use the categories and filters to find footage for a particular professional learning focus.")
+            sections = ('<section class="lib-group" id="all"><h2>%s <span class="lib-count">%d</span></h2><p class="lib-group-lead">%s</p>%s</section>'
+                        % (heading, len(items), lead, filtered_list(items, key)))
         else:
             nav, sections = grouped_sections(items)
         if key == "listen" and SHOWS:
@@ -427,15 +436,10 @@ def build_types():
                      'I\'m always welcoming new suggestions too, so if you\'ve got a favourite that I\'ve neglected to include, '
                      '<a href="mailto:%s?subject=Podcast%%20suggestion">shoot it my way</a> so I can get listening.</p>'
                      '<div class="lib-grid">%s</div>' % (EMAIL, "".join(show_card(s) for s in top)))
-            intro += '<h3 class="lib-subhead lib-subhead-first">More shows, by category</h3><p class="lib-group-lead">Cover art belongs to each show.</p>'
-            for label, subjects in SHOW_GROUPS.items():
-                group = sorted([s for s in rest if (s["meta"][0] if s["meta"] else "") in subjects], key=lambda s: s["title"].lower())
-                if group:
-                    intro += ('<h3 class="lib-subhead">%s <span class="lib-count">%d</span></h3><div class="lib-grid">%s</div>'
-                              % (e(label), len(group), "".join(show_card(s) for s in group)))
-            other = [s for s in rest if not any((s["meta"][0] if s["meta"] else "") in v for v in SHOW_GROUPS.values())]
-            if other:
-                intro += '<h3 class="lib-subhead">More</h3><div class="lib-grid">%s</div>' % "".join(show_card(s) for s in other)
+            if rest:
+                intro += ('<h3 class="lib-subhead lib-subhead-first">More great podcasts <span class="lib-count">%d</span></h3>'
+                          '<p class="lib-group-lead">Broad, general suggestions. Most of these shows range across many topics.</p><div class="lib-grid">%s</div>'
+                          % (len(rest), "".join(show_card(s) for s in sorted(rest, key=lambda s: s["title"].lower()))))
             intro += "</section>"
         toc = ('<nav class="lib-toc" aria-label="On this page"><span>Jump to:</span>%s</nav>' % "".join('<a href="#%s">%s</a>' % (i, e(l)) for i, l in nav)) if nav else ""
         body = hero("Library", t["title"], lead, crumbs=[("Library", "library.html"), (t["title"], None)])
