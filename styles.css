@@ -1662,3 +1662,9 @@ section[id] { scroll-margin-top: 90px; }
 .lib-start li a:hover { color: #a0532f; }
 .lib-start .lib-start-label { margin-top: 0.3rem; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #a0532f; }
 .lib-start .lib-type { display: inline-block; margin-right: 0.2rem; vertical-align: middle; }
+
+.lib-show-art { flex-shrink: 0; width: 72px; height: 72px; border-radius: 10px; object-fit: cover; background: var(--sandstone-light); box-shadow: 0 2px 8px var(--shadow); }
+.lib-listen { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.lib-listen a { padding: 0.2rem 0.8rem; border-radius: 50px; background: var(--navy); color: white; font-size: 0.85rem; font-weight: 700; }
+.lib-listen a:hover { background: var(--navy-light); color: white; }
+.lib-subhead { margin: 2rem 0 0.9rem; font-size: 1.25rem; }

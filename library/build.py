@@ -22,9 +22,7 @@ EMAIL = "jo@knowledgenest.com.au"
 SUGGEST = "mailto:%s?subject=Library%%20suggestion" % EMAIL
 
 # Shows featured at the top of the Listen page, in order.
-TOP_SHOWS = ["Jones & McLean", "Knowledge for Teachers", "Education Research Reading Room", "Chalk Dust", "The Structured Literacy Podcast",
-             "The Explicit Mathematics Podcast", "Mind the Gap: Making Education Work Across the Globe", "Evidence into Action",
-             "They Behave For Me", "Mr Barton Maths Podcast"]
+TOP_SHOWS = ["Sold a Story", "Jones & McLean", "Chalk Dust", "Education Research Reading Room", "Mind the Gap: Making Education Work Across the Globe"]
 
 # "Start here" on the library home. Each topic links to its areas and offers up to three picks,
 # chosen by matching the start of a title; if a pick is missing, the first entry of that type is used.
@@ -374,15 +372,32 @@ def build_types():
             top = [s for name in TOP_SHOWS for s in SHOWS if s["title"] == name]
             rest = [s for s in SHOWS if s not in top]
             def show_card(s):
-                return ('<article class="lib-card lib-show"><span class="lib-show-icon" aria-hidden="true"><svg viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">%s</svg></span>'
-                        '<div><h3 class="lib-card-title"><a href="%s" target="_blank" rel="noopener">%s%s</a></h3><p class="lib-by">%s</p>'
-                        '<p class="lib-card-foot"><span class="lib-source">Opens at %s</span></p></div></article>'
-                        % (TYPES["listen"]["icon"], e(s["url"]), e(s["title"]), NEWTAB, " &middot; ".join(e(b) for b in [s["by"]] + s["meta"] if b), e(domain_of(s["url"]))))
-            intro = ('<section class="lib-group" id="shows"><h2>Ten podcasts to start with</h2><p class="lib-group-lead">Australian and UK shows that are a good place to begin.</p>'
+                # Cover art is loaded from the podcast platform's own image address; nothing is copied to this site.
+                if s.get("art"):
+                    icon = '<img class="lib-show-art" src="%s" alt="" width="72" height="72" loading="lazy" decoding="async" referrerpolicy="no-referrer">' % e(s["art"])
+                else:
+                    icon = ('<span class="lib-show-icon" aria-hidden="true"><svg viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">%s</svg></span>'
+                            % TYPES["listen"]["icon"])
+                listen = []
+                if s.get("spotify"):
+                    listen.append('<a href="%s" target="_blank" rel="noopener">Listen on Spotify%s</a>' % (e(s["spotify"]), NEWTAB))
+                if s.get("apple") and s["apple"] != s["url"]:
+                    listen.append('<a href="%s" target="_blank" rel="noopener">Listen on Apple Podcasts%s</a>' % (e(s["apple"]), NEWTAB))
+                bits = [s["by"]] + s["meta"] + ([s["note"]] if s.get("note") else [])
+                return ('<article class="lib-card lib-show">%s<div><h3 class="lib-card-title"><a href="%s" target="_blank" rel="noopener">%s%s</a></h3><p class="lib-by">%s</p>'
+                        '%s<p class="lib-card-foot"><span class="lib-source">Opens at %s</span></p></div></article>'
+                        % (icon, e(s["url"]), e(s["title"]), NEWTAB, " &middot; ".join(e(b) for b in bits if b),
+                           ('<p class="lib-listen">%s</p>' % "".join(listen)) if listen else "", e(domain_of(s["url"]))))
+            intro = ('<section class="lib-group" id="shows"><h2>Five must-listen podcasts</h2><p class="lib-group-lead">A place to start. Cover art belongs to each show.</p>'
                      '<div class="lib-grid">%s</div>' % "".join(show_card(s) for s in top))
-            if rest:
-                intro += ('<details class="lib-details"><summary>More shows worth a listen <span class="lib-count">%d</span></summary><div class="lib-grid">%s</div></details>'
-                          % (len(rest), "".join(show_card(s) for s in rest)))
+            def region(s):
+                r = s["meta"][-1] if s["meta"] else ""
+                return "Australia" if r == "Australia" else "United Kingdom" if r == "UK" else "North America"
+            for label in ("Australia", "United Kingdom", "North America"):
+                group = sorted([s for s in rest if region(s) == label], key=lambda s: s["title"].lower())
+                if group:
+                    intro += ('<h3 class="lib-subhead">More from %s <span class="lib-count">%d</span></h3><div class="lib-grid">%s</div>'
+                              % ("the United Kingdom" if label == "United Kingdom" else label, len(group), "".join(show_card(s) for s in group)))
             intro += "</section>"
         toc = ('<nav class="lib-toc" aria-label="On this page"><span>Jump to:</span>%s</nav>' % "".join('<a href="#%s">%s</a>' % (i, e(l)) for i, l in nav)) if nav else ""
         body = hero("Library", t["title"], lead, crumbs=[("Library", "library.html"), (t["title"], None)])
