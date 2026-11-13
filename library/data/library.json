@@ -9850,18 +9850,6 @@
    "desc": "Helps teachers and leaders understand explicit maths teaching and put the Explicit Mathematics Program in place."
   },
   {
-   "title": "The Art of Teaching",
-   "by": "Mathew Green",
-   "url": "https://theartofteaching.podbean.com/",
-   "meta": [
-    "Leadership",
-    "Australia"
-   ],
-   "spotify": "https://open.spotify.com/show/033j4x1lBnxyB8CdLrfxFE",
-   "art": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1f95bfda44b643d3190874946f",
-   "desc": "Mathew Green interviews teachers and school leaders."
-  },
-  {
    "title": "Teacher Magazine (ACER)",
    "by": "ACER",
    "url": "https://podcasts.apple.com/vu/podcast/teacher-magazine-acer/id899419616",
@@ -9894,7 +9882,8 @@
     "UK"
    ],
    "spotify": "https://open.spotify.com/show/4QthkefoaLhKf9jCEM9tF1",
-   "art": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1f0d512ab63ea54dd5bcc77ffa"
+   "art": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1f0d512ab63ea54dd5bcc77ffa",
+   "desc": "Tom Sherrington and Emma Turner on classroom practice and professional development that makes a difference."
   },
   {
    "title": "Thinking Deeply about Primary Education",
