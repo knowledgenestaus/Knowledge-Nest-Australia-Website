@@ -437,10 +437,10 @@ def build_types():
         elif key in ("watch", "listen"):
             nav = []
             heading = "All videos" if key == "watch" else "Episodes by category"
-            lead = ("If there's something specific you're after, try our little search and category tools below and take a look at what we've found."
-                    if key == "listen" else "Use the categories and filters to find footage for a particular professional learning focus.")
+            glead = ("If there's something specific you're after, try our little search and category tools below and take a look at what we've found."
+                     if key == "listen" else "Use the categories and filters to find footage for a particular professional learning focus.")
             sections = ('<section class="lib-group" id="all"><h2>%s <span class="lib-count">%d</span></h2><p class="lib-group-lead">%s</p>%s</section>'
-                        % (heading, len(items), lead, filtered_list(items, key)))
+                        % (heading, len(items), glead, filtered_list(items, key)))
         else:
             nav, sections = grouped_sections(items)
         if key == "read" and SUBSTACKS:
@@ -551,6 +551,19 @@ def build_vtlm():
           "Podcast episodes for Victorian teachers and leaders, grouped by the elements of the Victorian Teaching and Learning Model 2.0.", body, "VTLM 2.0 view")
 
 
+def build_404():
+    search = ('<form class="lib-search" role="search" action="library.html" method="get"><label class="sr-only" for="q404">Search the library</label>'
+              '<input type="search" id="q404" name="q" placeholder="Search the library, e.g. phonics" autocomplete="off">'
+              '<button type="submit" class="btn btn-primary">Search</button></form>')
+    body = hero("Page not found", "This page has flown the nest",
+                "The page you were after has moved or no longer exists. Try a search, or pick a shelf below.", extra=search, art="notfound")
+    body += '<section class="section"><div class="container">%s</div></section>' % type_tiles()
+    write("404.html", "Page not found | Knowledge Nest", "The page you were looking for could not be found.", body)
+    path = os.path.join(ROOT, "404.html")
+    html = open(path, encoding="utf8").read().replace("<head>", '<head>\n  <meta name="robots" content="noindex">\n  <base href="/">', 1)
+    open(path, "w", encoding="utf8").write(html)
+
+
 def build_home_block():
     """Refreshes the library sections on the site's home page, between the LIBRARY markers."""
     path = os.path.join(ROOT, "index.html")
@@ -593,4 +606,5 @@ if __name__ == "__main__":
     build_home_block()
     build_search_index()
     build_sitemap()
+    build_404()
     print("Built %d library pages from %d entries." % (len(BUILT), len(ENTRIES)))
