@@ -297,7 +297,7 @@
    "slug": "phonological-and-phonemic-awareness",
    "name": "Phonological and phonemic awareness",
    "domain": "Curriculum and subject teaching",
-   "about": "How children learn to hear and work with the sounds in spoken words, from syllables and rhyme down to single phonemes, so that phonics has something to attach to.",
+   "about": "How children learn to hear and work with the sounds in spoken words, from syllables and rhyme down to single phonemes, and why phoneme awareness grows fastest when it is taught alongside letters.",
    "practices": [
     "Syllables, onset and rime",
     "phoneme blending",
@@ -380,7 +380,7 @@
    "slug": "handwriting-and-transcription",
    "name": "Handwriting and transcription",
    "domain": "Curriculum and subject teaching",
-   "about": "Why fluent handwriting and automatic spelling are the foundation of writing, and how to build them so attention is free for composing.",
+   "about": "Why fluent handwriting and automatic spelling free a writer's attention for composing, and how to build them, including keyboarding.",
    "practices": [
     "Letter formation",
     "handwriting fluency",
@@ -444,7 +444,7 @@
    "slug": "number-multiplication-and-fractions",
    "name": "Number, multiplication and fractions",
    "domain": "Curriculum and subject teaching",
-   "about": "Teaching particular content well, including early number, place value, the four operations and fractions.",
+   "about": "How to teach the core content of primary maths well, from early number and place value to the four operations, multiplication and fractions.",
    "practices": [
     "Early number",
     "place value",
@@ -1833,7 +1833,8 @@
    ],
    "subject": "Literacy and English",
    "region": "USA",
-   "kind": "classroom footage with commentary"
+   "kind": "explainer",
+   "audience": "Teachers"
   },
   {
    "type": "watch",
@@ -2431,7 +2432,6 @@
     "UK"
    ],
    "areas": [
-    11,
     23,
     4
    ],
@@ -2977,7 +2977,6 @@
     "UK"
    ],
    "areas": [
-    30,
     27
    ],
    "tags": [
@@ -6555,8 +6554,7 @@
     "with Jocelyn Seamer"
    ],
    "areas": [
-    10,
-    32
+    10
    ],
    "tags": [
     "Free"
@@ -10491,8 +10489,7 @@
    ],
    "areas": [
     31,
-    13,
-    33
+    13
    ],
    "tags": [
     "Free"
@@ -10505,8 +10502,7 @@
    "region": "Australia",
    "kind": "explainer",
    "length": "Under 10 minutes",
-   "audience": "Teachers",
-   "strand": "Spelling and morphology"
+   "audience": "Teachers"
   },
   {
    "type": "watch",
@@ -10936,8 +10932,7 @@
     "UK"
    ],
    "areas": [
-    3,
-    30
+    3
    ],
    "tags": [
     "Free"
@@ -10987,8 +10982,7 @@
     "USA"
    ],
    "areas": [
-    3,
-    30
+    3
    ],
    "tags": [
     "Free"
@@ -13042,7 +13036,6 @@
    ],
    "areas": [
     33,
-    27,
     18
    ],
    "tags": [
@@ -14322,7 +14315,7 @@
      "url": "https://evidenceintoaction.podbean.com/e/ep-15-vocabulary-and-language/"
     }
    ],
-   "Mathematics": [
+   "Maths": [
     {
      "title": "S03E10 Grattan Institute's Maths Guarantee Report",
      "by": "Knowledge for Teachers",

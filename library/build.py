@@ -128,7 +128,7 @@ VTLM = DATA["vtlm"]
 TYPES = OrderedDict([
     ("watch", dict(label="Watch", page="library-watch.html", title="Watch: Teachers teaching", tile="Watch", noun="classroom videos", short="videos",
                    blurb="Real lessons and short clips of teachers teaching.",
-                   promise="Here you can watch teachers teaching. You'll find real lessons and short clips from real classrooms, often with the teacher or a coach explaining what they did and why.",
+                   promise="Here you'll find real lessons and short clips from real classrooms, often with the teacher or a coach explaining what they did and why.",
                    cross=("Looking for webinars, talks and short explainers?", "They are on the Learn shelf", "library-learn.html"))),
     ("learn", dict(label="Learn", page="library-learn.html", title="Learn: Webinars, talks and explainers", tile="Learn", noun="sessions and explainers", short="sessions",
                    blurb="Webinars, talks, school stories and short explainers to sit down with.",
@@ -227,7 +227,7 @@ STRANDS[33] = dict(
          "woven together and strengthened through teaching and practice.", None),
         ("The Language House", "Pamela Snow pictures language and literacy as a house. The solid ground is the warm, responsive relationships of a child's first two years, and the "
          "foundations are the oral language built across the first five. Two walls rise together and hold each other up, with reading, writing and spelling on one side and the "
-         "language skills for getting along with others on the other. Social and emotional wellbeing is the rafter, and the roof is a young person's way into further education, "
+         "language skills for getting along with others on the other. Social and emotional wellbeing and social cognition form the rafter, and the roof is a young person's way into further education, "
          "training and work.", None),
         ("The Writing Rope and views of writing", "Joan Sedita's Writing Rope sorts the skills of writing into five strands, which are critical thinking, syntax, text structure, "
          "writing craft and transcription. The Simple and Not So Simple Views of Writing explain how handwriting and spelling, composing and self-regulation share a writer's "
@@ -236,14 +236,14 @@ STRANDS[33] = dict(
          "vocabulary and comprehension. Deslea Konza added oral language and early literacy experiences to give Australian schools the Big Six.", None),
         ("How word reading develops", "How children move from sounding out to recognising words instantly, including Ehri's phases, orthographic mapping and what brain research shows.",
          ("For teaching it, see", 27)),
-        ("Syntheses of the field", "The major reviews, inquiries and reports that pull the reading research together, from the National Reading Panel and Australia's 2005 National "
-         "Inquiry to Ending the Reading Wars. Structured literacy sits here too, meaning explicit, systematic and cumulative teaching of how language works, from sounds and "
+        ("Syntheses of the field", "The major reviews, inquiries and reports that pull the reading research together, from Australia's 2005 National Inquiry and England's Rose "
+         "Review to Ending the Reading Wars. Structured literacy sits here too, meaning explicit, systematic and cumulative teaching of how language works, from sounds and "
          "spellings through to word parts, sentences and meaning.", None),
         ("Knowledge and comprehension", "Why reading comprehension is not one general skill, and how much a reader's knowledge of words and the world shapes what they understand.",
          ("For classroom practice, see", 30)),
         ("Oral language as the foundation", "Spoken language as the base that reading and writing are built on, and the Matthew effect, where early strengths or difficulties "
          "compound over time.", ("For classroom practice, see", 11)),
-        ("Spelling and morphology", "Spelling is language knowledge, not visual memory. Good spellers draw on sounds, letter patterns and meaningful word parts together.",
+        ("Spelling and morphology", "Spelling draws on language knowledge, not visual memory alone. Good spellers draw on sounds, letter patterns and meaningful word parts together.",
          ("For classroom practice, see", 31)),
     ])
 STRAND_ORDER = ("learn", "watch", "read", "research", "listen")   # within a strand: webinars first, then by type
@@ -723,7 +723,7 @@ def type_tiles():
 DOMAIN_ABOUT = {
     "How learning works": "Memory, attention and motivation, and what they mean for teaching.",
     "Teaching practice": "Explicit instruction, retrieval, checking for understanding, routines and feedback.",
-    "Literacy": "Oral language, phonics, fluency, vocabulary, comprehension, spelling, handwriting and writing, with the research behind them.",
+    "Literacy": "Oral language, phonological awareness, phonics, fluency, vocabulary, comprehension, spelling, handwriting and writing, with the research behind them.",
     "Maths": "Clear, evidence-informed maths teaching from the early years up.",
     "Knowledge-rich curriculum": "Sequencing knowledge so learning builds, within and across subjects.",
     "MTSS and assessment": "Screening, assessment and tiered support, including for students with learning difficulties, disorders and additional needs.",
