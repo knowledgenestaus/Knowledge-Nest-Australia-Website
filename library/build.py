@@ -1196,10 +1196,10 @@ def build_home():
              '<div id="resultsList"></div><p><button type="button" class="btn btn-primary btn-sm" id="clearSearch">Clear search</button></p></div></section>')
     body += ('<section class="section" id="types"><div class="container"><div class="section-header"><p class="kn-eyebrow">%d resources, each linked to its creator</p><h2>Browse the library</h2>'
              '<p>Know how you want to learn today? Pick a shelf.</p></div>%s</div></section>' % (len(ENTRIES), type_tiles()))
-    body += start_here().replace('<section class="section" id="start">', '<section class="section section-tint" id="start">')
-    body += ('<section class="section" id="areas"><div class="container"><div class="section-header"><h2>Browse by area</h2>'
+    body += ('<section class="section section-tint" id="areas"><div class="container"><div class="section-header"><h2>Browse by area</h2>'
              '<p>Every area gathers videos, podcasts, reading and research in one place.</p></div>%s</div></section>'
              % area_index(counts))
+    body += start_here()
     elements = "".join('<span>%s</span>' % e(k) for frame in VTLM for k in VTLM[frame] if frame.startswith("VTLM"))
     body += ('<section class="section section-tint"><div class="container"><div class="lib-band"><div class="lib-band-text"><p class="lib-eyebrow">For Victorian schools</p>'
              '<h2>Browse by the Victorian Teaching and Learning Model 2.0</h2>'
@@ -1208,7 +1208,7 @@ def build_home():
              '<div class="lib-band-chips">%s</div></div>'
              '<p class="lib-own">Looking for my own articles and a downloadable guide? <a href="resources.html">Find them here</a>.</p>'
              '</div></section>' % elements)
-    body += credit_panels()
+    body += newsletter_box("library") + credit_panels()
     body += '<script src="library/search.js?v=8" defer></script>'
     shelves = [(t["title"], public(t["page"])) for t in TYPES.values()]
     topics = [(d, public(domain_page(d, counts))) for d in DOMAIN_ORDER if domain_areas(d, counts)]
@@ -1588,6 +1588,82 @@ def build_stubs():
         open(path, "w", encoding="utf8").write(page)
 
 
+# Where newsletter sign-ups go. None hides the sign-up box everywhere until Jo chooses a newsletter tool
+# (not her personal Substack). Set it to that tool's sign-up form address, then review the wording in newsletter_box.
+NEWSLETTER_URL = None
+
+
+def newsletter_box(where="home"):
+    """The newsletter sign-up. The email address goes to Jo's Substack, which asks the reader to confirm, so the site
+    stores nothing itself."""
+    if not NEWSLETTER_URL:
+        return ""
+    return ('<section class="section kn-news" id="newsletter"><div class="container"><div class="kn-news-box"><div>'
+            '<p class="kn-eyebrow">The Knowledge Nest newsletter</p><h2>New in the library, in your inbox</h2>'
+            '<p>Once a month, a short roundup of key resources from the library and the new ones I have added. It is free, it comes '
+            'by email, and you can unsubscribe at any time.</p></div>'
+            '<form class="kn-news-form" action="%s" method="get" target="_blank" rel="noopener">'
+            '<label for="newsEmail-%s" class="sr-only">Your email address</label>'
+            '<input type="email" id="newsEmail-%s" name="email" placeholder="Your email address" required autocomplete="email">'
+            '<button type="submit" class="btn btn-accent">Subscribe</button></form>'
+            '</div></div></section>' % (NEWSLETTER_URL, where, where))
+
+
+LOOKS = [("look-watch", "library-watch.html", "Watch real lessons", "Filter classroom videos by topic, year level and what you will see."),
+         ("look-area", "library-phonics.html", "Go deep on one practice", "Each area of practice gathers videos, talks, podcasts and reading in one place."),
+         ("look-strands", "library-learning-difficulties-disorders-and-additional-needs.html", "Find support for every learner", "Learning difficulties, ADHD and autism, organised by need.")]
+
+
+def look_inside():
+    """Screenshots of library pages on the home page, so a visitor can see what is inside before clicking. The
+    screenshots are taken with creators' images left out, so nothing of theirs is copied onto this site."""
+    figs = "".join('<figure class="kn-look"><a href="%s"><img src="assets/look/%s.webp" alt="%s" width="1200" height="760" loading="lazy" decoding="async"></a>'
+                   '<figcaption><strong>%s</strong>%s</figcaption></figure>' % (page, key, e("Screenshot of the library: " + title.lower()), e(title), e(text))
+                   for key, page, title, text in LOOKS if os.path.exists(os.path.join(ROOT, "assets", "look", key + ".webp")))
+    if not figs:
+        return ""
+    return ('<section class="section section-tint" id="inside"><div class="container"><div class="section-header"><p class="kn-eyebrow">A look inside</p>'
+            '<h2>How the library is set up</h2><p>Everything is sorted by shelf and by area of practice, so you can find what you need in a few clicks.</p></div>'
+            '<div class="kn-look-grid">%s</div></div></section>' % figs)
+
+
+def nav_menu():
+    """The Library drop-down in the top menu: the shelves and the topics."""
+    counts = {n: len(v) for n, v in by_area(ENTRIES).items()}
+    shelves = "".join('<li><a href="%s">%s</a></li>' % (t["page"], e(t["label"])) for t in TYPES.values())
+    topics = "".join('<li><a href="%s">%s</a></li>' % (domain_page(d, counts), e(d)) for d in DOMAIN_ORDER if domain_areas(d, counts))
+    return ('<!--LIBMENU--><button type="button" class="nav-sub-toggle" aria-expanded="false" aria-controls="navLibMenu">'
+            '<span class="sr-only">Library menu</span></button><div class="nav-menu" id="navLibMenu">'
+            '<div class="nav-menu-col"><p class="nav-menu-head">Shelves</p><ul>%s</ul></div>'
+            '<div class="nav-menu-col nav-menu-wide"><p class="nav-menu-head">Topics</p><ul>%s</ul></div>'
+            '<p class="nav-menu-foot"><a href="library.html">Search the whole library</a></p></div><!--/LIBMENU-->' % (shelves, topics))
+
+
+NAV_JS = ('<script id="navMenuJs">(function(){var li=document.querySelector(".nav-has-menu");if(!li)return;var b=li.querySelector(".nav-sub-toggle");'
+          'function set(o){li.classList.toggle("open",o);b.setAttribute("aria-expanded",String(o));}'
+          'b.addEventListener("click",function(ev){ev.stopPropagation();set(!li.classList.contains("open"));});'
+          'document.addEventListener("click",function(ev){if(!li.contains(ev.target))set(false);});'
+          'li.addEventListener("keydown",function(ev){if(ev.key==="Escape"&&li.classList.contains("open")){set(false);b.focus();ev.stopPropagation();}});'
+          'li.addEventListener("focusout",function(ev){if(ev.relatedTarget&&!li.contains(ev.relatedTarget))set(false);});})();</script>')
+
+
+def build_nav_menus():
+    """Puts the Library drop-down into the top menu of every hand-written page (library pages copy theirs from
+    about.html), and its small script before </body>. Safe to run again: it replaces what an earlier run added."""
+    global HEAD, TAIL
+    for name in ["index.html", "about.html", "enquiry.html", "resources.html", "404.html", "secrets-of-how-we-learn.html"]:
+        path = os.path.join(ROOT, name)
+        if not os.path.exists(path):
+            continue
+        src = open(path, encoding="utf8").read()
+        src = re.sub(r"<!--LIBMENU-->.*?<!--/LIBMENU-->", "", src, flags=re.S)
+        src = re.sub(r'<li(?: class="nav-has-menu")?>(<a href="library.html"[^>]*>Library</a>)', lambda m: '<li class="nav-has-menu">' + m.group(1) + nav_menu(), src, count=1)
+        src = re.sub(r'<script id="navMenuJs">.*?</script>\n?', "", src, flags=re.S)
+        src = src.replace("</body>", NAV_JS + "\n</body>", 1)
+        open(path, "w", encoding="utf8").write(src)
+    HEAD, TAIL = shell()
+
+
 def build_home_block():
     """Refreshes the library sections on the site's home page, between the LIBRARY markers."""
     path = os.path.join(ROOT, "index.html")
@@ -1595,11 +1671,12 @@ def build_home_block():
     start, end = "<!-- LIBRARY:START (generated by library/build.py, do not edit by hand) -->", "<!-- LIBRARY:END -->"
     if start not in src or end not in src:
         return
+    credit = ('<p class="kn-credit-line">This is a collection of other people\'s brilliant work. Each entry names its creator and links straight '
+              'to the original. Not sure where to begin? <a href="library.html#start">Try the starting points</a>.</p>')
     block = (featured_panel("home") +
              '<section class="section" id="types"><div class="container"><div class="section-header"><p class="kn-eyebrow">%d resources, each linked to its creator</p><h2>Browse the library</h2>'
-             '<p>Pick a shelf to start. Every resource links to its creator\'s original.</p></div>%s</div></section>' % (len(ENTRIES), type_tiles())
-             + start_here(3).replace('<section class="section" id="start">', '<section class="section section-tint" id="start">')
-             + credit_panels())
+             '<p>Pick a shelf to start. Every resource links to its creator\'s original.</p></div>%s%s</div></section>' % (len(ENTRIES), type_tiles(), credit)
+             + look_inside() + newsletter_box("home"))
     src = src[:src.index(start) + len(start)] + "\n" + block + "\n" + src[src.index(end):]
     open(path, "w", encoding="utf8").write(src)
 
@@ -1741,6 +1818,7 @@ def warnings():
 
 
 if __name__ == "__main__":
+    build_nav_menus()
     build_home()
     build_types()
     build_areas()
