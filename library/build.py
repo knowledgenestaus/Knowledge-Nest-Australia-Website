@@ -126,7 +126,7 @@ def illo(key, cls="kn-illo", size=320):
 
 # Domains as shown on the site. These regroup the areas from the catalogue by area number.
 DOMAIN_OF = {
-    "Structured literacy": [7, 8, 9, 10, 11],
+    "Literacy": [7, 8, 9, 10, 11],
     "Numeracy": [12],
     "Knowledge-rich curriculum": [6],
     "MTSS and assessment": [13, 14],
@@ -136,7 +136,7 @@ for a in AREAS:
     for name, ns in DOMAIN_OF.items():
         if a["n"] in ns:
             a["domain"] = name
-DOMAIN_ORDER = ["How learning works", "Teaching practice", "Structured literacy", "Numeracy", "Knowledge-rich curriculum", "MTSS and assessment",
+DOMAIN_ORDER = ["How learning works", "Teaching practice", "Literacy", "Numeracy", "Knowledge-rich curriculum", "MTSS and assessment",
                 "Coaching and professional learning", "Leadership and culture", "Implementation and change", "Research and evidence"]
 assert all(a["domain"] in DOMAIN_ORDER for a in AREAS)
 
@@ -366,14 +366,21 @@ def type_tiles():
 DOMAIN_ABOUT = {
     "How learning works": "Memory, attention and motivation, and what they mean for teaching.",
     "Teaching practice": "Explicit instruction, retrieval, checking for understanding, routines and feedback.",
-    "Structured literacy": "Phonics and fluency, comprehension, spelling, writing and oral language.",
+    "Literacy": "Phonics and fluency, comprehension, spelling, writing and oral language.",
     "Numeracy": "Clear, evidence-informed mathematics teaching from the early years up.",
     "Knowledge-rich curriculum": "Sequencing knowledge so learning builds, within and across subjects.",
-    "MTSS and assessment": "Screening, progress monitoring and tiered support for every student.",
+    "MTSS and assessment": "Screening, assessment and progress monitoring, with support at Tier 1, 2 and 3.",
     "Coaching and professional learning": "Instructional coaching and professional learning that changes practice.",
     "Leadership and culture": "Instructional leadership, school culture, behaviour and strong teams.",
     "Implementation and change": "Putting good ideas into practice, and bringing people with you.",
     "Research and evidence": "Reading the evidence, weighing the debates and spotting the myths.",
+}
+
+
+# What a domain covers, shown as chips on its page. These are elements of understanding, not separate pages.
+DOMAIN_ELEMENTS = {
+    "MTSS and assessment": ["Tier 1: strong teaching for all", "Tier 2: targeted support", "Tier 3: intensive support",
+                            "Screening", "Progress monitoring", "Assessment and data"],
 }
 
 
@@ -410,7 +417,8 @@ def build_domains():
         areas = domain_areas(d, counts)
         if len(areas) < 2:
             continue
-        body = hero("Browse by area", d, e(DOMAIN_ABOUT.get(d, "")), crumbs=[("Library", "library.html"), ("Areas", "library.html#areas"), (d, None)], art="domain-" + domain_slug(d))
+        body = hero("Browse by area", d, e(DOMAIN_ABOUT.get(d, "")), crumbs=[("Library", "library.html"), ("Areas", "library.html#areas"), (d, None)], art="domain-" + domain_slug(d),
+                    extra=('<p class="lib-practices"><span>What this covers:</span>%s</p>' % "".join("<em>%s</em>" % e(x) for x in DOMAIN_ELEMENTS[d])) if d in DOMAIN_ELEMENTS else "")
         tiles = "".join('<a class="lib-strand" href="%s"><span class="lib-domain-title">%s</span><span class="lib-domain-text">%s</span>'
                         '<span class="kn-tile-cta">%d resources %s</span></a>' % (area_page(a), e(a["name"]), e(a["about"]), counts[a["n"]], ARROW) for a in areas)
         body += ('<section class="section"><div class="container"><div class="section-header"><h2>%d areas in %s</h2>'
