@@ -238,15 +238,16 @@
   },
   {
    "n": 25,
-   "name": "Learning difficulties and disorders",
-   "slug": "learning-difficulties-and-disorders",
+   "name": "Learning difficulties, disorders and additional needs",
+   "slug": "learning-difficulties-disorders-and-additional-needs",
    "domain": "Assessment and support",
-   "about": "Dyslexia, dysgraphia, dyscalculia, developmental language disorder and related needs, and what strong support looks like at every tier.",
+   "about": "Dyslexia, dysgraphia, dyscalculia, developmental language disorder, ADHD, autism and other additional needs, and what strong support looks like at every tier.",
    "practices": [
     "Early identification",
     "evidence-based intervention",
     "reasonable adjustments",
-    "working with specialists"
+    "Individual Education Plans",
+    "working with specialists and support staff"
    ]
   },
   {
@@ -3049,14 +3050,16 @@
     "UK"
    ],
    "areas": [
-    14
+    14,
+    25
    ],
    "tags": [
     "Free"
    ],
    "summary": "Teaching assistants deliver a structured early reading intervention, ABRACADABRA, to Year 1 pupils in a UK school, adapting sessions to revisit the sounds children need more practice with.",
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "strand": "Supporting students with additional needs"
   },
   {
    "type": "watch",
@@ -3383,14 +3386,16 @@
    ],
    "areas": [
     14,
-    2
+    2,
+    25
    ],
    "tags": [
     "Free"
    ],
    "summary": "Teaching assistants scaffold learning with the least support first, to build independence.",
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "strand": "Supporting students with additional needs"
   },
   {
    "type": "watch",
@@ -3402,14 +3407,16 @@
    ],
    "areas": [
     14,
-    2
+    2,
+    25
    ],
    "tags": [
     "Free"
    ],
    "summary": "Explicit instruction for pupils with special educational needs in mainstream and specialist primary settings.",
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "strand": "Supporting students with additional needs"
   },
   {
    "type": "watch",
@@ -4953,13 +4960,15 @@
    "by": "Evidence into Action",
    "meta": [],
    "areas": [
-    14
+    14,
+    25
    ],
    "tags": [
     "Free"
    ],
    "summary": "Alex Quigley and Kirsten Mould discuss the EEF's updated guidance on deploying teaching assistants, with Gary Aubin and practitioners reflecting on what works in their settings.",
-   "focus": "Education support staff"
+   "focus": "Education support staff",
+   "strand": "Supporting students with additional needs"
   },
   {
    "type": "listen",
@@ -5434,13 +5443,15 @@
     "with Charlotte Peverett"
    ],
    "areas": [
-    5
+    5,
+    25
    ],
    "tags": [
     "Free"
    ],
    "summary": "Charlotte Peverett, a learning specialist and inclusion outreach coach, discusses structures, routines and holding high expectations for all students, including diverse learners.",
-   "focus": "High expectations for diverse learners"
+   "focus": "High expectations for diverse learners",
+   "strand": "Supporting students with additional needs"
   },
   {
    "type": "listen",
@@ -6490,13 +6501,15 @@
    "by": "Evidence into Action",
    "meta": [],
    "areas": [
-    14
+    14,
+    25
    ],
    "tags": [
     "Free"
    ],
    "summary": "Alex Quigley, Kirsten Mould and guests including Gary Aubin discuss how best to support pupils with special educational needs in mainstream classrooms.",
-   "focus": "Adaptive teaching"
+   "focus": "Adaptive teaching",
+   "strand": "Supporting students with additional needs"
   },
   {
    "type": "listen",
@@ -9515,10 +9528,12 @@
    ],
    "areas": [
     14,
-    7
+    7,
+    25
    ],
    "tags": [],
-   "summary": "Lucy Wings and Jeremy Barr describe putting a structured literacy approach in place in a special school setting."
+   "summary": "Lucy Wings and Jeremy Barr describe putting a structured literacy approach in place in a special school setting.",
+   "strand": "Supporting students with additional needs"
   },
   {
    "type": "read",
@@ -10913,7 +10928,7 @@
   },
   {
    "type": "read",
-   "strand": "Understanding learning difficulties",
+   "strand": "Supporting students with additional needs",
    "title": "Special Educational Needs in Mainstream Schools: guidance report",
    "url": "https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/send",
    "by": "Education Endowment Foundation",
@@ -11510,6 +11525,529 @@
    ],
    "subject": "Across subjects",
    "region": "International"
+  },
+  {
+   "type": "read",
+   "strand": "ADHD",
+   "title": "ADHD factsheet for educators",
+   "url": "https://adhdguideline.aadpa.com.au/adhd-for-educators/",
+   "by": "Australasian ADHD Professionals Association (Kim Fuller)",
+   "meta": [
+    "Fact sheet",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    5
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A short fact sheet from the body behind Australia's ADHD clinical guideline. It explains why educators need to recognise possible ADHD and support students from preschool onwards.",
+   "bands": [
+    "F-2",
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "strand": "ADHD",
+   "title": "Educational adjustments for students with ADHD",
+   "url": "https://adhdguideline.aadpa.com.au/adhd-educational-adjustments/",
+   "by": "Australasian ADHD Professionals Association (Kim Fuller)",
+   "meta": [
+    "Fact sheet",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    5
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Examples of common reasonable adjustments for students with ADHD, tied to the Disability Standards for Education. It also notes when anxiety or autism alongside ADHD may call for more.",
+   "bands": [
+    "F-2",
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "research",
+   "strand": "ADHD",
+   "title": "Australian Evidence-Based Clinical Practice Guideline for Attention Deficit Hyperactivity Disorder (ADHD)",
+   "url": "https://adhdguideline.aadpa.com.au/",
+   "by": "Australasian ADHD Professionals Association",
+   "meta": [
+    "Clinical guideline",
+    "2022",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    18
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "The national guideline for identifying, diagnosing and supporting people with ADHD, approved by the NHMRC. Written for clinicians, and worth knowing as the reference point behind advice schools receive.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "strand": "ADHD",
+   "title": "Primary school teacher strategies for ADHD",
+   "url": "https://www.allplaylearn.org.au/primary/teacher/adhd/",
+   "by": "AllPlay Learn, Monash University",
+   "meta": [
+    "Teacher guide",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    5
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A plain guide for primary teachers covering what ADHD is, the strengths these students bring, evidence-based strategies, best practice tips and points to consider across the curriculum.",
+   "bands": [
+    "F-2",
+    "3-6"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "strand": "ADHD",
+   "title": "Attention deficit hyperactivity disorder (ADHD): Advice for school and home",
+   "url": "https://www.rch.org.au/kidsinfo/fact_sheets/ADHD_ways_to_help_children_at_school_and_home/",
+   "by": "The Royal Children's Hospital Melbourne",
+   "meta": [
+    "Fact sheet",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    20
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "The Royal Children's Hospital's fact sheet for families on supporting a child with ADHD at school and at home. Handy to share with parents so everyone is working from the same advice.",
+   "bands": [
+    "F-2",
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "strand": "ADHD",
+   "title": "What teachers can teach us about ADHD inclusion",
+   "url": "https://www.adhdaustralia.org.au/what-teachers-can-teach-us-about-adhd-inclusion/",
+   "by": "Flynn Vamos and Melanie Porter, for ADHD Australia",
+   "meta": [
+    "Article",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    5
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Two psychology researchers report what Australian primary teachers told them about including students with ADHD, which teachers described as the blind spot of inclusion.",
+   "bands": [
+    "F-2",
+    "3-6"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "strand": "Autism",
+   "title": "Supporting autistic and gender-diverse students at school",
+   "url": "https://autisticgirlsatschool.com.au/",
+   "by": "Yellow Ladybugs, with the Department of Education, Victoria",
+   "meta": [
+    "Website guide",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    20
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A website guide to supporting autistic girls and gender-diverse students, covering masking, hidden anxiety, peer relationships, group work, executive functioning and class rules.",
+   "bands": [
+    "F-2",
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "watch",
+   "strand": "Autism",
+   "title": "Use visual schedules: Teaching practice",
+   "url": "https://www.inclusioned.edu.au/practices/use-visual-schedules",
+   "by": "inclusionED",
+   "meta": [
+    "Practice guide with video",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    5
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A step-by-step practice guide with classroom video on using visual schedules so students know what is coming, move between tasks smoothly and need fewer verbal prompts.",
+   "bands": [
+    "F-2",
+    "3-6"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "watch",
+   "strand": "Autism",
+   "title": "Meet students' sensory needs: Teaching practice",
+   "url": "https://www.inclusioned.edu.au/practices/meet-students-sensory-needs",
+   "by": "inclusionED",
+   "meta": [
+    "Practice guide with video",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    5
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A practice guide with video on getting to know students' sensory preferences and adjusting the room so they can stay comfortable, focused and safe.",
+   "bands": [
+    "F-2",
+    "3-6"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "watch",
+   "strand": "Autism",
+   "title": "Transitions at Echuca College: Supporting autistic students with transition",
+   "url": "https://www.vic.gov.au/transitions-echuca-college-supporting-autistic-students-transition",
+   "by": "Department of Education, Victoria",
+   "meta": [
+    "Case study with video",
+    "About 3 minutes",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    20
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A Victorian case study with short videos showing how Echuca College built a transition program with its feeder primary schools so new Year 7 students, including autistic students, start well.",
+   "bands": [
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "strand": "Autism",
+   "title": "For primary teachers: Supporting autistic students' transition to secondary school",
+   "url": "https://www.amaze.org.au/wp-content/uploads/2023/07/For-primary-teachers_-Supporting-autistic-students-transition-to-secondary-school-2023.pdf",
+   "by": "Amaze",
+   "meta": [
+    "Tip sheet (PDF)",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Amaze's tip sheet for Year 6 teachers on writing a transition plan with the student, the family and the secondary school before an autistic student moves on.",
+   "bands": [
+    "3-6"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "strand": "Autism",
+   "title": "Supporting autistic students: Diverse Learners Hub",
+   "url": "https://www.vic.gov.au/diverse-learners-hub/autism-student-resources",
+   "by": "Department of Education, Victoria",
+   "meta": [
+    "Resource page",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "The Victorian department's collection of guidance for schools on autistic students, linking to the Autism Education Strategy, transition tip sheets, behaviour support tools and partner organisations.",
+   "bands": [
+    "F-2",
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "strand": "Autism",
+   "title": "Primary school teacher strategies for autism",
+   "url": "https://www.allplaylearn.org.au/primary/teacher/asd/",
+   "by": "AllPlay Learn, Monash University",
+   "meta": [
+    "Teacher guide",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    5
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A guide for primary teachers that sets out what autism is, the strengths autistic students bring, evidence-based strategies, best practice tips and curriculum considerations.",
+   "bands": [
+    "F-2",
+    "3-6"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "research",
+   "strand": "Supporting students with additional needs",
+   "title": "Making best use of teaching assistants: Guidance report",
+   "url": "https://evidenceforlearning.org.au/education-evidence/guidance-reports/teaching-assistants",
+   "by": "Evidence for Learning",
+   "meta": [
+    "Guidance report",
+    "2019",
+    "Australia"
+   ],
+   "areas": [
+    14,
+    21,
+    17,
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Seven recommendations to help principals and leadership teams in primary and secondary schools make the best use of teaching assistants. The full report and a one-page poster are free to download.",
+   "region": "Australia"
+  },
+  {
+   "type": "watch",
+   "strand": "Supporting students with additional needs",
+   "title": "High quality teaching: The 'five-a-day' principle",
+   "url": "https://www.youtube.com/watch?v=a_4U73xozWk",
+   "by": "Education Endowment Foundation",
+   "meta": [
+    "About 2 minutes",
+    "UK"
+   ],
+   "areas": [
+    14,
+    2,
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A two-minute Education Endowment Foundation explainer of its 'five-a-day' principle, a set of five core practices that help all pupils succeed, including those with special educational needs. A quick opener for a staff meeting on Tier 1 teaching.",
+   "bands": [
+    "F-2",
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Across subjects",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "strand": "Supporting students with additional needs",
+   "title": "Disability Standards: An introduction for educators",
+   "url": "https://www.inclusioned.edu.au/practice/series/1878",
+   "by": "inclusionED, with Elizabeth Dickson",
+   "meta": [
+    "Practice series",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    19
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "An introduction to the Disability Discrimination Act and the Disability Standards for Education, written with education law expert Professor Elizabeth Dickson. Covers educators' obligations, discrimination, harassment and victimisation.",
+   "bands": [
+    "F-2",
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "strand": "Supporting students with additional needs",
+   "title": "Disability Standards for Education: Resources for teachers and leaders",
+   "url": "https://www.aitsl.edu.au/resources/collections/disability-standards-for-education",
+   "by": "AITSL",
+   "meta": [
+    "Resource collection",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    19
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "AITSL's collection of elaborations and videos showing how the Disability Standards for Education connect to the Teacher Standards and what they ask of teachers and leaders.",
+   "bands": [
+    "F-2",
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "strand": "Supporting students with additional needs",
+   "title": "Disability Standards for Education 2005",
+   "url": "https://www.education.gov.au/disability-standards-education-2005",
+   "by": "Australian Government Department of Education",
+   "meta": [
+    "Government resource page",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    19
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "The Australian Government's home for the Standards, with fact sheets, exemplars of practice and the national guide to planning personalised learning and support.",
+   "bands": [
+    "F-2",
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "strand": "Supporting students with additional needs",
+   "title": "Individual Education Plans (IEPs): Victorian policy and guidance",
+   "url": "https://www2.education.vic.gov.au/pal/individual-education-plans-ieps/policy",
+   "by": "Department of Education, Victoria",
+   "meta": [
+    "Policy and guidance",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    19
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "The Victorian government school policy on Individual Education Plans. It sets out which students must have one, reminds schools of their duty to make reasonable adjustments, and links to guidance and templates.",
+   "bands": [
+    "F-2",
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "strand": "Supporting students with additional needs",
+   "title": "Student Support Groups: Victorian policy and guidance",
+   "url": "https://www2.education.vic.gov.au/pal/student-support-groups/policy",
+   "by": "Department of Education, Victoria",
+   "meta": [
+    "Policy and guidance",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    19,
+    20
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "The Victorian policy on Student Support Groups, the meeting of school, family and others that plans support for a student with disability or diverse learning needs.",
+   "bands": [
+    "F-2",
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
   }
  ],
  "shows": [

@@ -52,6 +52,6 @@ The library pages on the site are generated. Nobody edits `library*.html` by han
 
 ## Areas organised by strand (November 2026)
 
-- **Learning difficulties and disorders** (area 25, in MTSS and assessment) is laid out by strand, one series per topic, instead of by type. The strands, their one-sentence descriptions, the page introduction and the note under it live in `STRANDS` in `build.py`, keyed by area number.
+- **Learning difficulties, disorders and additional needs** (area 25, in MTSS and assessment) is laid out by strand, one series per topic, instead of by type. The strands, their one-sentence descriptions, the page introduction and the note under it live in `STRANDS` in `build.py`, keyed by area number.
 - **To add an entry to a strand**, give it the area number in `areas` and a `strand` whose text matches a strand name exactly. Put the area number first only when the entry is mainly about that area; the first area decides where a card sits on the Watch, Learn and Read shelves. The build prints a `WARNING` for an entry in the area with a missing or unknown strand.
 - **Inside a strand** cards run Learn, Watch, Read, Research, Listen, each card shows its type, and sources are spread out within each type. An area that is not in `STRANDS` is laid out by type, as before.

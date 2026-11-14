@@ -39,7 +39,7 @@ TOPICS = OrderedDict([
     ("Evidence and debates", [18]),
 ])
 MTSS_WORDS = re.compile(r"mtss|multi-tiered|\btier|screen|intervention|progress monitoring|response to intervention", re.I)
-INCLUSION_WORDS = re.compile(r"dyslexi|inclusi|special educational|\bsend\b|adaptive|diverse|twice|exceptional|teaching assistant|learning difficult|neurodiv|disabilit", re.I)
+INCLUSION_WORDS = re.compile(r"adhd|autis|dyslexi|inclusi|special educational|\bsend\b|adaptive|diverse|twice|exceptional|teaching assistant|learning difficult|neurodiv|disabilit", re.I)
 
 
 def topics_of(x):
@@ -47,7 +47,7 @@ def topics_of(x):
     text = " ".join([x["title"], x.get("focus", ""), x.get("summary", "")])
     mtss = bool(MTSS_WORDS.search(text))
     incl = bool(INCLUSION_WORDS.search(text))
-    support = bool({14, 25} & set(x["areas"]))   # tiered support and inclusion; learning difficulties and disorders
+    support = bool({14, 25} & set(x["areas"]))   # tiered support and inclusion; learning difficulties, disorders and additional needs
     if support and not (mtss or incl):
         incl = True
     if mtss and (support or 13 in x["areas"] or re.search(r"mtss|multi-tiered", text, re.I)):
@@ -153,9 +153,10 @@ assert all(a["domain"] in DOMAIN_ORDER for a in AREAS)
 STRANDS = {
     25: dict(
         intro="Some students keep finding reading, writing, maths or language hard, even when the teaching is good. I've gathered webinars, "
-              "short videos, guides and research here to help you understand why, and what strong support looks like at Tier 1, Tier 2 and Tier 3.",
+              "short videos, guides and research here to help you understand why, and what strong support looks like at Tier 1, Tier 2 and Tier 3. "
+              "You'll also find Australian webinars and guides on supporting students with ADHD, autistic students and others with additional needs.",
         note="These resources are here to support your teaching, and they are not a substitute for assessment or advice from a qualified "
-             "professional such as a psychologist or speech pathologist.",
+             "professional such as a psychologist, paediatrician or speech pathologist.",
         strands=[
             ("Understanding learning difficulties", "What learning difficulties and specific learning disorders are, how schools notice them through "
              "tiered support, and what reasonable adjustments look like.", ("For screening, intervention and the tiers across a whole school, see", 14)),
@@ -165,7 +166,13 @@ STRANDS = {
             ("Dysgraphia and written expression", "Difficulties with handwriting, spelling and getting ideas onto the page, and how to teach and support each one.", None),
             ("Dyscalculia and maths difficulties", "Persistent difficulty with number and calculation, how it differs from gaps in what has been taught, "
              "and what effective maths intervention involves.", None),
-            ("Related needs", "Attention, working memory and coordination difficulties that teachers often meet alongside the others.", None),
+            ("ADHD", "These are the webinars and guides I'd share with a teacher who wants to understand attention and motivation, "
+             "and to set up a calm classroom where students with ADHD can do well.", None),
+            ("Autism", "Here you'll find webinars and classroom guides, most of them Australian, on communication, sensory needs, visual schedules and transitions, "
+             "with autistic voices alongside the research.", None),
+            ("Supporting students with additional needs", "I've gathered the practical things here, including what the Disability Standards ask of us, "
+             "how to plan adjustments and Individual Education Plans, and how to work well with education support staff.", None),
+            ("Related needs", "Working memory and coordination difficulties that teachers often meet alongside the others.", None),
         ]),
 }
 STRAND_ORDER = ("learn", "watch", "read", "research", "listen")   # within a strand: webinars first, then by type
@@ -575,7 +582,7 @@ DOMAIN_ABOUT = {
     "Literacy": "Phonics and fluency, comprehension, spelling, writing and oral language.",
     "Numeracy": "Clear, evidence-informed mathematics teaching from the early years up.",
     "Knowledge-rich curriculum": "Sequencing knowledge so learning builds, within and across subjects.",
-    "MTSS and assessment": "Screening, assessment and tiered support, including for students with learning difficulties and disorders.",
+    "MTSS and assessment": "Screening, assessment and tiered support, including for students with learning difficulties, disorders and additional needs.",
     "Coaching and professional learning": "Instructional coaching and professional learning that changes practice.",
     "Leadership and culture": "Instructional leadership, school culture, behaviour and strong teams.",
     "Implementation and change": "Putting good ideas into practice, and bringing people with you.",
@@ -586,7 +593,8 @@ DOMAIN_ABOUT = {
 # What a domain covers, shown as chips on its page. These are elements of understanding, not separate pages.
 DOMAIN_ELEMENTS = {
     "MTSS and assessment": ["Tier 1: strong teaching for all", "Tier 2: targeted support", "Tier 3: intensive support",
-                            "Screening", "Progress monitoring", "Assessment and data", "Learning difficulties and disorders"],
+                            "Screening", "Progress monitoring", "Assessment and data", "Learning difficulties and disorders",
+                            "ADHD, autism and additional needs"],
 }
 
 
