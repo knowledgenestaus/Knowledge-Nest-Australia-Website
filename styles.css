@@ -866,3 +866,9 @@ html:not(.js) .nav-sub-toggle { display: none; }
   .nav-links a { padding: 0.5rem 0.7rem; font-size: 0.95rem; }
   .nav-links a.nav-cta-link { margin-left: 0.3rem; padding: 0.55rem 1rem; }
 }
+
+/* Caption under the home page photo: the metaphor behind the site */
+.hero-figure { margin: 0; }
+.hero-caption { margin: 2.1rem 0 0; padding: 0 0.5rem; text-align: center; font-family: var(--font-display); font-style: italic; font-size: 1.3rem; line-height: 1.4; color: var(--navy); }
+.hero-caption::before { content: ""; display: block; width: 40px; height: 3px; margin: 0 auto 0.9rem; border-radius: 2px; background: var(--orange); }
+@media (max-width: 640px) { .hero-caption { margin-top: 1.7rem; font-size: 1.15rem; } }
