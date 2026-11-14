@@ -357,20 +357,67 @@ def tile(href, key, title, blurb, n, noun):
 
 def type_tiles():
     out = [tile(t["page"], key, t["tile"], t["blurb"], count(key), t["noun"]) for key, t in TYPES.items()]
-    n_areas = len(set(n for x in ENTRIES for n in x["areas"]))
-    out.append(tile("library.html#areas", "areas", "By area of practice", "Everything on one topic, from phonics to change management.", n_areas, "areas"))
+    used = set(n for x in ENTRIES for n in x["areas"])
+    n_areas = len([d for d in DOMAIN_ORDER if any(a["domain"] == d and a["n"] in used for a in AREAS)])
+    out.append(tile("library.html#areas", "areas", "By area of practice", "Ten nests of knowledge, from how learning works to leading change.", n_areas, "areas"))
     return '<div class="kn-tiles">%s</div>' % "".join(out)
+
+
+DOMAIN_ABOUT = {
+    "How learning works": "Memory, attention and motivation, and what they mean for teaching.",
+    "Teaching practice": "Explicit instruction, retrieval, checking for understanding, routines and feedback.",
+    "Structured literacy": "Phonics and fluency, comprehension, spelling, writing and oral language.",
+    "Numeracy": "Clear, evidence-informed mathematics teaching from the early years up.",
+    "Knowledge-rich curriculum": "Sequencing knowledge so learning builds, within and across subjects.",
+    "MTSS and assessment": "Screening, progress monitoring and tiered support for every student.",
+    "Coaching and professional learning": "Instructional coaching and professional learning that changes practice.",
+    "Leadership and culture": "Instructional leadership, school culture, behaviour and strong teams.",
+    "Implementation and change": "Putting good ideas into practice, and bringing people with you.",
+    "Research and evidence": "Reading the evidence, weighing the debates and spotting the myths.",
+}
+
+
+def domain_slug(d):
+    return re.sub(r"[^a-z0-9]+", "-", d.lower()).strip("-")
+
+
+def domain_areas(d, counts):
+    return [a for a in AREAS if a["domain"] == d and counts.get(a["n"], 0)]
+
+
+def domain_page(d, counts):
+    """A domain with one area goes straight to that area; otherwise to its own page."""
+    areas = domain_areas(d, counts)
+    return area_page(areas[0]) if len(areas) == 1 else "library-domain-%s.html" % domain_slug(d)
 
 
 def area_index(counts):
     cols = []
     for d in DOMAIN_ORDER:
-        links = "".join('<li><a href="%s">%s</a> <span class="lib-count">%d</span></li>' % (area_page(a), e(a["name"]), counts.get(a["n"], 0))
-                        for a in AREAS if a["domain"] == d and counts.get(a["n"], 0))
-        if links:
-            pic = illo("domain-" + re.sub(r"[^a-z0-9]+", "-", d.lower()).strip("-"), "lib-domain-illo", 200)
-            cols.append('<div class="lib-domain%s">%s<h3>%s</h3><ul>%s</ul></div>' % (" lib-domain-pic" if pic else "", pic, e(d), links))
+        areas = domain_areas(d, counts)
+        if not areas:
+            continue
+        n = len(set(x["url"] for x in ENTRIES if set(x["areas"]) & set(a["n"] for a in areas)))
+        pic = illo("domain-" + domain_slug(d), "lib-domain-illo", 200)
+        cols.append('<a class="lib-domain" href="%s">%s<span class="lib-domain-title">%s</span><span class="lib-domain-text">%s</span>'
+                    '<span class="kn-tile-cta">%d resources %s</span></a>' % (domain_page(d, counts), pic, e(d), e(DOMAIN_ABOUT.get(d, "")), n, ARROW))
     return '<div class="lib-domains">%s</div>' % "".join(cols)
+
+
+def build_domains():
+    counts = {n: len(v) for n, v in by_area(ENTRIES).items()}
+    for d in DOMAIN_ORDER:
+        areas = domain_areas(d, counts)
+        if len(areas) < 2:
+            continue
+        body = hero("Browse by area", d, e(DOMAIN_ABOUT.get(d, "")), crumbs=[("Library", "library.html"), ("Areas", "library.html#areas"), (d, None)], art="domain-" + domain_slug(d))
+        tiles = "".join('<a class="lib-strand" href="%s"><span class="lib-domain-title">%s</span><span class="lib-domain-text">%s</span>'
+                        '<span class="kn-tile-cta">%d resources %s</span></a>' % (area_page(a), e(a["name"]), e(a["about"]), counts[a["n"]], ARROW) for a in areas)
+        body += ('<section class="section"><div class="container"><div class="section-header"><h2>%d areas in %s</h2>'
+                 '<p>Each one gathers videos, podcasts, reading and research in one place.</p></div><div class="lib-strands">%s</div></div></section>' % (len(areas), e(d), tiles))
+        body += credit_panels()
+        write("library-domain-%s.html" % domain_slug(d), "%s | Knowledge Nest Library" % d,
+              "%s: free professional learning resources for teachers and leaders. %s" % (d, DOMAIN_ABOUT.get(d, "")), body)
 
 
 def jump(pairs):
@@ -528,7 +575,7 @@ def build_areas():
             continue
         present = [k for k in TYPES if any(x["type"] == k for x in items)]
         chips = '<p class="lib-practices"><span>Practices in this area:</span>%s</p>' % "".join("<em>%s</em>" % e(p[0].upper() + p[1:]) for p in a["practices"])
-        body = hero(a["domain"], a["name"], e(a["about"]), crumbs=[("Library", "library.html"), (a["domain"], "library.html#areas"), (a["name"], None)],
+        body = hero(a["domain"], a["name"], e(a["about"]), crumbs=[("Library", "library.html"), (a["domain"], domain_page(a["domain"], {n: len(v) for n, v in grouped.items()}) if len(domain_areas(a["domain"], {n: len(v) for n, v in grouped.items()})) > 1 else "library.html#areas"), (a["name"], None)],
                     extra=chips + jump([(k, TYPES[k]["label"]) for k in present]))
         sections = ""
         for k in present:
@@ -623,6 +670,7 @@ if __name__ == "__main__":
     build_home()
     build_types()
     build_areas()
+    build_domains()
     build_vtlm()
     build_home_block()
     build_search_index()
