@@ -232,8 +232,7 @@ STRANDS[33] = dict(
           "I've gathered the frameworks and the research behind them here, so you can see where our practice comes from and explain it with confidence.",
     strands=[
         ("The Simple View of Reading", "Reading comprehension is the product of decoding and language comprehension, so a reader needs both, and a weakness in either one "
-         "limits understanding. Duke and Cartwright's Active View of Reading (2021) extends it, adding the reader's active self-regulation and the skills that bridge "
-         "word recognition and language comprehension.", None),
+         "limits understanding. Philip Gough and William Tunmer proposed it in 1986, and Wesley Hoover and Gough set it out more fully in 1990.", None),
         ("Scarborough's Reading Rope", "Hollis Scarborough's picture of skilled reading as many strands, some for word recognition and some for language comprehension, "
          "woven together and strengthened through teaching and practice.", None),
         ("The Language House", "Pamela Snow pictures language and literacy as a house. The solid ground is the warm, responsive relationships of a child's first two years, and the "

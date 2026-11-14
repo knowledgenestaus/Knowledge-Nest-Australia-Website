@@ -1048,29 +1048,6 @@
   },
   {
    "type": "watch",
-   "title": "In the Classroom",
-   "url": "https://www.aitsl.edu.au/resources/collections/in-the-classroom",
-   "by": "AITSL",
-   "meta": [
-    "F-12",
-    "Australia"
-   ],
-   "areas": [],
-   "tags": [
-    "Free"
-   ],
-   "summary": "Primary and secondary teachers in real classrooms share and show their approaches.",
-   "bands": [
-    "F-2",
-    "3-6",
-    "Secondary"
-   ],
-   "subject": "Across subjects",
-   "region": "Australia",
-   "kind": "classroom footage with commentary"
-  },
-  {
-   "type": "watch",
    "title": "Four researchED Chile keynotes, free to watch",
    "url": "https://educationrickshaw.com/2024/11/13/4-researched-keynotes-you-can-watch-for-free/",
    "by": "Education Rickshaw (Zach Groshell)",
@@ -3981,31 +3958,6 @@
    "kind": "classroom footage"
   },
   {
-   "type": "watch",
-   "title": "Maths No Problem free-to-view videos, including a Year 4 model lesson on area",
-   "url": "https://mathsnoproblem.com/en/products/academy/free-to-view",
-   "by": "Maths No Problem",
-   "meta": [
-    "Year 4",
-    "UK"
-   ],
-   "areas": [
-    36,
-    24,
-    2
-   ],
-   "tags": [
-    "Free"
-   ],
-   "summary": "A real-time Year 4 lesson on area using problem solving, hands-on materials and group work.",
-   "bands": [
-    "3-6"
-   ],
-   "subject": "Maths",
-   "region": "UK",
-   "kind": "classroom footage"
-  },
-  {
    "type": "listen",
    "title": "060 Explicit Instruction",
    "url": "https://www.ollielovell.com/anitaarcher-orig/",
@@ -5848,21 +5800,6 @@
    ],
    "summary": "Tom Sherrington, author of Rosenshine's Principles in Action, explains how Rosenshine's Principles of Instruction became a foundation for his own practice and work with teachers.",
    "focus": "Rosenshine's principles"
-  },
-  {
-   "type": "listen",
-   "title": "Episode 21 Explicit Instruction Isn't Everything",
-   "url": "https://shows.acast.com/pedagogy-to-practice/episodes/6a37aee7db494ef85c58fedd",
-   "by": "Pedagogy to Practice",
-   "meta": [],
-   "areas": [
-    2
-   ],
-   "tags": [
-    "Free"
-   ],
-   "summary": "Beth and Sunny explore the limits of teacher-led learning and the evidence for collaborative learning, problem solving, self-assessment and student ownership alongside explicit instruction.",
-   "focus": "Limits and nuance of explicit instruction"
   },
   {
    "type": "listen",
@@ -8091,23 +8028,6 @@
    "tags": []
   },
   {
-   "type": "read",
-   "title": "Personal Best",
-   "url": "https://www.newyorker.com/magazine/2011/10/03/personal-best",
-   "by": "Atul Gawande (The New Yorker)",
-   "meta": [
-    "Essay",
-    "2011",
-    "USA"
-   ],
-   "areas": [
-    16
-   ],
-   "tags": [
-    "Check cost"
-   ]
-  },
-  {
    "type": "research",
    "title": "Why Education Experts Resist Effective Practices",
    "url": "https://files.eric.ed.gov/fulltext/ED442804.pdf",
@@ -8181,22 +8101,6 @@
   },
   {
    "type": "research",
-   "title": "Rethinking the Use of Tests: A Meta-Analysis of Practice Testing",
-   "url": "https://rex.libraries.wsu.edu/esploro/outputs/journalArticle/Rethinking-the-Use-of-Tests-A/99900601154801842",
-   "by": "Adesope, Trevisan and Sundararajan",
-   "meta": [
-    "2017",
-    "Meta-analysis"
-   ],
-   "areas": [
-    3
-   ],
-   "tags": [
-    "Check cost"
-   ]
-  },
-  {
-   "type": "research",
    "title": "The Reach of Retrieval: retrieval practice in authentic primary classrooms",
    "url": "https://research.ou.nl/en/publications/the-reach-of-retrieval-exploring-retrieval-practice-in-authentic-/",
    "by": "Fieke Ophuis-Cox",
@@ -8208,22 +8112,6 @@
     3
    ],
    "tags": []
-  },
-  {
-   "type": "research",
-   "title": "Explicit Instruction: Historical and Contemporary Contexts",
-   "url": "https://pure.psu.edu/en/publications/explicit-instruction-historical-and-contemporary-contexts/",
-   "by": "Hughes, Morris, Therrien and Benson",
-   "meta": [
-    "2017",
-    "Review"
-   ],
-   "areas": [
-    2
-   ],
-   "tags": [
-    "Check cost"
-   ]
   },
   {
    "type": "research",
@@ -8252,22 +8140,6 @@
     2
    ],
    "tags": []
-  },
-  {
-   "type": "research",
-   "title": "Evidence-based Practices in Classroom Management",
-   "url": "https://muse.jhu.edu/article/240375/pdf",
-   "by": "Simonsen and colleagues",
-   "meta": [
-    "2008",
-    "Review"
-   ],
-   "areas": [
-    5
-   ],
-   "tags": [
-    "Check cost"
-   ]
   },
   {
    "type": "research",
@@ -8501,7 +8373,7 @@
   {
    "type": "research",
    "title": "Seven strong claims about successful school leadership revisited",
-   "url": "https://pure.cardiffmet.ac.uk/en/publications/seven-strong-claims-about-successful-school-leadership-revisited/",
+   "url": "https://ub-ir.bolton.ac.uk/view/delivery/44UOBO_INST/124031880008841/134259580008841",
    "by": "Leithwood, Harris and Hopkins",
    "meta": [
     "2020",
@@ -8511,23 +8383,23 @@
     19
    ],
    "tags": [
-    "Check cost"
+    "Free"
    ]
   },
   {
    "type": "research",
-   "title": "Trust in Schools: A Core Resource for Improvement",
-   "url": "https://consortium.uchicago.edu/publications/trust-schools-core-resource-improvement",
-   "by": "Bryk and Schneider",
+   "title": "Trust in Schools: A Core Resource for School Reform (research summary)",
+   "url": "https://www.ascd.org/el/articles/trust-in-schools-a-core-resource-for-school-reform",
+   "by": "Bryk and Schneider (Educational Leadership)",
    "meta": [
-    "2002",
-    "Longitudinal study"
+    "2003",
+    "Research summary"
    ],
    "areas": [
     20
    ],
    "tags": [
-    "Check cost"
+    "Free"
    ]
   },
   {
@@ -8629,22 +8501,8 @@
   },
   {
    "type": "research",
-   "title": "What do we really know about explicit instruction?",
-   "url": "https://blog.aare.edu.au/2026/09/17/what-do-we-really-know-about-explicit-instruction/",
-   "by": "Robert Hattam (AARE blog)",
-   "meta": [
-    "2026",
-    "Critique"
-   ],
-   "areas": [
-    18
-   ],
-   "tags": []
-  },
-  {
-   "type": "research",
-   "title": "Effects of school phone bans (NBER working paper 35132)",
-   "url": "https://www.nber.org/papers/w35132",
+   "title": "The Effects of School Phone Bans: National Evidence from Lockable Pouches",
+   "url": "https://web.stanford.edu/~gentzkow/research/PhoneBans.pdf",
    "by": "Allcott, Dee, Duckworth, Gentzkow and colleagues",
    "meta": [
     "2026",
@@ -8654,7 +8512,7 @@
     18
    ],
    "tags": [
-    "Check cost"
+    "Free"
    ]
   },
   {
@@ -9379,22 +9237,6 @@
    ],
    "tags": [
     "Free account needed"
-   ]
-  },
-  {
-   "type": "curriculum",
-   "title": "TextProject free texts",
-   "url": "https://textproject.org/free-texts",
-   "by": "",
-   "meta": [
-    "Reading texts",
-    "Primary"
-   ],
-   "areas": [
-    30
-   ],
-   "tags": [
-    "Free"
    ]
   },
   {
@@ -12772,26 +12614,6 @@
   },
   {
    "type": "research",
-   "title": "The Science of Reading Progresses: Communicating advances beyond the Simple View of Reading",
-   "url": "https://doi.org/10.1002/rrq.411",
-   "by": "Nell Duke and Kelly Cartwright",
-   "meta": [
-    "2021",
-    "Open access",
-    "Reading Research Quarterly"
-   ],
-   "areas": [
-    33,
-    18
-   ],
-   "tags": [
-    "Open access"
-   ],
-   "summary": "The paper that proposed the Active View of Reading. Duke and Cartwright set out three advances since the Simple View, including the overlap between word recognition and language comprehension and the part played by active self-regulation.",
-   "strand": "The Simple View of Reading"
-  },
-  {
-   "type": "research",
    "title": "SOLAR: The Science of Language and Reading",
    "url": "https://doi.org/10.1177/0265659020947817",
    "by": "Pamela Snow",
@@ -15392,6 +15214,594 @@
    ],
    "summary": "Two members of the NSW Department of Education's literacy team discuss why handwriting matters so much and how to teach it effectively. About 23 minutes, with a transcript.",
    "focus": "Handwriting"
+  },
+  {
+   "type": "read",
+   "title": "Principles of Instruction: one-page guide",
+   "url": "https://www.jamieleeclark.com/s/POI.pdf",
+   "by": "Jamie Clark",
+   "meta": [
+    "One-page guide",
+    "Australia"
+   ],
+   "areas": [
+    2,
+    3
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A one-page summary of Rosenshine's ten research-based principles, set alongside a simple model of memory. Handy for a staff meeting refresher or for new teachers learning the lesson cycle.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Cognitive load theory: one-page guide",
+   "url": "https://www.jamieleeclark.com/s/CLT.pdf",
+   "by": "Jamie Clark",
+   "meta": [
+    "One-page guide",
+    "Australia"
+   ],
+   "areas": [
+    1,
+    2
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Explains working memory, long-term memory and schemas, then offers six ways to plan instruction that avoids overload. Draws on the NSW CESE classroom practice guide.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "The science of simplicity: applying cognitive load theory to instructional design",
+   "url": "https://www.jamieleeclark.com/s/Simplicity.pdf",
+   "by": "Jamie Clark",
+   "meta": [
+    "One-page guide",
+    "Australia"
+   ],
+   "areas": [
+    1,
+    2
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Shows how to design slides and handouts that cut clutter, keep information visible and keep related material together, with short subject examples for each cognitive load effect.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Retrieval practice: one-page guide",
+   "url": "https://www.jamieleeclark.com/s/RP-mmgh.pdf",
+   "by": "Jamie Clark",
+   "meta": [
+    "One-page guide",
+    "Australia"
+   ],
+   "areas": [
+    3
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Why recalling information strengthens memory, with practical retrieval, spacing and interleaving ideas for lessons. Draws on Robert Bjork, Kate Jones and Tom Sherrington.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Making retrieval practice actually work: seven principles",
+   "url": "https://www.jamieleeclark.com/s/RPP-CH",
+   "by": "Carl Hendrick and Jamie Clark",
+   "meta": [
+    "One-page guide",
+    "Australia"
+   ],
+   "areas": [
+    3
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A poster version of Carl Hendrick's seven principles for retrieval practice, covering the value of forgetting and pitching enough challenge early. Useful for checking that quizzing is doing real work.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Five effective study strategies",
+   "url": "https://www.jamieleeclark.com/s/5-Effective-Study-Strategies.pdf",
+   "by": "Jamie Clark",
+   "meta": [
+    "Poster",
+    "Australia"
+   ],
+   "areas": [
+    15,
+    3
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "An A3 poster on retrieval practice, spacing, interleaving, dual coding and elaboration, explaining why and how to use each. Suitable to share with secondary students and families.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Explicit instruction: one-page guide",
+   "url": "https://www.jamieleeclark.com/s/EI.pdf",
+   "by": "Jamie Clark",
+   "meta": [
+    "One-page guide",
+    "Australia"
+   ],
+   "areas": [
+    2,
+    23
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Summarises Anita Archer and Charles Hughes's model, including the lesson opening, body and closing and the input, question, response, monitor and feedback cycle.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Explicit guidance versus discovery learning",
+   "url": "https://www.jamieleeclark.com/s/Explicit-Guidance.pdf",
+   "by": "Jamie Clark",
+   "meta": [
+    "One-page guide",
+    "Australia"
+   ],
+   "areas": [
+    2,
+    18
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Sets out why fully guided instruction beats minimal guidance for novices, drawing on Kirschner, Sweller and Clark, and shows the I do, we do, you do sequence with fading.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Explicit Direct Instruction: one-page guide",
+   "url": "https://www.jamieleeclark.com/s/EDI.pdf",
+   "by": "Jamie Clark",
+   "meta": [
+    "One-page guide",
+    "Australia"
+   ],
+   "areas": [
+    2,
+    23
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Summarises Hollingsworth and Ybarra's lesson design, from learning objective to periodic review, with student engagement norms such as choral reading, pair-shares and whiteboards.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Checking for understanding (TAPPLE): one-page guide",
+   "url": "https://www.jamieleeclark.com/s/CFU-Guide-TAPPLE.pdf",
+   "by": "Jamie Clark",
+   "meta": [
+    "One-page guide",
+    "Australia"
+   ],
+   "areas": [
+    4,
+    23
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Practical techniques for checking every student's understanding during a lesson, including choral response and the TAPPLE questioning sequence, so teachers can adjust teaching on the spot.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Responsive teaching: one-page guide",
+   "url": "https://www.jamieleeclark.com/s/Responsive-Teaching.pdf",
+   "by": "Carl Hendrick and Jamie Clark",
+   "meta": [
+    "One-page guide",
+    "Australia"
+   ],
+   "areas": [
+    4,
+    2
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A one-page version of Carl Hendrick's responsive teaching guide for UNESCO's International Bureau of Education, covering prior knowledge, high expectations and adapting to evidence of learning.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Whole-class feedback: one-page guide",
+   "url": "https://www.jamieleeclark.com/s/Whole-Class-Feedback-Guide.pdf",
+   "by": "Jamie Clark",
+   "meta": [
+    "One-page guide",
+    "Australia"
+   ],
+   "areas": [
+    24
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Shows how to give feedback to a whole class using a crib sheet and a six-step routine, a workload-friendly approach that targets common misconceptions.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Formative assessment: five key strategies",
+   "url": "https://www.jamieleeclark.com/s/FA-7trr.pdf",
+   "by": "Jamie Clark",
+   "meta": [
+    "One-page guide",
+    "Australia"
+   ],
+   "areas": [
+    4,
+    13,
+    24
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Summarises Dylan Wiliam and Siobhan Leahy's five formative assessment strategies with practical tips for minute-by-minute teaching decisions.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Scaffolding learning: one-page guide",
+   "url": "https://www.jamieleeclark.com/s/Scaffolding.pdf",
+   "by": "Jamie Clark",
+   "meta": [
+    "One-page guide",
+    "Australia"
+   ],
+   "areas": [
+    2,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Argues for scaffolding upwards rather than differentiating downwards, with worked examples of writing frames and guided practice that keep the task demanding while supporting students who struggle.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Classroom routines: one-page guide",
+   "url": "https://www.jamieleeclark.com/s/Routines.pdf",
+   "by": "Jamie Clark",
+   "meta": [
+    "One-page guide",
+    "Australia"
+   ],
+   "areas": [
+    5
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Explains how consistent cues and practised routines free working memory for learning, and why whole-school agreement on procedures matters. Draws on Peps Mccrea and Doug Lemov.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "The Classroom Management Handbook: one-page guide",
+   "url": "https://www.jamieleeclark.com/s/TCMH-wzjf.pdf",
+   "by": "Jamie Clark",
+   "meta": [
+    "One-page guide",
+    "Australia"
+   ],
+   "areas": [
+    5,
+    20
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Summarises the principles and routines from Mark Dowley and Ollie Lovell's Australian book, including entry routines, gaining attention and tight transitions.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Why Don't Students Like School? one-page guide",
+   "url": "https://www.jamieleeclark.com/s/WDSLS2.pdf",
+   "by": "Jamie Clark",
+   "meta": [
+    "One-page guide",
+    "Australia"
+   ],
+   "areas": [
+    1
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Distils Daniel Willingham's account of how thinking and memory work, and what that means for planning lessons that make students think hard about the right things.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Teaching some versus teaching all",
+   "url": "https://www.jamieleeclark.com/s/Teaching-Some-vs-Teaching-All.pdf",
+   "by": "Jamie Clark",
+   "meta": [
+    "One-page guide",
+    "Australia"
+   ],
+   "areas": [
+    23,
+    4
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Based on a Tom Sherrington blog post, this one-pager lists six things to check so that every student, not just a few, is attending, thinking and making meaning.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "The generation effect and AI",
+   "url": "https://www.jamieleeclark.com/s/TGE.pdf",
+   "by": "Jamie Clark",
+   "meta": [
+    "One-page guide",
+    "Australia"
+   ],
+   "areas": [
+    1,
+    15
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Explains why students remember what they produce themselves, and offers five classroom moves for sequencing AI use so it does not take over the thinking students need to do.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "High-leverage mentoring strategies",
+   "url": "https://www.jamieleeclark.com/s/HLMS.pdf",
+   "by": "Haili Hughes and Jamie Clark",
+   "meta": [
+    "One-page guide",
+    "Australia"
+   ],
+   "areas": [
+    16
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Haili Hughes's five strategies for mentors and coaches of early career teachers, including shared language and using video to pin down specific next steps.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Teaching for attention",
+   "url": "https://newsletter.jamieleeclark.com/p/teaching-for-attention",
+   "by": "Jamie Clark (DistillED)",
+   "meta": [
+    "Newsletter article",
+    "2026",
+    "Australia"
+   ],
+   "areas": [
+    5,
+    1
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A framework for designing lessons that secure, direct and orchestrate students' attention, written up from a webinar. Covers distractions from devices, peers, the room and busy slides.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Rosenshine's Principles of Instruction: the full guide",
+   "url": "https://newsletter.jamieleeclark.com/p/rosenshine-s-principles-of-instruction",
+   "by": "Jamie Clark (DistillED)",
+   "meta": [
+    "Newsletter article",
+    "2026",
+    "Australia"
+   ],
+   "areas": [
+    2,
+    3
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Brings together the ten principles, grouped into Tom Sherrington's four strands, with explanations of why they matter and how they look in practice.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Cold calling: how to make every student think",
+   "url": "https://newsletter.jamieleeclark.com/p/cold-calling",
+   "by": "Jamie Clark (DistillED)",
+   "meta": [
+    "Newsletter article",
+    "2025",
+    "Australia"
+   ],
+   "areas": [
+    23,
+    4
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Explains cold calling as an invitation to join the thinking rather than a way to catch students out, with dos and don'ts drawn from Doug Lemov and Tom Sherrington.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Strategies versus principles",
+   "url": "https://newsletter.jamieleeclark.com/p/strategies-vs-principles",
+   "by": "Jamie Clark (DistillED)",
+   "meta": [
+    "Newsletter article",
+    "2026",
+    "Australia"
+   ],
+   "areas": [
+    16,
+    18
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Distinguishes a strategy (what you do) from a principle (why you do it) and argues professional learning should start from principles. Builds on a Haili Hughes article.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Mini-whiteboards revisited",
+   "url": "https://newsletter.jamieleeclark.com/p/mini-whiteboards-revisited",
+   "by": "Jamie Clark (DistillED)",
+   "meta": [
+    "Newsletter article",
+    "2026",
+    "Australia"
+   ],
+   "areas": [
+    4,
+    23
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Treats mini-whiteboards as a whole-class participation routine rather than just a checking tool, covering the why and how of using them well.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Formative action loops",
+   "url": "https://newsletter.jamieleeclark.com/p/formative-action-loops",
+   "by": "Tom Sherrington and Valentina Devid (DistillED)",
+   "meta": [
+    "Newsletter article",
+    "2026",
+    "Australia"
+   ],
+   "areas": [
+    4,
+    13
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A guest piece reframing formative assessment as formative action, using short loops that turn classroom evidence into immediate teaching decisions.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Handwriting is thinking",
+   "url": "https://newsletter.jamieleeclark.com/p/handwriting-is-thinking",
+   "by": "Jamie Clark (DistillED)",
+   "meta": [
+    "Newsletter article",
+    "2026",
+    "Australia"
+   ],
+   "areas": [
+    32,
+    1
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Looks at the evidence on handwriting versus typing and argues the slowness of handwriting can aid learning, with guidance on deciding which to use.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Developing an evidence-informed culture: five essential ingredients",
+   "url": "https://www.jamieleeclark.com/blog/developing-an-evidence-informed-culture",
+   "by": "Jamie Clark",
+   "meta": [
+    "Blog post",
+    "2024",
+    "Australia"
+   ],
+   "areas": [
+    19,
+    16
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A school leader's five ingredients for embedding research in a school, from shared understanding and how learning happens to trust, context-specific professional learning and curated strategies.",
+   "region": "Australia"
+  },
+  {
+   "type": "listen",
+   "title": "Summer '24 Interlude E2: One-pagers make literacy research more accessible",
+   "url": "https://www.buzzsprout.com/612361/episodes/15480166-summer-24-interlude-e1-one-pagers-make-literacy-research-more-accessible-with-jamie-clark",
+   "by": "Science of Reading: The Podcast",
+   "meta": [
+    "with Jamie Clark"
+   ],
+   "areas": [
+    16
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Susan Lambert talks with Jamie Clark about how he condenses research into one-page summaries for teachers, including a close look at his think, pair, share one-pager.",
+   "focus": "One-pagers for professional learning"
+  },
+  {
+   "type": "listen",
+   "title": "5 One Pagers every Teacher needs to know: The Late Show with Tom Rogers",
+   "url": "https://podcasts.apple.com/au/podcast/teachers-talk-radio/id1438130310?i=1000658581682",
+   "by": "Teachers Talk Radio",
+   "meta": [
+    "with Jamie Clark"
+   ],
+   "areas": [
+    1,
+    2,
+    23
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Jamie Clark walks Tom Rogers through five one-pagers, on minimising distractions, worked examples, activating prior knowledge, think, pair, share and low-stakes recall.",
+   "focus": "Five core techniques"
+  },
+  {
+   "type": "voice",
+   "title": "Jamie Clark",
+   "url": "https://www.jamieleeclark.com/",
+   "by": "",
+   "meta": [
+    "One-pagers and newsletter",
+    "Australia"
+   ],
+   "areas": [
+    1,
+    2,
+    16
+   ],
+   "tags": [],
+   "summary": "Perth-based head of professional growth and author of Teaching One-Pagers. His site offers free one-page guides on the science of learning and links to his DistillED newsletter."
   }
  ],
  "shows": [
@@ -15490,18 +15900,6 @@
    "spotify": "https://open.spotify.com/show/1iEJmQLXeXMUqqYp82OHuj",
    "art": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1f8ba90df7ae925ccbf2f1f900",
    "desc": "For parents and educators, on supporting students with learning difficulties such as dyslexia. Hosted by specialist teacher Michael Shanahan."
-  },
-  {
-   "title": "The Art of Teaching",
-   "by": "Mathew Green",
-   "url": "https://theartofteaching.podbean.com/",
-   "meta": [
-    "General teaching",
-    "Australia"
-   ],
-   "spotify": "https://open.spotify.com/show/3XieEOmwujSnaNdJ6lHU9e",
-   "art": "https://image-cdn-ak.spotifycdn.com/image/ab67656300005f1fc30a5e4dcde7378d6464e8d9",
-   "desc": "Mathew Green interviews teachers and school leaders."
   },
   {
    "title": "Mind the Gap: Making Education Work Across the Globe",
@@ -15657,30 +16055,6 @@
    "spotify": "https://open.spotify.com/show/37fvs1dgedM2DgRHkYWOyv",
    "art": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1fcbc46eeb39a8b30dcd565f9f",
    "desc": "Amplify's podcast on the science of reading and how to teach it."
-  },
-  {
-   "title": "Teacher Takeaway",
-   "by": "Four Australian teachers",
-   "url": "https://podcasts.apple.com/au/podcast/teacher-takeaway/id1565473871",
-   "meta": [
-    "General teaching",
-    "Australia"
-   ],
-   "art": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1f834da482d4f124882e92bcfb",
-   "spotify": "https://open.spotify.com/show/1YGfJ56fKQn9J5R8xd1qf9",
-   "desc": "Four Australian teachers share practical takeaway ideas to use in your classroom or school."
-  },
-  {
-   "title": "Schoolin' Around",
-   "by": "Branching Minds",
-   "url": "https://podcasts.apple.com/au/podcast/schoolin-around/id1653176434",
-   "meta": [
-    "Tiered support",
-    "USA"
-   ],
-   "art": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1f054905a5cb75ad9635e1684c",
-   "spotify": "https://open.spotify.com/show/508YOGvq6UITpubPTsexaR",
-   "desc": "A weekly podcast from Branching Minds, with leaders and experts on current challenges in school education."
   }
  ],
  "vtlm": {
@@ -16014,13 +16388,6 @@
      "guest": "Carl Hendrick",
      "focus": "Core teaching habits",
      "url": "https://knowledgeforteachers.podbean.com/e/s03e06-dr-carl-hendrick-on-five-things-every-teacher-should-do/"
-    },
-    {
-     "title": "Episode 21 Explicit Instruction Isn't Everything",
-     "by": "Pedagogy to Practice",
-     "guest": "",
-     "focus": "Limits and nuance of explicit instruction",
-     "url": "https://shows.acast.com/pedagogy-to-practice/episodes/6a37aee7db494ef85c58fedd"
     }
    ],
    "Explicit teaching: focus the learning": [
