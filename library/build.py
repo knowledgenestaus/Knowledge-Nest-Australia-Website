@@ -14,7 +14,7 @@ import os
 import re
 from collections import OrderedDict, defaultdict
 from datetime import date
-from urllib.parse import urlparse
+from urllib.parse import quote_plus, urlparse
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = json.load(open(os.path.join(ROOT, "library", "data", "library.json"), encoding="utf8"))
@@ -116,6 +116,17 @@ for x in ENTRIES:
 LENGTHS = ["Under 10 minutes", "10 to 30 minutes", "30 to 60 minutes", "Over 60 minutes", "Series"]
 NO_LENGTH = "Length not stated"   # the Length menu's option for a Learn entry with no running time recorded
 SUBSTACKS = _load("substacks.json", [])
+# Weekly featured reading ("This week's reading" on the home page and the Read shelf). See tools/feature_week.py.
+# KN_FEATURED_FILE points the build at another copy of the file, for testing.
+def _load_featured():
+    path = os.environ.get("KN_FEATURED_FILE") or os.path.join(ROOT, "library", "data", "featured.json")
+    try:
+        data = json.load(open(path, encoding="utf8"))
+    except (OSError, ValueError):   # missing, empty or broken: no panel
+        return {}
+    return data if isinstance(data, dict) else {}
+FEATURED = _load_featured()
+FEATURED_DAYS = 21   # after this many days from its week_of the panel is left out (and hidden in the browser), so a missed week never shows stale picks
 THUMBS = _load("thumbs.json", {})  # video url -> preview image url (linked, never copied); see tools/thumbs.py
 # Jo's must-follow Substacks, by title, shown first on the Read page. Leave empty until chosen.
 MUST_SUBSTACKS = []
@@ -136,7 +147,7 @@ TYPES = OrderedDict([
                    cross=("Want to see a lesson being taught?", "Classroom footage is on the Watch shelf", "library-watch.html"))),
     ("listen", dict(label="Listen", page="library-listen.html", title="Listen: podcasts", tile="Listen", noun="episodes",
                     blurb="Must-listen shows, and episodes sorted by category.")),
-    ("read", dict(label="Read", page="library-read.html", title="Read: articles, blogs and Substacks", tile="Read", noun="articles and guides",
+    ("read", dict(label="Read", page="library-read.html", title="Read: articles, blogs and Substacks", tile="Read", noun="articles and guides", short="articles",
                   blurb="Short reads, practice guides and Substacks worth following.")),
     ("research", dict(label="Research", page="library-research.html", title="Research: papers and reviews", tile="Research", noun="papers and reviews",
                       blurb="Foundational papers, reviews and meta-analyses.")),
@@ -353,9 +364,21 @@ def short_area(n):
     return AREA[n]["name"].split(":")[0]
 
 
+def stack_of(x):
+    """The Substack (from substacks.json) a Read entry was published on, matched by web address, or None."""
+    if x["type"] != "read":
+        return None
+    host = domain_of(x["url"])
+    return next((s for s in SUBSTACKS if domain_of(s["url"]) == host), None)
+
+
 def source_of(x):
-    """Who to file an entry under in the Source filter. A Learn session by 'Host, with Presenter' is filed under the host."""
-    return x["by"].split(", with ")[0] if x["type"] == "learn" else x["by"]
+    """Who to file an entry under in the Source filter. A Learn session by 'Host, with Presenter' is filed under the host;
+    a Substack post on Read is filed under its publication ("Filling the Pail"), so one menu choice finds all of it."""
+    if x["type"] == "learn":
+        return x["by"].split(", with ")[0]
+    stack = stack_of(x)
+    return stack["title"] if stack else x["by"]
 
 
 def access_of(x):
@@ -443,8 +466,11 @@ def card(x, show_type=True, level="h3", filterable=False):
     )
 
 
-MIX_TYPES = ("watch", "learn", "listen")
-_SERIES = re.compile(r"^(.*?)[,:]?\s+(?:episode|part|session)\s+\d+", re.I)
+MIX_TYPES = ("watch", "learn", "listen", "read")
+# A numbered part of a series: "... episode 3", "... Part 2", "... session 4", or "Title, #3: ..." (Greg Ashman's
+# "Five arguments against explicit teaching, #1" to "#5"). A bare "#49" with no comma before it (Craig Barton's
+# "Tip #49", "Research Bite #56") is not a series: each of those is a separate piece on its own topic.
+_SERIES = re.compile(r"^(.*?)(?:[,:]?\s+(?:episode|part|session)\s+\d+|,\s*#\d+)", re.I)
 
 
 def mix(entries):
@@ -503,7 +529,7 @@ def field(fid, label, key, opts, all_label, extra=""):
 
 
 def shelf_menus(items, kind):
-    """The menus on Watch and Learn: "Topic", then "Area of practice", which lists only the areas inside the chosen topic.
+    """The menus on Watch, Learn and Read: "Topic", then "Area of practice", which lists only the areas inside the chosen topic.
     A topic or an area is offered only when this shelf has at least one entry for it, so every choice finds something.
     The other menus follow, with the less used ones under "More filters". Without JavaScript the list simply shows in full."""
     topics = [d for d in DOMAIN_ORDER if any(d in domains_of(x) for x in items)]
@@ -515,7 +541,12 @@ def shelf_menus(items, kind):
                 % "".join('<option value="%d" data-domain="%s">%s</option>' % (a["n"], ea(a["domain"]), e(a["name"])) for a in areas))
     kinds = [l for l in KIND_LABEL.values() if any(kind_label(x) == l for x in items)]
     more = []
-    if kind == "watch":
+    if kind == "read":
+        main.append(publication_field(items))
+        access = [v for v in ["Free", "Free account needed", "Check cost"] if any(access_of(x) == v for x in items)]
+        if len(access) > 1:
+            more.append(field("fAccess", "Access", "access", [(v, v) for v in access], "Any"))
+    elif kind == "watch":
         main.append(field("fBand", "Year level", "bands", [("F-2", "Foundation to Year 2"), ("3-6", "Years 3 to 6"), ("Secondary", "Secondary")],
                           "All year levels", " lib-field-extra"))
         main.append(field("fKind", "What you will see", "kind", [(k, k) for k in kinds], "Any kind of video", " lib-field-extra"))
@@ -529,8 +560,9 @@ def shelf_menus(items, kind):
         more.append(field("fAudience", "Made for", "audience", [(v, v) for v in audiences], "Everyone"))
         access = [v for v in ["Free", "Free account needed", "Check cost"] if any(access_of(x) == v for x in items)]
         more.append(field("fAccess", "Access", "access", [(v, v) for v in access], "Any"))
-    sources = sorted(set(source_of(x) for x in items if x["by"]), key=str.lower)
-    more.append(field("fBy", "Source", "by", [(v, v) for v in sources], "All sources"))
+    if kind != "read":
+        sources = sorted(set(source_of(x) for x in items if x["by"]), key=str.lower)
+        more.append(field("fBy", "Source", "by", [(v, v) for v in sources], "All sources"))
     more.append('<div class="lib-field lib-field-wide"><label for="fText">Search within this page</label>'
                 '<input type="search" id="fText" placeholder="e.g. worked examples" autocomplete="off"></div>')
     chips = "".join('<button type="button" class="lib-chip" data-topic="%s">%s <span>%d</span></button>'
@@ -540,6 +572,21 @@ def shelf_menus(items, kind):
             '<p class="lib-filter-status"><span id="fCount" role="status" aria-live="polite"></span> '
             '<button type="reset" class="lib-reset">Clear filters</button></p></form>'
             '<div class="lib-chips lib-chips-topics" id="libChips"><p>Browse by topic</p><div>%s</div></div>' % ("".join(main), "".join(more), chips))
+
+
+def publication_field(items):
+    """Read's "Publication or source" menu: the Substacks first (each holds that publication's key articles), then every
+    other source. "See key articles" on a Substack card opens the shelf with this menu set (library-read.html?by=...)."""
+    titles = set(source_of(x) for x in items if x["by"])
+    stacks = sorted((s for s in SUBSTACKS if s["title"] in titles), key=lambda s: s["title"].lower())
+    names = set(s["title"] for s in stacks)
+    others = sorted(titles - names, key=str.lower)
+    def opt(v, label):
+        return '<option value="%s">%s</option>' % (ea(v), e(label))
+    label = lambda s: s["title"] if s["by"] == s["title"] or s["by"] in s["title"] else "%s (%s)" % (s["title"], s["by"])
+    return ('<div class="lib-field lib-field-extra"><label for="fBy">Publication or source</label><select id="fBy" data-filter="by">'
+            '<option value="">All publications and sources</option><optgroup label="Substacks">%s</optgroup><optgroup label="Other sources">%s</optgroup>'
+            '</select></div>' % ("".join(opt(s["title"], label(s)) for s in stacks), "".join(opt(v, v) for v in others)))
 
 
 def shelf_order(items):
@@ -561,9 +608,10 @@ def shelf_order(items):
 
 def shelf_list(items, kind):
     """The full list of a Watch or Learn shelf, 24 cards at a time, with its "Show more" button and empty state."""
-    t, other = TYPES[kind], TYPES["learn" if kind == "watch" else "watch"]
+    t = TYPES[kind]
+    other = TYPES[{"watch": "learn", "learn": "watch", "read": "research"}[kind]]
     hint = ("look on the <a href=\"%s\">%s shelf</a> for %s on the same topic" % (other["page"], other["label"],
-            "webinars, talks and explainers" if kind == "watch" else "lessons being taught"))
+            {"watch": "webinars, talks and explainers", "learn": "lessons being taught", "read": "papers and reviews"}[kind]))
     return ('<div id="libList">%s</div>' % cards(shelf_order(items), False, "h3", True, mixed=False)
             + '<p class="lib-more" hidden><button type="button" class="btn btn-primary" id="libMore">Show more</button></p>'
             + '<p class="lib-empty" id="libEmpty" hidden>No %s match those choices yet. Try clearing one of the menus, or %s. '
@@ -641,6 +689,51 @@ def start_here(limit=None):
             '<div class="lib-starts%s">%s</div>%s</div></section>' % (
                 "Three" if limit == 3 else "Five", " lib-starts-three" if limit == 3 else "", "".join(cards_html),
                 '<p class="lib-starts-more"><a href="library.html#start">See all five starting points %s</a></p>' % ARROW if limit else "")).replace("ILLO_START", illo("start", "section-illo", 200))
+
+
+MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+FEATURED_INTRO = "Three free pieces I think are worth your time this week. Each one opens on the writer's own Substack."
+
+
+def featured_week():
+    """featured.json's week as a date, or None when the panel should not show: no file, no items, a bad date,
+    or a week that began more than FEATURED_DAYS days ago (KN_TODAY=YYYY-MM-DD stands in for today, for testing)."""
+    items = [x for x in FEATURED.get("items") or [] if x.get("url") and x.get("title")]
+    try:
+        week = date.fromisoformat(FEATURED.get("week_of", ""))
+    except (TypeError, ValueError):
+        return None
+    today = date.fromisoformat(os.environ["KN_TODAY"]) if os.environ.get("KN_TODAY") else date.today()
+    return week if items and (today - week).days <= FEATURED_DAYS else None
+
+
+def featured_panel(where):
+    """"This week's reading": the three picks in featured.json, on the home page (where="home") and at the top of Read.
+    Left out of the page when featured_week() says so. The page is not rebuilt every day, so a short script straight after
+    the panel also hides it (and the Read page's jump link to it) once the week is more than FEATURED_DAYS days old."""
+    week = featured_week()
+    if not week:
+        return ""
+    when = "Week of %d %s %d" % (week.day, MONTHS[week.month - 1], week.year)
+    level = "h3"
+    cards_html = "".join(
+        '<article class="lib-card kn-week-card"><%s class="lib-card-title"><a href="%s" target="_blank" rel="noopener">%s%s</a></%s>'
+        '<p class="lib-by">%s</p>%s<p class="lib-card-foot"><span class="lib-source">Opens at %s in a new tab</span></p></article>'
+        % (level, ea(x["url"]), title_html(x["title"]), NEWTAB, level, e(x.get("by", "")),
+           ('<p class="lib-summary kn-week-why">%s</p>' % e(x["why"])) if x.get("why") else "", e(domain_of(x["url"])), )
+        for x in FEATURED["items"] if x.get("url") and x.get("title"))
+    intro = e(FEATURED.get("intro") or FEATURED_INTRO)
+    hide = ('<script>(function(){var s=document.getElementById("this-week");if(!s)return;'
+            'var w=new Date(s.getAttribute("data-week")+"T00:00:00+11:00").getTime();'
+            'if(isNaN(w)||Date.now()-w>%d*864e5){s.hidden=true;var a=document.querySelector(\'a[href="#this-week"]\');if(a)a.hidden=true;}})();</script>' % (FEATURED_DAYS + 1))
+    if where == "home":
+        return ('<section class="section kn-week-home" id="this-week" data-week="%s" aria-labelledby="this-week-title"><div class="container">'
+                '<div class="section-header"><p class="kn-eyebrow">%s</p><h2 id="this-week-title">This week\'s reading</h2><p>%s</p></div>'
+                '<div class="kn-week-grid">%s</div><p class="kn-week-more"><a href="library-read.html">More to read on the Read shelf %s</a></p></div></section>%s'
+                % (week.isoformat(), when, intro, cards_html, ARROW, hide))
+    return ('<section class="kn-week" id="this-week" data-week="%s" aria-labelledby="this-week-title"><p class="kn-eyebrow">%s</p>'
+            '<h2 id="this-week-title">This week\'s reading</h2><p class="kn-week-intro">%s</p><div class="kn-week-grid">%s</div></section>%s'
+            % (week.isoformat(), when, intro, cards_html, hide))
 
 
 def credit_panels():
@@ -892,6 +985,8 @@ def featured_strip(items, kind):
     def li(x):   # a link list, so no bold lead-in
         return ('<li><span class="lib-kind-inline lib-kind-%s">%s</span> <a href="%s" target="_blank" rel="noopener">%s%s</a> <span class="lib-featured-by">%s</span></li>'
                 % (x["type"], e(kind_label(x)), ea(x["url"]), e(x["title"]), NEWTAB, e(x["by"])))
+    if kind == "read":   # Read opens with "This week's reading" instead (featured_panel)
+        return ""
     if kind == "watch":
         picks = [x for p in WATCH_START for x in items if cap_after_colon(x["title"]).lower().startswith(cap_after_colon(p).lower())]
         if not picks:
@@ -953,6 +1048,9 @@ def shelf_page(items, kind):
     if kind == "learn":
         lead = ('<p class="lib-group-lead">Sessions marked "Free account needed" open on the host\'s page, where a free sign-in unlocks the recording. '
                 'If a webinar or recorded session has shaped your thinking, <a href="mailto:%s?subject=Learn%%20suggestion">send it my way</a>.</p>' % EMAIL)
+    elif kind == "read":
+        lead = ('<p class="lib-group-lead">Everything on this shelf is free to read. From the Substacks I follow most closely I\'ve picked out key free posts '
+                'and filed them by topic, alongside articles and guides from across the web.</p>')
     return (shelf_menus(items, kind) + featured_strip(items, kind) + topic_sections(items, kind)
             + '<section class="lib-group lib-all" id="all"><h2 id="libListHeading" tabindex="-1" data-all="All %s" data-some="Matching %s">'
               '<span id="libListLabel">All %s</span> <span class="lib-count" id="libListCount">%d</span></h2>%s%s</section>'
@@ -963,15 +1061,16 @@ def build_types():
     for key, t in TYPES.items():
         items = [x for x in ENTRIES if x["type"] == key]
         lead = e(t["blurb"]) + " Every entry links to the original."
-        intro = ""
+        intro = outro = ""
         hero_jump = ""
         if key in ("voice", "curriculum"):
             items = sorted(items, key=lambda x: x["title"].lower())
             nav, sections = [], '<section class="lib-group">%s</section>' % cards(items, False, "h2")
-        elif key in ("watch", "learn"):
+        elif key in ("watch", "learn", "read"):
             nav = []
-            lead = e(t["promise"]) + " Every entry links to the original."
-            hero_jump = '<p class="lib-cross">%s <a href="%s">%s</a>.</p>' % (e(t["cross"][0]), t["cross"][2], e(t["cross"][1]))
+            lead = e(t.get("promise", t["blurb"])) + " Every entry links to the original."
+            if t.get("cross"):
+                hero_jump = '<p class="lib-cross">%s <a href="%s">%s</a>.</p>' % (e(t["cross"][0]), t["cross"][2], e(t["cross"][1]))
             sections = shelf_page(items, key)
         elif key == "listen":
             nav = []
@@ -982,24 +1081,31 @@ def build_types():
             nav, sections = domain_sections(items)
         else:
             nav, sections = grouped_sections(items)
+        if key == "read":
+            intro = featured_panel("read")
+            nav = ([("this-week", "This week's reading")] if intro else []) + [("all", "All articles"), ("substacks", "Substacks worth following")]
         if key == "read" and SUBSTACKS:
             def stack_card(x):
                 pace = "Posts most weeks" if x["n365"] >= 20 else ("A couple of posts a month" if x["n365"] >= 10 else "Posts now and then")
+                # "See key articles" sets the Publication menu above (filter.js), or opens the shelf with it set when followed from elsewhere.
+                n = sum(1 for y in items if source_of(y) == x["title"])
+                keys = ('<p class="lib-stack-keys"><a href="%s" data-set>See key articles <span class="lib-count">%d</span></a></p>'
+                        % (ea("library-read.html?by=" + quote_plus(x["title"])), n)) if n else ""
                 return ('<article class="lib-card lib-stack"><h3 class="lib-card-title"><a href="%s" target="_blank" rel="noopener">%s%s</a></h3><p class="lib-by">%s</p>'
-                        '<p class="lib-summary">%s</p><p class="lib-card-foot"><span class="lib-tag">%s</span><span class="lib-source">Opens at %s</span></p></article>'
-                        % (ea(x["url"]), title_html(x["title"]), NEWTAB, e(x["by"]), e(x["desc"]), pace, e(domain_of(x["url"]))))
+                        '<p class="lib-summary">%s</p>%s<p class="lib-card-foot"><span class="lib-tag">%s</span><span class="lib-source">Opens at %s</span></p></article>'
+                        % (ea(x["url"]), title_html(x["title"]), NEWTAB, e(x["by"]), e(x["desc"]), keys, pace, e(domain_of(x["url"]))))
             must = [x for name in MUST_SUBSTACKS for x in SUBSTACKS if x["title"] == name]
-            intro = ('<section class="lib-group" id="substacks"><h2>Substacks worth following <span class="lib-count">%d</span></h2>'
+            outro = ('<section class="lib-group lib-stacks" id="substacks"><h2>Substacks worth following <span class="lib-count">%d</span></h2>'
                      '<p class="lib-group-lead">Some of the best thinking in education now arrives by newsletter. These are free to subscribe to, though some writers keep '
-                     'part of their work for paying subscribers. Know one that belongs here? <a href="mailto:%s?subject=Substack%%20suggestion">Send it my way</a>.</p>' % (len(SUBSTACKS), EMAIL))
+                     'part of their work for paying subscribers. Where a Substack has "See key articles", I\'ve listed its key free posts on this shelf. '
+                     'Know one that belongs here? <a href="mailto:%s?subject=Substack%%20suggestion">Send it my way</a>.</p>' % (len(SUBSTACKS), EMAIL))
             if must:
-                intro += '<h3 class="lib-subhead">My must-follows</h3><div class="lib-grid">%s</div>' % "".join(stack_card(x) for x in must)
+                outro += '<h3 class="lib-subhead">My must-follows</h3><div class="lib-grid">%s</div>' % "".join(stack_card(x) for x in must)
             for region in ["Australia", "United Kingdom and Europe", "United States and Canada"]:
                 group = [x for x in SUBSTACKS if x["region"] == region and x not in must]
                 if group:
-                    intro += '<h3 class="lib-subhead">%s</h3><div class="lib-grid">%s</div>' % (title_html(region), "".join(stack_card(x) for x in group))
-            intro += '</section><h2 class="lib-frame" id="articles">Articles and guides by area</h2>'
-            nav = [("substacks", "Substacks")] + nav
+                    outro += '<h3 class="lib-subhead">%s</h3><div class="lib-grid">%s</div>' % (title_html(region), "".join(stack_card(x) for x in group))
+            outro += '</section>'
         if key == "listen" and SHOWS:
             top = [s for name in TOP_SHOWS for s in SHOWS if s["title"] == name]
             rest = [s for s in SHOWS if s not in top]
@@ -1043,7 +1149,7 @@ def build_types():
             hero_jump = jump([("all", "Jump to all episodes and filters")])
         toc = ('<nav class="lib-toc" aria-label="On this page">%s%s</nav>' % (label_html("Jump to:"), "".join('<a href="#%s">%s</a>' % (i, e(l)) for i, l in nav))) if nav else ""
         body = hero("Library", t["title"], lead, crumbs=[("Library", "library.html"), (t["title"], None)], extra=hero_jump, art=key)
-        body += '<section class="section lib-list"><div class="container">%s%s%s<div class="lib-end">%s</div></div></section>' % (toc, intro, sections, suggest_box())
+        body += '<section class="section lib-list"><div class="container">%s%s%s%s<div class="lib-end">%s</div></div></section>' % (toc, intro, sections, outro, suggest_box())
         write(t["page"], "%s | The Knowledge Nest Library" % t["title"],
               "%d %s in the free Knowledge Nest Library, chosen for teachers and school leaders. Every entry links to the original and names its creator." % (len(items), t["noun"]),
               body, t["title"])
@@ -1177,7 +1283,8 @@ def build_home_block():
     start, end = "<!-- LIBRARY:START (generated by library/build.py, do not edit by hand) -->", "<!-- LIBRARY:END -->"
     if start not in src or end not in src:
         return
-    block = ('<section class="section" id="types"><div class="container"><div class="section-header"><p class="kn-eyebrow">%d resources, free to browse</p><h2>Browse the library</h2>'
+    block = (featured_panel("home") +
+             '<section class="section" id="types"><div class="container"><div class="section-header"><p class="kn-eyebrow">%d resources, free to browse</p><h2>Browse the library</h2>'
              '<p>Pick a shelf to start. Every resource links to its creator\'s original.</p></div>%s</div></section>' % (len(ENTRIES), type_tiles())
              + start_here(3).replace('<section class="section" id="start">', '<section class="section section-tint" id="start">')
              + credit_panels())
@@ -1225,9 +1332,17 @@ def warnings():
     prose += [("domain text '%s'" % d, text) for d, text in DOMAIN_ABOUT.items()]
     prose += [("strand text '%s'" % name, text) for plan in STRANDS.values() for name, text, _ in plan["strands"]]
     prose += [("%s of the strands for area %d" % (k, n), plan.get(k, "")) for n, plan in STRANDS.items() for k in ("intro", "note")]
+    prose += [("featured.json why line for '%s'" % x.get("title"), x.get("why", "")) for x in FEATURED.get("items") or []]
+    prose += [("featured.json intro", FEATURED.get("intro", ""))]
     for where, text in prose:
         if text and _COLON.sub(_cap, text) != text:
             out.append("colon before a lower-case word in the %s: %s" % (where, text))
+    if not featured_week():
+        out.append("This week's reading is left out: featured.json is missing, has no picks or is more than %d days old (week_of %r). "
+                   "Set this week's picks with library/tools/feature_week.py" % (FEATURED_DAYS, FEATURED.get("week_of")))
+    for x in FEATURED.get("items") or []:
+        if "\u2014" in x.get("why", ""):
+            out.append("featured.json why line for '%s' has an em dash; reword" % x.get("title"))
     for t in START_HERE:
         for p in t["picks"]:
             if not any(cap_after_colon(x["title"]).startswith(cap_after_colon(p)) for x in ENTRIES):

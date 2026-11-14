@@ -27,7 +27,9 @@ The library pages on the site are generated. Nobody edits `library*.html` by han
 | `library/data/thumbs.json` | Preview picture addresses, keyed by an entry's link. Pictures stay on their creators' servers; nothing is copied here. Watch and Learn show them as the card's still, Read, Research and Curriculum as a small picture beside the heading. Episode cards use their show's cover art from `shows.json`. |
 | `library/tools/prepare.py` | Sheet export to `library.json`. |
 | `library/tools/check_links.py` | Link checker. |
-| `library/search.js`, `library/filter.js` | Search on the library home (titles, creators, areas and summaries), filters on Watch, Learn and Listen. |
+| `library/data/featured.json` | This week's three featured Substack articles and the archive of earlier picks (see "This week's reading" below). |
+| `library/tools/feature_week.py` | Sets the week's picks in `featured.json`, or suggests recent free posts to choose from. |
+| `library/search.js`, `library/filter.js` | Search on the library home (titles, creators, areas and summaries), filters on Watch, Learn, Read and Listen. |
 
 ## Ground rules
 
@@ -65,3 +67,60 @@ The library pages on the site are generated. Nobody edits `library*.html` by han
 - **Literacy has ten areas and Maths six.** They are ordinary areas of practice (numbers 26 to 39, with 10 Writing and 11 Oral language carried over), shown in the order written in `DOMAIN_OF`. An entry carries at most two Literacy areas (plus the frameworks area) or two Maths areas. The retired areas are 7, 8, 9 and 12: the build stops if an entry still uses one. "Maths" is the one name used for the topic.
 - **Frameworks and research behind literacy** (area 33) is laid out by strand, like the learning difficulties area. Its strands and their descriptions are in `STRANDS[33]`; a strand with no entries is left out until it has some.
 - **Retired addresses.** `RETIRED_PAGES` in `build.py` lists each old page and the page that replaced it. The build writes a small "This page has moved" page at the old address (not indexed, not in the sitemap or the search index). Nothing on the site links to them.
+
+## Read shelf, Substack key articles and "This week's reading" (November 2026)
+
+- **Read works like Watch and Learn.** It has the same "Topic" then "Area of practice" menus, topic buttons and topic sections,
+  then the full list 24 cards at a time. Its third menu is "Publication or source": the Substacks first, then every other source.
+  A Substack post is filed under its publication (matched by web address against `substacks.json`), so
+  `library-read.html?by=Filling+the+Pail` opens the shelf showing only that Substack's key articles.
+- **Key Substack articles** are ordinary Read entries in `library.json` with `meta` ["Substack", year, region] and the tag "Free".
+  Only free posts are listed (Substack audience "everyone", no paywall). Credit them as "Author (Publication)", or the author
+  alone where the publication is simply the author's name ("Tom Sherrington", "Haili Hughes", "Nathaniel Swain").
+- **"Substacks worth following"** is its own section at the bottom of Read, reached from the "Jump to" links. A Substack card
+  with key articles on the shelf shows "See key articles" and how many; the link sets the Publication menu.
+- **Numbered series stay together.** Parts titled "... episode 3", "... Part 2", "... session 4" or "Title, #3: ..." are kept
+  together in order (`_SERIES` in `build.py`). "Tip #49" or "Research Bite #56" with no comma before the "#" are separate pieces.
+
+### This week's reading
+
+Three free Substack articles, chosen each week and approved by Jo before they go live. They show as "This week's reading"
+at the top of the home page's library block and at the top of Read.
+
+`library/data/featured.json`:
+
+```json
+{"week_of": "2026-11-16",
+ "intro": "optional line under the heading",
+ "items": [{"url": "...", "title": "...", "by": "Author (Publication)", "why": "One or two sentences in Jo's voice."}],
+ "archive": [{"url": "...", "title": "...", "by": "...", "week_of": "2026-11-09"}]}
+```
+
+- The panel is left out of the pages when the file is missing, empty, has no items, or its `week_of` is more than 21 days
+  ago (`FEATURED_DAYS` in `build.py`; the build prints a WARNING). Because the pages are not rebuilt every day, a short script
+  after the panel also hides it in the browser once the week is more than 21 days old, so a missed week never shows stale picks.
+- For testing, `KN_FEATURED_FILE=/path/to/copy.json` builds from another copy of the file and `KN_TODAY=YYYY-MM-DD` stands in
+  for today's date. Run those on a copy of the site, not the repository.
+
+**Each week.** List candidates, choose three (different publications and topics, useful to a teacher this term), and send
+them to Jo with the `why` lines. Once she approves:
+
+```
+python3 library/tools/feature_week.py --suggest              # free posts from the last 14 days (--days 21 to look further)
+python3 library/tools/feature_week.py URL1 URL2 URL3 \
+    --why "Why the first is worth reading." --why "..." --why "..." \
+    [--title "" --title "Shorter card title" --title ""] [--week 2026-11-23] [--intro "..."] [--dry-run]
+python3 library/build.py
+```
+
+- `--suggest` reads every Substack in `substacks.json`, pages through its archive (`/api/v1/archive?sort=new&limit=25`, then
+  `&cursor=<nextCursor>`; the archive no longer accepts `offset` or `limit=50`) and prints free articles from the last 14 days
+  that are not already in the library and not featured recently.
+- Setting the week reads each post's title and author from `<publication>/api/v1/posts/<slug>` (or the page's own tags),
+  checks it is free (audience "everyone" and no "Keep reading with a 7-day free trial" or "This post is for paid subscribers"
+  on the page), refuses any address featured in the last 12 weeks, moves the current picks into `archive`, writes
+  `featured.json` and prints a summary. If any check fails nothing is written. It also flags a `why` line with a dash,
+  a colon before a lower-case word or an American spelling.
+- `--week` is the Monday the picks are for. Left out, it is today if today is Monday in Melbourne, otherwise next Monday.
+- `--data DIR` points at a copy of `library/data` for a trial run. The script uses only Python's standard library; HTTPS goes
+  through any proxy set in the environment.
