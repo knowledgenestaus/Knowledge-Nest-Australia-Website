@@ -899,8 +899,8 @@ def build_home():
     body += ('<section class="section lib-results-section" id="results" hidden><div class="container">'
              '<h2 id="resultsHeading" tabindex="-1">Search results</h2><p class="lib-results-note" id="resultsNote" role="status" aria-live="polite"></p>'
              '<div id="resultsList"></div><p><button type="button" class="btn btn-primary btn-sm" id="clearSearch">Clear search</button></p></div></section>')
-    body += ('<section class="section" id="types"><div class="container"><div class="section-header"><p class="kn-eyebrow">%d resources, free to browse</p><h2>Browse the library</h2>'
-             '<p>Know how you want to learn today? Pick a shelf. Almost everything is free, and anything that may cost money is marked "Check cost".</p></div>%s</div></section>' % (len(ENTRIES), type_tiles()))
+    body += ('<section class="section" id="types"><div class="container"><div class="section-header"><p class="kn-eyebrow">%d resources, each linked to its creator</p><h2>Browse the library</h2>'
+             '<p>Know how you want to learn today? Pick a shelf.</p></div>%s</div></section>' % (len(ENTRIES), type_tiles()))
     body += start_here().replace('<section class="section" id="start">', '<section class="section section-tint" id="start">')
     body += ('<section class="section" id="areas"><div class="container"><div class="section-header"><h2>Browse by area</h2>'
              '<p>Every area gathers videos, podcasts, reading and research in one place.</p></div>%s</div></section>'
@@ -1284,7 +1284,7 @@ def build_home_block():
     if start not in src or end not in src:
         return
     block = (featured_panel("home") +
-             '<section class="section" id="types"><div class="container"><div class="section-header"><p class="kn-eyebrow">%d resources, free to browse</p><h2>Browse the library</h2>'
+             '<section class="section" id="types"><div class="container"><div class="section-header"><p class="kn-eyebrow">%d resources, each linked to its creator</p><h2>Browse the library</h2>'
              '<p>Pick a shelf to start. Every resource links to its creator\'s original.</p></div>%s</div></section>' % (len(ENTRIES), type_tiles())
              + start_here(3).replace('<section class="section" id="start">', '<section class="section section-tint" id="start">')
              + credit_panels())
