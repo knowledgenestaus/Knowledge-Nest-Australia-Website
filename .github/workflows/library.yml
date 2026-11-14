@@ -46,4 +46,4 @@ jobs:
         if: steps.check.outcome == 'failure'
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh issue create --title "Library links need attention ($(date +%d %b %Y))" --body-file report.md
+        run: gh issue create --title "Library links need attention ($(date '+%d %b %Y'))" --body-file report.md

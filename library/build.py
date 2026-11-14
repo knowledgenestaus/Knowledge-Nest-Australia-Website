@@ -73,7 +73,7 @@ START_HERE = [
     dict(title="Multi-tiered systems of support and inclusion", areas=[14],
          text="How strong whole-class teaching, early screening and targeted intervention fit together so every student gets the right support.",
          picks=["Leading MTSS", "S04E10", "S5 E17 MTSS for Reading"]),
-    dict(title="Assessment and reporting", areas=[13, 4],
+    dict(title="Assessment and data", areas=[13, 4],
          text="Which assessments answer which questions, and how to use what they tell you without drowning in data.",
          picks=["027 Assessment", "S03E04", "Using data in MTSS: screening"]),
 ]
@@ -101,19 +101,19 @@ SHOWS = DATA["shows"]
 VTLM = DATA["vtlm"]
 
 TYPES = OrderedDict([
-    ("watch", dict(label="Watch", page="library-watch.html", title="Classroom videos", tile="Watch", noun="videos",
+    ("watch", dict(label="Watch", page="library-watch.html", title="Watch: classroom videos", tile="Watch", noun="videos",
                    blurb="Short classroom footage showing practice in action.")),
-    ("learn", dict(label="Learn", page="library-learn.html", title="Webinars and professional learning", tile="Learn", noun="sessions",
+    ("learn", dict(label="Learn", page="library-learn.html", title="Learn: webinars and longer sessions", tile="Learn", noun="sessions",
                    blurb="Webinars and longer sessions to sit down with, alone or as a staff.")),
-    ("listen", dict(label="Listen", page="library-listen.html", title="Podcasts", tile="Listen", noun="episodes",
+    ("listen", dict(label="Listen", page="library-listen.html", title="Listen: podcasts", tile="Listen", noun="episodes",
                     blurb="Must-listen shows, and episodes sorted by category.")),
-    ("read", dict(label="Read", page="library-read.html", title="Articles, blogs and Substacks", tile="Read", noun="articles and guides",
+    ("read", dict(label="Read", page="library-read.html", title="Read: articles, blogs and Substacks", tile="Read", noun="articles and guides",
                   blurb="Short reads, practice guides and Substacks worth following.")),
-    ("research", dict(label="Research", page="library-research.html", title="Research", tile="Research", noun="papers and reviews",
+    ("research", dict(label="Research", page="library-research.html", title="Research: papers and reviews", tile="Research", noun="papers and reviews",
                       blurb="Foundational papers, reviews and meta-analyses.")),
     ("voice", dict(label="Voices", page="library-voices.html", title="Voices to follow", tile="Voices", noun="people to follow",
                    blurb="The researchers, teachers and writers worth your time.")),
-    ("curriculum", dict(label="Curriculum", page="library-curriculum.html", title="Free curriculum", tile="Free curriculum", noun="collections",
+    ("curriculum", dict(label="Curriculum", page="library-curriculum.html", title="Curriculum: free lesson materials", tile="Curriculum", noun="collections",
                         blurb="Openly available lesson materials, scope and sequences.")),
 ])
 
@@ -280,10 +280,10 @@ def start_here(limit=None):
         cards_html.append('<article class="lib-start"><p class="lib-start-n" aria-hidden="true">%02d</p><h3>%s</h3><p>%s</p><p class="lib-start-label">Three to begin with</p><ul>%s</ul>'
                           '<p class="lib-start-label">See everything on</p><p class="lib-topics">%s</p></article>' % (len(cards_html) + 1, e(t["title"]), e(t["text"]), lis, links))
     return ('<section class="section" id="start"><div class="container"><div class="section-header section-header-illo">ILLO_START<div><p class="kn-eyebrow">Not sure where to begin?</p><h2>Start here</h2>'
-            '<p>Five starting points for a school\'s professional learning journey.</p></div></div>'
+            '<p>%s good places to begin a school\'s professional learning.</p></div></div>'
             '<div class="lib-starts%s">%s</div>%s</div></section>' % (
-                " lib-starts-three" if limit == 3 else "", "".join(cards_html),
-                '<p class="lib-starts-more"><a href="library.html#start">See all %d starting points %s</a></p>' % (len(START_HERE), ARROW) if limit else "")).replace("ILLO_START", illo("start", "section-illo", 200))
+                "Three" if limit == 3 else "Five", " lib-starts-three" if limit == 3 else "", "".join(cards_html),
+                '<p class="lib-starts-more"><a href="library.html#start">See all five starting points %s</a></p>' % ARROW if limit else "")).replace("ILLO_START", illo("start", "section-illo", 200))
 
 
 def credit_panels():
@@ -315,8 +315,6 @@ def shell():
     head = head.replace(' class="active" aria-current="page"', "")
     head = head.replace('<a href="library.html">Library</a>', '<a href="library.html" class="active" aria-current="page">Library</a>', 1)
     head = re.sub(r'<script type="application/ld\+json">.*?</script>', "@@LD@@", head, flags=re.S)
-    tail = tail.replace('<div class="footer-bottom">',
-                        '<p class="footer-credit">The Library is a curated collection of other people\'s work. Every entry credits its creator and links to the original source.</p>\n    <div class="footer-bottom">', 1)
     return head, tail
 
 
@@ -448,8 +446,8 @@ def build_home():
     body += ('<section class="section lib-results-section" id="results" hidden><div class="container">'
              '<h2 id="resultsHeading" tabindex="-1">Search results</h2><p class="lib-results-note" id="resultsNote"></p>'
              '<div id="resultsList"></div><p><button type="button" class="btn btn-primary btn-sm" id="clearSearch">Clear search</button></p></div></section>')
-    body += ('<section class="section" id="types"><div class="container"><div class="section-header"><p class="kn-eyebrow">%d resources, all free</p><h2>Browse the library</h2>'
-             '<p>Know how you want to learn today? Pick a shelf.</p></div>%s</div></section>' % (len(ENTRIES), type_tiles()))
+    body += ('<section class="section" id="types"><div class="container"><div class="section-header"><p class="kn-eyebrow">%d resources, free to browse</p><h2>Browse the library</h2>'
+             '<p>Know how you want to learn today? Pick a shelf. Almost everything is free, and anything that may cost money is marked "Check cost".</p></div>%s</div></section>' % (len(ENTRIES), type_tiles()))
     body += start_here().replace('<section class="section" id="start">', '<section class="section section-tint" id="start">')
     body += ('<section class="section" id="areas"><div class="container"><div class="section-header"><h2>Browse by area</h2>'
              '<p>Every area gathers videos, podcasts, reading and research in one place.</p></div>%s</div></section>'
@@ -463,7 +461,7 @@ def build_home():
              '<p class="lib-own">Looking for Jo\'s own articles and downloadable guides? <a href="resources.html">Find them here</a>.</p>'
              '</div></section>' % elements)
     body += credit_panels()
-    body += '<script src="library/search.js?v=2" defer></script>'
+    body += '<script src="library/search.js?v=3" defer></script>'
     write("library.html", "The Knowledge Nest Library | Free Professional Learning Resources",
           "A free, curated library of videos, podcasts, blogs, research and curriculum materials to support your school's professional learning journey.",
           body)
@@ -513,7 +511,7 @@ def build_types():
         elif key in ("watch", "listen"):
             nav = []
             heading = "All videos" if key == "watch" else "Episodes by category"
-            glead = ("If there's something specific you're after, try our little search and category tools below and take a look at what we've found."
+            glead = ("Looking for something specific? Use the categories and search below to find episodes on the topic you're working on."
                      if key == "listen" else "Use the categories and filters to find footage for a particular professional learning focus.")
             sections = ('<section class="lib-group" id="all"><h2>%s <span class="lib-count">%d</span></h2><p class="lib-group-lead">%s</p>%s</section>'
                         % (heading, len(items), glead, filtered_list(items, key)))
@@ -553,10 +551,10 @@ def build_types():
                     listen.append('<a href="%s" target="_blank" rel="noopener">Listen on Apple Podcasts%s</a>' % (e(s["apple"]), NEWTAB))
                 bits = [s["by"]] + s["meta"] + ([s["note"]] if s.get("note") else [])
                 return ('<article class="lib-card lib-show">%s<div><h3 class="lib-card-title"><a href="%s" target="_blank" rel="noopener">%s%s</a></h3><p class="lib-by">%s</p>%s'
-                        '%s<p class="lib-card-foot"><span class="lib-source">Opens at %s</span></p></div></article>'
+                        '%s<p class="lib-card-foot"><span class="lib-source">%s %s</span></p></div></article>'
                         % (icon, e(s["url"]), e(s["title"]), NEWTAB, " &middot; ".join(e(b) for b in bits if b),
                            ('<p class="lib-summary">%s</p>' % e(s["desc"])) if s.get("desc") else "",
-                           ('<p class="lib-listen">%s</p>' % "".join(listen)) if listen else "", e(domain_of(s["url"]))))
+                           ('<p class="lib-listen">%s</p>' % "".join(listen)) if listen else "", "Show website:" if listen else "Opens at", e(domain_of(s["url"]))))
             intro = ('<section class="lib-group" id="shows"><h2>Five must-listen podcasts</h2><p class="lib-group-lead">These are currently my favourites, the ones in high rotation. '
                      'I\'m always welcoming new suggestions too, so if you\'ve got a favourite that I\'ve neglected to include, '
                      '<a href="mailto:%s?subject=Podcast%%20suggestion">shoot it my way</a> so I can get listening.</p>'
@@ -570,7 +568,7 @@ def build_types():
         body = hero("Library", t["title"], lead, crumbs=[("Library", "library.html"), (t["title"], None)], art=key)
         body += '<section class="section lib-list"><div class="container">%s%s%s<div class="lib-end">%s</div></div></section>' % (toc, intro, sections, suggest_box())
         write(t["page"], "%s | The Knowledge Nest Library" % t["title"],
-              "%d %s for teachers and school leaders, collected in the Knowledge Nest Library. Every entry links to the original source." % (len(items), t["noun"]),
+              "%s: %d %s in the free Knowledge Nest Library, chosen for teachers and school leaders. Every entry links to the original and names its creator." % (t["label"], len(items), t["noun"]),
               body, t["title"])
 
 
@@ -611,7 +609,7 @@ def build_vtlm():
         sections += '<h2 class="lib-frame">%s</h2>' % e(labels.get(frame, frame))
         for element, rows in groups.items():
             i += 1
-            nav.append(("v%d" % i, element.replace("Explicit teaching: ", "")))
+            nav.append(("v%d" % i, element))
             lis = "".join(
                 '<article class="lib-card"><p class="lib-focus">%s</p><h4 class="lib-card-title"><a href="%s" target="_blank" rel="noopener">%s%s</a></h4>'
                 '<p class="lib-by">%s</p><p class="lib-card-foot"><span class="lib-source">Opens at %s</span></p></article>'
@@ -637,6 +635,7 @@ def build_404():
     write("404.html", "Page not found | Knowledge Nest", "The page you were looking for could not be found.", body)
     path = os.path.join(ROOT, "404.html")
     html = open(path, encoding="utf8").read().replace("<head>", '<head>\n  <meta name="robots" content="noindex">\n  <base href="/">', 1)
+    html = html.replace('<a href="library.html" class="active" aria-current="page">Library</a>', '<a href="library.html">Library</a>', 1)
     open(path, "w", encoding="utf8").write(html)
 
 
@@ -647,8 +646,8 @@ def build_home_block():
     start, end = "<!-- LIBRARY:START (generated by library/build.py, do not edit by hand) -->", "<!-- LIBRARY:END -->"
     if start not in src or end not in src:
         return
-    block = ('<section class="section" id="types"><div class="container"><div class="section-header"><p class="kn-eyebrow">%d resources, all free</p><h2>Browse the library</h2>'
-             '<p>Other people\'s brilliant work from across the internet, gathered in one place.</p></div>%s</div></section>' % (len(ENTRIES), type_tiles())
+    block = ('<section class="section" id="types"><div class="container"><div class="section-header"><p class="kn-eyebrow">%d resources, free to browse</p><h2>Browse the library</h2>'
+             '<p>Pick a shelf to start. Every resource links to its creator\'s original.</p></div>%s</div></section>' % (len(ENTRIES), type_tiles())
              + start_here(3).replace('<section class="section" id="start">', '<section class="section section-tint" id="start">')
              + credit_panels())
     src = src[:src.index(start) + len(start)] + "\n" + block + "\n" + src[src.index(end):]

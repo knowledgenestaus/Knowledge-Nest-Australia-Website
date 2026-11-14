@@ -96,5 +96,5 @@
   });
 
   var initial = new URLSearchParams(location.search).get('q');
-  if (initial) { input.value = initial; run(initial, false); }
+  if (initial) { input.value = initial; run(initial, true); }
 })();

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Get in Touch | Knowledge Nest</title>
-  <meta name="description" content="Get in touch with Jo Griffin at Knowledge Nest to share practice, ask a question, invite her to speak at an event, or book a free 20-minute chat.">
+  <meta name="description" content="Get in touch with Jo Griffin at Knowledge Nest to share practice, ask a question, suggest a resource for the library, or invite her to speak.">
   <meta name="author" content="Jo Griffin">
   <meta name="theme-color" content="#112e5b">
   <link rel="canonical" href="https://knowledgenest.com.au/enquiry.html">
@@ -13,7 +13,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://knowledgenest.com.au/enquiry.html">
   <meta property="og:title" content="Get in Touch | Knowledge Nest">
-  <meta property="og:description" content="Get in touch with Jo Griffin at Knowledge Nest to share practice, ask a question, invite her to speak at an event, or book a free 20-minute chat.">
+  <meta property="og:description" content="Get in touch with Jo Griffin at Knowledge Nest to share practice, ask a question, suggest a resource for the library, or invite her to speak.">
   <meta property="og:image" content="https://knowledgenest.com.au/assets/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -25,7 +25,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap">
-  <link rel="stylesheet" href="styles.css?v=85">
+  <link rel="stylesheet" href="styles.css?v=86">
   <script>document.documentElement.classList.add('js');</script>
   <script type="application/ld+json">
 {
@@ -81,8 +81,8 @@
   .enquiry-form textarea {
     width: 100%;
     padding: 0.85rem 1rem;
-    border: 1px solid #8c8073;
-    border-radius: 8px;
+    border: 1.5px solid #6b7a90;
+    border-radius: var(--radius-sm);
     font-family: var(--font-body);
     font-size: 1rem;
     transition: border-color 0.3s;
@@ -93,11 +93,11 @@
   .enquiry-form select:focus,
   .enquiry-form textarea:focus {
     border-color: var(--navy);
-    outline: 3px solid var(--gold);
+    outline: 3px solid var(--navy);
     outline-offset: 2px;
   }
 
-  .enquiry-form input[type="checkbox"]:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+  .enquiry-form input[type="checkbox"]:focus-visible { outline: 3px solid var(--navy); outline-offset: 2px; }
 
   .checkbox-fieldset { border: none; padding: 0; margin: 0; }
   .checkbox-fieldset legend { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.6rem; color: var(--text-dark); padding: 0; }
@@ -129,21 +129,6 @@
     margin-bottom: 0;
   }
 
-  .prefer-chat {
-    text-align: center;
-    margin-top: 3rem;
-    padding-top: 2.5rem;
-    border-top: 1px solid var(--border);
-  }
-
-  .prefer-chat h2 {
-    margin-bottom: 0.5rem;
-  }
-
-  .prefer-chat p {
-    margin-bottom: 1.5rem;
-    color: var(--text-body);
-  }
   </style>
 </head>
 <body>
@@ -174,7 +159,7 @@
   <div class="container page-hero-grid">
     <div class="page-hero-text">
       <p class="hero-tagline">Connect</p>
-      <h1>Get in Touch</h1>
+      <h1>Get in touch</h1>
       <p>Say hello, ask a question or share what you're working on. There is always more we can learn from one another.</p>
     </div>
   </div> 
@@ -186,11 +171,11 @@
     <div class="enquiry-form reveal" id="enquiry-form">
       <div class="form-success" id="formSuccess" tabindex="-1" style="display:none; text-align:center; padding:3rem 2rem;">
         <h2 style="color:var(--navy); margin-bottom:1rem;">Thank you!</h2>
-        <p style="font-size:1.1rem; color:var(--text-body); margin-bottom:1.5rem;">Your message has been sent. Jo will be in touch as soon as she can.</p>
-        <a href="index.html" class="btn btn-primary">Back to Home</a>
+        <p style="font-size:1.1rem; color:var(--text-body); margin-bottom:1.5rem;">Your message has been sent. I'll be in touch as soon as I can.</p>
+        <a href="index.html" class="btn btn-primary">Back to home</a>
       </div>
       <div class="availability-note">
-        <p>Jo is dialling back her consulting, but stays open to working with people and systems in meaningful ways, and would love to speak at conferences and events. She is always happy to connect with other teachers and leaders to share practice.</p>
+        <p>I'm dialling back my consulting, but I'm always happy to swap notes with other teachers and leaders, and I'd love to speak at conferences and events. If you know a resource that belongs in the library, send it through here too.</p>
       </div>
       <form action="https://formspree.io/f/xdaplrjq" method="POST">
         <p class="form-note">Fields marked <span class="req" aria-hidden="true">*</span><span class="sr-only">with an asterisk</span> are required.</p>
@@ -198,19 +183,19 @@
         <input type="hidden" name="_next" value="https://knowledgenest.com.au/enquiry.html?sent=true">
         <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
 
-        <label for="name">Your Name <span class="req" aria-hidden="true">*</span></label>
+        <label for="name">Your name <span class="req" aria-hidden="true">*</span></label>
         <input type="text" id="name" name="name" required autocomplete="name" placeholder="Full name">
 
-        <label for="email">Email Address <span class="req" aria-hidden="true">*</span></label>
+        <label for="email">Email address <span class="req" aria-hidden="true">*</span></label>
         <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@school.edu.au">
 
-        <label for="phone">Phone Number (optional)</label>
+        <label for="phone">Phone number (optional)</label>
         <input type="tel" id="phone" name="phone" autocomplete="tel">
 
-        <label for="school">School / Organisation (optional)</label>
+        <label for="school">School or organisation (optional)</label>
         <input type="text" id="school" name="school" autocomplete="organization" placeholder="e.g. Sunshine Primary School">
 
-        <label for="role">Your Role</label>
+        <label for="role">Your role</label>
         <select id="role" name="role" autocomplete="organization-title">
           <option value="" disabled selected>Select your role</option>
           <option value="Principal">Principal</option>
@@ -229,22 +214,15 @@
           <label class="checkbox-label"><input type="checkbox" name="topics" value="Sharing practice or swapping ideas"> Sharing practice or swapping ideas</label>
           <label class="checkbox-label"><input type="checkbox" name="topics" value="A question about a resource"> A question about a resource</label>
           <label class="checkbox-label"><input type="checkbox" name="topics" value="Suggesting a resource for the library"> Suggesting a resource for the library</label>
-          <label class="checkbox-label"><input type="checkbox" name="topics" value="Coaching Nest"> Coaching Nest</label>
-          <label class="checkbox-label"><input type="checkbox" name="topics" value="The Secrets of How We Learn (passion project)" id="interest-secrets"> The Secrets of How We Learn (passion project)</label>
         </div>
         </fieldset>
 
-        <label for="message">Your Message</label>
+        <label for="message">Your message</label>
         <textarea id="message" name="message" placeholder="What's on your mind? (optional)"></textarea>
 
-        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p class="form-note" style="margin:0;">Your details are sent to me by email through Formspree and are used only to reply to you. They are never shared or added to a mailing list.</p>
+        <button type="submit" class="btn btn-primary">Send message</button>
       </form>
-
-      <div class="prefer-chat">
-        <h2>Prefer to chat?</h2>
-        <p>Sometimes a conversation is the best place to start. Book a free 20-minute chat to swap ideas and share practice.</p>
-        <a href="https://calendly.com/jo-knowledgenest/20min" class="btn btn-coral">Book a Free Chat</a>
-      </div>
     </div>
   </div> 
 </section>
@@ -260,13 +238,12 @@
           <span class="footer-brand-name">Knowledge Nest</span>
           <span class="footer-brand-sub">Teaching and learning with heart</span>
         </div>
-        <p class="footer-tagline">Bridging the gap between research and practice.</p>
+        <p class="footer-tagline">A free library of other people's brilliant work, linked and credited. Know something that belongs here? <a href="mailto:jo@knowledgenest.com.au?subject=Library%20suggestion">Email a suggestion</a>.</p>
         <nav class="footer-nav" aria-label="Footer">
           <a href="index.html">Home</a>
           <a href="library.html">Library</a>
           <a href="resources.html">Jo's Writing</a>
           <a href="about.html">About</a>
-          <a href="https://coachingnest.com.au/">Coaching Nest</a>
           <a href="enquiry.html">Get in Touch</a>
         </nav>
         <div class="footer-connect-row">
@@ -275,10 +252,6 @@
           <a href="https://www.linkedin.com/in/jo-griffin-australia" target="_blank" rel="noopener">LinkedIn<span class="sr-only"> (opens in a new tab)</span></a>
           <span class="footer-sep">|</span>
           <a href="https://knowledgenestaustralia.substack.com/" target="_blank" rel="noopener">Substack<span class="sr-only"> (opens in a new tab)</span></a>
-        </div>
-        <div class="footer-cta-row">
-          <a href="enquiry.html" class="btn btn-accent btn-sm">Get in Touch</a>
-          <a href="https://calendly.com/jo-knowledgenest/20min" class="btn btn-ghost-white btn-sm">Book a Free Chat</a>
         </div>
       </div>
     </div>
@@ -292,22 +265,25 @@
     const links = document.getElementById('navLinks');
     const setOpen = (open) => { toggle.classList.toggle('active', open); links.classList.toggle('open', open); toggle.setAttribute('aria-expanded', String(open)); };
     toggle.addEventListener('click', () => setOpen(!links.classList.contains('open')));
-    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && links.classList.contains('open')) { setOpen(false); toggle.focus(); } });
+    links.addEventListener('focusout', (e) => { if (links.classList.contains('open') && e.relatedTarget && !links.contains(e.relatedTarget) && e.relatedTarget !== toggle) setOpen(false); });
+    document.addEventListener('keydown', (e) => {
+      if (!links.classList.contains('open')) return;
+      if (e.key === 'Escape') { setOpen(false); toggle.focus(); return; }
+      if (e.key !== 'Tab') return;
+      const items = links.querySelectorAll('a');
+      const last = items[items.length - 1];
+      if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); toggle.focus(); }
+      else if (e.shiftKey && document.activeElement === toggle) { e.preventDefault(); last.focus(); }
+    });
   })();
   window.addEventListener('scroll', () => { document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 20); });
   const obs = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } }); }, { threshold: 0.1 });
   document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 
-  // Arriving from a "register interest" link pre-ticks that option
-  if (new URLSearchParams(window.location.search).get('interest') === 'secrets') {
-    const box = document.getElementById('interest-secrets');
-    if (box) box.checked = true;
-  }
-
   // Show success message if redirected back after form submission
   if (window.location.search.includes('sent=true')) {
     document.querySelector('form').style.display = 'none';
-    document.querySelector('.prefer-chat').style.display = 'none';
+    document.querySelector('.availability-note').style.display = 'none';
     const success = document.getElementById('formSuccess');
     success.style.display = 'block';
     success.focus();
