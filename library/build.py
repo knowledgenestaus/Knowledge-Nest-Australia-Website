@@ -124,13 +124,21 @@ def illo(key, cls="kn-illo", size=320):
         return '<img class="%s" src="assets/illo/%s.webp" alt="" width="%d" height="%d" loading="lazy" decoding="async">' % (cls, key, size, size)
     return ""
 
-DOMAIN_ORDER = []
+# Domains as shown on the site. These regroup the areas from the catalogue by area number.
+DOMAIN_OF = {
+    "Structured literacy": [7, 8, 9, 10, 11],
+    "Numeracy": [12],
+    "Knowledge-rich curriculum": [6],
+    "MTSS and assessment": [13, 14],
+    "Research and evidence": [18],
+}
 for a in AREAS:
-    if a["domain"] not in DOMAIN_ORDER:
-        DOMAIN_ORDER.append(a["domain"])
-# keep the order used on the Framework tab: A to H
-DOMAIN_ORDER = ["How learning works", "Teaching practice", "Curriculum and subject teaching", "Assessment and support",
-                "Coaching and professional learning", "Leadership and culture", "Implementation and change", "Evidence literacy"]
+    for name, ns in DOMAIN_OF.items():
+        if a["n"] in ns:
+            a["domain"] = name
+DOMAIN_ORDER = ["How learning works", "Teaching practice", "Structured literacy", "Numeracy", "Knowledge-rich curriculum", "MTSS and assessment",
+                "Coaching and professional learning", "Leadership and culture", "Implementation and change", "Research and evidence"]
+assert all(a["domain"] in DOMAIN_ORDER for a in AREAS)
 
 e = html.escape
 NEWTAB = '<span class="sr-only"> (opens in a new tab)</span>'
