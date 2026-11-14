@@ -39,7 +39,7 @@ TOPICS = OrderedDict([
     ("Evidence and debates", [18]),
 ])
 MTSS_WORDS = re.compile(r"mtss|multi-tiered|\btier|screen|intervention|progress monitoring|response to intervention", re.I)
-INCLUSION_WORDS = re.compile(r"dyslexi|inclusi|special educational|\bsend\b|adaptive|diverse|twice|exceptional|teaching assistant|learning difficult|neurodiv|disabilit", re.I)
+INCLUSION_WORDS = re.compile(r"adhd|autis|dyslexi|inclusi|special educational|\bsend\b|adaptive|diverse|twice|exceptional|teaching assistant|learning difficult|neurodiv|disabilit", re.I)
 
 
 def topics_of(x):
@@ -47,11 +47,12 @@ def topics_of(x):
     text = " ".join([x["title"], x.get("focus", ""), x.get("summary", "")])
     mtss = bool(MTSS_WORDS.search(text))
     incl = bool(INCLUSION_WORDS.search(text))
-    if 14 in x["areas"] and not (mtss or incl):
+    support = bool({14, 25} & set(x["areas"]))   # tiered support and inclusion; learning difficulties, disorders and additional needs
+    if support and not (mtss or incl):
         incl = True
-    if mtss and (14 in x["areas"] or 13 in x["areas"] or re.search(r"mtss|multi-tiered", text, re.I)):
+    if mtss and (support or 13 in x["areas"] or re.search(r"mtss|multi-tiered", text, re.I)):
         out.append("Multi-tiered systems of support")
-    if incl and (14 in x["areas"] or INCLUSION_WORDS.search(x["title"])):
+    if incl and (support or INCLUSION_WORDS.search(x["title"])):
         out.append("Inclusion and support")
     return [t for t in TOPICS if t in out]
 
@@ -133,7 +134,7 @@ DOMAIN_OF = {
     "Literacy": [7, 8, 9, 10, 11],
     "Numeracy": [12],
     "Knowledge-rich curriculum": [6],
-    "MTSS and assessment": [13, 14],
+    "MTSS and assessment": [13, 14, 25],
     "Research and evidence": [18],
 }
 for a in AREAS:
@@ -143,6 +144,38 @@ for a in AREAS:
 DOMAIN_ORDER = ["How learning works", "Teaching practice", "Literacy", "Numeracy", "Knowledge-rich curriculum", "MTSS and assessment",
                 "Coaching and professional learning", "Leadership and culture", "Implementation and change", "Research and evidence"]
 assert all(a["domain"] in DOMAIN_ORDER for a in AREAS)
+
+# Areas whose page is organised by strand (a series per topic) instead of by type, keyed by area number.
+# An entry joins a strand through its "strand" field, which must match a strand name here. Each strand is
+# (name, one-sentence description, optional pointer to another area as (lead-in words, area number)).
+# "intro" replaces the area's one-line description at the top of its page; "note" is shown under it.
+# An area that is not listed here is laid out by type, as before.
+STRANDS = {
+    25: dict(
+        intro="Some students keep finding reading, writing, maths or language hard, even when the teaching is good. I've gathered webinars, "
+              "short videos, guides and research here to help you understand why, and what strong support looks like at Tier 1, Tier 2 and Tier 3. "
+              "You'll also find webinars and guides, most of them Australian, on supporting students with ADHD, autistic students and other students with additional needs.",
+        note="These resources are here to support your teaching. They are not a substitute for assessment or advice from a qualified "
+             "professional, such as a psychologist, paediatrician or speech pathologist.",
+        strands=[
+            ("Understanding learning difficulties", "What learning difficulties and specific learning disorders are, how schools notice them through "
+             "tiered support, and what reasonable adjustments look like.", ("For screening, intervention and the tiers across a whole school, see", 14)),
+            ("Developmental language disorder", "A common and often hidden condition that makes understanding and using language hard, and what teachers can do "
+             "alongside speech pathologists.", None),
+            ("Dyslexia", "Persistent difficulty with accurate and fluent word reading and spelling, and the teaching and intervention that the evidence supports.", None),
+            ("Dysgraphia and written expression", "Difficulties with handwriting, spelling and getting ideas onto the page, and how to teach and support each one.", None),
+            ("Dyscalculia and maths difficulties", "Persistent difficulty with number and calculation, how it differs from gaps in what has been taught, "
+             "and what effective maths intervention involves.", None),
+            ("ADHD", "These are the webinars and guides I'd share with a teacher who wants to understand attention and motivation, "
+             "and to set up a calm classroom where students with ADHD can do well. A few are made for families, and say so.", None),
+            ("Autism", "Here you'll find webinars and classroom guides, most of them Australian, on communication, sensory needs, visual schedules and transitions, "
+             "with autistic voices alongside the research.", None),
+            ("Supporting students with additional needs", "I've gathered the practical things here, including what the Disability Standards ask of us, "
+             "how to plan adjustments and Individual Education Plans, and how to work well with education support staff.", None),
+            ("Related needs", "Working memory and coordination difficulties, which often sit alongside the learning difficulties above.", None),
+        ]),
+}
+STRAND_ORDER = ("learn", "watch", "read", "research", "listen")   # within a strand: webinars first, then by type
 
 # ---------- house style for colons ----------
 # 1. The word after a colon starts with a capital ("Watch: Classroom videos"). Applied to every piece of visible
@@ -549,7 +582,7 @@ DOMAIN_ABOUT = {
     "Literacy": "Phonics and fluency, comprehension, spelling, writing and oral language.",
     "Numeracy": "Clear, evidence-informed mathematics teaching from the early years up.",
     "Knowledge-rich curriculum": "Sequencing knowledge so learning builds, within and across subjects.",
-    "MTSS and assessment": "Screening, assessment and progress monitoring, with support at Tier 1, 2 and 3.",
+    "MTSS and assessment": "Screening, assessment and tiered support, including for students with learning difficulties, disorders and additional needs.",
     "Coaching and professional learning": "Instructional coaching and professional learning that changes practice.",
     "Leadership and culture": "Instructional leadership, school culture, behaviour and strong teams.",
     "Implementation and change": "Putting good ideas into practice, and bringing people with you.",
@@ -560,7 +593,8 @@ DOMAIN_ABOUT = {
 # What a domain covers, shown as chips on its page. These are elements of understanding, not separate pages.
 DOMAIN_ELEMENTS = {
     "MTSS and assessment": ["Tier 1: strong teaching for all", "Tier 2: targeted support", "Tier 3: intensive support",
-                            "Screening", "Progress monitoring", "Assessment and data"],
+                            "Screening", "Progress monitoring", "Assessment and data", "Learning difficulties and disorders",
+                            "ADHD, autism and additional needs"],
 }
 
 
@@ -795,6 +829,37 @@ def build_types():
 
 
 # ---------- area pages ----------
+def strand_id(name):
+    return "strand-" + re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
+
+
+def strand_sections(items, plan):
+    """The main column of an area that is organised by strand: the note, a "Jump to" list of the strands, then one
+    section per strand with its description, a count and its cards. Every card shows its type. Within a strand
+    the order is Learn, Watch, Read, Research, Listen, with sources spread through each of those groups.
+    Also returns an "On this page" box for the side column."""
+    nav, out = [], ""
+    for name, about, more in plan["strands"]:
+        sub = [x for x in items if x.get("strand") == name]
+        if not sub:
+            continue
+        nav.append((strand_id(name), name))
+        ordered = [x for k in STRAND_ORDER for x in mix([y for y in sub if y["type"] == k])]
+        ordered += [x for x in sub if x["type"] not in STRAND_ORDER]
+        lead = e(about)
+        if more:
+            lead += ' %s <a href="%s">%s</a>.' % (e(more[0]), area_page(AREA[more[1]]), e(AREA[more[1]]["name"]))
+        out += ('<section class="lib-group lib-strand-group" id="%s"><h2>%s <span class="lib-count">%d</span></h2><p class="lib-group-lead">%s</p>%s'
+                '<p class="lib-backtop"><a href="#strands">Back to the list of strands <span aria-hidden="true">&uarr;</span></a></p></section>'
+                % (strand_id(name), title_html(name), len(sub), lead, cards(ordered, True, mixed=False)))
+    links = "".join('<a href="#%s">%s</a>' % (i, e(l)) for i, l in nav)
+    top = ('<p class="lib-note">%s</p>' % e(plan["note"])) if plan.get("note") else ""
+    top += '<nav class="lib-toc lib-toc-wrap" id="strands" aria-label="Strands on this page">%s%s</nav>' % (label_html("Jump to:"), links)
+    side = ('<nav class="lib-side-box lib-side-toc" aria-label="On this page"><h2>On this page</h2><ul>%s</ul></nav>'
+            % "".join('<li><a href="#%s">%s</a></li>' % (i, e(l)) for i, l in nav))
+    return top + out, side
+
+
 def build_areas():
     grouped = by_area(ENTRIES)
     for a in AREAS:
@@ -802,16 +867,19 @@ def build_areas():
         if not items:
             continue
         present = [k for k in TYPES if any(x["type"] == k for x in items)]
+        plan = STRANDS.get(a["n"])
         chips = '<p class="lib-practices">%s%s</p>' % (label_html("Practices in this area:"), "".join("<em>%s</em>" % e(p[0].upper() + p[1:]) for p in a["practices"]))
-        body = hero(a["domain"], a["name"], e(a["about"]), crumbs=[("Library", "library.html"), (a["domain"], domain_page(a["domain"], {n: len(v) for n, v in grouped.items()}) if len(domain_areas(a["domain"], {n: len(v) for n, v in grouped.items()})) > 1 else "library.html#areas"), (a["name"], None)],
-                    extra=chips + jump([(k, TYPES[k]["label"]) for k in present]))
-        sections = ""
-        for k in present:
+        body = hero(a["domain"], a["name"], e(plan["intro"] if plan else a["about"]), crumbs=[("Library", "library.html"), (a["domain"], domain_page(a["domain"], {n: len(v) for n, v in grouped.items()}) if len(domain_areas(a["domain"], {n: len(v) for n, v in grouped.items()})) > 1 else "library.html#areas"), (a["name"], None)],
+                    extra=chips + ("" if plan else jump([(k, TYPES[k]["label"]) for k in present])))
+        sections, strand_nav = "", ""
+        if plan:
+            sections, strand_nav = strand_sections(items, plan)
+        for k in ([] if plan else present):
             sub = [x for x in items if x["type"] == k]
             sections += '<section class="lib-group" id="%s"><h2>%s <span class="lib-count">%d</span></h2>%s</section>' % (k, TYPES[k]["label"], len(sub), cards(sub, False))
         related = "".join('<li><a href="%s">%s</a></li>' % (area_page(b), e(b["name"])) for b in AREAS
                           if b["domain"] == a["domain"] and b["n"] != a["n"] and grouped.get(b["n"]))
-        side = ""
+        side = strand_nav
         if related:
             side += '<div class="lib-side-box"><h2>Related areas</h2><ul>%s</ul></div>' % related
         side += ('<div class="lib-side-box lib-side-navy"><h2>For Victorian schools</h2><p>See podcast episodes matched to the Victorian Teaching and Learning Model 2.0.</p>'
@@ -882,7 +950,7 @@ def build_search_index():
         c = cap_after_colon
         row = {"t": c(x["title"]), "b": c(x["by"]), "u": x["url"], "y": x["type"], "m": [c(m) for m in shown_meta(x)],
                "a": [c(AREA[n]["name"]) for n in x["areas"]], "g": [c(g) for g in shown_tags(x)], "d": domain_of(x["url"])}
-        words = " ".join(v for v in [x.get("focus", ""), x.get("summary", "")] if v)   # searched, not shown
+        words = " ".join(v for v in [x.get("focus", ""), x.get("strand", ""), x.get("summary", "")] if v)   # searched, not shown
         if words:
             row["s"] = c(words)
         idx.append(row)
@@ -912,6 +980,8 @@ def warnings():
     prose += [("description of Substack '%s'" % s["title"], s.get("desc", "")) for s in SUBSTACKS]
     prose += [("Start here text '%s'" % t["title"], t["text"]) for t in START_HERE]
     prose += [("domain text '%s'" % d, text) for d, text in DOMAIN_ABOUT.items()]
+    prose += [("strand text '%s'" % name, text) for plan in STRANDS.values() for name, text, _ in plan["strands"]]
+    prose += [("%s of the strands for area %d" % (k, n), plan.get(k, "")) for n, plan in STRANDS.items() for k in ("intro", "note")]
     for where, text in prose:
         if text and _COLON.sub(_cap, text) != text:
             out.append("colon before a lower-case word in the %s: %s" % (where, text))
@@ -919,6 +989,11 @@ def warnings():
         for p in t["picks"]:
             if not any(cap_after_colon(x["title"]).startswith(cap_after_colon(p)) for x in ENTRIES):
                 out.append("Start here pick '%s' (%s) matches no title, so another entry is shown in its place" % (p, t["title"]))
+    for n, plan in STRANDS.items():
+        names = [s[0] for s in plan["strands"]]
+        for x in ENTRIES:
+            if n in x["areas"] and x.get("strand") not in names:
+                out.append("'%s' is in area %d but its strand (%r) is not one of that area's strands, so it is missing from the area page" % (x["title"], n, x.get("strand")))
     for x in ENTRIES:
         if any(str(m).strip().lower() in ("none", "") for m in x["meta"]):
             out.append("empty or 'None' detail left out of the card for '%s': %r" % (x["title"], x["meta"]))

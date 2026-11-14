@@ -199,7 +199,8 @@
     "Australia"
    ],
    "areas": [
-    14
+    14,
+    25
    ],
    "tags": [
     "Free"
@@ -207,7 +208,8 @@
    "summary": "Charlotte Peverett explains what Tier 1, 2 and 3 look like in specialist settings and which practices give the most benefit for students in those schools.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Supporting students with additional needs"
   },
   {
    "title": "Evidence Informed Teaching",
@@ -1041,7 +1043,8 @@
    ],
    "areas": [
     12,
-    14
+    14,
+    25
    ],
    "tags": [
     "Free account needed"
@@ -1049,7 +1052,8 @@
    "summary": "Sarah Powell outlines five evidence-based practices for students who find maths hard, namely modelling and practice, vocabulary, multiple representations, fluency building and word problem solving.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "USA"
+   "region": "USA",
+   "strand": "Dyscalculia and maths difficulties"
   },
   {
    "title": "Live Coaching Workshop",
@@ -1245,7 +1249,8 @@
    ],
    "areas": [
     12,
-    14
+    14,
+    25
    ],
    "tags": [
     "Free account needed"
@@ -1253,7 +1258,8 @@
    "summary": "Nathalie Parry helps educators understand, identify and support students with maths learning difficulties, including dyscalculia, and explains why early identification matters.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Dyscalculia and maths difficulties"
   },
   {
    "title": "Instructional Coaching with Ollie Lovell and Josh Goodrich",
@@ -1429,7 +1435,8 @@
    ],
    "areas": [
     12,
-    14
+    14,
+    25
    ],
    "tags": [
     "Free account needed"
@@ -1437,7 +1444,8 @@
    "summary": "Bree Jimenez presents research on including students with complex learning needs in age-aligned maths lessons through personalised supports, explicit early numeracy teaching and embedded systematic instruction.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "USA"
+   "region": "USA",
+   "strand": "Supporting students with additional needs"
   },
   {
    "title": "Instructional Coaching: Professional development that reignites the skill and dignity of the teaching profession",
@@ -1468,7 +1476,8 @@
    ],
    "areas": [
     9,
-    14
+    14,
+    25
    ],
    "tags": [
     "Free account needed"
@@ -1476,7 +1485,8 @@
    "summary": "Tessa Daffern explains why spelling needs a nuanced approach to explicit instruction and how a multi-tiered system of support for spelling can work from Foundation to early secondary.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Dysgraphia and written expression"
   },
   {
    "title": "How do you listen to your students read?",
@@ -2295,6 +2305,1012 @@
    "length": "Over 60 minutes",
    "audience": "Teachers",
    "region": "Australia"
+  },
+  {
+   "strand": "Understanding learning difficulties",
+   "title": "Dr Kate Jacobs: Specific learning disorders (SLDs)",
+   "url": "https://www.youtube.com/watch?v=pK2JBp1rtk8",
+   "by": "Learning Difficulties Australia, with Kate Jacobs",
+   "meta": [
+    "About 1 hour 10 minutes",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    13
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A Learning Difficulties Australia session with Dr Kate Jacobs on specific learning disorders. A possible starting point before looking at each disorder in turn.",
+   "region": "Australia",
+   "length": "Over 60 minutes",
+   "audience": "Teachers"
+  },
+  {
+   "strand": "Understanding learning difficulties",
+   "title": "Sarah Asome: Response to intervention",
+   "url": "https://www.youtube.com/watch?v=RbcgktNpBq4",
+   "by": "Learning Difficulties Australia, with Sarah Asome",
+   "meta": [
+    "About 55 minutes",
+    "Australia"
+   ],
+   "areas": [
+    14,
+    7,
+    13,
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Victorian school leader Sarah Asome presents on response to intervention for Learning Difficulties Australia. Useful for teams building or reviewing their own tiers of support.",
+   "region": "Australia",
+   "length": "30 to 60 minutes",
+   "audience": "Leaders"
+  },
+  {
+   "strand": "Supporting students with additional needs",
+   "title": "Dr Kate de Bruin: Using universal design principles to support every student",
+   "url": "https://www.youtube.com/watch?v=W26pzgozUxY",
+   "by": "Learning Difficulties Australia, with Kate de Bruin",
+   "meta": [
+    "About 1 hour",
+    "Australia"
+   ],
+   "areas": [
+    14,
+    2,
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Inclusive education researcher Dr Kate de Bruin presents for Learning Difficulties Australia on using universal design principles to support every student.",
+   "region": "Australia",
+   "length": "30 to 60 minutes",
+   "audience": "Teachers"
+  },
+  {
+   "strand": "Developmental language disorder",
+   "title": "Understanding DLD: Developmental language disorder, with Tiffany Hogan",
+   "url": "https://www.youtube.com/watch?v=ScnKXXRLihU",
+   "by": "Reading Universe, with Tiffany Hogan",
+   "meta": [
+    "About 35 minutes",
+    "USA"
+   ],
+   "areas": [
+    25,
+    11,
+    14,
+    8
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Researcher Tiffany Hogan on developmental language disorder, in a session for Reading Universe. A manageable length for teachers who are new to the topic.",
+   "region": "USA",
+   "length": "30 to 60 minutes",
+   "audience": "Teachers",
+   "staff": [
+    "Which of our students read words accurately but still struggle to understand spoken and written language?",
+    "How do we share concerns about a student's language with our speech pathologist or the family?"
+   ]
+  },
+  {
+   "strand": "Developmental language disorder",
+   "title": "Understanding developmental language disorder (DLD) and dysgraphia",
+   "url": "https://www.youtube.com/watch?v=LhMkgxKyj5o",
+   "by": "Speech Pathology Tasmania",
+   "meta": [
+    "About 1 hour",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    11,
+    10,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A session from Speech Pathology Tasmania on understanding developmental language disorder and dysgraphia together, from an Australian speech pathology point of view.",
+   "region": "Australia",
+   "length": "30 to 60 minutes",
+   "audience": "Teachers"
+  },
+  {
+   "strand": "Dyslexia",
+   "title": "Dyslexia and language: Disorder or difference? Maggie Snowling",
+   "url": "https://www.youtube.com/watch?v=j_dSQQwpoR8",
+   "by": "Gresham College, with Maggie Snowling",
+   "meta": [
+    "About 1 hour",
+    "UK"
+   ],
+   "areas": [
+    25,
+    7,
+    11,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Professor Maggie Snowling's Gresham College lecture on dyslexia and language. An hour-long public lecture from a leading dyslexia researcher.",
+   "region": "UK",
+   "length": "Over 60 minutes",
+   "audience": "Teachers",
+   "staff": [
+    "What do we currently believe causes dyslexia, and where did those beliefs come from?",
+    "How well do we look at oral language when a student is struggling to read?"
+   ]
+  },
+  {
+   "strand": "Dyslexia",
+   "title": "Dyslexia and developmental language disorder, with Dr Tiffany Hogan",
+   "url": "https://www.youtube.com/watch?v=joxWBkaPMkY",
+   "by": "Learning MATTERS, with Tiffany Hogan",
+   "meta": [
+    "About 1 hour",
+    "New Zealand"
+   ],
+   "areas": [
+    25,
+    7,
+    11,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Dr Tiffany Hogan joins New Zealand's Learning MATTERS for a session on dyslexia and developmental language disorder together.",
+   "region": "New Zealand",
+   "length": "Over 60 minutes",
+   "audience": "Teachers"
+  },
+  {
+   "strand": "Dyslexia",
+   "title": "Why are children who struggle with reading at higher risk of emotional problems?",
+   "url": "https://www.youtube.com/watch?v=jkm_9r1sa9o",
+   "by": "Macquarie University Centre for Reading",
+   "meta": [
+    "About 50 minutes",
+    "Australia"
+   ],
+   "areas": [
+    7,
+    14,
+    15,
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A Macquarie University Centre for Reading seminar asking why children who struggle with reading are more likely to have emotional difficulties. A reminder to watch wellbeing alongside intervention.",
+   "region": "Australia",
+   "length": "30 to 60 minutes",
+   "audience": "Teachers"
+  },
+  {
+   "strand": "Dyslexia",
+   "title": "Reading the Room: Explaining the International Dyslexia Association's new definition of dyslexia",
+   "url": "https://www.youtube.com/watch?v=rYafUBMChFs",
+   "by": "National Center on Improving Literacy",
+   "meta": [
+    "About 55 minutes",
+    "USA"
+   ],
+   "areas": [
+    25,
+    7,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A National Center on Improving Literacy session explaining the International Dyslexia Association's updated definition of dyslexia. Good for leaders who need to keep school documents current.",
+   "region": "USA",
+   "length": "30 to 60 minutes",
+   "audience": "Leaders"
+  },
+  {
+   "strand": "Dyslexia",
+   "title": "Early identification of dyslexia: Research to practice, with Dr Hugh Catts",
+   "url": "https://www.youtube.com/watch?v=OketeC-a1YU",
+   "by": "The Windward Institute, with Hugh Catts",
+   "meta": [
+    "About 1 hour 20 minutes",
+    "USA"
+   ],
+   "areas": [
+    25,
+    7,
+    13,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Researcher Hugh Catts presents for the Windward Institute on identifying dyslexia early. Relevant to Foundation and Year 1 teams and anyone responsible for screening.",
+   "region": "USA",
+   "length": "Over 60 minutes",
+   "audience": "Leaders"
+  },
+  {
+   "strand": "Dyslexia",
+   "title": "Inside a dyslexia intervention: Reading strategies for struggling readers",
+   "url": "https://www.youtube.com/watch?v=ex3X3IoPqXg",
+   "by": "Understood",
+   "meta": [
+    "About 35 minutes",
+    "USA"
+   ],
+   "areas": [
+    25,
+    7,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Understood's video takes you inside a dyslexia intervention session. Handy for staff who have never watched specialist reading intervention being taught.",
+   "region": "USA",
+   "length": "30 to 60 minutes",
+   "audience": "Teachers"
+  },
+  {
+   "strand": "Dyslexia",
+   "title": "Dyslexia myths, misconceptions and facts, with Tim Odegard",
+   "url": "https://www.youtube.com/watch?v=cdtN89dDe94",
+   "by": "Speaking of Psychology (American Psychological Association), with Tim Odegard",
+   "meta": [
+    "About 35 minutes",
+    "USA"
+   ],
+   "areas": [
+    25,
+    7,
+    14,
+    18
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "The American Psychological Association's podcast Speaking of Psychology talks with researcher Tim Odegard about myths, misconceptions and facts about dyslexia. This is the video recording of the episode.",
+   "region": "USA",
+   "length": "30 to 60 minutes",
+   "audience": "Teachers"
+  },
+  {
+   "strand": "Dysgraphia and written expression",
+   "title": "Dyslexia and dysgraphia webinar",
+   "url": "https://www.youtube.com/watch?v=ANE__AIL288",
+   "by": "Lyn Stone",
+   "meta": [
+    "About 1 hour",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    9,
+    10,
+    7,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A webinar from Australian linguist Lyn Stone, made for parents who want to know more about dyslexia and dysgraphia. Clear enough for teachers too, and one to pass on to families.",
+   "region": "Australia",
+   "length": "Over 60 minutes",
+   "audience": "Teachers"
+  },
+  {
+   "strand": "Dysgraphia and written expression",
+   "title": "Robyn Bartram: The handwriting expert",
+   "url": "https://www.youtube.com/watch?v=WtVebV7n-wQ",
+   "by": "Learning Difficulties Australia, with Robyn Bartram",
+   "meta": [
+    "About 1 hour",
+    "Australia"
+   ],
+   "areas": [
+    9,
+    14,
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Robyn Bartram presents on handwriting for Learning Difficulties Australia. One for junior teams reviewing how handwriting is taught and supported.",
+   "region": "Australia",
+   "length": "Over 60 minutes",
+   "audience": "Teachers"
+  },
+  {
+   "strand": "Dysgraphia and written expression",
+   "title": "Alison Clarke: Spelling",
+   "url": "https://www.youtube.com/watch?v=l-Q_n5V00v4",
+   "by": "Learning Difficulties Australia, with Alison Clarke",
+   "meta": [
+    "About 1 hour",
+    "Australia"
+   ],
+   "areas": [
+    9,
+    14,
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Melbourne speech pathologist Alison Clarke presents on spelling for Learning Difficulties Australia. Relevant to anyone supporting students whose spelling lags behind their reading.",
+   "region": "Australia",
+   "length": "30 to 60 minutes",
+   "audience": "Teachers"
+  },
+  {
+   "strand": "Dysgraphia and written expression",
+   "title": "Dr Alison Madelaine: Rethinking Tier 1 spelling instruction",
+   "url": "https://www.youtube.com/watch?v=wDJYbk4wHUI",
+   "by": "Five from Five, with Alison Madelaine",
+   "meta": [
+    "About 1 hour",
+    "Australia"
+   ],
+   "areas": [
+    9,
+    14,
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Dr Alison Madelaine's guest presentation for Five from Five on rethinking classroom spelling teaching. Strong Tier 1 spelling is the first support for students with written expression difficulties.",
+   "region": "Australia",
+   "length": "30 to 60 minutes",
+   "audience": "Leaders"
+  },
+  {
+   "strand": "Dysgraphia and written expression",
+   "title": "Steve Graham: An overview of effective K to 12 writing instruction, from handwriting to writing genres",
+   "url": "https://www.youtube.com/watch?v=UHAQFOzuGP0",
+   "by": "The Reading League Vermont, with Steve Graham",
+   "meta": [
+    "About 1 hour",
+    "USA"
+   ],
+   "areas": [
+    10,
+    9,
+    14,
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Writing researcher Steve Graham gives The Reading League Vermont an overview of effective writing teaching, from handwriting through to genres.",
+   "region": "USA",
+   "length": "Over 60 minutes",
+   "audience": "Teachers"
+  },
+  {
+   "strand": "Dysgraphia and written expression",
+   "title": "Evidence-based handwriting instruction and assessment webinar",
+   "url": "https://www.youtube.com/watch?v=10sozBLV7Ko",
+   "by": "Iowa Reading Research Center",
+   "meta": [
+    "About 1 hour",
+    "USA"
+   ],
+   "areas": [
+    9,
+    13,
+    14,
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "An Iowa Reading Research Center webinar on teaching and assessing handwriting using evidence. Helpful for schools without an agreed way to check handwriting fluency.",
+   "region": "USA",
+   "length": "Over 60 minutes",
+   "audience": "Teachers"
+  },
+  {
+   "strand": "Dysgraphia and written expression",
+   "title": "Steve Graham: Effective writing instruction",
+   "url": "https://www.youtube.com/watch?v=jp4l-oBbgXQ",
+   "by": "Reading Rockets, with Steve Graham",
+   "meta": [
+    "About 40 minutes",
+    "USA"
+   ],
+   "areas": [
+    10,
+    14,
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A Reading Rockets video with writing researcher Steve Graham on effective writing teaching. Pairs well with the Karen Harris podcast episode on self-regulated strategy development on the Listen shelf.",
+   "region": "USA",
+   "length": "30 to 60 minutes",
+   "audience": "Teachers"
+  },
+  {
+   "strand": "Dysgraphia and written expression",
+   "title": "Why is teaching handwriting so difficult and what can we do about it?",
+   "url": "https://www.youtube.com/watch?v=lGdjtU5pkH4",
+   "by": "Thinking Deeply about Primary Education",
+   "meta": [
+    "About 50 minutes",
+    "UK"
+   ],
+   "areas": [
+    9,
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "An episode of the UK podcast Thinking Deeply about Primary Education on why handwriting is hard to teach well and what teachers can do about it. This is the video recording of the episode.",
+   "region": "UK",
+   "length": "30 to 60 minutes",
+   "audience": "Teachers"
+  },
+  {
+   "strand": "Dyscalculia and maths difficulties",
+   "title": "Steve Chinn: How to teach maths, understanding learners' needs",
+   "url": "https://www.youtube.com/watch?v=_4vFSBMqBi8",
+   "by": "The Dyscalculia Network, with Steve Chinn",
+   "meta": [
+    "About 35 minutes",
+    "UK"
+   ],
+   "areas": [
+    12,
+    14,
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Rob Jennings of The Dyscalculia Network interviews Steve Chinn, a long-standing UK specialist in maths learning difficulties, about his book on teaching maths with learners' needs in mind.",
+   "region": "UK",
+   "length": "30 to 60 minutes",
+   "audience": "Teachers"
+  },
+  {
+   "strand": "Dyscalculia and maths difficulties",
+   "title": "Understanding dyscalculia",
+   "url": "https://www.youtube.com/watch?v=ef9-C3-UosE",
+   "by": "Education Scotland",
+   "meta": [
+    "About 1 hour",
+    "UK"
+   ],
+   "areas": [
+    25,
+    12,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Education Scotland's webinar on understanding dyscalculia. A full session for maths leaders and intervention staff.",
+   "region": "UK",
+   "length": "Over 60 minutes",
+   "audience": "Teachers"
+  },
+  {
+   "strand": "Dyscalculia and maths difficulties",
+   "title": "Understanding developmental dyscalculia: A math learning disability (webinar)",
+   "url": "https://www.ldatschool.ca/understanding-developmental-dyscalculia-a-math-learning-disability/",
+   "by": "LD@school, with Daniel Ansari",
+   "meta": [
+    "About 1 hour 10 minutes",
+    "Canada"
+   ],
+   "areas": [
+    25,
+    12,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Professor Daniel Ansari's webinar for Canada's LD@school explains developmental dyscalculia, a specific learning disability affecting maths in about five per cent of children. The page includes a transcript.",
+   "region": "Canada",
+   "length": "Over 60 minutes",
+   "audience": "Teachers",
+   "staff": [
+    "Which early number skills do we check in Foundation and Year 1?",
+    "What would we want a parent to hear from us if we suspected a persistent maths difficulty?"
+   ]
+  },
+  {
+   "strand": "Dyscalculia and maths difficulties",
+   "title": "Count Me In! Supporting students in your class with math difficulty",
+   "url": "https://www.youtube.com/watch?v=XaGHcoZCFRg",
+   "by": "National Center on Intensive Intervention",
+   "meta": [
+    "About 1 hour",
+    "USA"
+   ],
+   "areas": [
+    25,
+    12,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Dr Sarah Powell walks through free tools from the National Center on Intensive Intervention for assessing and teaching students with maths difficulty.",
+   "region": "USA",
+   "length": "30 to 60 minutes",
+   "audience": "Teachers"
+  },
+  {
+   "strand": "Dyscalculia and maths difficulties",
+   "title": "Intensive intervention in mathematics: Course content",
+   "url": "https://intensiveintervention.org/training/course-content/intensive-intervention-mathematics",
+   "by": "National Center on Intensive Intervention",
+   "meta": [
+    "Eight modules",
+    "USA"
+   ],
+   "areas": [
+    12,
+    14,
+    13,
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Eight free training modules from the National Center on Intensive Intervention on delivering intensive maths intervention and adjusting it using student data. Suited to interventionists and maths leaders.",
+   "region": "USA",
+   "length": "Series",
+   "audience": "Coaches and leaders"
+  },
+  {
+   "strand": "Related needs",
+   "title": "Joni Holmes: Working memory and classroom learning",
+   "url": "https://www.youtube.com/watch?v=WUxo5s8HHcE",
+   "by": "Cambridge University Press ELT, with Joni Holmes",
+   "meta": [
+    "About 50 minutes",
+    "UK"
+   ],
+   "areas": [
+    1,
+    14,
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Researcher Joni Holmes speaks on working memory and classroom learning. Relevant across this section, because many students with learning difficulties also find it hard to hold information in mind.",
+   "region": "UK",
+   "length": "30 to 60 minutes",
+   "audience": "Teachers"
+  },
+  {
+   "strand": "Related needs",
+   "title": "Developmental coordination disorder: Professor Amanda Kirby",
+   "url": "https://www.youtube.com/watch?v=2A94qviJOPg",
+   "by": "Association for Child and Adolescent Mental Health, with Amanda Kirby",
+   "meta": [
+    "About 35 minutes",
+    "UK"
+   ],
+   "areas": [
+    25,
+    14,
+    9
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Professor Amanda Kirby speaks for the Association for Child and Adolescent Mental Health about developmental coordination disorder, which often shows up at school in handwriting and organisation. Made for clinicians, so heavier going than the short video in this strand.",
+   "region": "UK",
+   "length": "30 to 60 minutes",
+   "audience": "Teachers"
+  },
+  {
+   "strand": "ADHD",
+   "title": "Understanding ADHD in children and how to support them at school",
+   "url": "https://www.youtube.com/watch?v=gzsWGWBSVC4",
+   "by": "Wolfson Centre for Young People's Mental Health, with Joanna Martin",
+   "meta": [
+    "About 50 minutes",
+    "UK"
+   ],
+   "areas": [
+    25,
+    14,
+    5
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Dr Joanna Martin of Cardiff University on the early signs of ADHD in primary school children, how it can look different in girls and boys, what to do when you have concerns and how schools can help.",
+   "region": "UK",
+   "length": "30 to 60 minutes",
+   "audience": "Teachers"
+  },
+  {
+   "strand": "ADHD",
+   "title": "Why rewards don't always stick: Understanding ADHD and motivation, with Rebecca McLinden",
+   "url": "https://www.youtube.com/watch?v=ntSFwNHtdw8",
+   "by": "ADHD Australia, with Rebecca McLinden",
+   "meta": [
+    "About 35 minutes",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    15,
+    5
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Behaviour analyst Rebecca McLinden, speaking for ADHD Australia, on how ADHD affects the way rewards work, and why motivation and consistency can be hard to keep up.",
+   "region": "Australia",
+   "length": "30 to 60 minutes",
+   "audience": "Teachers"
+  },
+  {
+   "strand": "ADHD",
+   "title": "ADHD and co-occurring autism, with Monique Mitchelson",
+   "url": "https://www.youtube.com/watch?v=v68FX5JYpTw",
+   "by": "ADHD Australia, with Monique Mitchelson",
+   "meta": [
+    "About 45 minutes",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Monique Mitchelson's talk for ADHD Australia's Global ADHD Conference on ADHD and co-occurring autism. Helpful background when a student's profile does not fit one label neatly.",
+   "region": "Australia",
+   "length": "30 to 60 minutes",
+   "audience": "Teachers"
+  },
+  {
+   "strand": "ADHD",
+   "title": "ADHD goes to school: Webinar recording",
+   "url": "https://www.youtube.com/watch?v=hgm52cmxFyg",
+   "by": "Kelty Mental Health Resource Centre",
+   "meta": [
+    "About 1 hour",
+    "Canada"
+   ],
+   "areas": [
+    25,
+    14,
+    5
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A webinar for parents from Canada's Kelty Mental Health Resource Centre on how ADHD affects learning and how to support a child at school. Useful for seeing school through a family's eyes. Some of the advice is specific to British Columbia.",
+   "region": "Canada",
+   "length": "30 to 60 minutes",
+   "audience": "Teachers"
+  },
+  {
+   "strand": "ADHD",
+   "title": "Attention deficit hyperactivity disorder (ADHD) in children and teenagers: Webinar recording",
+   "url": "https://www.youtube.com/watch?v=e7aPD6ZGR7A",
+   "by": "Raising Children Network",
+   "meta": [
+    "About 1 hour",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    5,
+    20
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A recorded webinar on ADHD in children and teenagers from the Raising Children Network, the Australian parenting website. Worth knowing about when a family asks you where to start.",
+   "region": "Australia",
+   "length": "Over 60 minutes",
+   "audience": "Teachers"
+  },
+  {
+   "strand": "Autism",
+   "title": "inclusionED The Inclusive Classroom, Episode 1: Neurodiversity in the classroom",
+   "url": "https://www.youtube.com/watch?v=VYrIO7yZ1SM",
+   "by": "inclusionED (Sylvia Rodger Institute)",
+   "meta": [
+    "About 1 hour",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    5
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "The first episode of inclusionED's webinar series The Inclusive Classroom. It introduces neurodiversity and autism and offers classroom strategies, from sensory needs to building on students' strengths and interests.",
+   "region": "Australia",
+   "length": "30 to 60 minutes",
+   "audience": "Teachers",
+   "staff": [
+    "What do we already do at Tier 1 that helps autistic students and everyone else?",
+    "Which one strategy from this session could every classroom adopt this term?"
+   ]
+  },
+  {
+   "strand": "Autism",
+   "title": "inclusionED The Inclusive Classroom, Episode 3: Sensory needs",
+   "url": "https://www.youtube.com/watch?v=Z2S4h7G7Vw4",
+   "by": "inclusionED (Sylvia Rodger Institute)",
+   "meta": [
+    "About 50 minutes",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    5
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "The third episode of inclusionED's webinar series explains sensory seeking and sensory avoiding, and how being more or less sensitive to what is going on in a classroom affects students.",
+   "region": "Australia",
+   "length": "30 to 60 minutes",
+   "audience": "Teachers"
+  },
+  {
+   "strand": "Autism",
+   "title": "Supporting autistic girls at school: Full video",
+   "url": "https://www.youtube.com/watch?v=xWA3WngzuN0",
+   "by": "Yellow Ladybugs, with the Victorian Government",
+   "meta": [
+    "About 2 hours 10 minutes",
+    "2019",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    20
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A recorded panel from Yellow Ladybugs and the Victorian Government. Panellists share their own experience of six areas that often challenge autistic girls at school, including hidden anxiety, peer relationships and class rules.",
+   "region": "Australia",
+   "length": "Over 60 minutes",
+   "audience": "Teachers"
+  },
+  {
+   "strand": "Autism",
+   "title": "Executive functioning: Webinar recording and resources",
+   "url": "https://www.positivepartnerships.com.au/resources/practical-tools-information-sheets/executive-functioning",
+   "by": "Positive Partnerships",
+   "meta": [
+    "About 45 minutes",
+    "2026",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    5,
+    15
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A recorded webinar on planning, shifting attention, flexible thinking and self-regulation in young autistic people, with slides, a strategy list for home and school and a planning template.",
+   "region": "Australia",
+   "length": "30 to 60 minutes",
+   "audience": "Teachers"
+  },
+  {
+   "strand": "Autism",
+   "title": "Communication and autism: Two webinar recordings and resources",
+   "url": "https://www.positivepartnerships.com.au/resources/practical-tools-information-sheets/communication-and-autism",
+   "by": "Positive Partnerships",
+   "meta": [
+    "Two sessions of about 45 minutes",
+    "2026",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    11
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Two recorded webinars on the different ways autistic people communicate, being a good communication partner and extending two-way interaction, with slides and a planning tool.",
+   "region": "Australia",
+   "length": "Series",
+   "audience": "Teachers"
+  },
+  {
+   "strand": "Autism",
+   "title": "Making Sense of Autism (shortened version)",
+   "url": "https://www.youtube.com/watch?v=J0NVikQsNL0",
+   "by": "Autism Education Trust",
+   "meta": [
+    "About 25 minutes",
+    "UK"
+   ],
+   "areas": [
+    25,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A shortened version of the Autism Education Trust's Making Sense of Autism training, made to help education staff understand autism better, with ideas for support in the classroom and at home.",
+   "region": "UK",
+   "length": "Under 30 minutes",
+   "audience": "Teachers"
+  },
+  {
+   "strand": "Autism",
+   "title": "Dysregulation: Supporting autistic people, families and educators (A Different Brilliant, S6 Ep6)",
+   "url": "https://www.youtube.com/watch?v=pwGzzIc5J8w",
+   "by": "Aspect (Autism Spectrum Australia)",
+   "meta": [
+    "About 40 minutes",
+    "2026",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    20
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "An episode of Aspect's podcast A Different Brilliant on what dysregulation is, what can contribute to it and how adults can support an autistic person who is overwhelmed. This is the video recording of the episode.",
+   "region": "Australia",
+   "length": "30 to 60 minutes",
+   "audience": "Teachers"
+  },
+  {
+   "strand": "Supporting students with additional needs",
+   "title": "Unpacking the effective use of teaching assistants",
+   "url": "https://www.youtube.com/watch?v=jd6VXXh-F80",
+   "by": "Evidence for Learning",
+   "meta": [
+    "About 1 hour",
+    "2020",
+    "Australia"
+   ],
+   "areas": [
+    14,
+    21,
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "An Evidence for Learning webinar with practical, evidence-based advice on getting the most from teaching assistants in primary and secondary schools. It builds on Evidence for Learning's guidance report on the same topic.",
+   "region": "Australia",
+   "length": "30 to 60 minutes",
+   "audience": "Leaders",
+   "staff": [
+    "When are our education support staff working with the students who most need the teacher?",
+    "What preparation and feedback time do teachers and support staff have together each week?"
+   ]
+  },
+  {
+   "strand": "Supporting students with additional needs",
+   "title": "How to support neurodiversity and disability inclusion in school communities",
+   "url": "https://www.youtube.com/watch?v=vpxXp_ncmkA",
+   "by": "Be You (Beyond Blue)",
+   "meta": [
+    "About 40 minutes",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    20
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A recorded Be You session on how to support neurodiversity and disability inclusion in school communities. Be You is the national mental health in education initiative led by Beyond Blue.",
+   "region": "Australia",
+   "length": "30 to 60 minutes",
+   "audience": "Teachers"
+  },
+  {
+   "strand": "Supporting students with additional needs",
+   "title": "Multi-tiered system of supports in schools, Part 1: A rationale for change",
+   "url": "https://www.youtube.com/watch?v=Y-0WbmsO7Yg",
+   "by": "Kate de Bruin",
+   "meta": [
+    "About 20 minutes",
+    "Australia"
+   ],
+   "areas": [
+    14,
+    17,
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Dr Kate de Bruin's short presentation, recorded for the ACT Inclusive Education Community of Practice, on why schools should move to a multi-tiered system of supports.",
+   "region": "Australia",
+   "length": "Under 30 minutes",
+   "audience": "Leaders"
+  },
+  {
+   "strand": "Supporting students with additional needs",
+   "title": "inclusionED The Inclusive Classroom, Episode 4: Foundation practices for early career teachers",
+   "url": "https://www.youtube.com/watch?v=aJl_ftlYjpQ",
+   "by": "inclusionED (Sylvia Rodger Institute)",
+   "meta": [
+    "About 50 minutes",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    16
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "The fourth episode of inclusionED's webinar series, on foundation practices for early career teachers. It also introduces the professional learning and community of practice on the inclusionED website.",
+   "region": "Australia",
+   "length": "30 to 60 minutes",
+   "audience": "Teachers"
+  },
+  {
+   "strand": "Supporting students with additional needs",
+   "title": "Professor Linda Graham on inclusive education (The School Can't Experience Podcast, episode 50)",
+   "url": "https://www.youtube.com/watch?v=TG_jaPy6ORk",
+   "by": "The School Can't Experience Podcast, with Linda Graham",
+   "meta": [
+    "About 50 minutes",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    20
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Professor Linda Graham, Director of the QUT Centre for Inclusive Education, talks with host Leisa Reichelt about teaching and assessment that every student can access, and what the Disability Standards ask of schools. This is the video recording of the podcast episode.",
+   "region": "Australia",
+   "length": "30 to 60 minutes",
+   "audience": "Leaders"
   }
  ]
 }

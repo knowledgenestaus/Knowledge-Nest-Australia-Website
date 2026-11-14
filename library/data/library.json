@@ -237,6 +237,20 @@
    ]
   },
   {
+   "n": 25,
+   "name": "Learning difficulties, disorders and additional needs",
+   "slug": "learning-difficulties-disorders-and-additional-needs",
+   "domain": "Assessment and support",
+   "about": "Dyslexia, dysgraphia, dyscalculia, developmental language disorder, ADHD, autism and other additional needs, and what strong support looks like at every tier.",
+   "practices": [
+    "Early identification",
+    "evidence-based intervention",
+    "reasonable adjustments",
+    "Individual Education Plans",
+    "working with specialists and support staff"
+   ]
+  },
+  {
    "n": 16,
    "name": "Instructional coaching and professional learning",
    "slug": "instructional-coaching-and-professional-learning",
@@ -3036,14 +3050,16 @@
     "UK"
    ],
    "areas": [
-    14
+    14,
+    25
    ],
    "tags": [
     "Free"
    ],
    "summary": "Teaching assistants deliver a structured early reading intervention, ABRACADABRA, to Year 1 pupils in a UK school, adapting sessions to revisit the sounds children need more practice with.",
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "strand": "Supporting students with additional needs"
   },
   {
    "type": "watch",
@@ -3370,14 +3386,16 @@
    ],
    "areas": [
     14,
-    2
+    2,
+    25
    ],
    "tags": [
     "Free"
    ],
    "summary": "Teaching assistants scaffold learning with the least support first, to build independence.",
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "strand": "Supporting students with additional needs"
   },
   {
    "type": "watch",
@@ -3389,14 +3407,16 @@
    ],
    "areas": [
     14,
-    2
+    2,
+    25
    ],
    "tags": [
     "Free"
    ],
    "summary": "Explicit instruction for pupils with special educational needs in mainstream and specialist primary settings.",
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "strand": "Supporting students with additional needs"
   },
   {
    "type": "watch",
@@ -4712,13 +4732,15 @@
    ],
    "areas": [
     14,
-    18
+    18,
+    25
    ],
    "tags": [
     "Free"
    ],
    "summary": "Veronica Alexander, CEO of SPELD NSW, addresses five persistent myths about dyslexia and explains the design of the SPELL systematic spelling program.",
-   "focus": "Dyslexia"
+   "focus": "Dyslexia",
+   "strand": "Dyslexia"
   },
   {
    "type": "listen",
@@ -4938,13 +4960,15 @@
    "by": "Evidence into Action",
    "meta": [],
    "areas": [
-    14
+    14,
+    25
    ],
    "tags": [
     "Free"
    ],
    "summary": "Alex Quigley and Kirsten Mould discuss the EEF's updated guidance on deploying teaching assistants, with Gary Aubin and practitioners reflecting on what works in their settings.",
-   "focus": "Education support staff"
+   "focus": "Education support staff",
+   "strand": "Supporting students with additional needs"
   },
   {
    "type": "listen",
@@ -5419,13 +5443,15 @@
     "with Charlotte Peverett"
    ],
    "areas": [
-    5
+    5,
+    25
    ],
    "tags": [
     "Free"
    ],
    "summary": "Charlotte Peverett, a learning specialist and inclusion outreach coach, discusses structures, routines and holding high expectations for all students, including diverse learners.",
-   "focus": "High expectations for diverse learners"
+   "focus": "High expectations for diverse learners",
+   "strand": "Supporting students with additional needs"
   },
   {
    "type": "listen",
@@ -6288,13 +6314,15 @@
     "with Daniel Ansari"
    ],
    "areas": [
-    12
+    12,
+    25
    ],
    "tags": [
     "Free"
    ],
    "summary": "Cognitive neuroscientist Daniel Ansari explains what young children need to understand about numbers and why some students struggle with maths from the start.",
-   "focus": "Number sense and maths difficulties"
+   "focus": "Number sense and maths difficulties",
+   "strand": "Dyscalculia and maths difficulties"
   },
   {
    "type": "listen",
@@ -6473,13 +6501,15 @@
    "by": "Evidence into Action",
    "meta": [],
    "areas": [
-    14
+    14,
+    25
    ],
    "tags": [
     "Free"
    ],
    "summary": "Alex Quigley, Kirsten Mould and guests including Gary Aubin discuss how best to support pupils with special educational needs in mainstream classrooms.",
-   "focus": "Adaptive teaching"
+   "focus": "Adaptive teaching",
+   "strand": "Supporting students with additional needs"
   },
   {
    "type": "listen",
@@ -8088,12 +8118,18 @@
    "by": "What Works Clearinghouse (Fuchs and colleagues)",
    "meta": [
     "2021",
-    "Practice guide"
+    "Practice guide",
+    "USA"
    ],
    "areas": [
-    12
+    12,
+    25
    ],
-   "tags": []
+   "tags": [
+    "Free"
+   ],
+   "strand": "Dyscalculia and maths difficulties",
+   "summary": "A What Works Clearinghouse practice guide with six recommendations for maths intervention in the primary years, from systematic instruction and mathematical language to number lines, word problems and timed fluency activities."
   },
   {
    "type": "research",
@@ -9496,10 +9532,14 @@
    ],
    "areas": [
     14,
-    7
+    7,
+    25
    ],
-   "tags": [],
-   "summary": "Lucy Wings and Jeremy Barr describe putting a structured literacy approach in place in a special school setting."
+   "tags": [
+    "Free"
+   ],
+   "summary": "Lucy Wings and Jeremy Barr describe putting a structured literacy approach in place in a special school setting.",
+   "strand": "Supporting students with additional needs"
   },
   {
    "type": "read",
@@ -9786,7 +9826,8 @@
    ],
    "areas": [
     12,
-    14
+    14,
+    25
    ],
    "tags": [
     "Free"
@@ -9797,7 +9838,8 @@
     "3-6"
    ],
    "subject": "Maths",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Dyscalculia and maths difficulties"
   },
   {
    "type": "watch",
@@ -10745,6 +10787,1274 @@
    ],
    "tags": [],
    "summary": "Companion to the Maths Guarantee report, written for primary principals. Describes what strong whole-school maths teaching involves and the steps leaders can take to build it."
+  },
+  {
+   "type": "watch",
+   "strand": "Understanding learning difficulties",
+   "title": "Student diversity: Supporting students through reasonable adjustments",
+   "url": "https://www.youtube.com/watch?v=aYku__T7MZU",
+   "by": "Queensland Curriculum and Assessment Authority",
+   "meta": [
+    "6:09",
+    "Australia"
+   ],
+   "areas": [
+    14,
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A short Queensland Curriculum and Assessment Authority video on supporting students through reasonable adjustments. A handy opener for a staff conversation about what an adjustment is.",
+   "bands": [
+    "F-2",
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "strand": "Understanding learning difficulties",
+   "title": "Introduction to a multi-tiered system of supports",
+   "url": "https://edresearch.edu.au/resources/intro-multi-tiered-system-supports",
+   "by": "AERO",
+   "meta": [
+    "Explainer",
+    "2024",
+    "Australia"
+   ],
+   "areas": [
+    14,
+    13,
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "AERO's explainer sets out the features of a multi-tiered system of supports and what each tier involves, from strong classroom teaching to intensive help. Written for Years 7 to 9 but useful to any school.",
+   "subject": "Across subjects",
+   "bands": [
+    "3-6",
+    "Secondary"
+   ],
+   "region": "Australia"
+  },
+  {
+   "type": "research",
+   "strand": "Understanding learning difficulties",
+   "title": "Supporting students significantly behind in literacy and numeracy",
+   "url": "https://www.edresearch.edu.au/resources/supporting-students-significantly-behind-literacy-and-numeracy",
+   "by": "AERO (Kate de Bruin and colleagues)",
+   "meta": [
+    "2023",
+    "Research report"
+   ],
+   "areas": [
+    14,
+    13,
+    17,
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "An AERO review of reviews on helping Years 7 to 9 students who are well behind in literacy and numeracy. It finds good grounds for multi-tiered support and looks at screening, progress monitoring and interventions.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "strand": "Understanding learning difficulties",
+   "title": "Learning difficulties: Victorian Department of Education overview and information guides",
+   "url": "https://www.education.vic.gov.au/school/teachers/teachingresources/discipline/english/reading/Pages/learningdifficulties.aspx",
+   "by": "Department of Education, Victoria",
+   "meta": [
+    "Guides and explainers",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    7,
+    12
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "The Victorian department's overview of learning difficulties for teachers, covering possible signs, whole-school approaches, and links to its information guides on literacy difficulties, including dyslexia and dysgraphia, and numeracy difficulties, including dyscalculia.",
+   "subject": "Across subjects",
+   "bands": [
+    "F-2",
+    "3-6",
+    "Secondary"
+   ],
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "strand": "Understanding learning difficulties",
+   "title": "SPELD Victoria: Information for teachers",
+   "url": "https://speldvic.org.au/information-for-teachers/",
+   "by": "SPELD Victoria",
+   "meta": [
+    "Guides and explainers",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "SPELD Victoria explains how a specific learning disorder differs from broader learning difficulties, why the impact on learning matters most, and what support the organisation offers Victorian teachers and schools.",
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "strand": "Understanding learning difficulties",
+   "title": "Understanding learning difficulties: The online guide for parents",
+   "url": "https://uldforparents.com/",
+   "by": "AUSPELD",
+   "meta": [
+    "Online guide",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A free online guide from AUSPELD that gives parents and carers current information about learning disabilities in children. Worth knowing so you can point families to something trustworthy.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "strand": "Supporting students with additional needs",
+   "title": "Special Educational Needs in Mainstream Schools: guidance report",
+   "url": "https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/send",
+   "by": "Education Endowment Foundation",
+   "meta": [
+    "Guidance report",
+    "UK"
+   ],
+   "areas": [
+    14,
+    2,
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "The Education Endowment Foundation's guidance report gives five evidence-based recommendations for supporting pupils with additional needs in mainstream classrooms, with high quality everyday teaching at the centre.",
+   "subject": "Across subjects",
+   "region": "UK"
+  },
+  {
+   "type": "research",
+   "strand": "Understanding learning difficulties",
+   "title": "Assisting Students Struggling with Reading: Response to Intervention and Multi-Tier Intervention in the Primary Grades",
+   "url": "https://ies.ed.gov/ncee/wwc/PracticeGuide/3",
+   "by": "What Works Clearinghouse",
+   "meta": [
+    "Practice guide",
+    "USA"
+   ],
+   "areas": [
+    14,
+    7,
+    13,
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A What Works Clearinghouse practice guide with five recommendations for finding struggling readers early and giving them tiered, evidence-based support in the primary years.",
+   "region": "USA"
+  },
+  {
+   "type": "watch",
+   "strand": "Developmental language disorder",
+   "title": "You can't see DLD: An introduction to developmental language disorder",
+   "url": "https://www.youtube.com/watch?v=R7Wd1X-RAek",
+   "by": "RADLD",
+   "meta": [
+    "7:28",
+    "UK"
+   ],
+   "areas": [
+    25,
+    11,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "RADLD's short introduction to developmental language disorder, a common condition that is easy to miss. A good first video to show a whole staff.",
+   "bands": [
+    "F-2",
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Across subjects",
+   "region": "UK"
+  },
+  {
+   "type": "watch",
+   "strand": "Developmental language disorder",
+   "title": "Developmental language disorder (DLD): The consensus explained",
+   "url": "https://www.youtube.com/watch?v=OZ1dHS1X8jg",
+   "by": "RADLD",
+   "meta": [
+    "5:33",
+    "UK"
+   ],
+   "areas": [
+    25,
+    11,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A short RADLD video explaining the consensus behind the term developmental language disorder. Helpful if older reports at your school still use other labels.",
+   "bands": [
+    "F-2",
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Across subjects",
+   "region": "UK"
+  },
+  {
+   "type": "watch",
+   "strand": "Developmental language disorder",
+   "title": "The Hidden Disorder: Understanding developmental language disorder (full film)",
+   "url": "https://www.youtube.com/watch?v=9b7Xp_0J0oU",
+   "by": "RADLD",
+   "meta": [
+    "22:56",
+    "UK"
+   ],
+   "areas": [
+    25,
+    11,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "RADLD's longer film on understanding developmental language disorder. Suits a staff meeting when you want more depth than a five-minute explainer.",
+   "bands": [
+    "F-2",
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Across subjects",
+   "region": "UK"
+  },
+  {
+   "type": "watch",
+   "strand": "Developmental language disorder",
+   "title": "The challenge of rich vocabulary instruction for children with developmental language disorder",
+   "url": "https://www.youtube.com/watch?v=JJE9ifuAl-E",
+   "by": "The DLD Project",
+   "meta": [
+    "12:24",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    11,
+    8,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A short video from Australia's DLD Project on why rich vocabulary teaching is hard for children with developmental language disorder. Relevant to anyone planning vocabulary lessons.",
+   "bands": [
+    "F-2",
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Literacy and English",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "strand": "Developmental language disorder",
+   "title": "DLD fact sheet",
+   "url": "https://radld.org/about/dld/dld-fact-sheet/",
+   "by": "RADLD",
+   "meta": [
+    "Fact sheet",
+    "UK"
+   ],
+   "areas": [
+    25,
+    11,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "RADLD's fact sheet on developmental language disorder, from the international group that raises awareness of the condition. A short page to share with colleagues and families.",
+   "region": "UK"
+  },
+  {
+   "type": "research",
+   "strand": "Developmental language disorder",
+   "title": "CATALISE: A multinational and multidisciplinary Delphi consensus study. Identifying language impairments in children",
+   "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0158753",
+   "by": "Bishop, Snowling, Thompson, Greenhalgh and the CATALISE consortium",
+   "meta": [
+    "2016",
+    "Consensus study"
+   ],
+   "areas": [
+    11,
+    14,
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "The open-access consensus study in which an international expert panel worked towards agreed criteria for identifying children's language difficulties. It underpins the shift to the term developmental language disorder.",
+   "region": "UK"
+  },
+  {
+   "type": "listen",
+   "strand": "Developmental language disorder",
+   "title": "School and DLD",
+   "url": "https://thedldproject.com/school-dld/",
+   "by": "The Talking DLD Podcast (The DLD Project)",
+   "meta": [
+    "Australia"
+   ],
+   "areas": [
+    25,
+    11,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "An episode of the Australian Talking DLD Podcast about school for children with developmental language disorder, and what it is like to watch a child struggle there.",
+   "region": "Australia",
+   "focus": "Developmental language disorder at school"
+  },
+  {
+   "type": "listen",
+   "strand": "Developmental language disorder",
+   "title": "Phonics and DLD",
+   "url": "https://thedldproject.com/phonics-dld/",
+   "by": "The Talking DLD Podcast (The DLD Project)",
+   "meta": [
+    "Australia"
+   ],
+   "areas": [
+    25,
+    11,
+    7,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "This Talking DLD Podcast episode explains why children with developmental language disorder are at higher risk of reading and spelling difficulty, and shares phonics strategies that help.",
+   "region": "Australia",
+   "focus": "Phonics for students with DLD"
+  },
+  {
+   "type": "watch",
+   "strand": "Dyslexia",
+   "title": "What is dyslexia? Dyslexia explained",
+   "url": "https://www.youtube.com/watch?v=kE3DqJP-nkI",
+   "by": "Understood",
+   "meta": [
+    "3:33",
+    "USA"
+   ],
+   "areas": [
+    25,
+    7,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A short explainer from Understood on what dyslexia is. Brief enough to share with new staff, education support staff or families.",
+   "bands": [
+    "F-2",
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Literacy and English",
+   "region": "USA"
+  },
+  {
+   "type": "read",
+   "strand": "Dyslexia",
+   "title": "Definition of dyslexia",
+   "url": "https://dyslexiaida.org/definition-of-dyslexia/",
+   "by": "International Dyslexia Association",
+   "meta": [
+    "Definition",
+    "2025",
+    "USA"
+   ],
+   "areas": [
+    25,
+    7,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "The International Dyslexia Association's current definition, adopted in October 2025. It describes dyslexia as difficulty with accurate or fluent word reading and spelling that sits on a continuum and persists despite effective teaching.",
+   "subject": "Literacy and English",
+   "region": "USA"
+  },
+  {
+   "type": "research",
+   "strand": "Dyslexia",
+   "title": "Defining and understanding dyslexia: Past, present and future",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7455053/",
+   "by": "Snowling, Hulme and Nation",
+   "meta": [
+    "2020",
+    "Review article"
+   ],
+   "areas": [
+    25,
+    7,
+    11,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "An open-access review that describes dyslexia as a difficulty in learning to decode and spell, places it among the neurodevelopmental disorders, and traces how understanding of it has changed.",
+   "region": "UK"
+  },
+  {
+   "type": "research",
+   "strand": "Dyslexia",
+   "title": "Providing Reading Interventions for Students in Grades 4 to 9",
+   "url": "https://ies.ed.gov/ncee/wwc/PracticeGuide/29",
+   "by": "What Works Clearinghouse",
+   "meta": [
+    "Practice guide",
+    "USA"
+   ],
+   "areas": [
+    7,
+    8,
+    14,
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A What Works Clearinghouse practice guide on reading interventions for students in the upper primary and lower secondary years. One for leaders planning support for older struggling readers.",
+   "region": "USA"
+  },
+  {
+   "type": "watch",
+   "strand": "Dysgraphia and written expression",
+   "title": "What is dysgraphia in kids?",
+   "url": "https://www.youtube.com/watch?v=_JYphwPhNp8",
+   "by": "Understood",
+   "meta": [
+    "2:28",
+    "USA"
+   ],
+   "areas": [
+    25,
+    9,
+    10,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A two-minute explainer from Understood on what dysgraphia is in children. A simple starting point for staff and families.",
+   "bands": [
+    "F-2",
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Literacy and English",
+   "region": "USA"
+  },
+  {
+   "type": "read",
+   "strand": "Dysgraphia and written expression",
+   "title": "What is dysgraphia?",
+   "url": "https://www.understood.org/en/articles/understanding-dysgraphia",
+   "by": "Understood",
+   "meta": [
+    "Guides and explainers",
+    "USA"
+   ],
+   "areas": [
+    25,
+    9,
+    10,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Understood's article describes dysgraphia as a writing challenge that affects skills such as handwriting, typing and spelling, and explains how it can affect learning.",
+   "subject": "Literacy and English",
+   "region": "USA"
+  },
+  {
+   "type": "research",
+   "strand": "Dysgraphia and written expression",
+   "title": "Teaching Elementary School Students to Be Effective Writers",
+   "url": "https://ies.ed.gov/ncee/wwc/PracticeGuide/17",
+   "by": "What Works Clearinghouse",
+   "meta": [
+    "Practice guide",
+    "USA"
+   ],
+   "areas": [
+    10,
+    9,
+    14,
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A What Works Clearinghouse practice guide with four recommendations for improving primary students' writing, each with steps for putting it in place and answers to common obstacles.",
+   "region": "USA"
+  },
+  {
+   "type": "watch",
+   "strand": "Dyscalculia and maths difficulties",
+   "title": "Facts and myths about dyscalculia",
+   "url": "https://www.youtube.com/watch?v=02MB3zI5iNI",
+   "by": "Centre for Educational Neuroscience",
+   "meta": [
+    "8:12",
+    "UK"
+   ],
+   "areas": [
+    25,
+    12,
+    14,
+    18
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A short video from the Centre for Educational Neuroscience on facts and myths about dyscalculia. A sensible first watch before a staff discussion.",
+   "bands": [
+    "F-2",
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Maths",
+   "region": "UK"
+  },
+  {
+   "type": "watch",
+   "strand": "Dyscalculia and maths difficulties",
+   "title": "What is dyscalculia?",
+   "url": "https://www.youtube.com/watch?v=imhRoqxSEhU",
+   "by": "Numerical Cognition Laboratory, Western University, with Daniel Ansari",
+   "meta": [
+    "5:00",
+    "Canada"
+   ],
+   "areas": [
+    25,
+    12,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Professor Daniel Ansari of Western University explains what developmental dyscalculia is in five minutes. A good first watch before his longer webinar.",
+   "bands": [
+    "F-2",
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Maths"
+  },
+  {
+   "type": "listen",
+   "strand": "Dyscalculia and maths difficulties",
+   "title": "Understanding dyscalculia",
+   "url": "https://www.ncetm.org.uk/podcasts/understanding-dyscalculia/",
+   "by": "The NCETM Podcast",
+   "meta": [
+    "with Cat Eadle"
+   ],
+   "areas": [
+    25,
+    12,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Dyscalculia specialist Cat Eadle explains what dyscalculia is, how it differs from other maths difficulties, and how mastery-style teaching can help. A short listen of a little over twenty minutes.",
+   "region": "UK",
+   "focus": "Dyscalculia"
+  },
+  {
+   "type": "read",
+   "strand": "Dyscalculia and maths difficulties",
+   "title": "Learning Difficulties Information Guide: Numeracy",
+   "url": "https://www.education.vic.gov.au/Documents/school/teachers/teachingresources/discipline/english/reading/numeracy-guide.pdf",
+   "by": "Department of Education, Victoria",
+   "meta": [
+    "Guide",
+    "2022",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    12,
+    14,
+    13
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Victoria's guide for teachers on numeracy difficulties, including dyscalculia. It explains core number abilities, a three-phase assessment process and intervention across the response to intervention tiers.",
+   "subject": "Maths",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "strand": "Dyscalculia and maths difficulties",
+   "title": "Principles for designing intervention in mathematics",
+   "url": "https://intensiveintervention.org/resource/principles-designing-intervention-mathematics",
+   "by": "National Center on Intensive Intervention",
+   "meta": [
+    "Guides and explainers",
+    "USA"
+   ],
+   "areas": [
+    12,
+    14,
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A short guide from the National Center on Intensive Intervention explaining key practices to use when teaching students who need intensive maths intervention.",
+   "subject": "Maths",
+   "region": "USA"
+  },
+  {
+   "type": "watch",
+   "strand": "Related needs",
+   "title": "Supporting working memory in the primary classroom",
+   "url": "https://www.youtube.com/watch?v=GNjBj7l1458",
+   "by": "Education Endowment Foundation",
+   "meta": [
+    "2:57",
+    "UK"
+   ],
+   "areas": [
+    1,
+    14,
+    5,
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A three-minute Education Endowment Foundation video on supporting working memory in the primary classroom. Short enough to watch and discuss in a team meeting.",
+   "bands": [
+    "F-2",
+    "3-6"
+   ],
+   "subject": "Across subjects",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "strand": "Related needs",
+   "title": "Understanding working memory: A classroom guide",
+   "url": "https://calm.mrc-cbu.cam.ac.uk/wp-content/uploads/calm/sites/5/2024/03/WM-classroom-guide.pdf",
+   "by": "Susan Gathercole and Tracy Packiam Alloway",
+   "meta": [
+    "Guide",
+    "2007",
+    "UK"
+   ],
+   "areas": [
+    1,
+    14,
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A classroom guide to working memory by researchers Susan Gathercole and Tracy Packiam Alloway, hosted by the University of Cambridge. Older, but still a well-known introduction for teachers.",
+   "region": "UK"
+  },
+  {
+   "type": "watch",
+   "strand": "Related needs",
+   "title": "Developmental coordination disorder",
+   "url": "https://www.youtube.com/watch?v=XmawAZmuHgg",
+   "by": "National Council for Special Education (Ireland)",
+   "meta": [
+    "5:01",
+    "International"
+   ],
+   "areas": [
+    25,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A five-minute introduction to developmental coordination disorder from Ireland's National Council for Special Education. A quick primer for classroom teachers.",
+   "bands": [
+    "F-2",
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Across subjects",
+   "region": "International"
+  },
+  {
+   "type": "read",
+   "strand": "ADHD",
+   "title": "ADHD factsheet for educators",
+   "url": "https://adhdguideline.aadpa.com.au/adhd-for-educators/",
+   "by": "Australasian ADHD Professionals Association (Kim Fuller)",
+   "meta": [
+    "Fact sheet",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    5
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A short fact sheet from the body behind Australia's ADHD clinical guideline. It explains why educators need to recognise possible ADHD and support students from preschool onwards.",
+   "bands": [
+    "F-2",
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "strand": "ADHD",
+   "title": "Educational adjustments for students with ADHD",
+   "url": "https://adhdguideline.aadpa.com.au/adhd-educational-adjustments/",
+   "by": "Australasian ADHD Professionals Association (Kim Fuller)",
+   "meta": [
+    "Fact sheet",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    5
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Examples of common reasonable adjustments for students with ADHD, tied to the Disability Standards for Education. It also notes when anxiety or autism alongside ADHD may call for more.",
+   "bands": [
+    "F-2",
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "research",
+   "strand": "ADHD",
+   "title": "Australian Evidence-Based Clinical Practice Guideline for Attention Deficit Hyperactivity Disorder (ADHD)",
+   "url": "https://adhdguideline.aadpa.com.au/",
+   "by": "Australasian ADHD Professionals Association",
+   "meta": [
+    "Clinical guideline",
+    "2022",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    18
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "The national guideline for identifying, diagnosing and supporting people with ADHD, approved by the NHMRC. Written for clinicians, and worth knowing as the reference point behind advice schools receive.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "strand": "ADHD",
+   "title": "Primary school teacher strategies for ADHD",
+   "url": "https://www.allplaylearn.org.au/primary/teacher/adhd/",
+   "by": "AllPlay Learn, Monash University",
+   "meta": [
+    "Teacher guide",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    5
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A plain guide for primary teachers covering what ADHD is, the strengths these students bring, evidence-based strategies, best practice tips and points to consider across the curriculum.",
+   "bands": [
+    "F-2",
+    "3-6"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "strand": "ADHD",
+   "title": "Attention deficit hyperactivity disorder (ADHD): Advice for school and home",
+   "url": "https://www.rch.org.au/kidsinfo/fact_sheets/ADHD_ways_to_help_children_at_school_and_home/",
+   "by": "The Royal Children's Hospital Melbourne",
+   "meta": [
+    "Fact sheet",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    20
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "The Royal Children's Hospital's fact sheet for families on supporting a child with ADHD at school and at home. Handy to share with parents so everyone is working from the same advice.",
+   "bands": [
+    "F-2",
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "strand": "ADHD",
+   "title": "What teachers can teach us about ADHD inclusion",
+   "url": "https://www.adhdaustralia.org.au/what-teachers-can-teach-us-about-adhd-inclusion/",
+   "by": "Flynn Vamos and Melanie Porter, for ADHD Australia",
+   "meta": [
+    "Article",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    5
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Two psychology researchers report what Australian primary teachers told them about including students with ADHD, which teachers described as the blind spot of inclusion.",
+   "bands": [
+    "F-2",
+    "3-6"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "strand": "Autism",
+   "title": "Supporting autistic and gender-diverse students at school",
+   "url": "https://autisticgirlsatschool.com.au/",
+   "by": "Yellow Ladybugs, with the Department of Education, Victoria",
+   "meta": [
+    "Website guide",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    20
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A website guide to supporting autistic girls and gender-diverse students, covering masking, hidden anxiety, peer relationships, group work, executive functioning and class rules.",
+   "bands": [
+    "F-2",
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "watch",
+   "strand": "Autism",
+   "title": "Use visual schedules: Teaching practice",
+   "url": "https://www.inclusioned.edu.au/practices/use-visual-schedules",
+   "by": "inclusionED",
+   "meta": [
+    "Practice guide with video",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    5
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A step-by-step practice guide with classroom video on using visual schedules so students know what is coming, move between tasks smoothly and need fewer verbal prompts.",
+   "bands": [
+    "F-2",
+    "3-6"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "watch",
+   "strand": "Autism",
+   "title": "Meet students' sensory needs: Teaching practice",
+   "url": "https://www.inclusioned.edu.au/practices/meet-students-sensory-needs",
+   "by": "inclusionED",
+   "meta": [
+    "Practice guide with video",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    5
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A practice guide with video on getting to know students' sensory preferences and adjusting the room so they can stay comfortable, focused and safe.",
+   "bands": [
+    "F-2",
+    "3-6"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "watch",
+   "strand": "Autism",
+   "title": "Transitions at Echuca College: Supporting autistic students with transition",
+   "url": "https://www.vic.gov.au/transitions-echuca-college-supporting-autistic-students-transition",
+   "by": "Department of Education, Victoria",
+   "meta": [
+    "Case study with video",
+    "About 3 minutes",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    20
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A Victorian case study with short videos showing how Echuca College built a transition program with its feeder primary schools so new Year 7 students, including autistic students, start well.",
+   "bands": [
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "strand": "Autism",
+   "title": "For primary teachers: Supporting autistic students' transition to secondary school",
+   "url": "https://www.amaze.org.au/wp-content/uploads/2023/07/For-primary-teachers_-Supporting-autistic-students-transition-to-secondary-school-2023.pdf",
+   "by": "Amaze",
+   "meta": [
+    "Tip sheet (PDF)",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Amaze's tip sheet for Year 6 teachers on writing a transition plan with the student, the family and the secondary school before an autistic student moves on.",
+   "bands": [
+    "3-6"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "strand": "Autism",
+   "title": "Supporting autistic students: Diverse Learners Hub",
+   "url": "https://www.vic.gov.au/diverse-learners-hub/autism-student-resources",
+   "by": "Department of Education, Victoria",
+   "meta": [
+    "Resource page",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "The Victorian department's collection of guidance for schools on autistic students, linking to the Autism Education Strategy, transition tip sheets, behaviour support tools and partner organisations.",
+   "bands": [
+    "F-2",
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "strand": "Autism",
+   "title": "Primary school teacher strategies for autism",
+   "url": "https://www.allplaylearn.org.au/primary/teacher/asd/",
+   "by": "AllPlay Learn, Monash University",
+   "meta": [
+    "Teacher guide",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    5
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A guide for primary teachers that sets out what autism is, the strengths autistic students bring, evidence-based strategies, best practice tips and curriculum considerations.",
+   "bands": [
+    "F-2",
+    "3-6"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "research",
+   "strand": "Supporting students with additional needs",
+   "title": "Making best use of teaching assistants: Guidance report",
+   "url": "https://evidenceforlearning.org.au/education-evidence/guidance-reports/teaching-assistants",
+   "by": "Evidence for Learning",
+   "meta": [
+    "Guidance report",
+    "2019",
+    "Australia"
+   ],
+   "areas": [
+    14,
+    21,
+    17,
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Seven recommendations to help principals and leadership teams in primary and secondary schools make the best use of teaching assistants. The full report and a one-page poster are free to download.",
+   "region": "Australia"
+  },
+  {
+   "type": "watch",
+   "strand": "Supporting students with additional needs",
+   "title": "High quality teaching: The 'five-a-day' principle",
+   "url": "https://www.youtube.com/watch?v=a_4U73xozWk",
+   "by": "Education Endowment Foundation",
+   "meta": [
+    "About 2 minutes",
+    "UK"
+   ],
+   "areas": [
+    14,
+    2,
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A two-minute Education Endowment Foundation explainer of its 'five-a-day' principle, a set of five core practices that help all pupils succeed, including those with special educational needs. A quick opener for a staff meeting on Tier 1 teaching.",
+   "bands": [
+    "F-2",
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Across subjects",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "strand": "Supporting students with additional needs",
+   "title": "Disability Standards: An introduction for educators",
+   "url": "https://www.inclusioned.edu.au/practice/series/1878",
+   "by": "inclusionED, with Elizabeth Dickson",
+   "meta": [
+    "Practice series",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    19
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "An introduction to the Disability Discrimination Act and the Disability Standards for Education, written with education law expert Professor Elizabeth Dickson. Covers educators' obligations, discrimination, harassment and victimisation.",
+   "bands": [
+    "F-2",
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "strand": "Supporting students with additional needs",
+   "title": "Disability Standards for Education: Resources for teachers and leaders",
+   "url": "https://www.aitsl.edu.au/resources/collections/disability-standards-for-education",
+   "by": "AITSL",
+   "meta": [
+    "Resource collection",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    19
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "AITSL's collection of elaborations and videos showing how the Disability Standards for Education connect to the Teacher Standards and what they ask of teachers and leaders.",
+   "bands": [
+    "F-2",
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "strand": "Supporting students with additional needs",
+   "title": "Disability Standards for Education 2005",
+   "url": "https://www.education.gov.au/disability-standards-education-2005",
+   "by": "Australian Government Department of Education",
+   "meta": [
+    "Government resource page",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    19
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "The Australian Government's home for the Standards, with fact sheets, exemplars of practice and the national guide to planning personalised learning and support.",
+   "bands": [
+    "F-2",
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "strand": "Supporting students with additional needs",
+   "title": "Individual Education Plans (IEPs): Victorian policy and guidance",
+   "url": "https://www2.education.vic.gov.au/pal/individual-education-plans-ieps/policy",
+   "by": "Department of Education, Victoria",
+   "meta": [
+    "Policy and guidance",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    19
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "The Victorian government school policy on Individual Education Plans. It sets out which students must have one, reminds schools of their duty to make reasonable adjustments, and links to guidance and templates.",
+   "bands": [
+    "F-2",
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "strand": "Supporting students with additional needs",
+   "title": "Student Support Groups: Victorian policy and guidance",
+   "url": "https://www2.education.vic.gov.au/pal/student-support-groups/policy",
+   "by": "Department of Education, Victoria",
+   "meta": [
+    "Policy and guidance",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    19,
+    20
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "The Victorian policy on Student Support Groups, the meeting of school, family and others that plans support for a student with disability or diverse learning needs.",
+   "bands": [
+    "F-2",
+    "3-6",
+    "Secondary"
+   ],
+   "subject": "Across subjects",
+   "region": "Australia"
   }
  ],
  "shows": [

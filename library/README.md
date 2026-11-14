@@ -49,3 +49,9 @@ The library pages on the site are generated. Nobody edits `library*.html` by han
 - **Build warnings.** `build.py` prints a `WARNING` line for a summary or description with a colon before a lower-case word (reword it, because the colon rule would put a capital mid-sentence), for a "Start here" pick that matches no title, and for an empty or "None" detail on a card.
 - **Search** also looks in each entry's topic line and summary, finds American and Australian spellings of the same word, and offers results 60 at a time.
 - **Cache versions.** When `styles.css`, `search.js` or `filter.js` changes, raise its `?v=` number wherever it is referenced (`about.html` and the other hand-written pages for the stylesheet, `build.py` for the two scripts).
+
+## Areas organised by strand (November 2026)
+
+- **Learning difficulties, disorders and additional needs** (area 25, in MTSS and assessment) is laid out by strand, one series per topic, instead of by type. The strands, their one-sentence descriptions, the page introduction and the note under it live in `STRANDS` in `build.py`, keyed by area number.
+- **To add an entry to a strand**, give it the area number in `areas` and a `strand` whose text matches a strand name exactly. Put the area number first only when the entry is mainly about that area; the first area decides where a card sits on the Watch, Learn and Read shelves. The build prints a `WARNING` for an entry in the area with a missing or unknown strand.
+- **Inside a strand** cards run Learn, Watch, Read, Research, Listen, each card shows its type, and sources are spread out within each type. An area that is not in `STRANDS` is laid out by type, as before.
