@@ -24,6 +24,7 @@ The library pages on the site are generated. Nobody edits `library*.html` by han
 | `library/data/library.json` | Published entries, areas, shows and the Victorian view. |
 | `library/data/summaries.json` | Short video summaries, keyed by link. |
 | `library/data/shows.json` | Podcast show links, cover art addresses and descriptions. |
+| `library/data/thumbs.json` | Preview picture addresses, keyed by an entry's link. Pictures stay on their creators' servers; nothing is copied here. Watch and Learn show them as the card's still, Read, Research and Curriculum as a small picture beside the heading. Episode cards use their show's cover art from `shows.json`. |
 | `library/tools/prepare.py` | Sheet export to `library.json`. |
 | `library/tools/check_links.py` | Link checker. |
 | `library/search.js`, `library/filter.js` | Search on the library home, filters on Watch and Listen. |

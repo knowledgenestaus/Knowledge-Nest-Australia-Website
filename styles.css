@@ -272,6 +272,12 @@ ul, ol { padding-left: 1.2rem; }
 .lib-thumb-name { max-width: 78%; text-align: center; font-family: var(--font-display); font-style: italic; font-size: 1.2rem; line-height: 1.25; color: var(--navy); }
 .lib-thumb-play { position: absolute; left: 0.75rem; bottom: 0.75rem; width: 40px; height: 40px; border-radius: 50%; background: var(--navy); border: 2px solid white; box-shadow: 0 2px 8px rgba(11,33,71,0.3); }
 .lib-thumb-play::after { content: ""; position: absolute; left: 14px; top: 10px; border-style: solid; border-width: 8px 0 8px 13px; border-color: transparent transparent transparent white; }
+/* A small picture beside a card's heading: show cover art on episodes, the page's own preview image on reading. */
+.lib-card-head { display: flex; align-items: flex-start; gap: 0.85rem; }
+.lib-card-head > div { display: flex; flex-direction: column; gap: 0.45rem; min-width: 0; flex: 1; }
+.lib-card-pic { flex-shrink: 0; width: 96px; height: 72px; aspect-ratio: 4 / 3; margin-top: 0.15rem; border-radius: 10px; object-fit: cover; background: var(--sky-soft); border: 1px solid var(--line); }
+.lib-card-art { width: 56px; height: 56px; aspect-ratio: 1; }
+@media (max-width: 420px) { .lib-card-pic { width: 72px; height: 54px; } .lib-card-art { width: 48px; height: 48px; } }
 
 /* Shows and Substacks */
 .lib-show { flex-direction: row; align-items: flex-start; gap: 1rem; }

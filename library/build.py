@@ -98,6 +98,9 @@ THUMBS = _load("thumbs.json", {})  # video url -> preview image url (linked, nev
 # Jo's must-follow Substacks, by title, shown first on the Read page. Leave empty until chosen.
 MUST_SUBSTACKS = []
 SHOWS = DATA["shows"]
+SHOW_ART = {s["title"]: s["art"] for s in SHOWS if s.get("art")}  # cover art by show, for episode cards
+# Preview images that are video stills (shown edge to edge); anything else is shown whole, like a logo.
+STILL_HOSTS = ("ytimg.com", "edresearch.edu.au", "vimeocdn.com", "boltdns.net")
 VTLM = DATA["vtlm"]
 
 TYPES = OrderedDict([
@@ -198,14 +201,22 @@ def card(x, show_type=True, level="h3", filterable=False):
         img = THUMBS.get(x["url"])
         pic = ('<img src="%s" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="480" height="270" '
                'onerror="this.remove()">' % e(img)) if img else ""
-        kind = "" if not img else (" lib-thumb-still" if ("ytimg.com" in img or "edresearch.edu.au" in img) else " lib-thumb-logo")
+        kind = "" if not img else (" lib-thumb-still" if any(h in img for h in STILL_HOSTS) else " lib-thumb-logo")
         thumb = ('<a class="lib-thumb%s" href="%s" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">'
                  '<span class="lib-thumb-name">%s</span>%s<span class="lib-thumb-play"></span></a>' % (kind, e(x["url"]), e(x["by"] or domain_of(x["url"])), pic))
+    head = '%s%s<%s class="lib-card-title"><a href="%s" target="_blank" rel="noopener">%s%s</a></%s>%s' % (
+        badge, focus, level, e(x["url"]), e(x["title"]), NEWTAB, level, ('<p class="lib-by">%s</p>' % line) if line else "")
+    # A small picture beside the heading: the show's cover art on episodes, the page's own preview image on reading.
+    # Linked from the creator's server, never copied; if it fails to load it is removed and the card reads as plain text.
+    side = SHOW_ART.get(x["by"]) if x["type"] == "listen" else (THUMBS.get(x["url"]) if x["type"] in ("read", "research", "curriculum") else None)
+    if side:
+        w, h = (56, 56) if x["type"] == "listen" else (96, 72)
+        head = ('<div class="lib-card-head"><img class="lib-card-pic%s" src="%s" alt="" width="%d" height="%d" loading="lazy" decoding="async" '
+                'referrerpolicy="no-referrer" onerror="this.remove()"><div>%s</div></div>' % (" lib-card-art" if x["type"] == "listen" else "", e(side), w, h, head))
     return (
-        '<article class="lib-card%s" data-type="%s"%s>%s%s%s<%s class="lib-card-title"><a href="%s" target="_blank" rel="noopener">%s%s</a></%s>'
-        '%s%s%s<p class="lib-card-foot">%s<span class="lib-source">Opens at %s</span></p></article>'
-        % (" has-thumb" if thumb else "", x["type"], data, thumb, badge, focus, level, e(x["url"]), e(x["title"]), NEWTAB, level,
-           ('<p class="lib-by">%s</p>' % line) if line else "", summary, topics, tags, e(domain_of(x["url"])))
+        '<article class="lib-card%s" data-type="%s"%s>%s%s'
+        '%s%s<p class="lib-card-foot">%s<span class="lib-source">Opens at %s</span></p></article>'
+        % (" has-thumb" if thumb else "", x["type"], data, thumb, head, summary, topics, tags, e(domain_of(x["url"])))
     )
 
 
