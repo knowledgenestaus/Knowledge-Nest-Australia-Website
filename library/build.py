@@ -154,25 +154,25 @@ STRANDS = {
     25: dict(
         intro="Some students keep finding reading, writing, maths or language hard, even when the teaching is good. I've gathered webinars, "
               "short videos, guides and research here to help you understand why, and what strong support looks like at Tier 1, Tier 2 and Tier 3. "
-              "You'll also find Australian webinars and guides on supporting students with ADHD, autistic students and others with additional needs.",
-        note="These resources are here to support your teaching, and they are not a substitute for assessment or advice from a qualified "
-             "professional such as a psychologist, paediatrician or speech pathologist.",
+              "You'll also find webinars and guides, most of them Australian, on supporting students with ADHD, autistic students and other students with additional needs.",
+        note="These resources are here to support your teaching. They are not a substitute for assessment or advice from a qualified "
+             "professional, such as a psychologist, paediatrician or speech pathologist.",
         strands=[
             ("Understanding learning difficulties", "What learning difficulties and specific learning disorders are, how schools notice them through "
              "tiered support, and what reasonable adjustments look like.", ("For screening, intervention and the tiers across a whole school, see", 14)),
-            ("Developmental language disorder", "A common and often hidden difficulty with understanding and using language, and what teachers can do "
+            ("Developmental language disorder", "A common and often hidden condition that makes understanding and using language hard, and what teachers can do "
              "alongside speech pathologists.", None),
             ("Dyslexia", "Persistent difficulty with accurate and fluent word reading and spelling, and the teaching and intervention that the evidence supports.", None),
             ("Dysgraphia and written expression", "Difficulties with handwriting, spelling and getting ideas onto the page, and how to teach and support each one.", None),
             ("Dyscalculia and maths difficulties", "Persistent difficulty with number and calculation, how it differs from gaps in what has been taught, "
              "and what effective maths intervention involves.", None),
             ("ADHD", "These are the webinars and guides I'd share with a teacher who wants to understand attention and motivation, "
-             "and to set up a calm classroom where students with ADHD can do well.", None),
+             "and to set up a calm classroom where students with ADHD can do well. A few are made for families, and say so.", None),
             ("Autism", "Here you'll find webinars and classroom guides, most of them Australian, on communication, sensory needs, visual schedules and transitions, "
              "with autistic voices alongside the research.", None),
             ("Supporting students with additional needs", "I've gathered the practical things here, including what the Disability Standards ask of us, "
              "how to plan adjustments and Individual Education Plans, and how to work well with education support staff.", None),
-            ("Related needs", "Working memory and coordination difficulties that teachers often meet alongside the others.", None),
+            ("Related needs", "Working memory and coordination difficulties, which often sit alongside the learning difficulties above.", None),
         ]),
 }
 STRAND_ORDER = ("learn", "watch", "read", "research", "listen")   # within a strand: webinars first, then by type

@@ -2605,14 +2605,10 @@
    "tags": [
     "Free"
    ],
-   "summary": "A webinar on dyslexia and dysgraphia from Australian linguist Lyn Stone's channel. Useful for teachers who want to understand why spelling and writing can be so hard for some students.",
+   "summary": "A webinar from Australian linguist Lyn Stone, made for parents who want to know more about dyslexia and dysgraphia. Clear enough for teachers too, and one to pass on to families.",
    "region": "Australia",
    "length": "Over 60 minutes",
-   "audience": "Teachers",
-   "staff": [
-    "Which students find getting words onto the page far harder than their spoken language would suggest?",
-    "What do we currently do for a student whose handwriting or spelling is holding back their writing?"
-   ]
+   "audience": "Teachers"
   },
   {
    "strand": "Dysgraphia and written expression",
@@ -2743,7 +2739,7 @@
    "tags": [
     "Free"
    ],
-   "summary": "A Reading Rockets video with writing researcher Steve Graham on effective writing teaching. Sits well beside the Karen Harris podcast episode on self-regulated strategy development already in the library.",
+   "summary": "A Reading Rockets video with writing researcher Steve Graham on effective writing teaching. Pairs well with the Karen Harris podcast episode on self-regulated strategy development on the Listen shelf.",
    "region": "USA",
    "length": "30 to 60 minutes",
    "audience": "Teachers"
@@ -2786,7 +2782,7 @@
    "tags": [
     "Free"
    ],
-   "summary": "Steve Chinn, a long-standing UK specialist in maths learning difficulties, speaks for The Dyscalculia Network about teaching maths with learners' needs in mind.",
+   "summary": "Rob Jennings of The Dyscalculia Network interviews Steve Chinn, a long-standing UK specialist in maths learning difficulties, about his book on teaching maths with learners' needs in mind.",
    "region": "UK",
    "length": "30 to 60 minutes",
    "audience": "Teachers"
@@ -2856,7 +2852,7 @@
    "tags": [
     "Free"
    ],
-   "summary": "A National Center on Intensive Intervention webinar on supporting students with maths difficulty in your class. One for teachers who want to help within Tier 1.",
+   "summary": "Dr Sarah Powell walks through free tools from the National Center on Intensive Intervention for assessing and teaching students with maths difficulty.",
    "region": "USA",
    "length": "30 to 60 minutes",
    "audience": "Teachers"
@@ -2923,19 +2919,19 @@
    "tags": [
     "Free"
    ],
-   "summary": "Professor Amanda Kirby speaks for the Association for Child and Adolescent Mental Health about developmental coordination disorder, which often shows up at school in handwriting and organisation.",
+   "summary": "Professor Amanda Kirby speaks for the Association for Child and Adolescent Mental Health about developmental coordination disorder, which often shows up at school in handwriting and organisation. Made for clinicians, so heavier going than the short video in this strand.",
    "region": "UK",
    "length": "30 to 60 minutes",
    "audience": "Teachers"
   },
   {
    "strand": "ADHD",
-   "title": "ADHD goes to school: Webinar recording",
-   "url": "https://www.youtube.com/watch?v=hgm52cmxFyg",
-   "by": "Kelty Mental Health Resource Centre",
+   "title": "Understanding ADHD in children and how to support them at school",
+   "url": "https://www.youtube.com/watch?v=gzsWGWBSVC4",
+   "by": "Wolfson Centre for Young People's Mental Health, with Joanna Martin",
    "meta": [
-    "About 1 hour",
-    "Canada"
+    "About 50 minutes",
+    "UK"
    ],
    "areas": [
     25,
@@ -2945,32 +2941,9 @@
    "tags": [
     "Free"
    ],
-   "summary": "A webinar recording from Canada's Kelty Mental Health Resource Centre on ADHD at school. A fuller look at attention and classroom support than a short clip allows.",
-   "region": "Canada",
+   "summary": "Dr Joanna Martin of Cardiff University on the early signs of ADHD in primary school children, how it can look different in girls and boys, what to do when you have concerns and how schools can help.",
+   "region": "UK",
    "length": "30 to 60 minutes",
-   "audience": "Teachers"
-  },
-  {
-   "strand": "ADHD",
-   "title": "Attention deficit hyperactivity disorder (ADHD) in children and teenagers: Webinar recording",
-   "url": "https://www.youtube.com/watch?v=e7aPD6ZGR7A",
-   "by": "Raising Children Network",
-   "meta": [
-    "About 1 hour",
-    "Australia"
-   ],
-   "areas": [
-    25,
-    14,
-    5,
-    20
-   ],
-   "tags": [
-    "Free"
-   ],
-   "summary": "A recorded webinar on ADHD in children and teenagers from the Raising Children Network, the Australian parenting website. Worth knowing about when a family asks you where to start.",
-   "region": "Australia",
-   "length": "Over 60 minutes",
    "audience": "Teachers"
   },
   {
@@ -3019,12 +2992,12 @@
   },
   {
    "strand": "ADHD",
-   "title": "Understanding ADHD in children and how to support them at school",
-   "url": "https://www.youtube.com/watch?v=gzsWGWBSVC4",
-   "by": "Wolfson Centre for Young People's Mental Health, with Joanna Martin",
+   "title": "ADHD goes to school: Webinar recording",
+   "url": "https://www.youtube.com/watch?v=hgm52cmxFyg",
+   "by": "Kelty Mental Health Resource Centre",
    "meta": [
-    "About 50 minutes",
-    "UK"
+    "About 1 hour",
+    "Canada"
    ],
    "areas": [
     25,
@@ -3034,9 +3007,32 @@
    "tags": [
     "Free"
    ],
-   "summary": "Dr Joanna Martin of Cardiff University on the early signs of ADHD in primary school children, how it can look different in girls and boys, what to do when you have concerns and how schools can help.",
-   "region": "UK",
+   "summary": "A webinar for parents from Canada's Kelty Mental Health Resource Centre on how ADHD affects learning and how to support a child at school. Useful for seeing school through a family's eyes. Some of the advice is specific to British Columbia.",
+   "region": "Canada",
    "length": "30 to 60 minutes",
+   "audience": "Teachers"
+  },
+  {
+   "strand": "ADHD",
+   "title": "Attention deficit hyperactivity disorder (ADHD) in children and teenagers: Webinar recording",
+   "url": "https://www.youtube.com/watch?v=e7aPD6ZGR7A",
+   "by": "Raising Children Network",
+   "meta": [
+    "About 1 hour",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14,
+    5,
+    20
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A recorded webinar on ADHD in children and teenagers from the Raising Children Network, the Australian parenting website. Worth knowing about when a family asks you where to start.",
+   "region": "Australia",
+   "length": "Over 60 minutes",
    "audience": "Teachers"
   },
   {

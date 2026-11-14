@@ -8118,14 +8118,18 @@
    "by": "What Works Clearinghouse (Fuchs and colleagues)",
    "meta": [
     "2021",
-    "Practice guide"
+    "Practice guide",
+    "USA"
    ],
    "areas": [
     12,
     25
    ],
-   "tags": [],
-   "strand": "Dyscalculia and maths difficulties"
+   "tags": [
+    "Free"
+   ],
+   "strand": "Dyscalculia and maths difficulties",
+   "summary": "A What Works Clearinghouse practice guide with six recommendations for maths intervention in the primary years, from systematic instruction and mathematical language to number lines, word problems and timed fluency activities."
   },
   {
    "type": "research",
@@ -9531,7 +9535,9 @@
     7,
     25
    ],
-   "tags": [],
+   "tags": [
+    "Free"
+   ],
    "summary": "Lucy Wings and Jeremy Barr describe putting a structured literacy approach in place in a special school setting.",
    "strand": "Supporting students with additional needs"
   },
@@ -11364,9 +11370,10 @@
    "strand": "Dyscalculia and maths difficulties",
    "title": "What is dyscalculia?",
    "url": "https://www.youtube.com/watch?v=imhRoqxSEhU",
-   "by": "Numerical Cognition",
+   "by": "Numerical Cognition Laboratory, Western University, with Daniel Ansari",
    "meta": [
-    "5:00"
+    "5:00",
+    "Canada"
    ],
    "areas": [
     25,
@@ -11376,7 +11383,7 @@
    "tags": [
     "Free"
    ],
-   "summary": "A five-minute explainer on what dyscalculia is, from the Numerical Cognition channel on YouTube.",
+   "summary": "Professor Daniel Ansari of Western University explains what developmental dyscalculia is in five minutes. A good first watch before his longer webinar.",
    "bands": [
     "F-2",
     "3-6",
