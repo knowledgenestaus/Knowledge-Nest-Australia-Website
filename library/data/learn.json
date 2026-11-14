@@ -4081,6 +4081,194 @@
    "audience": "Teachers",
    "region": "UK",
    "kind": "interview"
+  },
+  {
+   "title": "Dr Jennifer Throndsen: Raising up readers, strategies to help students access challenging text",
+   "url": "https://www.youtube.com/watch?v=QLcMf67G490",
+   "by": "Five from Five, with Jennifer Throndsen",
+   "meta": [
+    "1 hour 11 minutes",
+    "2026",
+    "USA"
+   ],
+   "areas": [
+    30,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Practical strategies and tools for scaffolding challenging texts, so every student can work with grade-level content even when the reading is hard for them.",
+   "region": "USA",
+   "length": "Over 60 minutes",
+   "audience": "Teachers",
+   "kind": "webinar"
+  },
+  {
+   "title": "Dr Jennifer Buckingham: Effective, evidence-based reading instruction for every student, every day",
+   "url": "https://www.youtube.com/watch?v=z03TyqOaxEA",
+   "by": "Five from Five, with Jennifer Buckingham",
+   "meta": [
+    "42 minutes",
+    "2022",
+    "Australia"
+   ],
+   "areas": [
+    33,
+    18
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A presentation for Learning Difficulties Australia on how far Australian reading instruction has come and what still needs to change.",
+   "region": "Australia",
+   "length": "30 to 60 minutes",
+   "audience": "Leaders",
+   "kind": "talk",
+   "strand": "Syntheses of the field"
+  },
+  {
+   "title": "Fluency: The misunderstood middle child of the Big 5",
+   "url": "https://www.youtube.com/watch?v=pR917xoy2Y0",
+   "by": "Five from Five, with Jennifer Buckingham",
+   "meta": [
+    "45 minutes",
+    "2020",
+    "Australia"
+   ],
+   "areas": [
+    28
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Dr Jennifer Buckingham explains what reading fluency is, how to teach it and how to assess it using evidence-based methods.",
+   "region": "Australia",
+   "length": "30 to 60 minutes",
+   "audience": "Teachers",
+   "kind": "talk"
+  },
+  {
+   "title": "Professor Rhona Stainthorp: Phonics in teaching reading, essential knowledge for educators",
+   "url": "https://www.youtube.com/watch?v=K2wgkBJ3SK0",
+   "by": "Five from Five, with Rhona Stainthorp",
+   "meta": [
+    "51 minutes",
+    "UK"
+   ],
+   "areas": [
+    27
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Professor Rhona Stainthorp of the University of Reading sets out the knowledge about phonics that every teacher of reading needs.",
+   "region": "UK",
+   "length": "30 to 60 minutes",
+   "audience": "Teachers",
+   "kind": "talk"
+  },
+  {
+   "title": "The three-cueing system: Fact or fiction?",
+   "url": "https://www.youtube.com/watch?v=MaerOHwxRsA",
+   "by": "Five from Five",
+   "meta": [
+    "1:38",
+    "Australia"
+   ],
+   "areas": [
+    27,
+    18
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A short animation explaining why guessing words from pictures and context is not an effective way to teach reading. Handy for a staff or parent conversation.",
+   "region": "Australia",
+   "length": "Under 10 minutes",
+   "audience": "Teachers",
+   "kind": "explainer"
+  },
+  {
+   "title": "What is phonemic awareness?",
+   "url": "https://www.youtube.com/watch?v=NnUhPhKvC2g",
+   "by": "Five from Five",
+   "meta": [
+    "1:53",
+    "Australia"
+   ],
+   "areas": [
+    26
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A two-minute animation on what phonemic awareness is and why it matters for learning to read.",
+   "region": "Australia",
+   "length": "Under 10 minutes",
+   "audience": "Teachers",
+   "kind": "explainer"
+  },
+  {
+   "title": "What is systematic synthetic phonics?",
+   "url": "https://www.youtube.com/watch?v=iuCuND7k5jc",
+   "by": "Five from Five",
+   "meta": [
+    "2:05",
+    "Australia"
+   ],
+   "areas": [
+    27
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A two-minute animation explaining how systematic synthetic phonics teaches children to use letter-sound relationships to read words accurately.",
+   "region": "Australia",
+   "length": "Under 10 minutes",
+   "audience": "Teachers",
+   "kind": "explainer"
+  },
+  {
+   "title": "Phonemes and graphemes",
+   "url": "https://www.youtube.com/watch?v=eMgGOH4BqFs",
+   "by": "Five from Five",
+   "meta": [
+    "1:53",
+    "Australia"
+   ],
+   "areas": [
+    27
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A short animation on the smallest parts of spoken and written words, and why teaching the links between them is the heart of phonics.",
+   "region": "Australia",
+   "length": "Under 10 minutes",
+   "audience": "Teachers",
+   "kind": "explainer"
+  },
+  {
+   "title": "Why do we need a Year 1 Phonics Check in Australia?",
+   "url": "https://www.youtube.com/watch?v=UUbqKbFbAWo",
+   "by": "Five from Five",
+   "meta": [
+    "1:44",
+    "Australia"
+   ],
+   "areas": [
+    27,
+    13
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A short animation on what the five-minute Year 1 Phonics Check is and what it tells schools about early decoding.",
+   "region": "Australia",
+   "length": "Under 10 minutes",
+   "audience": "Leaders",
+   "kind": "explainer"
   }
  ]
 }
