@@ -883,3 +883,11 @@ html:not(.js) .nav-sub-toggle { display: none; }
   .hero-figure { gap: 1.1rem; }
   .hero-caption { font-size: 1.05rem; }
 }
+
+/* Jo's photo: small, circular, quiet */
+.jo-avatar { display: block; width: 112px; height: 112px; border-radius: 50%; border: 3px solid white; box-shadow: 0 6px 18px rgba(11,33,71,0.14); }
+.share-head .jo-avatar { margin: 0 0 1rem; }
+.availability-note.has-avatar { display: flex; align-items: flex-start; gap: 1.1rem; }
+@media (max-width: 600px) { .availability-note.has-avatar { display: block; } .availability-note.has-avatar .jo-avatar { margin-bottom: 0.8rem; } }
+.jo-avatar-sm { width: 76px; height: 76px; flex: 0 0 76px; }
+@media (max-width: 480px) { .jo-avatar { width: 96px; height: 96px; } .jo-avatar-sm { width: 64px; height: 64px; flex-basis: 64px; } }
