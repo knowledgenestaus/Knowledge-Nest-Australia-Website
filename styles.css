@@ -433,6 +433,19 @@ html:not(.js) #libFilters, html:not(.js) #libChips, html:not(.js) #libFilterTogg
 .lib-side-navy p { color: var(--text-on-navy); }
 .lib-side-navy a { color: var(--gold-light); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
 .lib-end { max-width: 480px; margin: 1.5rem auto 0; }
+/* An area page organised by strand (see STRANDS in library/build.py): a calm note, a "Jump to" list that wraps on phones,
+   a rule above each strand so its heading is a clear landmark on a long page, and a way back to the list of strands. */
+.lib-note { max-width: 46em; margin: 0 0 1.6rem; padding: 0.2rem 0 0.2rem 1rem; border-left: 3px solid var(--sky); font-size: 0.98rem; color: var(--body); }
+.lib-strand-group + .lib-strand-group { padding-top: clamp(1.9rem, 4vw, 2.6rem); border-top: 2px solid var(--sky); }
+.lib-backtop { margin: 1.25rem 0 0; font-size: 0.92rem; }
+.lib-backtop a { display: inline-flex; align-items: center; gap: 0.3rem; min-height: 44px; font-weight: 700; color: var(--navy); text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 3px; }
+.lib-backtop a:hover { color: var(--accent-text); }
+.lib-side-toc { display: none; }
+@media (min-width: 1000px) { .lib-side-toc { display: block; } }
+@media (max-width: 640px) {
+  .lib-toc.lib-toc-wrap { flex-wrap: wrap; overflow-x: visible; margin: 0 0 1.75rem; padding: 0 0 1.25rem; }
+  .lib-toc.lib-toc-wrap a { white-space: normal; flex-shrink: 1; }
+}
 .lib-results-section { padding-bottom: 1rem; }
 .lib-results-note { margin: 0.4rem 0 1.25rem; }
 #resultsList { margin-bottom: 1.5rem; }
@@ -569,7 +582,7 @@ html:not(.js) #libFilters, html:not(.js) #libChips, html:not(.js) #libFilterTogg
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
 @media print {
-  .nav, .footer, .lib-filters, .lib-chips, .lib-search, .lib-more, .lib-filter-toggle, .lib-toc { display: none; }
+  .nav, .footer, .lib-filters, .lib-chips, .lib-search, .lib-more, .lib-filter-toggle, .lib-toc, .lib-backtop { display: none; }
   .lib-card { break-inside: avoid; }
   .lib-card[hidden] { display: flex !important; }
   .lib-card-title a::after { content: " (" attr(href) ")"; position: static; font-size: 0.8em; font-weight: 400; word-break: break-all; }
