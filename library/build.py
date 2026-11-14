@@ -837,7 +837,19 @@ HEAD, TAIL = shell()
 BUILT = []
 
 
-def write(name, title, desc, body, crumb_name=None):
+LD_ITEMS = 30   # most resources listed in a page's structured data (the page itself shows them all)
+
+
+def ld_list(items):
+    """Resources as schema.org ListItems: (name, address) pairs, at most LD_ITEMS."""
+    return {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": cap_after_colon(n), "url": u}
+                                                     for i, (n, u) in enumerate(items[:LD_ITEMS])]}
+
+
+def write(name, title, desc, body, crumb_name=None, crumbs=None, items=None, ld=True):
+    """Writes a library page. crumbs is the trail after Home and Library as (name, page file) pairs (crumb_name is the
+    short form for a page that sits straight under Library). items, as (name, address) pairs, makes the page a
+    CollectionPage listing them in its structured data. ld=False leaves structured data out (pages not to be indexed)."""
     head = HEAD
     head = re.sub(r"<title>.*?</title>", "<title>%s</title>" % e(title), head, flags=re.S)
     head = re.sub(r'(<meta name="description" content=")[^"]*', lambda m: m.group(1) + e(desc), head)
@@ -847,12 +859,29 @@ def write(name, title, desc, body, crumb_name=None):
     head = re.sub(r'(<meta name="twitter:title" content=")[^"]*', lambda m: m.group(1) + e(title), head)
     head = re.sub(r'(<link rel="canonical" href=")[^"]*', lambda m: m.group(1) + public(name), head)
     head = re.sub(r'(<meta property="og:url" content=")[^"]*', lambda m: m.group(1) + public(name), head)
-    items = [("Home", SITE), ("Library", public("library.html"))]
-    if crumb_name:
-        items.append((crumb_name, public(name)))
-    ld = {"@context": "https://schema.org", "@type": "BreadcrumbList",
-          "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": cap_after_colon(n), "item": u} for i, (n, u) in enumerate(items)]}
-    head = head.replace("@@LD@@", '<script type="application/ld+json">\n%s\n  </script>' % json.dumps(ld, indent=2))
+    trail = [("Home", SITE), ("Library", public("library.html"))]
+    if crumbs:
+        trail += [(n, public(p)) for n, p in crumbs]
+    elif crumb_name:
+        trail.append((crumb_name, public(name)))
+    graph = []
+    if items is not None:
+        graph.append({"@type": "CollectionPage", "@id": public(name) + "#page", "url": public(name), "name": title,
+                      "description": desc, "inLanguage": "en-AU",
+                      "isPartOf": {"@type": "WebSite", "@id": SITE + "#website", "name": "Knowledge Nest", "url": SITE},
+                      "publisher": {"@id": SITE + "#organization"},
+                      "breadcrumb": {"@id": public(name) + "#breadcrumb"},
+                      "mainEntity": ld_list(items)})
+    if len(trail) > 1 and public(name) != SITE:
+        graph.append({"@type": "BreadcrumbList", "@id": public(name) + "#breadcrumb",
+                      "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": cap_after_colon(n), "item": u} for i, (n, u) in enumerate(trail)]})
+    if not ld:
+        head = head.replace("@@LD@@\n", "").replace("@@LD@@", "")
+    else:
+        if items is None:   # no CollectionPage to point at the trail
+            for g in graph:
+                g.pop("@id", None)
+        head = head.replace("@@LD@@", '<script type="application/ld+json">\n%s\n  </script>' % json.dumps({"@context": "https://schema.org", "@graph": graph}, indent=2, ensure_ascii=False))
     page = head + '<main id="main-content" tabindex="-1">\n' + body + "\n" + TAIL
     open(os.path.join(ROOT, name), "w", encoding="utf8").write(page)
     BUILT.append(name)
@@ -900,6 +929,190 @@ DOMAIN_ELEMENTS = {
 }
 
 
+# ---------- search: titles, descriptions and introductions ----------
+# What Google shows for each page. A title is the words people search for, then BRAND (about 50 to 60 characters in all);
+# a description is plain English of about 140 to 160 characters. No colons in either, so the colon rule never puts a
+# capital mid-sentence. Keyed by page file. A page with no entry falls back to its heading. warnings() checks lengths
+# and that no two pages share a title or a description. "%d" in a description is replaced with the page's count.
+BRAND = " | Knowledge Nest"
+SEO = {
+    "library.html": ("Free teacher professional learning library",
+                     "Free classroom videos, webinars, podcasts, articles and research for Australian teachers and school leaders, sorted by topic and linked to each creator."),
+    "library-watch.html": ("Classroom videos of teachers teaching",
+                           "Watch real lessons and short classroom clips, from explicit instruction and phonics to maths and behaviour routines. Free to watch, each linked to its creator."),
+    "library-learn.html": ("Free teacher webinars, talks and PL videos",
+                           "Free webinars, talks, school stories and short explainers for teachers and leaders, from the science of reading to MTSS, with prompts for staff PL sessions."),
+    "library-listen.html": ("Education podcasts for teachers and leaders",
+                            "My favourite education podcasts and %d episodes sorted by topic, from Chalk Dust and Sold a Story to the Education Research Reading Room. All free."),
+    "library-read.html": ("Education articles, blogs and Substacks",
+                          "Free articles, practice guides and key Substack posts for teachers, filed by topic, plus the education Substacks worth following, from Australia and beyond."),
+    "library-research.html": ("Education research papers and reviews",
+                              "Foundational papers, reviews and meta-analyses on how students learn, reading, maths, coaching, leadership and implementation, each linked to the original."),
+    "library-voices.html": ("Education researchers and writers to follow",
+                            "The researchers, teachers, writers and organisations worth following, from Pamela Snow and Dylan Wiliam to the Grattan Institute, with links to their work."),
+    "library-curriculum.html": ("Free curriculum and lesson materials",
+                                "Openly available lesson materials and scope and sequences, from Victorian Lesson Plans and the VTLM 2.0 guides to Core Knowledge, Oak and NCETM maths."),
+    "library-vtlm.html": ("VTLM 2.0 podcasts for Victorian teachers",
+                          "Podcast episodes matched to each element of learning and teaching in the Victorian Teaching and Learning Model 2.0, and to current Victorian priorities."),
+    # Topics (domain pages)
+    "library-domain-how-learning-works.html": ("Cognitive science and how students learn",
+        "Free videos, podcasts and reading on how students learn, from working memory and cognitive load theory to motivation, self-efficacy and metacognition."),
+    "library-domain-teaching-practice.html": ("Explicit teaching practice resources",
+        "Free resources on explicit instruction, retrieval practice, checking for understanding, classroom routines, participation and feedback, with lesson videos."),
+    "library-domain-literacy.html": ("Structured literacy and science of reading",
+        "Free resources on structured literacy and the science of reading, from phonemic awareness and phonics to fluency, vocabulary, comprehension and writing."),
+    "library-domain-maths.html": ("Explicit maths teaching resources",
+        "Free videos, webinars and reading on explicit maths teaching, number fact fluency, problem solving, fractions, maths intervention and dyscalculia."),
+    "library-domain-mtss-and-assessment.html": ("MTSS, assessment and learning difficulties",
+        "Free resources on MTSS and tiered support, screening and assessment, and supporting students with dyslexia, DLD, dyscalculia, ADHD, autism and other needs."),
+    "library-domain-leadership-and-culture.html": ("School leadership, culture and behaviour",
+        "Free webinars, podcasts and reading for school leaders on instructional leadership, school culture, trust and behaviour, and building strong teams."),
+    "library-domain-implementation-and-change.html": ("Implementation and change in schools",
+        "Free guides, webinars and podcasts on implementing new practices so they last, from implementation teams and de-implementation to leading people through change."),
+}
+# Areas of practice, by area number: (title words, description).
+AREA_SEO = {
+    1: ("Cognitive load theory and memory resources",
+        "Free videos, podcasts and reading on working memory, cognitive load, prior knowledge and why novices learn differently from experts, chosen for teachers."),
+    15: ("Motivation, self-efficacy and metacognition",
+         "Reading, podcasts and webinars on how success builds motivation and belief, and how students learn to plan, monitor and manage their own learning."),
+    2: ("Explicit instruction videos and resources",
+        "Lesson videos, webinars, podcasts and reading on explicit instruction, from Rosenshine's Principles and worked examples to guided practice and fading support."),
+    3: ("Retrieval practice and spaced review",
+        "Classroom videos, podcasts and reading on retrieval practice, spacing, interleaving and daily review, so learning sticks over weeks and terms, not just lessons."),
+    4: ("Checking for understanding in the classroom",
+        "See checking for understanding in action, with videos and reading on hinge questions, response systems, cold call, error analysis and responsive teaching."),
+    5: ("Classroom routines and behaviour management",
+        "Videos, webinars and podcasts on classroom routines, attention, transitions and calm, positive behaviour, from entry routines to least invasive correction."),
+    23: ("Opportunities to respond and participation",
+         "Videos and reading on getting every student answering, with choral response, turn and talk, cold call, mini whiteboards, wait time and no opt out."),
+    24: ("Feedback and practice in the classroom",
+         "Videos, podcasts and reading on feedback that moves learning forward, whole-class feedback, deliberate practice, mastery learning and high success rates."),
+    11: ("Oral language and oracy in the classroom",
+         "Videos, webinars and reading on oral language and oracy, from turn and talk and accountable talk to developmental language disorder and Pamela Snow's work."),
+    26: ("Phonemic awareness teaching resources",
+         "Videos and reading on teaching phonological and phonemic awareness, including blending, segmenting and phoneme manipulation, and why it works best with letters."),
+    27: ("Phonics lesson videos and resources",
+         "Watch phonics lessons being taught, and find webinars, podcasts and guides on systematic phonics, decodable texts and the Phonics Screening Check."),
+    28: ("Reading fluency teaching resources",
+         "Videos and reading on building reading fluency, with echo, choral and paired reading, repeated reading, modelled fluent reading and fluency intervention."),
+    29: ("Explicit vocabulary instruction resources",
+         "Videos, webinars and reading on teaching vocabulary explicitly, from choosing words worth teaching and student-friendly definitions to Anita Archer's lessons."),
+    30: ("Reading comprehension and text study",
+         "Videos, podcasts and reading on teaching reading comprehension through knowledge, vocabulary and whole texts, with close reading and strategies in their place."),
+    31: ("Spelling and morphology teaching resources",
+         "Webinars, podcasts and reading on teaching spelling explicitly, with spelling patterns, morphology, prefixes and suffixes, word origins and spelling assessment."),
+    32: ("Handwriting and transcription resources",
+         "Webinars, videos and reading on handwriting, letter formation, sentence dictation, keyboarding and dysgraphia, and why fluent transcription matters for writing."),
+    10: ("Explicit writing instruction resources",
+         "Lesson videos, webinars and reading on teaching writing explicitly, from sentence expansion and The Writing Revolution to modelled writing and revising."),
+    33: ("Simple View of Reading and the Reading Rope",
+         "The Simple View of Reading, Scarborough's Reading Rope, Pamela Snow's Language House, the Writing Rope and the Big Six, with the research behind each one."),
+    34: ("Explicit teaching in maths resources",
+         "Maths lesson videos, webinars and podcasts on explicit teaching in maths, with modelling, worked examples, checking for understanding and guided practice."),
+    35: ("Number fact fluency and daily maths review",
+         "Videos, podcasts and reading on building number fact fluency and running daily review in maths, so students recall facts quickly and keep earlier learning."),
+    36: ("Maths problem solving and bar models",
+         "Videos and webinars on concrete, pictorial and abstract representations, manipulatives and bar models, and on teaching students to solve maths problems."),
+    37: ("Number, multiplication and fractions",
+         "Classroom videos and webinars on teaching early number, place value, multiplication, division and fractions well, including NCETM's primary mastery videos."),
+    38: ("Maths intervention and dyscalculia",
+         "Webinars and guides on early maths screening, Tier 2 and Tier 3 maths intervention, dyscalculia and maths learning difficulties, and inclusive maths lessons."),
+    39: ("Leading maths and the science of maths",
+         "Research, reports and podcasts on what works in maths teaching, from the Grattan Maths Guarantee to the science of maths, and how leaders improve maths."),
+    6: ("Knowledge-rich curriculum resources",
+        "Webinars, podcasts and reading on knowledge-rich curriculum, sequencing and coherence, and why what we teach, and in what order, matters as much as how."),
+    13: ("Assessment and data in schools",
+         "Webinars, podcasts and reading on assessment and data, from formative assessment and screening to progress monitoring, comparative judgement and reporting."),
+    14: ("MTSS and tiered support resources",
+         "Webinars, school stories and guides on MTSS and tiered support, from strong whole-class teaching and screening to targeted intervention, many from Victoria."),
+    25: ("Dyslexia, DLD, ADHD and autism for teachers",
+         "Webinars, guides and research for teachers on dyslexia, developmental language disorder, dyscalculia, dysgraphia, ADHD, autism and supporting additional needs."),
+    16: ("Instructional coaching and teacher PL",
+         "Webinars, podcasts and reading on instructional coaching and professional learning that changes practice, from coaching cycles and modelling to drop-ins."),
+    19: ("Instructional leadership resources",
+         "Webinars, podcasts and reading for principals and leaders on instructional leadership, leading teacher learning, curriculum leadership and school improvement."),
+    20: ("School culture, trust and behaviour",
+         "Webinars, videos and reading on building a whole-school behaviour culture, relational trust, shared norms and high expectations, from Australia and abroad."),
+    21: ("Middle leadership and teams in schools",
+         "Webinars and reading on collaborative planning, team meetings, middle leader development and professional culture, so teams hold a shared standard."),
+    17: ("Implementation science for schools",
+         "Guides, webinars and podcasts on implementing new practices so they last, including implementation teams, staged rollout, de-implementation and checking impact."),
+    22: ("Change management in schools",
+         "Webinars, podcasts and articles on leading change in schools, from reducing change load and sequencing to communication and sustaining what works."),
+    18: ("Education myths, evidence and debates",
+         "Articles, research and podcasts on reading education evidence well, effect sizes and study design, learning styles and other myths, and the live debates."),
+}
+# A short introduction in my own voice, shown after the one-line description at the top of each area page. Areas laid out
+# by strand (STRANDS) already have their own introduction there.
+AREA_INTRO = {
+    1: "I've gathered explainers, podcast episodes and reading on cognitive load theory, working memory and schema building here. They are a good place to start if you want to know why explicit teaching works.",
+    15: "Here you'll find reading and podcast episodes on motivation, self-efficacy, metacognition and study strategies. Many of them make the case that success comes first and belief follows.",
+    2: "This is the biggest area in the library. You'll find lessons you can watch being taught, Rosenshine's Principles of Instruction, webinars and podcasts, from the first explanation through worked examples to independent practice.",
+    3: "I've gathered classroom videos, podcast episodes and guides on retrieval practice, spacing, interleaving and daily review. Most show how to build them into the first minutes of a lesson.",
+    4: "Here you'll find classroom clips and reading on hinge questions, mini whiteboards, cold call and other response systems, and on what to do when the answers show students haven't got it yet.",
+    5: "I've gathered classroom management videos, webinars and podcasts on routines, attention and calm, consistent behaviour. Many are short clips you could share with a colleague or a beginning teacher.",
+    23: "Here you'll find videos of teachers getting every student thinking and answering, with choral response, turn and talk, cold call and everybody writes, alongside the reading behind them.",
+    24: "I've gathered videos, podcasts and reading on feedback that changes learning, whole-class feedback and the kind of practice that builds fluency and high success rates.",
+    11: "Here you'll find classroom videos, webinars and reading on teaching talk deliberately, and on developmental language disorder (DLD), with Pamela Snow's work on why oral language underpins reading and writing.",
+    26: "I've gathered classroom videos and reading on phonological and phonemic awareness, from blending and segmenting to phoneme manipulation, and on why it grows fastest when it is taught alongside letters.",
+    27: "Here you can watch phonics lessons being taught, step by step, and find webinars, podcast episodes and guides on systematic phonics, decodable texts and what to do after the Phonics Screening Check.",
+    28: "I've gathered short classroom videos of echo, paired and modelled fluent reading, with webinars and reading on repeated reading and fluency intervention in the middle and upper primary years.",
+    29: "Here you'll find Anita Archer's explicit vocabulary demonstrations, classroom videos and reading on choosing words worth teaching and teaching them so they stick.",
+    30: "I've gathered videos, podcasts and reading on teaching comprehension through knowledge, vocabulary and whole texts, including close reading and where comprehension strategies fit.",
+    31: "Here you'll find webinars, podcast episodes and reading on teaching spelling explicitly beyond the phonics years, with morphology, word origins and spelling assessment.",
+    32: "I've gathered webinars, videos and reading on handwriting, sentence dictation and keyboarding, and on supporting students with dysgraphia.",
+    10: "Here you'll find classroom videos, webinars and reading on teaching writing explicitly, from sentence expansion and sentence combining to modelled writing, paragraphs and revising.",
+    34: "I've gathered maths lesson videos, webinars and podcast episodes on explicit teaching in maths, with modelling, worked examples and checking every student's understanding.",
+    35: "Here you'll find classroom videos and podcast episodes on building number fact fluency and running a daily review, so earlier learning stays fresh.",
+    36: "I've gathered videos and webinars on manipulatives, bar models and the concrete, pictorial, abstract approach, and on teaching problem solving explicitly.",
+    37: "Here you'll find classroom videos and webinars on teaching early number, place value, multiplication and fractions, including NCETM's primary mastery videos.",
+    38: "I've gathered webinars and guides on universal screening in maths, Tier 2 and Tier 3 intervention and dyscalculia, many of them practical enough to use with a team.",
+    39: "Here you'll find reports, research and podcast episodes on what works in maths teaching, including the Grattan Institute's Maths Guarantee and the science of maths.",
+    6: "I've gathered webinars, podcast episodes and reading on knowledge-rich curriculum, sequencing and coherence, from planning a unit to whole-school curriculum design.",
+    13: "Here you'll find webinars, podcast episodes and reading on formative assessment, screening, progress monitoring and comparative judgement, and on using data without drowning in it.",
+    14: "I've gathered webinars, school stories and guides on multi-tiered systems of support (MTSS), many from Victorian schools, from Tier 1 teaching for all to targeted Tier 2 and Tier 3 intervention.",
+    16: "Here you'll find webinars, podcast episodes and reading on instructional coaching, coaching cycles, drop-ins and professional learning design that actually changes practice.",
+    19: "I've gathered webinars, podcast episodes and reading for principals and school leaders on leading teaching and learning, curriculum and whole-school improvement.",
+    20: "Here you'll find webinars, videos and reading on building a whole-school behaviour culture, relational trust and high expectations.",
+    21: "I've gathered webinars and reading on collaborative planning, team meetings, middle leadership and professional culture.",
+    17: "Here you'll find guides, webinars and podcast episodes on implementation in schools, from implementation teams and staged rollout to de-implementation and checking it is working.",
+    22: "I've gathered webinars, podcast episodes and articles on leading change in schools, and on how people experience it.",
+    18: "Here you'll find articles, research and podcast episodes on reading education research well, effect sizes, common myths such as learning styles, and the debates still going.",
+}
+# The same for topic pages, after the topic's one-line description.
+DOMAIN_INTRO = {
+    "How learning works": "I've gathered resources on cognitive science, cognitive load theory, memory and motivation here, in two areas of practice. Start with how learning happens if you're new to it.",
+    "Teaching practice": "This is where you'll find explicit instruction, retrieval practice, checking for understanding, classroom routines, participation and feedback, with plenty of lessons to watch.",
+    "Literacy": "I've organised structured literacy and the science of reading into ten areas, in the order a teacher meets them across the primary years. The frameworks area explains the Simple View of Reading, Scarborough's Reading Rope and Pamela Snow's Language House.",
+    "Maths": "I've organised maths into six areas, from explicit teaching and number fact fluency to problem solving, maths intervention and dyscalculia, and leading maths across a school.",
+    "MTSS and assessment": "Here you'll find multi-tiered systems of support (MTSS), screening and assessment, and support for students with dyslexia, developmental language disorder (DLD), dyscalculia, ADHD, autism and other additional needs.",
+    "Leadership and culture": "I've gathered resources for principals and school leaders on instructional leadership, school culture and behaviour, and teams and middle leadership.",
+    "Implementation and change": "Here you'll find guides and podcast episodes on implementation science in schools and on leading people through change.",
+}
+# A fuller introduction for shelves whose one-line blurb is thin (Watch, Learn and Read have their own).
+SHELF_INTRO = {
+    "listen": "My favourite education podcasts are at the top, and below them episodes sorted by topic, from the science of reading and explicit instruction to maths, MTSS and leadership.",
+    "research": "Foundational papers, reviews and meta-analyses, grouped by topic. You'll find the classics on cognitive load and explicit instruction alongside reading research, coaching, leadership and implementation.",
+    "voice": "The researchers, teachers, writers and organisations whose work I keep coming back to, in Australia and beyond. Each links to their own site, Substack or podcast.",
+    "curriculum": "Openly available lesson materials, scope and sequences and guides, from Victorian Lesson Plans and the VTLM 2.0 guides to Core Knowledge, Oak National Academy and NCETM.",
+}
+# "See also" on an area page: closely related areas in other topics (Related areas already lists the same topic).
+SEE_ALSO = {
+    1: [3, 2, 15], 15: [24, 1], 2: [34, 4, 23], 3: [35, 1], 4: [13, 23], 5: [20, 23], 23: [4, 11], 24: [3, 15],
+    11: [33, 25], 26: [27, 33], 27: [26, 25, 33], 28: [27, 30], 29: [30, 11], 30: [6, 29], 31: [27, 25], 32: [10, 25],
+    10: [32, 33], 33: [27, 30, 18], 34: [2, 4], 35: [3, 38], 36: [37], 37: [36, 35], 38: [14, 25], 39: [19, 18],
+    6: [30, 19], 13: [14, 4], 14: [13, 38, 17], 25: [33, 38, 11], 16: [19, 17], 19: [16, 17], 20: [5, 19], 21: [16, 22],
+    17: [14, 16], 22: [19], 18: [33, 39],
+}
+
+
+def seo(name, title, desc, n=None):
+    """The search title (with BRAND) and description for a page: from SEO when it has an entry, else as given."""
+    t, d = SEO.get(name, (title, desc))
+    return t + BRAND, (d % n if "%d" in d else d)
+
+
 def domain_slug(d):
     return re.sub(r"[^a-z0-9]+", "-", d.lower()).strip("-")
 
@@ -933,15 +1146,17 @@ def build_domains():
         areas = domain_areas(d, counts)
         if len(areas) < 2:
             continue
-        body = hero("Browse by area", d, e(DOMAIN_ABOUT.get(d, "")), crumbs=[("Library", "library.html"), ("Areas", "library.html#areas"), (d, None)], art="domain-" + domain_slug(d),
+        lead = " ".join(x for x in [DOMAIN_ABOUT.get(d, ""), DOMAIN_INTRO.get(d, "")] if x)
+        body = hero("Browse by area", d, e(lead), crumbs=[("Library", "library.html"), ("Areas", "library.html#areas"), (d, None)], art="domain-" + domain_slug(d),
                     extra=('<p class="lib-practices">%s%s</p>' % (label_html("What this covers:"), "".join("<em>%s</em>" % e(x) for x in DOMAIN_ELEMENTS[d]))) if d in DOMAIN_ELEMENTS else "")
         tiles = "".join('<a class="lib-strand" href="%s"><span class="lib-domain-title">%s</span><span class="lib-domain-text">%s</span>'
                         '<span class="kn-tile-cta">%d resources %s</span></a>' % (area_page(a), title_html(a["name"]), e(a["about"]), counts[a["n"]], ARROW) for a in areas)
         body += ('<section class="section"><div class="container"><div class="section-header"><h2>%d areas in %s</h2>'
                  '<p>Each one gathers videos, podcasts, reading and research in one place.</p></div><div class="lib-strands">%s</div></div></section>' % (len(areas), e(d), tiles))
         body += credit_panels()
-        write("library-domain-%s.html" % domain_slug(d), "%s | The Knowledge Nest Library" % d,
-              "%s: free professional learning resources for teachers and leaders. %s" % (d, DOMAIN_ABOUT.get(d, "")), body)
+        page = "library-domain-%s.html" % domain_slug(d)
+        write(page, *seo(page, d, "%s. Free professional learning resources for teachers and school leaders." % DOMAIN_ABOUT.get(d, "")), body,
+              crumb_name=d, items=[(a["name"], public(area_page(a))) for a in areas])
 
 
 def jump(pairs):
@@ -959,7 +1174,9 @@ def build_home():
               '<button type="submit" class="btn btn-primary">Search</button></form>'
               '<p class="page-hero-jump lib-popular">%s%s</p>' % (label_html("Popular:"), chips))
     lead = ("Great professional learning resources are scattered all over the internet. This library gathers the best of other people's work "
-            "in one place, sorted by topic, so you can spend your time learning instead of searching.")
+            "in one place, sorted by topic, so you can spend your time learning instead of searching. You'll find classroom videos, webinars, "
+            "podcasts, articles and research on the science of reading, explicit instruction, maths, MTSS, learning difficulties, coaching and "
+            "leadership, chosen with Australian teachers and school leaders in mind.")
     body = hero("A curated collection, free for teachers and leaders", "The Knowledge Nest Library", lead, extra=search, art="home")
     body += ('<section class="section lib-results-section" id="results" hidden><div class="container">'
              '<h2 id="resultsHeading" tabindex="-1">Search results</h2><p class="lib-results-note" id="resultsNote" role="status" aria-live="polite"></p>'
@@ -980,9 +1197,9 @@ def build_home():
              '</div></section>' % elements)
     body += credit_panels()
     body += '<script src="library/search.js?v=8" defer></script>'
-    write("library.html", "The Knowledge Nest Library | Free Professional Learning Resources",
-          "A free, curated library of videos, podcasts, blogs, research and curriculum materials to support your school's professional learning journey.",
-          body)
+    shelves = [(t["title"], public(t["page"])) for t in TYPES.values()]
+    topics = [(d, public(domain_page(d, counts))) for d in DOMAIN_ORDER if domain_areas(d, counts)]
+    write("library.html", *seo("library.html", "", ""), body, items=shelves + topics + [("Podcasts by the VTLM 2.0", public("library-vtlm.html"))])
 
 
 # ---------- type pages ----------
@@ -1125,7 +1342,7 @@ def shelf_page(items, kind):
 def build_types():
     for key, t in TYPES.items():
         items = [x for x in ENTRIES if x["type"] == key]
-        lead = e(t["blurb"]) + " Every entry links to the original."
+        lead = e(SHELF_INTRO.get(key, t["blurb"])) + " Every entry links to the original."
         intro = outro = ""
         hero_jump = ""
         if key in ("voice", "curriculum"):
@@ -1222,9 +1439,9 @@ def build_types():
         toc = ('<nav class="lib-toc" aria-label="On this page">%s%s</nav>' % (label_html("Jump to:"), "".join('<a href="#%s">%s</a>' % (i, e(l)) for i, l in nav))) if nav else ""
         body = hero("Library", t["title"], lead, crumbs=[("Library", "library.html"), (t["title"], None)], extra=hero_jump, art=key)
         body += '<section class="section lib-list"><div class="container">%s%s%s%s<div class="lib-end">%s</div></div></section>' % (toc, intro, sections, outro, suggest_box())
-        write(t["page"], "%s | The Knowledge Nest Library" % t["title"],
-              "%d %s in the free Knowledge Nest Library, chosen for teachers and school leaders. Every entry links to the original and names its creator." % (len(items), t["noun"]),
-              body, t["title"])
+        listed = shelf_order(items) if key in ("watch", "learn", "read", "listen") else items
+        write(t["page"], *seo(t["page"], t["title"], "%d %s in the free Knowledge Nest Library, chosen for teachers and school leaders." % (len(items), t["noun"]), len(items)),
+              body, t["title"], items=[(x["title"], x["url"]) for x in listed])
 
 
 # ---------- area pages ----------
@@ -1268,7 +1485,8 @@ def build_areas():
         present = [k for k in TYPES if any(x["type"] == k for x in items)]
         plan = STRANDS.get(a["n"])
         chips = ('<p class="lib-practices">%s%s</p>' % (label_html("Practices in this area:"), "".join("<em>%s</em>" % e(p[0].upper() + p[1:]) for p in a["practices"]))) if a["practices"] else ""
-        body = hero(a["domain"], a["name"], e(plan["intro"] if plan else a["about"]), crumbs=[("Library", "library.html"), (a["domain"], domain_page(a["domain"], {n: len(v) for n, v in grouped.items()}) if len(domain_areas(a["domain"], {n: len(v) for n, v in grouped.items()})) > 1 else "library.html#areas"), (a["name"], None)],
+        lead = plan["intro"] if plan else " ".join(x for x in [a["about"], AREA_INTRO.get(a["n"], "")] if x)
+        body = hero(a["domain"], a["name"], e(lead), crumbs=[("Library", "library.html"), (a["domain"], domain_page(a["domain"], {n: len(v) for n, v in grouped.items()}) if len(domain_areas(a["domain"], {n: len(v) for n, v in grouped.items()})) > 1 else "library.html#areas"), (a["name"], None)],
                     extra=chips + ("" if plan else jump([(k, TYPES[k]["label"]) for k in present])))
         sections, strand_nav = "", ""
         if plan:
@@ -1281,13 +1499,20 @@ def build_areas():
         side = strand_nav
         if related:
             side += '<div class="lib-side-box"><h2>Related areas</h2><ul>%s</ul></div>' % related
+        also = "".join('<li><a href="%s">%s</a></li>' % (area_page(AREA[m]), e(AREA[m]["name"])) for m in SEE_ALSO.get(a["n"], [])
+                       if grouped.get(m) and AREA[m]["domain"] != a["domain"])
+        if also:
+            side += '<div class="lib-side-box"><h2>See also</h2><ul>%s</ul></div>' % also
         side += ('<div class="lib-side-box lib-side-navy"><h2>For Victorian schools</h2><p>See podcast episodes matched to the Victorian Teaching and Learning Model 2.0.</p>'
                  '<p><a href="library-vtlm.html">Podcasts by the VTLM 2.0 %s</a></p></div>' % ARROW)
         side += suggest_box()
         body += '<section class="section lib-list"><div class="container lib-two"><div class="lib-main">%s</div><aside class="lib-side" aria-label="Related areas and links">%s</aside></div></section>' % (sections, side)
-        write(area_page(a), "%s | The Knowledge Nest Library" % a["name"],
-              "%d free videos, podcasts, articles and research on %s, collected for teachers and school leaders." % (len(items), short_area(a["n"])[0].lower() + short_area(a["n"])[1:]),
-              body, a["name"])
+        title, desc = AREA_SEO.get(a["n"], (a["name"], "%d free videos, podcasts, articles and research on %s, collected for teachers and school leaders."
+                                                % (len(items), short_area(a["n"])[0].lower() + short_area(a["n"])[1:])))
+        counts = {n: len(v) for n, v in grouped.items()}
+        trail = ([(a["domain"], domain_page(a["domain"], counts))] if len(domain_areas(a["domain"], counts)) > 1 else []) + [(a["name"], area_page(a))]
+        ordered = [x for k in STRAND_ORDER + tuple(TYPES) for x in items if x["type"] == k]
+        write(area_page(a), title + BRAND, desc, body, crumbs=trail, items=[(x["title"], x["url"]) for x in ordered])
 
 
 # ---------- Victorian view ----------
@@ -1310,8 +1535,9 @@ def build_vtlm():
             "The grouping is this library's own and is not endorsed by the Department of Education.")
     body = hero("For Victorian schools", "Podcasts by the VTLM 2.0", lead, crumbs=[("Library", "library.html"), ("Podcasts by the VTLM 2.0", None)])
     body += '<section class="section lib-list"><div class="container">%s%s<div class="lib-end">%s</div></div></section>' % (toc, sections, suggest_box())
-    write("library-vtlm.html", "Podcasts by the VTLM 2.0 | The Knowledge Nest Library",
-          "Podcast episodes for Victorian teachers and leaders, grouped by the elements of the Victorian Teaching and Learning Model 2.0.", body, "Podcasts by the VTLM 2.0")
+    rows = [r for groups in VTLM.values() for rs in groups.values() for r in rs]
+    write("library-vtlm.html", *seo("library-vtlm.html", "", ""), body, "Podcasts by the VTLM 2.0",
+          items=list(OrderedDict(((r["title"], r["url"]), 1) for r in rows)))
 
 
 def build_404():
@@ -1321,9 +1547,10 @@ def build_404():
     body = hero("Page not found", "This page has flown the nest",
                 "The page you were after has moved or no longer exists. Try a search, or pick a shelf below.", extra=search, art="notfound")
     body += '<section class="section"><div class="container">%s</div></section>' % type_tiles()
-    write("404.html", "Page not found | Knowledge Nest", "The page you were looking for could not be found.", body)
+    write("404.html", "Page not found | Knowledge Nest", "The page you were looking for could not be found.", body, ld=False)
     path = os.path.join(ROOT, "404.html")
     html = open(path, encoding="utf8").read().replace("<head>", '<head>\n  <meta name="robots" content="noindex">\n  <base href="/">', 1)
+    html = re.sub(r'\s*<link rel="canonical" href="[^"]*">', "", html, count=1)   # a missing page has no address of its own
     html = html.replace('<a href="library.html" class="active" aria-current="page">Library</a>', '<a href="library.html">Library</a>', 1)
     open(path, "w", encoding="utf8").write(html)
 
@@ -1337,7 +1564,7 @@ def build_stubs():
                 '<p class="hero-tagline">Library</p><h1>This page has moved</h1>'
                 '<p class="page-hero-lead">This page has moved to <a href="%s">%s</a>. You will be taken there in a moment.</p>'
                 '</div></div></section>' % (target, e(label)))
-        write(name, "This page has moved | The Knowledge Nest Library", "This page has moved to %s." % label, body)
+        write(name, "This page has moved" + BRAND, "This page has moved to %s." % label, body, ld=False)
         BUILT.remove(name)   # so it stays out of the sitemap
         path = os.path.join(ROOT, name)
         page = open(path, encoding="utf8").read()
@@ -1379,15 +1606,50 @@ def build_search_index():
     json.dump(idx, open(os.path.join(ROOT, "library-search.json"), "w", encoding="utf8"), ensure_ascii=False, separators=(",", ":"))
 
 
+def _main_text(page):
+    """The part of a page a reader sees (inside <main>), to tell whether its content changed."""
+    m = re.search(r"<main\b.*?</main>", page or "", flags=re.S)
+    return m.group(0) if m else (page or "")
+
+
+def _melbourne_today():
+    try:
+        from datetime import datetime
+        from zoneinfo import ZoneInfo
+        return datetime.now(ZoneInfo("Australia/Melbourne")).date().isoformat()
+    except Exception:
+        return date.today().isoformat()
+
+
 def build_sitemap():
+    """Every public page once, at its public address. A page's lastmod is the day its content (what is inside <main>)
+    last changed: if this build leaves a page's content the same as the last commit, the date already in sitemap.xml is
+    kept; otherwise it is today (Melbourne time). Works in a shallow clone, because it only reads the last commit."""
+    import subprocess
     static = ["index.html", "library.html", "resources.html", "about.html", "enquiry.html"]
     pages = static + [p for p in BUILT if p != "library.html"]
-    today = date.today().isoformat()
+    today = os.environ.get("KN_TODAY") or _melbourne_today()
+    path = os.path.join(ROOT, "sitemap.xml")
+    before = {}
+    try:
+        old = open(path, encoding="utf8").read()
+        before = dict(re.findall(r"<loc>([^<]+)</loc>\s*<lastmod>([^<]+)</lastmod>", old))
+    except OSError:
+        pass
+    def committed(p):
+        try:
+            return subprocess.run(["git", "show", "HEAD:" + p], cwd=ROOT, capture_output=True, text=True, check=True).stdout
+        except Exception:
+            return None
     xml = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for p in pages:
-        xml += ["  <url>", "    <loc>%s</loc>" % public(p), "    <lastmod>%s</lastmod>" % today, "  </url>"]
+        now = open(os.path.join(ROOT, p), encoding="utf8").read()
+        was = committed(p)
+        same = was is not None and _main_text(was) == _main_text(now)
+        when = before.get(public(p)) if same and before.get(public(p)) else today
+        xml += ["  <url>", "    <loc>%s</loc>" % public(p), "    <lastmod>%s</lastmod>" % when, "  </url>"]
     xml.append("</urlset>")
-    open(os.path.join(ROOT, "sitemap.xml"), "w").write("\n".join(xml) + "\n")
+    open(path, "w", encoding="utf8").write("\n".join(xml) + "\n")
 
 
 def warnings():
@@ -1406,6 +1668,26 @@ def warnings():
     prose += [("%s of the strands for area %d" % (k, n), plan.get(k, "")) for n, plan in STRANDS.items() for k in ("intro", "note")]
     prose += [("featured.json why line for '%s'" % x.get("title"), x.get("why", "")) for x in FEATURED.get("items") or []]
     prose += [("featured.json intro", FEATURED.get("intro", ""))]
+    prose += [("introduction of area %d" % n, t) for n, t in AREA_INTRO.items()]
+    prose += [("introduction of %s" % k, t) for k, t in list(DOMAIN_INTRO.items()) + list(SHELF_INTRO.items())]
+    # Search titles and descriptions: lengths, no two pages the same, no colon or dash
+    titles = {}
+    for name in BUILT:
+        page = open(os.path.join(ROOT, name), encoding="utf8").read()
+        if 'name="robots" content="noindex"' in page:
+            continue
+        t = html.unescape(re.search(r"<title>(.*?)</title>", page, re.S).group(1))
+        d = html.unescape(re.search(r'<meta name="description" content="([^"]*)"', page).group(1))
+        if not 30 <= len(t) <= 62:
+            out.append("search title of %s is %d characters (aim for 50 to 60): %s" % (name, len(t), t))
+        if not 110 <= len(d) <= 165:
+            out.append("search description of %s is %d characters (aim for 140 to 160): %s" % (name, len(d), d))
+        for kind, v in (("title", t), ("description", d)):
+            if (kind, v) in titles:
+                out.append("%s and %s have the same search %s" % (titles[(kind, v)], name, kind))
+            titles[(kind, v)] = name
+            if "—" in v or "–" in v or ": " in v.replace(BRAND, ""):
+                out.append("search %s of %s has a dash or a colon; reword: %s" % (kind, name, v))
     for where, text in prose:
         if text and _COLON.sub(_cap, text) != text:
             out.append("colon before a lower-case word in the %s: %s" % (where, text))
