@@ -75,7 +75,7 @@ START_HERE = [
          picks=["Leading MTSS", "S04E10", "S5 E17 MTSS for Reading"]),
     dict(title="Assessment and data", areas=[13, 4],
          text="Which assessments answer which questions, and how to use what they tell you without drowning in data.",
-         picks=["027 Assessment", "S03E04", "Using data in MTSS: screening"]),
+         picks=["027 Assessment", "S03E04", "Using data in MTSS: Screening"]),
 ]
 
 AREAS = sorted(DATA["areas"], key=lambda a: a["n"])
@@ -166,12 +166,21 @@ def short_area(n):
     return AREA[n]["name"].split(":")[0]
 
 
+def source_of(x):
+    """Who to file an entry under in the Source filter. A Learn session by 'Host, with Presenter' is filed under the host."""
+    return x["by"].split(", with ")[0] if x["type"] == "learn" else x["by"]
+
+
+def access_of(x):
+    return next((t for t in ("Free account needed", "Check cost") if t in x["tags"]), "Free")
+
+
 def card(x, show_type=True, level="h3", filterable=False):
     t = TYPES[x["type"]]
     bits = [e(m) for m in x["meta"]]
     by = e(x["by"]) if x["by"] else ""
     line = " &middot; ".join([b for b in [by] + bits if b])
-    tags = "".join('<span class="lib-tag%s">%s</span>' % (" lib-tag-free" if tg.lower().startswith("free") else "", e(tg)) for tg in x["tags"])
+    tags = "".join('<span class="lib-tag%s">%s</span>' % (" lib-tag-free" if tg.lower().startswith("free") and tg != "Free account needed" else "", e(tg)) for tg in x["tags"])
     badge = '<span class="lib-type lib-type-%s">%s</span>' % (x["type"], t["label"]) if show_type else ""
     focus = '<p class="lib-focus">%s</p>' % e(x["focus"]) if x.get("focus") else ""
     summary = '<p class="lib-summary">%s</p>' % e(x["summary"]) if x.get("summary") else ""
@@ -181,7 +190,9 @@ def card(x, show_type=True, level="h3", filterable=False):
         topics = '<p class="lib-topics">%s</p>' % "".join('<a href="%s">%s</a>' % (area_page(AREA[n]), e(short_area(n))) for n in x["areas"]) if x["areas"] else ""
         text = " ".join([x["title"], x["by"], x.get("summary", ""), x.get("focus", ""), " ".join(x["meta"])] + [AREA[n]["name"] for n in x["areas"]]).lower()
         data = ' data-topics="%s" data-areas="%s" data-bands="%s" data-subject="%s" data-region="%s" data-by="%s" data-text="%s"' % (
-            e("|".join(topics_of(x))), ",".join(str(n) for n in x["areas"]), ",".join(x.get("bands", [])), e(x.get("subject", "")), e(x.get("region", "")), e(x["by"]), e(text))
+            e("|".join(topics_of(x))), ",".join(str(n) for n in x["areas"]), ",".join(x.get("bands", [])), e(x.get("subject", "")), e(x.get("region", "")), e(source_of(x)), e(text))
+        if x["type"] == "learn":
+            data += ' data-length="%s" data-audience="%s" data-access="%s"' % (e(x.get("length", "")), e(x.get("audience", "")), e(access_of(x)))
     thumb = ""
     if x["type"] in ("watch", "learn"):
         img = THUMBS.get(x["url"])
@@ -223,8 +234,21 @@ def filter_bar(items, kind):
         regions = sorted(set(x.get("region") for x in items if x.get("region")))
         fields.append('<div class="lib-field"><label for="fRegion">Where it was filmed</label><select id="fRegion" data-filter="region">%s</select></div>'
                       % options([(v, v) for v in regions], "Anywhere"))
-    by_label = "Source" if kind == "watch" else "Show"
-    sources = sorted(set(x["by"] for x in items if x["by"]), key=str.lower)
+    if kind == "learn":
+        lengths = [v for v in ["Under 30 minutes", "30 to 60 minutes", "Over 60 minutes", "Series"] if any(x.get("length") == v for x in items)]
+        fields.append('<div class="lib-field"><label for="fLength">Length</label><select id="fLength" data-filter="length">%s</select></div>'
+                      % options([(v, v) for v in lengths], "Any length"))
+        audiences = sorted(set(x.get("audience") for x in items if x.get("audience")))
+        fields.append('<div class="lib-field"><label for="fAudience">Made for</label><select id="fAudience" data-filter="audience">%s</select></div>'
+                      % options([(v, v) for v in audiences], "Everyone"))
+        regions = sorted(set(x.get("region") for x in items if x.get("region")))
+        fields.append('<div class="lib-field"><label for="fRegion">Where the presenter is from</label><select id="fRegion" data-filter="region">%s</select></div>'
+                      % options([(v, v) for v in regions], "Anywhere"))
+        access = [v for v in ["Free", "Free account needed", "Check cost"] if any(access_of(x) == v for x in items)]
+        fields.append('<div class="lib-field"><label for="fAccess">Access</label><select id="fAccess" data-filter="access">%s</select></div>'
+                      % options([(v, v) for v in access], "Any"))
+    by_label = "Show" if kind == "listen" else "Source"
+    sources = sorted(set(source_of(x) for x in items if x["by"]), key=str.lower)
     fields.append('<div class="lib-field"><label for="fBy">%s</label><select id="fBy" data-filter="by">%s</select></div>'
                   % (by_label, options([(v, v) for v in sources], "All %ss" % by_label.lower())))
     fields.append('<div class="lib-field lib-field-wide"><label for="fText">Search within this page</label>'
@@ -461,7 +485,7 @@ def build_home():
              '<p class="lib-own">Looking for Jo\'s own articles and downloadable guides? <a href="resources.html">Find them here</a>.</p>'
              '</div></section>' % elements)
     body += credit_panels()
-    body += '<script src="library/search.js?v=3" defer></script>'
+    body += '<script src="library/search.js?v=4" defer></script>'
     write("library.html", "The Knowledge Nest Library | Free Professional Learning Resources",
           "A free, curated library of videos, podcasts, blogs, research and curriculum materials to support your school's professional learning journey.",
           body)
@@ -505,9 +529,11 @@ def build_types():
             if staff:
                 intro = ('<section class="lib-group" id="staff"><h2>Run it as a staff session</h2><p class="lib-group-lead">Recordings that suit a whole-staff meeting, '
                          'each with a couple of prompts to get the conversation going.</p><div class="lib-grid">%s</div></section>' % "".join(staff_card(x) for x in staff))
-            sections = ('<section class="lib-group" id="all"><h2>All sessions <span class="lib-count">%d</span></h2><p class="lib-group-lead">This shelf is new and still filling. '
+                nav = [("staff", "Run it as a staff session"), ("all", "All sessions")]
+            sections = ('<section class="lib-group" id="all"><h2>All sessions <span class="lib-count">%d</span></h2><p class="lib-group-lead">Use the categories and filters to find a session '
+                        'for the topic you are working on. Sessions marked "Free account needed" open on the host\'s page, where a free sign-in unlocks the recording. '
                         'If a webinar or recorded session has shaped your thinking, <a href="mailto:%s?subject=Learn%%20suggestion">send it my way</a>.</p>%s</section>'
-                        % (len(items), EMAIL, cards(sorted(items, key=lambda x: x["title"].lower()), False, "h3")))
+                        % (len(items), EMAIL, filtered_list(items, "learn")))
         elif key in ("watch", "listen"):
             nav = []
             heading = "All videos" if key == "watch" else "Episodes by category"

@@ -48,7 +48,7 @@
     var line = [x.b].concat(x.m || []).filter(Boolean).join(' · ');
     if (line) a.appendChild(el('p', 'lib-by', line));
     var foot = el('p', 'lib-card-foot');
-    (x.g || []).forEach(function (g) { foot.appendChild(el('span', 'lib-tag' + (/^free/i.test(g) ? ' lib-tag-free' : ''), g)); });
+    (x.g || []).forEach(function (g) { foot.appendChild(el('span', 'lib-tag' + (/^free/i.test(g) && g !== 'Free account needed' ? ' lib-tag-free' : ''), g)); });
     foot.appendChild(el('span', 'lib-source', 'Opens at ' + x.d));
     a.appendChild(foot);
     return a;
