@@ -116,6 +116,17 @@
         return new RegExp('(^|[^a-z0-9])(' + forms.join('|') + ')');
       });
       var hits = data.filter(function (x) { return tests.every(function (re) { return re.test(x.hay); }); });
+      // Best matches first: the whole phrase in the title, then every word in the title, then the rest.
+      // Inside each group the entries keep the library's own order.
+      var phrase = ' ' + words.join(' ');
+      var rank = function (x) {
+        var t = x.t.toLowerCase();
+        if ((' ' + t.replace(/[^a-z0-9]+/g, ' ')).indexOf(phrase) !== -1) return 0;
+        return tests.every(function (re) { return re.test(t); }) ? 1 : 2;
+      };
+      hits = hits.map(function (x, i) { return [rank(x), i, x]; })
+        .sort(function (p, q) { return p[0] - q[0] || p[1] - q[1]; })
+        .map(function (r) { return r[2]; });
       var shown = 0;
       list.textContent = '';
       var grid = el('div', 'lib-grid');

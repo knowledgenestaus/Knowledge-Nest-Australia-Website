@@ -128,11 +128,11 @@ VTLM = DATA["vtlm"]
 TYPES = OrderedDict([
     ("watch", dict(label="Watch", page="library-watch.html", title="Watch: Teachers teaching", tile="Watch", noun="classroom videos", short="videos",
                    blurb="Real lessons and short clips of teachers teaching.",
-                   promise="Here you can watch teachers teaching: Real lessons and short clips from real classrooms, often with the teacher or a coach explaining what they did and why.",
+                   promise="Here you can watch teachers teaching. You'll find real lessons and short clips from real classrooms, often with the teacher or a coach explaining what they did and why.",
                    cross=("Looking for webinars, talks and short explainers?", "They are on the Learn shelf", "library-learn.html"))),
     ("learn", dict(label="Learn", page="library-learn.html", title="Learn: Webinars, talks and explainers", tile="Learn", noun="sessions and explainers", short="sessions",
                    blurb="Webinars, talks, school stories and short explainers to sit down with.",
-                   promise="Here I have gathered professional learning to sit down with: Webinars, talks, school stories and short explainers, for you or for a whole staff.",
+                   promise="Here I have gathered professional learning to sit down with. There are webinars, talks, school stories and short explainers, for you or for a whole staff.",
                    cross=("Want to see a lesson being taught?", "Classroom footage is on the Watch shelf", "library-watch.html"))),
     ("listen", dict(label="Listen", page="library-listen.html", title="Listen: podcasts", tile="Listen", noun="episodes",
                     blurb="Must-listen shows, and episodes sorted by category.")),
@@ -225,12 +225,15 @@ STRANDS[33] = dict(
          "word recognition and language comprehension.", None),
         ("Scarborough's Reading Rope", "Hollis Scarborough's picture of skilled reading as many strands, some for word recognition and some for language comprehension, "
          "woven together and strengthened through teaching and practice.", None),
-        ("The Language House", "Pamela Snow's model of how oral language, built from the early years within secure relationships, supports the move into reading and writing "
-         "and the outcomes that follow across school and life.", None),
-        ("The Writing Rope and views of writing", "Joan Sedita's Writing Rope names the strands of skilled writing, and the Simple and Not So Simple Views of Writing explain how "
-         "handwriting and spelling, composing and self-regulation share a writer's limited working memory.", ("For teaching writing day to day, see", 10)),
-        ("The Big Six and the five components", "The National Reading Panel named five components of reading instruction: Phonemic awareness, phonics, fluency, vocabulary "
-         "and comprehension; Deslea Konza added oral language to give Australian schools the Big Six.", None),
+        ("The Language House", "Pamela Snow pictures language and literacy as a house. The solid ground is the warm, responsive relationships of a child's first two years, and the "
+         "foundations are the oral language built across the first five. Two walls rise together and hold each other up, with reading, writing and spelling on one side and the "
+         "language skills for getting along with others on the other. Social and emotional wellbeing is the rafter, and the roof is a young person's way into further education, "
+         "training and work.", None),
+        ("The Writing Rope and views of writing", "Joan Sedita's Writing Rope sorts the skills of writing into five strands, which are critical thinking, syntax, text structure, "
+         "writing craft and transcription. The Simple and Not So Simple Views of Writing explain how handwriting and spelling, composing and self-regulation share a writer's "
+         "limited working memory.", ("For teaching writing day to day, see", 10)),
+        ("The Big Six and the five components", "The National Reading Panel named five components of reading instruction, which are phonemic awareness, phonics, fluency, "
+         "vocabulary and comprehension. Deslea Konza added oral language and early literacy experiences to give Australian schools the Big Six.", None),
         ("How word reading develops", "How children move from sounding out to recognising words instantly, including Ehri's phases, orthographic mapping and what brain research shows.",
          ("For teaching it, see", 27)),
         ("Syntheses of the field", "The major reviews, inquiries and reports that pull the reading research together, from the National Reading Panel and Australia's 2005 National "
@@ -240,7 +243,7 @@ STRANDS[33] = dict(
          ("For classroom practice, see", 30)),
         ("Oral language as the foundation", "Spoken language as the base that reading and writing are built on, and the Matthew effect, where early strengths or difficulties "
          "compound over time.", ("For classroom practice, see", 11)),
-        ("Spelling and morphology", "Spelling as language knowledge, not visual memory: Good spellers draw on sounds, letter patterns and meaningful word parts together.",
+        ("Spelling and morphology", "Spelling is language knowledge, not visual memory. Good spellers draw on sounds, letter patterns and meaningful word parts together.",
          ("For classroom practice, see", 31)),
     ])
 STRAND_ORDER = ("learn", "watch", "read", "research", "listen")   # within a strand: webinars first, then by type
@@ -818,7 +821,7 @@ def build_home():
              '<p class="lib-own">Looking for my own articles and a downloadable guide? <a href="resources.html">Find them here</a>.</p>'
              '</div></section>' % elements)
     body += credit_panels()
-    body += '<script src="library/search.js?v=7" defer></script>'
+    body += '<script src="library/search.js?v=8" defer></script>'
     write("library.html", "The Knowledge Nest Library | Free Professional Learning Resources",
           "A free, curated library of videos, podcasts, blogs, research and curriculum materials to support your school's professional learning journey.",
           body)

@@ -8035,7 +8035,7 @@
    "tags": [
     "Open access"
    ],
-   "summary": "Kate Nation's open-access review of the Simple View of Reading: What it explains well about reading and reading difficulties, and where language and reading are more entangled than the model suggests.",
+   "summary": "Kate Nation's open-access review of the Simple View of Reading. It sets out what the model explains well about reading and reading difficulties, and where language and reading are more entangled than the model suggests.",
    "strand": "The Simple View of Reading"
   },
   {
@@ -12541,6 +12541,707 @@
    ],
    "subject": "Across subjects",
    "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "The Simple View of Reading: An explainer for teachers",
+   "url": "https://www.readingrockets.org/topics/about-reading/articles/simple-view-reading",
+   "by": "Linda Farrell, Michael Hunter, Marcia Davidson and Tina Osenga, Reading Rockets",
+   "meta": [
+    "Article",
+    "USA"
+   ],
+   "areas": [
+    33
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A plain explanation of the model, in which reading comprehension depends on both decoding and language comprehension. It shows how to work out which of the two is holding a student back.",
+   "strand": "The Simple View of Reading"
+  },
+  {
+   "type": "read",
+   "title": "Professional learning pathway: What is the Simple View of Reading and what does it mean for teaching?",
+   "url": "https://readinguniverse.org/resources/presentation/big-picture/reading-universe-pd-pathway-what-is-the-simple-view-of-reading-and-what-does-it-mean-for-teaching",
+   "by": "Reading Universe",
+   "meta": [
+    "Slides for a staff session",
+    "USA"
+   ],
+   "areas": [
+    33,
+    16
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Ready-made slides for leading a staff session on the Simple View of Reading, with the research explained, discussion questions, videos of model lessons and classroom resources.",
+   "strand": "The Simple View of Reading"
+  },
+  {
+   "type": "read",
+   "title": "Scarborough's Reading Rope",
+   "url": "https://landmarkoutreach.org/strategies/scarboroughs-reading-rope",
+   "by": "Kaia Cunningham, Landmark Outreach",
+   "meta": [
+    "Article",
+    "2022",
+    "USA"
+   ],
+   "areas": [
+    33
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Introduces Hollis Scarborough's 2001 Reading Rope, showing how the word recognition and language comprehension strands combine in skilled reading, and how teachers can use it to find where a reader is stuck.",
+   "strand": "Scarborough's Reading Rope"
+  },
+  {
+   "type": "read",
+   "title": "Updating the Language (and Literacy) House",
+   "url": "https://pamelasnow.blogspot.com/2020/01/updating-language-and-literacy-house.html",
+   "by": "Pamela Snow, The Snow Report",
+   "meta": [
+    "Blog post",
+    "2020",
+    "Australia"
+   ],
+   "areas": [
+    33,
+    11
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Pamela Snow walks through her Language House on her blog, from the solid ground of early relationships up to the roof. She welcomes teachers using the model with attribution.",
+   "strand": "The Language House"
+  },
+  {
+   "type": "read",
+   "title": "The Writing Rope: The strands that are woven into skilled writing",
+   "url": "https://keystoliteracy.com/wp-content/uploads/2021/03/Article-The-Strands-That-Are-Woven-Into-Skilled-Writing.pdf",
+   "by": "Joan Sedita, Keys to Literacy",
+   "meta": [
+    "Article (PDF)",
+    "2019",
+    "USA"
+   ],
+   "areas": [
+    33,
+    10
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Joan Sedita's own article introducing the Writing Rope, which sorts the skills of writing into five strands, namely critical thinking, syntax, text structure, writing craft and transcription.",
+   "strand": "The Writing Rope and views of writing"
+  },
+  {
+   "type": "read",
+   "title": "Understanding the reading process",
+   "url": "https://www.ecu.edu.au/__data/assets/pdf_file/0009/663696/SA-DECS_-Understanding-the-Reading-Process.pdf",
+   "by": "Deslea Konza, for the South Australian Department of Education and Children's Services",
+   "meta": [
+    "Research into practice paper (PDF)",
+    "2010",
+    "Australia"
+   ],
+   "areas": [
+    33
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A short, readable paper that pulls the big reading reviews into six components, from oral language and phonological awareness through to fluency and comprehension. Good pre-reading for a staff meeting.",
+   "strand": "The Big Six and the five components"
+  },
+  {
+   "type": "read",
+   "title": "Introduction to the science of reading",
+   "url": "https://www.edresearch.edu.au/resources/introduction-science-reading",
+   "by": "AERO",
+   "meta": [
+    "Explainer",
+    "2023",
+    "Australia"
+   ],
+   "areas": [
+    33
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "AERO's overview of how children learn to read. It introduces the Simple View of Reading, Scarborough's Reading Rope and the core reading skills, and explains why explicit, systematic teaching matters.",
+   "strand": "Syntheses of the field"
+  },
+  {
+   "type": "read",
+   "title": "Science of Reading: The Defining Guide",
+   "url": "https://www.thereadingleague.org/what-is-the-science-of-reading/",
+   "by": "The Reading League",
+   "meta": [
+    "Guide, free eBook",
+    "USA"
+   ],
+   "areas": [
+    33,
+    18
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "The Reading League's guide to what the science of reading is and what it is not. The free eBook is a helpful shared reference when the term is being used loosely.",
+   "strand": "Syntheses of the field"
+  },
+  {
+   "type": "read",
+   "title": "Teaching Reading Is Rocket Science: What expert teachers of reading should know and be able to do",
+   "url": "https://www.aft.org/ae/summer2020/moats",
+   "by": "Louisa Moats, American Educator",
+   "meta": [
+    "Article",
+    "2020",
+    "USA"
+   ],
+   "areas": [
+    33,
+    16
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Louisa Moats on what expert teachers of reading should know and be able to do, in the 2020 edition of her paper for American Educator.",
+   "strand": "Syntheses of the field"
+  },
+  {
+   "type": "read",
+   "title": "Structured literacy: Effective instruction for students with dyslexia and related reading difficulties",
+   "url": "https://dyslexiaida.org/structured-literacy-effective-instruction-for-students-with-dyslexia-and-related-reading-difficulties/",
+   "by": "International Dyslexia Association",
+   "meta": [
+    "Article",
+    "USA"
+   ],
+   "areas": [
+    33
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "The International Dyslexia Association explains structured literacy, covering what is taught, from phonemes to sentence structure and meaning, and how it is taught, explicitly, systematically and cumulatively.",
+   "strand": "Syntheses of the field"
+  },
+  {
+   "type": "read",
+   "title": "How Knowledge Helps: It speeds and strengthens reading comprehension, learning and thinking",
+   "url": "https://www.aft.org/ae/spring2006/willingham",
+   "by": "Daniel Willingham, American Educator",
+   "meta": [
+    "Article",
+    "2006",
+    "USA"
+   ],
+   "areas": [
+    30,
+    6,
+    33
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Daniel Willingham explains why knowledge is more than grist for the mill, and how what students already know speeds and strengthens their reading comprehension, learning and thinking.",
+   "strand": "Knowledge and comprehension"
+  },
+  {
+   "type": "read",
+   "title": "Rethinking How to Promote Reading Comprehension",
+   "url": "https://www.aft.org/ae/winter2021-2022/catts",
+   "by": "Hugh Catts, American Educator",
+   "meta": [
+    "Article",
+    "USA"
+   ],
+   "areas": [
+    30,
+    33
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Hugh Catts argues that reading comprehension is not a single skill that can be taught and tested on its own, because it depends on the reader's knowledge, the text and the purpose for reading.",
+   "strand": "Knowledge and comprehension"
+  },
+  {
+   "type": "read",
+   "title": "Oral language (Understanding the reading process, paper 1.1)",
+   "url": "https://www.ecu.edu.au/__data/assets/pdf_file/0010/663697/SA-DECS-Oral-lang-doc.pdf",
+   "by": "Deslea Konza, for the South Australian Department of Education and Children's Services",
+   "meta": [
+    "Research into practice paper (PDF)",
+    "2011",
+    "Australia"
+   ],
+   "areas": [
+    11,
+    33
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Deslea Konza explains how oral language shapes later reading, with classroom strategies such as wait time, simpler teacher talk, think-alouds, shared story books and daily table talk.",
+   "strand": "Oral language as the foundation"
+  },
+  {
+   "type": "read",
+   "title": "How Spelling Supports Reading: And why it is more regular and predictable than you may think",
+   "url": "https://www.aft.org/ae/winter2005-2006/moats",
+   "by": "Louisa Moats, American Educator",
+   "meta": [
+    "Article",
+    "USA"
+   ],
+   "areas": [
+    31,
+    33
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Louisa Moats on how spelling supports reading, and why English spelling is more regular and predictable than many people think. The article downloads as a PDF from this page.",
+   "strand": "Spelling and morphology"
+  },
+  {
+   "type": "read",
+   "title": "How Words Cast Their Spell: Spelling is an integral part of learning the language, not a matter of memorization",
+   "url": "https://www.aft.org/ae/winter2008-2009/joshi_treiman_carreker_moats",
+   "by": "Malatesha Joshi, Rebecca Treiman, Suzanne Carreker and Louisa Moats, American Educator",
+   "meta": [
+    "Article",
+    "USA"
+   ],
+   "areas": [
+    31,
+    33
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Four researchers make the case that spelling is an integral part of learning the language and not a matter of memorising. The article downloads as a PDF from this page.",
+   "strand": "Spelling and morphology"
+  },
+  {
+   "type": "research",
+   "title": "The Science of Reading Progresses: Communicating advances beyond the Simple View of Reading",
+   "url": "https://doi.org/10.1002/rrq.411",
+   "by": "Nell Duke and Kelly Cartwright",
+   "meta": [
+    "2021",
+    "Open access",
+    "Reading Research Quarterly"
+   ],
+   "areas": [
+    33,
+    18
+   ],
+   "tags": [
+    "Open access"
+   ],
+   "summary": "The paper that proposed the Active View of Reading. Duke and Cartwright set out three advances since the Simple View, including the overlap between word recognition and language comprehension and the part played by active self-regulation.",
+   "strand": "The Simple View of Reading"
+  },
+  {
+   "type": "research",
+   "title": "SOLAR: The Science of Language and Reading",
+   "url": "https://doi.org/10.1177/0265659020947817",
+   "by": "Pamela Snow",
+   "meta": [
+    "2020",
+    "Open access",
+    "Child Language Teaching and Therapy"
+   ],
+   "areas": [
+    33,
+    11
+   ],
+   "tags": [
+    "Open access"
+   ],
+   "summary": "Pamela Snow's paper proposing the Science of Language and Reading framework, which places oral language at the centre of learning to read. It sets out her Language House in full.",
+   "strand": "The Language House"
+  },
+  {
+   "type": "research",
+   "title": "Teaching Reading: Why the 'Fab Five' should be the 'Big Six'",
+   "url": "https://ro.ecu.edu.au/ajte/vol39/iss12/10/",
+   "by": "Deslea Konza",
+   "meta": [
+    "2014",
+    "Open access",
+    "Australian Journal of Teacher Education"
+   ],
+   "areas": [
+    33,
+    11
+   ],
+   "tags": [
+    "Open access"
+   ],
+   "summary": "Deslea Konza's case for adding oral language and early literacy experiences to the National Reading Panel's five elements, which gives the Big Six.",
+   "strand": "The Big Six and the five components"
+  },
+  {
+   "type": "research",
+   "title": "Report of the National Reading Panel: Teaching children to read",
+   "url": "https://www.nichd.nih.gov/publications/pubs/nrp/smallbook",
+   "by": "National Reading Panel (NICHD)",
+   "meta": [
+    "2000",
+    "Foundational research",
+    "USA"
+   ],
+   "areas": [
+    33,
+    18
+   ],
+   "tags": [
+    "Foundational"
+   ],
+   "summary": "The summary report of the United States National Reading Panel, the review behind the five components of phonemic awareness, phonics, fluency, vocabulary and comprehension.",
+   "strand": "The Big Six and the five components"
+  },
+  {
+   "type": "research",
+   "title": "Teaching Reading: Report and recommendations (National Inquiry into the Teaching of Literacy)",
+   "url": "https://research.acer.edu.au/tll_misc/5/",
+   "by": "Ken Rowe and the National Inquiry into the Teaching of Literacy",
+   "meta": [
+    "2005",
+    "Foundational research",
+    "Australia"
+   ],
+   "areas": [
+    33,
+    18
+   ],
+   "tags": [
+    "Foundational"
+   ],
+   "summary": "The report of Australia's 2005 national inquiry, which reviewed the research on teaching literacy and how well new teachers were being prepared to teach reading.",
+   "strand": "Syntheses of the field"
+  },
+  {
+   "type": "research",
+   "title": "Independent review of the teaching of early reading: Final report (the Rose Review)",
+   "url": "https://dera.ioe.ac.uk/id/eprint/5551/",
+   "by": "Jim Rose, for the Department for Education and Skills",
+   "meta": [
+    "2006",
+    "Foundational research",
+    "UK"
+   ],
+   "areas": [
+    33,
+    18
+   ],
+   "tags": [
+    "Foundational"
+   ],
+   "summary": "Jim Rose's 2006 review of the teaching of early reading for the Department for Education and Skills in England. Free to download from the Digital Education Resource Archive.",
+   "strand": "Syntheses of the field"
+  },
+  {
+   "type": "research",
+   "title": "How the Science of Reading Informs 21st-Century Education",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8128160/",
+   "by": "Petscher, Cabell, Catts, Compton, Foorman and colleagues",
+   "meta": [
+    "2020",
+    "Open access",
+    "Reading Research Quarterly"
+   ],
+   "areas": [
+    33,
+    18
+   ],
+   "tags": [
+    "Open access"
+   ],
+   "summary": "Twelve researchers from the Florida Center for Reading Research sort the claims made for the science of reading into those with compelling evidence, promising evidence and little evidence. Free on PubMed Central.",
+   "strand": "Syntheses of the field"
+  },
+  {
+   "type": "research",
+   "title": "The Role of Background Knowledge in Reading Comprehension: A critical review",
+   "url": "https://doi.org/10.1080/02702711.2021.1888348",
+   "by": "Reid Smith, Pamela Snow, Tanya Serry and Lorraine Hammond",
+   "meta": [
+    "2021",
+    "Open access",
+    "Reading Psychology"
+   ],
+   "areas": [
+    30,
+    6,
+    33
+   ],
+   "tags": [
+    "Open access"
+   ],
+   "summary": "An open-access critical review of the research on the part background knowledge plays in reading comprehension, published in Reading Psychology in 2021.",
+   "strand": "Knowledge and comprehension"
+  },
+  {
+   "type": "research",
+   "title": "Language is literacy is language: Positioning speech-language pathology in education policy, practice, paradigms and polemics",
+   "url": "https://doi.org/10.3109/17549507.2015.1112837",
+   "by": "Pamela Snow",
+   "meta": [
+    "2016",
+    "Open access",
+    "International Journal of Speech-Language Pathology"
+   ],
+   "areas": [
+    11,
+    33
+   ],
+   "tags": [
+    "Open access"
+   ],
+   "summary": "Pamela Snow's Elizabeth Usher Memorial Lecture, published as an open-access paper, on where speech-language pathology sits in education policy, practice and debate.",
+   "strand": "Oral language as the foundation"
+  },
+  {
+   "type": "listen",
+   "title": "The Simple View of Reading and its extension as the Cognitive Foundations Framework: A conversation with Dr Wesley Hoover",
+   "url": "https://www.buzzsprout.com/492310/episodes/17775473-the-simple-view-of-reading-and-its-extension-as-the-cognitive-foundations-framework-a-conversation-with-dr-wesley-hoover",
+   "by": "EDVIEW360",
+   "meta": [
+    "with Wesley Hoover"
+   ],
+   "areas": [
+    33
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Wesley Hoover talks through the Simple View of Reading and how the Cognitive Foundations Framework extends it. The podcast is produced by a publisher, Voyager Sopris Learning.",
+   "focus": "The Simple View of Reading",
+   "strand": "The Simple View of Reading"
+  },
+  {
+   "type": "listen",
+   "title": "Hard Words: Why aren't kids being taught to read?",
+   "url": "https://www.apmreports.org/episode/2018/09/10/hard-words-why-american-kids-arent-being-taught-to-read",
+   "by": "Emily Hanford, APM Reports",
+   "meta": [
+    "Audio documentary and article",
+    "2018",
+    "USA"
+   ],
+   "areas": [
+    33,
+    27,
+    18
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Emily Hanford's documentary on what research shows about how children learn to read, why many educators do not know that science, and how one Pennsylvania district set about changing its teaching.",
+   "focus": "Reading science and classroom practice",
+   "strand": "Syntheses of the field"
+  },
+  {
+   "type": "listen",
+   "title": "Sold a Story",
+   "url": "https://features.apmreports.org/sold-a-story/",
+   "by": "Emily Hanford, APM Reports",
+   "meta": [
+    "Podcast series",
+    "USA"
+   ],
+   "areas": [
+    33,
+    18
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Emily Hanford's investigative podcast on how children learn to read and why the research often does not reach classrooms. A second season looks beyond reading to teaching itself.",
+   "focus": "Reading science and classroom practice",
+   "strand": "Syntheses of the field"
+  },
+  {
+   "type": "watch",
+   "title": "Videos: See phoneme segmentation and blending in the classroom",
+   "url": "https://readinguniverse.org/skill-explainer/phonemic-awareness/phoneme-segmentation-and-blending/video-see-phoneme-segmentation-and-blending-in-the-classroom",
+   "by": "Reading Universe",
+   "meta": [
+    "F-2",
+    "USA"
+   ],
+   "areas": [
+    26
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Six short classroom clips, most from Atlanta schools. Teachers lead spoken blending and segmenting games, and a kindergarten teacher builds words with letters and blends the sounds to read them.",
+   "bands": [
+    "F-2"
+   ],
+   "subject": "Literacy and English",
+   "region": "USA",
+   "kind": "classroom footage"
+  },
+  {
+   "type": "watch",
+   "title": "Video: See phoneme manipulation in the classroom",
+   "url": "https://readinguniverse.org/skill-explainer/phonemic-awareness/phoneme-manipulation/phoneme-manipulation-demonstration-lesson",
+   "by": "Reading Universe",
+   "meta": [
+    "F-2",
+    "USA"
+   ],
+   "areas": [
+    26
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Ashley Powell, a first grade teacher in Oklahoma, works with a small group. Students touch a felt square for each sound, say the phonemes, then swap one sound to make a new word.",
+   "bands": [
+    "F-2"
+   ],
+   "subject": "Literacy and English",
+   "region": "USA",
+   "kind": "classroom footage"
+  },
+  {
+   "type": "read",
+   "title": "Should we do phoneme awareness activities without letters?",
+   "url": "https://www.spelfabet.com.au/2022/01/should-we-do-phoneme-awareness-activities-without-letters/",
+   "by": "Alison Clarke, Spelfabet",
+   "meta": [
+    "Blog post",
+    "2022",
+    "Australia"
+   ],
+   "areas": [
+    26,
+    27
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Weighs up the debate about oral-only phonemic awareness. The evidence favours using letters, though short spoken blending and segmenting games still have a place before school and in intervention."
+  },
+  {
+   "type": "read",
+   "title": "What the research says about phonemic awareness instruction",
+   "url": "https://readinguniverse.org/skill-explainer/phonemic-awareness/phoneme-segmentation-and-blending/what-the-research-says-about-phonemic-awareness-instruction",
+   "by": "Liana Loewus, Reading Universe",
+   "meta": [
+    "Article",
+    "USA"
+   ],
+   "areas": [
+    26
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A short summary of the research, from the National Reading Panel's findings to the current advice that most children do best when phoneme awareness is taught with letters."
+  },
+  {
+   "type": "research",
+   "title": "Foundational Skills to Support Reading for Understanding in Kindergarten Through 3rd Grade",
+   "url": "https://ies.ed.gov/ncee/wwc/PracticeGuide/21",
+   "by": "What Works Clearinghouse",
+   "meta": [
+    "Practice guide",
+    "USA"
+   ],
+   "areas": [
+    26,
+    27
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A practice guide with four recommendations for teaching early reading. The second is to develop awareness of the sounds in speech and how they link to letters, with steps for putting it into practice."
+  },
+  {
+   "type": "read",
+   "title": "Want to Improve Children's Writing? Don't Neglect Their Handwriting",
+   "url": "https://www.aft.org/ae/winter2009-2010/graham",
+   "by": "Steve Graham, American Educator",
+   "meta": [
+    "Article",
+    "USA"
+   ],
+   "areas": [
+    32,
+    10
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Steve Graham explains why handwriting places the earliest limits on young writers, and how teaching it well improves the amount and quality of what children write, not only its legibility."
+  },
+  {
+   "type": "read",
+   "title": "Our research shows children produce better pieces of writing by hand. But they need keyboard skills too",
+   "url": "https://theconversation.com/our-research-shows-children-produce-better-pieces-of-writing-by-hand-but-they-need-keyboard-skills-too-229380",
+   "by": "Anabela Malpique, Deborah Pino Pasternak and Susan Ledger, The Conversation",
+   "meta": [
+    "Article",
+    "2024",
+    "Australia"
+   ],
+   "areas": [
+    32,
+    10
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Researchers report that Year 2 students in Perth wrote longer, better stories by hand than on a laptop, and explain why handwriting and typing both need to be taught."
+  },
+  {
+   "type": "read",
+   "title": "Handwriting and letter formation: Skill explainer",
+   "url": "https://readinguniverse.org/skill-explainer/handwriting-spelling-typing/handwriting/an-overview-of-handwriting",
+   "by": "Marion McBride, Reading Universe",
+   "meta": [
+    "Guide",
+    "USA"
+   ],
+   "areas": [
+    32
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A two-part guide to why handwriting is taught and how to teach letter formation explicitly, with the words to say while modelling each lower-case letter."
+  },
+  {
+   "type": "listen",
+   "title": "In conversation about handwriting",
+   "url": "https://education.nsw.gov.au/teaching-and-learning/curriculum/literacy-and-numeracy/professional-learning/podcasts/handwriting",
+   "by": "NSW Department of Education",
+   "meta": [
+    "with Shannan Salvestro and Vanessa Hewitt"
+   ],
+   "areas": [
+    32
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Two members of the NSW Department of Education's literacy team discuss why handwriting matters so much and how to teach it effectively. About 23 minutes, with a transcript.",
+   "focus": "Handwriting"
   }
  ],
  "shows": [

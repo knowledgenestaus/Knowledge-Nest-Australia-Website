@@ -47,7 +47,7 @@ The library pages on the site are generated. Nobody edits `library*.html` by han
 
 - **Public addresses have no `.html`.** The host serves `/library-watch` and the home page as `/`, so canonical links, share addresses, structured data and `sitemap.xml` use that form (`public()` in `build.py`). Links inside the pages keep their file names.
 - **Build warnings.** `build.py` prints a `WARNING` line for a summary or description with a colon before a lower-case word (reword it, because the colon rule would put a capital mid-sentence), for a "Start here" pick that matches no title, and for an empty or "None" detail on a card.
-- **Search** also looks in each entry's topic line and summary, finds American and Australian spellings of the same word, and offers results 60 at a time.
+- **Search** also looks in each entry's topic line and summary, finds American and Australian spellings of the same word, and offers results 60 at a time. Results with the whole phrase in the title come first, then those with every word in the title, then the rest.
 - **Cache versions.** When `styles.css`, `search.js` or `filter.js` changes, raise its `?v=` number wherever it is referenced (`about.html` and the other hand-written pages for the stylesheet, `build.py` for the two scripts).
 
 ## Areas organised by strand (November 2026)
