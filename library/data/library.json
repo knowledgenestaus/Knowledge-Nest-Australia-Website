@@ -7053,9 +7053,10 @@
    "type": "read",
    "title": "What the most successful teachers do",
    "url": "https://scienceoflearning.substack.com/p/what-the-most-successful-teachers",
-   "by": "The Science of Learning",
+   "by": "Nidhi Sachdeva and Jim Hewitt (The Science of Learning)",
    "meta": [
-    "Substack post",
+    "Substack",
+    "2025",
     "International"
    ],
    "areas": [
@@ -7378,20 +7379,6 @@
   },
   {
    "type": "read",
-   "title": "4 ways to do explicit instruction right",
-   "url": "https://hollykorbey.substack.com/p/4-ways-to-do-explicit-instruction",
-   "by": "The Bell Ringer (Holly Korbey)",
-   "meta": [
-    "Substack post",
-    "USA"
-   ],
-   "areas": [
-    2
-   ],
-   "tags": []
-  },
-  {
-   "type": "read",
    "title": "Student response systems: technique guide",
    "url": "https://education.nsw.gov.au/content/dam/main-education/documents/teaching-and-learning/curriculum/explicit-teaching/explicit-teaching-student-response-systems-technique-guide.pdf",
    "by": "NSW Department of Education",
@@ -7492,10 +7479,11 @@
    "type": "read",
    "title": "The Monthly Dispatch: What's New in Learning Science",
    "url": "https://carlhendrick.substack.com/p/the-monthly-dispatch-whats-new-in-3c4",
-   "by": "Carl Hendrick",
+   "by": "Carl Hendrick (The Learning Dispatch)",
    "meta": [
     "Monthly research round-up",
-    "International"
+    "2026",
+    "UK"
    ],
    "areas": [
     18
@@ -7513,20 +7501,6 @@
    ],
    "areas": [
     3
-   ],
-   "tags": []
-  },
-  {
-   "type": "read",
-   "title": "What the biggest education experiment ever really tells us",
-   "url": "https://daviddidau.substack.com/p/what-the-biggest-education-experiment",
-   "by": "David Didau",
-   "meta": [
-    "Substack post",
-    "UK"
-   ],
-   "areas": [
-    2
    ],
    "tags": []
   },
@@ -7679,9 +7653,10 @@
    "type": "read",
    "title": "On change management",
    "url": "https://rebeccabirch.substack.com/p/on-change-management",
-   "by": "Rebecca Birch",
+   "by": "Rebecca Birch (On Education)",
    "meta": [
-    "Substack post",
+    "Substack",
+    "2024",
     "Australia"
    ],
    "areas": [
@@ -13218,6 +13193,2218 @@
     "Free"
    ],
    "summary": "A two-part guide to why handwriting is taught and how to teach letter formation explicitly, with the words to say while modelling each lower-case letter."
+  },
+  {
+   "type": "read",
+   "title": "Oracy floats on a sea of knowledge",
+   "url": "https://daviddidau.substack.com/p/oracy-floats-on-a-sea-of-knowledge",
+   "by": "David Didau (The Learning Spy)",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    11,
+    6
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Didau weighs England's push to give oracy equal status with reading and writing. He argues students speak well when they know a lot, and sets out what schools should prioritise instead.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "How to embed writing instruction into your English curriculum",
+   "url": "https://daviddidau.substack.com/p/how-to-embed-writing-instruction",
+   "by": "David Didau (The Learning Spy)",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    10,
+    6
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Didau explains how a Years 7 to 9 English curriculum can teach sentence and paragraph skills in short, controlled bursts, delaying extended essays until the parts are secure. It also promotes his resource pack.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "My kingdom for a reliable curriculum review",
+   "url": "https://hollykorbey.substack.com/p/my-kingdom-for-a-reliable-curriculum",
+   "by": "Holly Korbey (The Bell Ringer)",
+   "meta": [
+    "Substack",
+    "2025",
+    "USA"
+   ],
+   "areas": [
+    6,
+    19
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Korbey looks at how US curriculum review platforms rate materials, why each one examines only part of the picture, and why evidence of impact is so often missing when schools choose.",
+   "region": "USA"
+  },
+  {
+   "type": "read",
+   "title": "Great teaching is neither scripted nor improvised",
+   "url": "https://nathanielswain.substack.com/p/great-teaching-is-neither-scripted",
+   "by": "Nathaniel Swain",
+   "meta": [
+    "Substack",
+    "2026",
+    "Australia"
+   ],
+   "areas": [
+    2,
+    4
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Swain offers a simple matrix of preparation and deviation to show why expert teaching is neither rigid script-reading nor improvisation, and why responsive teaching depends on thorough preparation.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Students can’t learn in cultures of perfectionism or opting out",
+   "url": "https://nathanielswain.substack.com/p/students-cant-learn-in-cultures-of",
+   "by": "Nathaniel Swain",
+   "meta": [
+    "Substack",
+    "2026",
+    "Australia"
+   ],
+   "areas": [
+    5,
+    15,
+    23
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Swain describes two classroom cultures that block learning, opting out and perfectionism, and explains how a deliberate culture of error and expected participation helps students take the risks learning needs.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Explicit teaching isn’t regurgitation",
+   "url": "https://nathanielswain.substack.com/p/explicit-teaching-isnt-regurgitation",
+   "by": "Nathaniel Swain",
+   "meta": [
+    "Substack",
+    "2026",
+    "Australia"
+   ],
+   "areas": [
+    2,
+    1
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Swain answers the claim that explicit teaching produces passive learners. He shows how building secure foundations first lets students generate and apply ideas, so knowledge becomes something to think with.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "School culture is something you cultivate",
+   "url": "https://nathanielswain.substack.com/p/school-culture-is-something-you-cultivate",
+   "by": "Nathaniel Swain",
+   "meta": [
+    "Substack",
+    "2026",
+    "Australia"
+   ],
+   "areas": [
+    20,
+    21,
+    5
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A follow-up on culture of error that turns to whole-school consistency. Swain discusses phasing in change, no opt out with support, and the difference between collaboration and mere co-operation among staff.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Three big areas for development in teaching for 2026-7",
+   "url": "https://tomsherrington.substack.com/p/three-big-areas-for-development-in",
+   "by": "Tom Sherrington",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    23,
+    4,
+    11
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "From hundreds of lesson visits, Sherrington names three priorities for most schools, inclusive teaching, responsive teaching and teaching through talk, and links to his earlier writing on each.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Powerful habit changes for more inclusive teaching",
+   "url": "https://tomsherrington.substack.com/p/powerful-habit-changes-for-more-inclusive",
+   "by": "Tom Sherrington",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    23,
+    4
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A practical list of small changes from Sherrington's training, including cold calling done well, structured think-pair-share, whole answers, show-me boards and rehearsal, all aimed at involving every student in thinking.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Learning through talk",
+   "url": "https://tomsherrington.substack.com/p/learning-through-talk",
+   "by": "Tom Sherrington",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    11,
+    23,
+    1
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Sherrington uses a simple memory model to explain how talk supports learning, and argues that if talk helps students learn, routines must give every student the chance to talk, not just a few.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Valuing every voice: the false premise that 'hands up' respondents are more worthy of being listened to",
+   "url": "https://tomsherrington.substack.com/p/valuing-every-voice-the-false-premise",
+   "by": "Tom Sherrington",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    23,
+    11
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Sherrington explains why relying on hands up lets confident students dominate, and makes the case for routines that ensure every student's thinking is heard and explored.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Oracy in practice: knowledge and the Voice 21 Benchmarks",
+   "url": "https://tomsherrington.substack.com/p/oracy-in-practice-knowledge-and-the",
+   "by": "Tom Sherrington",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    11,
+    6
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Sherrington rejects the idea that oracy competes with knowledge, and shows how the Voice 21 benchmarks place subject knowledge at the centre of talk in a rich curriculum.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Oracy in practice: creating an oracy-rich curriculum by harnessing everyday routines",
+   "url": "https://tomsherrington.substack.com/p/oracy-in-practice-creating-an-oracy",
+   "by": "Tom Sherrington",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    11,
+    6,
+    5
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Using his tree metaphor, Sherrington sets out how a school can build an oracy-rich curriculum from routines teachers already use, starting with shared values about talk and listening.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "The flow of ideas on the road to sustained, nuanced impact",
+   "url": "https://tomsherrington.substack.com/p/the-flow-of-ideas-on-the-road-to",
+   "by": "Tom Sherrington",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    17,
+    22
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Sherrington describes a predictable pattern when ideas such as retrieval practice spread, from scattered pockets to mass adoption that loses nuance, then to deeper, better practice, and why leaders should expect it.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Reading Comprehension Is Not a Skill",
+   "url": "https://carlhendrick.substack.com/p/reading-comprehension-is-not-a-skill",
+   "by": "Carl Hendrick (The Learning Dispatch)",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    30,
+    29,
+    33
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Drawing on new research and his own teaching, Hendrick argues that comprehension depends far more on knowing word meanings than on generic strategies, and makes the case for rich vocabulary teaching as an equity lever.",
+   "region": "UK",
+   "strand": "Knowledge and comprehension"
+  },
+  {
+   "type": "read",
+   "title": "10 Rules for Designing Effective Learning",
+   "url": "https://carlhendrick.substack.com/p/10-rules-for-designing-effective",
+   "by": "Carl Hendrick (The Learning Dispatch)",
+   "meta": [
+    "Substack",
+    "2025",
+    "UK"
+   ],
+   "areas": [
+    2,
+    6
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Hendrick distils Engelmann and Carnine's Theory of Instruction into ten design rules about examples, boundaries and sequencing, showing how careful instructional design helps every student form concepts, not only the strongest.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Defending the Science of Learning",
+   "url": "https://carlhendrick.substack.com/p/defending-the-science-of-learning",
+   "by": "Carl Hendrick (The Learning Dispatch)",
+   "meta": [
+    "Substack",
+    "2025",
+    "UK"
+   ],
+   "areas": [
+    18,
+    1
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Hendrick answers common criticisms of the science of learning, such as claims it is dogma or de-skills teachers, and sets out the research base and the equity case for it.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Privileging the Already Privileged",
+   "url": "https://carlhendrick.substack.com/p/privileging-the-already-privileged",
+   "by": "Carl Hendrick (The Learning Dispatch)",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    2,
+    18
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Hendrick argues that minimally guided discovery learning shifts the work onto students and favours those who arrive with advantages, making explicit instructional design the more progressive and equitable choice.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Why You Cannot Believe Your Way Into Learning",
+   "url": "https://carlhendrick.substack.com/p/why-you-cannot-believe-your-way-into",
+   "by": "Carl Hendrick (The Learning Dispatch)",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    15,
+    18
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Hendrick reviews new evidence that growth mindset interventions do little for achievement on their own, and argues that real success through effective practice is what builds students' belief in themselves.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "The untold story of Bloom's Taxonomy and the pyramid that never was",
+   "url": "https://carlhendrick.substack.com/p/the-untold-story-of-blooms-taxonomy",
+   "by": "Carl Hendrick (The Learning Dispatch)",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    18,
+    6
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A history of how a 1956 handbook for classifying exam questions became a pyramid that ranks thinking above knowledge, and why that reading misleads curriculum and lesson planning.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Rethinking Retrieval Practice: Remembering Is Not Knowing",
+   "url": "https://carlhendrick.substack.com/p/rethinking-retrieval-practice-remembering",
+   "by": "Carl Hendrick (The Learning Dispatch)",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    3,
+    1
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Using two recent studies, Hendrick shows that students can remember more yet apply no better, and argues retrieval practice works best to maintain knowledge that has first been properly understood.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "The Lethal Mutation of Retrieval Practice",
+   "url": "https://carlhendrick.substack.com/p/the-lethal-mutation-of-retrieval",
+   "by": "Carl Hendrick (The Learning Dispatch)",
+   "meta": [
+    "Substack",
+    "2025",
+    "UK"
+   ],
+   "areas": [
+    3,
+    18
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Hendrick sets out five ways retrieval practice goes wrong in classrooms, including quizzing on material never learnt and skipping spacing, and discusses a study on retrieval with complex material.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "We Need to Talk About Scaffolding",
+   "url": "https://carlhendrick.substack.com/p/we-need-to-talk-about-scaffolding",
+   "by": "Carl Hendrick (The Learning Dispatch)",
+   "meta": [
+    "Substack",
+    "2025",
+    "UK"
+   ],
+   "areas": [
+    2,
+    18
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Hendrick examines a careful replication of the famous 1978 scaffolding study that found no benefit from the classic rule of more help after failure, and considers what this means for teaching and tutoring.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "In Search of Vygotsky",
+   "url": "https://carlhendrick.substack.com/p/in-search-of-vygotsky",
+   "by": "Carl Hendrick (The Learning Dispatch)",
+   "meta": [
+    "Substack",
+    "2025",
+    "UK"
+   ],
+   "areas": [
+    18,
+    1
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Hendrick traces how translations and selective readings turned Vygotsky into a champion of discovery learning, and argues his own work placed far more weight on teaching systematic, scientific concepts.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Does Explicit Instruction Work For Students with Learning Difficulties?",
+   "url": "https://carlhendrick.substack.com/p/does-explicit-instruction-work-for",
+   "by": "Carl Hendrick (The Learning Dispatch)",
+   "meta": [
+    "Substack",
+    "2025",
+    "UK"
+   ],
+   "areas": [
+    25,
+    2,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Hendrick discusses a computational study suggesting students with ADHD and dyslexia face distinct extra costs in unguided learning, and why clear, explicit guidance matters even more for them.",
+   "region": "UK",
+   "strand": "Understanding learning difficulties"
+  },
+  {
+   "type": "read",
+   "title": "Is There a Science of Writing?",
+   "url": "https://carlhendrick.substack.com/p/is-there-a-science-of-writing",
+   "by": "Carl Hendrick (The Learning Dispatch)",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    10,
+    33
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Hendrick asks why writing research, which is substantial, has had far less influence than the science of reading, and outlines what the evidence says about teaching writing.",
+   "region": "UK",
+   "strand": "The Writing Rope and views of writing"
+  },
+  {
+   "type": "read",
+   "title": "Responsive Teaching Part 1: Learning is Recursive Not Linear",
+   "url": "https://carlhendrick.substack.com/p/responsive-teaching-part-1-learning",
+   "by": "Carl Hendrick (The Learning Dispatch)",
+   "meta": [
+    "Substack",
+    "2025",
+    "UK"
+   ],
+   "areas": [
+    4,
+    6
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Written while working with Australian schools, Hendrick explains why learning is recursive rather than linear, what responsive teaching involves, and which lethal mutations to avoid.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Orthographic Skeletons: Can Children Start Learning How Words Are Spelled Before They've Seen it in Print?",
+   "url": "https://carlhendrick.substack.com/p/orthographic-skeletons-can-children",
+   "by": "Carl Hendrick (The Learning Dispatch)",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    33,
+    29,
+    31
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Hendrick explains research suggesting children form an early guess at a word's spelling from hearing it, which helps explain why oral vocabulary supports later reading and spelling.",
+   "region": "UK",
+   "strand": "How word reading develops"
+  },
+  {
+   "type": "read",
+   "title": "How to Make Social Studies \"Magical\"",
+   "url": "https://nataliewexler.substack.com/p/how-to-make-social-studies-magical",
+   "by": "Natalie Wexler (Minding the Gap)",
+   "meta": [
+    "Substack",
+    "2026",
+    "USA"
+   ],
+   "areas": [
+    6,
+    3
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Wexler visits a New York sixth-grade civics class where rapid, game-like recall of history facts gives students the knowledge to analyse ideas, showing memorisation and engagement can go together.",
+   "region": "USA"
+  },
+  {
+   "type": "read",
+   "title": "A (Relatively) Easy Way to Boost Reading Comprehension",
+   "url": "https://nataliewexler.substack.com/p/a-relatively-easy-way-to-boost-reading",
+   "by": "Natalie Wexler (Minding the Gap)",
+   "meta": [
+    "Substack",
+    "2026",
+    "USA"
+   ],
+   "areas": [
+    30,
+    10
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Wexler reports a study isolating complex syntax as a factor in comprehension, and describes how teachers can spot sentence-level difficulties and use sentence-level writing activities to teach them.",
+   "region": "USA"
+  },
+  {
+   "type": "read",
+   "title": "Don't Forget to Elaborate",
+   "url": "https://nataliewexler.substack.com/p/dont-forget-to-elaborate",
+   "by": "Natalie Wexler (Minding the Gap)",
+   "meta": [
+    "Substack",
+    "2026",
+    "USA"
+   ],
+   "areas": [
+    3,
+    10,
+    1
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Wexler argues that explicit instruction and retrieval practice are not enough on their own, and that students also need to elaborate on new knowledge, with writing as a practical way to do it.",
+   "region": "USA"
+  },
+  {
+   "type": "read",
+   "title": "How Can You Tell If a Curriculum Truly Builds Knowledge?",
+   "url": "https://nataliewexler.substack.com/p/how-can-you-tell-if-a-curriculum",
+   "by": "Natalie Wexler (Minding the Gap)",
+   "meta": [
+    "Substack",
+    "2026",
+    "USA"
+   ],
+   "areas": [
+    6,
+    30
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Using one widely adopted US program as a case study, Wexler explains how a curriculum can look knowledge-building but lack depth and coherence, and why ratings can mislead schools.",
+   "region": "USA"
+  },
+  {
+   "type": "read",
+   "title": "Most Struggling Students Get \"Incoherent\" Instruction",
+   "url": "https://nataliewexler.substack.com/p/most-struggling-students-get-incoherent",
+   "by": "Natalie Wexler (Minding the Gap)",
+   "meta": [
+    "Substack",
+    "2026",
+    "USA"
+   ],
+   "areas": [
+    14,
+    6
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Wexler contrasts a struggling reader whose interventions are unrelated to class work with one whose support reinforces the core curriculum, and argues that coherence across support lowers cognitive load.",
+   "region": "USA"
+  },
+  {
+   "type": "read",
+   "title": "Do Knowledge-Building Curricula Really Lack Whole Books?",
+   "url": "https://nataliewexler.substack.com/p/do-knowledge-building-curricula-really",
+   "by": "Natalie Wexler (Minding the Gap)",
+   "meta": [
+    "Substack",
+    "2026",
+    "USA"
+   ],
+   "areas": [
+    6,
+    30
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Wexler examines complaints that knowledge-building literacy curricula lack whole books, separating fair criticism from misunderstanding and noting what teachers report about students' stamina with longer texts.",
+   "region": "USA"
+  },
+  {
+   "type": "read",
+   "title": "Many Students Struggle to Read Beyond Third Grade",
+   "url": "https://nataliewexler.substack.com/p/many-students-struggle-to-read-beyond",
+   "by": "Natalie Wexler (Minding the Gap)",
+   "meta": [
+    "Substack",
+    "2024",
+    "USA"
+   ],
+   "areas": [
+    30,
+    14,
+    6
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Wexler explains why many older students still struggle to read, why upper-grade teachers need different training from early-years teachers, and which approaches look promising.",
+   "region": "USA"
+  },
+  {
+   "type": "read",
+   "title": "The Writing Effect",
+   "url": "https://nataliewexler.substack.com/p/the-writing-effect",
+   "by": "Natalie Wexler (Minding the Gap)",
+   "meta": [
+    "Substack",
+    "2024",
+    "USA"
+   ],
+   "areas": [
+    10,
+    3
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Wexler reviews write-to-learn research, linking writing to retrieval and elaboration, and argues that writing would boost learning more reliably if teachers made it manageable through explicit sentence-level instruction.",
+   "region": "USA"
+  },
+  {
+   "type": "read",
+   "title": "To Boost Learning, Weave Writing Activities Into Regular Instruction",
+   "url": "https://nataliewexler.substack.com/p/to-boost-learning-weave-writing-activities",
+   "by": "Natalie Wexler (Minding the Gap)",
+   "meta": [
+    "Substack",
+    "2024",
+    "USA"
+   ],
+   "areas": [
+    10,
+    6
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Wexler shows how explicit writing activities can be woven into discussion of content-rich lessons, moving between talk and writing to deepen understanding and build stronger writers.",
+   "region": "USA"
+  },
+  {
+   "type": "read",
+   "title": "What Do We Mean by \"Reading Comprehension Instruction\"?",
+   "url": "https://nataliewexler.substack.com/p/what-do-we-mean-by-reading-comprehension",
+   "by": "Natalie Wexler (Minding the Gap)",
+   "meta": [
+    "Substack",
+    "2025",
+    "USA"
+   ],
+   "areas": [
+    30,
+    33
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Wexler untangles competing claims that schools teach too little or too much comprehension, tracing the debate back to Durkin and arguing that literacy and content teaching must work together.",
+   "region": "USA",
+   "strand": "Knowledge and comprehension"
+  },
+  {
+   "type": "read",
+   "title": "Uncovering the \"Hidden Lives\" of Learners",
+   "url": "https://nataliewexler.substack.com/p/uncovering-the-hidden-lives-of-learners",
+   "by": "Natalie Wexler (Minding the Gap)",
+   "meta": [
+    "Substack",
+    "2024",
+    "USA"
+   ],
+   "areas": [
+    1,
+    4
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Wexler introduces Graham Nuthall's research on what students actually learn in class, including his finding that students typically need to meet a concept several times before it sticks.",
+   "region": "USA"
+  },
+  {
+   "type": "read",
+   "title": "The Key to Motivating Students--and Maybe Everyone Else Too",
+   "url": "https://nataliewexler.substack.com/p/the-key-to-motivating-students-and",
+   "by": "Natalie Wexler (Minding the Gap)",
+   "meta": [
+    "Substack",
+    "2025",
+    "USA"
+   ],
+   "areas": [
+    15,
+    2
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Wexler argues that motivation tends to follow achievement, so clear teaching that lets students succeed is a more reliable way to motivate them than choice, relevance or rewards.",
+   "region": "USA"
+  },
+  {
+   "type": "read",
+   "title": "Unpacking explicit teaching",
+   "url": "https://fillingthepail.substack.com/p/unpacking-explicit-teaching",
+   "by": "Greg Ashman (Filling the Pail)",
+   "meta": [
+    "Substack",
+    "2024",
+    "Australia"
+   ],
+   "areas": [
+    2,
+    18
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Written as Australian governments fund evidence-informed reform, Ashman sets out a working definition of explicit teaching, how it works within a lesson and across a sequence, and which versions the evidence supports.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Five arguments against explicit teaching, #1: rote memorisation versus deeper understanding",
+   "url": "https://fillingthepail.substack.com/p/five-arguments-against-explicit-teaching",
+   "by": "Greg Ashman (Filling the Pail)",
+   "meta": [
+    "Substack",
+    "2025",
+    "Australia"
+   ],
+   "areas": [
+    2,
+    18
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "The first in a series preparing teachers for common objections. Ashman examines the claim that explicit teaching only builds rote recall, drawing on empirical evidence and theory about understanding.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Five arguments against explicit teaching, #2: creativity and other higher order skills",
+   "url": "https://fillingthepail.substack.com/p/five-arguments-against-explicit-teaching-3be",
+   "by": "Greg Ashman (Filling the Pail)",
+   "meta": [
+    "Substack",
+    "2025",
+    "Australia"
+   ],
+   "areas": [
+    2,
+    18
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Ashman tackles the claim that explicit teaching stifles creativity and higher-order thinking, tracing the idea to readings of Bloom's taxonomy and arguing for the whole explicit teaching process instead.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Five arguments against explicit teaching, #3: explicit teaching kills teacher creativity and autonomy",
+   "url": "https://fillingthepail.substack.com/p/five-arguments-against-explicit-teaching-8a9",
+   "by": "Greg Ashman (Filling the Pail)",
+   "meta": [
+    "Substack",
+    "2025",
+    "Australia"
+   ],
+   "areas": [
+    2,
+    16
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Ashman takes on the claim that explicit teaching kills teacher creativity and autonomy, arguing that constraint can free creativity and that shared lesson plans leave room to refine one thing well.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Five arguments against explicit teaching, #4: explicit teaching takes no account of student differences",
+   "url": "https://fillingthepail.substack.com/p/five-arguments-against-explicit-teaching-e5c",
+   "by": "Greg Ashman (Filling the Pail)",
+   "meta": [
+    "Substack",
+    "2025",
+    "Australia"
+   ],
+   "areas": [
+    2,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Ashman responds to the objection that explicit teaching ignores individual differences, questioning differentiation as a cure-all and explaining which differences between students really matter for instruction.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Five arguments against explicit teaching, #5: explicit teaching is demotivating",
+   "url": "https://fillingthepail.substack.com/p/five-arguments-against-explicit-teaching-905",
+   "by": "Greg Ashman (Filling the Pail)",
+   "meta": [
+    "Substack",
+    "2025",
+    "Australia"
+   ],
+   "areas": [
+    2,
+    15
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "The last in Ashman's series takes on the claim that explicit teaching kills motivation, arguing from experience and research that early success through clear instruction is what motivates learners.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Explicit teaching is inclusive",
+   "url": "https://fillingthepail.substack.com/p/explicit-teaching-is-inclusive",
+   "by": "Greg Ashman (Filling the Pail)",
+   "meta": [
+    "Substack",
+    "2023",
+    "Australia"
+   ],
+   "areas": [
+    14,
+    2,
+    5
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Ashman links tiered support to whole-class teaching, arguing that explicit teaching, including structured literacy, is a strong Tier 1 approach for learning and behaviour and is inclusive of students with disabilities.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Is productive struggle ethical?",
+   "url": "https://fillingthepail.substack.com/p/is-productive-struggle-ethical",
+   "by": "Greg Ashman (Filling the Pail)",
+   "meta": [
+    "Substack",
+    "2024",
+    "Australia"
+   ],
+   "areas": [
+    39,
+    2,
+    18
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Ashman questions the popular idea, especially in maths, of designing lessons so students struggle first, examining the case for constructivism and productive failure and the ethics of deliberate difficulty.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Boring lessons and what to do about them",
+   "url": "https://fillingthepail.substack.com/p/boring-lessons-and-what-to-do-about",
+   "by": "Greg Ashman (Filling the Pail)",
+   "meta": [
+    "Substack",
+    "2023",
+    "Australia"
+   ],
+   "areas": [
+    2,
+    5
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A short, practical reflection on keeping whole-class explicit teaching lively, using voice, story, urgency and momentum, and why being interesting does not mean being an entertainer.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Building Thinking Classrooms is still nonsense",
+   "url": "https://fillingthepail.substack.com/p/building-thinking-classrooms-is-still",
+   "by": "Greg Ashman (Filling the Pail)",
+   "meta": [
+    "Substack",
+    "2024",
+    "Australia"
+   ],
+   "areas": [
+    39,
+    36,
+    18
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Ashman critiques Building Thinking Classrooms, arguing that it defines explained and modelled instruction as not thinking and that its claims are not supported by cognitive science.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Universal Design for Learning (UDL) is the new learning styles",
+   "url": "https://fillingthepail.substack.com/p/universal-design-for-learning-udl",
+   "by": "Greg Ashman (Filling the Pail)",
+   "meta": [
+    "Substack",
+    "2021",
+    "Australia"
+   ],
+   "areas": [
+    18,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Ashman discusses a paper drawing parallels between Universal Design for Learning and learning styles, and raises concerns about its evidence base, its planning workload and its spread into policy.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "Tip #49: Play the \"Does that make sense?\" game",
+   "url": "https://tipsforteachers.substack.com/p/49-play-the-does-that-make-sense",
+   "by": "Craig Barton (Tips for Teachers)",
+   "meta": [
+    "Substack",
+    "2024",
+    "UK"
+   ],
+   "areas": [
+    4,
+    23
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A short classroom tip for breaking the habit of asking \"Does that make sense?\", which rarely reveals understanding, by turning it into a game and replacing it with better checks.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Tip #47: \"Can you get us started...\"",
+   "url": "https://tipsforteachers.substack.com/p/47-can-you-get-us-started",
+   "by": "Craig Barton (Tips for Teachers)",
+   "meta": [
+    "Substack",
+    "2024",
+    "UK"
+   ],
+   "areas": [
+    23,
+    4
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Barton shows how rephrasing a cold-call question as an invitation to begin, rather than to give the one right answer, lowers the stakes and gets more reluctant students contributing.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Tip #48: Check for listening to see if your explanation is clear and concise",
+   "url": "https://tipsforteachers.substack.com/p/48-check-for-listening-to-see-if",
+   "by": "Craig Barton (Tips for Teachers)",
+   "meta": [
+    "Substack",
+    "2024",
+    "UK"
+   ],
+   "areas": [
+    2,
+    34
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Using two versions of a maths explanation, Barton shows how to plan explanations that are clear and free of clutter, and how checking students were listening reveals whether an explanation worked.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Research Bite #56: Updated meta-analysis of the research on response cards",
+   "url": "https://tipsforteachers.substack.com/p/research-bite-56-updated-meta-analysis",
+   "by": "Craig Barton (Tips for Teachers)",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    23,
+    4
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Barton summarises a meta-analysis of 29 studies finding that response cards, where every student answers at once, lift participation and quiz results and reduce off-task behaviour compared with hands up.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Research Bite #53: Spacing and retrieval practice for mathematics learning",
+   "url": "https://tipsforteachers.substack.com/p/research-bite-53-a-meta-analytic",
+   "by": "Craig Barton (Tips for Teachers)",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    35,
+    3
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Barton breaks down a meta-analysis on spacing and retrieval practice in maths, including where spacing helps most and what the findings mean for planning practice and review in maths classrooms.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Research Bite #61: A scoping review of 20 years of research on differentiation",
+   "url": "https://tipsforteachers.substack.com/p/research-bite-61-a-scoping-review",
+   "by": "Craig Barton (Tips for Teachers)",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    14,
+    18
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Barton summarises Linda Graham and colleagues' review of differentiation research, which found the term used for very different, sometimes incompatible practices, and discusses what that means for teachers.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Research Bite #68: Worked examples and self-explanation prompts and students' maths motivation",
+   "url": "https://tipsforteachers.substack.com/p/research-bite-68-worked-examples",
+   "by": "Craig Barton (Tips for Teachers)",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    34,
+    15
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Barton unpacks a study of primary maths worksheets pairing correct and incorrect worked examples with self-explanation prompts, looking at their effect on students' motivation and how they view errors.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Research Bite #73: Why peer discussion improves student performance on in-class concept questions",
+   "url": "https://tipsforteachers.substack.com/p/research-bite-73-why-peer-discussion",
+   "by": "Craig Barton (Tips for Teachers)",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    4,
+    23
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Barton explains a study testing whether students improve after discussing a concept question because they understand it or copy classmates, and what it suggests about using peer discussion in lessons.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Research Bite #65: High maths anxiety and lower maths achievement across 90 countries",
+   "url": "https://tipsforteachers.substack.com/p/research-bite-65-high-math-anxiety",
+   "by": "Craig Barton (Tips for Teachers)",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    38,
+    15
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Barton summarises a very large international analysis linking maths anxiety with lower achievement, and considers what teachers can reasonably take from a correlational finding of this kind.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Research Bite #79: When and how to use visuals effectively, a meta-analysis of dual coding",
+   "url": "https://tipsforteachers.substack.com/p/research-bite-79-when-and-how-to",
+   "by": "Craig Barton (Tips for Teachers)",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    2,
+    1
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Barton breaks down a meta-analysis of classroom experiments on adding pictures and diagrams to explanations, including where visuals helped most and how to use them well.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Research Bite #64: The Student Grouping Study",
+   "url": "https://tipsforteachers.substack.com/p/research-bite-64-the-student-grouping",
+   "by": "Craig Barton (Tips for Teachers)",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    39,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Barton summarises an EEF evaluation comparing setting and mixed-attainment groups in lower secondary maths, covering effects on progress and confidence and the implications for schools deciding how to group.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "What is Comparative Judgement and why does it work?",
+   "url": "https://substack.nomoremarking.com/p/what-is-comparative-judgement-and",
+   "by": "Daisy Christodoulou (No More Marking)",
+   "meta": [
+    "Substack",
+    "2025",
+    "UK"
+   ],
+   "areas": [
+    13,
+    10
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A clear introduction to comparative judgement, where teachers compare two pieces of writing rather than marking against a rubric, why it is more reliable, and what adding AI judges changes.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Why grades are misleading",
+   "url": "https://substack.nomoremarking.com/p/why-grades-are-misleading",
+   "by": "Daisy Christodoulou (No More Marking)",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    13
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Christodoulou explains why grades suggest sharper differences between students than really exist, the distortions this causes, and why reporting the probability of each grade gives a more honest picture.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "How to write a good rubric (for humans and AI)",
+   "url": "https://substack.nomoremarking.com/p/how-to-write-a-good-rubric-for-humans",
+   "by": "Daisy Christodoulou (No More Marking)",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    13,
+    10
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Drawing on a national history essay assessment, Christodoulou looks at what judges reward, including factual accuracy, and offers advice on writing clearer criteria for both human and AI markers.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "But my students like written comments",
+   "url": "https://substack.nomoremarking.com/p/but-my-students-like-written-comments",
+   "by": "Daisy Christodoulou (No More Marking)",
+   "meta": [
+    "Substack",
+    "2025",
+    "UK"
+   ],
+   "areas": [
+    24,
+    13
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Christodoulou argues that detailed written comments describe weaknesses without helping students fix them, and makes the case for whole-class feedback and practice that changes what students do next.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Why personalising education based on student interests doesn’t work",
+   "url": "https://substack.nomoremarking.com/p/why-personalising-education-based",
+   "by": "Daisy Christodoulou (No More Marking)",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    15,
+    18
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Christodoulou explains why tailoring lessons to students' interests rarely improves learning, and warns that arguments for personalisation often promise better pacing but deliver isolated screen time.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "What if transferable skills don’t exist?",
+   "url": "https://substack.nomoremarking.com/p/what-if-transferable-skills-dont",
+   "by": "Daisy Christodoulou (No More Marking)",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    6,
+    1
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Christodoulou revisits a myth from her own book, arguing that skills such as creativity and critical thinking depend on knowledge of a particular domain, and considers what follows for schools.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Do knowledge-rich curriculums cause mental health problems?",
+   "url": "https://substack.nomoremarking.com/p/do-knowledge-rich-curriculums-cause",
+   "by": "Daisy Christodoulou (No More Marking)",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    6,
+    18
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Christodoulou tests the claim that England's knowledge-rich reforms worsened young people's mental health, comparing trends across the UK nations and concluding the evidence does not support the link.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Are we living in a stupidogenic society?",
+   "url": "https://substack.nomoremarking.com/p/are-we-living-in-a-stupidogenic-society",
+   "by": "Daisy Christodoulou (No More Marking)",
+   "meta": [
+    "Substack",
+    "2025",
+    "UK"
+   ],
+   "areas": [
+    1,
+    3
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Starting with her grandmother's mental arithmetic, Christodoulou asks whether technology lets us skip the practice that builds knowledge and skill, and why schools need to keep those cognitive muscles working.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "What is the point of learning to write in a world with AI?",
+   "url": "https://substack.nomoremarking.com/p/what-is-the-point-of-learning-to",
+   "by": "Daisy Christodoulou (No More Marking)",
+   "meta": [
+    "Substack",
+    "2025",
+    "UK"
+   ],
+   "areas": [
+    10,
+    1
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Using a marathon metaphor, Christodoulou explains why students should still learn to write when AI can produce text, because the purpose of writing in school is the thinking it builds.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Can we teach students to spot misinformation?",
+   "url": "https://substack.nomoremarking.com/p/can-we-teach-students-to-spot-misinformation",
+   "by": "Daisy Christodoulou (No More Marking)",
+   "meta": [
+    "Substack",
+    "2025",
+    "UK"
+   ],
+   "areas": [
+    6,
+    30
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Christodoulou describes how many students fail to spot even obvious hoaxes online, and argues that background knowledge matters more than generic media literacy for judging what is true.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "What should we do about the \"forgotten third\"?",
+   "url": "https://substack.nomoremarking.com/p/what-should-we-do-about-the-forgotten",
+   "by": "Daisy Christodoulou (No More Marking)",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    14,
+    6
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Christodoulou argues that the answer for older students who leave school without basic English and maths is better teaching of foundational skills, rather than steering them early into vocational routes.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "On explicit teaching and student behaviour",
+   "url": "https://rebeccabirch.substack.com/p/on-explicit-teaching-and-student",
+   "by": "Rebecca Birch (On Education)",
+   "meta": [
+    "Substack",
+    "2025",
+    "Australia"
+   ],
+   "areas": [
+    2,
+    20,
+    5
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Drawing on her doctoral literature review, Birch sets out research linking explicit teaching with better student behaviour and other non-academic outcomes, and argues that academic success underpins wellbeing.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "On how to change your mind",
+   "url": "https://rebeccabirch.substack.com/p/on-how-to-change-your-mind",
+   "by": "Rebecca Birch (On Education)",
+   "meta": [
+    "Substack",
+    "2026",
+    "Australia"
+   ],
+   "areas": [
+    2,
+    14,
+    1
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Birch explains how new research on prior knowledge and the expertise reversal effect has partly changed her view on whether gifted learners always need explicit teaching before problem solving.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "On what we mean when we say \"inclusive\" teaching",
+   "url": "https://rebeccabirch.substack.com/p/on-what-we-mean-when-we-say-inclusive",
+   "by": "Rebecca Birch (On Education)",
+   "meta": [
+    "Substack",
+    "2026",
+    "Australia"
+   ],
+   "areas": [
+    14,
+    25,
+    2
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Birch argues that inclusive teaching should build on the needs students share, such as clear explanation, predictability and guided practice, rather than treating a growing group of students as individual adjustments.",
+   "region": "Australia",
+   "strand": "Supporting students with additional needs"
+  },
+  {
+   "type": "read",
+   "title": "On the transformative power of teaching first",
+   "url": "https://rebeccabirch.substack.com/p/on-the-transformative-power-of-teaching",
+   "by": "Rebecca Birch (On Education)",
+   "meta": [
+    "Substack",
+    "2024",
+    "Australia"
+   ],
+   "areas": [
+    2,
+    4,
+    23
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Birch explains how the TAPPLE sequence from Explicit Direct Instruction changed her secondary English teaching, walking through each step and what it is not, including its effect on workload.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "On chasing the rainbow of intrinsic motivation",
+   "url": "https://rebeccabirch.substack.com/p/on-chasing-the-rainbow-of-intrinsic",
+   "by": "Rebecca Birch (On Education)",
+   "meta": [
+    "Substack",
+    "2026",
+    "Australia"
+   ],
+   "areas": [
+    15,
+    5
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Birch questions the hunt for intrinsic motivation in school subjects and describes realistic alternatives, such as teacher enthusiasm, clear rationales and success, that support students' effort and learning.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "On the cycle of avoidance",
+   "url": "https://rebeccabirch.substack.com/p/on-the-cycle-of-avoidance",
+   "by": "Rebecca Birch (On Education)",
+   "meta": [
+    "Substack",
+    "2025",
+    "Australia"
+   ],
+   "areas": [
+    15,
+    20,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Using her own fear of flying, Birch argues that school accommodations for anxiety can reinforce avoidance, and that participation and low-stakes testing better support students' competence and belonging.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "On how to make any teacher an expert in writing",
+   "url": "https://rebeccabirch.substack.com/p/on-how-to-make-any-teacher-an-expert",
+   "by": "Rebecca Birch (On Education)",
+   "meta": [
+    "Substack",
+    "2025",
+    "Australia"
+   ],
+   "areas": [
+    10,
+    17,
+    21
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Birch describes implementing a whole-school writing approach in a secondary school, including the tools used and how to support teachers who feel unsure about teaching writing in their subject.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "On powerful knowledge",
+   "url": "https://rebeccabirch.substack.com/p/on-powerful-knowledge",
+   "by": "Rebecca Birch (On Education)",
+   "meta": [
+    "Substack",
+    "2023",
+    "Australia"
+   ],
+   "areas": [
+    6,
+    30
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Through a reading passage that leaves most readers lost, Birch shows how background knowledge shapes comprehension, and argues an ambitious curriculum is how schools give every student access to powerful knowledge.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "On the five big risks to reform",
+   "url": "https://rebeccabirch.substack.com/p/on-the-five-big-risks-to-reform",
+   "by": "Rebecca Birch (On Education)",
+   "meta": [
+    "Substack",
+    "2025",
+    "Australia"
+   ],
+   "areas": [
+    17,
+    22,
+    19
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Birch welcomes Australia's shift towards explicit teaching but names five risks to the reform, including rushed rollout, thin resources and unclear messaging, and how leaders can avoid another pendulum swing.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "On cold calling",
+   "url": "https://rebeccabirch.substack.com/p/on-cold-calling",
+   "by": "Rebecca Birch (On Education)",
+   "meta": [
+    "Substack",
+    "2024",
+    "Australia"
+   ],
+   "areas": [
+    23,
+    4
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Birch makes the case for cold calling in secondary classrooms as a lever for equity, citing research that it increases voluntary participation, and offers advice on making it work well.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "On high quality instructional materials",
+   "url": "https://rebeccabirch.substack.com/p/on-high-quality-instructional-materials",
+   "by": "Rebecca Birch (On Education)",
+   "meta": [
+    "Substack",
+    "2025",
+    "Australia"
+   ],
+   "areas": [
+    6,
+    19
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Prompted by a Productivity Commission report, Birch discusses why quality-assured lesson materials matter for teacher time and student outcomes in Australia, and how they relate to teacher expertise.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "On reading spines",
+   "url": "https://rebeccabirch.substack.com/p/on-reading-spines",
+   "by": "Rebecca Birch (On Education)",
+   "meta": [
+    "Substack",
+    "2024",
+    "Australia"
+   ],
+   "areas": [
+    30,
+    6
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Birch reflects on co-creating a reading spine, a planned sequence of whole texts across the years, and on why schools should ensure every student has a copy of the books they study.",
+   "region": "Australia"
+  },
+  {
+   "type": "read",
+   "title": "The Beautiful (and Impossible) Dream of Transferable Reading Skills",
+   "url": "https://douglemov.substack.com/p/the-beautiful-and-impossible-dream",
+   "by": "Doug Lemov (Doug Lemov's Field Notes)",
+   "meta": [
+    "Substack",
+    "2026",
+    "USA"
+   ],
+   "areas": [
+    30,
+    6,
+    33
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "In an excerpt from his guide to the science of reading, Lemov explains why the hope of teaching transferable comprehension skills is a chimera, and why inference and understanding depend on knowledge.",
+   "region": "USA",
+   "strand": "Knowledge and comprehension"
+  },
+  {
+   "type": "read",
+   "title": "Next Level Reading Lesson Design",
+   "url": "https://douglemov.substack.com/p/next-level-reading-lesson-design",
+   "by": "Doug Lemov (Doug Lemov's Field Notes)",
+   "meta": [
+    "Substack",
+    "2026",
+    "USA"
+   ],
+   "areas": [
+    30,
+    28
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Lemov shares highlights from a Year 3 teacher's unit on the novel Stone Fox, showing how shared reading, fluency, vocabulary and writing prompts are planned into lessons built around a whole text.",
+   "region": "USA"
+  },
+  {
+   "type": "read",
+   "title": "Re-Centering the Text",
+   "url": "https://douglemov.substack.com/p/re-centering-the-text",
+   "by": "Doug Lemov (Doug Lemov's Field Notes)",
+   "meta": [
+    "Substack",
+    "2026",
+    "USA"
+   ],
+   "areas": [
+    30,
+    28
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Lemov explains the idea of re-centring the text, reading together in class from the same book, and why it builds attention, fluency and shared meaning when technology competes for students' focus.",
+   "region": "USA"
+  },
+  {
+   "type": "read",
+   "title": "Two Small Secrets To (Cold Call) Success",
+   "url": "https://douglemov.substack.com/p/two-small-secrets-to-cold-call-success",
+   "by": "Doug Lemov (Doug Lemov's Field Notes)",
+   "meta": [
+    "Substack",
+    "2026",
+    "USA"
+   ],
+   "areas": [
+    23,
+    4
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Using a classroom video, Lemov highlights two small details that make cold calling smoother and more positive, including polling the class after a short writing task before calling on anyone.",
+   "region": "USA"
+  },
+  {
+   "type": "read",
+   "title": "The Most Important Habit in Your Classroom is Easy to Overlook",
+   "url": "https://douglemov.substack.com/p/the-most-important-habit-in-your",
+   "by": "Doug Lemov (Doug Lemov's Field Notes)",
+   "meta": [
+    "Substack",
+    "2026",
+    "USA"
+   ],
+   "areas": [
+    5,
+    23
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Lemov shares a video of a teacher building the habit of following directions, and explains why such everyday routines are the hidden foundation for rich learning moments.",
+   "region": "USA"
+  },
+  {
+   "type": "read",
+   "title": "“Norm Amplification,” psychological safety and academic rigor",
+   "url": "https://douglemov.substack.com/p/norm-amplification-psychological",
+   "by": "Doug Lemov (Doug Lemov's Field Notes)",
+   "meta": [
+    "Substack",
+    "2026",
+    "USA"
+   ],
+   "areas": [
+    5,
+    20,
+    15
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Drawing on Peps Mccrea's work, Lemov explains how students' sense of what peers approve of shapes their behaviour, and how teachers can amplify positive norms, especially around academic effort.",
+   "region": "USA"
+  },
+  {
+   "type": "read",
+   "title": "The Room Seemed to Ache with Loneliness: Jaime Johnson’s Formative Writing Routine",
+   "url": "https://douglemov.substack.com/p/the-room-seemed-to-ache-with-loneliness",
+   "by": "Doug Lemov (Doug Lemov's Field Notes)",
+   "meta": [
+    "Substack",
+    "2026",
+    "USA"
+   ],
+   "areas": [
+    10,
+    30
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Through video of a middle school teacher, Lemov explains formative writing, where students write to discover what they think, and shows how to make it a regular routine in response to rich texts.",
+   "region": "USA"
+  },
+  {
+   "type": "read",
+   "title": "How Jaime Johnson’s Shared Reading Leads to Vibrant Discussion",
+   "url": "https://douglemov.substack.com/p/how-jaime-johnsons-shared-reading",
+   "by": "Doug Lemov (Doug Lemov's Field Notes)",
+   "meta": [
+    "Substack",
+    "2026",
+    "USA"
+   ],
+   "areas": [
+    30,
+    28,
+    11
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Lemov shows how shared oral reading of a whole book frees students' working memory for discussion, using classroom video to illustrate how reading together leads to richer conversation.",
+   "region": "USA"
+  },
+  {
+   "type": "read",
+   "title": "Stories are cognitively (psychologically) privileged",
+   "url": "https://douglemov.substack.com/p/stories-are-cognitively-psychologically",
+   "by": "Doug Lemov (Doug Lemov's Field Notes)",
+   "meta": [
+    "Substack",
+    "2026",
+    "USA"
+   ],
+   "areas": [
+    1,
+    2
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Lemov shares notes on Daniel Willingham's explanation of why stories are easier to understand and remember, and what that means for how teachers structure explanations and use shared stories.",
+   "region": "USA"
+  },
+  {
+   "type": "read",
+   "title": "George Bonanno's \"The End of Trauma\" and Notes on \"Trauma\" & \"Trauma Informed\"",
+   "url": "https://douglemov.substack.com/p/george-bonannos-the-end-of-trauma",
+   "by": "Doug Lemov (Doug Lemov's Field Notes)",
+   "meta": [
+    "Substack",
+    "2026",
+    "USA"
+   ],
+   "areas": [
+    20,
+    18
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Lemov recommends George Bonanno's research on resilience and cautions that loose use of the words trauma and trauma-informed in schools can lead to well-meant but counterproductive responses.",
+   "region": "USA"
+  },
+  {
+   "type": "read",
+   "title": "The de-intellectualisation of teaching",
+   "url": "https://hailihughes.substack.com/p/the-de-intellectualisation-of-teaching",
+   "by": "Haili Hughes",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    16,
+    19
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Hughes argues that reducing teaching to a list of approved moves strips out the subject knowledge, judgement and responsiveness that make it intellectual work, and that pupils lose out when that happens.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "When cognitive science becomes a checklist: the problem with generic lesson structures",
+   "url": "https://hailihughes.substack.com/p/when-cognitive-science-becomes-a",
+   "by": "Haili Hughes",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    19,
+    17,
+    2
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Hughes explains how well-meant whole-school lesson structures built from cognitive science can become rigid checklists, and why subject knowledge and teacher judgement must shape how principles are used.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Wellbeing isn't cake in the staff room: it's professionalism done properly",
+   "url": "https://hailihughes.substack.com/p/wellbeing-isnt-cake-in-the-staff",
+   "by": "Haili Hughes",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    21,
+    16
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Hughes argues that staff wellbeing comes less from treats and gestures than from manageable workloads, clear systems, purposeful professional development and a culture that takes teachers' growth seriously.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Death by differentiation",
+   "url": "https://hailihughes.substack.com/p/death-by-differentiation",
+   "by": "Haili Hughes",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    4,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Hughes contrasts differentiation that dumbs down tasks or multiplies planning with responsive teaching, which keeps the learning ambitious for everyone and adjusts support when evidence shows it is needed.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "From principle to practice: lessons I have learnt about implementing lesson principles well",
+   "url": "https://hailihughes.substack.com/p/from-principle-to-practice-lessons",
+   "by": "Haili Hughes",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    17,
+    19,
+    16
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Hughes reflects on a year implementing research-informed lesson principles across a trust, sharing what helps principles move from a published document to consistent, thoughtful practice in classrooms.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "To UDL or not to UDL? I have questions",
+   "url": "https://hailihughes.substack.com/p/to-udl-or-not-to-udl-i-have-questions",
+   "by": "Haili Hughes",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    14,
+    18
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Hughes questions how Universal Design for Learning is presented to teachers, raising concerns about workload, unlimited student choice and drift towards learning-styles thinking.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "'Our kids can't': the soft bigotry of low expectations",
+   "url": "https://hailihughes.substack.com/p/our-kids-cant-the-soft-bigotry-of",
+   "by": "Haili Hughes",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    20,
+    19,
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Prompted by a Victorian primary principal's talk, Hughes examines how the phrase \"our kids can't\" lowers expectations, and how explicit, systematic teaching makes ambitious goals reachable for all students.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Why I hate popsicle sticks for cold calling",
+   "url": "https://hailihughes.substack.com/p/why-i-hate-popsicle-sticks-for-cold",
+   "by": "Haili Hughes",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    23,
+    4
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Hughes explains why drawing names at random is not the same as purposeful cold calling, and how teachers can choose who to ask based on what they need to find out.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Faded scaffolding: keeping challenge high while building independence",
+   "url": "https://hailihughes.substack.com/p/faded-scaffolding-keeping-challenge",
+   "by": "Haili Hughes",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    2,
+    10
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Hughes explains how scaffolds such as sentence starters and writing frames should be temporary and targeted, keeping tasks ambitious and gradually removed as students show they are ready.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Deliberate practice: why great teaching isn't built on experience alone",
+   "url": "https://hailihughes.substack.com/p/deliberate-practice-why-great-teaching",
+   "by": "Haili Hughes",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    16
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Hughes explains why experience alone does not make teachers better, and how focused, repeated rehearsal of specific techniques within coaching helps teachers turn professional learning into classroom practice.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Rehearsal Is More Than Role Play",
+   "url": "https://hailihughes.substack.com/p/rehearsal-is-more-than-role-play",
+   "by": "Haili Hughes",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    16
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Hughes argues that rehearsal in professional learning should not default to role play, and that coaches should ask what kind of practice best suits the particular part of teaching being developed.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Why are we still leaving mentors to figure it out?",
+   "url": "https://hailihughes.substack.com/p/why-are-we-still-leaving-mentors",
+   "by": "Haili Hughes",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    16,
+    21
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Comparing England and Australia, Hughes argues that strong teachers do not automatically make strong mentors, and that mentor training is a worthwhile investment in new teachers and retention.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "Ten Lethal Mutations of Educational Research",
+   "url": "https://hailihughes.substack.com/p/ten-lethal-mutations-of-educational",
+   "by": "Haili Hughes",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    18,
+    17,
+    16
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Hughes names ten ways research gets distorted on its way into schools, such as slogans and rigid rules, and suggests how leaders can keep the nuance of the original evidence.",
+   "region": "UK"
+  },
+  {
+   "type": "read",
+   "title": "\"Completed it, mate\": teacher identity and Australia's reading wars",
+   "url": "https://hailihughes.substack.com/p/completed-it-mate-teacher-identity",
+   "by": "Haili Hughes",
+   "meta": [
+    "Substack",
+    "2026",
+    "UK"
+   ],
+   "areas": [
+    22,
+    18,
+    19
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Hughes reflects on the hostility in Australia's debates about explicit teaching and the science of reading, linking it to teacher identity and suggesting how leaders can help teachers reconsider practice.",
+   "region": "UK"
   },
   {
    "type": "listen",
