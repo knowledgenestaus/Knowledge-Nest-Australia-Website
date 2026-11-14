@@ -87,6 +87,8 @@ ul, ol { padding-left: 1.2rem; }
 .nav :focus-visible, .footer :focus-visible, .skip-nav:focus-visible { outline-color: var(--orange); }
 [id] { scroll-margin-top: 96px; }
 #resultsHeading:focus { outline: none; }
+#resultsHeading { overflow-wrap: anywhere; }
+::selection { background: var(--gold-light); color: var(--navy); }
 
 .container, .container-wide { width: 100%; margin: 0 auto; padding-left: var(--gutter); padding-right: var(--gutter); }
 .container { max-width: var(--container); }
@@ -131,6 +133,14 @@ ul, ol { padding-left: 1.2rem; }
   .nav-brand img { width: 44px; height: 44px; }
   .nav-brand-text { font-size: 1.5rem; }
 }
+/* Without JavaScript the menu button cannot open, so on small screens the links sit in the header itself. */
+@media (max-width: 900px) {
+  html:not(.js) .nav-toggle { display: none; }
+  html:not(.js) .nav-inner { flex-wrap: wrap; padding-bottom: 0.6rem; }
+  html:not(.js) .nav-links { display: flex; position: static; flex-direction: row; flex-wrap: wrap; align-items: center; width: 100%; height: auto; padding: 0; border-top: 0; overflow: visible; }
+  html:not(.js) .nav-links a { padding: 0.5rem 0.75rem; font-family: var(--font-body); font-size: 1rem; border-radius: 50px; }
+  html:not(.js) .nav-links a.nav-cta-link { margin: 0 0 0 0.35rem; }
+}
 
 /* ---------- Buttons ---------- */
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; min-height: 48px; padding: 0.7rem 1.6rem;
@@ -164,7 +174,7 @@ ul, ol { padding-left: 1.2rem; }
 .hero-text, .page-hero-text { min-width: 0; }
 .hero-text > p:not(.hero-tagline) { margin-top: 1.1rem; max-width: 36em; font-size: clamp(1.1rem, 1.6vw, 1.25rem); color: var(--body); }
 .hero-buttons { display: flex; flex-wrap: wrap; align-items: center; gap: 0.9rem 1.5rem; margin-top: 1.25rem; }
-.hero-textlink { display: inline-flex; align-items: center; min-height: 44px; font-weight: 700; color: var(--navy); text-decoration: underline; text-underline-offset: 4px; text-decoration-color: var(--orange); text-decoration-thickness: 2px; }
+.hero-textlink { display: inline-flex; align-items: center; gap: 0.35em; min-height: 44px; font-weight: 700; color: var(--navy); text-decoration: underline; text-underline-offset: 4px; text-decoration-color: var(--orange); text-decoration-thickness: 2px; }
 .hero-logo-area { position: relative; }
 .hero-logo-blob { position: relative; }
 .hero-logo-blob::before { content: ""; position: absolute; inset: 1.1rem -0.9rem -0.9rem 1.1rem; background: var(--navy); border-radius: 22px; }
@@ -187,6 +197,8 @@ ul, ol { padding-left: 1.2rem; }
 /* ---------- Page hero (sub-pages and library) ---------- */
 .page-hero { background: var(--sky); padding: clamp(2rem, 5vw, 3.75rem) 0 clamp(2rem, 5vw, 3.25rem); }
 .page-hero-grid, .page-hero-inner { display: flex; align-items: center; justify-content: space-between; gap: 2.5rem; }
+/* Library pages: the text starts at the same height on every shelf, whatever the length of its heading. */
+.lib-hero .page-hero-inner { align-items: flex-start; }
 .page-hero-text { max-width: 780px; }
 .page-hero-text > p:not(.hero-tagline):not(.lib-practices):not(.page-hero-jump), .page-hero-lead { margin-top: 0.9rem; font-size: clamp(1.08rem, 1.5vw, 1.22rem); color: var(--body); max-width: 40em; }
 .page-hero-illo { flex: 0 0 auto; width: clamp(180px, 24vw, 300px); height: auto; padding: 1rem; background: white; border-radius: 24px; }
@@ -262,18 +274,32 @@ ul, ol { padding-left: 1.2rem; }
 .lib-type { display: inline-block; align-self: flex-start; padding: 0.12rem 0.6rem; border-radius: 5px; font-size: 0.8rem; font-weight: 700; color: var(--navy); background: var(--sky); }
 .lib-type-listen, .lib-type-voice { background: var(--orange-soft); color: #8a3a12; }
 .lib-type-read, .lib-type-curriculum { background: var(--green-pale); color: #2c5a41; }
-.lib-type-research, .lib-type-learn { background: var(--navy); color: white; }
+.lib-type-learn { background: var(--navy); color: white; }
+.lib-type-research { background: var(--line); color: var(--navy); }
 .lib-topics { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .lib-topics a { display: inline-flex; align-items: center; min-height: 36px; padding: 0.3rem 0.8rem; border-radius: 50px; border: 1px solid var(--line); background: white; font-size: 0.8rem; font-weight: 600; color: var(--navy); }
 .lib-topics a:hover { border-color: var(--navy); color: var(--navy); background: var(--sky-pale); }
 .lib-staff ul { padding-left: 1.1rem; display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.97rem; }
 .lib-staff { border-top: 4px solid var(--orange); }
+/* "Show all" expander (the rest of the staff sessions on Learn) */
+.lib-expand { margin-top: 1rem; }
+.lib-expand > summary { display: inline-flex; align-items: center; gap: 0.55rem; min-height: 48px; padding: 0.5rem 1.4rem; border-radius: 50px; border: 2px solid var(--navy); background: white; color: var(--navy); font-weight: 700; cursor: pointer; list-style: none; }
+.lib-expand > summary::-webkit-details-marker { display: none; }
+.lib-expand > summary::after { content: "+"; font-size: 1.35rem; font-weight: 400; line-height: 1; }
+.lib-expand[open] > summary::after { content: "\2212"; }
+.lib-expand > summary:hover { background: var(--navy); color: white; }
+.lib-expand[open] > summary { margin-bottom: 1rem; }
+/* Phones and touch screens: the whole card opens the resource, so a one-line title is not the only thing to tap. */
+@media (max-width: 640px), (hover: none) {
+  .lib-card-title a::after { content: ""; position: absolute; inset: 0; }
+  .lib-card .lib-topics a, .lib-card .lib-listen a, .lib-card .lib-card-foot a, .lib-card .lib-thumb { position: relative; z-index: 1; }
+}
 
 /* Video stills */
 .lib-card.has-thumb { overflow: hidden; }
 .lib-thumb { position: relative; display: flex; align-items: center; justify-content: center; margin: -1.15rem -1.2rem 0.45rem; aspect-ratio: 16 / 9; background: var(--sky-soft); border-bottom: 1px solid var(--line); overflow: hidden; }
 .lib-thumb img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; background: white; transition: transform 0.3s ease; }
-.lib-thumb-logo img { object-fit: contain; padding: 0.9rem 1.1rem; }
+.lib-thumb-logo img { object-fit: contain; padding: 0.5rem; background: var(--sky-soft); }
 .lib-card:hover .lib-thumb-still img { transform: scale(1.04); }
 .lib-thumb-name { max-width: 78%; text-align: center; font-family: var(--font-display); font-style: italic; font-size: 1.2rem; line-height: 1.25; color: var(--navy); }
 .lib-thumb-play { position: absolute; left: 0.75rem; bottom: 0.75rem; width: 40px; height: 40px; border-radius: 50%; background: var(--navy); border: 2px solid white; box-shadow: 0 2px 8px rgba(11,33,71,0.3); }
@@ -283,7 +309,9 @@ ul, ol { padding-left: 1.2rem; }
 .lib-card-head > div { display: flex; flex-direction: column; gap: 0.45rem; min-width: 0; flex: 1; }
 .lib-card-pic { flex-shrink: 0; width: 96px; height: 72px; aspect-ratio: 4 / 3; margin-top: 0.15rem; border-radius: 10px; object-fit: cover; background: var(--sky-soft); border: 1px solid var(--line); }
 .lib-card-art { width: 56px; height: 56px; aspect-ratio: 1; }
-@media (max-width: 420px) { .lib-card-pic { width: 72px; height: 54px; } .lib-card-art { width: 48px; height: 48px; } }
+/* On reading, research and curriculum cards the picture is small and sits to the right, so every title starts on the same left edge. */
+.lib-card-side { order: 2; width: 64px; height: 64px; aspect-ratio: 1; }
+@media (max-width: 420px) { .lib-card-side { width: 56px; height: 56px; } .lib-card-art { width: 48px; height: 48px; } }
 
 /* Shows and Substacks */
 .lib-show { flex-direction: row; align-items: flex-start; gap: 1rem; }
@@ -297,6 +325,8 @@ ul, ol { padding-left: 1.2rem; }
 @media (max-width: 420px) { .lib-show-art { width: 64px; height: 64px; } }
 
 @media (min-width: 1000px) { .lib-grid:has(> .lib-show) { grid-template-columns: repeat(2, 1fr); } }
+/* An odd show out at the end of a two-column list takes the full row. */
+@media (min-width: 640px) { .lib-grid > .lib-show:last-child:nth-child(odd) { grid-column: 1 / -1; } }
 
 /* Groups, headings, jump links */
 .lib-group { margin-bottom: clamp(2.25rem, 5vw, 3.25rem); }
@@ -335,6 +365,9 @@ ul, ol { padding-left: 1.2rem; }
 .lib-reset:hover { background: var(--navy); color: white; }
 .lib-more { margin-top: 1.75rem; text-align: center; }
 .lib-empty { margin-top: 1rem; padding: 1.25rem; text-align: center; background: var(--sky-pale); border-radius: var(--radius); }
+.lib-empty .lib-reset { margin-left: 0.4rem; }
+/* Filters need JavaScript. Without it they are left out and the full list shows. */
+html:not(.js) #libFilters, html:not(.js) #libChips, html:not(.js) #libFilterToggle, html:not(.js) .lib-more { display: none; }
 @media (max-width: 640px) {
   .lib-chips div { flex-wrap: nowrap; overflow-x: auto; margin: 0 calc(-1 * var(--gutter)); padding: 0.2rem var(--gutter) 0.6rem; scrollbar-width: thin; -webkit-overflow-scrolling: touch; }
   .lib-filter-toggle { display: inline-flex; align-items: center; justify-content: center; width: 100%; min-height: 48px; margin-bottom: 1rem; border-radius: 50px; border: 2px solid var(--navy); background: white; color: var(--navy); font: inherit; font-weight: 700; cursor: pointer; }
@@ -374,7 +407,7 @@ ul, ol { padding-left: 1.2rem; }
 .lib-band .lib-eyebrow, .lib-panel-navy .lib-eyebrow, .lib-side-navy .lib-eyebrow { color: var(--gold-light); }
 .lib-own { margin-top: 1.75rem; color: var(--body); }
 .lib-panels { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
-@media (min-width: 820px) { .lib-panels { grid-template-columns: 1.25fr 1fr; } }
+@media (min-width: 820px) { .lib-panels { grid-template-columns: 1.25fr 1fr; align-items: start; } }
 .lib-panel { padding: clamp(1.5rem, 3.5vw, 2.4rem); border-radius: 20px; background: var(--sky-pale); border: 1px solid var(--sky); }
 .lib-panel h2 { font-size: clamp(1.35rem, 2.4vw, 1.75rem); margin-bottom: 0.9rem; }
 .lib-panel p { margin-bottom: 0.85rem; }
@@ -386,6 +419,11 @@ ul, ol { padding-left: 1.2rem; }
 .lib-two { display: flex; flex-wrap: wrap; gap: 2.5rem; align-items: flex-start; }
 .lib-main { flex: 999 1 560px; min-width: 0; }
 .lib-side { flex: 1 1 250px; display: flex; flex-direction: column; gap: 1rem; }
+/* Beside a long list the side column stays in view, so the page never shows an empty column. */
+@media (min-width: 1000px) { .lib-side { position: sticky; top: 112px; align-self: flex-start; max-height: calc(100vh - 128px); overflow-y: auto; scrollbar-width: thin; } }
+/* On a short laptop screen the column is tightened so all of it fits in view (the same illustration is on the library home). */
+@media (min-width: 1000px) and (max-height: 1000px) { .lib-side { gap: 0.75rem; } .lib-side .lib-side-box { padding: 1.1rem 1.2rem; } .lib-side .lib-side-illo { display: none; } }
+@media (min-width: 1000px) and (max-height: 820px) { .lib-side .lib-side-box:last-child { display: none; } }
 .lib-side-box { padding: 1.3rem; border-radius: var(--radius); background: var(--sky-pale); border: 1px solid var(--sky); }
 .lib-side-box h2 { font-size: 1.15rem; margin-bottom: 0.6rem; }
 .lib-side-box p { font-size: 0.98rem; margin-bottom: 0.8rem; }
@@ -443,6 +481,7 @@ ul, ol { padding-left: 1.2rem; }
 
 /* Mission and ribbon */
 .section-paper { background: var(--white); }
+.section-paper + .section-paper { padding-top: 0; }
 .mission-patch { max-width: 820px; margin: 0 auto; padding: clamp(1.75rem, 5vw, 3.25rem); background: var(--sky-soft); border-radius: 24px; text-align: center; }
 .mission-patch-title { margin-bottom: 1.1rem; font-family: var(--font-display); font-style: italic; font-size: 1.15rem; font-weight: 500; color: var(--accent-text); }
 .mission-patch p { margin-bottom: 0.9rem; font-family: var(--font-display); font-size: clamp(1.1rem, 2vw, 1.3rem); line-height: 1.55; color: var(--navy); }
@@ -452,6 +491,7 @@ ul, ol { padding-left: 1.2rem; }
 
 /* Writing: featured cards and the Substack strip */
 .featured-block { margin-bottom: 2.75rem; }
+.featured-block:last-child { margin-bottom: 0; }
 .featured-block-title { margin-bottom: 1.1rem; font-size: 1.3rem; }
 .featured-grid { display: grid; grid-template-columns: 1fr; gap: 1.1rem; }
 @media (min-width: 760px) { .featured-grid { grid-template-columns: repeat(2, 1fr); } }
@@ -471,13 +511,14 @@ ul, ol { padding-left: 1.2rem; }
 .article-strip > .resource-card { flex: 0 0 min(84%, 340px); scroll-snap-align: start; }
 .strip-arrow { position: absolute; top: 38%; z-index: 2; width: 46px; height: 46px; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 1px solid var(--line); background: white; color: var(--navy); cursor: pointer; box-shadow: 0 6px 16px var(--shadow-hover); }
 .strip-arrow svg { width: 20px; height: 20px; }
-.strip-arrow:disabled { opacity: 0.35; cursor: default; }
+.strip-arrow:disabled { visibility: hidden; }
 .strip-arrow-left { left: -0.6rem; }
 .strip-arrow-right { right: -0.6rem; }
+@media (min-width: 1100px) { .strip-arrow-left { left: -22px; } .strip-arrow-right { right: -22px; } }
 @media (max-width: 760px) { .strip-arrow { display: none; } }
 
 /* Forms */
-.enquiry-form { max-width: 720px; margin: 0 auto; padding: clamp(1.4rem, 4vw, 2.5rem); background: white; border: 1px solid var(--line); border-radius: 20px; box-shadow: 0 12px 34px var(--shadow); }
+.enquiry-form { max-width: 680px; margin: 0; padding: clamp(1.4rem, 4vw, 2.5rem); background: white; border: 1px solid var(--line); border-radius: 20px; box-shadow: 0 12px 34px var(--shadow); }
 .enquiry-form label { display: block; margin: 1.1rem 0 0.35rem; font-weight: 700; color: var(--navy); }
 .enquiry-form input[type="text"], .enquiry-form input[type="email"], .enquiry-form input[type="tel"], .enquiry-form select, .enquiry-form textarea {
   width: 100%; min-height: 50px; padding: 0.7rem 0.9rem; border: 1.5px solid #6b7a90; border-radius: var(--radius-sm); background: white; font: inherit; color: var(--ink); }
@@ -511,6 +552,7 @@ ul, ol { padding-left: 1.2rem; }
 .footer-connect-row a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(255,255,255,0.4); }
 .footer-sep { opacity: 0.4; }
 @media (max-width: 600px) { .footer-sep { display: none; } }
+@media (max-width: 560px) { .footer-nav { display: grid; grid-template-columns: repeat(3, auto); justify-content: start; column-gap: 1.25rem; } }
 .footer-cta-row { display: flex; flex-wrap: wrap; gap: 0.75rem; }
 .footer .btn-accent { color: var(--navy-deep); }
 .footer-credit { margin-top: 2rem; max-width: 46em; font-size: 0.92rem; color: rgba(255,255,255,0.75); }
@@ -526,7 +568,12 @@ ul, ol { padding-left: 1.2rem; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
-@media print { .nav, .footer, .lib-filters, .lib-chips, .lib-search { display: none; } }
+@media print {
+  .nav, .footer, .lib-filters, .lib-chips, .lib-search, .lib-more, .lib-filter-toggle, .lib-toc { display: none; }
+  .lib-card { break-inside: avoid; }
+  .lib-card[hidden] { display: flex !important; }
+  .lib-card-title a::after { content: " (" attr(href) ")"; position: static; font-size: 0.8em; font-weight: 400; word-break: break-all; }
+}
 
 /* ---------- The Secrets of How We Learn (unlinked page, kept as it was) ---------- */
 .status-pill {

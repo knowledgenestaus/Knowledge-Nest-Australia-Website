@@ -58,7 +58,15 @@
   text.addEventListener('input', function () { clearTimeout(timer); timer = setTimeout(changed, 200); });
   form.addEventListener('submit', function (ev) { ev.preventDefault(); });
   form.addEventListener('reset', function () { setTimeout(changed, 0); });
-  if (more) more.addEventListener('click', function () { shown += PAGE; apply(); });
+  if (more) more.addEventListener('click', function () {
+    var before = shown;
+    shown += PAGE;
+    apply();
+    // Carry on from the first card that has just appeared, so keyboard focus is not left on a button that has moved or gone.
+    var next = cards.filter(function (card) { return !card.hidden; })[before];
+    var link = next && next.querySelector('.lib-card-title a');
+    if (link) link.focus();
+  });
 
   // Links such as library-watch.html?areas=7 open with that filter already set.
   var initial = new URLSearchParams(location.search);

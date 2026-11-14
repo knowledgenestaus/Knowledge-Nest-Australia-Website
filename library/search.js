@@ -10,9 +10,35 @@
   if (!form || !input || !section) return;
 
   var LABELS = { watch: 'Watch', listen: 'Listen', read: 'Read', research: 'Research', voice: 'Voices', curriculum: 'Curriculum', learn: 'Learn' };
-  var MAX = 60;
+  var SUGGEST = 'mailto:jo@knowledgenest.com.au?subject=Library%20suggestion';
+  var PAGE = 60;   // results shown at a time; "Show more" brings the next lot
   var index = null;
   var loading = null;
+
+  // American and Australian spellings find each other: "behavior" also looks for "behaviour", and the reverse.
+  // Each pair is the start of a word, so "organiz" covers organize, organizing and organization.
+  var SPELLINGS = [
+    ['behavior', 'behaviour'], ['color', 'colour'], ['favor', 'favour'], ['honor', 'honour'], ['labor', 'labour'],
+    ['center', 'centre'], ['math', 'maths'], ['modeling', 'modelling'], ['modeled', 'modelled'],
+    ['practice', 'practise'], ['practicing', 'practising'], ['judgment', 'judgement'], ['learned', 'learnt'],
+    ['program', 'programme'], ['fulfill', 'fulfil'], ['skillful', 'skilful'], ['enrollment', 'enrolment'],
+    ['organiz', 'organis'], ['recogniz', 'recognis'], ['summariz', 'summaris'], ['prioritiz', 'prioritis'],
+    ['emphasiz', 'emphasis'], ['memoriz', 'memoris'], ['generaliz', 'generalis'], ['specializ', 'specialis'],
+    ['visualiz', 'visualis'], ['personaliz', 'personalis'], ['analyz', 'analys'], ['dialog', 'dialogue'], ['catalog', 'catalogue']
+  ];
+
+  function spellings(word) {
+    var out = [word];
+    SPELLINGS.forEach(function (pair) {
+      [[pair[0], pair[1]], [pair[1], pair[0]]].forEach(function (p) {
+        if (word.indexOf(p[0]) === 0) {
+          var other = p[1] + word.slice(p[0].length);
+          if (out.indexOf(other) === -1) out.push(other);
+        }
+      });
+    });
+    return out;
+  }
 
   function load() {
     if (index) return Promise.resolve(index);
@@ -21,7 +47,8 @@
         .then(function (r) { return r.ok ? r.json() : Promise.reject(new Error('HTTP ' + r.status)); })
         .then(function (data) {
           index = data.map(function (x) {
-            x.hay = [x.t, x.b, (x.m || []).join(' '), (x.a || []).join(' '), LABELS[x.y] || '', x.d].join(' ').toLowerCase();
+            // x.s is the card's topic line and summary: searched, but not shown in the results.
+            x.hay = [x.t, x.b, (x.m || []).join(' '), (x.a || []).join(' '), LABELS[x.y] || '', x.d, x.s || ''].join(' ').toLowerCase();
             return x;
           });
           return index;
@@ -44,7 +71,11 @@
     // House style: the part of a title before its first colon is the bold lead-in (see .lead-in in styles.css).
     var link = el('a', '');
     var parts = /^([\s\S]*?[^\s:]:)(\s+\S[\s\S]*)$/.exec(x.t);
-    if (parts) { link.appendChild(el('span', 'lead-in', parts[1])); link.appendChild(el('span', 'lead-rest', parts[2])); }
+    if (parts) {
+      link.appendChild(el('span', 'lead-in', parts[1]));
+      // A lone "A", "An" or "The" stays with the word after it, as on the library pages.
+      link.appendChild(el('span', 'lead-rest', parts[2].replace(/^(\s+(?:A|An|The))\s/, '$1 ')));
+    }
     else { link.textContent = x.t; }
     link.href = x.u; link.target = '_blank'; link.rel = 'noopener';
     link.appendChild(el('span', 'sr-only', ' (opens in a new tab)'));
@@ -58,23 +89,63 @@
     return a;
   }
 
+  function setAddress(q) {
+    try { history.replaceState(null, '', q ? '?q=' + encodeURIComponent(q) : location.pathname); } catch (e) {}
+  }
+
+  function message(q, text) {
+    list.textContent = '';
+    heading.textContent = 'Search results for "' + q + '"';
+    note.textContent = text;
+    section.hidden = false;
+  }
+
   function run(q, focus) {
     q = (q || '').trim();
-    if (q.length < 2) { section.hidden = true; return; }
-    var words = q.toLowerCase().split(/\s+/);
+    // Words are matched without the punctuation around them, so "fluency." and "Ochre: maths" still find things.
+    var words = q.toLowerCase().split(/\s+/).map(function (w) { return w.replace(/^[^a-z0-9]+|[^a-z0-9]+$/g, ''); }).filter(Boolean);
+    setAddress(q);
+    if (!q) { section.hidden = true; return; }
+    if (q.length < 2 || !words.length) { message(q, 'Type at least two letters.'); return; }
     load().then(function (data) {
       // Match each word at the start of a word, so "hinge" does not match inside another word.
-      var tests = words.map(function (w) { return new RegExp('(^|[^a-z0-9])' + w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')); });
+      var tests = words.map(function (w) {
+        var forms = spellings(w).map(function (f) { return f.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); });
+        return new RegExp('(^|[^a-z0-9])(' + forms.join('|') + ')');
+      });
       var hits = data.filter(function (x) { return tests.every(function (re) { return re.test(x.hay); }); });
+      var shown = 0;
       list.textContent = '';
       var grid = el('div', 'lib-grid');
-      hits.slice(0, MAX).forEach(function (x) { grid.appendChild(card(x)); });
       list.appendChild(grid);
+      var moreWrap = el('p', 'lib-more');
+      var more = el('button', 'btn btn-primary');
+      more.type = 'button';
+      moreWrap.appendChild(more);
+      list.appendChild(moreWrap);
+
+      function showMore(moveFocus) {
+        var first = null;
+        hits.slice(shown, shown + PAGE).forEach(function (x) { var c = grid.appendChild(card(x)); if (!first) first = c; });
+        shown = Math.min(shown + PAGE, hits.length);
+        moreWrap.hidden = shown >= hits.length;
+        more.textContent = 'Show more (' + (hits.length - shown) + ' left)';
+        note.textContent = hits.length + (hits.length === 1 ? ' entry' : ' entries') + (shown < hits.length ? ', showing the first ' + shown : '') + '.';
+        // Keyboard and screen reader users carry on from the first new result.
+        if (moveFocus && first) first.querySelector('.lib-card-title a').focus();
+      }
+      more.addEventListener('click', function () { showMore(true); });
+
       heading.textContent = 'Search results for "' + q + '"';
       if (!hits.length) {
-        note.textContent = 'Nothing found yet. Try a broader word, or browse by type or area below. If something is missing, email a suggestion.';
+        moreWrap.hidden = true;
+        note.textContent = 'Nothing found yet. Try a broader word, or browse by type or area below. If something is missing, ';
+        var mail = el('a', '', 'email a suggestion');
+        mail.href = SUGGEST;
+        note.appendChild(mail);
+        note.appendChild(document.createTextNode('.'));
       } else {
-        note.textContent = hits.length + (hits.length === 1 ? ' entry' : ' entries') + (hits.length > MAX ? ', showing the first ' + MAX : '') + '.';
+        showMore(false);
       }
       section.hidden = false;
       if (focus) { heading.focus(); section.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
@@ -87,15 +158,13 @@
 
   form.addEventListener('submit', function (ev) {
     ev.preventDefault();
-    var q = input.value;
-    try { history.replaceState(null, '', q.trim() ? '?q=' + encodeURIComponent(q.trim()) : location.pathname); } catch (e) {}
-    run(q, true);
+    run(input.value, true);
   });
   var timer;
   input.addEventListener('input', function () { clearTimeout(timer); timer = setTimeout(function () { run(input.value, false); }, 200); });
   clear.addEventListener('click', function () {
     input.value = ''; section.hidden = true;
-    try { history.replaceState(null, '', location.pathname); } catch (e) {}
+    setAddress('');
     input.focus();
   });
 
