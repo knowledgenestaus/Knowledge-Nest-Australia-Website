@@ -611,3 +611,6 @@ section[id], [id].lib-group { scroll-margin-top: 96px; }
 .section-header-illo { display: flex; align-items: center; gap: 1.5rem; max-width: 820px; }
 .section-illo { flex: 0 0 auto; width: clamp(96px, 14vw, 150px); height: auto; border-radius: 18px; }
 .section-tint .section-illo { padding: 0.5rem; background: white; }
+.lib-domain-illo { width: 130px; height: auto; margin: -0.3rem 0 0.5rem -0.4rem; }
+.lib-domain.lib-domain-pic { border-top-width: 1px; border-top-color: var(--line); }
+@media (max-width: 639px) { .lib-domain.lib-domain-pic { display: grid; grid-template-columns: 84px 1fr; column-gap: 0.9rem; align-items: start; } .lib-domain-pic .lib-domain-illo { width: 84px; margin: 0; grid-row: 1 / span 2; } .lib-domain-pic h3 { align-self: center; } .lib-domain-pic ul { grid-column: 2; } }

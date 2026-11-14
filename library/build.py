@@ -360,7 +360,8 @@ def area_index(counts):
         links = "".join('<li><a href="%s">%s</a> <span class="lib-count">%d</span></li>' % (area_page(a), e(a["name"]), counts.get(a["n"], 0))
                         for a in AREAS if a["domain"] == d and counts.get(a["n"], 0))
         if links:
-            cols.append('<div class="lib-domain"><h3>%s</h3><ul>%s</ul></div>' % (e(d), links))
+            pic = illo("domain-" + re.sub(r"[^a-z0-9]+", "-", d.lower()).strip("-"), "lib-domain-illo", 200)
+            cols.append('<div class="lib-domain%s">%s<h3>%s</h3><ul>%s</ul></div>' % (" lib-domain-pic" if pic else "", pic, e(d), links))
     return '<div class="lib-domains">%s</div>' % "".join(cols)
 
 
