@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Get in Touch | Knowledge Nest Educational Consulting</title>
-  <meta name="description" content="Enquire about coaching, professional learning or a school partnership with Knowledge Nest, or book a free 20-minute chat with Jo Griffin.">
+  <title>Get in Touch | Knowledge Nest</title>
+  <meta name="description" content="Get in touch with Jo Griffin at Knowledge Nest to share practice, ask a question, suggest a resource for the library, or invite her to speak.">
   <meta name="author" content="Jo Griffin">
   <meta name="theme-color" content="#112e5b">
   <link rel="canonical" href="https://knowledgenest.com.au/enquiry.html">
@@ -12,8 +12,8 @@
   <meta property="og:locale" content="en_AU">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://knowledgenest.com.au/enquiry.html">
-  <meta property="og:title" content="Get in Touch | Knowledge Nest Educational Consulting">
-  <meta property="og:description" content="Enquire about coaching, professional learning or a school partnership with Knowledge Nest, or book a free 20-minute chat with Jo Griffin.">
+  <meta property="og:title" content="Get in Touch | Knowledge Nest">
+  <meta property="og:description" content="Get in touch with Jo Griffin at Knowledge Nest to share practice, ask a question, suggest a resource for the library, or invite her to speak.">
   <meta property="og:image" content="https://knowledgenest.com.au/assets/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -25,7 +25,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap">
-  <link rel="stylesheet" href="styles.css?v=54">
+  <link rel="stylesheet" href="styles.css?v=90">
   <script>document.documentElement.classList.add('js');</script>
   <script type="application/ld+json">
 {
@@ -64,9 +64,7 @@
     margin: 0 auto;
     background: white;
     border-radius: 16px;
-    padding: 3rem;
-    outline: 2px dashed var(--border);
-    outline-offset: -8px;
+    padding: clamp(1.4rem, 4vw, 2.75rem);
     box-shadow: 0 4px 20px var(--shadow);
   }
 
@@ -83,8 +81,8 @@
   .enquiry-form textarea {
     width: 100%;
     padding: 0.85rem 1rem;
-    border: 1px solid #8c8073;
-    border-radius: 8px;
+    border: 1.5px solid #6b7a90;
+    border-radius: var(--radius-sm);
     font-family: var(--font-body);
     font-size: 1rem;
     transition: border-color 0.3s;
@@ -95,11 +93,11 @@
   .enquiry-form select:focus,
   .enquiry-form textarea:focus {
     border-color: var(--navy);
-    outline: 3px solid var(--gold);
+    outline: 3px solid var(--navy);
     outline-offset: 2px;
   }
 
-  .enquiry-form input[type="checkbox"]:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+  .enquiry-form input[type="checkbox"]:focus-visible { outline: 3px solid var(--navy); outline-offset: 2px; }
 
   .checkbox-fieldset { border: none; padding: 0; margin: 0; }
   .checkbox-fieldset legend { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.6rem; color: var(--text-dark); padding: 0; }
@@ -131,48 +129,24 @@
     margin-bottom: 0;
   }
 
-  .prefer-chat {
-    text-align: center;
-    margin-top: 3rem;
-    padding-top: 2.5rem;
-    border-top: 2px dashed var(--border);
-  }
-
-  .prefer-chat h2 {
-    margin-bottom: 0.5rem;
-  }
-
-  .prefer-chat p {
-    margin-bottom: 1.5rem;
-    color: var(--text-body);
-  }
   </style>
 </head>
 <body>
 <a href="#main-content" class="skip-nav">Skip to content</a>
-
-<!-- Top Bar -->
-<div class="top-bar">
-  <div class="container-wide top-bar-inner">
-    <a href="mailto:jo@knowledgenest.com.au"><svg aria-hidden="true" focusable="false" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="4" width="16" height="12" rx="2"/><path d="M2 4l8 6 8-6"/></svg> jo@knowledgenest.com.au</a>
-    <a href="https://www.linkedin.com/in/jo-griffin-australia" target="_blank" rel="noopener"><svg aria-hidden="true" focusable="false" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="2" width="16" height="16" rx="3"/><path d="M6 8v6M6 6v.01M10 14v-4a2 2 0 014 0v4M10 8v6"/></svg> LinkedIn<span class="sr-only"> (opens in a new tab)</span></a>
-  </div>
-</div>
 
 <!-- Navigation -->
 <nav class="nav" id="nav" aria-label="Main">
   <div class="container-wide nav-inner">
     <a href="index.html" class="nav-brand">
       <img src="assets/logo-nav.webp" alt="" width="90" height="90">
-      <div class="nav-brand-text">Knowledge Nest<span>Educational Consulting</span></div>
+      <div class="nav-brand-text">Knowledge Nest<span>Teaching and learning with heart</span></div>
     </a>
     <button class="nav-toggle" id="navToggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Home</a></li>
+      <li><a href="library.html">Library</a></li>
+      <li><a href="resources.html">Jo's Writing</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="secrets-of-how-we-learn.html">How We Learn</a></li>
-      <li><a href="resources.html">Resources</a></li>
       <li><a href="enquiry.html" class="nav-cta-link active" aria-current="page">Get in Touch</a></li>
     </ul>
   </div>
@@ -183,21 +157,12 @@
 <!-- Page Hero -->
 <section class="page-hero">
   <div class="container page-hero-grid">
-    <div class="page-hero-sticker">
-      <img src="assets/sticker-bird.webp" alt="" width="480" height="320">
-    </div>
     <div class="page-hero-text">
-      <p class="hero-tagline">Enquire</p>
-      <h1>Get in Touch</h1>
-      <p>Tell us about your school and we'll be in touch to discuss how we can help.</p>
+      <p class="hero-tagline">Connect</p>
+      <h1>Get in touch</h1>
+      <p>Say hello, ask a question or share what you're working on. There is always more we can learn from one another.</p>
     </div>
-  </div>
-  <div class="wave-bottom">
-    <svg aria-hidden="true" focusable="false" viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z" fill="#ffffff"/>
-      <path d="M0,30 C240,65 480,-5 720,30 C960,65 1200,-5 1440,30" fill="none" stroke="rgba(232,213,183,0.3)" stroke-width="2" stroke-dasharray="8,10" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
-    </svg>
-  </div>
+  </div> 
 </section>
 
 <!-- Enquiry Form -->
@@ -206,32 +171,31 @@
     <div class="enquiry-form reveal" id="enquiry-form">
       <div class="form-success" id="formSuccess" tabindex="-1" style="display:none; text-align:center; padding:3rem 2rem;">
         <h2 style="color:var(--navy); margin-bottom:1rem;">Thank you!</h2>
-        <p style="font-size:1.1rem; color:var(--text-body); margin-bottom:1.5rem;">Your enquiry has been sent. Jo will be in touch within 1-2 business days.</p>
-        <a href="index.html" class="btn btn-primary">Back to Home</a>
+        <p style="font-size:1.1rem; color:var(--text-body); margin-bottom:1.5rem;">Your message has been sent. I'll be in touch as soon as I can.</p>
+        <a href="index.html" class="btn btn-primary">Back to home</a>
       </div>
-      <!-- FORMSPREE: Replace YOUR_FORM_ID below with your actual Formspree form ID.
-           1. Go to https://formspree.io and create a free account
-           2. Create a new form, copy the form ID (e.g. "xwkgjqab")
-           3. Replace YOUR_FORM_ID with that ID -->
+      <div class="availability-note">
+        <p>I'm dialling back my consulting, but I'm always happy to swap notes with other teachers and leaders, and I'd love to speak at conferences and events. If you know a resource that belongs in the library, send it through here too.</p>
+      </div>
       <form action="https://formspree.io/f/xdaplrjq" method="POST">
         <p class="form-note">Fields marked <span class="req" aria-hidden="true">*</span><span class="sr-only">with an asterisk</span> are required.</p>
-        <input type="hidden" name="_subject" value="New enquiry from Knowledge Nest website">
+        <input type="hidden" name="_subject" value="New message from Knowledge Nest website">
         <input type="hidden" name="_next" value="https://knowledgenest.com.au/enquiry.html?sent=true">
         <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
 
-        <label for="name">Your Name <span class="req" aria-hidden="true">*</span></label>
+        <label for="name">Your name <span class="req" aria-hidden="true">*</span></label>
         <input type="text" id="name" name="name" required autocomplete="name" placeholder="Full name">
 
-        <label for="email">Email Address <span class="req" aria-hidden="true">*</span></label>
+        <label for="email">Email address <span class="req" aria-hidden="true">*</span></label>
         <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@school.edu.au">
 
-        <label for="phone">Phone Number (optional)</label>
+        <label for="phone">Phone number (optional)</label>
         <input type="tel" id="phone" name="phone" autocomplete="tel">
 
-        <label for="school">School / Organisation Name <span class="req" aria-hidden="true">*</span></label>
-        <input type="text" id="school" name="school" required autocomplete="organization" placeholder="e.g. Sunshine Primary School">
+        <label for="school">School or organisation (optional)</label>
+        <input type="text" id="school" name="school" autocomplete="organization" placeholder="e.g. Sunshine Primary School">
 
-        <label for="role">Your Role</label>
+        <label for="role">Your role</label>
         <select id="role" name="role" autocomplete="organization-title">
           <option value="" disabled selected>Select your role</option>
           <option value="Principal">Principal</option>
@@ -244,47 +208,23 @@
         </select>
 
         <fieldset class="checkbox-fieldset">
-        <legend>Services of Interest</legend>
+        <legend>What would you like to talk about?</legend>
         <div class="checkbox-group">
-          <label class="checkbox-label"><input type="checkbox" name="services" value="Science of Learning"> Science of Learning</label>
-          <label class="checkbox-label"><input type="checkbox" name="services" value="Science of Reading"> Science of Reading</label>
-          <label class="checkbox-label"><input type="checkbox" name="services" value="Knowledge-Rich Curriculum"> Knowledge-Rich Curriculum</label>
-          <label class="checkbox-label"><input type="checkbox" name="services" value="MTSS"> MTSS</label>
-          <label class="checkbox-label"><input type="checkbox" name="services" value="Change Management & Implementation Science"> Change Management &amp; Implementation Science</label>
-          <label class="checkbox-label"><input type="checkbox" name="services" value="Instructional Playbooks"> Instructional Playbooks</label>
-          <label class="checkbox-label"><input type="checkbox" name="services" value="The Secrets of How We Learn (student curriculum)" id="interest-secrets"> The Secrets of How We Learn (student curriculum)</label>
+          <label class="checkbox-label"><input type="checkbox" name="topics" value="Speaking at an event"> Speaking at an event</label>
+          <label class="checkbox-label"><input type="checkbox" name="topics" value="Sharing practice or swapping ideas"> Sharing practice or swapping ideas</label>
+          <label class="checkbox-label"><input type="checkbox" name="topics" value="A question about a resource"> A question about a resource</label>
+          <label class="checkbox-label"><input type="checkbox" name="topics" value="Suggesting a resource for the library"> Suggesting a resource for the library</label>
         </div>
         </fieldset>
 
-        <label for="engagement">Preferred Engagement Type</label>
-        <select id="engagement" name="engagement">
-          <option value="" disabled selected>Select engagement type</option>
-          <option value="Consultation Call">Consultation Call</option>
-          <option value="Professional Learning Workshop">Professional Learning Workshop</option>
-          <option value="1:1 Coaching">1:1 Coaching</option>
-          <option value="Ongoing Partnership">Ongoing Partnership</option>
-          <option value="Not Sure Yet">Not Sure Yet</option>
-        </select>
+        <label for="message">Your message</label>
+        <textarea id="message" name="message" placeholder="What's on your mind? (optional)"></textarea>
 
-        <label for="message">Your Message</label>
-        <textarea id="message" name="message" placeholder="Tell us a bit about your school's needs or goals (optional)"></textarea>
-
-        <button type="submit" class="btn btn-primary">Send Enquiry</button>
+        <p class="form-note" style="margin:0;">Your details are sent to me by email through Formspree and are used only to reply to you. They are never shared or added to a mailing list.</p>
+        <button type="submit" class="btn btn-primary">Send message</button>
       </form>
-
-      <div class="prefer-chat">
-        <h2>Prefer to chat?</h2>
-        <p>Sometimes a conversation is the best place to start. Book a free 20-minute discovery call to discuss your school's needs.</p>
-        <a href="https://calendly.com/jo-knowledgenest/20min" class="btn btn-coral">Book a Free Chat</a>
-      </div>
     </div>
-  </div>
-  <div class="wave-bottom">
-    <svg aria-hidden="true" focusable="false" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,22 C200,48 420,5 640,30 C860,55 1060,10 1260,32 C1380,42 1430,18 1440,25 L1440,60 L0,60 Z" fill="#112e5b"/>
-      <path d="M0,32 C200,55 420,18 640,40 C860,60 1060,22 1260,42 C1380,50 1430,28 1440,35" fill="none" stroke="rgba(232,213,183,0.3)" stroke-width="2" stroke-dasharray="8,10" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
-    </svg>
-  </div>
+  </div> 
 </section>
 
 </main>
@@ -293,22 +233,17 @@
 <footer class="footer">
   <div class="container-wide">
     <div class="footer-compact">
-      <div class="footer-logo-watermark">
-        <img src="assets/logo-nav.webp" alt="" width="200" height="200" loading="lazy">
-      </div>
       <div class="footer-compact-main">
         <div class="footer-brand-row">
           <span class="footer-brand-name">Knowledge Nest</span>
-          <span class="footer-brand-sub">Educational Consulting</span>
+          <span class="footer-brand-sub">Teaching and learning with heart</span>
         </div>
-        <p class="footer-tagline">Bridging the gap between research and practice.</p>
+        <p class="footer-tagline">A free library of other people's brilliant work, linked and credited. Know something that belongs here? <a href="mailto:jo@knowledgenest.com.au?subject=Library%20suggestion">Email a suggestion</a>.</p>
         <nav class="footer-nav" aria-label="Footer">
           <a href="index.html">Home</a>
+          <a href="library.html">Library</a>
+          <a href="resources.html">Jo's Writing</a>
           <a href="about.html">About</a>
-          <a href="services.html">Services</a>
-          <a href="secrets-of-how-we-learn.html">How We Learn</a>
-          <a href="resources.html">Resources</a>
-          <a href="https://coachingnest.com.au/">Coaching Nest</a>
           <a href="enquiry.html">Get in Touch</a>
         </nav>
         <div class="footer-connect-row">
@@ -317,10 +252,6 @@
           <a href="https://www.linkedin.com/in/jo-griffin-australia" target="_blank" rel="noopener">LinkedIn<span class="sr-only"> (opens in a new tab)</span></a>
           <span class="footer-sep">|</span>
           <a href="https://knowledgenestaustralia.substack.com/" target="_blank" rel="noopener">Substack<span class="sr-only"> (opens in a new tab)</span></a>
-        </div>
-        <div class="footer-cta-row">
-          <a href="enquiry.html" class="btn btn-sandstone btn-sm">Get in Touch</a>
-          <a href="https://calendly.com/jo-knowledgenest/20min" class="btn btn-ghost-white btn-sm">Book a Free Chat</a>
         </div>
       </div>
     </div>
@@ -334,22 +265,25 @@
     const links = document.getElementById('navLinks');
     const setOpen = (open) => { toggle.classList.toggle('active', open); links.classList.toggle('open', open); toggle.setAttribute('aria-expanded', String(open)); };
     toggle.addEventListener('click', () => setOpen(!links.classList.contains('open')));
-    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && links.classList.contains('open')) { setOpen(false); toggle.focus(); } });
+    links.addEventListener('focusout', (e) => { if (links.classList.contains('open') && e.relatedTarget && !links.contains(e.relatedTarget) && e.relatedTarget !== toggle) setOpen(false); });
+    document.addEventListener('keydown', (e) => {
+      if (!links.classList.contains('open')) return;
+      if (e.key === 'Escape') { setOpen(false); toggle.focus(); return; }
+      if (e.key !== 'Tab') return;
+      const items = links.querySelectorAll('a');
+      const last = items[items.length - 1];
+      if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); toggle.focus(); }
+      else if (e.shiftKey && document.activeElement === toggle) { e.preventDefault(); last.focus(); }
+    });
   })();
   window.addEventListener('scroll', () => { document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 20); });
   const obs = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } }); }, { threshold: 0.1 });
   document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 
-  // Arriving from a "register interest" link pre-ticks that option
-  if (new URLSearchParams(window.location.search).get('interest') === 'secrets') {
-    const box = document.getElementById('interest-secrets');
-    if (box) box.checked = true;
-  }
-
   // Show success message if redirected back after form submission
   if (window.location.search.includes('sent=true')) {
     document.querySelector('form').style.display = 'none';
-    document.querySelector('.prefer-chat').style.display = 'none';
+    document.querySelector('.availability-note').style.display = 'none';
     const success = document.getElementById('formSuccess');
     success.style.display = 'block';
     success.focus();
