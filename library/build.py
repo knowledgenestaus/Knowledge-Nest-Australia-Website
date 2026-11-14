@@ -639,7 +639,7 @@ def build_types():
             def show_card(s):
                 # Cover art is loaded from the podcast platform's own image address; nothing is copied to this site.
                 if s.get("art"):
-                    icon = '<img class="lib-show-art" src="%s" alt="" width="72" height="72" loading="lazy" decoding="async" referrerpolicy="no-referrer">' % ea(s["art"])
+                    icon = '<img class="lib-show-art" src="%s" alt="" width="72" height="72" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.style.visibility=\'hidden\'">' % ea(s["art"])
                 else:
                     icon = '<span class="lib-show-art lib-show-initial" aria-hidden="true">%s</span>' % e(s["title"][:1])
                 listen = []
