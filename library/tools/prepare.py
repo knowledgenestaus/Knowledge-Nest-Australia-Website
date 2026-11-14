@@ -133,13 +133,13 @@ shows=[JM]+shows
 have={x['title'] for x in shows}
 EXTRA_SHOWS=[{'title':'Sold a Story','by':'Emily Hanford, APM Reports','url':'https://features.apmreports.org/sold-a-story/','meta':['Reading and phonics','USA'],'note':'Seasons 1 and 2'},
  {'title':'Progressively Incorrect','by':'Zach Groshell','url':'https://educationrickshaw.com/podcast/','meta':['General teaching','USA']},
- {'title':'Science of Reading: The Podcast','by':'Amplify','url':'https://amplify.com/science-of-reading-the-podcast/','meta':['Reading and phonics','USA']},
- {'title':'Teacher Takeaway','by':'','url':'https://podcasts.apple.com/au/podcast/teacher-takeaway/id1565473871','meta':['General teaching','Australia']},
- {'title':"Schoolin' Around",'by':'Branching Minds','url':'https://podcasts.apple.com/us/podcast/schoolin-around/id1653176434','meta':['Tiered support','USA']}]
+ {'title':'Science of Reading: The Podcast','by':'Amplify','url':'https://amplify.com/science-of-reading-the-podcast/','meta':['Reading and phonics','USA']}]
 for x in EXTRA_SHOWS:
     if x['title'] in have: shows=[x if y['title']==x['title'] else y for y in shows]
     else: shows.append(x)
-shows=[x for x in shows if x['title']!='The Art of Teaching']  # link could not be matched to the right show
+# Left out: The Art of Teaching, Schoolin' Around and Teacher Takeaway (removed November 2026: not aligned with the
+# science of learning and science of reading focus of the library).
+shows=[x for x in shows if x['title'] not in ('The Art of Teaching',"Schoolin' Around",'Teacher Takeaway')]
 ART=json.load(open(os.path.join(DATA_DIR,'shows.json')))
 ALIAS={'Mind the Gap: Making Education Work Across the Globe':'Mind the Gap'}
 for x in shows:

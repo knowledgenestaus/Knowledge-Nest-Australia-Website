@@ -2463,29 +2463,6 @@
    "kind": "webinar"
   },
   {
-   "strand": "Supporting students with additional needs",
-   "title": "Dr Kate de Bruin: Using universal design principles to support every student",
-   "url": "https://www.youtube.com/watch?v=W26pzgozUxY",
-   "by": "Learning Difficulties Australia, with Kate de Bruin",
-   "meta": [
-    "About 1 hour",
-    "Australia"
-   ],
-   "areas": [
-    14,
-    2,
-    25
-   ],
-   "tags": [
-    "Free"
-   ],
-   "summary": "Inclusive education researcher Dr Kate de Bruin presents for Learning Difficulties Australia on using universal design principles to support every student.",
-   "region": "Australia",
-   "length": "30 to 60 minutes",
-   "audience": "Teachers",
-   "kind": "webinar"
-  },
-  {
    "strand": "Developmental language disorder",
    "title": "Understanding DLD: Developmental language disorder, with Tiffany Hogan",
    "url": "https://www.youtube.com/watch?v=ScnKXXRLihU",
@@ -2896,29 +2873,6 @@
     "Free"
    ],
    "summary": "An episode of the UK podcast Thinking Deeply about Primary Education on why handwriting is hard to teach well and what teachers can do about it. This is the video recording of the episode.",
-   "region": "UK",
-   "length": "30 to 60 minutes",
-   "audience": "Teachers",
-   "kind": "interview"
-  },
-  {
-   "strand": "Dyscalculia and maths difficulties",
-   "title": "Steve Chinn: How to teach maths, understanding learners' needs",
-   "url": "https://www.youtube.com/watch?v=_4vFSBMqBi8",
-   "by": "The Dyscalculia Network, with Steve Chinn",
-   "meta": [
-    "About 35 minutes",
-    "UK"
-   ],
-   "areas": [
-    38,
-    14,
-    25
-   ],
-   "tags": [
-    "Free"
-   ],
-   "summary": "Rob Jennings of The Dyscalculia Network interviews Steve Chinn, a long-standing UK specialist in maths learning difficulties, about his book on teaching maths with learners' needs in mind.",
    "region": "UK",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
@@ -4067,6 +4021,66 @@
    "audience": "Teachers",
    "region": "USA",
    "kind": "explainer"
+  },
+  {
+   "title": "Decoding the science of learning, with Nathaniel Swain",
+   "url": "https://www.youtube.com/watch?v=LoT32PwY9mc",
+   "by": "Teachers Talk Radio, with Jamie Clark and Nathaniel Swain",
+   "meta": [
+    "2024",
+    "UK"
+   ],
+   "areas": [
+    1,
+    2
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Jamie Clark talks with Australian teacher and researcher Nathaniel Swain about the science of learning movement and practical classroom strategies drawn from it.",
+   "audience": "Teachers",
+   "region": "UK",
+   "kind": "interview"
+  },
+  {
+   "title": "Direct instruction demystified, with Zach Groshell",
+   "url": "https://www.youtube.com/watch?v=7ExMCHs5pss",
+   "by": "Teachers Talk Radio, with Jamie Clark and Zach Groshell",
+   "meta": [
+    "2024",
+    "UK"
+   ],
+   "areas": [
+    2,
+    16
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Jamie Clark and Zach Groshell discuss how students learn, how direct instruction improves learning, and how instructional coaching can help teachers refine their practice.",
+   "audience": "Teachers",
+   "region": "UK",
+   "kind": "interview"
+  },
+  {
+   "title": "No pain, no gain: desirable difficulties, with Peter Sherwin",
+   "url": "https://www.youtube.com/watch?v=rsk97LRQR3g",
+   "by": "Teachers Talk Radio, with Jamie Clark and Peter Sherwin",
+   "meta": [
+    "2024",
+    "UK"
+   ],
+   "areas": [
+    3,
+    1
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Maths teacher Peter Sherwin joins Jamie Clark to unpack Bjork and Bjork's desirable difficulties and how to design lessons that make learning stick.",
+   "audience": "Teachers",
+   "region": "UK",
+   "kind": "interview"
   }
  ]
 }
