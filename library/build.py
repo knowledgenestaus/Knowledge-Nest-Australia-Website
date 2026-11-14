@@ -8,6 +8,7 @@ copied from about.html so the library always matches the rest of the site.
 Run from the site root:  python3 library/build.py
 """
 import html
+import itertools
 import json
 import os
 import re
@@ -69,7 +70,7 @@ START_HERE = [
          picks=["Explicit instruction: topic page", "060 Explicit Instruction", "Teach explicitly: Primary and secondary"]),
     dict(title="Structured literacy", areas=[7, 8, 9, 10],
          text="Phonics and fluency, comprehension and vocabulary, spelling and writing, taught systematically from Foundation to Year 6.",
-         picks=["How to Teach a Phonics Lesson", "S7 E2 The Top 5 Ways", "029 How to Teach Students to Write"]),
+         picks=["Science of Reading Presentation by Pamela Snow", "S7 E2 The Top 5 Ways", "029 How to Teach Students to Write"]),
     dict(title="Multi-tiered systems of support and inclusion", areas=[14],
          text="How strong whole-class teaching, early screening and targeted intervention fit together so every student gets the right support.",
          picks=["Leading MTSS", "S04E10", "S5 E17 MTSS for Reading"]),
@@ -306,7 +307,53 @@ def card(x, show_type=True, level="h3", filterable=False):
     )
 
 
-def cards(entries, show_type=True, level="h3", filterable=False):
+MIX_TYPES = ("watch", "learn", "listen")
+_SERIES = re.compile(r"^(.*?)[,:]?\s+(?:episode|part|session)\s+\d+", re.I)
+
+
+def mix(entries):
+    """Spread sources through a list so one creator never fills a run of cards.
+    Entries from the same source keep their original order. Numbered parts of one series
+    (episode 1, 2, 3 ...) stay together, in order, as a single block."""
+    units, index = [], {}
+    for x in entries:
+        m = _SERIES.match(x["title"])
+        key = (x["by"], m.group(1).lower()) if m else None
+        if key and key in index:
+            units[index[key]].append(x)
+        else:
+            if key:
+                index[key] = len(units)
+            units.append([x])
+    by_src = {}
+    for i, u in enumerate(units):
+        by_src.setdefault(u[0]["by"], []).append((i, u))
+    # Place each source's cards at even intervals through the list, in proportion to how many it has.
+    placed = []
+    for src, us in by_src.items():
+        for k, (i, u) in enumerate(us):
+            placed.append(((k + 0.5) / len(us), us[0][0], i, u))
+    placed.sort(key=lambda t: t[:3])
+    out = [u for *_, u in placed]
+    # Where two cards from one source still touch, swap the second with the next card from elsewhere.
+    for a in range(1, len(out)):
+        if out[a][0]["by"] == out[a - 1][0]["by"]:
+            for c in range(a + 1, len(out)):
+                if out[c][0]["by"] != out[a][0]["by"] and (c + 1 == len(out) or out[c + 1][0]["by"] != out[a][0]["by"]):
+                    out[a], out[c] = out[c], out[a]
+                    break
+    # Do not open with the largest source when there is another to lead with.
+    if len(by_src) > 1 and len(out) > 2:
+        biggest = max(by_src, key=lambda k: len(by_src[k]))
+        if out[0][0]["by"] == biggest and len(by_src[biggest]) > 1 and out[1][0]["by"] != out[2][0]["by"]:
+            out[0], out[1] = out[1], out[0]
+    return [x for u in out for x in u]
+
+
+def cards(entries, show_type=True, level="h3", filterable=False, mixed=True):
+    entries = list(entries)
+    if mixed and entries and all(x["type"] in MIX_TYPES for x in entries):
+        entries = mix(entries)
     return '<div class="lib-grid">%s</div>' % "".join(card(x, show_type, level, filterable) for x in entries)
 
 
@@ -361,8 +408,19 @@ def filter_bar(items, kind):
 
 def filtered_list(items, kind):
     order = {a["n"]: i for i, a in enumerate(sorted(AREAS, key=lambda a: (DOMAIN_ORDER.index(a["domain"]), a["n"])))}
-    items = sorted(items, key=lambda x: (order.get(x["areas"][0], 99) if x["areas"] else 99))
-    return (filter_bar(items, kind) + '<div id="libList">%s</div>' % cards(items, False, "h3", True)
+    area_rank = lambda x: (order.get(x["areas"][0], 99) if x["areas"] else 99)
+    lead = {}  # a numbered series sits where its first part belongs, so its parts stay together
+    for x in items:
+        m = _SERIES.match(x["title"])
+        if m:
+            lead.setdefault((x["by"], m.group(1).lower()), area_rank(x))
+    def rank(x):
+        m = _SERIES.match(x["title"])
+        return lead[(x["by"], m.group(1).lower())] if m else area_rank(x)
+    items = sorted(items, key=rank)
+    # Within each area of practice, spread the sources so no single creator dominates a stretch of the page.
+    items = [x for _, run in itertools.groupby(items, key=rank) for x in mix(list(run))]
+    return (filter_bar(items, kind) + '<div id="libList">%s</div>' % cards(items, False, "h3", True, mixed=False)
             + '<p class="lib-more" hidden><button type="button" class="btn btn-primary" id="libMore">Show more</button></p>'
             + '<p class="lib-empty" id="libEmpty" hidden>Nothing matches those filters yet. Try clearing one, or <a href="%s">email a suggestion</a>. '
             '<button type="reset" form="libFilters" class="lib-reset">Clear filters</button></p>' % SUGGEST
@@ -559,7 +617,7 @@ def build_home():
     counts = {n: len(v) for n, v in by_area(ENTRIES).items()}
     popular = [2, 7, 10, 16, 17, 4]
     chips = "".join('<a href="%s">%s</a>' % (area_page(AREA[n]), e(AREA[n]["name"].split(":")[0].split(",")[0])) for n in popular)
-    search = ('<form class="lib-search" role="search" id="libSearch" action="library.html" method="get">'
+    search = ('<form class="lib-search" role="search" id="libSearch" action="library" method="get">'
               '<label for="q" class="sr-only">Search the library</label>'
               '<input type="search" id="q" name="q" placeholder="Search by topic, practice or person, e.g. hinge questions" autocomplete="off" maxlength="100">'
               '<button type="submit" class="btn btn-primary">Search</button></form>'
@@ -759,7 +817,7 @@ def build_areas():
         side += ('<div class="lib-side-box lib-side-navy"><h2>For Victorian schools</h2><p>See podcast episodes matched to the Victorian Teaching and Learning Model 2.0.</p>'
                  '<p><a href="library-vtlm.html">Podcasts by the VTLM 2.0 %s</a></p></div>' % ARROW)
         side += suggest_box()
-        body += '<section class="section lib-list"><div class="container lib-two"><div class="lib-main">%s</div><aside class="lib-side">%s</aside></div></section>' % (sections, side)
+        body += '<section class="section lib-list"><div class="container lib-two"><div class="lib-main">%s</div><aside class="lib-side" aria-label="Related areas and links">%s</aside></div></section>' % (sections, side)
         write(area_page(a), "%s | The Knowledge Nest Library" % a["name"],
               "%d free videos, podcasts, articles and research on %s, collected for teachers and school leaders." % (len(items), short_area(a["n"])[0].lower() + short_area(a["n"])[1:]),
               body, a["name"])
@@ -790,7 +848,7 @@ def build_vtlm():
 
 
 def build_404():
-    search = ('<form class="lib-search" role="search" action="library.html" method="get"><label class="sr-only" for="q404">Search the library</label>'
+    search = ('<form class="lib-search" role="search" action="library" method="get"><label class="sr-only" for="q404">Search the library</label>'
               '<input type="search" id="q404" name="q" placeholder="Search the library" autocomplete="off" maxlength="100">'
               '<button type="submit" class="btn btn-primary">Search</button></form>')
     body = hero("Page not found", "This page has flown the nest",
