@@ -74,6 +74,11 @@ h1 { font-size: clamp(2.1rem, 5vw, 3.3rem); }
 h2 { font-size: clamp(1.6rem, 3.2vw, 2.3rem); }
 h3 { font-size: clamp(1.15rem, 2vw, 1.35rem); }
 h4 { font-size: 1.1rem; }
+/* Colon house style: in a title or heading, the part up to the colon is the bold lead-in and the rest is lighter
+   ("Watch:" bold, "Classroom videos" lighter). To switch this off sitewide, delete the two rules below
+   (or set both to font-weight: inherit). Labels such as "Popular:" keep their own bold either way. */
+.lead-in { font-weight: 700; }
+.lead-rest { font-weight: 500; }
 p { text-wrap: pretty; }
 strong { color: var(--ink); font-weight: 700; }
 ul, ol { padding-left: 1.2rem; }

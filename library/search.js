@@ -41,7 +41,11 @@
     var a = el('article', 'lib-card');
     a.appendChild(el('span', 'lib-type lib-type-' + x.y, LABELS[x.y] || ''));
     var h = el('h3', 'lib-card-title');
-    var link = el('a', '', x.t);
+    // House style: the part of a title before its first colon is the bold lead-in (see .lead-in in styles.css).
+    var link = el('a', '');
+    var parts = /^([\s\S]*?[^\s:]:)(\s+\S[\s\S]*)$/.exec(x.t);
+    if (parts) { link.appendChild(el('span', 'lead-in', parts[1])); link.appendChild(el('span', 'lead-rest', parts[2])); }
+    else { link.textContent = x.t; }
     link.href = x.u; link.target = '_blank'; link.rel = 'noopener';
     link.appendChild(el('span', 'sr-only', ' (opens in a new tab)'));
     h.appendChild(link); a.appendChild(h);
