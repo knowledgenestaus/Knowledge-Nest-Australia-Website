@@ -14,7 +14,7 @@ import os
 import re
 from collections import OrderedDict, defaultdict
 from datetime import date
-from urllib.parse import quote_plus, urlparse
+from urllib.parse import quote_plus, unquote, urlparse
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = json.load(open(os.path.join(ROOT, "library", "data", "library.json"), encoding="utf8"))
@@ -130,6 +130,29 @@ FEATURED_DAYS = 21   # after this many days from its week_of the panel is left o
 THUMBS = _load("thumbs.json", {})  # video url -> preview image url (linked, never copied); see tools/thumbs.py
 # Jo's must-follow Substacks, by title, shown first on the Read page. Leave empty until chosen.
 MUST_SUBSTACKS = []
+# The order of "Substacks worth following" on Read, by title (Jo, November 2026): Haili Hughes first, then the other
+# Australian voices, then the rest. Greg Ashman's two publications sit in the lower half, apart from each other.
+# A Substack in substacks.json that is not named here is added at the end, so a new one never disappears.
+SUBSTACK_ORDER = [
+    "Dr Haili Hughes",
+    "Knowledge for Teachers", "Chalk Dust", "Dr Nathaniel Swain", "On Education", "The Disruptive Educator", "Bill Hansberry",
+    "VIC Maths Notes", "Shaun Brien", "Kylie Hoey", "Publican Policy", "The Digital Delusion",
+    "The Learning Dispatch", "The Learning Spy", "Tips for Teachers", "No More Marking", "Cognitive Coaching", "Tom Sherrington",
+    "Dylan Wiliam", "Carousel: Teaching, Learning, Leading", "Andrew Old's Education Battleground", "Powerful Knowledge",
+    "100% Assessment", "Filling the Pail", "Christopher Such", "Paul Kirschner", "Curriculum 101", "Jen's Substack",
+    "WAGOLL Teaching", "Minding the Gap", "The Bell Ringer", "Doug Lemov's Field Notes", "When Will They Learn?",
+    "The Next 30 Years", "Science of Reading Classroom", "SoL in the Wild", "The Science of Learning", "Teach Like a Champion",
+    "Making Words Make Sense", "The Curriculum Insight Project", "Mark R Shinn's Peculiar Observations About MTSS Implementation",
+    "Daniel Willingham",
+]
+REGION_SHORT = {"Australia": "Australia", "United Kingdom and Europe": "UK and Europe", "United States and Canada": "US and Canada"}
+# Writers who should not open a section of the Read shelf (Jo, November 2026). Their pieces still appear, just not first.
+NOT_FIRST_ON_READ = ("Greg Ashman",)
+# Read cards show the article's own lead image full width at the top, like Watch and Learn ("top"), or a small square
+# beside the heading ("side"). Without an image a "top" card shows the publication's name on pale blue instead.
+READ_PICTURE = "top"
+# The publication's icon beside the byline on Substack article cards.
+BYLINE_ICON = True
 SHOWS = DATA["shows"]
 SHOW_ART = {s["title"]: s["art"] for s in SHOWS if s.get("art")}  # cover art by show, for episode cards
 # Preview images that are video stills (shown edge to edge); anything else is shown whole, like a logo.
@@ -413,6 +436,26 @@ def shown_tags(x):
     return [t for t in x["tags"] if not any(m.lower().startswith(t.lower()) for m in x["meta"])]
 
 
+def stack_for_url(url):
+    """The Substack (from substacks.json) a web address belongs to, or None."""
+    host = domain_of(url)
+    return next((s for s in SUBSTACKS if domain_of(s["url"]) == host), None)
+
+
+def read_thumb(url, img, name):
+    """The picture across the top of a reading card: the article's own lead image, linked from the creator's server and
+    never copied. Behind it sits a pale blue tile with the publication's name, which shows when there is no image or it
+    fails to load (the image is then removed), so a card never shows a broken picture or loses its shape."""
+    pic = ('<img src="%s" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="600" height="338" '
+           'onerror="this.remove()">' % ea(img)) if img else ""
+    # A square or upright image (Substack keeps the size in the file name, "_1024x1024.png") is often a title card with
+    # words on it, so it is shown whole on pale blue rather than cropped to the wide frame.
+    size = re.search(r"_(\d+)x(\d+)\.\w+$", unquote(img or ""))
+    fit = "" if not img else (" lib-thumb-logo" if size and int(size.group(1)) < 1.3 * int(size.group(2)) else " lib-thumb-still")
+    return ('<a class="lib-thumb lib-thumb-read%s" href="%s" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">'
+            '<span class="lib-thumb-name">%s</span>%s</a>' % (fit, ea(url), e(name), pic))
+
+
 def card(x, show_type=True, level="h3", filterable=False):
     t = TYPES[x["type"]]
     bits = [e(m) for m in shown_meta(x)]
@@ -439,6 +482,8 @@ def card(x, show_type=True, level="h3", filterable=False):
         if x["type"] == "learn":
             data += ' data-length="%s" data-audience="%s" data-access="%s"' % (ea(x.get("length") or NO_LENGTH), ea(x.get("audience", "")), ea(access_of(x)))
     thumb = ""
+    stack = stack_of(x)
+    read_top = x["type"] == "read" and READ_PICTURE == "top"
     if x["type"] in ("watch", "learn"):
         img = THUMBS.get(x["url"])
         pic = ('<img src="%s" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="480" height="270" '
@@ -449,11 +494,20 @@ def card(x, show_type=True, level="h3", filterable=False):
         # What kind of video it is, shown on the corner of the picture. It is real text (the picture link is hidden from
         # screen readers, so the label sits outside it) and reads before the title.
         thumb += '<p class="lib-kind lib-kind-%s">%s</p>' % (x["type"], e(kind_label(x)))
+    elif read_top:
+        # The article's lead image across the top of the card (no play button). Without one, or if it fails to load,
+        # the tile shows the publication or source on pale blue, so every card in a row lines up.
+        thumb = read_thumb(x["url"], THUMBS.get(x["url"]), stack["title"] if stack else (x["by"] or domain_of(x["url"])))
+    if line and BYLINE_ICON and stack and stack.get("icon"):
+        line = ('<img class="lib-by-icon" src="%s" alt="" width="20" height="20" loading="lazy" decoding="async" referrerpolicy="no-referrer" '
+                'onerror="this.remove()">%s' % (ea(stack["icon"]), line))
     head = '%s%s<%s class="lib-card-title"><a href="%s" target="_blank" rel="noopener">%s%s</a></%s>%s' % (
         badge, focus, level, ea(x["url"]), title_html(x["title"]), NEWTAB, level, ('<p class="lib-by">%s</p>' % line) if line else "")
-    # A small picture beside the heading: the show's cover art on episodes, the page's own preview image on reading.
+    # A small picture beside the heading: the show's cover art on episodes, the page's own preview image on research and
+    # curriculum (and on reading when READ_PICTURE is "side").
     # Linked from the creator's server, never copied; if it fails to load it is removed and the card reads as plain text.
-    side = SHOW_ART.get(x["by"]) if x["type"] == "listen" else (THUMBS.get(x["url"]) if x["type"] in ("read", "research", "curriculum") else None)
+    side_types = ("research", "curriculum") if read_top else ("read", "research", "curriculum")
+    side = SHOW_ART.get(x["by"]) if x["type"] == "listen" else (THUMBS.get(x["url"]) if x["type"] in side_types else None)
     if side:
         w, h = (56, 56) if x["type"] == "listen" else (64, 64)
         head = ('<div class="lib-card-head"><img class="lib-card-pic%s" src="%s" alt="" width="%d" height="%d" loading="lazy" decoding="async" '
@@ -605,13 +659,22 @@ def shelf_order(items):
     return [x for _, run in itertools.groupby(items, key=rank) for x in mix(list(run))]
 
 
+def not_first(items, kind):
+    """On Read, a writer in NOT_FIRST_ON_READ does not open a list: the first card by someone else is moved to the front."""
+    lead = lambda x: any(name in x["by"] for name in NOT_FIRST_ON_READ)
+    if kind != "read" or not items or not lead(items[0]):
+        return items
+    i = next((i for i, x in enumerate(items) if not lead(x)), None)
+    return items if i is None else [items[i]] + items[:i] + items[i + 1:]
+
+
 def shelf_list(items, kind):
     """The full list of a Watch or Learn shelf, 24 cards at a time, with its "Show more" button and empty state."""
     t = TYPES[kind]
     other = TYPES[{"watch": "learn", "learn": "watch", "read": "research"}[kind]]
     hint = ("look on the <a href=\"%s\">%s shelf</a> for %s on the same topic" % (other["page"], other["label"],
             {"watch": "webinars, talks and explainers", "learn": "lessons being taught", "read": "papers and reviews"}[kind]))
-    return ('<div id="libList">%s</div>' % cards(shelf_order(items), False, "h3", True, mixed=False)
+    return ('<div id="libList">%s</div>' % cards(not_first(shelf_order(items), kind), False, "h3", True, mixed=False)
             + '<p class="lib-more" hidden><button type="button" class="btn btn-primary" id="libMore">Show more</button></p>'
             + '<p class="lib-empty" id="libEmpty" hidden>No %s match those choices yet. Try clearing one of the menus, or %s. '
             'If you know something that belongs here, <a href="%s">email a suggestion</a>. '
@@ -715,10 +778,13 @@ def featured_panel(where):
         return ""
     when = "Week of %d %s %d" % (week.day, MONTHS[week.month - 1], week.year)
     level = "h3"
+    def pic(x):   # the article's lead image (recorded by feature_week.py), or the publication's name on pale blue
+        stack = stack_for_url(x["url"])
+        return read_thumb(x["url"], x.get("image") or THUMBS.get(x["url"]), stack["title"] if stack else (x.get("by") or domain_of(x["url"])))
     cards_html = "".join(
-        '<article class="lib-card kn-week-card"><%s class="lib-card-title"><a href="%s" target="_blank" rel="noopener">%s%s</a></%s>'
+        '<article class="lib-card has-thumb kn-week-card">%s<%s class="lib-card-title"><a href="%s" target="_blank" rel="noopener">%s%s</a></%s>'
         '<p class="lib-by">%s</p>%s<p class="lib-card-foot"><span class="lib-source">Opens at %s in a new tab</span></p></article>'
-        % (level, ea(x["url"]), title_html(x["title"]), NEWTAB, level, e(x.get("by", "")),
+        % (pic(x), level, ea(x["url"]), title_html(x["title"]), NEWTAB, level, e(x.get("by", "")),
            ('<p class="lib-summary kn-week-why">%s</p>' % e(x["why"])) if x.get("why") else "", e(domain_of(x["url"])), )
         for x in FEATURED["items"] if x.get("url") and x.get("title"))
     intro = e(FEATURED.get("intro") or FEATURED_INTRO)
@@ -1032,7 +1098,7 @@ def topic_sections(items, kind):
         out += ('<section class="lib-topic lib-browse" id="t-%s"><div class="lib-topic-head"><h2>%s <span class="lib-count">%d</span></h2>'
                 '<a class="lib-seeall" href="%s" data-set>See all %d %s %s %s</a></div>%s%s</section>'
                 % (domain_slug(d), title_html(d), len(sub), shelf_link(kind, d), len(sub), e(lower_first(d)), t["short"], ARROW,
-                   ('<p class="lib-topic-areas">%s</p>' % links) if links else "", cards(picks, False, "h3", mixed=False)))
+                   ('<p class="lib-topic-areas">%s</p>' % links) if links else "", cards(not_first(picks, kind), False, "h3", mixed=False)))
     if small:
         out += '<p class="lib-topic-more lib-browse">%s%s</p>' % (label_html("More topics on this shelf:"), "".join(small))
     return out
@@ -1090,9 +1156,15 @@ def build_types():
                 n = sum(1 for y in items if source_of(y) == x["title"])
                 keys = ('<p class="lib-stack-keys"><a href="%s" data-set>See key articles <span class="lib-count">%d</span></a></p>'
                         % (ea("library-read.html?by=" + quote_plus(x["title"])), n)) if n else ""
-                return ('<article class="lib-card lib-stack"><h3 class="lib-card-title"><a href="%s" target="_blank" rel="noopener">%s%s</a></h3><p class="lib-by">%s</p>'
-                        '<p class="lib-summary">%s</p>%s<p class="lib-card-foot"><span class="lib-tag">%s</span><span class="lib-source">Opens at %s</span></p></article>'
-                        % (ea(x["url"]), title_html(x["title"]), NEWTAB, e(x["by"]), e(x["desc"]), keys, pace, e(domain_of(x["url"]))))
+                # The publication's own icon (its Substack logo, loaded from Substack's image server), or its initial when it has none.
+                # The initial sits behind the picture, so it shows if the picture fails to load (the picture is then removed).
+                pic = ('<img src="%s" alt="" width="56" height="56" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">'
+                       % ea(x["icon"])) if x.get("icon") else ""
+                icon = '<span class="lib-stack-icon lib-show-initial" aria-hidden="true">%s%s</span>' % (e(re.sub(r"^Dr\.? ", "", x["title"])[:1]), pic)
+                who = " &middot; ".join(e(b) for b in [x["by"], REGION_SHORT.get(x["region"], x["region"])] if b)
+                return ('<article class="lib-card lib-stack">%s<div><h3 class="lib-card-title"><a href="%s" target="_blank" rel="noopener">%s%s</a></h3><p class="lib-by">%s</p>'
+                        '<p class="lib-summary">%s</p>%s<p class="lib-card-foot"><span class="lib-tag">%s</span><span class="lib-source">Opens at %s</span></p></div></article>'
+                        % (icon, ea(x["url"]), title_html(x["title"]), NEWTAB, who, e(x["desc"]), keys, pace, e(domain_of(x["url"]))))
             must = [x for name in MUST_SUBSTACKS for x in SUBSTACKS if x["title"] == name]
             outro = ('<section class="lib-group lib-stacks" id="substacks"><h2>Substacks worth following <span class="lib-count">%d</span></h2>'
                      '<p class="lib-group-lead">Some of the best thinking in education now arrives by newsletter. These are free to subscribe to, though some writers keep '
@@ -1100,10 +1172,11 @@ def build_types():
                      'Know one that belongs here? <a href="mailto:%s?subject=Substack%%20suggestion">Send it my way</a>.</p>' % (len(SUBSTACKS), EMAIL))
             if must:
                 outro += '<h3 class="lib-subhead">My must-follows</h3><div class="lib-grid">%s</div>' % "".join(stack_card(x) for x in must)
-            for region in ["Australia", "United Kingdom and Europe", "United States and Canada"]:
-                group = [x for x in SUBSTACKS if x["region"] == region and x not in must]
-                if group:
-                    outro += '<h3 class="lib-subhead">%s</h3><div class="lib-grid">%s</div>' % (title_html(region), "".join(stack_card(x) for x in group))
+            # One list in SUBSTACK_ORDER (each card names its region); any Substack not in that list goes at the end.
+            rank = {name: i for i, name in enumerate(SUBSTACK_ORDER)}
+            rest = sorted((x for x in SUBSTACKS if x not in must), key=lambda x: rank.get(x["title"], len(rank)))
+            if rest:
+                outro += ('<h3 class="lib-subhead">More Substacks worth following</h3>' if must else "") + '<div class="lib-grid">%s</div>' % "".join(stack_card(x) for x in rest)
             outro += '</section>'
         if key == "listen" and SHOWS:
             top = [s for name in TOP_SHOWS for s in SHOWS if s["title"] == name]
@@ -1342,6 +1415,9 @@ def warnings():
     for x in FEATURED.get("items") or []:
         if "\u2014" in x.get("why", ""):
             out.append("featured.json why line for '%s' has an em dash; reword" % x.get("title"))
+    for s in SUBSTACKS:
+        if s["title"] not in SUBSTACK_ORDER and s["title"] not in MUST_SUBSTACKS:
+            out.append("Substack '%s' is not in SUBSTACK_ORDER in build.py, so it is listed last; add it where it belongs" % s["title"])
     for t in START_HERE:
         for p in t["picks"]:
             if not any(cap_after_colon(x["title"]).startswith(cap_after_colon(p)) for x in ENTRIES):

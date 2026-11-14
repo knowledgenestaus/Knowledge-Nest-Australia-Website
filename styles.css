@@ -321,7 +321,15 @@ ul, ol { padding-left: 1.2rem; }
 .lib-listen { display: flex; flex-wrap: wrap; gap: 0.4rem; }
 .lib-listen a { display: inline-flex; align-items: center; min-height: 44px; padding: 0.2rem 0.9rem; border-radius: 50px; background: var(--navy); color: white; font-size: 0.86rem; font-weight: 700; }
 .lib-listen a:hover { background: var(--navy-light); color: white; }
-.lib-stack { border-left: 4px solid var(--sky); }
+.lib-stack { flex-direction: row; gap: 0.9rem; border-left: 4px solid var(--sky); }
+.lib-stack > div { display: flex; flex-direction: column; gap: 0.4rem; min-width: 0; flex: 1; }
+/* The publication's own icon, square, at the start of a Substack card; its initial on pale blue when it has none. */
+.lib-stack-icon { position: relative; flex-shrink: 0; align-self: flex-start; width: 56px; height: 56px; aspect-ratio: 1; overflow: hidden; border-radius: 12px; background: var(--sky-soft); border: 1px solid var(--line); }
+.lib-stack-icon.lib-show-initial { font-size: 1.7rem; }
+.lib-stack-icon img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; background: white; }
+@media (max-width: 420px) { .lib-stack-icon { width: 48px; height: 48px; } }
+/* A Substack article's publication icon at the start of its byline. */
+.lib-by-icon { display: inline-block; width: 20px; height: 20px; margin-right: 0.4rem; vertical-align: -4px; border-radius: 5px; object-fit: cover; background: var(--sky-soft); }
 @media (max-width: 420px) { .lib-show-art { width: 64px; height: 64px; } }
 
 @media (min-width: 1000px) { .lib-grid:has(> .lib-show) { grid-template-columns: repeat(2, 1fr); } }

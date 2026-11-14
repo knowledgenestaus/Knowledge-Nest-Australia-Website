@@ -5,8 +5,8 @@ Set the week's picks (after Jo has approved them):
 
     python3 library/tools/feature_week.py URL URL URL --why "..." --why "..." --why "..."
 
-  For each address it reads the post's title and author from Substack (<publication>/api/v1/posts/<slug>, or the
-  page's own og tags if that fails), checks the post is free (audience "everyone" and no paywall wording on the page),
+  For each address it reads the post's title, author and lead image from Substack (<publication>/api/v1/posts/<slug>, or
+  the page's own og tags if that fails), checks the post is free (audience "everyone" and no paywall wording on the page),
   and refuses any address featured in the last 12 weeks. It then moves the current week into the archive, writes
   library/data/featured.json and prints a summary. Nothing is written if any check fails.
 
@@ -36,7 +36,7 @@ import sys
 import urllib.error
 import urllib.request
 from datetime import date, datetime, timedelta, timezone
-from urllib.parse import quote, urlparse
+from urllib.parse import quote, unquote, urlparse
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
@@ -97,7 +97,7 @@ def post_info(url, stacks, catalogue):
     info = {"url": clean_url(url), "audience": None, "problems": []}
     try:
         d = fetch("https://%s/api/v1/posts/%s" % (u.netloc, quote(slug)), as_json=True)
-        info.update(title=tidy(d.get("title")), audience=d.get("audience"), date=(d.get("post_date") or "")[:10],
+        info.update(title=tidy(d.get("title")), audience=d.get("audience"), date=(d.get("post_date") or "")[:10], cover=d.get("cover_image"),
                     names=[b["name"] for b in d.get("publishedBylines") or [] if b.get("name")],
                     kind=d.get("type"), url=clean_url(d.get("canonical_url") or url))
     except (urllib.error.URLError, ValueError, KeyError) as ex:
@@ -113,6 +113,10 @@ def post_info(url, stacks, catalogue):
         info["title"] = tag("property", "og:title")
     if not info.get("names"):
         info["names"] = [n for n in [tag("name", "author")] if n]
+    info["og"] = html.unescape(tag("property", "og:image"))
+    info["image"], why_none = lead_image(info, u)
+    if not info["image"]:
+        info["problems"].append("no lead image (%s); the card shows the publication's name instead" % why_none)
     pub = stack["title"] if stack else tag("property", "og:site_name")
     info["by"] = credit(info["names"], pub, info["url"], catalogue)
     info["paywall"] = [m for m in PAYWALL if m in page]
@@ -125,6 +129,54 @@ def post_info(url, stacks, catalogue):
     if info.get("kind") and info["kind"] != "newsletter":
         info["problems"].append("this is a %s post, not an article" % info["kind"])
     return info
+
+
+def original_image(url):
+    """The image behind a substackcdn.com address (".../image/fetch/<options>/<encoded original>"), or the address itself."""
+    m = re.match(r"https://substackcdn\.com/image/fetch/[^/]*/(https?%3A.*)$", url or "")
+    return unquote(m.group(1)) if m else url
+
+
+def card_image(orig):
+    """The address to show on the card: Substack's image server at 600 pixels wide rather than the full-size original."""
+    h = urlparse(orig).netloc
+    if h == "substack-post-media.s3.amazonaws.com" or h.startswith("bucketeer-"):
+        return "https://substackcdn.com/image/fetch/w_600,c_limit,f_auto,q_auto:good,fl_progressive:steep/" + quote(orig, safe="")
+    if h == "images.unsplash.com":
+        return re.sub(r"([?&])w=\d+", r"\1w=600", orig)
+    return orig
+
+
+def lead_image(info, u):
+    """The post's own lead image, as library/data/thumbs.json records them: Substack's cover_image, or else the page's
+    og:image. Refused (returns None and the reason) when it is the publication's share card, when more than two recent posts
+    of the publication use the same picture (a default image), when it is under 400 pixels wide, or when it does not load
+    as an image. Check the picture by eye before Jo approves: an advertisement is not caught here."""
+    orig = original_image(info.get("cover") or info.get("og") or "")
+    if not orig:
+        return None, "the post has none"
+    if "subscribe-card" in orig or "/twitter/" in orig:
+        return None, "only the publication's share card"
+    try:
+        d = fetch("https://%s/api/v1/archive?sort=new&limit=25" % u.netloc, as_json=True)
+        posts = d.get("posts", []) if isinstance(d, dict) else d
+        same = sum(1 for p in posts if original_image(p.get("cover_image") or "") == orig)
+        if same > 2:
+            return None, "the same picture is on %d recent posts, so it is the publication's default" % same
+    except (urllib.error.URLError, ValueError):
+        pass
+    size = re.search(r"_(\d+)x(\d+)\.\w+$", orig)
+    if size and int(size.group(1)) < 400:
+        return None, "it is only %s pixels wide" % size.group(1)
+    image = card_image(orig)
+    try:
+        req = urllib.request.Request(image, headers={"User-Agent": UA, "Accept": "image/avif,image/webp,image/*"})
+        with urllib.request.urlopen(req, timeout=40) as r:
+            if r.status != 200 or not r.headers.get("Content-Type", "").startswith("image/"):
+                return None, "it did not load as an image"
+    except urllib.error.URLError as ex:
+        return None, "it did not load (%s)" % ex
+    return image, ""
 
 
 def recent_urls(featured, week, weeks=REPEAT_WEEKS):
@@ -197,6 +249,8 @@ def set_week(args):
         title = titles[i].strip() if i < len(titles) and titles[i].strip() else info["title"]
         print("%d. %s\n   %s\n   %s, posted %s\n   free: %s%s" % (i + 1, title, info["url"], info["by"], info.get("date") or "?",
                                                               "yes" if free else "NO", "\n   REPEAT: featured in the week of %s" % repeat if repeat else ""))
+        if info.get("image"):
+            print("   image: " + info["image"])
         for p in info["problems"]:
             if p not in hard:
                 print("   note: " + p)
@@ -206,7 +260,10 @@ def set_week(args):
             print("   why line: none given, so the card shows no 'why' text")
         if hard:
             failed.append("%s: %s" % (url, "; ".join(hard)))
-        items.append({"url": info["url"], "title": title, "by": info["by"], "why": why})
+        item = {"url": info["url"], "title": title, "by": info["by"], "why": why}
+        if info.get("image"):
+            item["image"] = info["image"]   # shown at the top of the card; linked from Substack, never copied
+        items.append(item)
     if failed:
         print("\nREFUSED, nothing written:\n  " + "\n  ".join(failed))
         return 1
@@ -214,7 +271,8 @@ def set_week(args):
         print("\nnote: %d picks given; the panel is designed for three." % len(items))
     archive = list(featured.get("archive", []))
     if featured.get("week_of") and featured["week_of"] != week.isoformat():
-        archive = [{"url": x["url"], "title": x["title"], "by": x.get("by", ""), "week_of": featured["week_of"]} for x in featured.get("items", [])] + archive
+        archive = [dict({"url": x["url"], "title": x["title"], "by": x.get("by", ""), "week_of": featured["week_of"]},
+                        **({"image": x["image"]} if x.get("image") else {})) for x in featured.get("items", [])] + archive
     out = {"week_of": week.isoformat()}
     intro = args.intro if args.intro is not None else featured.get("intro")
     if intro:
