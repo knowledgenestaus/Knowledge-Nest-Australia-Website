@@ -498,6 +498,7 @@ ul, ol { padding-left: 1.2rem; }
 .footer-connect-row { display: flex; flex-wrap: wrap; gap: 0.4rem 0.9rem; align-items: center; font-size: 0.98rem; }
 .footer-connect-row a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(255,255,255,0.4); }
 .footer-sep { opacity: 0.4; }
+@media (max-width: 600px) { .footer-sep { display: none; } }
 .footer-cta-row { display: flex; flex-wrap: wrap; gap: 0.75rem; }
 .footer .btn-accent { color: var(--navy-deep); }
 .footer-credit { margin-top: 2rem; max-width: 46em; font-size: 0.92rem; color: rgba(255,255,255,0.75); }
