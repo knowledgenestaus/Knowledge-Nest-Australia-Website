@@ -368,6 +368,57 @@ ul, ol { padding-left: 1.2rem; }
 .lib-empty .lib-reset { margin-left: 0.4rem; }
 /* Filters need JavaScript. Without it they are left out and the full list shows. */
 html:not(.js) #libFilters, html:not(.js) #libChips, html:not(.js) #libFilterToggle, html:not(.js) .lib-more { display: none; }
+
+/* Watch and Learn (November 2026): the kind of video on each card, the menus at the top of the shelf,
+   the featured strip and the topic sections. */
+.lib-kind { position: absolute; left: 0.7rem; top: 0.7rem; z-index: 2; margin: 0; padding: 0.15rem 0.6rem; border-radius: 5px; font-size: 0.8rem; font-weight: 700; line-height: 1.4; background: white; color: var(--navy); box-shadow: 0 1px 4px rgba(11,33,71,0.25); pointer-events: none; }
+.lib-kind-learn { background: var(--navy); color: white; }
+.lib-kind-inline { display: inline-block; position: static; margin-right: 0.35rem; padding: 0.08rem 0.55rem; border-radius: 5px; border: 1px solid var(--navy); font-size: 0.8rem; font-weight: 700; line-height: 1.4; background: white; color: var(--navy); box-shadow: none; white-space: nowrap; vertical-align: 0.08em; }
+.lib-kind-inline.lib-kind-learn { background: var(--navy); color: white; }
+.lib-cross { margin-top: 0.7rem; }
+.lib-cross a { font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+.lib-filters-top { margin-bottom: 1.1rem; }
+.lib-field select:disabled { background: #eef2f6; color: #4f5b70; border-color: #9aa6b8; opacity: 1; }
+.lib-morefilters { margin-top: 0.85rem; }
+.lib-morefilters > summary { display: inline-flex; align-items: center; gap: 0.5rem; min-height: 44px; padding: 0.2rem 1rem; border-radius: 50px; border: 1.5px solid var(--navy); background: white; font-size: 0.9rem; font-weight: 700; color: var(--navy); cursor: pointer; list-style: none; }
+.lib-morefilters > summary::-webkit-details-marker { display: none; }
+.lib-morefilters > summary::after { content: "+"; font-size: 1.2rem; font-weight: 400; line-height: 1; }
+.lib-morefilters[open] > summary::after { content: "\2212"; }
+.lib-morefilters > summary:hover { background: var(--navy); color: white; }
+.lib-morefilters > .lib-filter-row { margin-top: 0.5rem; }
+.lib-chips-topics { margin-bottom: 1.6rem; }
+.lib-featured { margin: 0 0 clamp(1.75rem, 4vw, 2.5rem); padding: 1.15rem 1.3rem 1.2rem; background: var(--sky-soft); border-radius: var(--radius); }
+.lib-featured > h2 { font-size: clamp(1.2rem, 2.2vw, 1.4rem); margin-bottom: 0.45rem; }
+.lib-featured > p { margin-bottom: 0.5rem; max-width: 46em; color: var(--body); }
+.lib-featured-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.5rem; }
+.lib-featured-list a { font-weight: 700; color: var(--navy); text-decoration: underline; text-underline-offset: 3px; }
+.lib-featured-list a:hover { color: var(--accent-text); }
+.lib-featured-by { color: var(--body); }
+.lib-featured .lib-expand > summary { min-height: 44px; }
+.lib-topic { margin-bottom: clamp(2rem, 4.5vw, 2.9rem); padding-top: 1.4rem; border-top: 1px solid var(--line); }
+.lib-topic-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.4rem 1.25rem; margin-bottom: 0.7rem; }
+.lib-topic-head h2 { font-size: clamp(1.45rem, 2.6vw, 1.9rem); }
+.lib-seeall { display: inline-flex; align-items: center; gap: 0.35rem; min-height: 44px; font-weight: 700; color: var(--navy); text-decoration: underline; text-underline-offset: 3px; }
+.lib-seeall:hover { color: var(--accent-text); }
+.lib-topic-areas, .lib-topic-more { display: flex; flex-wrap: wrap; align-items: center; gap: 0.45rem; margin-bottom: 1.15rem; }
+.lib-topic-areas a, .lib-topic-more a { display: inline-flex; align-items: center; min-height: 44px; padding: 0.25rem 0.5rem 0.25rem 0.9rem; border-radius: 50px; background: var(--sky-pale); border: 1px solid var(--sky); font-size: 0.92rem; font-weight: 600; color: var(--navy); }
+.lib-topic-areas a:hover, .lib-topic-more a:hover { background: var(--navy); border-color: var(--navy); color: white; }
+.lib-topic-areas .lib-count, .lib-topic-more .lib-count { background: white; }
+.lib-topic-more { margin-bottom: clamp(2rem, 4.5vw, 2.9rem); padding-top: 1.4rem; border-top: 1px solid var(--line); }
+.lib-topic-more > .lead-in { margin-right: 0.3rem; color: var(--navy); }
+.lib-all { padding-top: 1.4rem; border-top: 1px solid var(--line); }
+.lib-all > h2:focus { outline: none; }
+.lib-all > h2:focus-visible { outline: 3px solid var(--navy); outline-offset: 3px; }
+@media (min-width: 900px) { .lib-filter-main { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (max-width: 640px) {
+  /* The topic buttons do the job of the topic sections on a phone, so the page stays short. */
+  .lib-topic, .lib-topic-more { display: none; }
+  .lib-filters-top { padding: 0.9rem 0.95rem; }
+  .lib-featured-list .lib-kind-inline { display: block; width: fit-content; margin: 0 0 0.2rem; }
+  .lib-featured-list { gap: 0.8rem; }
+}
+/* Without JavaScript the links that set the menus are left out; the topic samples and the full list still show. */
+html:not(.js) .lib-seeall, html:not(.js) .lib-topic-areas, html:not(.js) .lib-topic-more { display: none; }
 @media (max-width: 640px) {
   .lib-chips div { flex-wrap: nowrap; overflow-x: auto; margin: 0 calc(-1 * var(--gutter)); padding: 0.2rem var(--gutter) 0.6rem; scrollbar-width: thin; -webkit-overflow-scrolling: touch; }
   .lib-filter-toggle { display: inline-flex; align-items: center; justify-content: center; width: 100%; min-height: 48px; margin-bottom: 1rem; border-radius: 50px; border: 2px solid var(--navy); background: white; color: var(--navy); font: inherit; font-weight: 700; cursor: pointer; }
@@ -586,7 +637,7 @@ html:not(.js) #libFilters, html:not(.js) #libChips, html:not(.js) #libFilterTogg
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
 @media print {
-  .nav, .footer, .lib-filters, .lib-chips, .lib-search, .lib-more, .lib-filter-toggle, .lib-toc, .lib-backtop { display: none; }
+  .nav, .footer, .lib-filters, .lib-chips, .lib-search, .lib-more, .lib-filter-toggle, .lib-toc, .lib-backtop, .lib-topic, .lib-topic-more { display: none; }
   .lib-card { break-inside: avoid; }
   .lib-card[hidden] { display: flex !important; }
   .lib-card-title a::after { content: " (" attr(href) ")"; position: static; font-size: 0.8em; font-weight: 400; word-break: break-all; }

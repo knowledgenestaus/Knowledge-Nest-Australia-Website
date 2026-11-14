@@ -48,7 +48,7 @@
         .then(function (data) {
           index = data.map(function (x) {
             // x.s is the card's topic line and summary: searched, but not shown in the results.
-            x.hay = [x.t, x.b, (x.m || []).join(' '), (x.a || []).join(' '), LABELS[x.y] || '', x.d, x.s || ''].join(' ').toLowerCase();
+            x.hay = [x.t, x.b, (x.m || []).join(' '), (x.a || []).join(' '), LABELS[x.y] || '', x.k || '', x.d, x.s || ''].join(' ').toLowerCase();
             return x;
           });
           return index;
@@ -67,6 +67,8 @@
   function card(x) {
     var a = el('article', 'lib-card');
     a.appendChild(el('span', 'lib-type lib-type-' + x.y, LABELS[x.y] || ''));
+    // Videos also say what kind they are (x.k): Lesson footage, Webinar, Explainer and so on.
+    if (x.k) { a.firstChild.textContent += ': ' + x.k; }
     var h = el('h3', 'lib-card-title');
     // House style: the part of a title before its first colon is the bold lead-in (see .lead-in in styles.css).
     var link = el('a', '');
@@ -114,6 +116,17 @@
         return new RegExp('(^|[^a-z0-9])(' + forms.join('|') + ')');
       });
       var hits = data.filter(function (x) { return tests.every(function (re) { return re.test(x.hay); }); });
+      // Best matches first: the whole phrase in the title, then every word in the title, then the rest.
+      // Inside each group the entries keep the library's own order.
+      var phrase = ' ' + words.join(' ');
+      var rank = function (x) {
+        var t = x.t.toLowerCase();
+        if ((' ' + t.replace(/[^a-z0-9]+/g, ' ')).indexOf(phrase) !== -1) return 0;
+        return tests.every(function (re) { return re.test(t); }) ? 1 : 2;
+      };
+      hits = hits.map(function (x, i) { return [rank(x), i, x]; })
+        .sort(function (p, q) { return p[0] - q[0] || p[1] - q[1]; })
+        .map(function (r) { return r[2]; });
       var shown = 0;
       list.textContent = '';
       var grid = el('div', 'lib-grid');

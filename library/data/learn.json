@@ -1,8 +1,4 @@
 {
- "move": [
-  "Four researchED Chile keynotes, free to watch",
-  "Think Forward Educators: past webinar recordings"
- ],
  "entries": [
   {
    "title": "Writing matters: leading writing instruction with a whole-school framework",
@@ -27,7 +23,8 @@
    "staff": [
     "Which parts of the framework are already strong at our school, and which are missing?",
     "What would a shared approach to sentence-level writing look like across our year levels?"
-   ]
+   ],
+   "kind": "webinar"
   },
   {
    "title": "Harnessing the Science of Learning: book study recordings",
@@ -52,7 +49,8 @@
    "staff": [
     "Which idea from this session challenges something we currently do?",
     "What is one small change we could each trial before the next session?"
-   ]
+   ],
+   "kind": "series"
   },
   {
    "title": "The Science of Learning: explainer series",
@@ -70,13 +68,14 @@
     "Free"
    ],
    "summary": "Five short animations on memory, dual coding, retrieval practice, deliberate practice, and spacing and interleaving. Easy to drop into a staff meeting.",
-   "length": "Under 30 minutes",
+   "length": "Series",
    "audience": "Teachers",
    "region": "UK",
    "staff": [
     "Where does this idea already show up in our lessons?",
     "What would it look like to use it more deliberately next week?"
-   ]
+   ],
+   "kind": "explainer"
   },
   {
    "title": "Leading explicit teaching: information session",
@@ -102,7 +101,8 @@
    "staff": [
     "Which of these workshops or strategy modules would best suit where our staff are now?",
     "What shared understanding of how learning happens do we need before we work on individual strategies?"
-   ]
+   ],
+   "kind": "webinar"
   },
   {
    "title": "AI and Assessment: What Needs to Change",
@@ -124,7 +124,8 @@
    "summary": "Daisy Christodoulou reviews what research shows about AI marking and feedback on student writing, drawing on No More Marking trials, and what assessment may need to change.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "UK"
+   "region": "UK",
+   "kind": "webinar"
   },
   {
    "title": "The Differentiation Conundrum: How to Pair Explicit Instruction with High Potential Learning",
@@ -145,7 +146,8 @@
    "summary": "Dr Kate Barton weighs the evidence on differentiation and ability grouping, then shows ways to add depth and stretch for high potential students within explicit teaching, with K-12 examples.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Building on a Strong Foundation in Phonics, Part 1",
@@ -157,8 +159,8 @@
     "Australia"
    ],
    "areas": [
-    9,
-    8
+    31,
+    29
    ],
    "tags": [
     "Free"
@@ -166,7 +168,8 @@
    "summary": "Mandy Nayton gives a short history of English, explains lexical quality and outlines teaching that builds spelling and vocabulary in middle and upper primary. Part 1 of two.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Tier 1 Instruction is Risk Reduction",
@@ -178,7 +181,6 @@
    ],
    "areas": [
     14,
-    7,
     13
    ],
    "tags": [
@@ -187,7 +189,8 @@
    "summary": "Stephanie Stollar tackles three common misunderstandings about Tier 1 reading instruction and shows how screening, diagnostic and progress data can shape core teaching that reduces risk.",
    "length": "30 to 60 minutes",
    "audience": "Leaders",
-   "region": "USA"
+   "region": "USA",
+   "kind": "webinar"
   },
   {
    "title": "MTSS in Specialist Schools: Same-Same or Different?",
@@ -209,7 +212,8 @@
    "length": "30 to 60 minutes",
    "audience": "Teachers",
    "region": "Australia",
-   "strand": "Supporting students with additional needs"
+   "strand": "Supporting students with additional needs",
+   "kind": "webinar"
   },
   {
    "title": "Evidence Informed Teaching",
@@ -231,7 +235,8 @@
    "summary": "Peps Mccrea sets out a framework of five evidence-informed strategies teachers can use to lift learning, motivation and equity.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "UK"
+   "region": "UK",
+   "kind": "webinar"
   },
   {
    "title": "Introduction to MTSS in Practice: Building Strong Tier 1 Instruction and Aligned Tier 2 Support",
@@ -255,7 +260,8 @@
    "staff": [
     "Is our Tier 2 an extra dose of what we teach in class, or a separate program?",
     "Who delivers our intervention, and is that the best use of our most skilled staff?"
-   ]
+   ],
+   "kind": "webinar"
   },
   {
    "title": "From Framework to Practice: Getting Tier 1 Right and Tier 2 Working",
@@ -275,7 +281,8 @@
    "summary": "Kylie Hoey works through the practical problems of MTSS in a primary school, from protecting Tier 1, timetabling and staffing to what to do when too many students need extra support.",
    "length": "30 to 60 minutes",
    "audience": "Leaders",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Epic Fluency Instruction: Strategy Instruction and Practice (Session 1)",
@@ -287,7 +294,7 @@
     "Australia"
    ],
    "areas": [
-    12,
+    35,
     24
    ],
    "tags": [
@@ -296,7 +303,8 @@
    "summary": "NSW teacher Kat O'Rourke shows how she sequences strategy instruction and practice to build number fact fluency in a 15-minute daily block, and what she learned implementing it.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Vocabulary: Lyn Stone's 4-Step Process in the Study of Words",
@@ -308,8 +316,8 @@
     "Australia"
    ],
    "areas": [
-    8,
-    9
+    29,
+    31
    ],
    "tags": [
     "Free"
@@ -317,7 +325,8 @@
    "summary": "Lyn Stone demonstrates her four-step process for studying a word in depth, bringing together phonics, morphology, spelling, syntax and etymology.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Minds versus Machines: A Very Short History",
@@ -338,7 +347,8 @@
    "summary": "Benjamin Riley tells the story of how cognitive science emerged from the mid-century contest between behaviourism and mentalism, and argues it still matters for teaching today.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "USA"
+   "region": "USA",
+   "kind": "webinar"
   },
   {
    "title": "The Maths Guarantee: How to Implement Great Primary Maths Teaching",
@@ -350,7 +360,7 @@
     "Australia"
    ],
    "areas": [
-    12,
+    39,
     17,
     19
    ],
@@ -360,7 +370,8 @@
    "summary": "Grattan Institute's Amy Haywood and Nick Parkinson summarise the evidence on primary maths teaching and share lessons from seven case study schools that put it into practice.",
    "length": "Over 60 minutes",
    "audience": "Leaders",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Improving Maths Outcomes with Universal Screening",
@@ -372,7 +383,7 @@
     "Australia"
    ],
    "areas": [
-    12,
+    38,
     13,
     14
    ],
@@ -382,7 +393,8 @@
    "summary": "Brad Nguyen explains how Docklands Primary uses the Acadience Math universal screener, what the assessment involves and how the results inform support and school improvement.",
    "length": "30 to 60 minutes",
    "audience": "Leaders",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Building Strong Writers in Lower Primary: Structured, Explicit Instruction from Sentence to Text Level",
@@ -407,7 +419,8 @@
    "staff": [
     "How much oral rehearsal do our youngest students get before they write?",
     "Which of these routines could we trial in Foundation to Year 2 this term?"
-   ]
+   ],
+   "kind": "webinar"
   },
   {
    "title": "What Do We Mean by a Knowledge-rich Curriculum?",
@@ -427,7 +440,8 @@
    "summary": "Heather Fearn of Ark returns to first principles on why knowledge matters, what a knowledge-rich curriculum means for lesson design and the common pitfalls when schools adopt one.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "UK"
+   "region": "UK",
+   "kind": "webinar"
   },
   {
    "title": "Responsive Teaching with Carl Hendrick",
@@ -448,7 +462,8 @@
    "summary": "Carl Hendrick looks at how teachers can use in-the-moment evidence of student understanding to adapt instruction. The second of his two sessions for Think Forward Educators.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "UK"
+   "region": "UK",
+   "kind": "webinar"
   },
   {
    "title": "Checking for Understanding: A Powerful Lever of Learning Every Teacher Should Know",
@@ -473,7 +488,8 @@
    "staff": [
     "How do we find out what every student understands before moving on, not just the volunteers?",
     "Which misconception in an upcoming unit could we write a diagnostic question for?"
-   ]
+   ],
+   "kind": "webinar"
   },
   {
    "title": "Building Background Knowledge",
@@ -485,7 +501,7 @@
     "Australia"
    ],
    "areas": [
-    8,
+    30,
     6
    ],
    "tags": [
@@ -494,7 +510,8 @@
    "summary": "Jillian Robinson introduces four Teach Like a Champion tools for building background knowledge to support comprehension, including embedded non-fiction and knowledge organisers, with classroom footage.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Structuring Explicit Maths Lessons",
@@ -506,7 +523,7 @@
     "Australia"
    ],
    "areas": [
-    12,
+    34,
     2
    ],
    "tags": [
@@ -519,7 +536,8 @@
    "staff": [
     "Which part of the lesson structure gets squeezed most often in our maths lessons?",
     "How do we decide when students are ready to move from guided to independent practice?"
-   ]
+   ],
+   "kind": "webinar"
   },
   {
    "title": "An Introduction to Bar Modelling",
@@ -531,7 +549,7 @@
     "Australia"
    ],
    "areas": [
-    12
+    36
    ],
    "tags": [
     "Free"
@@ -539,7 +557,8 @@
    "summary": "Jess Easton shows how bar models bridge concrete materials and abstract calculation, and how to pair them with written methods so students see the structure of a problem.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Explicit Teaching and Problem Solving, Using the Instructional Hierarchy",
@@ -551,7 +570,8 @@
     "Australia"
    ],
    "areas": [
-    12,
+    34,
+    36,
     2,
     24
    ],
@@ -561,7 +581,8 @@
    "summary": "Sean Alston explains the four stages of the Instructional Hierarchy and uses primary maths examples to show when to teach explicitly and when problem solving fits.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Teaching Maths Using the Victorian Lesson Plans",
@@ -573,7 +594,7 @@
     "Australia"
    ],
    "areas": [
-    12,
+    39,
     6
    ],
    "tags": [
@@ -582,7 +603,8 @@
    "summary": "Sacha Giurietto walks through the Victorian Department of Education's free maths lesson plans, the position statement behind them and how schools can use them to teach maths explicitly.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Key Instructional Routines in the Primary Mathematics Classroom",
@@ -594,7 +616,7 @@
     "Australia"
    ],
    "areas": [
-    12,
+    34,
     23,
     5
    ],
@@ -604,7 +626,8 @@
    "summary": "Ollie Lovell, Toni Hatten-Roberts and David Morkunas take teachers through the core instructional routines that keep every student thinking in primary maths, whatever program a school uses.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Principal as Lead Learner Series: Jacquie Burrows, Rhys Coulson, Sarah Asome and Steve Capp",
@@ -625,7 +648,8 @@
    "summary": "Four Victorian primary principals, from Churchill, Templestowe Heights, Bentleigh West and Chelsea Heights, discuss leading curriculum and instructional change and modelling professional learning themselves.",
    "length": "30 to 60 minutes",
    "audience": "Leaders",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Teaching Maths Explicitly in Small Schools",
@@ -637,7 +661,7 @@
     "Australia"
    ],
    "areas": [
-    12,
+    34,
     2
    ],
    "tags": [
@@ -646,7 +670,8 @@
    "summary": "Staff from three small and regional schools describe how they organise multi-age classes, lessons, planning and intervention to teach maths explicitly, and the challenges they still face.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "The Benefits of Fact Fluency when Teaching Mathematics",
@@ -658,7 +683,7 @@
     "USA"
    ],
    "areas": [
-    12,
+    35,
     24
    ],
    "tags": [
@@ -667,7 +692,8 @@
    "summary": "Dr Brian Poncy reviews research on five ways fluent recall of basic facts supports later maths learning, and shares results from a five-year study.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "USA"
+   "region": "USA",
+   "kind": "webinar"
   },
   {
    "title": "Developing a Knowledge-Rich Subject Curriculum",
@@ -688,7 +714,8 @@
    "summary": "Heather Fearn's follow-up session on how specialists and non-specialists can build and quality assure a subject curriculum, and why hierarchical and cumulative subjects need different sequencing.",
    "length": "30 to 60 minutes",
    "audience": "Leaders",
-   "region": "UK"
+   "region": "UK",
+   "kind": "webinar"
   },
   {
    "title": "Leading Assessment",
@@ -714,7 +741,8 @@
    "staff": [
     "After our last data meeting, what changed in classrooms the following week?",
     "Which assessments do we collect but rarely act on?"
-   ]
+   ],
+   "kind": "webinar"
   },
   {
    "title": "Principal as Lead Learner Series: Enabling Learning, Embedding Explicit Instruction Schoolwide",
@@ -736,7 +764,8 @@
    "summary": "Leaders from Rosewood Downs and Dandenong West primary schools recount how they built whole-school routines and behaviour expectations, then embedded explicit instruction and a knowledge-rich curriculum.",
    "length": "30 to 60 minutes",
    "audience": "Leaders",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Phonics Plus in the Classroom: Practical Strategies for Success",
@@ -748,8 +777,7 @@
     "Australia"
    ],
    "areas": [
-    7,
-    9
+    27
    ],
    "tags": [
     "Free"
@@ -757,7 +785,8 @@
    "summary": "The Victorian Department of Education team behind Phonics Plus explains its components, how to get started, and the assessment, scaffolding and extension resources that come with it.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Why Maths Lessons Fail and How to Make Success Inevitable",
@@ -769,7 +798,7 @@
     "Australia"
    ],
    "areas": [
-    12,
+    34,
     2
    ],
    "tags": [
@@ -778,7 +807,8 @@
    "summary": "Brendan Lee looks at the common reasons a maths lesson does not land and the instructional choices that make student success far more likely.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "1% Better Every Day: Practical Advice for the Evidence-Informed Teacher",
@@ -799,7 +829,8 @@
    "summary": "Stuart Kime considers what research says about how teachers build expertise through knowledge, skills and habits, and offers techniques to try in your own practice.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "UK"
+   "region": "UK",
+   "kind": "webinar"
   },
   {
    "title": "Using Talk as a Cognitive Lever",
@@ -820,7 +851,8 @@
    "summary": "David Didau explains how speech and writing differ and shows structured talk routines that lighten cognitive load and give students practice with academic English before they write.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "UK"
+   "region": "UK",
+   "kind": "webinar"
   },
   {
    "title": "Implementing MTSS in Secondary Schools: Challenges and Strategies",
@@ -841,7 +873,8 @@
    "summary": "Jessica Colleu-Terradas draws on her Churchill Fellowship and intervention work at Como Secondary College to set out the essentials for making MTSS work in a secondary school.",
    "length": "30 to 60 minutes",
    "audience": "Leaders",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Writing Is Built, Not Discovered",
@@ -862,7 +895,8 @@
    "summary": "Phil Coloca and Jeanette Breen explore why students struggle with writing and argue for sentence-level instruction, modelling and a carefully sequenced writing curriculum.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Beyond Adoption: Building Sustainable MTSS in Schools",
@@ -884,7 +918,8 @@
    "summary": "Karina Stocker shares research on what helps MTSS last in Victorian schools and what quietly undermines it, giving leaders a way to diagnose their own implementation.",
    "length": "Over 60 minutes",
    "audience": "Leaders",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Oral Language Skills and Reading Instruction: Teachers' Carry-On Essential Knowledge (Part 1)",
@@ -897,7 +932,8 @@
    ],
    "areas": [
     11,
-    8
+    30,
+    33
    ],
    "tags": [
     "Free"
@@ -905,7 +941,9 @@
    "summary": "Professor Tanya Serry uses Nancy Hennessey's assembly line metaphor to explain the language foundations of reading comprehension, from word identification and vocabulary to syntax and background knowledge.",
    "length": "Over 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar",
+   "strand": "Oral language as the foundation"
   },
   {
    "title": "Oral Language and Reading Comprehension: Implications for Reading and Writing",
@@ -917,8 +955,8 @@
    ],
    "areas": [
     11,
-    8,
-    10
+    30,
+    33
    ],
    "tags": [
     "Free"
@@ -926,7 +964,9 @@
    "summary": "Professor Tanya Serry's second session on the language foundations of reading comprehension, turning to what they mean for teaching reading and writing.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar",
+   "strand": "Oral language as the foundation"
   },
   {
    "title": "What Comes After Phonics? Building Deep Lexical Quality Through Word Study",
@@ -937,8 +977,8 @@
     "Australia"
    ],
    "areas": [
-    9,
-    8
+    31,
+    29
    ],
    "tags": [
     "Free"
@@ -946,7 +986,8 @@
    "summary": "Mandy Nayton's second session looks at teaching complex vocabulary from Year 3 onwards, using morphemes, word origins and lexical quality to strengthen spelling and comprehension.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "The Evolution of MTSS: What We've Learned, What's Changed, and What Barriers Still Exist",
@@ -967,7 +1008,8 @@
    "summary": "Dr Amanda VanDerHeyden reflects on two decades of MTSS, why results vary so widely between schools and how aligning data, instruction and decisions improves impact.",
    "length": "30 to 60 minutes",
    "audience": "Leaders",
-   "region": "USA"
+   "region": "USA",
+   "kind": "webinar"
   },
   {
    "title": "Principals' Forum: Marsden Road Public School, with Manisha Gazula",
@@ -989,7 +1031,8 @@
    "summary": "Principal Manisha Gazula describes how Marsden Road Public School in NSW used evidence and explicit teaching of foundational literacy and numeracy to lift student results.",
    "length": "Over 60 minutes",
    "audience": "Leaders",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Principals' Forum: Churchill Primary, with Jacquie Burrows",
@@ -1002,7 +1045,6 @@
    ],
    "areas": [
     19,
-    7,
     2
    ],
    "tags": [
@@ -1011,7 +1053,8 @@
    "summary": "Principal Jacquie Burrows recounts Churchill Primary School's turnaround using explicit direct instruction and the science of reading. The page notes that only part of the session was recorded.",
    "length": "30 to 60 minutes",
    "audience": "Leaders",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Toni Hatten-Roberts: Science of Maths and the Importance of Fluency",
@@ -1022,7 +1065,8 @@
     "Australia"
    ],
    "areas": [
-    12,
+    35,
+    39,
     24
    ],
    "tags": [
@@ -1031,7 +1075,8 @@
    "summary": "A Think Forward Educators maths session with Toni Hatten-Roberts on the science of maths and the importance of fluency.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "What's important for maths intervention?",
@@ -1042,7 +1087,7 @@
     "USA"
    ],
    "areas": [
-    12,
+    38,
     14,
     25
    ],
@@ -1053,7 +1098,8 @@
    "length": "30 to 60 minutes",
    "audience": "Teachers",
    "region": "USA",
-   "strand": "Dyscalculia and maths difficulties"
+   "strand": "Dyscalculia and maths difficulties",
+   "kind": "webinar"
   },
   {
    "title": "Live Coaching Workshop",
@@ -1073,7 +1119,8 @@
    "summary": "Teachers bring real problems they have met putting the science of learning into practice, and Nathaniel Swain and Brendan Lee coach them towards evidence-informed solutions.",
    "length": "30 to 60 minutes",
    "audience": "Leaders",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Principals' Forum: Principal on a journey, with Sarah Kelly",
@@ -1085,8 +1132,7 @@
    ],
    "areas": [
     19,
-    22,
-    7
+    22
    ],
    "tags": [
     "Free account needed"
@@ -1094,7 +1140,8 @@
    "summary": "Regional Victorian principal Sarah Kelly recounts moving her school away from a levelled reading approach, and how the leadership team built staff knowledge and a shared vision.",
    "length": "30 to 60 minutes",
    "audience": "Leaders",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Assessment and Reporting without Benchmarking: What does it look like?",
@@ -1106,7 +1153,6 @@
    ],
    "areas": [
     13,
-    7,
     19
    ],
    "tags": [
@@ -1115,7 +1161,8 @@
    "summary": "Leaders from Bentleigh West, Chelsea Heights and Brandon Park primary schools explain how they assess and report on reading and maths without benchmark levels or running records.",
    "length": "30 to 60 minutes",
    "audience": "Leaders",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "What you need to know about teaching primary mathematics",
@@ -1126,7 +1173,8 @@
     "Australia"
    ],
    "areas": [
-    12,
+    34,
+    39,
     2
    ],
    "tags": [
@@ -1135,7 +1183,8 @@
    "summary": "Brendan Lee sorts through mixed messages about primary maths, covering what to teach, how and when, with attention to fact fluency and the hierarchical nature of the subject.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Middle Leaders' Forum: Change management and cognitive bias",
@@ -1156,7 +1205,8 @@
    "summary": "Zach Groshell explains cognitive biases that make teaching practice hard to shift, and two school leaders describe how coaching colleagues through change played out in their settings.",
    "length": "30 to 60 minutes",
    "audience": "Leaders",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Secondary Writing: Insights into AERO's school-wide approach to teaching writing",
@@ -1176,7 +1226,8 @@
    "summary": "Christine Jackson gives an early look at AERO's Secondary Writing Instruction Framework, piloted in three secondary schools, and the lessons learned about a school-wide approach to writing.",
    "length": "30 to 60 minutes",
    "audience": "Leaders",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Mathematics in the Early Years",
@@ -1187,7 +1238,8 @@
     "Australia"
    ],
    "areas": [
-    12,
+    34,
+    37,
     2
    ],
    "tags": [
@@ -1196,7 +1248,8 @@
    "summary": "Two Templestowe Heights teachers unpack the evidence behind the F-2 maths strands, show what explicit teaching of them looks like and where play can connect.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Teaching that aligns with how students learn: AERO's teaching and learning model",
@@ -1216,7 +1269,8 @@
    "summary": "Nuella Flynn introduces AERO's model of learning and teaching, explaining why practices aligned with how students learn work more consistently and how the model can frame teacher development.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Principals' Forum: Leading Change through Complexity",
@@ -1237,7 +1291,8 @@
    "summary": "Principal Lachlan Yeates describes how Cranbourne Primary rose from the bottom of its network to the top in three years, covering staff buy-in, behaviour and leadership mindsets.",
    "length": "30 to 60 minutes",
    "audience": "Leaders",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Maths Learning Difficulties and Dyscalculia with Nathalie Parry",
@@ -1248,7 +1303,7 @@
     "Australia"
    ],
    "areas": [
-    12,
+    38,
     14,
     25
    ],
@@ -1259,7 +1314,8 @@
    "length": "30 to 60 minutes",
    "audience": "Teachers",
    "region": "Australia",
-   "strand": "Dyscalculia and maths difficulties"
+   "strand": "Dyscalculia and maths difficulties",
+   "kind": "webinar"
   },
   {
    "title": "Instructional Coaching with Ollie Lovell and Josh Goodrich",
@@ -1278,7 +1334,8 @@
    "summary": "Ollie Lovell and Josh Goodrich explain why improving teaching is hard, the active ingredients that make instructional coaching work, and how those ingredients overcome barriers to changing habits.",
    "length": "30 to 60 minutes",
    "audience": "Leaders",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Catalyst, an evidence-based approach to learning and teaching for classroom, school and system improvement",
@@ -1299,7 +1356,8 @@
    "summary": "Ross Fox shares how Catholic Education Canberra-Goulburn has led Catalyst, a system-wide shift to evidence-based reading and teaching practice across its schools, and what the change involved.",
    "length": "30 to 60 minutes",
    "audience": "Leaders",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Engaged Classrooms Through Effective Classroom Management",
@@ -1319,7 +1377,8 @@
    "summary": "Cate Whiting presents the evidence behind AERO's first set of classroom management resources and how teachers at any career stage can use them to refine routines.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Sharing the load: How five schools do whole-school curriculum planning",
@@ -1340,7 +1399,8 @@
    "summary": "Amy Haywood presents Grattan Institute findings on the planning load teachers carry alone, and how five schools set up shared whole-school curriculum planning.",
    "length": "30 to 60 minutes",
    "audience": "Leaders",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Principals' Forum: St Mary's Primary School in Myrtleford",
@@ -1352,8 +1412,7 @@
    ],
    "areas": [
     19,
-    17,
-    7
+    17
    ],
    "tags": [
     "Free account needed"
@@ -1361,7 +1420,8 @@
    "summary": "Principal Kitty Hancock tells how St Mary's Primary in Myrtleford turned around poor results over five years using the science of reading and learning, including mistakes to avoid.",
    "length": "30 to 60 minutes",
    "audience": "Leaders",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Teach Like a Champion: Overview and Connection to Australian Evidence",
@@ -1382,7 +1442,8 @@
    "summary": "Christopher Thomas gives an overview of Teach Like a Champion techniques for academic engagement, classroom culture and checking for understanding, and links them to Australian evidence.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Direct Instruction: Introduction and History",
@@ -1402,7 +1463,8 @@
    "summary": "Alice Westera and Lisa Brodbeck introduce Engelmann's Direct Instruction, including Project Follow Through, the philosophy behind it and the teaching design shared by all DI programs.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Improving behaviour and engagement in your classroom",
@@ -1423,7 +1485,8 @@
    "summary": "Ollie Lovell and Mark Dowley share routines from their Classroom Management Handbook for entering the room, gaining attention and defusing debate, and show rehearsal through coaching.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "The Inclusive Maths Classroom",
@@ -1434,7 +1497,7 @@
     "USA"
    ],
    "areas": [
-    12,
+    38,
     14,
     25
    ],
@@ -1445,7 +1508,8 @@
    "length": "30 to 60 minutes",
    "audience": "Teachers",
    "region": "USA",
-   "strand": "Supporting students with additional needs"
+   "strand": "Supporting students with additional needs",
+   "kind": "webinar"
   },
   {
    "title": "Instructional Coaching: Professional development that reignites the skill and dignity of the teaching profession",
@@ -1464,7 +1528,8 @@
    "summary": "Jack Neil makes the case for instructional coaching as core professional development, with examples of coaching structures, their impact and how schools can grow effective coaches.",
    "length": "30 to 60 minutes",
    "audience": "Leaders",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Implementing an Effective Multi-tiered System of Support to Teach Spelling",
@@ -1475,7 +1540,7 @@
     "Australia"
    ],
    "areas": [
-    9,
+    31,
     14,
     25
    ],
@@ -1486,7 +1551,8 @@
    "length": "30 to 60 minutes",
    "audience": "Teachers",
    "region": "Australia",
-   "strand": "Dysgraphia and written expression"
+   "strand": "Dysgraphia and written expression",
+   "kind": "webinar"
   },
   {
    "title": "How do you listen to your students read?",
@@ -1497,7 +1563,7 @@
     "Australia"
    ],
    "areas": [
-    7,
+    28,
     13
    ],
    "tags": [
@@ -1506,7 +1572,8 @@
    "summary": "Karen Woods explains how she hears students read without benchmarking kits, moving from book groups to shared, choral and paired reading, with the classroom norms that make it work.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "The Myth of Discovery-Based Learning in Maths",
@@ -1517,7 +1584,8 @@
     "Canada"
    ],
    "areas": [
-    12,
+    39,
+    34,
     18,
     2
    ],
@@ -1527,7 +1595,8 @@
    "summary": "Nathaniel Hansford compares discovery, inquiry and explicit approaches in maths, reviews meta-analysis evidence and addresses common myths about conceptual knowledge, procedures and productive struggle.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Canada"
+   "region": "Canada",
+   "kind": "webinar"
   },
   {
    "title": "Explicit Mathematics Teaching: Unlocking the science of mathematics in the primary classroom",
@@ -1538,7 +1607,8 @@
     "Australia"
    ],
    "areas": [
-    12,
+    34,
+    35,
     2,
     3
    ],
@@ -1548,7 +1618,8 @@
    "summary": "Toni Hatten-Roberts, David Morkunas and Ollie Lovell cover instructional routines, cognitive load and systematic review in primary maths, with practical strategies teachers can try straight away.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "An Introduction to Spelling Mastery with Jessica Colleu Terradas",
@@ -1559,7 +1630,7 @@
     "Australia"
    ],
    "areas": [
-    9
+    31
    ],
    "tags": [
     "Free account needed"
@@ -1567,7 +1638,8 @@
    "summary": "Jessica Colleu Terradas introduces the Direct Instruction program Spelling Mastery, how it combines phonemic, morphemic and whole-word teaching, and what schools considering it should know.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Teaching Fractions Using an Explicit CRA Approach",
@@ -1578,7 +1650,8 @@
     "Australia"
    ],
    "areas": [
-    12
+    37,
+    36
    ],
    "tags": [
     "Free account needed"
@@ -1586,7 +1659,8 @@
    "summary": "Esther White shows how to teach fractions, decimals and percentages through an explicit concrete, representational, abstract sequence with consistent language and a single hands-on tool.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "How Writing Instruction Can Revolutionize Education",
@@ -1599,7 +1673,7 @@
    "areas": [
     10,
     6,
-    8
+    30
    ],
    "tags": [
     "Free account needed"
@@ -1607,7 +1681,8 @@
    "summary": "Natalie Wexler argues that explicit writing instruction embedded in subject content can deepen knowledge, strengthen reading comprehension and build analytical thinking.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "USA"
+   "region": "USA",
+   "kind": "webinar"
   },
   {
    "title": "The Best Word List is a Book!",
@@ -1618,8 +1693,8 @@
     "Australia"
    ],
    "areas": [
-    9,
-    8
+    31,
+    29
    ],
    "tags": [
     "Free account needed"
@@ -1627,7 +1702,8 @@
    "summary": "Lyn Stone explains why she never issues word lists and how the books students are reading can supply the words for spelling and vocabulary teaching.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Genre Theory/Systemic Functional Linguistics-based Pedagogies in K-10 Education: Very influential, but do they improve reading and writing outcomes?",
@@ -1639,8 +1715,7 @@
    ],
    "areas": [
     18,
-    10,
-    8
+    10
    ],
    "tags": [
     "Free account needed"
@@ -1648,7 +1723,8 @@
    "summary": "Clarence Green and Iain Giblin report a systematic review of genre theory and SFL-based literacy teaching, finding too little rigorous evidence to judge its effect on reading and writing.",
    "length": "30 to 60 minutes",
    "audience": "Leaders",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "What High Performing Countries are Doing in Maths",
@@ -1659,7 +1735,7 @@
     "Australia"
    ],
    "areas": [
-    12
+    39
    ],
    "tags": [
     "Free account needed"
@@ -1667,7 +1743,8 @@
    "summary": "Liana McCurry shares what she saw of primary maths teaching in six countries on a Churchill Fellowship, and how practice there compares with Australia.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Designing the 'Desirably Difficult' Classroom",
@@ -1688,7 +1765,8 @@
    "summary": "Maths teacher Peter Sherwin draws on Bjork's desirable difficulties to describe effective teaching techniques and study habits that feel uncomfortable or counter-intuitive, and how to build them into lessons.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Improving Writing",
@@ -1708,7 +1786,8 @@
    "summary": "Daisy Christodoulou shares what No More Marking has learned from comparative judgement of more than two million pieces of student writing, and how teachers can use those insights.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "UK"
+   "region": "UK",
+   "kind": "webinar"
   },
   {
    "title": "What is the Science of Maths? Implications for Instruction",
@@ -1719,7 +1798,7 @@
     "Australia"
    ],
    "areas": [
-    12,
+    39,
     1
    ],
    "tags": [
@@ -1728,7 +1807,8 @@
    "summary": "Siobhan Merlo offers a cognitive science lens for judging maths teaching approaches, covering working memory load, primary and secondary knowledge, and how information should be presented.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Leading a Whole School Approach to Classroom Management",
@@ -1749,7 +1829,8 @@
    "summary": "Cate Whiting explains AERO's resources for leading a whole-school approach to classroom management, and how leaders can build shared understanding and consistent practice across classrooms.",
    "length": "30 to 60 minutes",
    "audience": "Leaders",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Simplifying Phonics with Fidelity",
@@ -1760,7 +1841,7 @@
     "Australia"
    ],
    "areas": [
-    7,
+    27,
     14
    ],
    "tags": [
@@ -1769,7 +1850,8 @@
    "summary": "Charlotte Peverett shares what four years of systematic synthetic phonics at Lake Colac School showed matters most, with guidance for students with disability, neurodiversity or trauma backgrounds.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Putting the Science of Learning into Primary Science",
@@ -1790,7 +1872,8 @@
    "summary": "Principal David Suter applies science of learning ideas to primary science, covering vocabulary, science inquiry versus inquiry learning, common misconceptions and formative assessment.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Implementing the VC2.0 Mathematics Curriculum",
@@ -1801,7 +1884,7 @@
     "Australia"
    ],
    "areas": [
-    12,
+    39,
     6
    ],
    "tags": [
@@ -1810,7 +1893,8 @@
    "summary": "Sue Davis gives an overview of the Victorian Curriculum 2.0 for mathematics and a planning path from yearly overviews to lessons using Ochre Education (now Impact Curriculum) materials.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Harnessing the Science of Learning",
@@ -1831,7 +1915,8 @@
    "summary": "Nathaniel Swain introduces his book Harnessing the Science of Learning, using its school case studies to show how small changes in teaching, literacy, maths and curriculum add up.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Helping struggling readers to catch up: lessons from Parafield Gardens High School",
@@ -1843,7 +1928,6 @@
    ],
    "areas": [
     14,
-    7,
     19
    ],
    "tags": [
@@ -1852,7 +1936,8 @@
    "summary": "A Grattan Institute webinar on helping struggling readers catch up, built around lessons from Parafield Gardens High School. Of interest to secondary leaders planning reading support.",
    "length": "30 to 60 minutes",
    "audience": "Leaders",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Transforming the way we teach reading: lessons learnt from Churchill Primary",
@@ -1863,7 +1948,6 @@
     "Australia"
    ],
    "areas": [
-    7,
     17,
     19
    ],
@@ -1873,7 +1957,8 @@
    "summary": "A Grattan Institute webinar on changing the way reading is taught, drawing on lessons learnt at Churchill Primary. Suits leaders planning a similar shift.",
    "length": "30 to 60 minutes",
    "audience": "Leaders",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "How to transform maths teaching: lessons from The Entrance",
@@ -1884,7 +1969,7 @@
     "Australia"
    ],
    "areas": [
-    12,
+    39,
     17,
     19
    ],
@@ -1894,7 +1979,8 @@
    "summary": "A Grattan Institute webinar on transforming maths teaching, drawing on lessons from The Entrance. Suits leaders thinking about maths teaching across a school.",
    "length": "30 to 60 minutes",
    "audience": "Leaders",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "A conversation with Adam Bright and Brad Nguyen from Docklands Primary School on school curriculum",
@@ -1914,7 +2000,8 @@
    "summary": "Grattan Institute talks with Adam Bright and Brad Nguyen from Docklands Primary School about their school's curriculum. Useful for leaders thinking about curriculum across a school.",
    "length": "30 to 60 minutes",
    "audience": "Leaders",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar"
   },
   {
    "title": "Reid Smith: Is knowing enough? (researchED Ballarat 2023)",
@@ -1927,7 +2014,7 @@
    ],
    "areas": [
     6,
-    8
+    30
    ],
    "tags": [
     "Free"
@@ -1935,7 +2022,8 @@
    "summary": "Reid Smith's talk from researchED Ballarat 2023, asking whether knowing is enough. A prompt for teams thinking about the place of knowledge in the curriculum.",
    "length": "30 to 60 minutes",
    "audience": "Leaders",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "talk"
   },
   {
    "title": "Adelle Holmes: Teaching maths with a common curriculum at Clarendon (researchED Ballarat 2025)",
@@ -1947,7 +2035,7 @@
     "Australia"
    ],
    "areas": [
-    12,
+    39,
     6,
     21
    ],
@@ -1957,7 +2045,8 @@
    "summary": "Adelle Holmes's researchED Ballarat 2025 talk on teaching maths with a common curriculum at Clarendon. Of interest to teams considering shared lesson materials.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "talk"
   },
   {
    "title": "Sara Wiggins: Classroom mastery, transforming behaviour and elevating results (researchED Ballarat 2025)",
@@ -1978,7 +2067,8 @@
    "summary": "Sara Wiggins's researchED Ballarat 2025 talk on classroom mastery, behaviour and lifting results. A starting point for staff discussion about routines and expectations.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "talk"
   },
   {
    "title": "Christine Counsell: The support our middle leaders need if curricula are to flourish (researchED Home)",
@@ -1999,7 +2089,8 @@
    "summary": "Christine Counsell's researchED Home talk on the support middle leaders need if a school's curriculum is to flourish. Aimed at leaders who work with subject and year-level leads.",
    "length": "Over 60 minutes",
    "audience": "Leaders",
-   "region": "UK"
+   "region": "UK",
+   "kind": "talk"
   },
   {
    "title": "Peps Mccrea and Caroline Spalding: Leveraging the science of motivation (researchED Home)",
@@ -2019,7 +2110,8 @@
    "summary": "Peps Mccrea and Caroline Spalding's researchED Home session on using the science of motivation in schools. A starting point for staff discussion about student motivation.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "UK"
+   "region": "UK",
+   "kind": "talk"
   },
   {
    "title": "Group PD that really works",
@@ -2038,8 +2130,9 @@
    ],
    "summary": "A Steplab session on group professional development that works. Useful for leaders and coaches who plan whole-staff or team sessions.",
    "length": "30 to 60 minutes",
-   "audience": "Coaches and leaders",
-   "region": "UK"
+   "audience": "Leaders",
+   "region": "UK",
+   "kind": "webinar"
   },
   {
    "title": "Adaptive instructional coaching, with Haili Hughes",
@@ -2057,8 +2150,9 @@
    ],
    "summary": "Haili Hughes presents on adaptive instructional coaching in a session hosted by IRIS Connect. Useful for coaches thinking about how they adjust their approach for different teachers.",
    "length": "30 to 60 minutes",
-   "audience": "Coaches and leaders",
-   "region": "UK"
+   "audience": "Leaders",
+   "region": "UK",
+   "kind": "webinar"
   },
   {
    "title": "Successful implementation, with Professor Jonathan Sharples",
@@ -2082,7 +2176,8 @@
    "staff": [
     "Think of an initiative here that faded. At which stage did it go wrong?",
     "What would we stop doing to give our next change enough time and attention?"
-   ]
+   ],
+   "kind": "webinar"
   },
   {
    "title": "The mechanisms of effective professional development",
@@ -2101,12 +2196,13 @@
    ],
    "summary": "An Evidence for Learning webinar on the mechanisms of effective professional development. Useful for leaders and coaches reviewing how their school's professional learning is designed.",
    "length": "30 to 60 minutes",
-   "audience": "Coaches and leaders",
+   "audience": "Leaders",
    "region": "Australia",
    "staff": [
     "Which of the mechanisms are present in our professional learning, and which are missing?",
     "How do we help teachers turn a new technique into a habit?"
-   ]
+   ],
+   "kind": "webinar"
   },
   {
    "title": "Dylan Wiliam: Assessment for learning is more than formative assessment (researchED Madrid 2025)",
@@ -2127,7 +2223,8 @@
    "summary": "Dylan Wiliam's talk from researchED Madrid 2025, arguing that assessment for learning is more than formative assessment. Useful for teams reviewing how they use assessment.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "UK"
+   "region": "UK",
+   "kind": "talk"
   },
   {
    "title": "Dylan Wiliam: Leading teacher learning communities",
@@ -2145,9 +2242,10 @@
     "Free"
    ],
    "summary": "Dylan Wiliam on leading teacher learning communities. A shorter session for leaders setting up or refreshing regular teacher groups.",
-   "length": "Under 30 minutes",
+   "length": "10 to 30 minutes",
    "audience": "Leaders",
-   "region": "UK"
+   "region": "UK",
+   "kind": "talk"
   },
   {
    "title": "An introduction to Teaching Sprints",
@@ -2167,7 +2265,8 @@
    "summary": "Simon Breakspear introduces Teaching Sprints, his approach to team-based teacher improvement. A starting point for leaders and teams curious about how it works.",
    "length": "30 to 60 minutes",
    "audience": "Leaders",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "talk"
   },
   {
    "title": "Lessons learned in 15 years of MTSS: keynote by Amanda VanDerHeyden",
@@ -2187,7 +2286,8 @@
    "summary": "Amanda VanDerHeyden's keynote on lessons learned from 15 years of multi-tiered systems of support, hosted by Branching Minds. Useful for leaders reviewing their own MTSS.",
    "length": "30 to 60 minutes",
    "audience": "Leaders",
-   "region": "USA"
+   "region": "USA",
+   "kind": "talk"
   },
   {
    "title": "Morphology and spelling, with Lyn Stone",
@@ -2198,8 +2298,8 @@
     "USA"
    ],
    "areas": [
-    9,
-    8
+    31,
+    33
    ],
    "tags": [
     "Free"
@@ -2207,7 +2307,9 @@
    "summary": "Lyn Stone presents on morphology and spelling for The Reading League Illinois. A long session for teachers wanting to deepen their knowledge of how words are built.",
    "length": "Over 60 minutes",
    "audience": "Teachers",
-   "region": "USA"
+   "region": "USA",
+   "kind": "webinar",
+   "strand": "Spelling and morphology"
   },
   {
    "title": "Learning through and to talk: why oracy matters, with Voice 21",
@@ -2226,7 +2328,8 @@
    "summary": "Voice 21 presents on why oracy matters, learning both through talk and to talk, in a session hosted by Education Scotland. Useful for teachers planning how talk is taught.",
    "length": "30 to 60 minutes",
    "audience": "Teachers",
-   "region": "UK"
+   "region": "UK",
+   "kind": "webinar"
   },
   {
    "title": "Science of Reading Presentation by Pamela Snow",
@@ -2236,15 +2339,16 @@
     "Australia"
    ],
    "areas": [
-    7,
-    8
+    33
    ],
    "tags": [
     "Free"
    ],
    "summary": "Professor Pamela Snow presents on the science of reading, in a session recorded for Catholic Education Canberra Goulburn's Catalyst program.",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "talk",
+   "strand": "Syntheses of the field"
   },
   {
    "title": "Reading instruction in Australian schools: Headwinds, tailwinds and crosswinds",
@@ -2255,7 +2359,7 @@
     "Australia"
    ],
    "areas": [
-    7,
+    33,
     18
    ],
    "tags": [
@@ -2263,7 +2367,9 @@
    ],
    "summary": "Pamela Snow's 2025 La Trobe Oration asks why reading instruction is still contested after decades of research, what has slowed research reaching classrooms, and what needs to change in teacher education.",
    "audience": "Leaders",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "talk",
+   "strand": "Syntheses of the field"
   },
   {
    "title": "Oral language development and reading, with Professor Pamela Snow",
@@ -2275,8 +2381,7 @@
    ],
    "areas": [
     11,
-    7,
-    8
+    33
    ],
    "tags": [
     "Free"
@@ -2284,7 +2389,9 @@
    "summary": "Professor Pamela Snow speaks about oral language development and its relationship to reading, in a session hosted by Spellcaster Education.",
    "length": "Over 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "webinar",
+   "strand": "Oral language as the foundation"
   },
   {
    "title": "Stephanie Le Lievre: A knowledge-based comprehension model",
@@ -2295,8 +2402,9 @@
     "Australia"
    ],
    "areas": [
-    8,
-    6
+    30,
+    6,
+    33
    ],
    "tags": [
     "Free"
@@ -2304,7 +2412,9 @@
    "summary": "Stephanie Le Lievre presents a knowledge-based model of reading comprehension in a session for Read Ballarat. Useful for teachers rethinking how comprehension is taught.",
    "length": "Over 60 minutes",
    "audience": "Teachers",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "talk",
+   "strand": "Knowledge and comprehension"
   },
   {
    "strand": "Understanding learning difficulties",
@@ -2326,7 +2436,8 @@
    "summary": "A Learning Difficulties Australia session with Dr Kate Jacobs on specific learning disorders. A possible starting point before looking at each disorder in turn.",
    "region": "Australia",
    "length": "Over 60 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "webinar"
   },
   {
    "strand": "Understanding learning difficulties",
@@ -2339,7 +2450,6 @@
    ],
    "areas": [
     14,
-    7,
     13,
     25
    ],
@@ -2349,7 +2459,8 @@
    "summary": "Victorian school leader Sarah Asome presents on response to intervention for Learning Difficulties Australia. Useful for teams building or reviewing their own tiers of support.",
    "region": "Australia",
    "length": "30 to 60 minutes",
-   "audience": "Leaders"
+   "audience": "Leaders",
+   "kind": "webinar"
   },
   {
    "strand": "Supporting students with additional needs",
@@ -2371,7 +2482,8 @@
    "summary": "Inclusive education researcher Dr Kate de Bruin presents for Learning Difficulties Australia on using universal design principles to support every student.",
    "region": "Australia",
    "length": "30 to 60 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "webinar"
   },
   {
    "strand": "Developmental language disorder",
@@ -2385,8 +2497,7 @@
    "areas": [
     25,
     11,
-    14,
-    8
+    14
    ],
    "tags": [
     "Free"
@@ -2398,7 +2509,8 @@
    "staff": [
     "Which of our students read words accurately but still struggle to understand spoken and written language?",
     "How do we share concerns about a student's language with our speech pathologist or the family?"
-   ]
+   ],
+   "kind": "interview"
   },
   {
    "strand": "Developmental language disorder",
@@ -2421,7 +2533,8 @@
    "summary": "A session from Speech Pathology Tasmania on understanding developmental language disorder and dysgraphia together, from an Australian speech pathology point of view.",
    "region": "Australia",
    "length": "30 to 60 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "webinar"
   },
   {
    "strand": "Dyslexia",
@@ -2434,7 +2547,6 @@
    ],
    "areas": [
     25,
-    7,
     11,
     14
    ],
@@ -2448,7 +2560,8 @@
    "staff": [
     "What do we currently believe causes dyslexia, and where did those beliefs come from?",
     "How well do we look at oral language when a student is struggling to read?"
-   ]
+   ],
+   "kind": "talk"
   },
   {
    "strand": "Dyslexia",
@@ -2461,7 +2574,6 @@
    ],
    "areas": [
     25,
-    7,
     11,
     14
    ],
@@ -2471,7 +2583,8 @@
    "summary": "Dr Tiffany Hogan joins New Zealand's Learning MATTERS for a session on dyslexia and developmental language disorder together.",
    "region": "New Zealand",
    "length": "Over 60 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "webinar"
   },
   {
    "strand": "Dyslexia",
@@ -2483,7 +2596,6 @@
     "Australia"
    ],
    "areas": [
-    7,
     14,
     15,
     25
@@ -2494,7 +2606,8 @@
    "summary": "A Macquarie University Centre for Reading seminar asking why children who struggle with reading are more likely to have emotional difficulties. A reminder to watch wellbeing alongside intervention.",
    "region": "Australia",
    "length": "30 to 60 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "talk"
   },
   {
    "strand": "Dyslexia",
@@ -2507,7 +2620,6 @@
    ],
    "areas": [
     25,
-    7,
     14
    ],
    "tags": [
@@ -2516,7 +2628,8 @@
    "summary": "A National Center on Improving Literacy session explaining the International Dyslexia Association's updated definition of dyslexia. Good for leaders who need to keep school documents current.",
    "region": "USA",
    "length": "30 to 60 minutes",
-   "audience": "Leaders"
+   "audience": "Leaders",
+   "kind": "webinar"
   },
   {
    "strand": "Dyslexia",
@@ -2529,7 +2642,6 @@
    ],
    "areas": [
     25,
-    7,
     13,
     14
    ],
@@ -2539,7 +2651,8 @@
    "summary": "Researcher Hugh Catts presents for the Windward Institute on identifying dyslexia early. Relevant to Foundation and Year 1 teams and anyone responsible for screening.",
    "region": "USA",
    "length": "Over 60 minutes",
-   "audience": "Leaders"
+   "audience": "Leaders",
+   "kind": "webinar"
   },
   {
    "strand": "Dyslexia",
@@ -2552,7 +2665,7 @@
    ],
    "areas": [
     25,
-    7,
+    27,
     14
    ],
    "tags": [
@@ -2560,8 +2673,8 @@
    ],
    "summary": "Understood's video takes you inside a dyslexia intervention session. Handy for staff who have never watched specialist reading intervention being taught.",
    "region": "USA",
-   "length": "30 to 60 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "classroom footage with commentary"
   },
   {
    "strand": "Dyslexia",
@@ -2574,7 +2687,6 @@
    ],
    "areas": [
     25,
-    7,
     14,
     18
    ],
@@ -2584,7 +2696,8 @@
    "summary": "The American Psychological Association's podcast Speaking of Psychology talks with researcher Tim Odegard about myths, misconceptions and facts about dyslexia. This is the video recording of the episode.",
    "region": "USA",
    "length": "30 to 60 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "interview"
   },
   {
    "strand": "Dysgraphia and written expression",
@@ -2597,9 +2710,8 @@
    ],
    "areas": [
     25,
-    9,
+    32,
     10,
-    7,
     14
    ],
    "tags": [
@@ -2608,7 +2720,8 @@
    "summary": "A webinar from Australian linguist Lyn Stone, made for parents who want to know more about dyslexia and dysgraphia. Clear enough for teachers too, and one to pass on to families.",
    "region": "Australia",
    "length": "Over 60 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "webinar"
   },
   {
    "strand": "Dysgraphia and written expression",
@@ -2620,7 +2733,7 @@
     "Australia"
    ],
    "areas": [
-    9,
+    32,
     14,
     25
    ],
@@ -2630,10 +2743,14 @@
    "summary": "Robyn Bartram presents on handwriting for Learning Difficulties Australia. One for junior teams reviewing how handwriting is taught and supported.",
    "region": "Australia",
    "length": "Over 60 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "webinar"
   },
   {
-   "strand": "Dysgraphia and written expression",
+   "strand": [
+    "Dysgraphia and written expression",
+    "Spelling and morphology"
+   ],
    "title": "Alison Clarke: Spelling",
    "url": "https://www.youtube.com/watch?v=l-Q_n5V00v4",
    "by": "Learning Difficulties Australia, with Alison Clarke",
@@ -2642,9 +2759,10 @@
     "Australia"
    ],
    "areas": [
-    9,
+    31,
     14,
-    25
+    25,
+    33
    ],
    "tags": [
     "Free"
@@ -2652,10 +2770,14 @@
    "summary": "Melbourne speech pathologist Alison Clarke presents on spelling for Learning Difficulties Australia. Relevant to anyone supporting students whose spelling lags behind their reading.",
    "region": "Australia",
    "length": "30 to 60 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "webinar"
   },
   {
-   "strand": "Dysgraphia and written expression",
+   "strand": [
+    "Dysgraphia and written expression",
+    "Spelling and morphology"
+   ],
    "title": "Dr Alison Madelaine: Rethinking Tier 1 spelling instruction",
    "url": "https://www.youtube.com/watch?v=wDJYbk4wHUI",
    "by": "Five from Five, with Alison Madelaine",
@@ -2664,9 +2786,10 @@
     "Australia"
    ],
    "areas": [
-    9,
+    31,
     14,
-    25
+    25,
+    33
    ],
    "tags": [
     "Free"
@@ -2674,10 +2797,14 @@
    "summary": "Dr Alison Madelaine's guest presentation for Five from Five on rethinking classroom spelling teaching. Strong Tier 1 spelling is the first support for students with written expression difficulties.",
    "region": "Australia",
    "length": "30 to 60 minutes",
-   "audience": "Leaders"
+   "audience": "Leaders",
+   "kind": "webinar"
   },
   {
-   "strand": "Dysgraphia and written expression",
+   "strand": [
+    "Dysgraphia and written expression",
+    "The Writing Rope and views of writing"
+   ],
    "title": "Steve Graham: An overview of effective K to 12 writing instruction, from handwriting to writing genres",
    "url": "https://www.youtube.com/watch?v=UHAQFOzuGP0",
    "by": "The Reading League Vermont, with Steve Graham",
@@ -2687,9 +2814,10 @@
    ],
    "areas": [
     10,
-    9,
+    32,
     14,
-    25
+    25,
+    33
    ],
    "tags": [
     "Free"
@@ -2697,7 +2825,8 @@
    "summary": "Writing researcher Steve Graham gives The Reading League Vermont an overview of effective writing teaching, from handwriting through to genres.",
    "region": "USA",
    "length": "Over 60 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "webinar"
   },
   {
    "strand": "Dysgraphia and written expression",
@@ -2709,7 +2838,7 @@
     "USA"
    ],
    "areas": [
-    9,
+    32,
     13,
     14,
     25
@@ -2720,10 +2849,14 @@
    "summary": "An Iowa Reading Research Center webinar on teaching and assessing handwriting using evidence. Helpful for schools without an agreed way to check handwriting fluency.",
    "region": "USA",
    "length": "Over 60 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "webinar"
   },
   {
-   "strand": "Dysgraphia and written expression",
+   "strand": [
+    "Dysgraphia and written expression",
+    "The Writing Rope and views of writing"
+   ],
    "title": "Steve Graham: Effective writing instruction",
    "url": "https://www.youtube.com/watch?v=jp4l-oBbgXQ",
    "by": "Reading Rockets, with Steve Graham",
@@ -2734,7 +2867,8 @@
    "areas": [
     10,
     14,
-    25
+    25,
+    33
    ],
    "tags": [
     "Free"
@@ -2742,7 +2876,8 @@
    "summary": "A Reading Rockets video with writing researcher Steve Graham on effective writing teaching. Pairs well with the Karen Harris podcast episode on self-regulated strategy development on the Listen shelf.",
    "region": "USA",
    "length": "30 to 60 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "interview"
   },
   {
    "strand": "Dysgraphia and written expression",
@@ -2754,7 +2889,7 @@
     "UK"
    ],
    "areas": [
-    9,
+    32,
     25
    ],
    "tags": [
@@ -2763,7 +2898,8 @@
    "summary": "An episode of the UK podcast Thinking Deeply about Primary Education on why handwriting is hard to teach well and what teachers can do about it. This is the video recording of the episode.",
    "region": "UK",
    "length": "30 to 60 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "interview"
   },
   {
    "strand": "Dyscalculia and maths difficulties",
@@ -2775,7 +2911,7 @@
     "UK"
    ],
    "areas": [
-    12,
+    38,
     14,
     25
    ],
@@ -2785,7 +2921,8 @@
    "summary": "Rob Jennings of The Dyscalculia Network interviews Steve Chinn, a long-standing UK specialist in maths learning difficulties, about his book on teaching maths with learners' needs in mind.",
    "region": "UK",
    "length": "30 to 60 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "interview"
   },
   {
    "strand": "Dyscalculia and maths difficulties",
@@ -2798,7 +2935,7 @@
    ],
    "areas": [
     25,
-    12,
+    38,
     14
    ],
    "tags": [
@@ -2807,7 +2944,8 @@
    "summary": "Education Scotland's webinar on understanding dyscalculia. A full session for maths leaders and intervention staff.",
    "region": "UK",
    "length": "Over 60 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "webinar"
   },
   {
    "strand": "Dyscalculia and maths difficulties",
@@ -2820,7 +2958,7 @@
    ],
    "areas": [
     25,
-    12,
+    38,
     14
    ],
    "tags": [
@@ -2833,7 +2971,8 @@
    "staff": [
     "Which early number skills do we check in Foundation and Year 1?",
     "What would we want a parent to hear from us if we suspected a persistent maths difficulty?"
-   ]
+   ],
+   "kind": "webinar"
   },
   {
    "strand": "Dyscalculia and maths difficulties",
@@ -2846,7 +2985,7 @@
    ],
    "areas": [
     25,
-    12,
+    38,
     14
    ],
    "tags": [
@@ -2855,7 +2994,8 @@
    "summary": "Dr Sarah Powell walks through free tools from the National Center on Intensive Intervention for assessing and teaching students with maths difficulty.",
    "region": "USA",
    "length": "30 to 60 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "webinar"
   },
   {
    "strand": "Dyscalculia and maths difficulties",
@@ -2867,7 +3007,7 @@
     "USA"
    ],
    "areas": [
-    12,
+    38,
     14,
     13,
     25
@@ -2878,7 +3018,8 @@
    "summary": "Eight free training modules from the National Center on Intensive Intervention on delivering intensive maths intervention and adjusting it using student data. Suited to interventionists and maths leaders.",
    "region": "USA",
    "length": "Series",
-   "audience": "Coaches and leaders"
+   "audience": "Leaders",
+   "kind": "series"
   },
   {
    "strand": "Related needs",
@@ -2900,7 +3041,8 @@
    "summary": "Researcher Joni Holmes speaks on working memory and classroom learning. Relevant across this section, because many students with learning difficulties also find it hard to hold information in mind.",
    "region": "UK",
    "length": "30 to 60 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "webinar"
   },
   {
    "strand": "Related needs",
@@ -2914,7 +3056,7 @@
    "areas": [
     25,
     14,
-    9
+    32
    ],
    "tags": [
     "Free"
@@ -2922,7 +3064,8 @@
    "summary": "Professor Amanda Kirby speaks for the Association for Child and Adolescent Mental Health about developmental coordination disorder, which often shows up at school in handwriting and organisation. Made for clinicians, so heavier going than the short video in this strand.",
    "region": "UK",
    "length": "30 to 60 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "talk"
   },
   {
    "strand": "ADHD",
@@ -2944,7 +3087,8 @@
    "summary": "Dr Joanna Martin of Cardiff University on the early signs of ADHD in primary school children, how it can look different in girls and boys, what to do when you have concerns and how schools can help.",
    "region": "UK",
    "length": "30 to 60 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "webinar"
   },
   {
    "strand": "ADHD",
@@ -2967,7 +3111,8 @@
    "summary": "Behaviour analyst Rebecca McLinden, speaking for ADHD Australia, on how ADHD affects the way rewards work, and why motivation and consistency can be hard to keep up.",
    "region": "Australia",
    "length": "30 to 60 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "webinar"
   },
   {
    "strand": "ADHD",
@@ -2988,7 +3133,8 @@
    "summary": "Monique Mitchelson's talk for ADHD Australia's Global ADHD Conference on ADHD and co-occurring autism. Helpful background when a student's profile does not fit one label neatly.",
    "region": "Australia",
    "length": "30 to 60 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "talk"
   },
   {
    "strand": "ADHD",
@@ -3010,7 +3156,8 @@
    "summary": "A webinar for parents from Canada's Kelty Mental Health Resource Centre on how ADHD affects learning and how to support a child at school. Useful for seeing school through a family's eyes. Some of the advice is specific to British Columbia.",
    "region": "Canada",
    "length": "30 to 60 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "webinar"
   },
   {
    "strand": "ADHD",
@@ -3033,7 +3180,8 @@
    "summary": "A recorded webinar on ADHD in children and teenagers from the Raising Children Network, the Australian parenting website. Worth knowing about when a family asks you where to start.",
    "region": "Australia",
    "length": "Over 60 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "webinar"
   },
   {
    "strand": "Autism",
@@ -3059,7 +3207,8 @@
    "staff": [
     "What do we already do at Tier 1 that helps autistic students and everyone else?",
     "Which one strategy from this session could every classroom adopt this term?"
-   ]
+   ],
+   "kind": "webinar"
   },
   {
    "strand": "Autism",
@@ -3081,7 +3230,8 @@
    "summary": "The third episode of inclusionED's webinar series explains sensory seeking and sensory avoiding, and how being more or less sensitive to what is going on in a classroom affects students.",
    "region": "Australia",
    "length": "30 to 60 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "webinar"
   },
   {
    "strand": "Autism",
@@ -3104,7 +3254,8 @@
    "summary": "A recorded panel from Yellow Ladybugs and the Victorian Government. Panellists share their own experience of six areas that often challenge autistic girls at school, including hidden anxiety, peer relationships and class rules.",
    "region": "Australia",
    "length": "Over 60 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "talk"
   },
   {
    "strand": "Autism",
@@ -3128,7 +3279,8 @@
    "summary": "A recorded webinar on planning, shifting attention, flexible thinking and self-regulation in young autistic people, with slides, a strategy list for home and school and a planning template.",
    "region": "Australia",
    "length": "30 to 60 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "webinar"
   },
   {
    "strand": "Autism",
@@ -3151,7 +3303,8 @@
    "summary": "Two recorded webinars on the different ways autistic people communicate, being a good communication partner and extending two-way interaction, with slides and a planning tool.",
    "region": "Australia",
    "length": "Series",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "webinar"
   },
   {
    "strand": "Autism",
@@ -3171,8 +3324,9 @@
    ],
    "summary": "A shortened version of the Autism Education Trust's Making Sense of Autism training, made to help education staff understand autism better, with ideas for support in the classroom and at home.",
    "region": "UK",
-   "length": "Under 30 minutes",
-   "audience": "Teachers"
+   "length": "10 to 30 minutes",
+   "audience": "Teachers",
+   "kind": "explainer"
   },
   {
    "strand": "Autism",
@@ -3195,7 +3349,8 @@
    "summary": "An episode of Aspect's podcast A Different Brilliant on what dysregulation is, what can contribute to it and how adults can support an autistic person who is overwhelmed. This is the video recording of the episode.",
    "region": "Australia",
    "length": "30 to 60 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "interview"
   },
   {
    "strand": "Supporting students with additional needs",
@@ -3222,7 +3377,8 @@
    "staff": [
     "When are our education support staff working with the students who most need the teacher?",
     "What preparation and feedback time do teachers and support staff have together each week?"
-   ]
+   ],
+   "kind": "webinar"
   },
   {
    "strand": "Supporting students with additional needs",
@@ -3244,7 +3400,8 @@
    "summary": "A recorded Be You session on how to support neurodiversity and disability inclusion in school communities. Be You is the national mental health in education initiative led by Beyond Blue.",
    "region": "Australia",
    "length": "30 to 60 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "webinar"
   },
   {
    "strand": "Supporting students with additional needs",
@@ -3265,8 +3422,9 @@
    ],
    "summary": "Dr Kate de Bruin's short presentation, recorded for the ACT Inclusive Education Community of Practice, on why schools should move to a multi-tiered system of supports.",
    "region": "Australia",
-   "length": "Under 30 minutes",
-   "audience": "Leaders"
+   "length": "10 to 30 minutes",
+   "audience": "Leaders",
+   "kind": "talk"
   },
   {
    "strand": "Supporting students with additional needs",
@@ -3288,7 +3446,8 @@
    "summary": "The fourth episode of inclusionED's webinar series, on foundation practices for early career teachers. It also introduces the professional learning and community of practice on the inclusionED website.",
    "region": "Australia",
    "length": "30 to 60 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "webinar"
   },
   {
    "strand": "Supporting students with additional needs",
@@ -3310,7 +3469,604 @@
    "summary": "Professor Linda Graham, Director of the QUT Centre for Inclusive Education, talks with host Leisa Reichelt about teaching and assessment that every student can access, and what the Disability Standards ask of schools. This is the video recording of the podcast episode.",
    "region": "Australia",
    "length": "30 to 60 minutes",
-   "audience": "Leaders"
+   "audience": "Leaders",
+   "kind": "interview"
+  },
+  {
+   "title": "Dr Wes Hoover explains the Simple View of Reading",
+   "url": "https://www.youtube.com/watch?v=wo0-CyArT7Y",
+   "by": "The Reading League, with Wesley Hoover",
+   "meta": [
+    "About 3 minutes",
+    "USA"
+   ],
+   "areas": [
+    33
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Wesley Hoover explains the Simple View of Reading in under three minutes, in a short video from The Reading League's Defining Guide series.",
+   "length": "Under 10 minutes",
+   "audience": "Teachers",
+   "region": "USA",
+   "staff": [
+    "Which of our students decode well but understand little, and which understand well when listening but struggle to decode?",
+    "How do our assessments tell us whether decoding or language comprehension is holding a student back?"
+   ],
+   "kind": "explainer",
+   "strand": "The Simple View of Reading"
+  },
+  {
+   "title": "The Simple View and Scarborough's Reading Rope, with Hugh Catts",
+   "url": "https://www.youtube.com/watch?v=QOSU3Fig8GM",
+   "by": "Melissa and Lori Love Literacy, with Hugh Catts",
+   "meta": [
+    "About 23 minutes",
+    "USA"
+   ],
+   "areas": [
+    33
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Reading researcher Hugh Catts joins the Melissa and Lori Love Literacy podcast to talk about the Simple View of Reading and Scarborough's Reading Rope. This is the video of episode 178.",
+   "length": "10 to 30 minutes",
+   "audience": "Teachers",
+   "region": "USA",
+   "staff": [
+    "Which strands of the Reading Rope get the most teaching time in our school, and which get the least?",
+    "What would change in our planning if word recognition and language comprehension were both everyone's job from Foundation to Year 6?"
+   ],
+   "kind": "interview",
+   "strand": "Scarborough's Reading Rope"
+  },
+  {
+   "title": "Q and A with Hollis Scarborough",
+   "url": "https://www.youtube.com/watch?v=83tfzOFpBak",
+   "by": "SoR: What I Should Have Learned in College, with Hollis Scarborough",
+   "meta": [
+    "About 1 hour 5 minutes",
+    "USA"
+   ],
+   "areas": [
+    33
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A question and answer session with Hollis Scarborough, the researcher who created the Reading Rope. It runs for a little over an hour.",
+   "length": "Over 60 minutes",
+   "audience": "Teachers",
+   "region": "USA",
+   "kind": "interview",
+   "strand": "Scarborough's Reading Rope"
+  },
+  {
+   "title": "Building the language house",
+   "url": "https://www.youtube.com/watch?v=oa-92wmnovw",
+   "by": "Spelfabet",
+   "meta": [
+    "About 9 minutes",
+    "Australia"
+   ],
+   "areas": [
+    33,
+    11
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A short video on building the language house from Spelfabet, the site run by Australian speech pathologist Alison Clarke. It runs for about nine minutes.",
+   "length": "Under 10 minutes",
+   "audience": "Teachers",
+   "region": "Australia",
+   "kind": "explainer",
+   "strand": "The Language House"
+  },
+  {
+   "title": "SOLAR: Science of Language and Reading, with Pamela Snow",
+   "url": "https://www.youtube.com/watch?v=Zn0WwzMgDNc",
+   "by": "Teaching Literacy Podcast, with Pamela Snow",
+   "meta": [
+    "About 55 minutes"
+   ],
+   "areas": [
+    33,
+    11
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Pamela Snow joins the Teaching Literacy Podcast to talk about SOLAR, the Science of Language and Reading, the framework her Language House illustrates. This is the video of episode 21.",
+   "length": "30 to 60 minutes",
+   "audience": "Teachers",
+   "region": "International",
+   "kind": "interview",
+   "strand": "The Language House"
+  },
+  {
+   "title": "What is the Writing Rope?",
+   "url": "https://www.youtube.com/watch?v=HttwUbG2YaE",
+   "by": "Reading Universe",
+   "meta": [
+    "About 9 minutes",
+    "USA"
+   ],
+   "areas": [
+    33,
+    10
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A short Reading Universe video that answers the question in its title. At under ten minutes, it is a quick way to introduce the Writing Rope to a team.",
+   "length": "Under 10 minutes",
+   "audience": "Teachers",
+   "region": "USA",
+   "staff": [
+    "Which strands of the Writing Rope do we teach explicitly, and which do we mostly leave to chance?",
+    "Where do handwriting and spelling still hold our writers back, and what would it take to make them automatic?"
+   ],
+   "kind": "explainer",
+   "strand": "The Writing Rope and views of writing"
+  },
+  {
+   "title": "Teaching children to write well, with Joan Sedita",
+   "url": "https://readinguniverse.org/resources/video/big-picture/teaching-children-to-write-well-with-joan-sedita",
+   "by": "Reading Universe, with Joan Sedita",
+   "meta": [
+    "About 53 minutes",
+    "USA"
+   ],
+   "areas": [
+    33,
+    10
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Joan Sedita, founder of Keys to Literacy, presents her Writing Rope and shows how thinking, language, structure and craft weave together, using real student work and classroom video.",
+   "length": "30 to 60 minutes",
+   "audience": "Teachers",
+   "region": "USA",
+   "kind": "talk",
+   "strand": "The Writing Rope and views of writing"
+  },
+  {
+   "title": "The Writing Rope and integrating reading and writing, with Joan Sedita",
+   "url": "https://www.youtube.com/watch?v=6Iz4Jg__CaA",
+   "by": "The Reading League Florida, with Joan Sedita",
+   "meta": [
+    "About 1 hour 5 minutes",
+    "USA"
+   ],
+   "areas": [
+    33,
+    10
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Joan Sedita presents for The Reading League Florida on the Writing Rope and on integrating reading and writing instruction.",
+   "length": "Over 60 minutes",
+   "audience": "Teachers",
+   "region": "USA",
+   "kind": "webinar",
+   "strand": "The Writing Rope and views of writing"
+  },
+  {
+   "title": "The Writing Rope: Five-part webinar series with Joan Sedita",
+   "url": "https://www.youtube.com/playlist?list=PLCkBP2csbOsugqcFjFoNKzkBSxdD_95dL",
+   "by": "PaTTAN, with Joan Sedita",
+   "meta": [
+    "Five sessions",
+    "USA"
+   ],
+   "areas": [
+    33,
+    10,
+    16
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A PaTTAN playlist of five sessions on the Writing Rope. The first introduces the rope and what is known about effective writing instruction, and it suits a team working through the framework over a term.",
+   "length": "Series",
+   "audience": "Teachers",
+   "region": "USA",
+   "kind": "series",
+   "strand": "The Writing Rope and views of writing"
+  },
+  {
+   "title": "The Not So Simple View of Writing: Is it really that simple?",
+   "url": "https://www.youtube.com/watch?v=Sj322WqnvoU",
+   "by": "MiMTSS Technical Assistance Center",
+   "meta": [
+    "About 1 hour 20 minutes",
+    "USA"
+   ],
+   "areas": [
+    33,
+    10
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A session from the MiMTSS Technical Assistance Center on the Not So Simple View of Writing. It runs for about 80 minutes, and the presenter is not named in the title.",
+   "length": "Over 60 minutes",
+   "audience": "Teachers",
+   "region": "USA",
+   "kind": "webinar",
+   "strand": "The Writing Rope and views of writing"
+  },
+  {
+   "title": "Interview with Dr Linnea Ehri (The Reading League Podcast, episode 11)",
+   "url": "https://www.youtube.com/watch?v=TmRjsdXsZ3g",
+   "by": "The Reading League, with Linnea Ehri",
+   "meta": [
+    "About 1 hour 30 minutes",
+    "USA"
+   ],
+   "areas": [
+    33,
+    27
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A long-form interview with reading researcher Linnea Ehri, from The Reading League's podcast Teaching, Reading and Learning.",
+   "length": "Over 60 minutes",
+   "audience": "Teachers",
+   "region": "USA",
+   "kind": "interview",
+   "strand": "How word reading develops"
+  },
+  {
+   "title": "Orthographic mapping: What it is and why it's so important",
+   "url": "https://www.youtube.com/watch?v=XfRHcUeGohc",
+   "by": "The Reading League, with Maria Murray",
+   "meta": [
+    "About 35 minutes",
+    "USA"
+   ],
+   "areas": [
+    33,
+    27
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Maria Murray of The Reading League explains what orthographic mapping is and why it is so important, in a talk of about 35 minutes.",
+   "length": "30 to 60 minutes",
+   "audience": "Teachers",
+   "region": "USA",
+   "kind": "talk",
+   "strand": "How word reading develops"
+  },
+  {
+   "title": "Orthographic mapping explainer",
+   "url": "https://www.youtube.com/watch?v=KIuwKnZqJEQ",
+   "by": "Lyn Stone",
+   "meta": [
+    "About 9 minutes",
+    "Australia"
+   ],
+   "areas": [
+    33,
+    27
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Australian educational linguist Lyn Stone gives a short explainer on orthographic mapping. A quick starting point before the longer talks.",
+   "length": "Under 10 minutes",
+   "audience": "Teachers",
+   "region": "Australia",
+   "kind": "explainer",
+   "strand": "How word reading develops"
+  },
+  {
+   "title": "Professor Anne Castles: Teaching sight words",
+   "url": "https://www.youtube.com/watch?v=1rFSxx4V-84",
+   "by": "Learning Difficulties Australia, with Anne Castles",
+   "meta": [
+    "About 51 minutes",
+    "Australia"
+   ],
+   "areas": [
+    33,
+    27
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Anne Castles, co-author of Ending the Reading Wars, presents for Learning Difficulties Australia on teaching sight words.",
+   "length": "30 to 60 minutes",
+   "audience": "Teachers",
+   "region": "Australia",
+   "kind": "webinar",
+   "strand": "How word reading develops"
+  },
+  {
+   "title": "How the brain learns to read: Professor Stanislas Dehaene",
+   "url": "https://www.youtube.com/watch?v=25GI3-kiLdo",
+   "by": "WISE Channel, with Stanislas Dehaene",
+   "meta": [
+    "About 34 minutes",
+    "International"
+   ],
+   "areas": [
+    33,
+    1
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Professor Stanislas Dehaene's lecture on how the brain learns to read, published by the WISE Channel and about 34 minutes long.",
+   "length": "30 to 60 minutes",
+   "audience": "Teachers",
+   "region": "International",
+   "kind": "talk",
+   "strand": "How word reading develops"
+  },
+  {
+   "title": "An interview with Dr Louisa Moats: Revisiting Teaching Reading Is Rocket Science 2020",
+   "url": "https://www.youtube.com/watch?v=NE_t7Qj_rF8",
+   "by": "PaTTAN, with Louisa Moats",
+   "meta": [
+    "About 51 minutes",
+    "USA"
+   ],
+   "areas": [
+    33,
+    16
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Louisa Moats talks with PaTTAN about the 2020 edition of Teaching Reading Is Rocket Science. It pairs well with reading the paper itself, which is also in this section.",
+   "length": "30 to 60 minutes",
+   "audience": "Teachers",
+   "region": "USA",
+   "kind": "interview",
+   "strand": "Syntheses of the field"
+  },
+  {
+   "title": "Ending the reading wars: Kathy Rastle",
+   "url": "https://www.youtube.com/watch?v=nisZ4og8xPk",
+   "by": "Psychology at the University of Edinburgh, with Kathleen Rastle",
+   "meta": [
+    "About 1 hour 20 minutes",
+    "UK"
+   ],
+   "areas": [
+    33
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Kathleen Rastle, co-author of Ending the Reading Wars, gives a lecture of the same name, shared by Psychology at the University of Edinburgh.",
+   "length": "Over 60 minutes",
+   "audience": "Teachers",
+   "region": "UK",
+   "kind": "talk",
+   "strand": "Syntheses of the field"
+  },
+  {
+   "title": "A matter of translation: researchED Brisbane keynote, with Professor Tanya Serry",
+   "url": "https://www.youtube.com/watch?v=0nbKdNWKpvM",
+   "by": "A Learner's Toolkit, with Tanya Serry",
+   "meta": [
+    "About 1 hour 5 minutes",
+    "2025",
+    "Australia"
+   ],
+   "areas": [
+    33,
+    18
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Professor Tanya Serry's keynote at researchED Brisbane in 2025, titled A matter of translation and shared on the A Learner's Toolkit channel.",
+   "length": "Over 60 minutes",
+   "audience": "Teachers",
+   "region": "Australia",
+   "kind": "talk",
+   "strand": "Syntheses of the field"
+  },
+  {
+   "title": "Pamela Snow: Effective literacy instruction is essential to overcoming disadvantage",
+   "url": "https://www.youtube.com/watch?v=VJi7hoE8lJE",
+   "by": "Knowledge Society, with Pamela Snow",
+   "meta": [
+    "About 14 minutes",
+    "Australia"
+   ],
+   "areas": [
+    33
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Pamela Snow, in a short talk for Knowledge Society, on why effective literacy instruction is essential to overcoming disadvantage.",
+   "length": "10 to 30 minutes",
+   "audience": "Teachers",
+   "region": "Australia",
+   "kind": "talk",
+   "strand": "Syntheses of the field"
+  },
+  {
+   "title": "Leaders and learning in literacy: Structured literacy, with Dr Louise Spear-Swerling",
+   "url": "https://www.youtube.com/watch?v=UIUtX6HGtPw",
+   "by": "PaTTAN, with Louise Spear-Swerling",
+   "meta": [
+    "About 37 minutes",
+    "USA"
+   ],
+   "areas": [
+    33,
+    19
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Louise Spear-Swerling talks with PaTTAN about structured literacy, in a session from its Leaders and Learning in Literacy series.",
+   "length": "30 to 60 minutes",
+   "audience": "Leaders",
+   "region": "USA",
+   "kind": "interview",
+   "strand": "Syntheses of the field"
+  },
+  {
+   "title": "Teaching content is teaching reading",
+   "url": "https://www.youtube.com/watch?v=RiP-ijdxqEc",
+   "by": "Daniel Willingham",
+   "meta": [
+    "About 10 minutes",
+    "USA"
+   ],
+   "areas": [
+    30,
+    6,
+    33
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Daniel Willingham's ten-minute video making the case that teaching content is teaching reading. Short enough to show in a staff meeting.",
+   "length": "Under 10 minutes",
+   "audience": "Teachers",
+   "region": "USA",
+   "kind": "explainer",
+   "strand": "Knowledge and comprehension"
+  },
+  {
+   "title": "Rethinking reading comprehension, with researcher Hugh Catts",
+   "url": "https://www.youtube.com/watch?v=LvnKWqjGaeU",
+   "by": "Melissa and Lori Love Literacy, with Hugh Catts",
+   "meta": [
+    "About 56 minutes",
+    "USA"
+   ],
+   "areas": [
+    30,
+    33
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Hugh Catts joins the Melissa and Lori Love Literacy podcast to talk about rethinking reading comprehension. This is the video of episode 118, and it pairs with his American Educator article.",
+   "length": "30 to 60 minutes",
+   "audience": "Teachers",
+   "region": "USA",
+   "kind": "interview",
+   "strand": "Knowledge and comprehension"
+  },
+  {
+   "title": "Pamela Snow on early language and literacy skills",
+   "url": "https://www.youtube.com/watch?v=Q2WvEFMpAxE",
+   "by": "Progressively Incorrect (Zach Groshell), with Pamela Snow",
+   "meta": [
+    "About 1 hour"
+   ],
+   "areas": [
+    11,
+    33
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Pamela Snow talks with Zach Groshell about early language and literacy skills, in an hour-long episode of his podcast.",
+   "length": "Over 60 minutes",
+   "audience": "Teachers",
+   "region": "International",
+   "kind": "interview",
+   "strand": "Oral language as the foundation"
+  },
+  {
+   "title": "Dr Keith Stanovich: Matthew effects, does reading make you smarter?",
+   "url": "https://www.youtube.com/watch?v=lF6VKmMVWEc",
+   "by": "Children of the Code, with Keith Stanovich",
+   "meta": [
+    "About 6 minutes",
+    "USA"
+   ],
+   "areas": [
+    33
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Keith Stanovich talks about Matthew effects in reading and whether reading makes you smarter, in a six-minute interview clip from the Children of the Code project.",
+   "length": "Under 10 minutes",
+   "audience": "Teachers",
+   "region": "USA",
+   "kind": "interview",
+   "strand": "Oral language as the foundation"
+  },
+  {
+   "title": "Dr Tessa Daffern: Assessment-informed practices in teaching spelling",
+   "url": "https://www.youtube.com/watch?v=ComEHVhXbHg",
+   "by": "Learning Difficulties Australia, with Tessa Daffern",
+   "meta": [
+    "About 1 hour 10 minutes",
+    "Australia"
+   ],
+   "areas": [
+    31,
+    13
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Tessa Daffern presents for Learning Difficulties Australia on using assessment to guide the teaching of spelling.",
+   "length": "Over 60 minutes",
+   "audience": "Teachers",
+   "region": "Australia",
+   "kind": "webinar"
+  },
+  {
+   "title": "Susan Brady: Phoneme awareness: What we now know",
+   "url": "https://www.youtube.com/watch?v=RBp2wNMz--A",
+   "by": "Oregon RTIi, with Susan Brady",
+   "meta": [
+    "About 1 hour 15 minutes",
+    "USA"
+   ],
+   "areas": [
+    26
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Susan Brady presents on phoneme awareness and what is now known about it, in a session of about 75 minutes shared by Oregon RTIi.",
+   "length": "Over 60 minutes",
+   "audience": "Teachers",
+   "region": "USA",
+   "kind": "talk"
+  },
+  {
+   "title": "Is handwriting actually important for writing?",
+   "url": "https://readinguniverse.org/top-100-qas/is-handwriting-actually-important-for-writing",
+   "by": "Reading Universe, with Joan Sedita",
+   "meta": [
+    "About 2 minutes",
+    "USA"
+   ],
+   "areas": [
+    32
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Joan Sedita explains in two minutes why effortful handwriting takes energy away from composing, and why handwriting letters while learning their sounds helps young students.",
+   "length": "Under 10 minutes",
+   "audience": "Teachers",
+   "region": "USA",
+   "kind": "explainer"
   }
  ]
 }
