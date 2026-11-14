@@ -128,48 +128,6 @@
    ]
   },
   {
-   "n": 7,
-   "name": "Early reading: phonics and fluency",
-   "slug": "early-reading",
-   "domain": "Curriculum and subject teaching",
-   "about": "How children learn to read words, and what systematic synthetic phonics requires day to day.",
-   "practices": [
-    "Phonemic awareness",
-    "GPC teaching",
-    "blending",
-    "decodable texts",
-    "fluency routines"
-   ]
-  },
-  {
-   "n": 8,
-   "name": "Comprehension, vocabulary and text study",
-   "slug": "comprehension-vocabulary-and-text-study",
-   "domain": "Curriculum and subject teaching",
-   "about": "How background knowledge and vocabulary drive comprehension, and how to teach a whole text well.",
-   "practices": [
-    "Tier 2 vocabulary",
-    "text selection",
-    "close reading",
-    "questioning the author",
-    "text sets"
-   ]
-  },
-  {
-   "n": 9,
-   "name": "Spelling, morphology and handwriting",
-   "slug": "spelling-morphology-and-handwriting",
-   "domain": "Curriculum and subject teaching",
-   "about": "How spelling develops beyond phonics, and why transcription fluency matters for writing.",
-   "practices": [
-    "Spelling rules",
-    "morphology",
-    "etymology",
-    "dictation",
-    "handwriting fluency"
-   ]
-  },
-  {
    "n": 10,
    "name": "Writing",
    "slug": "writing",
@@ -185,28 +143,15 @@
   },
   {
    "n": 11,
-   "name": "Oral language and oracy",
+   "name": "Oral language",
    "slug": "oral-language-and-oracy",
    "domain": "Curriculum and subject teaching",
-   "about": "How talk underpins reading and writing, and how to teach it deliberately.",
+   "about": "How spoken language underpins reading and writing, and how to teach talk deliberately.",
    "practices": [
     "Oral rehearsal",
     "full-sentence responses",
     "accountable talk",
     "structured discussion"
-   ]
-  },
-  {
-   "n": 12,
-   "name": "Mathematics",
-   "slug": "mathematics",
-   "domain": "Curriculum and subject teaching",
-   "about": "What explicit, well-sequenced maths teaching looks like, and how fluency and understanding grow together.",
-   "practices": [
-    "Number fact fluency",
-    "worked examples",
-    "manipulatives and representations",
-    "problem solving"
    ]
   },
   {
@@ -346,6 +291,194 @@
     "live debates",
     "technology and AI"
    ]
+  },
+  {
+   "n": 26,
+   "slug": "phonological-and-phonemic-awareness",
+   "name": "Phonological and phonemic awareness",
+   "domain": "Curriculum and subject teaching",
+   "about": "How children learn to hear and work with the sounds in spoken words, from syllables and rhyme down to single phonemes, so that phonics has something to attach to.",
+   "practices": [
+    "Syllables, onset and rime",
+    "phoneme blending",
+    "phoneme segmenting",
+    "Elkonin boxes",
+    "sound chaining"
+   ]
+  },
+  {
+   "n": 27,
+   "slug": "phonics",
+   "name": "Phonics",
+   "domain": "Curriculum and subject teaching",
+   "about": "How to teach the links between letters and sounds systematically, so children can decode words for reading and encode them for spelling.",
+   "practices": [
+    "Grapheme-phoneme correspondences",
+    "blending for reading",
+    "decodable texts",
+    "a daily lesson routine",
+    "the Year 1 Phonics Check"
+   ]
+  },
+  {
+   "n": 28,
+   "slug": "reading-fluency",
+   "name": "Reading fluency",
+   "domain": "Curriculum and subject teaching",
+   "about": "How accurate word reading becomes smooth and expressive, at a pace that leaves attention free for meaning.",
+   "practices": [
+    "Repeated reading",
+    "echo and choral reading",
+    "paired reading",
+    "modelled fluent reading",
+    "text marking for phrasing"
+   ]
+  },
+  {
+   "n": 29,
+   "slug": "vocabulary",
+   "name": "Vocabulary",
+   "domain": "Curriculum and subject teaching",
+   "about": "How to choose words worth teaching and teach them so students understand them, remember them and use them.",
+   "practices": [
+    "Choosing Tier 2 words",
+    "student-friendly definitions",
+    "word study",
+    "repeated encounters in talk and text"
+   ]
+  },
+  {
+   "n": 30,
+   "slug": "reading-comprehension-and-text-study",
+   "name": "Reading comprehension and text study",
+   "domain": "Curriculum and subject teaching",
+   "about": "How knowledge, vocabulary and language drive understanding, and how to teach a whole text well.",
+   "practices": [
+    "Building background knowledge",
+    "text selection",
+    "close reading",
+    "questioning the author",
+    "comprehension strategies in their place"
+   ]
+  },
+  {
+   "n": 31,
+   "slug": "spelling-and-morphology",
+   "name": "Spelling and morphology",
+   "domain": "Curriculum and subject teaching",
+   "about": "How spelling draws on sounds, letter patterns and meaningful word parts, and how to teach it explicitly beyond the phonics years.",
+   "practices": [
+    "Phoneme-grapheme mapping",
+    "spelling patterns and conventions",
+    "prefixes, suffixes and bases",
+    "etymology",
+    "spelling assessment"
+   ]
+  },
+  {
+   "n": 32,
+   "slug": "handwriting-and-transcription",
+   "name": "Handwriting and transcription",
+   "domain": "Curriculum and subject teaching",
+   "about": "Why fluent handwriting and automatic spelling are the foundation of writing, and how to build them so attention is free for composing.",
+   "practices": [
+    "Letter formation",
+    "handwriting fluency",
+    "dictation",
+    "keyboarding",
+    "support for dysgraphia"
+   ]
+  },
+  {
+   "n": 33,
+   "slug": "frameworks-and-research-behind-literacy",
+   "name": "Frameworks and research behind literacy",
+   "domain": "Curriculum and subject teaching",
+   "about": "The models and bodies of research that explain how children learn to read, write and use language, from the Simple View of Reading to the Writing Rope.",
+   "practices": []
+  },
+  {
+   "n": 34,
+   "slug": "explicit-teaching-in-maths",
+   "name": "Explicit teaching in maths",
+   "domain": "Curriculum and subject teaching",
+   "about": "What a well-built maths lesson looks like, from modelling and worked examples to checking every student's understanding.",
+   "practices": [
+    "Small steps",
+    "modelling and think aloud",
+    "worked examples",
+    "checking for understanding",
+    "guided and independent practice"
+   ]
+  },
+  {
+   "n": 35,
+   "slug": "fluency-number-facts-and-daily-review",
+   "name": "Fluency, number facts and daily review",
+   "domain": "Curriculum and subject teaching",
+   "about": "How students come to recall number facts quickly and accurately, and how daily review keeps earlier learning alive.",
+   "practices": [
+    "Number fact fluency",
+    "daily review",
+    "retrieval practice",
+    "timed practice",
+    "cumulative review"
+   ]
+  },
+  {
+   "n": 36,
+   "slug": "representations-and-problem-solving",
+   "name": "Representations and problem solving",
+   "domain": "Curriculum and subject teaching",
+   "about": "How concrete materials, pictures and bar models build understanding, and how to teach students to solve problems.",
+   "practices": [
+    "Concrete, pictorial, abstract",
+    "manipulatives",
+    "bar models",
+    "worked solutions",
+    "problem-solving strategies"
+   ]
+  },
+  {
+   "n": 37,
+   "slug": "number-multiplication-and-fractions",
+   "name": "Number, multiplication and fractions",
+   "domain": "Curriculum and subject teaching",
+   "about": "Teaching particular content well, including early number, place value, the four operations and fractions.",
+   "practices": [
+    "Early number",
+    "place value",
+    "multiplication and division",
+    "fractions, decimals and percentages"
+   ]
+  },
+  {
+   "n": 38,
+   "slug": "screening-intervention-and-maths-difficulties",
+   "name": "Screening, intervention and maths difficulties",
+   "domain": "Curriculum and subject teaching",
+   "about": "How to find students who are struggling with maths early, and what effective intervention looks like, including for dyscalculia.",
+   "practices": [
+    "Universal screening",
+    "progress monitoring",
+    "Tier 2 and Tier 3 intervention",
+    "dyscalculia",
+    "inclusive maths lessons"
+   ]
+  },
+  {
+   "n": 39,
+   "slug": "leading-maths-and-the-evidence",
+   "name": "Leading maths and the evidence",
+   "domain": "Curriculum and subject teaching",
+   "about": "What the research says about maths teaching, and how leaders choose curriculum materials and improve maths across a school.",
+   "practices": [
+    "The Maths Guarantee",
+    "the science of maths",
+    "shared curriculum and lesson plans",
+    "common myths",
+    "whole-school improvement"
+   ]
   }
  ],
  "entries": [
@@ -371,7 +504,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -397,7 +531,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -422,7 +557,8 @@
     "F-2"
    ],
    "subject": "Literacy and English",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -445,7 +581,8 @@
     "F-2"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -458,7 +595,8 @@
     "Australia"
    ],
    "areas": [
-    12,
+    34,
+    37,
     2
    ],
    "tags": [
@@ -470,7 +608,8 @@
     "3-6"
    ],
    "subject": "Maths",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -496,7 +635,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -520,7 +660,8 @@
     "3-6"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -543,7 +684,10 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "interview",
+   "length": "10 to 30 minutes",
+   "audience": "Teachers"
   },
   {
    "type": "watch",
@@ -556,9 +700,8 @@
     "USA"
    ],
    "areas": [
-    7,
-    8,
-    10
+    27,
+    30
    ],
    "tags": [
     "Free"
@@ -569,7 +712,8 @@
     "3-6"
    ],
    "subject": "Literacy and English",
-   "region": "USA"
+   "region": "USA",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -581,7 +725,7 @@
     "North America"
    ],
    "areas": [
-    8,
+    29,
     23,
     2
    ],
@@ -593,7 +737,8 @@
     "3-6"
    ],
    "subject": "Literacy and English",
-   "region": "North America"
+   "region": "North America",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -617,7 +762,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "USA"
+   "region": "USA",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -629,7 +775,8 @@
     "USA"
    ],
    "areas": [
-    7,
+    27,
+    26,
     5,
     2
    ],
@@ -641,7 +788,8 @@
     "F-2"
    ],
    "subject": "Literacy and English",
-   "region": "USA"
+   "region": "USA",
+   "kind": "demonstration"
   },
   {
    "type": "watch",
@@ -653,7 +801,7 @@
     "USA"
    ],
    "areas": [
-    9
+    31
    ],
    "tags": [
     "Free"
@@ -663,7 +811,8 @@
     "F-2"
    ],
    "subject": "Literacy and English",
-   "region": "USA"
+   "region": "USA",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -675,8 +824,8 @@
     "USA"
    ],
    "areas": [
-    7,
-    8
+    27,
+    26
    ],
    "tags": [
     "Free"
@@ -687,7 +836,9 @@
     "3-6"
    ],
    "subject": "Literacy and English",
-   "region": "USA"
+   "region": "USA",
+   "kind": "explainer",
+   "audience": "Teachers"
   },
   {
    "type": "watch",
@@ -712,7 +863,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "USA"
+   "region": "USA",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -725,7 +877,7 @@
    ],
    "areas": [
     4,
-    12
+    34
    ],
    "tags": [
     "Free"
@@ -735,7 +887,8 @@
     "Secondary"
    ],
    "subject": "Maths",
-   "region": "USA"
+   "region": "USA",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -759,7 +912,8 @@
     "3-6"
    ],
    "subject": "Literacy and English",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -781,7 +935,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "USA"
+   "region": "USA",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -807,7 +962,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -833,7 +989,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -859,7 +1016,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -885,7 +1043,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -907,7 +1066,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -931,7 +1091,8 @@
    "subject": "Across subjects",
    "region": "International",
    "length": "Series",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "series"
   },
   {
    "type": "watch",
@@ -955,7 +1116,8 @@
     "3-6"
    ],
    "subject": "Literacy and English",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -967,7 +1129,8 @@
     "Australia"
    ],
    "areas": [
-    12,
+    34,
+    37,
     2
    ],
    "tags": [
@@ -979,7 +1142,8 @@
     "3-6"
    ],
    "subject": "Maths",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -1003,7 +1167,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -1028,7 +1193,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -1052,7 +1218,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -1076,7 +1243,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -1100,7 +1268,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -1124,7 +1293,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -1148,7 +1318,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -1172,7 +1343,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -1197,7 +1369,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -1221,7 +1394,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -1247,7 +1421,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "demonstration"
   },
   {
    "type": "watch",
@@ -1273,7 +1448,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "demonstration"
   },
   {
    "type": "watch",
@@ -1295,7 +1471,8 @@
     "3-6"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -1318,7 +1495,8 @@
     "3-6"
    ],
    "subject": "Literacy and English",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -1330,7 +1508,8 @@
     "Australia"
    ],
    "areas": [
-    12,
+    34,
+    37,
     4
    ],
    "tags": [
@@ -1342,7 +1521,8 @@
     "3-6"
    ],
    "subject": "Maths",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -1365,7 +1545,8 @@
     "3-6"
    ],
    "subject": "Literacy and English",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -1377,7 +1558,8 @@
     "Australia"
    ],
    "areas": [
-    12,
+    34,
+    37,
     24
    ],
    "tags": [
@@ -1389,7 +1571,8 @@
     "3-6"
    ],
    "subject": "Maths",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -1407,7 +1590,9 @@
    ],
    "summary": "A short animation on how learning happens, covering working memory, long-term memory, cognitive overload and why retrieving knowledge over time builds mastery. Handy for introducing staff to the basics.",
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "explainer",
+   "audience": "Teachers"
   },
   {
    "type": "watch",
@@ -1425,7 +1610,9 @@
    ],
    "summary": "An animated walk through AERO's model of learning and teaching, showing how its four phases of practice (enabling, planning, instruction and gradual release) line up with how students learn.",
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "explainer",
+   "audience": "Teachers"
   },
   {
    "type": "watch",
@@ -1443,7 +1630,9 @@
    ],
    "summary": "Leaders at Mount Hutton Public School in NSW describe the team that led explicit instruction in maths and writing, with its defined roles, weekly meeting, staff surveys on barriers and classroom observation data.",
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "school story",
+   "audience": "Leaders"
   },
   {
    "type": "watch",
@@ -1462,7 +1651,9 @@
    ],
    "summary": "Leaders at Maffra Secondary College in Victoria explain how they embed explicit teaching through repeated professional learning cycles of knowledge building, planning time, modelling and coaching.",
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "school story",
+   "audience": "Leaders"
   },
   {
    "type": "watch",
@@ -1480,7 +1671,9 @@
    ],
    "summary": "Staff at East Loddon P-12 College in rural Victoria describe their tiered literacy support for secondary students, from classroom practice to small-group and intensive intervention, and the changes they have seen.",
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "school story",
+   "audience": "Leaders"
   },
   {
    "type": "watch",
@@ -1499,7 +1692,9 @@
    ],
    "summary": "Staff from secondary schools in four states explain how they screen students' literacy, including at the move from primary school, and use the results to decide who needs which support.",
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "interview",
+   "audience": "Leaders"
   },
   {
    "type": "watch",
@@ -1518,7 +1713,9 @@
    ],
    "summary": "Intervention teachers and specialists from secondary schools describe how they track progress in literacy and numeracy interventions, from weekly fluency checks to mastery tests, and decide when to reteach or move students on.",
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "interview",
+   "audience": "Leaders"
   },
   {
    "type": "watch",
@@ -1537,7 +1734,9 @@
    ],
    "summary": "Principals and teacher leaders from five secondary schools discuss what leading MTSS takes, from setting the vision and making time to timetabling small intervention classes, backing staff and staying the course.",
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "interview",
+   "audience": "Leaders"
   },
   {
    "type": "watch",
@@ -1556,7 +1755,9 @@
    ],
    "summary": "A talk by Dr Lorraine Hammond, published by Learning Difficulties Australia, on explicit instruction and why the words teachers choose matter.",
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "talk",
+   "audience": "Teachers"
   },
   {
    "type": "watch",
@@ -1580,7 +1781,8 @@
     "3-6"
    ],
    "subject": "Literacy and English",
-   "region": "USA"
+   "region": "USA",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -1592,7 +1794,7 @@
     "USA"
    ],
    "areas": [
-    8,
+    30,
     2,
     23
    ],
@@ -1605,7 +1807,8 @@
     "3-6"
    ],
    "subject": "Literacy and English",
-   "region": "USA"
+   "region": "USA",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -1617,7 +1820,7 @@
     "USA"
    ],
    "areas": [
-    7,
+    27,
     16,
     4
    ],
@@ -1629,7 +1832,8 @@
     "F-2"
    ],
    "subject": "Literacy and English",
-   "region": "USA"
+   "region": "USA",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -1642,7 +1846,7 @@
    ],
    "areas": [
     16,
-    8
+    27
    ],
    "tags": [
     "Free"
@@ -1652,7 +1856,9 @@
     "F-2"
    ],
    "subject": "Literacy and English",
-   "region": "USA"
+   "region": "USA",
+   "kind": "school story",
+   "audience": "Teachers"
   },
   {
    "type": "watch",
@@ -1670,7 +1876,9 @@
    ],
    "summary": "Peps Mccrea makes the case for drop-ins, short unscheduled visits from colleagues, as a way to improve teaching and build staff culture. Aimed at leaders and coaches.",
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "kind": "explainer",
+   "audience": "Leaders"
   },
   {
    "type": "watch",
@@ -1689,7 +1897,9 @@
    ],
    "summary": "Peps Mccrea asks whether alignment is the key ingredient of effective schooling. One for leadership teams thinking about how consistently a school works.",
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "kind": "explainer",
+   "audience": "Leaders"
   },
   {
    "type": "watch",
@@ -1713,7 +1923,8 @@
    "subject": "Across subjects",
    "region": "Australia",
    "length": "Series",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "series"
   },
   {
    "type": "watch",
@@ -1736,7 +1947,8 @@
     "3-6"
    ],
    "subject": "Literacy and English",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -1748,7 +1960,7 @@
     "Australia"
    ],
    "areas": [
-    7,
+    27,
     3
    ],
    "tags": [
@@ -1759,7 +1971,8 @@
     "F-2"
    ],
    "subject": "Literacy and English",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -1783,7 +1996,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -1807,7 +2021,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -1831,7 +2046,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -1856,7 +2072,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -1880,7 +2097,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -1905,7 +2123,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -1931,7 +2150,8 @@
     "Secondary"
    ],
    "subject": "Other subjects",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -1955,7 +2175,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -1980,7 +2201,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -2005,7 +2227,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -2027,7 +2250,8 @@
     "3-6"
    ],
    "subject": "Across subjects",
-   "region": "New Zealand"
+   "region": "New Zealand",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -2051,7 +2275,8 @@
     "3-6"
    ],
    "subject": "Other subjects",
-   "region": "USA"
+   "region": "USA",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -2063,7 +2288,8 @@
     "Canada"
    ],
    "areas": [
-    12,
+    34,
+    37,
     2,
     24
    ],
@@ -2076,7 +2302,8 @@
     "3-6"
    ],
    "subject": "Maths",
-   "region": "Canada"
+   "region": "Canada",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -2099,7 +2326,8 @@
     "Secondary"
    ],
    "subject": "Other subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -2111,7 +2339,7 @@
     "Australia"
    ],
    "areas": [
-    7
+    27
    ],
    "tags": [
     "Free"
@@ -2121,7 +2349,8 @@
     "F-2"
    ],
    "subject": "Literacy and English",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "demonstration"
   },
   {
    "type": "watch",
@@ -2133,7 +2362,7 @@
     "Australia"
    ],
    "areas": [
-    7
+    27
    ],
    "tags": [
     "Free"
@@ -2143,7 +2372,8 @@
     "F-2"
    ],
    "subject": "Literacy and English",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "demonstration"
   },
   {
    "type": "watch",
@@ -2155,7 +2385,7 @@
     "Australia"
    ],
    "areas": [
-    7
+    27
    ],
    "tags": [
     "Free"
@@ -2165,7 +2395,8 @@
     "F-2"
    ],
    "subject": "Literacy and English",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "demonstration"
   },
   {
    "type": "watch",
@@ -2177,7 +2408,7 @@
     "Australia"
    ],
    "areas": [
-    7
+    27
    ],
    "tags": [
     "Free"
@@ -2187,7 +2418,8 @@
     "F-2"
    ],
    "subject": "Literacy and English",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "demonstration"
   },
   {
    "type": "watch",
@@ -2214,8 +2446,8 @@
    ],
    "subject": "Across subjects",
    "region": "UK",
-   "length": "Under 30 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "kind": "interview"
   },
   {
    "type": "watch",
@@ -2240,7 +2472,9 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "kind": "interview",
+   "audience": "Teachers"
   },
   {
    "type": "watch",
@@ -2264,7 +2498,9 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "kind": "interview",
+   "audience": "Teachers"
   },
   {
    "type": "watch",
@@ -2288,7 +2524,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "USA"
+   "region": "USA",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -2312,7 +2549,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "USA"
+   "region": "USA",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -2336,7 +2574,8 @@
     "3-6"
    ],
    "subject": "Literacy and English",
-   "region": "USA"
+   "region": "USA",
+   "kind": "demonstration"
   },
   {
    "type": "watch",
@@ -2359,7 +2598,8 @@
     "3-6"
    ],
    "subject": "Literacy and English",
-   "region": "USA"
+   "region": "USA",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -2382,7 +2622,8 @@
     "3-6"
    ],
    "subject": "Literacy and English",
-   "region": "USA"
+   "region": "USA",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -2395,7 +2636,7 @@
     "USA"
    ],
    "areas": [
-    7,
+    27,
     2
    ],
    "tags": [
@@ -2406,7 +2647,8 @@
     "F-2"
    ],
    "subject": "Literacy and English",
-   "region": "USA"
+   "region": "USA",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -2419,7 +2661,7 @@
    ],
    "areas": [
     2,
-    12
+    34
    ],
    "tags": [
     "Free"
@@ -2430,7 +2672,8 @@
     "3-6"
    ],
    "subject": "Maths",
-   "region": "USA"
+   "region": "USA",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -2449,7 +2692,10 @@
    ],
    "summary": "A two-minute explainer from La Trobe University on what explicit teaching is. Short enough to open a staff meeting or share with families.",
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "explainer",
+   "length": "Under 10 minutes",
+   "audience": "Teachers"
   },
   {
    "type": "watch",
@@ -2460,7 +2706,7 @@
     "UK"
    ],
    "areas": [
-    9,
+    32,
     10
    ],
    "tags": [
@@ -2472,7 +2718,8 @@
     "3-6"
    ],
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -2483,8 +2730,7 @@
     "UK"
    ],
    "areas": [
-    8,
-    9,
+    32,
     10
    ],
    "tags": [
@@ -2496,7 +2742,8 @@
     "3-6"
    ],
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -2519,7 +2766,8 @@
     "3-6"
    ],
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -2542,7 +2790,8 @@
     "3-6"
    ],
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -2565,7 +2814,8 @@
     "3-6"
    ],
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -2588,7 +2838,8 @@
     "3-6"
    ],
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -2611,7 +2862,8 @@
     "3-6"
    ],
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -2630,7 +2882,8 @@
    ],
    "summary": "Modelling and scaffolding a complex writing task in a post-16 lesson.",
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -2648,7 +2901,8 @@
    ],
    "summary": "A teacher in a practical subject models their thinking to break down an extended writing task, uses talk before writing and provides scaffolds so all pupils can take part.",
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -2667,7 +2921,8 @@
    ],
    "summary": "A whole-school approach to modelling and scaffolding writing in primary classrooms.",
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -2678,16 +2933,15 @@
     "UK"
    ],
    "areas": [
-    8,
-    10,
-    9
+    10
    ],
    "tags": [
     "Free"
    ],
    "summary": "Extensive practice in constructing sentences to build fluent writers.",
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -2699,7 +2953,7 @@
     "UK"
    ],
    "areas": [
-    7,
+    27,
     17
    ],
    "tags": [
@@ -2710,7 +2964,8 @@
     "F-2"
    ],
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -2722,8 +2977,8 @@
     "UK"
    ],
    "areas": [
-    8,
-    7
+    30,
+    27
    ],
    "tags": [
     "Free"
@@ -2733,7 +2988,8 @@
     "F-2"
    ],
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -2745,8 +3001,8 @@
     "UK"
    ],
    "areas": [
-    8,
-    7
+    28,
+    11
    ],
    "tags": [
     "Free"
@@ -2756,7 +3012,8 @@
     "F-2"
    ],
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -2767,8 +3024,7 @@
     "UK"
    ],
    "areas": [
-    8,
-    7
+    28
    ],
    "tags": [
     "Free"
@@ -2779,7 +3035,8 @@
     "3-6"
    ],
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -2790,8 +3047,7 @@
     "UK"
    ],
    "areas": [
-    8,
-    7
+    28
    ],
    "tags": [
     "Free"
@@ -2802,7 +3058,8 @@
     "3-6"
    ],
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -2813,8 +3070,7 @@
     "UK"
    ],
    "areas": [
-    8,
-    7
+    28
    ],
    "tags": [
     "Free"
@@ -2825,7 +3081,8 @@
     "3-6"
    ],
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -2836,9 +3093,8 @@
     "UK"
    ],
    "areas": [
-    8,
-    2,
-    7
+    28,
+    2
    ],
    "tags": [
     "Free"
@@ -2849,7 +3105,8 @@
     "3-6"
    ],
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -2861,9 +3118,8 @@
     "UK"
    ],
    "areas": [
-    8,
-    14,
-    7
+    28,
+    14
    ],
    "tags": [
     "Free"
@@ -2873,7 +3129,8 @@
     "3-6"
    ],
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -2885,7 +3142,7 @@
     "UK"
    ],
    "areas": [
-    8,
+    29,
     2
    ],
    "tags": [
@@ -2896,7 +3153,8 @@
     "3-6"
    ],
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -2907,14 +3165,15 @@
     "UK"
    ],
    "areas": [
-    8
+    29
    ],
    "tags": [
     "Free"
    ],
    "summary": "Vocabulary teaching in a secondary classroom.",
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -2925,7 +3184,7 @@
     "UK"
    ],
    "areas": [
-    8,
+    29,
     11
    ],
    "tags": [
@@ -2933,7 +3192,8 @@
    ],
    "summary": "Shared reading and talk used to build vocabulary.",
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -2945,7 +3205,7 @@
     "UK"
    ],
    "areas": [
-    8,
+    30,
     2
    ],
    "tags": [
@@ -2956,7 +3216,8 @@
     "3-6"
    ],
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -2968,7 +3229,7 @@
     "UK"
    ],
    "areas": [
-    8,
+    30,
     2
    ],
    "tags": [
@@ -2980,7 +3241,8 @@
     "3-6"
    ],
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -2991,14 +3253,15 @@
     "UK"
    ],
    "areas": [
-    8
+    30
    ],
    "tags": [
     "Free"
    ],
    "summary": "A check, link, connect framework for supporting comprehension during reading.",
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -3021,7 +3284,8 @@
     "3-6"
    ],
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -3039,7 +3303,8 @@
    ],
    "summary": "Structured talk opportunities across the curriculum.",
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -3059,7 +3324,8 @@
    "summary": "Teaching assistants deliver a structured early reading intervention, ABRACADABRA, to Year 1 pupils in a UK school, adapting sessions to revisit the sounds children need more practice with.",
    "subject": "Literacy and English",
    "region": "UK",
-   "strand": "Supporting students with additional needs"
+   "strand": "Supporting students with additional needs",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -3072,14 +3338,15 @@
    "areas": [
     4,
     5,
-    12
+    34
    ],
    "tags": [
     "Free"
    ],
    "summary": "Precise questions and tight mini whiteboard routines used to check understanding and adapt teaching.",
    "subject": "Maths",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -3097,7 +3364,8 @@
    ],
    "summary": "Diagnostic questions used to find and address misconceptions.",
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -3116,7 +3384,8 @@
    ],
    "summary": "Teachers use classroom talk to check understanding and adapt in the moment.",
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -3128,14 +3397,15 @@
    ],
    "areas": [
     2,
-    12
+    34
    ],
    "tags": [
     "Free"
    ],
    "summary": "A short clip from the maths section of the Research Schools Network library showing teacher modelling and explicit strategy instruction, presented as a way to support students' metacognition.",
    "subject": "Maths",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -3146,7 +3416,7 @@
     "UK"
    ],
    "areas": [
-    12,
+    34,
     2,
     1
    ],
@@ -3155,7 +3425,8 @@
    ],
    "summary": "Worked examples that break multi-step maths processes into manageable parts.",
    "subject": "Maths",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -3166,7 +3437,8 @@
     "UK"
    ],
    "areas": [
-    12,
+    34,
+    36,
     2
    ],
    "tags": [
@@ -3174,7 +3446,8 @@
    ],
    "summary": "Worked examples in mathematical problem solving, with problem and solution shown together.",
    "subject": "Maths",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -3185,7 +3458,8 @@
     "UK"
    ],
    "areas": [
-    12,
+    35,
+    37,
     5,
     3
    ],
@@ -3194,7 +3468,8 @@
    ],
    "summary": "Making the most of daily routines to build mathematical thinking in a Reception class.",
    "subject": "Maths",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -3205,14 +3480,16 @@
     "UK"
    ],
    "areas": [
-    12
+    36,
+    34
    ],
    "tags": [
     "Free"
    ],
    "summary": "Worked solutions used as a framework for teaching specific problem-solving skills.",
    "subject": "Maths",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -3223,14 +3500,15 @@
     "UK"
    ],
    "areas": [
-    12
+    36
    ],
    "tags": [
     "Free"
    ],
    "summary": "Which manipulatives to use, why, and how they deepen understanding in maths.",
    "subject": "Maths",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -3242,14 +3520,15 @@
    ],
    "areas": [
     11,
-    12
+    34
    ],
    "tags": [
     "Free"
    ],
    "summary": "Four principles for teaching high-quality talk in maths.",
    "subject": "Maths",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -3260,7 +3539,7 @@
     "UK"
    ],
    "areas": [
-    12,
+    35,
     1
    ],
    "tags": [
@@ -3268,7 +3547,8 @@
    ],
    "summary": "A Year 1 maths activity designed to activate what pupils already know.",
    "subject": "Maths",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -3279,7 +3559,7 @@
     "UK"
    ],
    "areas": [
-    12,
+    35,
     3
    ],
    "tags": [
@@ -3287,7 +3567,8 @@
    ],
    "summary": "Retrieval practice in maths that balances challenge with chances to succeed.",
    "subject": "Maths",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -3309,7 +3590,8 @@
     "3-6"
    ],
    "subject": "Other subjects",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -3321,7 +3603,8 @@
     "UK"
    ],
    "areas": [
-    12,
+    35,
+    36,
     3
    ],
    "tags": [
@@ -3333,7 +3616,8 @@
     "3-6"
    ],
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -3351,7 +3635,8 @@
    ],
    "summary": "A short clip of retrieval practice that goes beyond simple recall, with reflection questions on linking new learning to prior learning and when to add or remove scaffolds.",
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -3374,7 +3659,8 @@
     "3-6"
    ],
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -3395,7 +3681,8 @@
    "summary": "Teaching assistants scaffold learning with the least support first, to build independence.",
    "subject": "Across subjects",
    "region": "UK",
-   "strand": "Supporting students with additional needs"
+   "strand": "Supporting students with additional needs",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -3416,7 +3703,8 @@
    "summary": "Explicit instruction for pupils with special educational needs in mainstream and specialist primary settings.",
    "subject": "Across subjects",
    "region": "UK",
-   "strand": "Supporting students with additional needs"
+   "strand": "Supporting students with additional needs",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -3434,7 +3722,8 @@
    ],
    "summary": "Teacher feedback in a Year 7 to 9 French lesson, checking and adapting as pupils learn.",
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -3452,7 +3741,8 @@
    ],
    "summary": "How teachers celebrate progress and address misconceptions in a warm, rigorous way.",
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -3475,7 +3765,8 @@
     "3-6"
    ],
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -3498,7 +3789,8 @@
     "3-6"
    ],
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -3517,7 +3809,9 @@
    ],
    "summary": "Craig Barton's Tips for Teachers video on mini whiteboards, working through the routine in detail. For teachers who want whole-class responses to run smoothly.",
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "kind": "explainer",
+   "audience": "Teachers"
   },
   {
    "type": "watch",
@@ -3539,7 +3833,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -3561,7 +3856,9 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "kind": "school story",
+   "audience": "Teachers"
   },
   {
    "type": "watch",
@@ -3573,7 +3870,7 @@
     "UK"
    ],
    "areas": [
-    12
+    37
    ],
    "tags": [
     "Free"
@@ -3584,7 +3881,8 @@
     "3-6"
    ],
    "subject": "Maths",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -3596,7 +3894,8 @@
     "UK"
    ],
    "areas": [
-    12
+    35,
+    37
    ],
    "tags": [
     "Free"
@@ -3607,7 +3906,8 @@
     "3-6"
    ],
    "subject": "Maths",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -3619,7 +3919,7 @@
     "UK"
    ],
    "areas": [
-    12
+    37
    ],
    "tags": [
     "Free"
@@ -3630,7 +3930,8 @@
     "3-6"
    ],
    "subject": "Maths",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -3642,8 +3943,7 @@
     "UK"
    ],
    "areas": [
-    10,
-    12
+    37
    ],
    "tags": [
     "Free"
@@ -3654,7 +3954,8 @@
     "3-6"
    ],
    "subject": "Maths",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -3666,7 +3967,8 @@
     "UK"
    ],
    "areas": [
-    12
+    36,
+    37
    ],
    "tags": [
     "Free"
@@ -3676,7 +3978,8 @@
     "3-6"
    ],
    "subject": "Maths",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -3688,7 +3991,7 @@
     "UK"
    ],
    "areas": [
-    12,
+    36,
     24,
     2
    ],
@@ -3700,7 +4003,8 @@
     "3-6"
    ],
    "subject": "Maths",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "listen",
@@ -3783,7 +4087,7 @@
    ],
    "areas": [
     2,
-    12
+    34
    ],
    "tags": [
     "Free"
@@ -3819,7 +4123,7 @@
    ],
    "areas": [
     4,
-    12
+    34
    ],
    "tags": [
     "Free"
@@ -3923,13 +4227,15 @@
     "with Pamela Snow"
    ],
    "areas": [
-    7
+    27,
+    33
    ],
    "tags": [
     "Free"
    ],
    "summary": "Professor Pamela Snow, a psychologist and speech pathologist, discusses phonics and reading instruction, and how adults can draw accurate accounts from children and young people.",
-   "focus": "Systematic synthetic phonics"
+   "focus": "Systematic synthetic phonics",
+   "strand": "Syntheses of the field"
   },
   {
    "type": "listen",
@@ -3940,13 +4246,13 @@
     "with Lyn Stone"
    ],
    "areas": [
-    7,
-    9
+    33
    ],
    "tags": [
     "Free"
    ],
-   "summary": "Educational linguist Lyn Stone discusses literacy instruction and the Big Six components of reading, with plenty for teachers wanting a clear overview."
+   "summary": "Educational linguist Lyn Stone discusses literacy instruction and the Big Six components of reading, with plenty for teachers wanting a clear overview.",
+   "strand": "The Big Six and the five components"
   },
   {
    "type": "listen",
@@ -3957,13 +4263,14 @@
     "with Jennifer Buckingham"
    ],
    "areas": [
-    7,
+    33,
     17
    ],
    "tags": [
     "Free"
    ],
-   "summary": "Jennifer Buckingham compares literacy instruction and policy in the UK, Ireland and Australia, including curriculum, teacher education, assessment and inspection, and how these affect results."
+   "summary": "Jennifer Buckingham compares literacy instruction and policy in the UK, Ireland and Australia, including curriculum, teacher education, assessment and inspection, and how these affect results.",
+   "strand": "Syntheses of the field"
   },
   {
    "type": "listen",
@@ -3974,7 +4281,7 @@
     "with Doug Lemov"
    ],
    "areas": [
-    8
+    30
    ],
    "tags": [
     "Free"
@@ -3991,7 +4298,7 @@
     "with Margaret McKeown"
    ],
    "areas": [
-    8
+    29
    ],
    "tags": [
     "Free"
@@ -4008,7 +4315,7 @@
     "with Margaret McKeown"
    ],
    "areas": [
-    8
+    30
    ],
    "tags": [
     "Free"
@@ -4077,13 +4384,15 @@
     "with E.D. Hirsch"
    ],
    "areas": [
-    6
+    6,
+    33
    ],
    "tags": [
     "Free"
    ],
    "summary": "E.D. Hirsch, founder of the Core Knowledge Foundation and author of Cultural Literacy, makes the case for why shared knowledge matters in schooling.",
-   "focus": "Why knowledge matters"
+   "focus": "Why knowledge matters",
+   "strand": "Knowledge and comprehension"
   },
   {
    "type": "listen",
@@ -4095,12 +4404,14 @@
    ],
    "areas": [
     6,
-    8
+    30,
+    33
    ],
    "tags": [
     "Free"
    ],
-   "summary": "Journalist Natalie Wexler discusses The Knowledge Gap and her argument that building knowledge is central to reading comprehension in American schools."
+   "summary": "Journalist Natalie Wexler discusses The Knowledge Gap and her argument that building knowledge is central to reading comprehension in American schools.",
+   "strand": "Knowledge and comprehension"
   },
   {
    "type": "listen",
@@ -4129,7 +4440,7 @@
     "with David Morkunas"
    ],
    "areas": [
-    12,
+    34,
     2
    ],
    "tags": [
@@ -4147,7 +4458,7 @@
     "with Amy Haywood and Nick Parkinson"
    ],
    "areas": [
-    12,
+    39,
     17
    ],
    "tags": [
@@ -4769,7 +5080,7 @@
     "with Brian Poncy"
    ],
    "areas": [
-    12
+    35
    ],
    "tags": [
     "Free"
@@ -4786,7 +5097,7 @@
     "with Kristopher Boulton"
    ],
    "areas": [
-    12,
+    34,
     2
    ],
    "tags": [
@@ -4802,7 +5113,7 @@
    "by": "Chalk & Talk",
    "meta": [],
    "areas": [
-    12,
+    39,
     18
    ],
    "tags": [
@@ -4915,7 +5226,7 @@
    "by": "Evidence into Action",
    "meta": [],
    "areas": [
-    12
+    36
    ],
    "tags": [
     "Free"
@@ -4930,7 +5241,7 @@
    "by": "Evidence into Action",
    "meta": [],
    "areas": [
-    12
+    36
    ],
    "tags": [
     "Free"
@@ -4995,8 +5306,7 @@
     "with Stephanie Stollar"
    ],
    "areas": [
-    14,
-    7
+    14
    ],
    "tags": [
     "Free"
@@ -5011,12 +5321,14 @@
    "by": "Science of Reading: The Podcast",
    "meta": [],
    "areas": [
-    10
+    10,
+    33
    ],
    "tags": [
     "Free"
    ],
-   "summary": "Susan Lambert draws on past episodes with Steve Graham, Young-Suk Grace Kim, Natalie Wexler and Judith Hochman to give an overview of science-based writing instruction."
+   "summary": "Susan Lambert draws on past episodes with Steve Graham, Young-Suk Grace Kim, Natalie Wexler and Judith Hochman to give an overview of science-based writing instruction.",
+   "strand": "The Writing Rope and views of writing"
   },
   {
    "type": "listen",
@@ -5409,13 +5721,15 @@
     "with Natalie Wexler"
    ],
    "areas": [
-    6
+    6,
+    33
    ],
    "tags": [
     "Free"
    ],
    "summary": "Natalie Wexler discusses what drives reading comprehension and why knowledge-rich instruction matters for every learner, drawing on The Knowledge Gap and Beyond the Science of Reading.",
-   "focus": "Knowledge-rich curriculum"
+   "focus": "Knowledge-rich curriculum",
+   "strand": "Knowledge and comprehension"
   },
   {
    "type": "listen",
@@ -5743,7 +6057,7 @@
     "with Jocelyn Seamer"
    ],
    "areas": [
-    7
+    27
    ],
    "tags": [
     "Free"
@@ -5760,7 +6074,7 @@
     "with Jocelyn Seamer"
    ],
    "areas": [
-    7
+    27
    ],
    "tags": [
     "Free"
@@ -5777,7 +6091,7 @@
     "with Jocelyn Seamer"
    ],
    "areas": [
-    7
+    27
    ],
    "tags": [
     "Free"
@@ -5794,7 +6108,7 @@
     "with Jocelyn Seamer"
    ],
    "areas": [
-    7
+    27
    ],
    "tags": [
     "Free"
@@ -5811,7 +6125,7 @@
     "with Jocelyn Seamer"
    ],
    "areas": [
-    7
+    27
    ],
    "tags": [
     "Free"
@@ -5828,7 +6142,7 @@
     "with Jocelyn Seamer"
    ],
    "areas": [
-    7
+    27
    ],
    "tags": [
     "Free"
@@ -5845,7 +6159,7 @@
     "with Jocelyn Seamer"
    ],
    "areas": [
-    7
+    27
    ],
    "tags": [
     "Free"
@@ -5862,13 +6176,14 @@
     "with Pamela Snow"
    ],
    "areas": [
-    7
+    33
    ],
    "tags": [
     "Free"
    ],
    "summary": "Pamela Snow reflects on the long push for evidence-based reading instruction and why changing practice takes effort from the whole education community.",
-   "focus": "Changing reading instruction"
+   "focus": "Changing reading instruction",
+   "strand": "Syntheses of the field"
   },
   {
    "type": "listen",
@@ -5879,13 +6194,14 @@
     "with Mandy Nayton"
    ],
    "areas": [
-    7
+    33
    ],
    "tags": [
     "Free"
    ],
    "summary": "Mandy Nayton, CEO of the Dyslexia-SPELD Foundation, explains what the science of reading is and is not, and how students learn to read.",
-   "focus": "Science of reading overview"
+   "focus": "Science of reading overview",
+   "strand": "Syntheses of the field"
   },
   {
    "type": "listen",
@@ -5896,7 +6212,7 @@
     "with James Dobson"
    ],
    "areas": [
-    7
+    27
    ],
    "tags": [
     "Free"
@@ -5913,13 +6229,14 @@
     "with Emina McLean"
    ],
    "areas": [
-    7
+    33
    ],
    "tags": [
     "Free"
    ],
    "summary": "Emina McLean discusses the challenges of translating literacy research into practice and building effective systems for teaching literacy in schools.",
-   "focus": "Research translation in literacy"
+   "focus": "Research translation in literacy",
+   "strand": "Syntheses of the field"
   },
   {
    "type": "listen",
@@ -5930,7 +6247,8 @@
     "with Jocelyn Seamer"
    ],
    "areas": [
-    8
+    30,
+    28
    ],
    "tags": [
     "Free"
@@ -5947,7 +6265,7 @@
     "with Jocelyn Seamer"
    ],
    "areas": [
-    8
+    30
    ],
    "tags": [
     "Free"
@@ -5964,7 +6282,7 @@
     "with Christopher Such"
    ],
    "areas": [
-    8
+    30
    ],
    "tags": [
     "Free"
@@ -5979,7 +6297,7 @@
    "by": "Evidence into Action",
    "meta": [],
    "areas": [
-    8
+    28
    ],
    "tags": [
     "Free"
@@ -5994,13 +6312,15 @@
    "by": "Evidence into Action",
    "meta": [],
    "areas": [
-    8
+    30,
+    33
    ],
    "tags": [
     "Free"
    ],
    "summary": "An EEF panel including Kate Cain discusses the reading comprehension house from the guidance report Improving Literacy in Key Stage 2 and how it supports teaching.",
-   "focus": "Comprehension"
+   "focus": "Comprehension",
+   "strand": "Knowledge and comprehension"
   },
   {
    "type": "listen",
@@ -6011,7 +6331,7 @@
     "with Jocelyn Seamer"
    ],
    "areas": [
-    8
+    30
    ],
    "tags": [
     "Free"
@@ -6028,13 +6348,15 @@
     "with Jocelyn Seamer"
    ],
    "areas": [
-    8
+    30,
+    33
    ],
    "tags": [
     "Free"
    ],
    "summary": "Jocelyn Seamer explores where comprehension strategies fit within overall reading instruction. A Summer Series replay of a listener favourite.",
-   "focus": "Comprehension strategies"
+   "focus": "Comprehension strategies",
+   "strand": "Knowledge and comprehension"
   },
   {
    "type": "listen",
@@ -6045,7 +6367,7 @@
     "with Jocelyn Seamer"
    ],
    "areas": [
-    8
+    30
    ],
    "tags": [
     "Free"
@@ -6062,7 +6384,7 @@
     "with Jocelyn Seamer"
    ],
    "areas": [
-    9
+    31
    ],
    "tags": [
     "Free"
@@ -6079,7 +6401,7 @@
     "with Jocelyn Seamer"
    ],
    "areas": [
-    9
+    31
    ],
    "tags": [
     "Free"
@@ -6096,7 +6418,7 @@
     "with Jocelyn Seamer"
    ],
    "areas": [
-    9
+    31
    ],
    "tags": [
     "Free"
@@ -6112,7 +6434,7 @@
     "with Jocelyn Seamer"
    ],
    "areas": [
-    9
+    31
    ],
    "tags": [
     "Free"
@@ -6129,7 +6451,7 @@
     "with Jocelyn Seamer"
    ],
    "areas": [
-    9
+    31
    ],
    "tags": [
     "Free"
@@ -6146,7 +6468,7 @@
     "with Jocelyn Seamer"
    ],
    "areas": [
-    9
+    31
    ],
    "tags": [
     "Free"
@@ -6197,13 +6519,15 @@
     "with Jocelyn Seamer"
    ],
    "areas": [
-    10
+    10,
+    33
    ],
    "tags": [
     "Free"
    ],
    "summary": "Jocelyn Seamer sets out the research foundation for integrating reading and writing instruction, including Fitzgerald and Shanahan's shared knowledge framework.",
-   "focus": "Connecting reading and writing"
+   "focus": "Connecting reading and writing",
+   "strand": "The Writing Rope and views of writing"
   },
   {
    "type": "listen",
@@ -6231,7 +6555,8 @@
     "with Jocelyn Seamer"
    ],
    "areas": [
-    10
+    10,
+    32
    ],
    "tags": [
     "Free"
@@ -6265,13 +6590,15 @@
     "with Jocelyn Seamer"
    ],
    "areas": [
-    11
+    11,
+    33
    ],
    "tags": [
     "Free"
    ],
    "summary": "Jocelyn Seamer links oral language to theoretical frameworks for reading and shares five tips for including it across all areas of the curriculum.",
-   "focus": "Oral language for reading and spelling"
+   "focus": "Oral language for reading and spelling",
+   "strand": "Oral language as the foundation"
   },
   {
    "type": "listen",
@@ -6280,13 +6607,16 @@
    "by": "Evidence into Action",
    "meta": [],
    "areas": [
-    11
+    11,
+    29,
+    33
    ],
    "tags": [
     "Free"
    ],
    "summary": "Alex Quigley, Alex Reynolds and guests including Jessie Ricketts discuss vocabulary instruction and its connections to reading and the curriculum.",
-   "focus": "Vocabulary and language"
+   "focus": "Vocabulary and language",
+   "strand": "Oral language as the foundation"
   },
   {
    "type": "listen",
@@ -6297,7 +6627,7 @@
     "with Amy Haywood and Nick Parkinson"
    ],
    "areas": [
-    12
+    39
    ],
    "tags": [
     "Free"
@@ -6314,7 +6644,8 @@
     "with Daniel Ansari"
    ],
    "areas": [
-    12,
+    37,
+    38,
     25
    ],
    "tags": [
@@ -6333,7 +6664,8 @@
     "with Nancy Jordan"
    ],
    "areas": [
-    12
+    38,
+    37
    ],
    "tags": [
     "Free"
@@ -6350,7 +6682,7 @@
     "with Brian Poncy"
    ],
    "areas": [
-    12
+    35
    ],
    "tags": [
     "Free"
@@ -6367,7 +6699,7 @@
     "with Sarah Powell"
    ],
    "areas": [
-    12
+    39
    ],
    "tags": [
     "Free"
@@ -6384,7 +6716,7 @@
     "with Craig Barton"
    ],
    "areas": [
-    12
+    34
    ],
    "tags": [
     "Free"
@@ -6758,7 +7090,7 @@
     "Australia"
    ],
    "areas": [
-    7
+    27
    ],
    "tags": []
   },
@@ -6772,7 +7104,7 @@
     "Australia"
    ],
    "areas": [
-    9
+    31
    ],
    "tags": []
   },
@@ -6786,7 +7118,7 @@
     "Australia"
    ],
    "areas": [
-    9
+    31
    ],
    "tags": []
   },
@@ -6800,7 +7132,7 @@
     "Australia"
    ],
    "areas": [
-    9
+    31
    ],
    "tags": [
     "Check cost"
@@ -6900,7 +7232,7 @@
     "UK"
    ],
    "areas": [
-    8,
+    30,
     10
    ],
    "tags": []
@@ -6915,9 +7247,10 @@
     "Australia"
    ],
    "areas": [
-    8
+    33
    ],
-   "tags": []
+   "tags": [],
+   "strand": "Syntheses of the field"
   },
   {
    "type": "read",
@@ -6929,7 +7262,7 @@
     "Australia"
    ],
    "areas": [
-    12
+    39
    ],
    "tags": []
   },
@@ -6943,7 +7276,7 @@
     "Australia"
    ],
    "areas": [
-    12
+    39
    ],
    "tags": []
   },
@@ -6957,7 +7290,7 @@
     "UK"
    ],
    "areas": [
-    12
+    39
    ],
    "tags": []
   },
@@ -7223,7 +7556,7 @@
     "Australia"
    ],
    "areas": [
-    9
+    31
    ],
    "tags": []
   },
@@ -7237,7 +7570,7 @@
     "UK"
    ],
    "areas": [
-    7
+    27
    ],
    "tags": []
   },
@@ -7611,18 +7944,19 @@
   {
    "type": "research",
    "title": "Ending the Reading Wars: Reading Acquisition From Novice to Expert",
-   "url": "https://www.psychologicalscience.org/publications/ending-the-reading-wars-reading-acquisition-from-novice-to-expert.html",
+   "url": "https://doi.org/10.1177/1529100618772271",
    "by": "Castles, Rastle and Nation",
    "meta": [
     "2018",
     "Foundational research"
    ],
    "areas": [
-    7
+    33
    ],
    "tags": [
     "Foundational"
-   ]
+   ],
+   "strand": "Syntheses of the field"
   },
   {
    "type": "read",
@@ -7687,19 +8021,22 @@
   },
   {
    "type": "research",
-   "title": "The Simple View of Reading",
-   "url": "https://en.wikipedia.org/wiki/Simple_view_of_reading",
-   "by": "Gough and Tunmer",
+   "title": "Children's reading difficulties, language, and reflections on the simple view of reading",
+   "url": "https://doi.org/10.1080/19404158.2019.1609272",
+   "by": "Kate Nation",
    "meta": [
-    "1986",
-    "Foundational research"
+    "2019",
+    "Open access",
+    "Australian Journal of Learning Difficulties"
    ],
    "areas": [
-    7
+    33
    ],
    "tags": [
-    "Foundational"
-   ]
+    "Open access"
+   ],
+   "summary": "Kate Nation's open-access review of the Simple View of Reading: What it explains well about reading and reading difficulties, and where language and reading are more entangled than the model suggests.",
+   "strand": "The Simple View of Reading"
   },
   {
    "type": "research",
@@ -7711,11 +8048,13 @@
     "Account of a 1988 study"
    ],
    "areas": [
-    8
+    30,
+    33
    ],
    "tags": [
     "Foundational"
-   ]
+   ],
+   "strand": "Knowledge and comprehension"
   },
   {
    "type": "research",
@@ -8052,9 +8391,11 @@
     "Meta-analysis report"
    ],
    "areas": [
-    10
+    10,
+    33
    ],
-   "tags": []
+   "tags": [],
+   "strand": "The Writing Rope and views of writing"
   },
   {
    "type": "research",
@@ -8079,7 +8420,7 @@
     "Research review"
    ],
    "areas": [
-    8
+    30
    ],
    "tags": []
   },
@@ -8107,7 +8448,7 @@
     "Research review"
    ],
    "areas": [
-    12
+    39
    ],
    "tags": []
   },
@@ -8122,7 +8463,7 @@
     "USA"
    ],
    "areas": [
-    12,
+    38,
     25
    ],
    "tags": [
@@ -8383,8 +8724,7 @@
     "Australia"
    ],
    "areas": [
-    7,
-    8,
+    30,
     10
    ],
    "tags": []
@@ -8399,11 +8739,12 @@
     "Australia"
    ],
    "areas": [
-    7,
+    33,
     11,
     18
    ],
-   "tags": []
+   "tags": [],
+   "strand": "The Language House"
   },
   {
    "type": "voice",
@@ -8417,7 +8758,7 @@
    "areas": [
     2,
     6,
-    8
+    30
    ],
    "tags": []
   },
@@ -8464,7 +8805,7 @@
    ],
    "areas": [
     1,
-    12,
+    34,
     16
    ],
    "tags": []
@@ -8511,9 +8852,11 @@
     "Australia"
    ],
    "areas": [
-    7
+    27,
+    33
    ],
-   "tags": []
+   "tags": [],
+   "strand": "Syntheses of the field"
   },
   {
    "type": "voice",
@@ -8633,7 +8976,7 @@
    ],
    "areas": [
     4,
-    12
+    34
    ],
    "tags": []
   },
@@ -8662,7 +9005,7 @@
     "UK"
    ],
    "areas": [
-    8,
+    30,
     10,
     18
    ],
@@ -8709,10 +9052,12 @@
    ],
    "areas": [
     6,
-    8,
-    10
+    30,
+    10,
+    33
    ],
-   "tags": []
+   "tags": [],
+   "strand": "Knowledge and comprehension"
   },
   {
    "type": "voice",
@@ -8724,11 +9069,11 @@
     "USA"
    ],
    "areas": [
-    7,
-    8,
-    9
+    30,
+    33
    ],
-   "tags": []
+   "tags": [],
+   "strand": "Syntheses of the field"
   },
   {
    "type": "voice",
@@ -8814,9 +9159,11 @@
     "Australia"
    ],
    "areas": [
-    9
+    31,
+    33
    ],
-   "tags": []
+   "tags": [],
+   "strand": "Spelling and morphology"
   },
   {
    "type": "voice",
@@ -8828,9 +9175,8 @@
     "Australia"
    ],
    "areas": [
-    7,
-    9,
-    10
+    27,
+    31
    ],
    "tags": []
   },
@@ -8946,8 +9292,7 @@
    ],
    "areas": [
     6,
-    7,
-    12
+    39
    ],
    "tags": []
   },
@@ -8962,7 +9307,7 @@
    ],
    "areas": [
     6,
-    8,
+    30,
     10
    ],
    "tags": []
@@ -9008,7 +9353,7 @@
     "Australian Curriculum"
    ],
    "areas": [
-    7
+    27
    ],
    "tags": [
     "Free"
@@ -9055,7 +9400,7 @@
     "England National Curriculum"
    ],
    "areas": [
-    12
+    37
    ],
    "tags": [
     "Free"
@@ -9071,7 +9416,7 @@
     "K-3 (USA)"
    ],
    "areas": [
-    7
+    27
    ],
    "tags": [
     "Free"
@@ -9087,7 +9432,7 @@
     "K-12 (USA)"
    ],
    "areas": [
-    8
+    30
    ],
    "tags": [
     "Free account needed"
@@ -9103,7 +9448,7 @@
     "Primary"
    ],
    "areas": [
-    8
+    30
    ],
    "tags": [
     "Free"
@@ -9178,7 +9523,10 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "interview",
+   "length": "10 to 30 minutes",
+   "audience": "Leaders"
   },
   {
    "type": "watch",
@@ -9202,7 +9550,10 @@
     "3-6"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "interview",
+   "length": "10 to 30 minutes",
+   "audience": "Teachers"
   },
   {
    "type": "watch",
@@ -9226,7 +9577,10 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "interview",
+   "length": "10 to 30 minutes",
+   "audience": "Teachers"
   },
   {
    "type": "watch",
@@ -9251,7 +9605,10 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "interview",
+   "length": "10 to 30 minutes",
+   "audience": "Leaders"
   },
   {
    "type": "watch",
@@ -9276,7 +9633,10 @@
     "3-6"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "interview",
+   "length": "10 to 30 minutes",
+   "audience": "Leaders"
   },
   {
    "type": "watch",
@@ -9300,7 +9660,10 @@
     "3-6"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "interview",
+   "length": "10 to 30 minutes",
+   "audience": "Teachers"
   },
   {
    "type": "watch",
@@ -9323,7 +9686,10 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "interview",
+   "length": "10 to 30 minutes",
+   "audience": "Teachers"
   },
   {
    "type": "watch",
@@ -9348,7 +9714,10 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "explainer",
+   "length": "Under 10 minutes",
+   "audience": "Teachers"
   },
   {
    "type": "watch",
@@ -9374,7 +9743,10 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "explainer",
+   "length": "Under 10 minutes",
+   "audience": "Teachers"
   },
   {
    "type": "watch",
@@ -9399,7 +9771,10 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "explainer",
+   "length": "Under 10 minutes",
+   "audience": "Teachers"
   },
   {
    "type": "watch",
@@ -9412,7 +9787,7 @@
     "Australia"
    ],
    "areas": [
-    7,
+    27,
     2
    ],
    "tags": [
@@ -9423,7 +9798,8 @@
     "F-2"
    ],
    "subject": "Literacy and English",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -9436,7 +9812,7 @@
     "Australia"
    ],
    "areas": [
-    7,
+    27,
     2
    ],
    "tags": [
@@ -9447,7 +9823,8 @@
     "F-2"
    ],
    "subject": "Literacy and English",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -9460,7 +9837,8 @@
     "Australia"
    ],
    "areas": [
-    7
+    27,
+    33
    ],
    "tags": [
     "Free"
@@ -9470,7 +9848,9 @@
     "F-2"
    ],
    "subject": "Literacy and English",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary",
+   "strand": "The Big Six and the five components"
   },
   {
    "type": "read",
@@ -9498,7 +9878,7 @@
     "Australia"
    ],
    "areas": [
-    7,
+    28,
     13
    ],
    "tags": [],
@@ -9532,7 +9912,6 @@
    ],
    "areas": [
     14,
-    7,
     25
    ],
    "tags": [
@@ -9552,7 +9931,7 @@
     "Australia"
    ],
    "areas": [
-    12,
+    35,
     3
    ],
    "tags": [],
@@ -9634,7 +10013,7 @@
     "Australia"
    ],
    "areas": [
-    8,
+    30,
     6
    ],
    "tags": [
@@ -9664,7 +10043,10 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "school story",
+   "length": "Under 10 minutes",
+   "audience": "Leaders"
   },
   {
    "type": "watch",
@@ -9689,7 +10071,10 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "interview",
+   "length": "Under 10 minutes",
+   "audience": "Leaders"
   },
   {
    "type": "watch",
@@ -9714,7 +10099,10 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "interview",
+   "length": "Under 10 minutes",
+   "audience": "Leaders"
   },
   {
    "type": "watch",
@@ -9738,7 +10126,10 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "interview",
+   "length": "Under 10 minutes",
+   "audience": "Leaders"
   },
   {
    "type": "watch",
@@ -9763,7 +10154,8 @@
     "Secondary"
    ],
    "subject": "Other subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -9776,7 +10168,7 @@
     "Australia"
    ],
    "areas": [
-    12,
+    35,
     3
    ],
    "tags": [
@@ -9788,7 +10180,8 @@
     "3-6"
    ],
    "subject": "Maths",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -9801,7 +10194,7 @@
     "Australia"
    ],
    "areas": [
-    12,
+    34,
     2
    ],
    "tags": [
@@ -9812,7 +10205,8 @@
     "3-6"
    ],
    "subject": "Maths",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -9825,7 +10219,7 @@
     "Australia"
    ],
    "areas": [
-    12,
+    38,
     14,
     25
    ],
@@ -9839,7 +10233,10 @@
    ],
    "subject": "Maths",
    "region": "Australia",
-   "strand": "Dyscalculia and maths difficulties"
+   "strand": "Dyscalculia and maths difficulties",
+   "kind": "school story",
+   "length": "Under 10 minutes",
+   "audience": "Teachers"
   },
   {
    "type": "watch",
@@ -9852,8 +10249,7 @@
     "Australia"
    ],
    "areas": [
-    14,
-    7
+    14
    ],
    "tags": [
     "Free"
@@ -9864,7 +10260,10 @@
     "3-6"
    ],
    "subject": "Literacy and English",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "school story",
+   "length": "Under 10 minutes",
+   "audience": "Teachers"
   },
   {
    "type": "watch",
@@ -9877,7 +10276,7 @@
     "Australia"
    ],
    "areas": [
-    7
+    27
    ],
    "tags": [
     "Free"
@@ -9887,7 +10286,8 @@
     "F-2"
    ],
    "subject": "Literacy and English",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -9913,7 +10313,10 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "interview",
+   "length": "Under 10 minutes",
+   "audience": "Teachers"
   },
   {
    "type": "watch",
@@ -9939,7 +10342,10 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "kind": "explainer",
+   "length": "Under 10 minutes",
+   "audience": "Leaders"
   },
   {
    "type": "watch",
@@ -9964,7 +10370,10 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "explainer",
+   "length": "Under 10 minutes",
+   "audience": "Leaders"
   },
   {
    "type": "watch",
@@ -9977,7 +10386,7 @@
     "UK"
    ],
    "areas": [
-    12
+    39
    ],
    "tags": [
     "Free"
@@ -9987,7 +10396,10 @@
     "Secondary"
    ],
    "subject": "Maths",
-   "region": "UK"
+   "region": "UK",
+   "kind": "explainer",
+   "length": "Under 10 minutes",
+   "audience": "Teachers"
   },
   {
    "type": "watch",
@@ -10011,7 +10423,8 @@
     "3-6"
    ],
    "subject": "Literacy and English",
-   "region": "USA"
+   "region": "USA",
+   "kind": "demonstration"
   },
   {
    "type": "watch",
@@ -10035,7 +10448,8 @@
     "F-2"
    ],
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage"
   },
   {
    "type": "watch",
@@ -10060,7 +10474,10 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "kind": "explainer",
+   "length": "Under 10 minutes",
+   "audience": "Leaders"
   },
   {
    "type": "watch",
@@ -10073,8 +10490,9 @@
     "Australia"
    ],
    "areas": [
-    9,
-    13
+    31,
+    13,
+    33
    ],
    "tags": [
     "Free"
@@ -10084,7 +10502,11 @@
     "F-2"
    ],
    "subject": "Literacy and English",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "explainer",
+   "length": "Under 10 minutes",
+   "audience": "Teachers",
+   "strand": "Spelling and morphology"
   },
   {
    "type": "watch",
@@ -10110,7 +10532,10 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "kind": "talk",
+   "length": "10 to 30 minutes",
+   "audience": "Teachers"
   },
   {
    "type": "watch",
@@ -10137,7 +10562,10 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "USA"
+   "region": "USA",
+   "kind": "school story",
+   "length": "10 to 30 minutes",
+   "audience": "Leaders"
   },
   {
    "type": "watch",
@@ -10162,7 +10590,8 @@
     "3-6"
    ],
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -10176,7 +10605,7 @@
    ],
    "areas": [
     23,
-    8
+    30
    ],
    "tags": [
     "Free"
@@ -10187,7 +10616,8 @@
     "3-6"
    ],
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -10213,7 +10643,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -10237,7 +10668,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "USA"
+   "region": "USA",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -10261,7 +10693,8 @@
     "Secondary"
    ],
    "subject": "Literacy and English",
-   "region": "USA"
+   "region": "USA",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -10275,7 +10708,7 @@
    ],
    "areas": [
     4,
-    8
+    30
    ],
    "tags": [
     "Free"
@@ -10286,7 +10719,8 @@
     "3-6"
    ],
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -10311,7 +10745,8 @@
     "Secondary"
    ],
    "subject": "Other subjects",
-   "region": "USA"
+   "region": "USA",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -10335,7 +10770,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "USA"
+   "region": "USA",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -10358,7 +10794,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "USA"
+   "region": "USA",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -10373,7 +10810,7 @@
    "areas": [
     3,
     23,
-    12
+    35
    ],
    "tags": [
     "Free"
@@ -10384,7 +10821,8 @@
     "3-6"
    ],
    "subject": "Maths",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -10409,7 +10847,8 @@
     "Secondary"
    ],
    "subject": "Literacy and English",
-   "region": "USA"
+   "region": "USA",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -10434,7 +10873,8 @@
     "Secondary"
    ],
    "subject": "Other subjects",
-   "region": "USA"
+   "region": "USA",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -10456,7 +10896,8 @@
     "Secondary"
    ],
    "subject": "Other subjects",
-   "region": "USA"
+   "region": "USA",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -10481,7 +10922,8 @@
     "Secondary"
    ],
    "subject": "Literacy and English",
-   "region": "USA"
+   "region": "USA",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -10495,7 +10937,7 @@
    ],
    "areas": [
     3,
-    8
+    30
    ],
    "tags": [
     "Free"
@@ -10505,7 +10947,8 @@
     "Secondary"
    ],
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -10530,7 +10973,8 @@
     "Secondary"
    ],
    "subject": "Other subjects",
-   "region": "USA"
+   "region": "USA",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -10544,7 +10988,7 @@
    ],
    "areas": [
     3,
-    8
+    30
    ],
    "tags": [
     "Free"
@@ -10555,7 +10999,8 @@
     "Secondary"
    ],
    "subject": "Literacy and English",
-   "region": "USA"
+   "region": "USA",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -10569,7 +11014,7 @@
    ],
    "areas": [
     23,
-    8
+    29
    ],
    "tags": [
     "Free"
@@ -10579,7 +11024,8 @@
     "Secondary"
    ],
    "subject": "Literacy and English",
-   "region": "UK"
+   "region": "UK",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -10602,7 +11048,8 @@
     "F-2"
    ],
    "subject": "Across subjects",
-   "region": "USA"
+   "region": "USA",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -10626,7 +11073,8 @@
     "Secondary"
    ],
    "subject": "Literacy and English",
-   "region": "USA"
+   "region": "USA",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -10640,7 +11088,7 @@
    ],
    "areas": [
     23,
-    12
+    34
    ],
    "tags": [
     "Free"
@@ -10650,7 +11098,8 @@
     "Secondary"
    ],
    "subject": "Maths",
-   "region": "USA"
+   "region": "USA",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -10673,7 +11122,8 @@
     "Secondary"
    ],
    "subject": "Literacy and English",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -10695,7 +11145,8 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "read",
@@ -10782,7 +11233,7 @@
     "Australia"
    ],
    "areas": [
-    12,
+    39,
     19
    ],
    "tags": [],
@@ -10812,7 +11263,10 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "explainer",
+   "length": "Under 10 minutes",
+   "audience": "Teachers"
   },
   {
    "type": "read",
@@ -10875,9 +11329,7 @@
    ],
    "areas": [
     25,
-    14,
-    7,
-    12
+    14
    ],
    "tags": [
     "Free"
@@ -10966,7 +11418,6 @@
    ],
    "areas": [
     14,
-    7,
     13,
     25
    ],
@@ -11001,7 +11452,10 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "kind": "explainer",
+   "length": "Under 10 minutes",
+   "audience": "Teachers"
   },
   {
    "type": "watch",
@@ -11028,7 +11482,10 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "kind": "explainer",
+   "length": "Under 10 minutes",
+   "audience": "Teachers"
   },
   {
    "type": "watch",
@@ -11055,7 +11512,10 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "kind": "explainer",
+   "length": "10 to 30 minutes",
+   "audience": "Teachers"
   },
   {
    "type": "watch",
@@ -11070,7 +11530,7 @@
    "areas": [
     25,
     11,
-    8,
+    29,
     14
    ],
    "tags": [
@@ -11083,7 +11543,10 @@
     "Secondary"
    ],
    "subject": "Literacy and English",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "explainer",
+   "length": "10 to 30 minutes",
+   "audience": "Teachers"
   },
   {
    "type": "read",
@@ -11160,7 +11623,7 @@
    "areas": [
     25,
     11,
-    7,
+    27,
     14
    ],
    "tags": [
@@ -11182,7 +11645,6 @@
    ],
    "areas": [
     25,
-    7,
     14
    ],
    "tags": [
@@ -11195,7 +11657,10 @@
     "Secondary"
    ],
    "subject": "Literacy and English",
-   "region": "USA"
+   "region": "USA",
+   "kind": "explainer",
+   "length": "Under 10 minutes",
+   "audience": "Teachers"
   },
   {
    "type": "read",
@@ -11210,7 +11675,6 @@
    ],
    "areas": [
     25,
-    7,
     14
    ],
    "tags": [
@@ -11232,7 +11696,6 @@
    ],
    "areas": [
     25,
-    7,
     11,
     14
    ],
@@ -11253,8 +11716,8 @@
     "USA"
    ],
    "areas": [
-    7,
-    8,
+    28,
+    30,
     14,
     25
    ],
@@ -11276,7 +11739,7 @@
    ],
    "areas": [
     25,
-    9,
+    32,
     10,
     14
    ],
@@ -11290,7 +11753,10 @@
     "Secondary"
    ],
    "subject": "Literacy and English",
-   "region": "USA"
+   "region": "USA",
+   "kind": "explainer",
+   "length": "Under 10 minutes",
+   "audience": "Teachers"
   },
   {
    "type": "read",
@@ -11304,7 +11770,7 @@
    ],
    "areas": [
     25,
-    9,
+    32,
     10,
     14
    ],
@@ -11327,7 +11793,7 @@
    ],
    "areas": [
     10,
-    9,
+    32,
     14,
     25
    ],
@@ -11349,7 +11815,7 @@
    ],
    "areas": [
     25,
-    12,
+    38,
     14,
     18
    ],
@@ -11363,7 +11829,10 @@
     "Secondary"
    ],
    "subject": "Maths",
-   "region": "UK"
+   "region": "UK",
+   "kind": "explainer",
+   "length": "Under 10 minutes",
+   "audience": "Teachers"
   },
   {
    "type": "watch",
@@ -11377,7 +11846,7 @@
    ],
    "areas": [
     25,
-    12,
+    38,
     14
    ],
    "tags": [
@@ -11389,7 +11858,10 @@
     "3-6",
     "Secondary"
    ],
-   "subject": "Maths"
+   "subject": "Maths",
+   "kind": "explainer",
+   "length": "Under 10 minutes",
+   "audience": "Teachers"
   },
   {
    "type": "listen",
@@ -11402,7 +11874,7 @@
    ],
    "areas": [
     25,
-    12,
+    38,
     14
    ],
    "tags": [
@@ -11425,7 +11897,7 @@
    ],
    "areas": [
     25,
-    12,
+    38,
     14,
     13
    ],
@@ -11447,7 +11919,7 @@
     "USA"
    ],
    "areas": [
-    12,
+    38,
     14,
     25
    ],
@@ -11483,7 +11955,10 @@
     "3-6"
    ],
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "kind": "explainer",
+   "length": "Under 10 minutes",
+   "audience": "Teachers"
   },
   {
    "type": "read",
@@ -11531,7 +12006,10 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "International"
+   "region": "International",
+   "kind": "explainer",
+   "length": "Under 10 minutes",
+   "audience": "Teachers"
   },
   {
    "type": "read",
@@ -11739,7 +12217,8 @@
     "3-6"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -11765,7 +12244,8 @@
     "3-6"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "classroom footage with commentary"
   },
   {
    "type": "watch",
@@ -11792,7 +12272,10 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "kind": "school story",
+   "length": "Under 10 minutes",
+   "audience": "Leaders"
   },
   {
    "type": "read",
@@ -11918,7 +12401,10 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "kind": "explainer",
+   "length": "Under 10 minutes",
+   "audience": "Teachers"
   },
   {
    "type": "read",

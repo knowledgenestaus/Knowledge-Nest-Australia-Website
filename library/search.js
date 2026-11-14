@@ -48,7 +48,7 @@
         .then(function (data) {
           index = data.map(function (x) {
             // x.s is the card's topic line and summary: searched, but not shown in the results.
-            x.hay = [x.t, x.b, (x.m || []).join(' '), (x.a || []).join(' '), LABELS[x.y] || '', x.d, x.s || ''].join(' ').toLowerCase();
+            x.hay = [x.t, x.b, (x.m || []).join(' '), (x.a || []).join(' '), LABELS[x.y] || '', x.k || '', x.d, x.s || ''].join(' ').toLowerCase();
             return x;
           });
           return index;
@@ -67,6 +67,8 @@
   function card(x) {
     var a = el('article', 'lib-card');
     a.appendChild(el('span', 'lib-type lib-type-' + x.y, LABELS[x.y] || ''));
+    // Videos also say what kind they are (x.k): Lesson footage, Webinar, Explainer and so on.
+    if (x.k) { a.firstChild.textContent += ': ' + x.k; }
     var h = el('h3', 'lib-card-title');
     // House style: the part of a title before its first colon is the bold lead-in (see .lead-in in styles.css).
     var link = el('a', '');
