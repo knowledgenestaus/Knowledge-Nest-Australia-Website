@@ -872,3 +872,14 @@ html:not(.js) .nav-sub-toggle { display: none; }
 .hero-caption { margin: 2.1rem 0 0; padding: 0 0.5rem; text-align: center; font-family: var(--font-display); font-style: italic; font-size: 1.3rem; line-height: 1.4; color: var(--navy); }
 .hero-caption::before { content: ""; display: block; width: 40px; height: 3px; margin: 0 auto 0.9rem; border-radius: 2px; background: var(--orange); }
 @media (max-width: 640px) { .hero-caption { margin-top: 1.7rem; font-size: 1.15rem; } }
+/* Phones and tablets: a smaller photo with the quote beside it */
+@media (max-width: 900px) {
+  .hero-figure { display: flex; align-items: center; gap: 1.4rem; max-width: 620px; }
+  .hero-figure .hero-logo-blob { flex: 0 0 52%; }
+  .hero-caption { flex: 1; margin: 0; padding: 0; text-align: left; font-size: 1.2rem; }
+  .hero-caption::before { margin: 0 0 0.7rem; }
+}
+@media (max-width: 400px) {
+  .hero-figure { gap: 1.1rem; }
+  .hero-caption { font-size: 1.05rem; }
+}
