@@ -19,7 +19,8 @@
   var headingLabel = document.getElementById('libListLabel');
   var headingCount = document.getElementById('libListCount');
   var moreFilters = document.getElementById('libMoreFilters');
-  var PAGE = 24;
+  // A phone shows one card per row, so it gets half as many before "Show more".
+  var PAGE = window.matchMedia && window.matchMedia('(max-width: 640px)').matches ? 12 : 24;
   var shown = PAGE;
   var LISTS = { topics: '|', domain: '|', areas: ',', bands: ',' };   // values that hold several items, and what separates them
 

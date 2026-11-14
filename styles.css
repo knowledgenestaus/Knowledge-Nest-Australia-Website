@@ -790,3 +790,10 @@ html:not(.js) .lib-seeall, html:not(.js) .lib-topic-areas, html:not(.js) .lib-to
   .kn-week .kn-week-grid { margin: 0 -1.15rem; padding-left: 1.15rem; padding-right: 1.15rem; scroll-padding-left: 1.15rem; }
   .kn-week-home .kn-week-grid { scroll-padding-left: var(--gutter); }
 }
+
+/* Design pass, November 2026 */
+.lib-fold > summary { margin-top: 0.25rem; }
+@media (max-width: 640px) {
+  .hero-logo-area { padding-right: 0.6rem; }
+  .hero-logo-blob::before { inset: 0.8rem -0.6rem -0.6rem 0.8rem; }
+}

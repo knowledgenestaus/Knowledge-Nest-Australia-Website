@@ -565,6 +565,19 @@ def mix(entries):
     return [x for u in out for x in u]
 
 
+def folded_cards(entries, show_type=True, mixed=True, first=6):
+    """Cards for one section of an area page. A long section shows its first six, with the rest in a "Show N more"
+    fold, so a phone reader can scan every section without scrolling through dozens of cards. The folded cards are
+    still in the page, so search engines and the browser's find-in-page see them."""
+    entries = list(entries)
+    if mixed and entries and all(x["type"] in MIX_TYPES for x in entries):
+        entries = mix(entries)
+    if len(entries) <= first + 3:
+        return cards(entries, show_type, mixed=False)
+    return (cards(entries[:first], show_type, mixed=False) +
+            '<details class="lib-expand lib-fold"><summary>Show %d more</summary>%s</details>' % (len(entries) - first, cards(entries[first:], show_type, mixed=False)))
+
+
 def cards(entries, show_type=True, level="h3", filterable=False, mixed=True):
     entries = list(entries)
     if mixed and entries and all(x["type"] in MIX_TYPES for x in entries):
@@ -679,7 +692,7 @@ def shelf_list(items, kind):
             + '<p class="lib-empty" id="libEmpty" hidden>No %s match those choices yet. Try clearing one of the menus, or %s. '
             'If you know something that belongs here, <a href="%s">email a suggestion</a>. '
             '<button type="reset" form="libFilters" class="lib-reset">Clear filters</button></p>' % (t["short"], hint, SUGGEST)
-            + '<script src="library/filter.js?v=6" defer></script>')
+            + '<script src="library/filter.js?v=7" defer></script>')
 
 
 def filter_bar(items, kind):
@@ -711,7 +724,7 @@ def filtered_list(items, kind):
             + '<p class="lib-more" hidden><button type="button" class="btn btn-primary" id="libMore">Show more</button></p>'
             + '<p class="lib-empty" id="libEmpty" hidden>Nothing matches those filters yet. Try clearing one, or <a href="%s">email a suggestion</a>. '
             '<button type="reset" form="libFilters" class="lib-reset">Clear filters</button></p>' % SUGGEST
-            + '<script src="library/filter.js?v=6" defer></script>')
+            + '<script src="library/filter.js?v=7" defer></script>')
 
 
 def hero(tagline, h1, lead, crumbs=None, extra="", art=None):
@@ -1170,7 +1183,7 @@ def build_home():
     chips = "".join('<a href="%s">%s</a>' % (area_page(AREA[n]), e(AREA[n]["name"].split(":")[0].split(",")[0])) for n in popular)
     search = ('<form class="lib-search" role="search" id="libSearch" action="library" method="get">'
               '<label for="q" class="sr-only">Search the library</label>'
-              '<input type="search" id="q" name="q" placeholder="Search by topic, practice or person, e.g. hinge questions" autocomplete="off" maxlength="100">'
+              '<input type="search" id="q" name="q" placeholder="Search topics, practices or people" autocomplete="off" maxlength="100">'
               '<button type="submit" class="btn btn-primary">Search</button></form>'
               '<p class="page-hero-jump lib-popular">%s%s</p>' % (label_html("Popular:"), chips))
     lead = ("Great professional learning resources are scattered all over the internet. This library gathers the best of other people's work "
@@ -1467,7 +1480,7 @@ def strand_sections(items, plan):
             lead += ' %s <a href="%s">%s</a>.' % (e(more[0]), area_page(AREA[more[1]]), e(AREA[more[1]]["name"]))
         out += ('<section class="lib-group lib-strand-group" id="%s"><h2>%s <span class="lib-count">%d</span></h2><p class="lib-group-lead">%s</p>%s'
                 '<p class="lib-backtop"><a href="#strands">Back to the list of strands <span aria-hidden="true">&uarr;</span></a></p></section>'
-                % (strand_id(name), title_html(name), len(sub), lead, cards(ordered, True, mixed=False)))
+                % (strand_id(name), title_html(name), len(sub), lead, folded_cards(ordered, True, mixed=False)))
     links = "".join('<a href="#%s">%s</a>' % (i, e(l)) for i, l in nav)
     top = ('<p class="lib-note">%s</p>' % e(plan["note"])) if plan.get("note") else ""
     top += '<nav class="lib-toc lib-toc-wrap" id="strands" aria-label="Strands on this page">%s%s</nav>' % (label_html("Jump to:"), links)
@@ -1493,7 +1506,7 @@ def build_areas():
             sections, strand_nav = strand_sections(items, plan)
         for k in ([] if plan else present):
             sub = [x for x in items if x["type"] == k]
-            sections += '<section class="lib-group" id="%s"><h2>%s <span class="lib-count">%d</span></h2>%s</section>' % (k, TYPES[k]["label"], len(sub), cards(sub, False))
+            sections += '<section class="lib-group" id="%s"><h2>%s <span class="lib-count">%d</span></h2>%s</section>' % (k, TYPES[k]["label"], len(sub), folded_cards(sub, False))
         related = "".join('<li><a href="%s">%s</a></li>' % (area_page(b), e(b["name"])) for b in AREAS
                           if b["domain"] == a["domain"] and b["n"] != a["n"] and grouped.get(b["n"]))
         side = strand_nav
