@@ -450,7 +450,7 @@
    "tags": [
     "Free"
    ],
-   "summary": "A teacher explains how she uses explicit instruction in her maths lessons.",
+   "summary": "Victorian primary teacher Sue Davis teaches place value and adding 100 to four-digit numbers in small steps, using base-10 blocks and place value charts and checking understanding before moving on.",
    "bands": [
     "F-2",
     "3-6"
@@ -465,7 +465,7 @@
    "by": "NSW Department of Education",
    "meta": [
     "6:35",
-    "K-12",
+    "F-12",
     "Australia"
    ],
    "areas": [
@@ -515,7 +515,7 @@
    "by": "NSW Department of Education",
    "meta": [
     "14:01",
-    "7-12",
+    "Years 7-12",
     "Australia"
    ],
    "areas": [
@@ -533,7 +533,7 @@
   },
   {
    "type": "watch",
-   "title": "Explicit instruction elementary videos: Anita Archer (collection)",
+   "title": "Explicit instruction elementary videos: Anita Archer",
    "url": "https://explicitinstruction.org/video-elementary/",
    "by": "Anita Archer (explicitinstruction.org)",
    "meta": [
@@ -587,7 +587,7 @@
    "url": "https://ceedar.education.ufl.edu/plos/hlp16/",
    "by": "CEEDAR Center",
    "meta": [
-    "K-12",
+    "F-12",
     "USA"
    ],
    "areas": [
@@ -607,11 +607,11 @@
   },
   {
    "type": "watch",
-   "title": "How to Teach a Phonics Lesson (video series)",
+   "title": "How to Teach a Phonics Lesson",
    "url": "https://readinguniverse.org/article/explore-teaching-topics/word-recognition/phonics/how-to-teach-a-phonics-lesson",
    "by": "Reading Universe",
    "meta": [
-    "K-2",
+    "F-2",
     "USA"
    ],
    "areas": [
@@ -631,7 +631,7 @@
   },
   {
    "type": "watch",
-   "title": "Videos: See Suffix Instruction in the Classroom",
+   "title": "See Suffix Instruction in the Classroom",
    "url": "https://readinguniverse.org/skill-explainer/suffix-adding-rules/suffix-spelling-patterns-skill-explainer/videos-see-suffix-instruction-in-the-classroom",
    "by": "Reading Universe",
    "meta": [
@@ -653,11 +653,11 @@
   },
   {
    "type": "watch",
-   "title": "PaTTAN Literacy Snippets (video collection)",
+   "title": "PaTTAN Literacy Snippets",
    "url": "https://sites.google.com/pattan.net/pattan-literacy/pattan-literacy-snippets",
    "by": "PaTTAN",
    "meta": [
-    "K-6",
+    "F-6",
     "USA"
    ],
    "areas": [
@@ -681,7 +681,7 @@
    "url": "https://teachlikeachampion.org/blog/tlac-3-0-using-turn-talk-to-make-your-classroom-crackle-to-life/",
    "by": "Teach Like a Champion (Doug Lemov)",
    "meta": [
-    "K-12",
+    "F-12",
     "USA"
    ],
    "areas": [
@@ -796,7 +796,7 @@
   },
   {
    "type": "watch",
-   "title": "In the Classroom (video collection)",
+   "title": "In the Classroom",
    "url": "https://www.aitsl.edu.au/resources/collections/in-the-classroom",
    "by": "AITSL",
    "meta": [
@@ -818,7 +818,7 @@
   },
   {
    "type": "watch",
-   "title": "Four researchED Chile keynotes, free to watch (round-up post)",
+   "title": "Four researchED Chile keynotes, free to watch",
    "url": "https://educationrickshaw.com/2024/11/13/4-researched-keynotes-you-can-watch-for-free/",
    "by": "Education Rickshaw (Zach Groshell)",
    "meta": [
@@ -836,7 +836,9 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "International"
+   "region": "International",
+   "length": "Series",
+   "audience": "Teachers"
   },
   {
    "type": "watch",
@@ -844,7 +846,7 @@
    "url": "https://www.edresearch.edu.au/guides-resources/videos/evidence-based-practices-riverwood-public-school",
    "by": "AERO",
    "meta": [
-    "Year 5/6",
+    "Years 5-6",
     "Australia"
    ],
    "areas": [
@@ -1486,7 +1488,7 @@
    "tags": [
     "Free"
    ],
-   "summary": "Melissa Garstang-Leary applies mastery learning to biographical writing and editing: short sequenced tasks, regular checks for mastery, reteaching for students who need it and enrichment for those who are ready.",
+   "summary": "Melissa Garstang-Leary applies mastery learning to biographical writing and editing, using short sequenced tasks, regular checks for mastery, reteaching for students who need it and enrichment for those who are ready.",
    "bands": [
     "F-2",
     "3-6"
@@ -1532,7 +1534,7 @@
    "tags": [
     "Free"
    ],
-   "summary": "A short animation on how learning happens: working memory, long-term memory, cognitive overload and why retrieving knowledge over time builds mastery. Handy for introducing staff to the basics.",
+   "summary": "A short animation on how learning happens, covering working memory, long-term memory, cognitive overload and why retrieving knowledge over time builds mastery. Handy for introducing staff to the basics.",
    "subject": "Across subjects",
    "region": "Australia"
   },
@@ -1568,7 +1570,7 @@
    "tags": [
     "Free"
    ],
-   "summary": "Leaders at Mount Hutton Public School in NSW describe the team that led explicit instruction in maths and writing: defined roles, a weekly meeting, staff surveys on barriers and classroom observation data.",
+   "summary": "Leaders at Mount Hutton Public School in NSW describe the team that led explicit instruction in maths and writing, with its defined roles, weekly meeting, staff surveys on barriers and classroom observation data.",
    "subject": "Across subjects",
    "region": "Australia"
   },
@@ -1662,7 +1664,7 @@
    "tags": [
     "Free"
    ],
-   "summary": "Principals and teacher leaders from five secondary schools discuss what leading MTSS takes: setting the vision, making time, timetabling small intervention classes, backing staff and staying the course.",
+   "summary": "Principals and teacher leaders from five secondary schools discuss what leading MTSS takes, from setting the vision and making time to timetabling small intervention classes, backing staff and staying the course.",
    "subject": "Across subjects",
    "region": "Australia"
   },
@@ -1740,7 +1742,7 @@
    "url": "https://readinguniverse.org/resources/video/features-of-structured-literacy-instruction/teachable-moments-during-phonics",
    "by": "Reading Universe",
    "meta": [
-    "K-2",
+    "F-2",
     "USA"
    ],
    "areas": [
@@ -1764,7 +1766,7 @@
    "url": "https://readinguniverse.org/resources/video/features-of-structured-literacy-instruction/empowered-by-coaching-mr-venias-journey-as-a-reading-teacher",
    "by": "Reading Universe",
    "meta": [
-    "K-2",
+    "F-2",
     "USA"
    ],
    "areas": [
@@ -1820,7 +1822,7 @@
   },
   {
    "type": "watch",
-   "title": "Think Forward Educators: past webinar recordings (collection)",
+   "title": "Think Forward Educators: past webinar recordings",
    "url": "https://thinkforwardeducators.org/past-webinars-1",
    "by": "Think Forward Educators",
    "meta": [
@@ -1838,7 +1840,9 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "Australia",
+   "length": "Series",
+   "audience": "Teachers"
   },
   {
    "type": "watch",
@@ -2039,7 +2043,7 @@
    "by": "Chalk Dust",
    "meta": [
     "Primary and secondary",
-    "Australia"
+    "UK"
    ],
    "areas": [
     5,
@@ -2056,7 +2060,7 @@
     "Secondary"
    ],
    "subject": "Other subjects",
-   "region": "Australia"
+   "region": "UK"
   },
   {
    "type": "watch",
@@ -2123,7 +2127,7 @@
    "tags": [
     "Free"
    ],
-   "summary": "In part two with Adam Boxer, a retrieval practice clip is used to examine questioning in fine detail: saying the name at the end, wait time and choosing who answers so every student thinks.",
+   "summary": "In part two with Adam Boxer, a retrieval practice clip is used to examine questioning in fine detail, including saying the name at the end, wait time and choosing who answers so every student thinks.",
    "bands": [
     "F-2",
     "3-6",
@@ -2138,8 +2142,8 @@
    "url": "https://www.youtube.com/watch?v=HjhmPKSAiIE",
    "by": "Chalk Dust",
    "meta": [
-    "Year 3/4",
-    "Australia"
+    "Years 3-4",
+    "New Zealand"
    ],
    "areas": [
     5
@@ -2152,7 +2156,7 @@
     "3-6"
    ],
    "subject": "Across subjects",
-   "region": "Australia"
+   "region": "New Zealand"
   },
   {
    "type": "watch",
@@ -2161,7 +2165,7 @@
    "by": "Chalk Dust",
    "meta": [
     "Year 3",
-    "Australia"
+    "USA"
    ],
    "areas": [
     6,
@@ -2176,7 +2180,7 @@
     "3-6"
    ],
    "subject": "Other subjects",
-   "region": "Australia"
+   "region": "USA"
   },
   {
    "type": "watch",
@@ -2185,7 +2189,7 @@
    "by": "Chalk Dust",
    "meta": [
     "Primary",
-    "Australia"
+    "Canada"
    ],
    "areas": [
     12,
@@ -2201,7 +2205,7 @@
     "3-6"
    ],
    "subject": "Maths",
-   "region": "Australia"
+   "region": "Canada"
   },
   {
    "type": "watch",
@@ -2307,7 +2311,7 @@
    "tags": [
     "Free"
    ],
-   "summary": "Lesson 55 in the South Australian Department for Education's Year 1 phonics video series, the latest of the four lessons listed here from the sequence.",
+   "summary": "Lesson 55 in the South Australian Department for Education's Year 1 phonics video series, showing the routine late in the sequence.",
    "bands": [
     "F-2"
    ],
@@ -2320,7 +2324,7 @@
    "url": "https://www.youtube.com/watch?v=yjIw2B9vu_U",
    "by": "InnerDrive",
    "meta": [
-    "K-12",
+    "F-12",
     "UK"
    ],
    "areas": [
@@ -2338,7 +2342,9 @@
     "Secondary"
    ],
    "subject": "Across subjects",
-   "region": "UK"
+   "region": "UK",
+   "length": "Under 30 minutes",
+   "audience": "Teachers"
   },
   {
    "type": "watch",
@@ -2346,7 +2352,7 @@
    "url": "https://www.youtube.com/watch?v=WztIAIDlehk",
    "by": "InnerDrive",
    "meta": [
-    "K-12",
+    "F-12",
     "UK"
    ],
    "areas": [
@@ -2356,7 +2362,7 @@
    "tags": [
     "Free"
    ],
-   "summary": "Doug Lemov explains least invasive intervention in InnerDrive's Teaching Unpacked series: correcting behaviour with as little disruption to the lesson as possible.",
+   "summary": "In InnerDrive's Teaching Unpacked series, Doug Lemov explains least invasive intervention, which means correcting behaviour with as little disruption to the lesson as possible.",
    "bands": [
     "F-2",
     "3-6",
@@ -2371,7 +2377,7 @@
    "url": "https://www.youtube.com/watch?v=6xMOQjELZSY",
    "by": "InnerDrive",
    "meta": [
-    "K-12",
+    "F-12",
     "UK"
    ],
    "areas": [
@@ -2395,7 +2401,7 @@
    "url": "https://www.youtube.com/watch?v=ioLDgaA5Fqw",
    "by": "Uncommon Schools",
    "meta": [
-    "K-12",
+    "F-12",
     "USA"
    ],
    "areas": [
@@ -2419,7 +2425,7 @@
    "url": "https://www.youtube.com/watch?v=lfY_2Y_e2yA",
    "by": "Uncommon Schools",
    "meta": [
-    "K-12",
+    "F-12",
     "USA"
    ],
    "areas": [
@@ -2514,7 +2520,7 @@
    "by": "SBCUSD",
    "meta": [
     "22:37",
-    "K-2",
+    "F-2",
     "USA"
    ],
    "areas": [
@@ -2547,7 +2553,7 @@
    "tags": [
     "Free"
    ],
-   "summary": "A primary school example of explicit, systematic instruction from the IRIS Center's video collection in the United States. Listed here under explicit instruction and mathematics.",
+   "summary": "A primary school example of explicit, systematic instruction in maths, from the IRIS Center's video collection in the United States.",
    "bands": [
     "F-2",
     "3-6"
@@ -2572,30 +2578,6 @@
    ],
    "summary": "A two-minute explainer from La Trobe University on what explicit teaching is. Short enough to open a staff meeting or share with families.",
    "subject": "Across subjects",
-   "region": "Australia"
-  },
-  {
-   "type": "watch",
-   "title": "Explicit instruction in maths (YouTube version)",
-   "url": "https://www.youtube.com/watch?v=kDijrb6N8p0",
-   "by": "AERO",
-   "meta": [
-    "Primary",
-    "Australia"
-   ],
-   "areas": [
-    12,
-    2
-   ],
-   "tags": [
-    "Free"
-   ],
-   "summary": "Victorian primary teacher Sue Davis teaches place value and adding 100 to four-digit numbers in small steps, using base-10 blocks and place value charts and checking understanding before moving on.",
-   "bands": [
-    "F-2",
-    "3-6"
-   ],
-   "subject": "Maths",
    "region": "Australia"
   },
   {
@@ -3645,7 +3627,7 @@
    "type": "watch",
    "title": "Mini-whiteboards: go deep on the routine",
    "url": "https://www.youtube.com/watch?v=d-k8ALbYT0Y",
-   "by": "Tips for Teachers, Craig Barton",
+   "by": "Tips for Teachers (Craig Barton)",
    "meta": [
     "UK"
    ],
@@ -3849,8 +3831,7 @@
    "url": "https://www.ollielovell.com/anitaarcher-orig/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Anita Archer",
-    "Explicit teaching"
+    "with Anita Archer"
    ],
    "areas": [
     2
@@ -3867,8 +3848,7 @@
    "url": "https://www.ollielovell.com/johnhollingsworth/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with John Hollingsworth",
-    "Explicit teaching"
+    "with John Hollingsworth"
    ],
    "areas": [
     2,
@@ -3886,8 +3866,7 @@
    "url": "https://www.ollielovell.com/lorrainehammond/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Lorraine Hammond",
-    "Explicit teaching"
+    "with Lorraine Hammond"
    ],
    "areas": [
     2,
@@ -3905,8 +3884,7 @@
    "url": "https://www.ollielovell.com/adamboxer/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Adam Boxer",
-    "Explicit teaching"
+    "with Adam Boxer"
    ],
    "areas": [
     3,
@@ -3924,8 +3902,7 @@
    "url": "https://www.ollielovell.com/michaelpershan/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Michael Pershan",
-    "Explicit teaching"
+    "with Michael Pershan"
    ],
    "areas": [
     2,
@@ -3934,17 +3911,16 @@
    "tags": [
     "Free"
    ],
-   "summary": "Maths teacher and blogger Michael Pershan discusses worked examples: what the research says and how to use them well when teaching new procedures.",
+   "summary": "Maths teacher and blogger Michael Pershan discusses what the research says about worked examples and how to use them well when teaching new procedures.",
    "focus": "Worked examples"
   },
   {
    "type": "listen",
-   "title": "049 Teach Like a Champion",
+   "title": "049 Teaching Like a Champion",
    "url": "https://www.ollielovell.com/errr-049-doug-lemov-on-teaching-like-a-champion/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Doug Lemov",
-    "Explicit teaching"
+    "with Doug Lemov"
    ],
    "areas": [
     5,
@@ -3958,12 +3934,11 @@
   },
   {
    "type": "listen",
-   "title": "020a Craig Barton on knowledge vs skills, explicit instruction and diagnostic questions",
+   "title": "020a Knowledge vs. Skills, Explicit Instruction, and Diagnostic Questions",
    "url": "https://www.ollielovell.com/craigbarton1/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Craig Barton",
-    "Checking for understanding"
+    "with Craig Barton"
    ],
    "areas": [
     4,
@@ -3977,12 +3952,11 @@
   },
   {
    "type": "listen",
-   "title": "073 Responsive Teaching",
+   "title": "073 Responsive Teaching (Formative Assessment)",
    "url": "https://www.ollielovell.com/harryfletcherwood2/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Harry Fletcher-Wood",
-    "Checking for understanding"
+    "with Harry Fletcher-Wood"
    ],
    "areas": [
     4
@@ -3999,8 +3973,7 @@
    "url": "https://www.ollielovell.com/paulspenceley/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Paul Spenceley",
-    "Checking for understanding"
+    "with Paul Spenceley"
    ],
    "areas": [
     4,
@@ -4018,8 +3991,7 @@
    "url": "https://www.ollielovell.com/kristianstill/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Kristian Still",
-    "How learning works"
+    "with Kristian Still"
    ],
    "areas": [
     3
@@ -4036,8 +4008,7 @@
    "url": "https://www.ollielovell.com/danielwillingham2/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Daniel Willingham",
-    "How learning works"
+    "with Daniel Willingham"
    ],
    "areas": [
     1,
@@ -4055,8 +4026,7 @@
    "url": "https://www.ollielovell.com/pepsmccrea/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Peps Mccrea",
-    "How learning works"
+    "with Peps Mccrea"
    ],
    "areas": [
     15
@@ -4064,7 +4034,7 @@
    "tags": [
     "Free"
    ],
-   "summary": "Peps McCrea discusses his book Motivated Teaching and the question every teacher asks: how to build students' motivation to learn in the classroom.",
+   "summary": "Peps Mccrea discusses his book Motivated Teaching and how to build students' motivation to learn in the classroom.",
    "focus": "Motivation"
   },
   {
@@ -4073,8 +4043,7 @@
    "url": "https://www.ollielovell.com/errr-005-pamela-snow-phonics-can-get-real-story-students/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Pamela Snow",
-    "Reading and phonics"
+    "with Pamela Snow"
    ],
    "areas": [
     7
@@ -4091,8 +4060,7 @@
    "url": "https://www.ollielovell.com/lynstone/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Lyn Stone",
-    "Reading and phonics"
+    "with Lyn Stone"
    ],
    "areas": [
     7,
@@ -4109,8 +4077,7 @@
    "url": "https://www.ollielovell.com/jenbuckingham/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Jennifer Buckingham",
-    "Reading and phonics"
+    "with Jennifer Buckingham"
    ],
    "areas": [
     7,
@@ -4127,8 +4094,7 @@
    "url": "https://www.ollielovell.com/douglemov2/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Doug Lemov",
-    "Comprehension and text study"
+    "with Doug Lemov"
    ],
    "areas": [
     8
@@ -4145,8 +4111,7 @@
    "url": "https://www.ollielovell.com/margaretmckeown-vocab/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Margaret McKeown",
-    "Comprehension and text study"
+    "with Margaret McKeown"
    ],
    "areas": [
     8
@@ -4159,12 +4124,11 @@
   },
   {
    "type": "listen",
-   "title": "047 Questioning the Author",
+   "title": "047 Questioning the Author (Reading Comprehension)",
    "url": "https://www.ollielovell.com/errr-047-margaret-mckeown-on-questioning-the-author-reading-comprehension/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Margaret McKeown",
-    "Comprehension and text study"
+    "with Margaret McKeown"
    ],
    "areas": [
     8
@@ -4181,8 +4145,7 @@
    "url": "https://www.ollielovell.com/judithhochman/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Judith Hochman",
-    "Writing"
+    "with Judith Hochman"
    ],
    "areas": [
     10
@@ -4199,8 +4162,7 @@
    "url": "https://www.ollielovell.com/nathanielswain/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Nathaniel Swain",
-    "Writing"
+    "with Nathaniel Swain"
    ],
    "areas": [
     10,
@@ -4218,8 +4180,7 @@
    "url": "https://www.ollielovell.com/karenharris/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Karen Harris",
-    "Writing"
+    "with Karen Harris"
    ],
    "areas": [
     10
@@ -4232,12 +4193,11 @@
   },
   {
    "type": "listen",
-   "title": "063 E.D. Hirsch",
+   "title": "063 Why Knowledge Matters",
    "url": "https://www.ollielovell.com/donhirsch/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with E.D. Hirsch",
-    "Curriculum"
+    "with E.D. Hirsch"
    ],
    "areas": [
     6
@@ -4254,8 +4214,7 @@
    "url": "https://www.ollielovell.com/nataliewexler/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Natalie Wexler",
-    "Curriculum"
+    "with Natalie Wexler"
    ],
    "areas": [
     6,
@@ -4272,8 +4231,7 @@
    "url": "https://www.ollielovell.com/benjensen/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Ben Jensen",
-    "Curriculum"
+    "with Ben Jensen"
    ],
    "areas": [
     6,
@@ -4291,8 +4249,7 @@
    "url": "https://www.ollielovell.com/davidmorkunas/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with David Morkunas",
-    "Maths"
+    "with David Morkunas"
    ],
    "areas": [
     12,
@@ -4306,12 +4263,11 @@
   },
   {
    "type": "listen",
-   "title": "104 Primary maths systems",
+   "title": "104 System-Level Approaches to Improving Primary Mathematics",
    "url": "https://www.ollielovell.com/haywood-parkinson/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Amy Haywood and Nick Parkinson",
-    "Maths"
+    "with Amy Haywood and Nick Parkinson"
    ],
    "areas": [
     12,
@@ -4325,12 +4281,11 @@
   },
   {
    "type": "listen",
-   "title": "027 Assessment",
+   "title": "027 Getting Assessment Right and Comparative Judgment",
    "url": "https://www.ollielovell.com/daisychristodoulou/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Daisy Christodoulou",
-    "Assessment"
+    "with Daisy Christodoulou"
    ],
    "areas": [
     13
@@ -4343,12 +4298,11 @@
   },
   {
    "type": "listen",
-   "title": "106 Test feedback",
+   "title": "106 Test Feedback that Makes Students Think",
    "url": "https://www.ollielovell.com/lissiedoyle/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Lissie Doyle",
-    "Assessment"
+    "with Lissie Doyle"
    ],
    "areas": [
     13,
@@ -4362,12 +4316,11 @@
   },
   {
    "type": "listen",
-   "title": "046 Behaviour",
+   "title": "046 Behaviour Management",
    "url": "https://www.ollielovell.com/tom-bennett-behaviour-management-running-the-room/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Tom Bennett",
-    "Behaviour and culture"
+    "with Tom Bennett"
    ],
    "areas": [
     5,
@@ -4381,12 +4334,11 @@
   },
   {
    "type": "listen",
-   "title": "031 Behaviour",
+   "title": "031 Behaviour Management",
    "url": "https://www.ollielovell.com/billrogers/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Bill Rogers",
-    "Behaviour and culture"
+    "with Bill Rogers"
    ],
    "areas": [
     5
@@ -4403,8 +4355,7 @@
    "url": "https://www.ollielovell.com/katharinebirbalsingh/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Katharine Birbalsingh",
-    "Behaviour and culture"
+    "with Katharine Birbalsingh"
    ],
    "areas": [
     20
@@ -4420,8 +4371,7 @@
    "url": "https://www.ollielovell.com/joshgoodrich/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Josh Goodrich",
-    "Coaching and PL"
+    "with Josh Goodrich"
    ],
    "areas": [
     16
@@ -4438,8 +4388,7 @@
    "url": "https://www.ollielovell.com/pepsmccrea2/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Peps Mccrea",
-    "Coaching and PL"
+    "with Peps Mccrea"
    ],
    "areas": [
     16
@@ -4447,17 +4396,16 @@
    "tags": [
     "Free"
    ],
-   "summary": "Peps McCrea, of Ambition Institute and Steplab, discusses how teacher expertise develops and what that means for those who support teachers.",
+   "summary": "Peps Mccrea, of Ambition Institute and Steplab, discusses how teacher expertise develops and what that means for those who support teachers.",
    "focus": "Developing expertise"
   },
   {
    "type": "listen",
-   "title": "058 Effective Professional Learning",
+   "title": "058 What Makes Effective Professional Learning",
    "url": "https://www.ollielovell.com/samsims/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Sam Sims",
-    "Coaching and PL"
+    "with Sam Sims"
    ],
    "areas": [
     16
@@ -4470,12 +4418,11 @@
   },
   {
    "type": "listen",
-   "title": "092 Running Effective PD",
+   "title": "092 Running Effective Professional Development",
    "url": "https://www.ollielovell.com/harryfletcherwood3/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Harry Fletcher-Wood",
-    "Coaching and PL"
+    "with Harry Fletcher-Wood"
    ],
    "areas": [
     16
@@ -4488,12 +4435,11 @@
   },
   {
    "type": "listen",
-   "title": "101 School improvement and coaching",
+   "title": "101 Systematic School Improvement and Instructional Coaching",
    "url": "https://www.ollielovell.com/alexevans/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Alex Evans",
-    "Coaching and PL"
+    "with Alex Evans"
    ],
    "areas": [
     16,
@@ -4511,8 +4457,7 @@
    "url": "https://www.ollielovell.com/vivianerobinson/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Viviane Robinson",
-    "Leadership"
+    "with Viviane Robinson"
    ],
    "areas": [
     19,
@@ -4526,12 +4471,11 @@
   },
   {
    "type": "listen",
-   "title": "072 Virtuous Educational Leadership",
+   "title": "072 Virtuous Education Leadership",
    "url": "https://www.ollielovell.com/vivianerobinson2/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Viviane Robinson",
-    "Leadership"
+    "with Viviane Robinson"
    ],
    "areas": [
     19,
@@ -4549,8 +4493,7 @@
    "url": "https://www.ollielovell.com/dylanwiliam/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Dylan Wiliam",
-    "Leadership"
+    "with Dylan Wiliam"
    ],
    "areas": [
     19,
@@ -4559,7 +4502,7 @@
    "tags": [
     "Free"
    ],
-   "summary": "Dylan Wiliam discusses leadership for teacher learning: how leaders can build teacher professional development around formative assessment to improve outcomes for students."
+   "summary": "Dylan Wiliam discusses how leaders can build teacher professional development around formative assessment to improve outcomes for students."
   },
   {
    "type": "listen",
@@ -4567,8 +4510,7 @@
    "url": "https://www.ollielovell.com/sueknight/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Sue Knight",
-    "Leadership"
+    "with Sue Knight"
    ],
    "areas": [
     19
@@ -4585,8 +4527,7 @@
    "url": "https://www.ollielovell.com/stevecapp/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Steve Capp",
-    "Leadership"
+    "with Steve Capp"
    ],
    "areas": [
     19
@@ -4603,8 +4544,7 @@
    "url": "https://www.ollielovell.com/gregashman/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Greg Ashman",
-    "Leadership"
+    "with Greg Ashman"
    ],
    "areas": [
     19,
@@ -4621,8 +4561,7 @@
    "url": "https://www.ollielovell.com/challis/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Musumeci, McClements and Plunkett",
-    "Leadership"
+    "with Musumeci, McClements and Plunkett"
    ],
    "areas": [
     19,
@@ -4636,12 +4575,11 @@
   },
   {
    "type": "listen",
-   "title": "097 Implementation",
+   "title": "097 Implementation in Education",
    "url": "https://www.ollielovell.com/jonathansharples/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Jonathan Sharples",
-    "Implementation and change"
+    "with Jonathan Sharples"
    ],
    "areas": [
     17
@@ -4654,12 +4592,11 @@
   },
   {
    "type": "listen",
-   "title": "103 Making Change Stick",
+   "title": "103 Making Change Stick (Implementation)",
    "url": "https://www.ollielovell.com/jamesmannion2/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with James Mannion",
-    "Implementation and change"
+    "with James Mannion"
    ],
    "areas": [
     22
@@ -4672,12 +4609,11 @@
   },
   {
    "type": "listen",
-   "title": "087 De-implementation",
+   "title": "087 Making Room for Impact (De-implementation)",
    "url": "https://www.ollielovell.com/arranhamilton-dylanwiliam/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Arran Hamilton and Dylan Wiliam",
-    "Implementation and change"
+    "with Arran Hamilton and Dylan Wiliam"
    ],
    "areas": [
     17,
@@ -4686,7 +4622,7 @@
    "tags": [
     "Free"
    ],
-   "summary": "Arran Hamilton and Dylan Wiliam discuss Making Room for Impact and de-implementation: deciding what schools should stop doing to free time for what matters.",
+   "summary": "Arran Hamilton and Dylan Wiliam discuss Making Room for Impact and de-implementation, the work of deciding what schools should stop doing to free time for what matters.",
    "focus": "De-implementation"
   },
   {
@@ -4695,8 +4631,7 @@
    "url": "https://www.ollielovell.com/adriansimpson/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Adrian Simpson",
-    "Evidence and debates"
+    "with Adrian Simpson"
    ],
    "areas": [
     18
@@ -4712,8 +4647,7 @@
    "url": "https://www.ollielovell.com/johnhattie/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with John Hattie",
-    "Evidence and debates"
+    "with John Hattie"
    ],
    "areas": [
     18
@@ -4729,8 +4663,7 @@
    "url": "https://www.ollielovell.com/danielwillingham/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Daniel Willingham",
-    "Evidence and debates"
+    "with Daniel Willingham"
    ],
    "areas": [
     18
@@ -4746,8 +4679,7 @@
    "url": "https://www.ollielovell.com/joshcuevas/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Josh Cuevas",
-    "Evidence and debates"
+    "with Josh Cuevas"
    ],
    "areas": [
     18
@@ -4763,8 +4695,7 @@
    "url": "https://www.ollielovell.com/benriley/",
    "by": "Education Research Reading Room",
    "meta": [
-    "with Benjamin Riley",
-    "Evidence and debates"
+    "with Benjamin Riley"
    ],
    "areas": [
     18
@@ -4780,8 +4711,7 @@
    "url": "https://knowledgeforteachers.podbean.com/e/s03e06-dr-carl-hendrick-on-five-things-every-teacher-should-do/",
    "by": "Knowledge for Teachers",
    "meta": [
-    "with Carl Hendrick",
-    "Explicit teaching"
+    "with Carl Hendrick"
    ],
    "areas": [
     1,
@@ -4799,8 +4729,7 @@
    "url": "https://knowledgeforteachers.podbean.com/e/s04e12-paul-kirschner-and-nidhi-sachdeva-on-the-hidden-difference-between-good-teaching-and-expert-teaching/",
    "by": "Knowledge for Teachers",
    "meta": [
-    "with Paul Kirschner and Nidhi Sachdeva",
-    "Explicit teaching"
+    "with Paul Kirschner and Nidhi Sachdeva"
    ],
    "areas": [
     1,
@@ -4817,8 +4746,7 @@
    "url": "https://knowledgeforteachers.podbean.com/e/s04e11-dr-haili-hughes-on-how-teachers-really-get-better/",
    "by": "Knowledge for Teachers",
    "meta": [
-    "with Haili Hughes",
-    "Coaching and PL"
+    "with Haili Hughes"
    ],
    "areas": [
     16
@@ -4835,8 +4763,7 @@
    "url": "https://knowledgeforteachers.podbean.com/e/s02e20-dr-zach-groshell-and-brendan-lee-on-coaching-culture-and-change/",
    "by": "Knowledge for Teachers",
    "meta": [
-    "with Zach Groshell",
-    "Coaching and PL"
+    "with Zach Groshell"
    ],
    "areas": [
     16,
@@ -4850,12 +4777,11 @@
   },
   {
    "type": "listen",
-   "title": "S04E09 The knowing-doing gap",
+   "title": "S04E09 Bridging the Knowing Doing Gap",
    "url": "https://knowledgeforteachers.podbean.com/e/s04e09-bridging-the-knowing-doing-gap-with-professor-stuart-kime/",
    "by": "Knowledge for Teachers",
    "meta": [
-    "with Stuart Kime",
-    "Implementation and change"
+    "with Stuart Kime"
    ],
    "areas": [
     17
@@ -4868,12 +4794,11 @@
   },
   {
    "type": "listen",
-   "title": "S04E12 Zero staff turnover in a high-performing school",
+   "title": "S04E12 Zero Staff Turnover: The Secret Sauce of a High-Performing School",
    "url": "https://knowledgeforteachers.podbean.com/e/s04e12-zero-staff-turnover-the-secret-sauce-of-a-high-performing-school/",
    "by": "Knowledge for Teachers",
    "meta": [
-    "with Simon Fairall, Lauren Naldrett and Kirby McDonald",
-    "Leadership"
+    "with Simon Fairall, Lauren Naldrett and Kirby McDonald"
    ],
    "areas": [
     19,
@@ -4887,12 +4812,11 @@
   },
   {
    "type": "listen",
-   "title": "S04E10 Six common mistakes implementing MTSS",
+   "title": "S04E10 6 Common Mistakes Schools Make When Implementing MTSS",
    "url": "https://knowledgeforteachers.podbean.com/e/6-common-mistakes-schools-make-when-implementing-mtss-with-dr-sarah-brown-and-dr-stephanie-stollar/",
    "by": "Knowledge for Teachers",
    "meta": [
-    "with Sarah Brown and Stephanie Stollar",
-    "Tiered support"
+    "with Sarah Brown and Stephanie Stollar"
    ],
    "areas": [
     14,
@@ -4906,12 +4830,11 @@
   },
   {
    "type": "listen",
-   "title": "S03E17 Tiers of support",
+   "title": "S03E17 From Intervention to Inclusion: Making Every Tier Count",
    "url": "https://knowledgeforteachers.podbean.com/e/s03e17-from-intervention-to-inclusion-sarah-asome-on-making-every-tier-count/",
    "by": "Knowledge for Teachers",
    "meta": [
-    "with Sarah Asome",
-    "Tiered support"
+    "with Sarah Asome"
    ],
    "areas": [
     14
@@ -4924,12 +4847,11 @@
   },
   {
    "type": "listen",
-   "title": "S04E14 Dyslexia myths",
+   "title": "S04E14 5 Myths About Dyslexia That Every Educator Needs to Know",
    "url": "https://knowledgeforteachers.podbean.com/e/s04e14-5-myths-about-dyslexia-that-every-educator-needs-to-know-with-veronica-alexander/",
    "by": "Knowledge for Teachers",
    "meta": [
-    "with Veronica Alexander",
-    "Tiered support"
+    "with Veronica Alexander"
    ],
    "areas": [
     14,
@@ -4947,8 +4869,7 @@
    "url": "https://knowledgeforteachers.podbean.com/e/s04e06-dr-kent-johnson-and-andrew-kieta-on-the-morningside-model-that-guarantees-two-years-of-growth-in-one/",
    "by": "Knowledge for Teachers",
    "meta": [
-    "with Kent Johnson and Andrew Kieta",
-    "Explicit teaching"
+    "with Kent Johnson and Andrew Kieta"
    ],
    "areas": [
     2,
@@ -4966,8 +4887,7 @@
    "url": "https://chalkandtalkpodcast.podbean.com/e/math-fact-crisis-two-years-later-with-brian-poncy-ep-79/",
    "by": "Chalk & Talk",
    "meta": [
-    "with Brian Poncy",
-    "Maths"
+    "with Brian Poncy"
    ],
    "areas": [
     12
@@ -4980,12 +4900,11 @@
   },
   {
    "type": "listen",
-   "title": "Ep 82 Clear math teaching",
+   "title": "Ep 82 The Science of Clear Math Teaching",
    "url": "https://chalkandtalkpodcast.podbean.com/e/the-science-of-clear-math-teaching-with-kristopher-boulton-ep-82/",
    "by": "Chalk & Talk",
    "meta": [
-    "with Kristopher Boulton",
-    "Maths"
+    "with Kristopher Boulton"
    ],
    "areas": [
     12,
@@ -5002,9 +4921,7 @@
    "title": "Ep 77 Five Math Myths",
    "url": "https://chalkandtalkpodcast.podbean.com/e/five-math-myths-that-are-holding-students-back-ep-77/",
    "by": "Chalk & Talk",
-   "meta": [
-    "Maths"
-   ],
+   "meta": [],
    "areas": [
     12,
     18
@@ -5016,12 +4933,11 @@
   },
   {
    "type": "listen",
-   "title": "Ep 83 Memory research",
+   "title": "Ep 83 How Do We Learn? What Memory Research Means for Teaching",
    "url": "https://chalkandtalkpodcast.podbean.com/e/how-do-we-learn-what-memory-research-means-for-teaching-with-hector-ruiz-martin-ep-83/",
    "by": "Chalk & Talk",
    "meta": [
-    "with Hector Ruiz Martin",
-    "How learning works"
+    "with Hector Ruiz Martin"
    ],
    "areas": [
     1,
@@ -5035,12 +4951,11 @@
   },
   {
    "type": "listen",
-   "title": "Ep 75 High expectations",
+   "title": "Ep 75 How High Expectations Drive Student Achievement",
    "url": "https://chalkandtalkpodcast.podbean.com/e/how-high-expectations-drive-student-achievement-with-doug-lemov-ep-75/",
    "by": "Chalk & Talk",
    "meta": [
-    "with Doug Lemov",
-    "Behaviour and culture"
+    "with Doug Lemov"
    ],
    "areas": [
     5,
@@ -5058,8 +4973,7 @@
    "url": "https://chalkandtalkpodcast.podbean.com/e/the-science-and-craft-of-great-teaching-with-nidhi-sachdeva-and-paul-kirschner-ep-78/",
    "by": "Chalk & Talk",
    "meta": [
-    "with Nidhi Sachdeva and Paul Kirschner",
-    "Explicit teaching"
+    "with Nidhi Sachdeva and Paul Kirschner"
    ],
    "areas": [
     1,
@@ -5075,9 +4989,7 @@
    "title": "Ep 24 Implementation in schools",
    "url": "https://evidenceintoaction.podbean.com/e/ep-24-implementation-in-schools/",
    "by": "Evidence into Action",
-   "meta": [
-    "Implementation and change"
-   ],
+   "meta": [],
    "areas": [
     17
    ],
@@ -5092,9 +5004,7 @@
    "title": "Foundations for writing success",
    "url": "https://evidenceintoaction.podbean.com/e/foundations-for-writing-success/",
    "by": "Evidence into Action",
-   "meta": [
-    "Writing"
-   ],
+   "meta": [],
    "areas": [
     10
    ],
@@ -5106,12 +5016,10 @@
   },
   {
    "type": "listen",
-   "title": "Talking the talk",
+   "title": "Talking the talk: subject-specific talk across the curriculum",
    "url": "https://evidenceintoaction.podbean.com/e/oral-language-the-importance-of-subject-specific-talk-across-the-curriculum/",
    "by": "Evidence into Action",
-   "meta": [
-    "Oral language"
-   ],
+   "meta": [],
    "areas": [
     11
    ],
@@ -5126,9 +5034,7 @@
    "title": "Maths: prioritising problem solving",
    "url": "https://evidenceintoaction.podbean.com/e/maths-prioritising-problem-solving/",
    "by": "Evidence into Action",
-   "meta": [
-    "Maths"
-   ],
+   "meta": [],
    "areas": [
     12
    ],
@@ -5140,12 +5046,10 @@
   },
   {
    "type": "listen",
-   "title": "Why manipulatives matter",
+   "title": "Why manipulatives matter in the maths classroom",
    "url": "https://evidenceintoaction.podbean.com/e/why-manipulatives-matter-in-in-the-maths-classroom/",
    "by": "Evidence into Action",
-   "meta": [
-    "Maths"
-   ],
+   "meta": [],
    "areas": [
     12
    ],
@@ -5157,12 +5061,10 @@
   },
   {
    "type": "listen",
-   "title": "Metacognition: new evidence",
+   "title": "Metacognition: Moving forward with new evidence",
    "url": "https://evidenceintoaction.podbean.com/e/metacognition-moving-forward-with-new-evidence/",
    "by": "Evidence into Action",
-   "meta": [
-    "How learning works"
-   ],
+   "meta": [],
    "areas": [
     15
    ],
@@ -5177,9 +5079,7 @@
    "title": "Deployment of teaching assistants",
    "url": "https://evidenceintoaction.podbean.com/e/deployment-of-teaching-assistants/",
    "by": "Evidence into Action",
-   "meta": [
-    "Tiered support"
-   ],
+   "meta": [],
    "areas": [
     14
    ],
@@ -5195,8 +5095,7 @@
    "url": "https://educationrickshaw.com/2026/07/12/s5e34-anita-archer-on-the-principles-of-explicit-instruction/",
    "by": "Progressively Incorrect",
    "meta": [
-    "with Anita Archer",
-    "Explicit teaching"
+    "with Anita Archer"
    ],
    "areas": [
     2
@@ -5212,8 +5111,7 @@
    "url": "https://www.buzzsprout.com/1987785/episodes/17122731-s5-e17-mtss-for-reading-with-stephanie-stollar",
    "by": "The Structured Literacy Podcast",
    "meta": [
-    "with Stephanie Stollar",
-    "Tiered support"
+    "with Stephanie Stollar"
    ],
    "areas": [
     14,
@@ -5230,9 +5128,7 @@
    "title": "Science of Reading Essentials: Writing",
    "url": "https://www.buzzsprout.com/612361/episodes/17132533-science-of-reading-essentials-writing",
    "by": "Science of Reading: The Podcast",
-   "meta": [
-    "Writing"
-   ],
+   "meta": [],
    "areas": [
     10
    ],
@@ -5247,8 +5143,7 @@
    "url": "https://reachallreaders.com/all-about-the-writing-revolution-with-judith-hochman/",
    "by": "Reach All Readers (formerly Triple R Teaching)",
    "meta": [
-    "with Judith Hochman",
-    "Writing"
+    "with Judith Hochman"
    ],
    "areas": [
     10
@@ -5265,8 +5160,7 @@
    "url": "https://education.nsw.gov.au/teaching-and-learning/school-leadership-institute/podcast1/episode-5---virtuous-educational-leadership.html",
    "by": "Leadership in Focus (NSW School Leadership Institute)",
    "meta": [
-    "with Viviane Robinson",
-    "Leadership"
+    "with Viviane Robinson"
    ],
    "areas": [
     19
@@ -5280,9 +5174,7 @@
    "title": "Teacher Staffroom Episode 74: Implementation of programs in the curriculum",
    "url": "https://www.teachermagazine.com/au_en/articles/teacher-staffroom-episode-74-implementation-of-programs-in-the-curriculum",
    "by": "Teacher Magazine (ACER)",
-   "meta": [
-    "Implementation and change"
-   ],
+   "meta": [],
    "areas": [
     17,
     6
@@ -5293,7 +5185,7 @@
   },
   {
    "type": "listen",
-   "title": "S02E06 Tom Bennett On Running The Room",
+   "title": "S02E06 Tom Bennett on Running the Room",
    "url": "https://knowledgeforteachers.podbean.com/e/s02e06-tom-bennett-on-running-the-room/",
    "by": "Knowledge for Teachers",
    "meta": [
@@ -5807,7 +5699,7 @@
    "tags": [
     "Free"
    ],
-   "summary": "Alexander Renkl explains self-explanation: how students' internal dialogue affects learning from worked examples and problem solving, and how teachers can prompt it.",
+   "summary": "Alexander Renkl explains how self-explanation, students' internal dialogue, affects learning from worked examples and problem solving, and how teachers can prompt it.",
    "focus": "Self-explanation"
   },
   {
@@ -6097,7 +5989,7 @@
   },
   {
    "type": "listen",
-   "title": "S03E9 Making sense of the science of reading",
+   "title": "S03E09 Making sense of the science of reading",
    "url": "https://knowledgeforteachers.podbean.com/e/s03e9-making-sense-of-the-science-of-reading-with-mandy-nayton/",
    "by": "Knowledge for Teachers",
    "meta": [
@@ -6114,7 +6006,7 @@
   },
   {
    "type": "listen",
-   "title": "S02E02 Decoding The Foundations Of Teaching Kindergarten",
+   "title": "S02E02 Decoding the Foundations of Teaching Kindergarten",
    "url": "https://knowledgeforteachers.podbean.com/e/s02e02-james-dobson-decoding-the%c2%a0foundations-of-teaching-kindergarten/",
    "by": "Knowledge for Teachers",
    "meta": [
@@ -6263,7 +6155,7 @@
   },
   {
    "type": "listen",
-   "title": "S4 E20 Why It's So Scary To Let Go Of Guided Reading",
+   "title": "S4 E20 Why It's So Scary to Let Go of Guided Reading",
    "url": "https://www.buzzsprout.com/1987785/episodes/16132890-summer-series-why-it-s-so-scary-to-let-go-of-guided-reading",
    "by": "The Structured Literacy Podcast",
    "meta": [
@@ -6347,7 +6239,7 @@
   },
   {
    "type": "listen",
-   "title": "S3 E19 How To Make Sure That Your Spelling Instruction Is Explicit",
+   "title": "S3 E19 How to Make Sure That Your Spelling Instruction Is Explicit",
    "url": "https://www.buzzsprout.com/1987785/episodes/15196028-s3-e19-how-to-make-sure-that-your-spelling-instruction-is-explicit",
    "by": "The Structured Literacy Podcast",
    "meta": [
@@ -6651,7 +6543,7 @@
   },
   {
    "type": "listen",
-   "title": "S4 Ep13 Let's Talk Year 3-6 Reading Assessment and Grading",
+   "title": "S4 E13 Let's Talk Year 3-6 Reading Assessment and Grading",
    "url": "https://www.buzzsprout.com/1987785/episodes/16109692-s4-ep13-let-s-talk-year-3-6-reading-assessment-and-grading",
    "by": "The Structured Literacy Podcast",
    "meta": [
@@ -6685,7 +6577,7 @@
   },
   {
    "type": "listen",
-   "title": "Tier-Two Instruction That Hits The Mark",
+   "title": "Tier Two Instruction That Hits the Mark",
    "url": "https://www.buzzsprout.com/1987785/episodes/15518724-listener-favourites-tier-two-instruction-that-hits-the-mark",
    "by": "The Structured Literacy Podcast",
    "meta": [
@@ -6958,12 +6850,15 @@
    "type": "read",
    "title": "Victorian Teaching and Learning Model 2.0: policy",
    "url": "https://www2.education.vic.gov.au/pal/victorian-teaching-learning-model/policy",
-   "by": "Victorian Department of Education",
+   "by": "Department of Education, Victoria",
    "meta": [
     "Policy",
     "Australia"
    ],
-   "areas": [],
+   "areas": [
+    2,
+    19
+   ],
    "tags": []
   },
   {
@@ -7084,7 +6979,7 @@
    "type": "read",
    "title": "The Writing Framework (England, July 2025): announcement",
    "url": "https://www.gov.uk/government/news/new-phonics-inspired-framework-to-boost-standards-for-children",
-   "by": "Department for Education",
+   "by": "Department for Education (England)",
    "meta": [
     "Government guidance",
     "UK"
@@ -7351,7 +7246,7 @@
    "type": "read",
    "title": "Cognitive load theory in practice",
    "url": "https://education.nsw.gov.au/about-us/education-data-and-research/cese/publications/practical-guides-for-educators-/cognitive-load-theory-in-practice",
-   "by": "CESE (NSW)",
+   "by": "Centre for Education Statistics and Evaluation (NSW)",
    "meta": [
     "Practice guide",
     "Australia"
@@ -7365,7 +7260,7 @@
    "type": "read",
    "title": "What Works Best 2025: Evidence guide for excellent schools",
    "url": "https://education.nsw.gov.au/about-us/education-data-and-research/what-works-best/what-works-best-2025-evidence-guide-for-excellent-schools",
-   "by": "CESE (NSW)",
+   "by": "Centre for Education Statistics and Evaluation (NSW)",
    "meta": [
     "Evidence guide",
     "Australia"
@@ -7435,7 +7330,7 @@
    "type": "read",
    "title": "How to get primary students excited about spelling",
    "url": "https://www.teachermagazine.com/au_en/articles/how-to-get-primary-students-excited-about-spelling",
-   "by": "Teacher magazine",
+   "by": "Teacher magazine (ACER)",
    "meta": [
     "Article",
     "Australia"
@@ -7478,7 +7373,7 @@
    "type": "read",
    "title": "Building instructional capacity: 'culture drives performance'",
    "url": "https://www.teachermagazine.com/au_en/articles/building-instructional-capacity-culture-drives-performance",
-   "by": "Teacher magazine",
+   "by": "Teacher magazine (ACER)",
    "meta": [
     "Article",
     "Australia"
@@ -7493,7 +7388,7 @@
    "type": "read",
    "title": "Leadership Q&A: Implementing evidence-based instruction",
    "url": "https://www.teachermagazine.com/au_en/articles/leadership-q-a-implementing-evidence-based-instruction",
-   "by": "Teacher magazine",
+   "by": "Teacher magazine (ACER)",
    "meta": [
     "Interview",
     "Australia"
@@ -7608,7 +7503,7 @@
    "type": "read",
    "title": "Teacher resources: Unpacking evidence-based implementation",
    "url": "https://www.teachermagazine.com/au_en/articles/teacher-resources-unpacking-evidence-based-implementation",
-   "by": "Teacher magazine",
+   "by": "Teacher magazine (ACER)",
    "meta": [
     "Article",
     "Australia"
@@ -7662,7 +7557,7 @@
   },
   {
    "type": "read",
-   "title": "Teaching Unpacked (three articles)",
+   "title": "Teaching Unpacked",
    "url": "https://teachlikeachampion.org/resources/teaching-unpacked/",
    "by": "Teach Like a Champion (Doug Lemov)",
    "meta": [
@@ -7712,8 +7607,9 @@
    "url": "https://education.nsw.gov.au/about-us/education-data-and-research/cese/publications/literature-reviews/cognitive-load-theory.html",
    "by": "Centre for Education Statistics and Evaluation (NSW)",
    "meta": [
+    "Research summary",
     "2017",
-    "Research summaries and explainers"
+    "Australia"
    ],
    "areas": [
     1
@@ -7726,8 +7622,9 @@
    "url": "https://education.nsw.gov.au/about-us/education-data-and-research/cese/publications/posters/cognitive-load-theory",
    "by": "Centre for Education Statistics and Evaluation (NSW)",
    "meta": [
+    "One-page summary",
     "2017",
-    "One-page summaries"
+    "Australia"
    ],
    "areas": [
     1
@@ -7740,8 +7637,9 @@
    "url": "https://edresearch.edu.au/resources/how-students-learn-best",
    "by": "AERO",
    "meta": [
+    "Research summary",
     "2023",
-    "Research summaries and explainers"
+    "Australia"
    ],
    "areas": [
     1
@@ -7754,7 +7652,8 @@
    "url": "https://www.edresearch.edu.au/resource-collections/teaching-how-students-learn-research-and-explainers",
    "by": "AERO",
    "meta": [
-    "Research summaries and explainers"
+    "Research summaries and explainers",
+    "Australia"
    ],
    "areas": [
     1
@@ -7767,8 +7666,9 @@
    "url": "https://www.deansforimpact.org/tools-and-resources/the-science-of-learning",
    "by": "Deans for Impact",
    "meta": [
+    "Research summary",
     "2026",
-    "Research summaries and explainers"
+    "USA"
    ],
    "areas": [
     1
@@ -7797,8 +7697,9 @@
    "url": "https://www.aft.org/ae/summer2021/willingham",
    "by": "Daniel Willingham",
    "meta": [
+    "Article",
     "2021",
-    "Short reads"
+    "USA"
    ],
    "areas": [
     1
@@ -7811,8 +7712,9 @@
    "url": "https://www.aft.org/ae/fall2020/willingham",
    "by": "Daniel Willingham",
    "meta": [
+    "Article",
     "2020",
-    "Short reads"
+    "USA"
    ],
    "areas": [
     6
@@ -7841,8 +7743,9 @@
    "url": "https://evidencebased.education/reports/",
    "by": "Coe, Rauch, Kime and Singleton (Evidence Based Education)",
    "meta": [
+    "Evidence review",
     "2020",
-    "Research summaries and explainers"
+    "UK"
    ],
    "areas": [
     2
@@ -7871,8 +7774,9 @@
    "url": "https://www.gov.uk/government/publications/the-writing-framework",
    "by": "Department for Education (England)",
    "meta": [
+    "Government guidance",
     "2025",
-    "Practice guides"
+    "UK"
    ],
    "areas": [
     10
@@ -7881,12 +7785,13 @@
   },
   {
    "type": "read",
-   "title": "Implementation in schools: A deliberate and structured approach (collection)",
+   "title": "Implementation in schools: A deliberate and structured approach",
    "url": "https://www.edresearch.edu.au/resource-collections/implementation-schools-deliberate-and-structured-approach",
    "by": "AERO",
    "meta": [
+    "Explainers and papers",
     "2024",
-    "Research summaries and explainers"
+    "Australia"
    ],
    "areas": [
     17
@@ -7945,10 +7850,11 @@
    "type": "read",
    "title": "Expert Teaching: What is it, and how might we develop it?",
    "url": "https://www.ambition.org.uk/research-and-insight/what-is-expert-teaching/",
-   "by": "Peps Mccrea",
+   "by": "Ambition Institute (Peps Mccrea)",
    "meta": [
+    "Paper",
     "2018",
-    "Research summaries and explainers"
+    "UK"
    ],
    "areas": [
     16
@@ -7977,8 +7883,9 @@
    "url": "https://deansforimpact.org/wp-content/uploads/2016/12/Practice-with-Purpose_FOR-PRINT_113016.pdf",
    "by": "Deans for Impact",
    "meta": [
+    "Report",
     "2016",
-    "Research summaries and explainers"
+    "USA"
    ],
    "areas": [
     16
@@ -7991,8 +7898,9 @@
    "url": "https://educationendowmentfoundation.org.uk/education-evidence/evidence-reviews/teacher-professional-development-characteristics",
    "by": "Sims and colleagues (EEF)",
    "meta": [
+    "Evidence review",
     "2021",
-    "Research summaries and explainers"
+    "UK"
    ],
    "areas": [
     16
@@ -8005,8 +7913,9 @@
    "url": "https://www.newyorker.com/magazine/2011/10/03/personal-best",
    "by": "Atul Gawande (The New Yorker)",
    "meta": [
+    "Essay",
     "2011",
-    "Short reads"
+    "USA"
    ],
    "areas": [
     16
@@ -8037,7 +7946,8 @@
    "url": "https://my.chartered.college/impact_article/expertise-reversal-effect-and-its-instructional-implications/",
    "by": "Slava Kalyuga",
    "meta": [
-    "Short reads"
+    "Article",
+    "UK"
    ],
    "areas": [
     1
@@ -8180,7 +8090,7 @@
    "type": "research",
    "title": "Classroom management literature review",
    "url": "https://education.nsw.gov.au/content/dam/main-education/about-us/educational-data/cese/2020-classroom-management-literature-review.pdf",
-   "by": "CESE (NSW)",
+   "by": "Centre for Education Statistics and Evaluation (NSW)",
    "meta": [
     "2020",
     "Literature review"
@@ -8701,7 +8611,7 @@
   {
    "type": "voice",
    "title": "Five from Five",
-   "url": "https://fivefromfive.com.au/?p=1023",
+   "url": "https://fivefromfive.com.au/",
    "by": "",
    "meta": [
     "Website",
@@ -9034,7 +8944,7 @@
   {
    "type": "voice",
    "title": "Lorraine Hammond",
-   "url": "https://www.ecu.edu.au/schools/education/staff/profiles/associate-professors/associate-professor-lorraine-hammond",
+   "url": "https://theconversation.com/profiles/lorraine-hammond-161310",
    "by": "",
    "meta": [
     "Talks and articles",
@@ -9181,7 +9091,7 @@
   },
   {
    "type": "curriculum",
-   "title": "AERO and Ochre example lessons and unit plans",
+   "title": "AERO and Impact Curriculum (formerly Ochre Education) example lessons and unit plans",
    "url": "https://edresearch.edu.au/guides-resources/ochre-resources",
    "by": "",
    "meta": [
@@ -9238,7 +9148,7 @@
    ],
    "areas": [],
    "tags": [
-    "Free download"
+    "Free"
    ]
   },
   {
@@ -9265,8 +9175,7 @@
    "by": "",
    "meta": [
     "Phonics and spelling",
-    "K-3 (USA)",
-    "None"
+    "K-3 (USA)"
    ],
    "areas": [
     7
@@ -9282,8 +9191,7 @@
    "by": "",
    "meta": [
     "Reading passages and text sets",
-    "K-12 (USA)",
-    "None"
+    "K-12 (USA)"
    ],
    "areas": [
     8
@@ -9299,8 +9207,7 @@
    "by": "",
    "meta": [
     "Reading texts",
-    "Primary",
-    "None"
+    "Primary"
    ],
    "areas": [
     8
@@ -9311,7 +9218,7 @@
   },
   {
    "type": "curriculum",
-   "title": "Phonics Plus scope and sequence (public page)",
+   "title": "Phonics Plus scope and sequence",
    "url": "https://arc.educationapps.vic.gov.au/learning/sites/lesson-plans-guidance/alias/phonics",
    "by": "",
    "meta": [
@@ -9326,7 +9233,7 @@
   },
   {
    "type": "curriculum",
-   "title": "Victorian Lesson Plans (search page)",
+   "title": "Victorian Lesson Plans",
    "url": "https://arc.educationapps.vic.gov.au/learning/sites/lesson-plans",
    "by": "",
    "meta": [
@@ -9341,11 +9248,11 @@
   },
   {
    "type": "curriculum",
-   "title": "VTLM 2.0 guides (public page)",
+   "title": "VTLM 2.0 guides",
    "url": "https://arc.educationapps.vic.gov.au/learning/sites/vtlmresources",
    "by": "",
    "meta": [
-    "All",
+    "All subjects",
     "F-10",
     "VTLM 2.0"
    ],
@@ -9361,7 +9268,7 @@
    "by": "NSW Department of Education",
    "meta": [
     "14:55",
-    "K-12",
+    "F-12",
     "Australia"
    ],
    "areas": [
@@ -9411,7 +9318,7 @@
    "by": "NSW Department of Education",
    "meta": [
     "15:36",
-    "7-12",
+    "Years 7-12",
     "Australia"
    ],
    "areas": [
@@ -9435,7 +9342,7 @@
    "by": "NSW Department of Education",
    "meta": [
     "12:02",
-    "K-12",
+    "F-12",
     "Australia"
    ],
    "areas": [
@@ -9509,7 +9416,7 @@
    "by": "NSW Department of Education",
    "meta": [
     "12:51",
-    "7-12",
+    "Years 7-12",
     "Australia"
    ],
    "areas": [
@@ -9527,12 +9434,12 @@
   },
   {
    "type": "watch",
-   "title": "Checking for understanding (animation)",
+   "title": "Checking for understanding: Animation",
    "url": "https://education.nsw.gov.au/teaching-and-learning/curriculum/explicit-teaching/explicit-teaching-strategies/checking-for-understanding",
    "by": "NSW Department of Education",
    "meta": [
     "3:27",
-    "K-12",
+    "F-12",
     "Australia"
    ],
    "areas": [
@@ -9552,12 +9459,12 @@
   },
   {
    "type": "watch",
-   "title": "Chunking and sequencing (animation)",
+   "title": "Chunking and sequencing: Animation",
    "url": "https://education.nsw.gov.au/teaching-and-learning/curriculum/explicit-teaching/explicit-teaching-strategies/chunking-and-sequencing-learning",
    "by": "NSW Department of Education",
    "meta": [
     "3:15",
-    "K-12",
+    "F-12",
     "Australia"
    ],
    "areas": [
@@ -9578,12 +9485,12 @@
   },
   {
    "type": "watch",
-   "title": "How learning happens (animation)",
+   "title": "How learning happens: Animation",
    "url": "https://education.nsw.gov.au/teaching-and-learning/curriculum/explicit-teaching/how-learning-happens",
    "by": "NSW Department of Education",
    "meta": [
     "4:10",
-    "K-12",
+    "F-12",
     "Australia"
    ],
    "areas": [
@@ -9603,12 +9510,12 @@
   },
   {
    "type": "watch",
-   "title": "Explicit phonics instruction: illustration of practice (six videos)",
+   "title": "Explicit phonics instruction: illustration of practice",
    "url": "https://education.nsw.gov.au/teaching-and-learning/curriculum/english/planning-programming-and-assessing-english-k-6/phonic-knowledge/explicit-phonics-instruction-illustration-of-practice",
    "by": "NSW Department of Education",
    "meta": [
     "6 short videos",
-    "K-2",
+    "F-2",
     "Australia"
    ],
    "areas": [
@@ -9632,7 +9539,7 @@
    "by": "NSW Department of Education",
    "meta": [
     "10:00",
-    "K-2",
+    "F-2",
     "Australia"
    ],
    "areas": [
@@ -9656,7 +9563,7 @@
    "by": "NSW Department of Education",
    "meta": [
     "Short videos",
-    "K-2",
+    "F-2",
     "Australia"
    ],
    "areas": [
@@ -9676,7 +9583,7 @@
    "type": "read",
    "title": "What Works Best 2025 illustration of practice: Explicit teaching at Doonside Technology High School",
    "url": "https://education.nsw.gov.au/content/dam/main-education/about-us/educational-data/cese/What_Works_Best_2025_Explicit_teaching_illustration_of_practice.pdf",
-   "by": "CESE (NSW)",
+   "by": "Centre for Education Statistics and Evaluation (NSW)",
    "meta": [
     "Illustration of practice",
     "Australia"
@@ -9701,10 +9608,8 @@
     7,
     13
    ],
-   "tags": [
-    "Free"
-   ],
-   "summary": "Karen Woods answers a common question from schools that have dropped benchmarking: how to listen to students read and what to look for."
+   "tags": [],
+   "summary": "Karen Woods answers a common question from schools that have dropped benchmarking, namely how to listen to students read and what to look for."
   },
   {
    "type": "read",
@@ -9719,9 +9624,7 @@
    "areas": [
     1
    ],
-   "tags": [
-    "Free"
-   ],
+   "tags": [],
    "summary": "A brief teacher-written introduction to cognitive load theory by Martin Ravindran, suitable as pre-reading for a staff session."
   },
   {
@@ -9738,9 +9641,7 @@
     14,
     7
    ],
-   "tags": [
-    "Free"
-   ],
+   "tags": [],
    "summary": "Lucy Wings and Jeremy Barr describe putting a structured literacy approach in place in a special school setting."
   },
   {
@@ -9757,10 +9658,8 @@
     12,
     3
    ],
-   "tags": [
-    "Free"
-   ],
-   "summary": "Sue Davis explains why Ochre Education built daily review resources for maths and what they look like."
+   "tags": [],
+   "summary": "Sue Davis explains why Ochre Education (now Impact Curriculum) built daily review resources for maths and what they look like."
   },
   {
    "type": "read",
@@ -9775,9 +9674,7 @@
    "areas": [
     6
    ],
-   "tags": [
-    "Free"
-   ],
+   "tags": [],
    "summary": "Martin Ravindran reflects on a Learning First curriculum conference and what a rigorous, specific knowledge-rich curriculum would mean for Australian schools."
   },
   {
@@ -9793,9 +9690,7 @@
    "areas": [
     10
    ],
-   "tags": [
-    "Free"
-   ],
+   "tags": [],
    "summary": "Phil Coloca and Jeanette Breen argue that writing instruction has sat in a black box for too long and needs a clear, sequenced approach."
   },
   {
@@ -9812,9 +9707,7 @@
     6,
     16
    ],
-   "tags": [
-    "Free"
-   ],
+   "tags": [],
    "summary": "Associate Professor Haili Hughes of La Trobe University makes the case that what teachers know cannot be separated from how well they teach."
   },
   {
@@ -9831,9 +9724,7 @@
     14,
     15
    ],
-   "tags": [
-    "Free"
-   ],
+   "tags": [],
    "summary": "Stephanie Dehghani takes Graham Nuthall's line that ability is the consequence, not the cause, of what children learn, and considers what it means for supporting every student."
   },
   {
@@ -10403,7 +10294,7 @@
    "by": "Center on PBIS",
    "meta": [
     "11:46",
-    "K-12",
+    "F-12",
     "USA"
    ],
    "areas": [
@@ -11731,7 +11622,7 @@
      "url": "https://www.ollielovell.com/adamboxer/"
     },
     {
-     "title": "S02E06 Tom Bennett On Running The Room",
+     "title": "S02E06 Tom Bennett on Running the Room",
      "by": "Knowledge for Teachers",
      "guest": "Tom Bennett",
      "focus": "Routines and running the room",
@@ -12284,14 +12175,14 @@
      "url": "https://knowledgeforteachers.podbean.com/e/s02e13-pamela-snow-on-why-it-takes-a-village-to-change-reading-instruction/"
     },
     {
-     "title": "S03E9 Making sense of the science of reading",
+     "title": "S03E09 Making sense of the science of reading",
      "by": "Knowledge for Teachers",
      "guest": "Mandy Nayton",
      "focus": "Science of reading overview",
      "url": "https://knowledgeforteachers.podbean.com/e/s03e9-making-sense-of-the-science-of-reading-with-mandy-nayton/"
     },
     {
-     "title": "S02E02 Decoding The Foundations Of Teaching Kindergarten",
+     "title": "S02E02 Decoding the Foundations of Teaching Kindergarten",
      "by": "Knowledge for Teachers",
      "guest": "James Dobson",
      "focus": "Foundation year teaching",
@@ -12377,7 +12268,7 @@
      "url": "https://www.buzzsprout.com/1987785/episodes/18276390-summer-series-are-comprehension-strategies-still-a-thing"
     },
     {
-     "title": "S4 E20 Why It's So Scary To Let Go Of Guided Reading",
+     "title": "S4 E20 Why It's So Scary to Let Go of Guided Reading",
      "by": "The Structured Literacy Podcast",
      "guest": "Jocelyn Seamer",
      "focus": "Moving on from guided reading",
@@ -12414,7 +12305,7 @@
      "url": "https://www.buzzsprout.com/1987785/episodes/15733018-s4-e4-connecting-explicit-teaching-and-engagement-in-years-3-to-6-spelling"
     },
     {
-     "title": "S3 E19 How To Make Sure That Your Spelling Instruction Is Explicit",
+     "title": "S3 E19 How to Make Sure That Your Spelling Instruction Is Explicit",
      "by": "The Structured Literacy Podcast",
      "guest": "Jocelyn Seamer",
      "focus": "Explicit spelling",
@@ -12597,7 +12488,7 @@
      "url": "https://www.buzzsprout.com/1987785/episodes/15627108-s4-e2-tracking-reading-growth-without-a-benchmark-assessment"
     },
     {
-     "title": "S4 Ep13 Let's Talk Year 3-6 Reading Assessment and Grading",
+     "title": "S4 E13 Let's Talk Year 3-6 Reading Assessment and Grading",
      "by": "The Structured Literacy Podcast",
      "guest": "Jocelyn Seamer",
      "focus": "Reading assessment in 3 to 6",
@@ -12634,7 +12525,7 @@
      "url": "https://www.buzzsprout.com/1987785/episodes/15555959-listener-favourites-tier-one-instruction-that-hits-the-mark"
     },
     {
-     "title": "Tier-Two Instruction That Hits The Mark",
+     "title": "Tier Two Instruction That Hits the Mark",
      "by": "The Structured Literacy Podcast",
      "guest": "Jocelyn Seamer",
      "focus": "Tier 2",
