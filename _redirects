@@ -1,4 +1,4 @@
-/services.html  /about.html#connect  301
-/services  /about.html#connect  301
-/secrets-of-how-we-learn.html  /about.html  301!
-/secrets-of-how-we-learn  /about.html  301!
+/services.html  /about#connect  301
+/services  /about#connect  301
+/secrets-of-how-we-learn.html  /about  301
+/secrets-of-how-we-learn  /about  301
