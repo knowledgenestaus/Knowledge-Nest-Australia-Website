@@ -933,3 +933,7 @@ html:not(.js) .nav-sub-toggle { display: none; }
 @media (max-width: 760px) { .about-hero-illo { display: none; } }
 .mission-text p { margin: 0 0 0.85rem; line-height: 1.6; }
 .about-hero-illo { border: 5px solid white; }
+
+/* Home hero nest illustration */
+.hero-nest img { display: block; width: 100%; max-width: 470px; height: auto; margin: 0 auto; }
+@media (max-width: 899px) { .hero-figure .hero-nest { flex: 0 0 46%; } }
