@@ -9130,21 +9130,6 @@
   },
   {
    "type": "curriculum",
-   "title": "AERO and Impact Curriculum (formerly Ochre Education) example lessons and unit plans",
-   "url": "https://edresearch.edu.au/guides-resources/ochre-resources",
-   "by": "",
-   "meta": [
-    "English, Maths, Science",
-    "Primary and secondary",
-    "Australian Curriculum"
-   ],
-   "areas": [],
-   "tags": [
-    "Free"
-   ]
-  },
-  {
-   "type": "curriculum",
    "title": "Literacy Hub",
    "url": "https://www.literacyhub.edu.au/",
    "by": "",
@@ -17850,6 +17835,134 @@
    "region": "Australia",
    "subject": "Literacy and English",
    "summary": "A short argument that, as schools get decoding and fluency right, well-taught comprehension strategies still have a place alongside knowledge building."
+  },
+  {
+   "type": "curriculum",
+   "by": "Literacy Hub",
+   "title": "Literacy Hub phonics and morphology lesson packs",
+   "url": "https://www.literacyhub.edu.au/plan-teach-and-assess/lesson-packs/",
+   "meta": [
+    "Phonics and morphology",
+    "F-2",
+    "Australian Curriculum v9"
+   ],
+   "areas": [
+    27,
+    31
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "122 ready-to-teach lessons across the 24 phases of the Literacy Hub phonics progression, each with slides, student sheets, decodable texts and progress checks. Includes morphology lessons such as plural -s and the prefix un-."
+  },
+  {
+   "type": "curriculum",
+   "by": "University of Florida Literacy Institute",
+   "title": "UFLI Foundations Toolbox (Australian edition)",
+   "url": "https://ufli.education.ufl.edu/foundations/toolbox-aus/",
+   "meta": [
+    "Phonics and morphology",
+    "F-2",
+    "Australian edition"
+   ],
+   "areas": [
+    27,
+    31
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Free slide decks, decodable passages and home practice for every UFLI Foundations lesson, including later units on prefixes and suffixes. The lesson manual itself is sold separately."
+  },
+  {
+   "type": "curriculum",
+   "by": "SPELD SA",
+   "title": "SPELD SA free decodable readers",
+   "url": "https://speldsa.org.au/pages/speld-sa-phonic-books",
+   "meta": [
+    "Decodable readers",
+    "F-2",
+    "Sounds-Write and Jolly Phonics sequences"
+   ],
+   "areas": [
+    27
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Downloadable decodable books in two sequences, written to give students plenty of connected text to practise on. Printed sets can also be bought."
+  },
+  {
+   "type": "curriculum",
+   "by": "ReadingDoctor",
+   "title": "ReadingDoctor free decodable readers",
+   "url": "https://readingdoctor.squarespace.com/decodable-readers",
+   "meta": [
+    "Decodable readers",
+    "F-2"
+   ],
+   "areas": [
+    27
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A growing library of free decodable books to download, organised from basic to more complex code."
+  },
+  {
+   "type": "curriculum",
+   "by": "NSW Department of Education",
+   "title": "NSW literacy lesson advice guides",
+   "url": "https://education.nsw.gov.au/teaching-and-learning/curriculum/literacy-and-numeracy/teaching-and-learning-resources/literacy/lesson-advice-guides",
+   "meta": [
+    "Phonics, spelling and vocabulary",
+    "Primary",
+    "NSW"
+   ],
+   "areas": [
+    27,
+    29,
+    31
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Guidance on the parts of an explicit lesson for teaching literacy skills, including spelling and vocabulary."
+  },
+  {
+   "type": "curriculum",
+   "by": "Good to Great Schools Australia",
+   "title": "Good to Great Schools Australia: Direct Instruction programs",
+   "url": "https://www.goodtogreatschools.org.au/",
+   "meta": [
+    "English, Maths, Science and more",
+    "Primary",
+    "Australian Curriculum"
+   ],
+   "areas": [],
+   "tags": [
+    "Free account needed"
+   ],
+   "summary": "Ready-to-teach explicit and Direct Instruction programs mapped to the Australian Curriculum, free to Australian teachers with a free account."
+  },
+  {
+   "type": "curriculum",
+   "by": "White Rose Education",
+   "title": "White Rose Maths schemes of learning",
+   "url": "https://whiterosemaths.com/",
+   "meta": [
+    "Maths",
+    "Reception to Year 11",
+    "England"
+   ],
+   "areas": [
+    34,
+    37
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Small-step schemes of learning with reasoning and problem-solving questions and end-of-block assessments, free to download. Some extra resources are paid."
   }
  ],
  "shows": [
