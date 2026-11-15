@@ -937,3 +937,9 @@ html:not(.js) .nav-sub-toggle { display: none; }
 /* Home hero nest illustration */
 .hero-nest img { display: block; width: 100%; max-width: 470px; height: auto; margin: 0 auto; }
 @media (max-width: 899px) { .hero-figure .hero-nest { flex: 0 0 46%; } }
+.hero-caption { font-weight: 600; font-size: 1.55rem; letter-spacing: -0.005em; }
+.hero-caption-accent { color: var(--accent-text); white-space: nowrap; }
+.hero-caption::before { width: 56px; height: 4px; }
+@media (max-width: 899px) { .hero-caption { font-size: 1.3rem; } }
+@media (max-width: 640px) { .hero-caption { font-size: 1.15rem; } }
+@media (min-width: 900px) { .hero-caption { margin-top: 1.1rem; } }
