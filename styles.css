@@ -54,7 +54,7 @@
   --container: 1120px;
   --wide: 1120px;
   --gutter: clamp(1.1rem, 4vw, 2rem);
-  --section-pad: clamp(3rem, 7vw, 5.5rem);
+  --section-pad: clamp(2.5rem, 5vw, 4rem);
   --radius: 14px;
   --radius-sm: 9px;
 }
@@ -891,3 +891,15 @@ html:not(.js) .nav-sub-toggle { display: none; }
 @media (max-width: 600px) { .availability-note.has-avatar { display: block; } .availability-note.has-avatar .jo-avatar { margin-bottom: 0.8rem; } }
 .jo-avatar-sm { width: 76px; height: 76px; flex: 0 0 76px; }
 @media (max-width: 480px) { .jo-avatar { width: 96px; height: 96px; } .jo-avatar-sm { width: 64px; height: 64px; flex-basis: 64px; } }
+
+/* Distinct sections: two white sections in a row get a dividing line */
+.section:not(.section-tint):not(.section-linen):not(.section-sandstone-pale):not(.textured) + .section:not(.section-tint):not(.section-linen):not(.section-sandstone-pale) { border-top: 1px solid var(--line); }
+.section-paper + .section-paper { border-top: 0; }
+
+/* About: small circular photo beside the text */
+.about-grid-small { grid-template-columns: 1fr; }
+@media (min-width: 820px) { .about-grid-small { grid-template-columns: 180px 1fr; } }
+.profile-photo-small { max-width: 180px; }
+.profile-photo-small::before { display: none; }
+.profile-photo-small img { border-radius: 50%; border: 4px solid white; box-shadow: 0 8px 22px rgba(11,33,71,0.14); }
+@media (max-width: 819px) { .profile-photo-small { max-width: 132px; } }
