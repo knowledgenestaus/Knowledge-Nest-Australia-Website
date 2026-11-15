@@ -943,3 +943,8 @@ html:not(.js) .nav-sub-toggle { display: none; }
 @media (max-width: 899px) { .hero-caption { font-size: 1.3rem; } }
 @media (max-width: 640px) { .hero-caption { font-size: 1.15rem; } }
 @media (min-width: 900px) { .hero-caption { margin-top: 1.1rem; } }
+/* Misty white glow behind the hero nest and caption */
+.hero-figure { position: relative; isolation: isolate; }
+.hero-figure::after { content: ""; position: absolute; z-index: -1; inset: -8% -12% -10%; pointer-events: none;
+  background: radial-gradient(closest-side, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.82) 45%, rgba(255,255,255,0.4) 75%, rgba(255,255,255,0) 100%); }
+@media (max-width: 899px) { .hero-figure::after { inset: -14% -8%; } }
