@@ -5328,7 +5328,8 @@
    "tags": [
     "Free"
    ],
-   "focus": "Explicit instruction"
+   "focus": "Explicit instruction",
+   "summary": "Anita Archer sets out the principles of explicit instruction and how they look in everyday lessons."
   },
   {
    "type": "listen",
@@ -5396,7 +5397,8 @@
    ],
    "tags": [
     "Free"
-   ]
+   ],
+   "summary": "Viviane Robinson joins host Joanne Jarvis to discuss her book on virtuous educational leadership, in a two-part episode."
   },
   {
    "type": "listen",
@@ -5410,7 +5412,8 @@
    ],
    "tags": [
     "Free"
-   ]
+   ],
+   "summary": "The Teacher Staffroom team round up their recent coverage of putting new programs into the curriculum, a topic readers asked for."
   },
   {
    "type": "listen",
@@ -6448,7 +6451,8 @@
     "Free"
    ],
    "focus": "Evaluating spelling instruction",
-   "minutes": 25
+   "minutes": 25,
+   "summary": "Jocelyn Seamer explains how to judge whether a school's spelling instruction is working."
   },
   {
    "type": "listen",
@@ -7122,7 +7126,8 @@
    "areas": [
     2
    ],
-   "tags": []
+   "tags": [],
+   "summary": "AERO's home for its guides, explainers and videos on explicit instruction."
   },
   {
    "type": "read",
@@ -7136,7 +7141,8 @@
    "areas": [
     2
    ],
-   "tags": []
+   "tags": [],
+   "summary": "The NSW Department's collection of resources on explicit teaching for teachers and school leaders, including professional learning workshops and technique guides."
   },
   {
    "type": "read",
@@ -7150,7 +7156,8 @@
    "areas": [
     3
    ],
-   "tags": []
+   "tags": [],
+   "summary": "A short NSW guide to running a review of learning, so earlier content is revisited and kept."
   },
   {
    "type": "read",
@@ -7165,7 +7172,8 @@
    "areas": [
     2
    ],
-   "tags": []
+   "tags": [],
+   "summary": "The story of Barak Rosenshine and how he arrived at his ten principles of instruction."
   },
   {
    "type": "read",
@@ -7180,7 +7188,8 @@
     2,
     19
    ],
-   "tags": []
+   "tags": [],
+   "summary": "The Victorian Department's policy that requires government schools to put the Victorian Teaching and Learning Model 2.0 in place."
   },
   {
    "type": "read",
@@ -7194,7 +7203,8 @@
    "areas": [
     27
    ],
-   "tags": []
+   "tags": [],
+   "summary": "The Victorian Government's announcement of further support and resources for schools using Phonics Plus."
   },
   {
    "type": "read",
@@ -7208,7 +7218,8 @@
    "areas": [
     31
    ],
-   "tags": []
+   "tags": [],
+   "summary": "A news report on research showing that teaching word roots and suffixes can lift children's reading and spelling."
   },
   {
    "type": "read",
@@ -7222,7 +7233,8 @@
    "areas": [
     31
    ],
-   "tags": []
+   "tags": [],
+   "summary": "How Jolimont Primary School teaches morphology through the study of word origins."
   },
   {
    "type": "read",
@@ -7236,7 +7248,8 @@
    "areas": [
     10
    ],
-   "tags": []
+   "tags": [],
+   "summary": "AERO's collection of practice guides on the building blocks of writing, from sentences up."
   },
   {
    "type": "read",
@@ -7250,7 +7263,8 @@
    "areas": [
     10
    ],
-   "tags": []
+   "tags": [],
+   "summary": "A practice guide on teaching students to combine short sentences into longer, more precise ones."
   },
   {
    "type": "read",
@@ -7264,7 +7278,8 @@
    "areas": [
     10
    ],
-   "tags": []
+   "tags": [],
+   "summary": "A practice guide on teaching students to write complete simple sentences."
   },
   {
    "type": "read",
@@ -7278,7 +7293,8 @@
    "areas": [
     10
    ],
-   "tags": []
+   "tags": [],
+   "summary": "A case study of how AERO worked with schools to put its School Writing Instruction Framework into practice."
   },
   {
    "type": "read",
@@ -7292,7 +7308,8 @@
    "areas": [
     10
    ],
-   "tags": []
+   "tags": [],
+   "summary": "The English Department for Education's announcement of its writing framework for primary schools."
   },
   {
    "type": "read",
@@ -7306,7 +7323,8 @@
    "areas": [
     10
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Explains what England's writing framework is and how teachers and leaders can use it. The framework is non-statutory guidance for primary schools."
   },
   {
    "type": "read",
@@ -7321,7 +7339,8 @@
     30,
     10
    ],
-   "tags": []
+   "tags": [],
+   "summary": "The EEF's recommendations for teaching reading and writing to students aged 7 to 11."
   },
   {
    "type": "research",
@@ -7337,7 +7356,8 @@
     33
    ],
    "tags": [],
-   "strand": "Syntheses of the field"
+   "strand": "Syntheses of the field",
+   "summary": "Grattan's case for a national commitment that at least 90 per cent of students learn to read proficiently, with a plan for getting there."
   },
   {
    "type": "research",
@@ -7352,7 +7372,8 @@
    "areas": [
     39
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Grattan's report on why so many primary students struggle with maths and what governments and schools can do about it."
   },
   {
    "type": "read",
@@ -7366,7 +7387,8 @@
    "areas": [
     39
    ],
-   "tags": []
+   "tags": [],
+   "summary": "A news report on a guide setting out practical steps school leaders can take to lift maths results across a school."
   },
   {
    "type": "read",
@@ -7380,7 +7402,8 @@
    "areas": [
     39
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Debbie Morgan, the NCETM's Director for Primary, explains teaching for mastery in a presentation to teachers."
   },
   {
    "type": "read",
@@ -7394,7 +7417,8 @@
    "areas": [
     16
    ],
-   "tags": []
+   "tags": [],
+   "summary": "A starting guide to instructional coaching. It covers what coaching is, why it matters and how to begin."
   },
   {
    "type": "read",
@@ -7408,7 +7432,8 @@
    "areas": [
     16
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Josh Goodrich looks at how instructional coaching is defined and why a shared understanding of it matters."
   },
   {
    "type": "read",
@@ -7422,7 +7447,8 @@
    "areas": [
     16
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Josh Goodrich names four common difficulties schools meet with coaching and offers a practical response to each."
   },
   {
    "type": "read",
@@ -7450,7 +7476,8 @@
    "areas": [
     17
    ],
-   "tags": []
+   "tags": [],
+   "summary": "AERO's home for its explainers and papers on putting evidence-based practices in place."
   },
   {
    "type": "read",
@@ -7464,7 +7491,8 @@
    "areas": [
     17
    ],
-   "tags": []
+   "tags": [],
+   "summary": "AERO's discussion paper on what it learned in 2024 from working with schools on implementation."
   },
   {
    "type": "read",
@@ -7478,7 +7506,8 @@
    "areas": [
     23
    ],
-   "tags": []
+   "tags": [],
+   "summary": "A short NSW guide to using student response systems, such as mini-whiteboards, to check every student's understanding."
   },
   {
    "type": "read",
@@ -7492,7 +7521,8 @@
    "areas": [
     4
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Craig Barton explains how well-designed diagnostic questions reveal what students misunderstand in maths."
   },
   {
    "type": "read",
@@ -7506,7 +7536,8 @@
    "areas": [
     4
    ],
-   "tags": []
+   "tags": [],
+   "summary": "How diagnostic questions can surface students' misconceptions quickly and give teachers useful feedback."
   },
   {
    "type": "read",
@@ -7520,7 +7551,8 @@
    "areas": [
     4
    ],
-   "tags": []
+   "tags": [],
+   "summary": "A NSW guide to planning the questions you will ask in a lesson before you teach it."
   },
   {
    "type": "read",
@@ -7534,7 +7566,8 @@
    "areas": [
     1
    ],
-   "tags": []
+   "tags": [],
+   "summary": "A high-level overview of the science of learning, organised around nine insights and what each means for classrooms."
   },
   {
    "type": "read",
@@ -7548,7 +7581,8 @@
    "areas": [
     1
    ],
-   "tags": []
+   "tags": [],
+   "summary": "A practical guide that uses examples from the NSW syllabuses to show how teachers can apply cognitive load theory."
   },
   {
    "type": "research",
@@ -7563,7 +7597,8 @@
    "areas": [
     2
    ],
-   "tags": []
+   "tags": [],
+   "summary": "The 2025 update of the NSW evidence guide. It sets out eight quality teaching practices known to support school improvement and student learning."
   },
   {
    "type": "read",
@@ -7578,7 +7613,8 @@
    "areas": [
     18
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Carl Hendrick's monthly round-up of new research in learning science."
   },
   {
    "type": "read",
@@ -7606,7 +7642,8 @@
    "areas": [
     31
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Lyn Stone talks with Teacher about ways to get primary students interested in spelling."
   },
   {
    "type": "read",
@@ -7620,7 +7657,8 @@
    "areas": [
     27
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Ofsted on helping primary pupils who have fallen behind in reading to catch up quickly, including what fidelity to a program means."
   },
   {
    "type": "read",
@@ -7635,7 +7673,8 @@
     19,
     20
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Jen Barker and Tom Rees explain 'persistent problems' as a way of describing the core work of school leaders."
   },
   {
    "type": "read",
@@ -7650,7 +7689,8 @@
     19,
     20
    ],
-   "tags": []
+   "tags": [],
+   "summary": "How the leadership team at Warriapendi Primary School has built staff capacity in instruction since 2022."
   },
   {
    "type": "read",
@@ -7665,7 +7705,8 @@
     19,
     20
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Kirsten Hodgson and Bryan Kilkenny from St Monica's College describe their approach to explicit instruction and how they put it in place."
   },
   {
    "type": "read",
@@ -7680,7 +7721,8 @@
     19,
     20
    ],
-   "tags": []
+   "tags": [],
+   "summary": "A news report on a Victorian school where the principal moved away from seeking majority buy-in, and what followed for the school's improvement work."
   },
   {
    "type": "read",
@@ -7695,7 +7737,8 @@
     19,
     20
    ],
-   "tags": []
+   "tags": [],
+   "summary": "AITSL's national guidelines for developing school leaders, with videos."
   },
   {
    "type": "read",
@@ -7709,7 +7752,8 @@
    "areas": [
     16
    ],
-   "tags": []
+   "tags": [],
+   "summary": "An essay on the pull between trying new things and staying consistent in teacher development."
   },
   {
    "type": "read",
@@ -7723,7 +7767,8 @@
    "areas": [
     16
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Harry Fletcher-Wood offers practical ways to timetable instructional coaching so it lasts."
   },
   {
    "type": "read",
@@ -7752,7 +7797,8 @@
    "areas": [
     17
    ],
-   "tags": []
+   "tags": [],
+   "summary": "A summary of the key points in the EEF's 2024 School's Guide to Implementation."
   },
   {
    "type": "read",
@@ -7766,7 +7812,8 @@
    "areas": [
     17
    ],
-   "tags": []
+   "tags": [],
+   "summary": "AERO's explainer on using evidence to guide how a new practice is put in place."
   },
   {
    "type": "read",
@@ -7780,7 +7827,8 @@
    "areas": [
     17
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Teacher magazine's overview of resources on implementing educational approaches well."
   },
   {
    "type": "read",
@@ -7794,7 +7842,8 @@
    "areas": [
     22
    ],
-   "tags": []
+   "tags": [],
+   "summary": "A tool from Learning Forward for judging how far a change has progressed in a school or system."
   },
   {
    "type": "read",
@@ -7808,7 +7857,8 @@
    "areas": [
     18
    ],
-   "tags": []
+   "tags": [],
+   "summary": "A plain account of how to read effect sizes in education research."
   },
   {
    "type": "read",
@@ -7822,7 +7872,8 @@
    "areas": [
     18
    ],
-   "tags": []
+   "tags": [],
+   "summary": "A news analysis of two groups of scholars arguing over inquiry learning and direct instruction."
   },
   {
    "type": "read",
@@ -7836,7 +7887,8 @@
    "areas": [
     2
    ],
-   "tags": []
+   "tags": [],
+   "summary": "A blog series from Doug Lemov's team with InnerDrive that links research to classroom technique."
   },
   {
    "type": "research",
@@ -7852,7 +7904,8 @@
    ],
    "tags": [
     "Foundational"
-   ]
+   ],
+   "summary": "The landmark paper arguing that minimally guided approaches, such as discovery and inquiry learning, are less effective than guided instruction for novices."
   },
   {
    "type": "research",
@@ -7868,7 +7921,8 @@
    ],
    "tags": [
     "Foundational"
-   ]
+   ],
+   "summary": "A readable account for teachers of why fully guided instruction suits novice learners, written for American Educator."
   },
   {
    "type": "research",
@@ -7883,7 +7937,8 @@
    "areas": [
     1
    ],
-   "tags": []
+   "tags": [],
+   "summary": "The NSW paper that describes the research on cognitive load theory and what it means for teaching."
   },
   {
    "type": "read",
@@ -7898,7 +7953,8 @@
    "areas": [
     1
    ],
-   "tags": []
+   "tags": [],
+   "summary": "A one-page poster on the principles of cognitive load theory."
   },
   {
    "type": "research",
@@ -7913,7 +7969,8 @@
    "areas": [
     1
    ],
-   "tags": []
+   "tags": [],
+   "summary": "AERO's overview of the evidence on how students learn."
   },
   {
    "type": "read",
@@ -7927,7 +7984,8 @@
    "areas": [
     1
    ],
-   "tags": []
+   "tags": [],
+   "summary": "AERO's collection of research summaries and explainers on teaching in line with how students learn."
   },
   {
    "type": "research",
@@ -7942,7 +8000,8 @@
    "areas": [
     1
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Deans for Impact's summary of cognitive science research on how students learn, set out as principles with their classroom implications."
   },
   {
    "type": "research",
@@ -7958,7 +8017,8 @@
    ],
    "tags": [
     "Foundational"
-   ]
+   ],
+   "summary": "John Dunlosky's article for teachers on which study strategies help students learn and which do not, written for American Educator."
   },
   {
    "type": "read",
@@ -7973,7 +8033,8 @@
    "areas": [
     1
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Daniel Willingham on why memory follows what students think about, and what that means for lesson planning."
   },
   {
    "type": "read",
@@ -7988,7 +8049,8 @@
    "areas": [
     6
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Daniel Willingham on what critical thinking is and why teaching it depends on subject knowledge."
   },
   {
    "type": "research",
@@ -8005,7 +8067,8 @@
    "tags": [
     "Foundational"
    ],
-   "strand": "Syntheses of the field"
+   "strand": "Syntheses of the field",
+   "summary": "A review of how children learn to read, from early decoding to skilled comprehension, written to settle the reading wars."
   },
   {
    "type": "research",
@@ -8020,7 +8083,8 @@
    "areas": [
     2
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Evidence Based Education's review of the research on which teaching practices are linked to student learning."
   },
   {
    "type": "research",
@@ -8036,7 +8100,8 @@
    ],
    "tags": [
     "Foundational"
-   ]
+   ],
+   "summary": "A meta-analysis of 60 causal studies of teacher coaching. It found effects of 0.49 standard deviations on instruction and 0.18 on student achievement."
   },
   {
    "type": "read",
@@ -8051,7 +8116,8 @@
    "areas": [
     10
    ],
-   "tags": []
+   "tags": [],
+   "summary": "England's writing framework, which sets out a common approach to teaching writing based on evidence and existing good practice."
   },
   {
    "type": "read",
@@ -8066,7 +8132,8 @@
    "areas": [
     17
    ],
-   "tags": []
+   "tags": [],
+   "summary": "AERO's explainers and papers on a deliberate and structured approach to implementation in schools."
   },
   {
    "type": "research",
@@ -8103,7 +8170,8 @@
    "tags": [
     "Foundational"
    ],
-   "strand": "Knowledge and comprehension"
+   "strand": "Knowledge and comprehension",
+   "summary": "An account of the 1988 study in which knowledge of baseball mattered more than reading ability for understanding a passage about the game."
   },
   {
    "type": "research",
@@ -8119,7 +8187,8 @@
    ],
    "tags": [
     "Foundational"
-   ]
+   ],
+   "summary": "A meta-analysis of 328 studies published from 1966 to 2016 on the effectiveness of Direct Instruction programs."
   },
   {
    "type": "read",
@@ -8134,7 +8203,8 @@
    "areas": [
     16
    ],
-   "tags": []
+   "tags": [],
+   "summary": "A high-level overview of what expert teaching is and how it might be developed, drawing on evidence from education and beyond."
   },
   {
    "type": "research",
@@ -8150,7 +8220,8 @@
    ],
    "tags": [
     "Foundational"
-   ]
+   ],
+   "summary": "A review of six learning strategies from cognitive psychology, including spaced practice and retrieval practice, written for teachers."
   },
   {
    "type": "read",
@@ -8165,7 +8236,8 @@
    "areas": [
     16
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Deans for Impact on how the principles of deliberate practice apply to developing teachers."
   },
   {
    "type": "read",
@@ -8180,7 +8252,8 @@
    "areas": [
     16
    ],
-   "tags": []
+   "tags": [],
+   "summary": "The EEF's evidence review of what makes teacher professional development effective."
   },
   {
    "type": "research",
@@ -8196,7 +8269,8 @@
    ],
    "tags": [
     "Foundational"
-   ]
+   ],
+   "summary": "Douglas Carnine's essay on why education has been slow to adopt practices supported by evidence."
   },
   {
    "type": "read",
@@ -8210,7 +8284,8 @@
     1
    ],
    "tags": [],
-   "region": "Australia"
+   "region": "Australia",
+   "summary": "Slava Kalyuga explains the expertise reversal effect, in which guidance that helps novices can hinder more expert learners."
   },
   {
    "type": "research",
@@ -8224,7 +8299,8 @@
    "areas": [
     1
    ],
-   "tags": []
+   "tags": [],
+   "summary": "The EEF's review of the evidence for cognitive science approaches when they are used in classrooms."
   },
   {
    "type": "research",
@@ -8254,7 +8330,8 @@
    "areas": [
     3
    ],
-   "tags": []
+   "tags": [],
+   "summary": "The experiment showing that students who were tested on material remembered more a week later than students who studied it again."
   },
   {
    "type": "research",
@@ -8268,7 +8345,8 @@
    "areas": [
     3
    ],
-   "tags": []
+   "tags": [],
+   "summary": "A doctoral thesis reporting four classroom studies of retrieval practice in primary schools."
   },
   {
    "type": "research",
@@ -8282,7 +8360,8 @@
    "areas": [
     2
    ],
-   "tags": []
+   "tags": [],
+   "summary": "The National Institute for Direct Instruction's overview of Project Follow Through, the large American evaluation of teaching models reported in 1977."
   },
   {
    "type": "research",
@@ -8310,7 +8389,8 @@
    "areas": [
     5
    ],
-   "tags": []
+   "tags": [],
+   "summary": "The NSW literature review of research on classroom management."
   },
   {
    "type": "research",
@@ -8324,7 +8404,8 @@
    "areas": [
     23
    ],
-   "tags": []
+   "tags": [],
+   "summary": "A systematic review of research on increasing students' opportunities to respond during teaching."
   },
   {
    "type": "research",
@@ -8337,7 +8418,8 @@
    "areas": [
     4
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Teachers at an international school describe designing and using hinge questions to find out what students have learned mid-lesson."
   },
   {
    "type": "research",
@@ -8351,7 +8433,8 @@
    "areas": [
     15
    ],
-   "tags": []
+   "tags": [],
+   "summary": "A longitudinal study of primary students that examined how motivation and achievement in maths relate over time."
   },
   {
    "type": "research",
@@ -8367,7 +8450,8 @@
     33
    ],
    "tags": [],
-   "strand": "The Writing Rope and views of writing"
+   "strand": "The Writing Rope and views of writing",
+   "summary": "A meta-analysis report on how writing about texts, and teaching writing, can improve reading."
   },
   {
    "type": "research",
@@ -8380,7 +8464,8 @@
    "areas": [
     10
    ],
-   "tags": []
+   "tags": [],
+   "summary": "A research synthesis and meta-analysis of which writing interventions work, for which outcomes and for whom, from kindergarten through the primary years."
   },
   {
    "type": "research",
@@ -8394,7 +8479,8 @@
    "areas": [
     30
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Ofsted's review of research on what makes for high-quality English teaching in schools."
   },
   {
    "type": "research",
@@ -8408,7 +8494,8 @@
    "areas": [
     10
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Ofsted's report on English teaching in England's schools, based on inspection evidence."
   },
   {
    "type": "research",
@@ -8422,7 +8509,8 @@
    "areas": [
     39
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Ofsted's review of research into what influences the quality of maths education in schools in England."
   },
   {
    "type": "research",
@@ -8456,7 +8544,8 @@
    "areas": [
     6
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Grattan's report on curriculum planning in Australian schools and how to give teachers shared, high-quality materials."
   },
   {
    "type": "research",
@@ -8470,7 +8559,8 @@
     14
    ],
    "tags": [],
-   "strand": "Tier 1 teaching for every student"
+   "strand": "Tier 1 teaching for every student",
+   "summary": "The EEF's randomised trial on grouping students by attainment."
   },
   {
    "type": "research",
@@ -8484,7 +8574,8 @@
    "areas": [
     16
    ],
-   "tags": []
+   "tags": [],
+   "summary": "A systematic review and meta-analysis of what makes teacher professional development effective."
   },
   {
    "type": "research",
@@ -8498,7 +8589,8 @@
    "areas": [
     16
    ],
-   "tags": []
+   "tags": [],
+   "summary": "A review arguing that teachers' habits help explain why their effectiveness stops growing after the first years."
   },
   {
    "type": "research",
@@ -8512,7 +8604,8 @@
    "areas": [
     19
    ],
-   "tags": []
+   "tags": [],
+   "summary": "A meta-analysis comparing the effects of different types of school leadership on student outcomes."
   },
   {
    "type": "research",
@@ -8526,7 +8619,8 @@
    "areas": [
     19
    ],
-   "tags": []
+   "tags": [],
+   "summary": "A synthesis of two decades of research on how principals affect students and schools."
   },
   {
    "type": "research",
@@ -8542,7 +8636,8 @@
    ],
    "tags": [
     "Free"
-   ]
+   ],
+   "summary": "An updated review of seven claims about successful school leadership, first made in 2008."
   },
   {
    "type": "research",
@@ -8558,7 +8653,8 @@
    ],
    "tags": [
     "Free"
-   ]
+   ],
+   "summary": "A summary of a long study of 400 Chicago primary schools that shows the central role of relational trust in school improvement."
   },
   {
    "type": "research",
@@ -8572,7 +8668,8 @@
    "areas": [
     20
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Tom Bennett's independent review for the English government of how school leaders can build a culture of good behaviour."
   },
   {
    "type": "research",
@@ -8586,7 +8683,8 @@
    "areas": [
     17
    ],
-   "tags": []
+   "tags": [],
+   "summary": "The EEF's 2024 guidance report on putting a new approach in place in a school."
   },
   {
    "type": "research",
@@ -8599,7 +8697,8 @@
    "areas": [
     17
    ],
-   "tags": []
+   "tags": [],
+   "summary": "The Australian edition of the guide to implementation, with recommendations and supporting tools."
   },
   {
    "type": "research",
@@ -8613,7 +8712,8 @@
    "areas": [
     17
    ],
-   "tags": []
+   "tags": [],
+   "summary": "A synthesis of the research literature on implementation across fields, from the National Implementation Research Network."
   },
   {
    "type": "research",
@@ -8627,7 +8727,8 @@
    "areas": [
     17
    ],
-   "tags": []
+   "tags": [],
+   "summary": "AERO's 2026 paper on what it has learned about implementation in schools."
   },
   {
    "type": "research",
@@ -8641,7 +8742,8 @@
    "areas": [
     18
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Matthew Kraft's five guidelines for interpreting effect sizes of education interventions. He argues that Cohen's benchmarks misjudge programs tested in the field."
   },
   {
    "type": "research",
@@ -8655,7 +8757,8 @@
    "areas": [
     18
    ],
-   "tags": []
+   "tags": [],
+   "summary": "A review arguing that science education policy has favoured inquiry approaches without good evidence."
   },
   {
    "type": "research",
@@ -8671,7 +8774,8 @@
    ],
    "tags": [
     "Free"
-   ]
+   ],
+   "summary": "A 2026 study of school phone bans that use lockable pouches, using national data from the United States."
   },
   {
    "type": "voice",
@@ -9297,7 +9401,8 @@
    "tags": [
     "Free account needed"
    ],
-   "region": "Australia"
+   "region": "Australia",
+   "summary": "Free lessons and teaching resources for English, maths, science and HASS from Foundation to Year 10, formerly Ochre Education."
   },
   {
    "type": "curriculum",
@@ -9315,7 +9420,8 @@
    "tags": [
     "Free"
    ],
-   "region": "Australia"
+   "region": "Australia",
+   "summary": "The Australian Government's hub for phonics and early reading, with resources for school leaders, teachers and families."
   },
   {
    "type": "curriculum",
@@ -9331,7 +9437,8 @@
    "tags": [
     "Free"
    ],
-   "region": "International"
+   "region": "International",
+   "summary": "Free lesson resources for teachers in England, including slides, worksheets and quizzes."
   },
   {
    "type": "curriculum",
@@ -9347,7 +9454,8 @@
    "tags": [
     "Free"
    ],
-   "region": "International"
+   "region": "International",
+   "summary": "Free curriculum materials for language arts, history and geography, and science, built on the Core Knowledge Sequence."
   },
   {
    "type": "curriculum",
@@ -9365,7 +9473,8 @@
    "tags": [
     "Free"
    ],
-   "region": "International"
+   "region": "International",
+   "summary": "Primary materials that support teaching for mastery in maths, with professional development guidance."
   },
   {
    "type": "curriculum",
@@ -9382,7 +9491,8 @@
    "tags": [
     "Free"
    ],
-   "region": "International"
+   "region": "International",
+   "summary": "More than 90 free lesson plans organised by phonics skill."
   },
   {
    "type": "curriculum",
@@ -9399,7 +9509,8 @@
    "tags": [
     "Free account needed"
    ],
-   "region": "International"
+   "region": "International",
+   "summary": "Free reading passages and text sets from a non-profit focused on reading comprehension."
   },
   {
    "type": "curriculum",
@@ -9420,7 +9531,8 @@
    "tags": [
     "Free"
    ],
-   "region": "Australia"
+   "region": "Australia",
+   "summary": "The Victorian Department's scope and sequence for phonics, spelling, handwriting and fluency from Foundation to Year 2."
   },
   {
    "type": "curriculum",
@@ -9440,7 +9552,8 @@
    "tags": [
     "Free"
    ],
-   "region": "Australia"
+   "region": "Australia",
+   "summary": "Lesson plans from the Victorian Department of Education for English, maths, science and technologies, aligned to the Victorian Curriculum 2.0."
   },
   {
    "type": "curriculum",
@@ -9459,7 +9572,8 @@
    "tags": [
     "Free"
    ],
-   "region": "Australia"
+   "region": "Australia",
+   "summary": "The Victorian Department's guides to the Victorian Teaching and Learning Model 2.0."
   },
   {
    "type": "watch",
@@ -9832,7 +9946,8 @@
     2,
     17
    ],
-   "tags": []
+   "tags": [],
+   "summary": "An illustration of practice from What Works Best 2025 showing explicit teaching at a NSW school."
   },
   {
    "type": "read",
@@ -15955,6 +16070,50 @@
    "focus": "Five core techniques"
   },
   {
+   "type": "listen",
+   "title": "Interview with Linnea Ehri",
+   "url": "https://share.transistor.fm/s/4c370215",
+   "by": "Teaching, Reading, and Learning: The Reading League Podcast",
+   "meta": [
+    "with Linnea Ehri",
+    "2021",
+    "USA"
+   ],
+   "areas": [
+    27,
+    31
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A long interview with Linnea Ehri about her career and her research on how children learn to read words, including orthographic mapping and her work on the National Reading Panel.",
+   "focus": "Orthographic mapping",
+   "region": "International",
+   "minutes": 91
+  },
+  {
+   "type": "listen",
+   "title": "Understanding and Applying the 4 Phases of Word Reading",
+   "url": "https://allforliteracy.podbean.com/e/understanding-and-applying-the-4-phases-of-word-reading-with-dr-linnea-ehri-and-dr-katie-pace-miles/",
+   "by": "All For Literacy (Lexia)",
+   "meta": [
+    "with Linnea Ehri and Katie Pace Miles",
+    "2024",
+    "USA"
+   ],
+   "areas": [
+    27,
+    31
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Linnea Ehri and Katie Pace Miles explain Alphabetic Phase Theory and orthographic mapping, and how teachers can turn the research into classroom practice.",
+   "focus": "Orthographic mapping",
+   "region": "International",
+   "minutes": 55
+  },
+  {
    "type": "voice",
    "title": "Jamie Clark",
    "url": "https://www.jamieleeclark.com/",
@@ -16321,6 +16480,40 @@
    "summary": "Tasmanian literacy tutor and chairperson of Code REaD Dyslexia Network. His Substack, Seeking Nisaba, covers dyslexia, diagnosis and Tier 3 intervention, and his writing on the DSM-5 helped prompt the 2025 clarification on diagnosing specific learning disorders.",
    "region": "Australia",
    "strand": "Dyslexia"
+  },
+  {
+   "type": "voice",
+   "title": "MTSS Innovations",
+   "url": "https://www.mtss-innovations.com/free-resources",
+   "by": "",
+   "meta": [
+    "Association",
+    "USA"
+   ],
+   "areas": [
+    14
+   ],
+   "tags": [],
+   "summary": "An American membership organisation for schools putting multi-tiered systems of support in place, co-founded in 2025 by Stephanie Stollar and colleagues. Membership is paid, but this page holds its free discussion guides and webinar recordings.",
+   "region": "International",
+   "strand": "Leading and implementing MTSS"
+  },
+  {
+   "type": "voice",
+   "title": "International MTSS Association",
+   "url": "https://www.mtssassociation.org/mtss-action-network",
+   "by": "",
+   "meta": [
+    "Association",
+    "International"
+   ],
+   "areas": [
+    14
+   ],
+   "tags": [],
+   "summary": "The first professional association dedicated to multi-tiered systems of support, led by founding executive director Joan Schumann. The link opens its MTSS Action Network, a free community with online sessions for teachers, leaders and implementation teams. It also publishes the open-access Journal of Multitiered System of Supports.",
+   "region": "International",
+   "strand": "Leading and implementing MTSS"
   },
   {
    "type": "read",
@@ -18154,7 +18347,7 @@
    "tags": [
     "Free"
    ],
-   "summary": "A short clip of a teacher and a small group on the carpet practising the phonemic awareness skill of identifying syllables.",
+   "summary": "A short clip of a teacher and a small group on the carpet practising the phonological awareness skill of identifying syllables.",
    "bands": [
     "F-2"
    ],
@@ -18250,7 +18443,7 @@
    "tags": [
     "Free"
    ],
-   "summary": "Thirty seconds of a whole-class rhyming routine, a quick model of how brisk and simple phonemic awareness practice can be.",
+   "summary": "Thirty seconds of a whole-class rhyming routine, a quick model of how brisk and simple phonological awareness practice can be.",
    "bands": [
     "F-2"
    ],
@@ -18852,6 +19045,45 @@
    ]
   },
   {
+   "type": "read",
+   "title": "The Reading Rope: Key ideas behind the metaphor",
+   "url": "https://www.thereadingleague.org/wp-content/uploads/2023/11/TRLC-Educators-and-Specialists-The-Reading-Rope-Key-Ideas-Behind-the-Metaphor.pdf",
+   "by": "Hollis Scarborough (The Reading League)",
+   "meta": [
+    "Presentation slides",
+    "2023",
+    "USA"
+   ],
+   "areas": [
+    33
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Hollis Scarborough's own slides explaining the Reading Rope she published in 2001 and the ideas behind it.",
+   "region": "International",
+   "strand": "Scarborough's Reading Rope"
+  },
+  {
+   "type": "read",
+   "title": "Linnea Ehri: Slides from her talk to Learning Difficulties Australia",
+   "url": "https://www.ldaustralia.org/app/uploads/2022/10/Linnea-AGM-Slides.pdf",
+   "by": "Linnea Ehri (Learning Difficulties Australia)",
+   "meta": [
+    "Presentation slides",
+    "2022",
+    "USA"
+   ],
+   "areas": [
+    27
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Ehri's slides on how spellings become bonded to pronunciations and meanings in memory, the alphabetic phases of development, and teaching grapheme-phoneme mapping for sight word reading.",
+   "region": "International"
+  },
+  {
    "type": "research",
    "title": "Principles of Instruction: Research-Based Strategies That All Teachers Should Know",
    "url": "https://www.aft.org/sites/default/files/Rosenshine.pdf",
@@ -19037,6 +19269,205 @@
    "tags": [],
    "summary": "A review of more than 200 pieces of research on which elements of teaching have the strongest evidence of improving attainment. It also names popular practices with no grounding in research.",
    "region": "UK"
+  },
+  {
+   "type": "research",
+   "title": "Foundations for Success: The Final Report of the National Mathematics Advisory Panel",
+   "url": "https://files.eric.ed.gov/fulltext/ED500486.pdf",
+   "by": "National Mathematics Advisory Panel (US Department of Education)",
+   "meta": [
+    "2008",
+    "National review",
+    "USA"
+   ],
+   "areas": [
+    39,
+    34
+   ],
+   "tags": [
+    "Free",
+    "Foundational"
+   ],
+   "summary": "The American national review of maths research. It concludes that conceptual understanding, fluent calculation and problem solving support one another, and that fluency with fractions is a foundation for algebra.",
+   "region": "International"
+  },
+  {
+   "type": "research",
+   "title": "Developing Effective Fractions Instruction for Kindergarten Through 8th Grade",
+   "url": "https://ies.ed.gov/ncee/wwc/PracticeGuide/15",
+   "by": "What Works Clearinghouse",
+   "meta": [
+    "2010",
+    "Practice guide",
+    "USA"
+   ],
+   "areas": [
+    37
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A practice guide with five recommendations for teaching fractions from the first years of school to Year 8, each rated for the strength of its evidence.",
+   "region": "International"
+  },
+  {
+   "type": "research",
+   "title": "Teaching Math to Young Children",
+   "url": "https://ies.ed.gov/ncee/wwc/PracticeGuide/18",
+   "by": "What Works Clearinghouse",
+   "meta": [
+    "2013",
+    "Practice guide",
+    "USA"
+   ],
+   "areas": [
+    37,
+    35
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A practice guide with five recommendations for teaching early maths to children in preschool and the first year of school, each rated for the strength of its evidence.",
+   "region": "International"
+  },
+  {
+   "type": "research",
+   "title": "Improving Mathematical Problem Solving in Grades 4 Through 8",
+   "url": "https://ies.ed.gov/ncee/wwc/PracticeGuide/16",
+   "by": "What Works Clearinghouse",
+   "meta": [
+    "2012",
+    "Practice guide",
+    "USA"
+   ],
+   "areas": [
+    36
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A practice guide with five recommendations for teaching problem solving in the upper primary and lower secondary years, each rated for the strength of its evidence.",
+   "region": "International"
+  },
+  {
+   "type": "research",
+   "title": "Decoding, Reading, and Reading Disability",
+   "url": "https://www.nomanis.com.au/hubfs/Nomanis_June2023/Pdf/Decoding,%20Reading.pdf",
+   "by": "Philip Gough and William Tunmer",
+   "meta": [
+    "1986",
+    "Foundational research",
+    "Reprinted in Nomanis, 2023"
+   ],
+   "areas": [
+    33
+   ],
+   "tags": [
+    "Foundational"
+   ],
+   "summary": "The short paper that proposed the Simple View of Reading, in which reading comprehension is the product of decoding and language comprehension. It follows that a reading difficulty can come from decoding, from comprehension or from both.",
+   "strand": "The Simple View of Reading"
+  },
+  {
+   "type": "research",
+   "title": "Phases of Development in Learning to Read and Spell Words",
+   "url": "https://www.aft.org/ae/fall2023/ehri",
+   "by": "Linnea Ehri (American Educator)",
+   "meta": [
+    "2023",
+    "Article by the researcher",
+    "USA"
+   ],
+   "areas": [
+    27,
+    31
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Linnea Ehri describes the four phases children move through as they learn to read and spell words, from pre-alphabetic to consolidated alphabetic, drawing on more than 50 years of her research.",
+   "region": "International"
+  },
+  {
+   "type": "research",
+   "title": "Tiered systems of support in education: A focus on MTSS",
+   "url": "https://www.oecd.org/en/publications/tiered-systems-of-support-in-education_158128c5-en.html",
+   "by": "OECD",
+   "meta": [
+    "2026",
+    "Working paper",
+    "International"
+   ],
+   "areas": [
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "An OECD working paper that examines MTSS and related tiered frameworks in compulsory education across OECD countries, drawing together research and policy documents.",
+   "region": "International",
+   "strand": "What MTSS is and where to start"
+  },
+  {
+   "type": "research",
+   "title": "Journal of Multitiered System of Supports: Volume 1, Number 1",
+   "url": "https://jmtss.org/index.php/jmtss/issue/view/2",
+   "by": "International MTSS Association",
+   "meta": [
+    "2026",
+    "Journal issue",
+    "International"
+   ],
+   "areas": [
+    14
+   ],
+   "tags": [
+    "Open access"
+   ],
+   "summary": "The first issue of the first peer-reviewed journal dedicated to MTSS, published in October 2026 and free to read. Its four articles cover what MTSS is, implementing integrated MTSS, a social and emotional learning program in the middle years, and developing leaders.",
+   "region": "International",
+   "strand": "What MTSS is and where to start"
+  },
+  {
+   "type": "research",
+   "title": "Multitiered System of Supports: Conceptual Clarity and Vision for the New Journal",
+   "url": "https://jmtss.org/index.php/jmtss/article/view/21",
+   "by": "Matthew Burns and Erin Chaparro (Journal of Multitiered System of Supports)",
+   "meta": [
+    "2026",
+    "Conceptual article",
+    "USA"
+   ],
+   "areas": [
+    14
+   ],
+   "tags": [
+    "Open access"
+   ],
+   "summary": "Burns and Chaparro trace the history of MTSS and name its core components as evidence-based core instruction, universal screening, targeted interventions, progress monitoring and implementation fidelity.",
+   "region": "International",
+   "strand": "What MTSS is and where to start"
+  },
+  {
+   "type": "research",
+   "title": "Implementing Integrated Multitiered System of Supports: A Retrospective Study",
+   "url": "https://jmtss.org/index.php/jmtss/article/view/5",
+   "by": "Gandhi, Lembke and Pierce (Journal of Multitiered System of Supports)",
+   "meta": [
+    "2026",
+    "Descriptive study",
+    "USA"
+   ],
+   "areas": [
+    14,
+    17
+   ],
+   "tags": [
+    "Open access"
+   ],
+   "summary": "Using data from 66 American primary schools, the authors describe where implementing integrated MTSS proved easy or hard. Common barriers included inconsistent assessment of wellbeing, weak fidelity of instruction and intervention, and misuse of assessment tools or decision rules.",
+   "region": "International",
+   "strand": "Leading and implementing MTSS"
   }
  ],
  "shows": [
