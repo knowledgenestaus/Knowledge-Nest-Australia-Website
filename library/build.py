@@ -33,7 +33,7 @@ TOPICS = OrderedDict([
     ("Inclusion and support", []),             # split out of area 14 by keyword, below
     ("Behaviour", [5, 20]),
     ("Instructional coaching", [16]),
-    ("Change management and implementation", [17, 22]),
+    ("Change management and implementation", [17]),
     ("Leadership and culture", [19, 21]),
     ("Curriculum", [6]),
     ("Assessment and data", [13]),
@@ -64,7 +64,7 @@ TOP_SHOWS = ["Sold a Story", "Jones & McLean", "Chalk Dust", "Education Research
 # "Start here" on the library home. Each topic links to its areas and offers up to three picks,
 # chosen by matching the start of a title; if a pick is missing, the first entry of that type is used.
 START_HERE = [
-    dict(title="Change management and implementation", areas=[17, 22],
+    dict(title="Change management and implementation", areas=[17],
          text="Whatever you want to improve, the first questions are the same. Where do you start, which goals do you set, and how do you lead people through the change?",
          picks=["A School's Guide to Implementation", "097 Implementation", "028 Reducing Change", "Building and operating an effective implementation team"]),
     dict(title="Explicit instruction", areas=[2, 4, 23],
@@ -221,6 +221,8 @@ RETIRED_PAGES = {
     "library-comprehension-vocabulary-and-text-study.html": ("library-reading-comprehension-and-text-study.html", "Reading comprehension and text study"),
     "library-spelling-morphology-and-handwriting.html": ("library-spelling-and-morphology.html", "Spelling and morphology"),
     "library-mathematics.html": ("library-domain-maths.html", "Maths"),
+    "library-change-management.html": ("library-implementation.html", "Implementation and change"),
+    "library-domain-implementation-and-change.html": ("library-implementation.html", "Implementation and change"),
 }
 
 # Areas whose page is organised by strand (a series per topic) instead of by type, keyed by area number.
@@ -1237,8 +1239,8 @@ AREA_SEO = {
          "Webinars, videos and reading on building a whole-school behaviour culture, relational trust, shared norms and high expectations, from Australia and abroad."),
     21: ("Middle leadership and teams in schools",
          "Webinars and reading on collaborative planning, team meetings, middle leader development and professional culture, so teams hold a shared standard."),
-    17: ("Implementation science for schools",
-         "Guides, webinars and podcasts on implementing new practices so they last, including implementation teams, staged rollout, de-implementation and checking impact."),
+    17: ("Implementation and change in schools",
+         "Guides, webinars and podcasts on putting new practices in place so they last and leading people through change, from implementation teams to checking impact."),
     22: ("Change management in schools",
          "Webinars, podcasts and articles on leading change in schools, from reducing change load and sequencing to communication and sustaining what works."),
     18: ("Education myths, evidence and debates",
@@ -1277,7 +1279,7 @@ AREA_INTRO = {
     19: "I've gathered webinars, podcast episodes and reading for principals and school leaders on leading teaching and learning, curriculum and whole-school improvement.",
     20: "Here you'll find webinars, videos and reading on building a whole-school behaviour culture, relational trust and high expectations.",
     21: "I've gathered webinars and reading on collaborative planning, team meetings, middle leadership and professional culture.",
-    17: "Here you'll find guides, webinars and podcast episodes on implementation in schools, from implementation teams and staged rollout to de-implementation and checking it is working.",
+    17: "Here you'll find guides, webinars and podcast episodes on putting a new practice in place and leading people through the change, from implementation teams and staged rollout to how staff experience change and checking it is working.",
     22: "I've gathered webinars, podcast episodes and articles on leading change in schools, and on how people experience it.",
     18: "Here you'll find articles, research and podcast episodes on reading education research well, effect sizes, common myths such as learning styles, and the debates still going.",
 }
@@ -1302,8 +1304,8 @@ SEE_ALSO = {
     1: [3, 2, 15], 15: [24, 1], 2: [34, 4, 23], 3: [35, 1], 4: [13, 23], 5: [20, 23], 23: [4, 11], 24: [3, 15],
     11: [33, 25], 26: [27, 33], 27: [26, 25, 33], 28: [27, 30], 29: [30, 11], 30: [6, 29], 31: [27, 25], 32: [10, 25],
     10: [32, 33], 33: [27, 30, 18], 34: [2, 4], 35: [3, 38], 36: [37], 37: [36, 35], 38: [14, 25], 39: [19, 18],
-    6: [30, 19], 13: [14, 25, 4], 14: [13, 25, 38, 17], 25: [14, 13, 33, 38, 11], 16: [19, 17], 19: [16, 17], 20: [5, 19], 21: [16, 22],
-    17: [14, 16], 22: [19], 18: [33, 39],
+    6: [30, 19], 13: [14, 25, 4], 14: [13, 25, 38, 17], 25: [14, 13, 33, 38, 11], 16: [19, 17], 19: [16, 17], 20: [5, 19], 21: [16, 17],
+    17: [14, 16, 19], 18: [33, 39],
 }
 
 
