@@ -146,5 +146,6 @@ python3 library/build.py
 - **Free assessment tools.** `library/data/assessments.json` holds the guide shown at the top of the Assessment page and in search. Only free tools belong there. Check free access on the publisher's own site, say exactly what is free, and write "Not stated" where the publisher gives no time or year level. Australian tools (`"au": true`) are listed first.
 - **Every Assessment entry needs a strand** from `STRANDS[13]`.
 - **Nothing by John Hattie or Adam Voigt** is included in the library.
+- **No restorative practice resources.** Jo does not consider restorative practice aligned with current research, so nothing that promotes it is listed, whoever made it.
 - **Nothing behind a paywall.** A link that meters or locks its article (Tes, paid-only Substack posts) is removed. Tools that need a free sign-up say so on the card.
 - **Voices** need a public, free home for the person's or organisation's work. People without one (for example John Sweller, Anne Castles, Jennifer Buckingham) are represented through Research, Learn and Listen instead.
