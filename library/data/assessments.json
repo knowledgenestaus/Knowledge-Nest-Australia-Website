@@ -13,7 +13,7 @@
    "years": "Foundation to Year 8",
    "delivery": "One-to-one for five of the six measures. Maze can be given to a group.",
    "time": "One minute each for five of the six measures. Maze takes three minutes.",
-   "tells": "A set of short fluency measures for assessing the acquisition of literacy skills: letter naming fluency, phonemic segmentation fluency, nonsense word fluency, word reading fluency, oral reading fluency and Maze. For dyslexia screening, the subtests measure processing speed, phonological awareness and the alphabetic principle.",
+   "tells": "A set of short fluency measures for assessing the acquisition of literacy skills, namely letter naming fluency, phonemic segmentation fluency, nonsense word fluency, word reading fluency, oral reading fluency and Maze. For dyslexia screening, the subtests measure processing speed, phonological awareness and the alphabetic principle.",
    "who": "Universal screening, benchmark assessment and progress monitoring. The publisher describes it as a way to regularly detect risk and monitor the development of early literacy and early reading skills.",
    "access": "Free download",
    "au": true,
@@ -64,7 +64,7 @@
    "years": "Ages 6 to 11 and a half (Australian norms)",
    "delivery": "One-to-one",
    "time": "Not stated. Up to 120 words, stopping after five errors in a row of each type.",
-   "tells": "The key processes in single-word reading: sounding-out ability, assessed by accuracy reading nonwords aloud, and whole-word recognition ability, assessed by accuracy reading irregular words aloud. It has 40 regular words, 40 irregular words and 40 nonwords, presented one at a time in mixed order with increasing difficulty.",
+   "tells": "The key processes in single-word reading, namely sounding-out ability, assessed by accuracy reading nonwords aloud, and whole-word recognition ability, assessed by accuracy reading irregular words aloud. It has 40 regular words, 40 irregular words and 40 nonwords, presented one at a time in mixed order with increasing difficulty.",
    "who": "Comparing a child's accuracy on each item type with norms from over 1000 Australian children aged 6 years 0 months to 11 years 6 months (the online version converts scores to z scores).",
    "access": "Free PDF to print (you give a few details). A paid digital version is also available.",
    "au": true
@@ -244,7 +244,9 @@
    "tells": "How well adults can spell difficult words that are commonly misspelled because they contain irregular sound-spelling rules. 72 dictated items.",
    "who": "Assessing adult spelling. The publisher states no further purpose.",
    "access": "Free PDF to print (you give a few details)",
-   "au": true
+   "au": true,
+   "adult": true,
+   "note": "Made for adults, so it is not a school assessment. It is listed to complete the MOTIf suite."
   },
   {
    "name": "RAT: Reading Anxiety Tests",
@@ -257,7 +259,7 @@
    "years": "Children, adolescents and adults",
    "delivery": "Questionnaire, completed by the student or a parent",
    "time": "Not stated",
-   "tells": "Questionnaires designed to detect elevated levels of anxiety related to reading. There are five: self-report and parent-report forms for children and for adolescents, and a form for adults.",
+   "tells": "Questionnaires designed to detect elevated levels of anxiety related to reading. There are five, namely self-report and parent-report forms for children and for adolescents, and a form for adults.",
    "who": "Detecting elevated reading anxiety in children, adolescents and adults.",
    "access": "Free PDFs to print. The parent report for children also has a digital version.",
    "au": true
@@ -309,7 +311,9 @@
    "tells": "The ability of people with aphasia to produce plurals, and the effects of word frequency (BAPPA-F) and regularity (BAPPA-R) on that ability, each across four tasks.",
    "who": "Identifying whether processing of plural inflection is intact or impaired, and the level of the language system where the impairment arises. These are not school assessments and are listed so the suite is complete.",
    "access": "Free PDF to print (you give a few details)",
-   "au": true
+   "au": true,
+   "adult": true,
+   "note": "Made for adults, so it is not a school assessment. It is listed to complete the MOTIf suite."
   },
   {
    "name": "Acadience Reading K-6",
@@ -323,7 +327,7 @@
    "years": "Foundation to Year 6 (American Kindergarten to Grade 6)",
    "delivery": "Not stated on the fact sheet. Oral Reading Fluency passages are read aloud for 1 minute; Maze is read silently.",
    "time": "Brief measures",
-   "tells": "The acquisition of early literacy and reading skills through six brief measures: First Sound Fluency (phonemic awareness), Letter Naming Fluency, Phoneme Segmentation Fluency (phonemic awareness), Nonsense Word Fluency (the alphabetic principle and basic phonics), Oral Reading Fluency with Retell (advanced phonics, word attack and reading connected text) and Maze (reading comprehension).",
+   "tells": "The acquisition of early literacy and reading skills through six brief measures, namely First Sound Fluency (phonemic awareness), Letter Naming Fluency, Phoneme Segmentation Fluency (phonemic awareness), Nonsense Word Fluency (the alphabetic principle and basic phonics), Oral Reading Fluency with Retell (advanced phonics, word attack and reading connected text) and Maze (reading comprehension).",
    "who": "Universal screening, with research-based benchmarks for all measures and grades, to monitor the development of early literacy skills, provide timely instructional support and prevent later reading difficulties.",
    "access": "Free download from the Acadience Resource Hub after you register an email address. The online data system is paid.",
    "au": false,
@@ -341,7 +345,7 @@
    "years": "Foundation to Year 6 (American Kindergarten to Grade 6)",
    "delivery": "Not stated",
    "time": "Brief measures",
-   "tells": "Early numeracy, computation and problem solving through seven measures: Beginning Quantity Discrimination, Number Identification Fluency (naming the numerals 1 to 99), Next Number Fluency, Advanced Quantity Discrimination, Missing Number Fluency, Computation, and Concepts and Applications.",
+   "tells": "Early numeracy, computation and problem solving through seven measures, namely Beginning Quantity Discrimination, Number Identification Fluency (naming the numerals 1 to 99), Next Number Fluency, Advanced Quantity Discrimination, Missing Number Fluency, Computation, and Concepts and Applications.",
    "who": "Universal screening designed to predict early mathematics success and identify students experiencing difficulty in acquiring foundational maths skills, and to detect the effects of intervention.",
    "access": "Free download from the Acadience Resource Hub after you register an email address. The online data system is paid.",
    "au": false,
@@ -377,7 +381,7 @@
    "years": "Not stated on the download page",
    "delivery": "Not stated",
    "time": "Screening in less than 5 minutes",
-   "tells": "The dimensions of literacy: language, decoding and their product, reading comprehension. The Narrative Language Measures (NLM Listening and NLM Reading) measure the ability to comprehend and produce complex, academic language. The Dynamic Decoding Measures have four subtests: Phonemic Awareness, Phoneme Manipulation, Orthographic Mapping and Decoding Inventory.",
+   "tells": "The dimensions of literacy, namely language, decoding and their product, reading comprehension. The Narrative Language Measures (NLM Listening and NLM Reading) measure the ability to comprehend and produce complex, academic language. The Dynamic Decoding Measures have four subtests: Phonemic Awareness, Phoneme Manipulation, Orthographic Mapping and Decoding Inventory.",
    "who": "Screening these skills in under five minutes, then gathering further data to identify specific weaknesses in language or decoding to inform instruction.",
    "access": "Free paper and pencil version to download for personal use after you give a name and email address. The digital version is paid.",
    "au": false,
