@@ -272,6 +272,24 @@ STRANDS[13] = dict(
         ("Summative assessment, marking and reporting", "Tests, grades, rubrics, comparative judgement and what to report.", None),
         ("Using assessment data well", "Getting from numbers to decisions without drowning in data.", None),
     ])
+STRANDS[14] = dict(
+    intro="A multi-tiered system of supports (MTSS) is a way of organising a whole school so that every student gets strong teaching, "
+          "the students who need more are found early, and extra support grows in step with need. New to it? Begin with the first group below, "
+          "then follow the tiers in order.",
+    note="Looking for resources on a particular condition, such as dyslexia, developmental language disorder, ADHD or autism? "
+         "They sit under Learning difficulties, disabilities and inclusion.",
+    strands=[
+        ("What MTSS is and where to start", "Plain introductions to the tiers, why schools are moving to them, and what the model does and does not ask of you.",
+         ("For the conditions that often sit behind a student's difficulty, see", 25)),
+        ("Tier 1 teaching for every student", "The first tier is the teaching every student receives. These pieces look at explicit teaching, scaffolding, "
+         "grouping and differentiation, and why strong whole-class teaching reduces how many students need more.", ("For the teaching itself, see", 2)),
+        ("Screening and data in MTSS", "Finding the students who need more, and checking that the support is working.",
+         ("For free screening and diagnostic tools, see", 13)),
+        ("Tier 2 and Tier 3 intervention", "Small-group and intensive support that adds to classroom teaching, with examples from schools and the evidence on what works.",
+         ("For maths intervention, see", 38)),
+        ("Leading and implementing MTSS", "Teams, timetables, buy-in and the lessons from schools that have done it, in primary and secondary.",
+         ("For putting any change in place, see", 17)),
+    ])
 STRANDS[33] = dict(
     intro="Good literacy teaching rests on a handful of big ideas about how children learn to read, write and use language. "
           "I've gathered the frameworks and the research behind them here, so you can see where our practice comes from and explain it with confidence.",
@@ -1267,7 +1285,7 @@ SEE_ALSO = {
     1: [3, 2, 15], 15: [24, 1], 2: [34, 4, 23], 3: [35, 1], 4: [13, 23], 5: [20, 23], 23: [4, 11], 24: [3, 15],
     11: [33, 25], 26: [27, 33], 27: [26, 25, 33], 28: [27, 30], 29: [30, 11], 30: [6, 29], 31: [27, 25], 32: [10, 25],
     10: [32, 33], 33: [27, 30, 18], 34: [2, 4], 35: [3, 38], 36: [37], 37: [36, 35], 38: [14, 25], 39: [19, 18],
-    6: [30, 19], 13: [14, 4], 14: [13, 38, 17], 25: [33, 38, 11], 16: [19, 17], 19: [16, 17], 20: [5, 19], 21: [16, 22],
+    6: [30, 19], 13: [14, 25, 4], 14: [13, 25, 38, 17], 25: [14, 13, 33, 38, 11], 16: [19, 17], 19: [16, 17], 20: [5, 19], 21: [16, 22],
     17: [14, 16], 22: [19], 18: [33, 39],
 }
 
@@ -1681,6 +1699,8 @@ def strand_sections(items, plan):
         nav.append((strand_id(name), name))
         ordered = [x for k in STRAND_ORDER for x in mix([y for y in sub if y["type"] == k])]
         ordered += [x for x in sub if x["type"] not in STRAND_ORDER]
+        # A resource marked "landmark" leads its strand whatever its type, so a plain primer is never buried.
+        ordered = [x for x in ordered if x.get("landmark")] + [x for x in ordered if not x.get("landmark")]
         lead = e(about)
         if more:
             lead += ' %s <a href="%s">%s</a>.' % (e(more[0]), area_page(AREA[more[1]]), e(AREA[more[1]]["name"]))
