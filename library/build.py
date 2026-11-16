@@ -81,6 +81,25 @@ START_HERE = [
          picks=["027 Getting Assessment Right", "S03E04", "Using data in MTSS: Screening"]),
 ]
 
+# The same idea for a teacher who wants something for their own classroom tomorrow. Shown first on the library home.
+START_TEACHERS = [
+    dict(title="What explicit teaching looks like", areas=[2, 23],
+         text="See a whole lesson taught explicitly, then read and hear why each part is there.",
+         picks=["Teach explicitly: Primary and secondary", "Rosenshine's Principles of Instruction: the full guide", "060 Explicit Instruction"]),
+    dict(title="Checking every student understands", areas=[4],
+         text="Simple ways to find out what the whole class has learned while there is still time to respond.",
+         picks=["Checking for understanding: response systems", "Mini-whiteboards revisited", "Chalk Dust S1 E1"]),
+    dict(title="Daily review and retrieval", areas=[3, 35],
+         text="Short, regular review that keeps earlier learning within reach.",
+         picks=["Revisit and review: Primary and secondary", "Retrieval practice: one-page guide", "S03E16 Making Retrieval Practice Work"]),
+    dict(title="Calm routines and attention", areas=[5],
+         text="How lessons begin, how you gain attention and what to do about low-level disruption.",
+         picks=["Entering the classroom", "Classroom routines: one-page guide", "Classroom Management with Ollie Lovell and Mark Dowley"]),
+    dict(title="Teaching reading", areas=[27, 28, 33],
+         text="Where to begin with phonics and the ideas behind how children learn to read.",
+         picks=["Phonics Plus in the classroom", "The Simple View of Reading: An explainer for teachers", "Sold a Story"]),
+]
+
 AREAS = sorted(DATA["areas"], key=lambda a: a["n"])
 AREA = {a["n"]: a for a in AREAS}
 ENTRIES = DATA["entries"]
@@ -473,7 +492,7 @@ def shown_meta(x):
     if x["type"] == "learn" and x.get("length") and not any(re.search(r"minute|hour|session|animation|\d:\d\d", m, re.I) for m in meta):
         meta = [x["length"]] + meta
     # Videos and podcast episodes say how long they run when the running time is known ("minutes" in the data).
-    if x["type"] in ("watch", "listen") and x.get("minutes") and not any(re.search(r"minute|hour|\d:\d\d", m, re.I) for m in meta):
+    if x["type"] in ("watch", "listen", "learn") and x.get("minutes") and not any(re.search(r"minute|hour|\d:\d\d", m, re.I) for m in meta):
         guests = [m for m in meta if re.match(r"with\s", m, re.I)]
         meta = guests + [run_time(x["minutes"])] + [m for m in meta if m not in guests]
     return meta
@@ -930,9 +949,9 @@ def hero(tagline, h1, lead, crumbs=None, extra="", art=None):
             % (" has-illo" if pic else "", crumb, e(tagline), title_html(h1), lead, extra, pic))
 
 
-def start_here(limit=None):
+def _start_cards(topics):
     cards_html = []
-    for t in (START_HERE[:limit] if limit else START_HERE):
+    for t in topics:
         pool = [x for x in ENTRIES if set(x["areas"]) & set(t["areas"])]
         picks = []
         for p in t["picks"]:
@@ -951,11 +970,23 @@ def start_here(limit=None):
         links = "".join('<a href="%s">%s</a>' % (area_page(AREA[n]), e(short_area(n))) for n in t["areas"])
         cards_html.append('<article class="lib-start"><p class="lib-start-n" aria-hidden="true">%02d</p><h3>%s</h3><p>%s</p><p class="lib-start-label">Three to begin with</p><ul>%s</ul>'
                           '<p class="lib-start-label">See everything on</p><p class="lib-topics">%s</p></article>' % (len(cards_html) + 1, title_html(t["title"]), e(t["text"]), lis, links))
-    return ('<section class="section" id="start"><div class="container"><div class="section-header section-header-illo">ILLO_START<div><p class="kn-eyebrow">Not sure where to begin?</p><h2>Start here</h2>'
-            '<p>%s good places to begin a school\'s professional learning.</p></div></div>'
-            '<div class="lib-starts%s">%s</div>%s</div></section>' % (
-                "Three" if limit == 3 else "Five", " lib-starts-three" if limit == 3 else "", "".join(cards_html),
-                '<p class="lib-starts-more"><a href="library.html#start">See all five starting points %s</a></p>' % ARROW if limit else "")).replace("ILLO_START", illo("start", "section-illo", 200))
+    return "".join(cards_html)
+
+
+def start_here(limit=None):
+    """Start here. The library home shows two sets, one for a teacher's own classroom and one for a school's
+    professional learning. The site's home page (limit=3) shows the first three for teachers."""
+    head = ('<section class="section" id="start"><div class="container"><div class="section-header section-header-illo">ILLO_START<div><p class="kn-eyebrow">Not sure where to begin?</p><h2>Start here</h2>'
+            '<p>%s</p></div></div>')
+    if limit:
+        body = (head % "Three good places to begin in your own classroom."
+                + '<div class="lib-starts lib-starts-three">%s</div>' % _start_cards(START_TEACHERS[:limit])
+                + '<p class="lib-starts-more"><a href="library.html#start">See all ten starting points, for teachers and for leaders %s</a></p>' % ARROW)
+    else:
+        body = (head % "Five good places to begin in your own classroom, then five for a school's professional learning."
+                + '<h3 class="lib-starts-head">In your classroom</h3><div class="lib-starts">%s</div>' % _start_cards(START_TEACHERS)
+                + '<h3 class="lib-starts-head" id="start-leaders">Across your school</h3><div class="lib-starts">%s</div>' % _start_cards(START_HERE))
+    return (body + '</div></section>').replace("ILLO_START", illo("start", "section-illo", 200))
 
 
 MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
@@ -2060,7 +2091,7 @@ def warnings():
     prose += [("about text of area '%s'" % a["name"], a.get("about", "")) for a in AREAS]
     prose += [("description of show '%s'" % s["title"], s.get("desc", "")) for s in SHOWS]
     prose += [("description of Substack '%s'" % s["title"], s.get("desc", "")) for s in SUBSTACKS]
-    prose += [("Start here text '%s'" % t["title"], t["text"]) for t in START_HERE]
+    prose += [("Start here text '%s'" % t["title"], t["text"]) for t in START_HERE + START_TEACHERS]
     prose += [("domain text '%s'" % d, text) for d, text in DOMAIN_ABOUT.items()]
     prose += [("strand text '%s'" % name, text) for plan in STRANDS.values() for name, text, *_ in plan["strands"]]
     prose += [("%s of the strands for area %d" % (k, n), plan.get(k, "")) for n, plan in STRANDS.items() for k in ("intro", "note")]
@@ -2098,7 +2129,7 @@ def warnings():
     for s in SUBSTACKS:
         if s["title"] not in SUBSTACK_ORDER and s["title"] not in MUST_SUBSTACKS:
             out.append("Substack '%s' is not in SUBSTACK_ORDER in build.py, so it is listed last; add it where it belongs" % s["title"])
-    for t in START_HERE:
+    for t in START_HERE + START_TEACHERS:
         for p in t["picks"]:
             if not any(cap_after_colon(x["title"]).startswith(cap_after_colon(p)) for x in ENTRIES):
                 out.append("Start here pick '%s' (%s) matches no title, so another entry is shown in its place" % (p, t["title"]))

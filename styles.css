@@ -994,3 +994,6 @@ html:not(.js) .nav-sub-toggle { display: none; }
 /* A fold says what it opens, and offers to close once open. */
 .lib-fold .lib-fold-hide, .lib-fold[open] .lib-fold-show { display: none; }
 .lib-fold[open] .lib-fold-hide { display: inline; }
+
+.lib-starts-head { margin: 2rem 0 1rem; font-family: var(--font-display); font-size: 1.35rem; color: var(--navy); }
+.lib-starts-head:first-of-type { margin-top: 0.5rem; }
