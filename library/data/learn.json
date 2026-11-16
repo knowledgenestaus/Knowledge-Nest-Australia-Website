@@ -4261,6 +4261,100 @@
    "audience": "Teachers",
    "region": "Australia",
    "kind": "series"
+  },
+  {
+   "title": "Classroom Management with Ollie Lovell and Mark Dowley",
+   "url": "https://www.academy.vic.gov.au/resources/classroom-management-ollie-lovell-and-mark-dowley",
+   "by": "Victorian Academy of Teaching and Leadership, with Ollie Lovell and Mark Dowley",
+   "meta": [
+    "About 1 hour 10 minutes",
+    "2024",
+    "Australia"
+   ],
+   "areas": [
+    5,
+    20
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Mark Dowley and Ollie Lovell work through common classroom scenarios and the strategies they recommend for each.",
+   "length": "Over 60 minutes",
+   "audience": "Teachers",
+   "region": "Australia",
+   "kind": "webinar"
+  },
+  {
+   "title": "Three Capabilities for Leading Improvement, with Viviane Robinson",
+   "url": "https://www.academy.vic.gov.au/resources/three-capabilities-leading-improvement-viviane-robinson",
+   "by": "Victorian Academy of Teaching and Leadership, with Viviane Robinson",
+   "meta": [
+    "About 1 hour 15 minutes",
+    "2023",
+    "Australia"
+   ],
+   "areas": [
+    19,
+    17
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Viviane Robinson on the capabilities leaders need to lead school improvement, which means disrupting some of business as usual and learning more effective ways of working.",
+   "length": "Over 60 minutes",
+   "audience": "Leaders",
+   "region": "Australia",
+   "kind": "webinar"
+  },
+  {
+   "title": "Intensive Intervention (Part 1): Using data-based individualization to intensify instruction",
+   "url": "https://iris.peabody.vanderbilt.edu/module/dbi/",
+   "by": "IRIS Center, Vanderbilt University",
+   "meta": [
+    "Online module",
+    "USA"
+   ],
+   "areas": [
+    14,
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A self-paced module on intensifying and individualising intervention for students who need more than Tier 2, covering dosage and time, the learning environment, delivery of instruction and decisions for reading and maths.",
+   "length": "Series",
+   "audience": "Teachers",
+   "region": "International",
+   "kind": "series",
+   "strand": [
+    "Tier 2 and Tier 3 intervention",
+    "Supporting students with additional needs"
+   ]
+  },
+  {
+   "title": "Intensive Intervention (Part 2): Collecting and analyzing data for data-based individualization",
+   "url": "https://iris.peabody.vanderbilt.edu/module/dbi2/",
+   "by": "IRIS Center, Vanderbilt University",
+   "meta": [
+    "Online module",
+    "USA"
+   ],
+   "areas": [
+    14,
+    13
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "The companion module on collecting and analysing progress data to decide when and how to adjust an intensive intervention.",
+   "length": "Series",
+   "audience": "Teachers",
+   "region": "International",
+   "kind": "series",
+   "strand": [
+    "Tier 2 and Tier 3 intervention",
+    "Screening, diagnostic assessment and progress monitoring"
+   ]
   }
  ]
 }
