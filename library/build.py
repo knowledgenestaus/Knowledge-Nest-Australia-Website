@@ -94,7 +94,7 @@ START_TEACHERS = [
          picks=["Revisit and review: Primary and secondary", "Retrieval practice: one-page guide", "S03E16 Making Retrieval Practice Work"]),
     dict(title="Calm routines and attention", areas=[5],
          text="How lessons begin, how you gain attention and what to do about low-level disruption.",
-         picks=["Entering the classroom", "Classroom routines: one-page guide", "Classroom Management with Ollie Lovell and Mark Dowley"]),
+         picks=["Entering the classroom", "26 Building a Behaviour Curriculum", "Classroom Management with Ollie Lovell and Mark Dowley"]),
     dict(title="Teaching reading", areas=[27, 28, 33],
          text="Where to begin with phonics and the ideas behind how children learn to read.",
          picks=["Phonics Plus in the classroom", "The Simple View of Reading: An explainer for teachers", "Sold a Story"]),
