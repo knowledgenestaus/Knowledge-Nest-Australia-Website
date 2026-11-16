@@ -252,27 +252,17 @@
   },
   {
    "n": 17,
-   "name": "Implementation",
+   "name": "Implementation and change",
    "slug": "implementation",
    "domain": "Implementation and change",
-   "about": "How to introduce a practice so it lasts, and how to know it is working.",
+   "about": "How to introduce a practice so it lasts, how people experience the change, and how to know it is working.",
    "practices": [
     "Staged implementation",
     "enablers and barriers",
     "fidelity",
     "monitoring outcomes",
-    "implementation teams"
-   ]
-  },
-  {
-   "n": 22,
-   "name": "Change management",
-   "slug": "change-management",
-   "domain": "Implementation and change",
-   "about": "How people experience change, and how to sequence, communicate and sustain it.",
-   "practices": [
-    "Sequencing change",
-    "stages of concern",
+    "implementation teams",
+    "sequencing change",
     "communication",
     "reducing change load",
     "sustaining"
@@ -4661,7 +4651,7 @@
    ],
    "areas": [
     19,
-    22
+    17
    ],
    "tags": [
     "Free"
@@ -4807,7 +4797,7 @@
     "with James Mannion"
    ],
    "areas": [
-    22
+    17
    ],
    "tags": [
     "Free"
@@ -4825,8 +4815,7 @@
     "with Arran Hamilton and Dylan Wiliam"
    ],
    "areas": [
-    17,
-    22
+    17
    ],
    "tags": [
     "Free"
@@ -4968,7 +4957,7 @@
    ],
    "areas": [
     16,
-    22
+    17
    ],
    "tags": [
     "Free"
@@ -7803,7 +7792,7 @@
     "Australia"
    ],
    "areas": [
-    22
+    17
    ],
    "tags": []
   },
@@ -7862,7 +7851,7 @@
     "USA"
    ],
    "areas": [
-    22
+    17
    ],
    "tags": [],
    "summary": "A tool from Learning Forward for judging how far a change has progressed in a school or system."
@@ -10416,7 +10405,7 @@
     "Australia"
    ],
    "areas": [
-    22,
+    17,
     16
    ],
    "tags": [
@@ -10445,8 +10434,7 @@
     "UK"
    ],
    "areas": [
-    17,
-    22
+    17
    ],
    "tags": [
     "Free"
@@ -13548,8 +13536,7 @@
     "UK"
    ],
    "areas": [
-    17,
-    22
+    17
    ],
    "tags": [
     "Free"
@@ -14940,7 +14927,6 @@
    ],
    "areas": [
     17,
-    22,
     19
    ],
    "tags": [
@@ -15489,7 +15475,7 @@
     "Australia"
    ],
    "areas": [
-    22,
+    17,
     18,
     19
    ],
