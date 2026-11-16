@@ -990,3 +990,7 @@ html:not(.js) .nav-sub-toggle { display: none; }
 .lib-tool-more { position: relative; z-index: 2; margin: 0.6rem 0 0.4rem; }
 .lib-tool-more > summary { cursor: pointer; font-weight: 700; color: var(--navy); padding: 0.4rem 0; }
 .lib-tool-more[open] > summary { margin-bottom: 0.4rem; }
+
+/* A fold says what it opens, and offers to close once open. */
+.lib-fold .lib-fold-hide, .lib-fold[open] .lib-fold-show { display: none; }
+.lib-fold[open] .lib-fold-hide { display: inline; }
