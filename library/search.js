@@ -48,6 +48,9 @@
         .then(function (data) {
           index = data.map(function (x) {
             // x.s is the card's topic line and summary: searched, but not shown in the results.
+            // x.who: the creator plus any "with ..." guest or presenter, shown in bold and used to rank a search for a person.
+            x.guests = (x.m || []).filter(function (m) { return /^with\s/i.test(m); });
+            x.who = [x.b].concat(x.guests).filter(Boolean).join(', ');
             x.hay = [x.t, x.b, (x.m || []).join(' '), (x.a || []).join(' '), LABELS[x.y] || '', x.k || '', x.d, x.s || ''].join(' ').toLowerCase();
             return x;
           });
@@ -82,8 +85,19 @@
     link.href = x.u; link.target = '_blank'; link.rel = 'noopener';
     link.appendChild(el('span', 'sr-only', ' (opens in a new tab)'));
     h.appendChild(link); a.appendChild(h);
-    var line = [x.b].concat(x.m || []).filter(Boolean).join(' · ');
-    if (line) a.appendChild(el('p', 'lib-by', line));
+    // Who is responsible for it comes first, in bold, then the other details.
+    var rest = (x.m || []).filter(function (m) { return x.guests.indexOf(m) === -1; });
+    if (x.who || rest.length) {
+      var by = el('p', 'lib-by');
+      if (x.who) {
+        var who = el('span', 'lib-who');
+        if (x.b) { who.appendChild(el('span', 'lib-who-by', 'By')); who.appendChild(document.createTextNode(' ' + x.who)); }
+        else { who.textContent = x.who.charAt(0).toUpperCase() + x.who.slice(1); }
+        by.appendChild(who);
+      }
+      if (rest.length) by.appendChild(document.createTextNode((x.who ? ' · ' : '') + rest.join(' · ')));
+      a.appendChild(by);
+    }
     var foot = el('p', 'lib-card-foot');
     (x.g || []).forEach(function (g) { foot.appendChild(el('span', 'lib-tag' + (/^free/i.test(g) && g !== 'Free account needed' ? ' lib-tag-free' : ''), g)); });
     foot.appendChild(el('span', 'lib-source', 'Opens at ' + x.d));
@@ -116,12 +130,14 @@
         return new RegExp('(^|[^a-z0-9])(' + forms.join('|') + ')');
       });
       var hits = data.filter(function (x) { return tests.every(function (re) { return re.test(x.hay); }); });
-      // Best matches first: the whole phrase in the title, then every word in the title, then the rest.
+      // Best matches first: the whole phrase in the title or in who made it (so a person's name finds their work first),
+      // then every word in the title, then the rest.
       // Inside each group the entries keep the library's own order.
       var phrase = ' ' + words.join(' ');
       var rank = function (x) {
         var t = x.t.toLowerCase();
         if ((' ' + t.replace(/[^a-z0-9]+/g, ' ')).indexOf(phrase) !== -1) return 0;
+        if ((' ' + x.who.toLowerCase().replace(/[^a-z0-9]+/g, ' ')).indexOf(phrase) !== -1) return 0;
         return tests.every(function (re) { return re.test(t); }) ? 1 : 2;
       };
       hits = hits.map(function (x, i) { return [rank(x), i, x]; })
@@ -149,7 +165,10 @@
       }
       more.addEventListener('click', function () { showMore(true); });
 
-      heading.textContent = 'Search results for "' + q + '"';
+      // A search for someone in the library's list of people says so in the heading.
+      var people = document.getElementById('libPeople');
+      var person = people && Array.prototype.filter.call(people.options, function (o) { return o.value.toLowerCase() === q.toLowerCase(); })[0];
+      heading.textContent = person ? 'By or featuring ' + person.value : 'Search results for "' + q + '"';
       if (!hits.length) {
         moreWrap.hidden = true;
         note.textContent = 'Nothing found yet. Try a broader word, or browse by type or area below. If something is missing, ';

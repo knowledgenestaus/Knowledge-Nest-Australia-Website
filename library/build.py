@@ -479,8 +479,15 @@ def curriculum_thumb(x):
 
 def card(x, show_type=True, level="h3", filterable=False):
     t = TYPES[x["type"]]
-    bits = [e(m) for m in shown_meta(x)]
-    by = e(x["by"]) if x["by"] else ""
+    # Who is responsible for it leads the details line in bold: the creator, plus any "with ..." guest or presenter.
+    guests = [m for m in shown_meta(x) if re.match(r"with\s", m, re.I)]
+    bits = [e(m) for m in shown_meta(x) if m not in guests]
+    who = ", ".join(([x["by"]] if x["by"] else []) + guests)
+    by = ""
+    if x["by"]:
+        by = '<span class="lib-who"><span class="lib-who-by">By</span> %s</span>' % e(who)
+    elif who:
+        by = '<span class="lib-who">%s</span>' % e(who[0].upper() + who[1:])
     line = " &middot; ".join([b for b in [by] + bits if b])
     tags = "".join('<span class="lib-tag%s">%s</span>' % (" lib-tag-free" if tg.lower().startswith("free") and tg != "Free account needed" else "", e(tg)) for tg in shown_tags(x))
     badge = '<span class="lib-type lib-type-%s">%s</span>' % (x["type"], t["label"]) if show_type else ""
@@ -549,10 +556,109 @@ MIX_TYPES = ("watch", "learn", "listen", "read")
 _SERIES = re.compile(r"^(.*?)(?:[,:]?\s+(?:episode|part|session)\s+\d+|,\s*#\d+)", re.I)
 
 
+_AU_WORDS = re.compile(r"\b(Australia|Australian|Victoria|Victorian|NSW|New South Wales|Queensland|Tasmania|Tasmanian|South Australia|"
+                       r"South Australian|Western Australia|Northern Territory|ACT)\b")
+# Australians whose work also appears through overseas hosts and publishers (a Canadian podcast interviewing Pamela Snow
+# counts as Australian). Added to these automatically: every person on the Voices shelf marked Australia, the writers of
+# the Australian Substacks and the hosts of the Australian podcasts. Add a name here when a new one turns up.
+AUSTRALIAN_PEOPLE = ["John Sweller", "Slava Kalyuga", "Anne Castles", "Deslea Konza", "Jennifer Buckingham", "Kerry Hempenstall",
+                     "Tanya Serry", "Reid Smith", "Toni Hatten-Roberts", "David Morkunas", "Jordana Hunter", "Ross Fox",
+                     "Joanna Barbousas", "Steven Capp", "Noel Pearson"]
+_AU = {}
+
+
+def _au_sets():
+    if not _AU:
+        shows = [s for s in DATA.get("shows", []) if any(_AU_WORDS.search(m or "") for m in s.get("meta", []))]
+        people = set(AUSTRALIAN_PEOPLE)
+        people |= {x["title"] for x in ENTRIES if x["type"] == "voice" and any(_AU_WORDS.search(m or "") for m in x["meta"])}
+        for names in [s.get("by", "") for s in shows] + [s.get("by", "") for s in SUBSTACKS if s.get("region") == "Australia"]:
+            people |= {n.strip() for n in re.split(r",|\band\b", names) if len(n.strip().split()) >= 2}
+        _AU["shows"] = {s["title"] for s in shows}
+        _AU["people"] = re.compile(r"\b(%s)\b" % "|".join(re.escape(p) for p in sorted(people, key=len, reverse=True)))
+    return _AU
+
+
+def is_australian(x):
+    """Whether an entry counts as Australian, which the library lists first. Any one of these is enough: a known
+    Australian named as its creator, guest or presenter (so an Australian interviewed by an overseas host counts);
+    its own "region"; a country or state on its details line; an Australian podcast show or Substack; or an
+    address ending in .au."""
+    au = _au_sets()
+    named = " ".join([x.get("by") or "", x["title"]] + [m or "" for m in x.get("meta", [])])
+    if au["people"].search(named):
+        return True
+    if x.get("region"):
+        return x["region"] == "Australia"
+    if any(_AU_WORDS.search(m or "") for m in x.get("meta", [])) or _AU_WORDS.search(x.get("by") or ""):
+        return True
+    if x["type"] == "listen" and x.get("by") in au["shows"]:
+        return True
+    stack = stack_of(x)
+    if stack and stack.get("region"):
+        return stack["region"] == "Australia"
+    return domain_of(x["url"]).endswith(".au")
+
+
+def is_landmark(x):
+    """A landmark study, publication or session that leads its list ahead of Australian work: an entry tagged
+    "Foundational" or "Landmark", or with "landmark": true in the data."""
+    return bool(x.get("landmark")) or any(t in ("Foundational", "Landmark") for t in x.get("tags", []))
+
+
+def tier(x):
+    """Where an entry sits in any list: 0 landmark, 1 Australian, 2 everything else."""
+    return 0 if is_landmark(x) else (1 if is_australian(x) else 2)
+
+
+def year_of(x):
+    """The year on an entry's details line ("2006"), or None."""
+    for m in x.get("meta", []):
+        hit = re.match(r"^((?:19|20)\d\d)\b", (m or "").strip())
+        if hit:
+            return int(hit.group(1))
+    return None
+
+
+def house_order(entries):
+    """The library's order for a list that is not spread by source (Research, Voices and mixed lists): landmark pieces,
+    then Australian work, then the rest. Inside each of those an entry with a "rank" number comes first (lowest first),
+    then anything dated in order of year, oldest first, then the rest in the order they were filed."""
+    entries = list(entries)
+    def key(pair):
+        i, x = pair
+        y = year_of(x)
+        return (tier(x), x.get("rank", 10 ** 6), 0 if y else 1, y or 0, i)
+    return [x for _, x in sorted(enumerate(entries), key=key)]
+
+
 def mix(entries):
+    """Landmark pieces first, then Australian work, then the rest (see tier). Inside each of those, sources are spread
+    so one creator never fills a run of cards, and an entry with a "rank" number leads. A numbered series stays
+    together and sits where its first part belongs."""
+    entries = list(entries)
+    lead = {}
+    for x in entries:
+        m = _SERIES.match(x["title"])
+        if m:
+            lead.setdefault((x["by"], m.group(1).lower()), tier(x))
+    def t(x):
+        m = _SERIES.match(x["title"])
+        return lead[(x["by"], m.group(1).lower())] if m else tier(x)
+    out = []
+    for k in (0, 1, 2):
+        part = [x for x in entries if t(x) == k]
+        ranked = sorted((x for x in part if "rank" in x), key=lambda x: x["rank"])
+        out += ranked + _spread([x for x in part if "rank" not in x])
+    return out
+
+
+def _spread(entries):
     """Spread sources through a list so one creator never fills a run of cards.
     Entries from the same source keep their original order. Numbered parts of one series
     (episode 1, 2, 3 ...) stay together, in order, as a single block."""
+    if not entries:
+        return []
     units, index = [], {}
     for x in entries:
         m = _SERIES.match(x["title"])
@@ -595,6 +701,8 @@ def folded_cards(entries, show_type=True, mixed=True, first=6):
     entries = list(entries)
     if mixed and entries and all(x["type"] in MIX_TYPES for x in entries):
         entries = mix(entries)
+    elif mixed and entries:
+        entries = house_order(entries)
     if len(entries) <= first + 3:
         return cards(entries, show_type, mixed=False)
     return (cards(entries[:first], show_type, mixed=False) +
@@ -605,6 +713,8 @@ def cards(entries, show_type=True, level="h3", filterable=False, mixed=True):
     entries = list(entries)
     if mixed and entries and all(x["type"] in MIX_TYPES for x in entries):
         entries = mix(entries)
+    elif mixed and entries:
+        entries = house_order(entries)
     return '<div class="lib-grid">%s</div>' % "".join(card(x, show_type, level, filterable) for x in entries)
 
 
@@ -1206,9 +1316,11 @@ def build_home():
     chips = "".join('<a href="%s">%s</a>' % (area_page(AREA[n]), e(AREA[n]["name"].split(":")[0].split(",")[0])) for n in popular)
     search = ('<form class="lib-search" role="search" id="libSearch" action="library" method="get">'
               '<label for="q" class="sr-only">Search the library</label>'
-              '<input type="search" id="q" name="q" placeholder="Search topics, practices or people" autocomplete="off" maxlength="100">'
+              '<input type="search" id="q" name="q" placeholder="Search topics, practices or people" autocomplete="off" maxlength="100" list="libPeople">'
+              '<datalist id="libPeople">%s</datalist>'
               '<button type="submit" class="btn btn-primary">Search</button></form>'
-              '<p class="page-hero-jump lib-popular">%s%s</p>' % (label_html("Popular:"), chips))
+              '<p class="lib-search-hint">Looking for someone in particular? Type a name, such as Pamela Snow or Anita Archer, to see everything by or featuring them.</p>'
+              '<p class="page-hero-jump lib-popular">%s%s</p>' % ("".join('<option value="%s">' % ea(n) for n in people_names()), label_html("Popular:"), chips))
     lead = ("Great professional learning resources are scattered all over the internet. This library gathers the best of other people's work "
             "in one place, sorted by topic, so you can spend your time learning instead of searching. You'll find classroom videos, webinars, "
             "podcasts, articles and research on the science of reading, explicit instruction, maths, MTSS, learning difficulties, coaching and "
@@ -1232,7 +1344,7 @@ def build_home():
              '<p class="lib-own">Looking for my own articles and a downloadable guide? <a href="resources.html">Find them here</a>.</p>'
              '</div></section>' % elements)
     body += newsletter_box("library") + credit_panels()
-    body += '<script src="library/search.js?v=8" defer></script>'
+    body += '<script src="library/search.js?v=9" defer></script>'
     shelves = [(t["title"], public(t["page"])) for t in TYPES.values()]
     topics = [(d, public(domain_page(d, counts))) for d in DOMAIN_ORDER if domain_areas(d, counts)]
     write("library.html", *seo("library.html", "", ""), body, items=shelves + topics + [("Podcasts by the VTLM 2.0", public("library-vtlm.html"))])
@@ -1719,9 +1831,30 @@ def build_home_block():
     open(path, "w", encoding="utf8").write(src)
 
 
+def people_names():
+    """Every person and organisation a visitor might search for: creators, hosts, publications, guests and presenters,
+    and the people on the Voices shelf. Offered as suggestions under the library search box."""
+    names = set()
+    def add(text):
+        for part in re.split(r",\s+with\s+|\s+\(|\)|,\s+(?:for|on)\s+", text or ""):
+            for n in re.split(r",\s*|\s+and\s+", re.sub(r"^(with|by)\s+", "", part.strip(), flags=re.I)):
+                n = n.strip(" .")
+                if 3 < len(n) < 60 and not re.search(r"\b(guests|colleagues|others|formerly)\b", n) and not n[0].islower() and not n[0].isdigit():
+                    names.add(n)
+    for x in ENTRIES:
+        add(x.get("by"))
+        if x["type"] == "voice":
+            names.add(x["title"])
+        for m in x.get("meta", []):
+            if re.match(r"with\s", m or "", re.I):
+                add(m)
+    return sorted(names, key=str.lower)
+
+
 def build_search_index():
     idx = []
-    for x in ENTRIES:
+    # Landmark pieces, then Australian work, then the rest, so equally good matches come out in the library's order.
+    for x in sorted(ENTRIES, key=tier):
         c = cap_after_colon
         row = {"t": c(x["title"]), "b": c(x["by"]), "u": x["url"], "y": x["type"], "m": [c(m) for m in shown_meta(x)],
                "a": [c(AREA[n]["name"]) for n in x["areas"]], "g": [c(g) for g in shown_tags(x)], "d": domain_of(x["url"])}
