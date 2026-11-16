@@ -18987,6 +18987,25 @@
    "strand": "Scarborough's Reading Rope"
   },
   {
+   "type": "read",
+   "title": "Linnea Ehri: Slides from her talk to Learning Difficulties Australia",
+   "url": "https://www.ldaustralia.org/app/uploads/2022/10/Linnea-AGM-Slides.pdf",
+   "by": "Linnea Ehri (Learning Difficulties Australia)",
+   "meta": [
+    "Presentation slides",
+    "2022",
+    "USA"
+   ],
+   "areas": [
+    27
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Ehri's slides on how spellings become bonded to pronunciations and meanings in memory, the alphabetic phases of development, and teaching grapheme-phoneme mapping for sight word reading.",
+   "region": "International"
+  },
+  {
    "type": "research",
    "title": "Principles of Instruction: Research-Based Strategies That All Teachers Should Know",
    "url": "https://www.aft.org/sites/default/files/Rosenshine.pdf",
@@ -19270,6 +19289,26 @@
    ],
    "summary": "The short paper that proposed the Simple View of Reading, in which reading comprehension is the product of decoding and language comprehension. It follows that a reading difficulty can come from decoding, from comprehension or from both.",
    "strand": "The Simple View of Reading"
+  },
+  {
+   "type": "research",
+   "title": "Phases of Development in Learning to Read and Spell Words",
+   "url": "https://www.aft.org/ae/fall2023/ehri",
+   "by": "Linnea Ehri (American Educator)",
+   "meta": [
+    "2023",
+    "Article by the researcher",
+    "USA"
+   ],
+   "areas": [
+    27,
+    31
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Linnea Ehri describes the four phases children move through as they learn to read and spell words, from pre-alphabetic to consolidated alphabetic, drawing on more than 50 years of her research.",
+   "region": "International"
   }
  ],
  "shows": [
