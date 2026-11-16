@@ -1,0 +1,243 @@
+{
+ "last_scan": "2026-11-17",
+ "note": "Kept by the regular library scan. feeds lists where each source was checked, passed_over lists links looked at and not proposed. Dedupe by title as well as link: the library lists Think Forward Educators webinars under their own site address, not YouTube.",
+ "feeds": {
+  "3-Star Learning Experiences": "https://3starlearningexperiences.wordpress.com/feed/",
+  "ADHD Australia": "https://www.youtube.com/feeds/videos.xml?channel_id=UC_7eVBmMcdX7KsppZGS5q5A",
+  "All For Literacy": "https://feed.podbean.com/allforliteracy/feed.xml",
+  "Bron Ryrie Jones": "https://bronwynryriejones.com/feed/",
+  "Catholic Education Canberra Goulburn": "https://www.youtube.com/feeds/videos.xml?channel_id=UCveBxvc2Fg7HvNvWbRceb-g",
+  "Chalk & Talk": "https://feed.podbean.com/chalkandtalkpodcast/feed.xml",
+  "Chalk Dust": "https://www.youtube.com/feeds/videos.xml?channel_id=UC43wzow7iN4oV6aUbe29QzA",
+  "Department for Education": "https://www.youtube.com/feeds/videos.xml?channel_id=UC97SmvuJjwphUMETGOtnq-Q",
+  "Dylan Wiliam": "https://www.youtube.com/feeds/videos.xml?channel_id=UCAKYTMzYLHAEMEKqz_fO0Wg",
+  "Dyscastia": "https://feed.podbean.com/dyscastia/feed.xml",
+  "EDVIEW360": "https://feeds.buzzsprout.com/492310.rss",
+  "ERRR / Ollie Lovell": "https://www.ollielovell.com/feed/",
+  "Economy of Meaning": "https://theeconomyofmeaning.com/feed/",
+  "Education Endowment Foundation": "https://www.youtube.com/feeds/videos.xml?channel_id=UC5-jDNhzw1ySqP42gCv23IQ",
+  "Education Scotland": "https://www.youtube.com/feeds/videos.xml?channel_id=UCKSbxxxNxYZyevSccjOXTBA",
+  "Evidence for Learning": "https://www.youtube.com/feeds/videos.xml?channel_id=UC1dTRiOjPTsaFDnV82cgoEA",
+  "Evidence into Action": "https://feed.podbean.com/evidenceintoaction/feed.xml",
+  "Explicit Mathematics Podcast": "https://anchor.fm/s/109afb5e0/podcast/rss",
+  "Five from Five": "https://www.youtube.com/feeds/videos.xml?channel_id=UCr8NBUJSHJWYFhZBlDuQd_g",
+  "Grattan": "https://grattan.edu.au/feed/",
+  "Grattan Institute": "https://www.youtube.com/feeds/videos.xml?channel_id=UCELWPWD2d2kR4KUyPywG-xA",
+  "Impact Curriculum (formerly Ochre Education)": "https://www.youtube.com/feeds/videos.xml?channel_id=UCuan4-hiM-zeSlqk8UJ9hqQ",
+  "InnerDrive": "https://www.youtube.com/feeds/videos.xml?channel_id=UCuwBSVi9rvoFXXNllCAmdcA",
+  "Jones & McLean": "https://feed.podbean.com/jonesandmclean/feed.xml",
+  "Knowledge Society": "https://www.youtube.com/feeds/videos.xml?channel_id=UCSTpW0dg6Qubw4OO6D96-jg",
+  "Knowledge for Teachers": "https://feed.podbean.com/knowledgeforteachers/feed.xml",
+  "La Trobe University": "https://www.youtube.com/feeds/videos.xml?channel_id=UCiooRETYlTQuoG8iWIxWPWg",
+  "Learning Difficulties Australia": "https://www.youtube.com/feeds/videos.xml?channel_id=UCTIx6qtzWNgbPxz5fYzjYcw",
+  "Learning Scientists": "https://www.learningscientists.org/learning-scientists-podcast?format=rss",
+  "Lifelong Literacy (Lyn Stone)": "https://lifelongliteracy.com/feed/",
+  "Macquarie University Centre for Reading": "https://www.youtube.com/feeds/videos.xml?channel_id=UCFEFDYoyz7skxggq9X-U7Ww",
+  "Melissa and Lori Love Literacy": "https://www.youtube.com/feeds/videos.xml?channel_id=UCj2GsM0PNOK5luHQtgIXybw",
+  "Mind the Gap": "https://anchor.fm/s/2277d52c/podcast/rss",
+  "Mornington Peninsula Foundation": "https://www.youtube.com/feeds/videos.xml?channel_id=UC0KwgrGhXt3EKSuGsmVXy5Q",
+  "PaTTAN": "https://www.youtube.com/feeds/videos.xml?channel_id=UCRt8sQ1sfIZGdaiHnZbaOEw",
+  "Pedagogy to Practice": "https://feeds.acast.com/public/shows/pedagogy-to-practice",
+  "Progressively Incorrect": "https://educationrickshaw.com/feed/",
+  "RADLD": "https://www.youtube.com/feeds/videos.xml?channel_id=UC5J2oZIiKfB4VG0Zq_xabUA",
+  "Reading Road Trip": "https://reading-roadtrip.castos.com/feed",
+  "Reading Universe": "https://www.youtube.com/feeds/videos.xml?channel_id=UC6ixEBT1m3bm_FaJ8DyeD8A",
+  "SPELD NSW site": "https://www.speldnsw.org.au/feed/",
+  "Science of Reading Podcast": "https://feeds.buzzsprout.com/612361.rss",
+  "Simon Breakspear": "https://www.youtube.com/feeds/videos.xml?channel_id=UCZygwC6kj6qbbb045kpK2xQ",
+  "Sold a Story": "https://feeds.publicradio.org/public_feeds/sold-a-story/rss/rss",
+  "Spelfabet": "https://www.spelfabet.com.au/feed/",
+  "Steplab": "https://www.youtube.com/feeds/videos.xml?channel_id=UCwW5ZqIeu2umvsswSKjRDBg",
+  "Structured Literacy Podcast": "https://feeds.buzzsprout.com/1987785.rss",
+  "Talking DLD": "https://thedldproject.com/feed/",
+  "Teach Like a Champion blog": "https://teachlikeachampion.org/feed/",
+  "Teacher Magazine": "https://www.teachermagazine.com/au_en/rss",
+  "Teacher Magazine podcast": "https://feeds.soundcloud.com/users/soundcloud:users:91962341/sounds.rss",
+  "Teacherhead": "https://teacherhead.com/feed/",
+  "Teachers Talk Radio": "https://www.youtube.com/feeds/videos.xml?channel_id=UCEyt_-IbL21hoBsFc79yzxg",
+  "The Reading League": "https://www.youtube.com/feeds/videos.xml?channel_id=UCm9TD9u7xGdRUaGjHkOthxw",
+  "The Snow Report": "https://pamelasnow.blogspot.com/feeds/posts/default",
+  "They Behave For Me": "https://anchor.fm/s/ea34fd10/podcast/rss",
+  "Think Forward Educators": "https://www.youtube.com/feeds/videos.xml?channel_id=UCh7_S9XtOXwHycjY5nhmjWg",
+  "Thinking Deeply about Primary Education": "https://anchor.fm/s/45dcc8b0/podcast/rss",
+  "Uncommon Schools": "https://www.youtube.com/feeds/videos.xml?channel_id=UCHSCaR0LRG9cuA_XgZmzMwg",
+  "Understood": "https://www.youtube.com/feeds/videos.xml?channel_id=UCbXMoF3-74hj2lhLCIp3C-A",
+  "YouTube: AERO @EdResearchAU": "https://www.youtube.com/feeds/videos.xml?channel_id=UCBLQ6vtXtamJWh8QL_g0PUA",
+  "YouTube: AITSL @aitsleduau": "https://www.youtube.com/feeds/videos.xml?channel_id=UC2zniDSpDbJ7u2rqO6aShTg",
+  "YouTube: Anna Stokke @chalktalk-stokke": "https://www.youtube.com/feeds/videos.xml?channel_id=UClB70lxO80Rkh3mhg4yg_zw",
+  "YouTube: Jocelyn Seamer @jocelynseamereducation": "https://www.youtube.com/feeds/videos.xml?channel_id=UC0vW0EVvwvZFpcOLaKZswgw",
+  "YouTube: NSW DoE @NSWDepartmentofEducation": "https://www.youtube.com/feeds/videos.xml?channel_id=UCledbqfmI_7Hw-5-My1gPmA",
+  "YouTube: Peps @pepsmccrea": "https://www.youtube.com/feeds/videos.xml?channel_id=UC0snclVqi_RE6MEUUAMvrTA",
+  "YouTube: SPELD NSW @SPELDNSW": "https://www.youtube.com/feeds/videos.xml?channel_id=UC5Ruyn5x_5lP18yMR5eNEnw",
+  "YouTube: Spelfabet @spelfabet": "https://www.youtube.com/feeds/videos.xml?channel_id=UCdzoHqwgLjUUuGrR76BnNQA",
+  "inclusionED (Sylvia Rodger Institute)": "https://www.youtube.com/feeds/videos.xml?channel_id=UCPESfAK459RmXTgk66PNn4Q",
+  "researchED": "https://www.youtube.com/feeds/videos.xml?channel_id=UC3uPEgDH3pAhQe06533Zebw",
+  "Substacks": "Each publication in substacks.json: <address>/api/v1/archive?sort=new&limit=25 (python3 library/tools/feature_week.py --suggest --days 10)",
+  "Think Forward Educators webinars": "https://www.youtube.com/feeds/videos.xml?channel_id=UCh7_S9XtOXwHycjY5nhmjWg (library entries use the thinkforwardeducators.org/past-webinars-1 address)",
+  "Melissa and Lori Love Literacy (audio)": "https://rss.buzzsprout.com/287733.rss",
+  "InnerDrive Science of Learning (audio)": "https://anchor.fm/s/10ace0d64/podcast/rss"
+ },
+ "could_not_check": {
+  "AERO": "edresearch.edu.au needs a browser",
+  "Evidence for Learning": "no feed found, YouTube channel quiet",
+  "researchED": "no new uploads on the channel found",
+  "Five from Five blog": "no working feed",
+  "Reach All Readers": "feed did not parse",
+  "Mr Barton Maths Podcast": "feed did not parse",
+  "Shanahan on Literacy": "feed did not parse",
+  "Jamie Clark newsletter": "no feed found",
+  "Peps Mccrea snacks": "feed did not parse",
+  "Emina McLean blog": "no feed found",
+  "YouTube video pages": "rate limited, channel feeds still work"
+ },
+ "passed_over": [
+  {
+   "url": "https://fillingthepail.substack.com/p/the-made-up-word-that-got-me-into",
+   "why": "reply to other commentators on oracy"
+  },
+  {
+   "url": "https://kyliehoey.substack.com/p/woke-enough-to-be-left-explicit-enough",
+   "why": "opinion on the politics of explicit teaching, not practice"
+  },
+  {
+   "url": "https://mutallyassuredinstruction.substack.com/p/brace-for-impact",
+   "why": "personal reflection and round-up of other writers"
+  },
+  {
+   "url": "https://vmnalex.substack.com/p/2026-specialist-mathematics-exam-de2",
+   "why": "VCE exam commentary, too narrow"
+  },
+  {
+   "url": "https://vmnalex.substack.com/p/2026-specialist-mathematics-exam",
+   "why": "VCE exam commentary, too narrow"
+  },
+  {
+   "url": "https://carouselteachlearnlead.substack.com/p/no-notes-why-id-ban-copying-from",
+   "why": "ends by promoting a Dylan Kane post"
+  },
+  {
+   "url": "https://daviddidau.substack.com/p/writing-well-requires-both-textual",
+   "why": "launch of a paid lesson pack"
+  },
+  {
+   "url": "https://substack.nomoremarking.com/p/green-and-pleasant-substacks",
+   "why": "round-up of other Substacks"
+  },
+  {
+   "url": "https://nataliewexler.substack.com/p/tweaking-the-curriculum-for-better",
+   "why": "commentary on other writers' posts about US programs"
+  },
+  {
+   "url": "https://curriculuminsightproject.substack.com/p/savvas-myview-illustrates-the-hqim",
+   "why": "review of a US commercial program"
+  },
+  {
+   "url": "https://andrewold.substack.com/p/in-england-the-progressivetraditionalist",
+   "why": "news commentary on England"
+  },
+  {
+   "url": "https://powerfulknowledge.substack.com/p/civilisation-not-test-scores-is-whats",
+   "why": "opinion on AI policy, not classroom practice"
+  },
+  {
+   "url": "https://paulkirschner173727.substack.com/p/evidence-informed-teaching-what-it",
+   "why": "short paraphrase of a medical paper"
+  },
+  {
+   "url": "https://paulkirschner173727.substack.com/p/everyones-a-learning-scientist-these",
+   "why": "opinion piece, little for the classroom"
+  },
+  {
+   "url": "https://harriettjanetos.substack.com/p/teachers-of-the-world-unite-to-get",
+   "why": "general commentary"
+  },
+  {
+   "url": "https://dylanwiliam137385.substack.com/p/studies-on-variation-theory",
+   "why": "reference list only"
+  },
+  {
+   "url": "https://marymyatt.substack.com/p/transition-should-extend-learning",
+   "why": "short newsletter update"
+  },
+  {
+   "url": "https://marymyatt.substack.com/p/beyond-the-decoding-ceiling",
+   "why": "short newsletter update"
+  },
+  {
+   "url": "https://scienceofreadingclassroom.substack.com/p/teachers-teach-teachers-oral-language",
+   "why": "announcement, 136 words"
+  },
+  {
+   "url": "https://scienceofreadingclassroom.substack.com/p/that-wasnt-nearly-as-hard-as-i-thought",
+   "why": "one Science of Reading Classroom post is enough this run"
+  },
+  {
+   "url": "https://tipsforteachers.substack.com/p/research-bite-85-considering-cognitive",
+   "why": "one Research Bite is enough this run"
+  },
+  {
+   "url": "https://teacherhead.com/2026/11/08/oracy-in-practice-creating-an-oracy-rich-curriculum-by-harnessing-everyday-routines/",
+   "why": "part of an unfinished oracy series"
+  },
+  {
+   "url": "https://teacherhead.com/2026/11/15/oracy-blog-round-up-a-collection-of-recent-and-related-posts/",
+   "why": "round-up"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/mindthegap-edu/episodes/Oracy-Across-the-Curriculum-with-Alice-Stott-and-Amy-Gaunt--Mind-the-Gap--Ep-132-S7-E5-e3rqe8h",
+   "why": "book promotion for an oracy program"
+  },
+  {
+   "url": "https://educationrickshaw.com/s6e1-kurt-engelmann-and-alisa-kerr-on-sold-a-story-season-2/",
+   "why": "commentary on Sold a Story, which is already listed as a series"
+  },
+  {
+   "url": "https://educationrickshaw.com/from-music-to-math-what-full-immersion-in-di-looks-like/",
+   "why": "short conference chat"
+  },
+  {
+   "url": "https://educationrickshaw.com/taking-on-a-wicked-problem-di-in-london-secondary-schools/",
+   "why": "short conference chat"
+  },
+  {
+   "url": "https://educationrickshaw.com/big-questions-small-steps-frank-vasquez-on-the-instruction-debates/",
+   "why": "short conference chat"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=4D0JC7Cp1Hk",
+   "why": "Steplab webinar that promotes its platform"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=7RocA2cZR6I",
+   "why": "about a US curriculum review tool"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=UvKrHNloogw",
+   "why": "about a US curriculum review tool"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/adam3564/episodes/Oracy--oracy--oracy-why-is-everyone-talking-about-it-e3rrl7d",
+   "why": "opinion chat on the oracy debate"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/adam3564/episodes/Is-behaviour-getting-worse--Grinnes-back-e3s7vd5",
+   "why": "survey data chat about England"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/kieran-mackle/episodes/Doing-Less--Better-Maths-Teaching-and-Lasting-School-Improvement--Samantha-Patterson-e3salm0",
+   "why": "sponsored by a maths program"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/kieran-mackle/episodes/Burnout--Boundaries-and-the-Systems-That-Shape-Teachers-with-Ruth-Poulsen-e3rt4ro",
+   "why": "outside the library's scope"
+  },
+  {
+   "url": "https://soundcloud.com/teacher-acer/natural-disaster-summer",
+   "why": "outside the library's scope"
+  },
+  {
+   "url": "https://theeconomyofmeaning.com/2026/11/08/what-determines-how-well-you-understand-what-you-read-an-analysis-of-nearly-50000-correlations/",
+   "why": "held back to keep the list to 12 or fewer"
+  }
+ ]
+}
