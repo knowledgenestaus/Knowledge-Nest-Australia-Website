@@ -7194,11 +7194,12 @@
    "tags": []
   },
   {
-   "type": "read",
+   "type": "research",
    "title": "The Reading Guarantee",
    "url": "https://grattan.edu.au/wp-content/uploads/2024/02/The-Reading-Guarantee-Grattan-Institute-Report.pdf",
    "by": "Grattan Institute",
    "meta": [
+    "2024",
     "Report",
     "Australia"
    ],
@@ -7209,11 +7210,12 @@
    "strand": "Syntheses of the field"
   },
   {
-   "type": "read",
+   "type": "research",
    "title": "The Maths Guarantee: How to boost students' learning in primary schools",
    "url": "https://grattan.edu.au/report/maths-guarantee/",
    "by": "Grattan Institute",
    "meta": [
+    "2025",
     "Report",
     "Australia"
    ],
@@ -7419,11 +7421,12 @@
    "tags": []
   },
   {
-   "type": "read",
+   "type": "research",
    "title": "What Works Best 2025: Evidence guide for excellent schools",
    "url": "https://education.nsw.gov.au/about-us/education-data-and-research/what-works-best/what-works-best-2025-evidence-guide-for-excellent-schools",
    "by": "Centre for Education Statistics and Evaluation (NSW)",
    "meta": [
+    "2025",
     "Evidence guide",
     "Australia"
    ],
@@ -7752,7 +7755,7 @@
    ]
   },
   {
-   "type": "read",
+   "type": "research",
    "title": "Cognitive load theory: Research that teachers really need to understand",
    "url": "https://education.nsw.gov.au/about-us/education-data-and-research/cese/publications/literature-reviews/cognitive-load-theory.html",
    "by": "Centre for Education Statistics and Evaluation (NSW)",
@@ -7782,7 +7785,7 @@
    "tags": []
   },
   {
-   "type": "read",
+   "type": "research",
    "title": "How students learn best: An overview of the evidence",
    "url": "https://edresearch.edu.au/resources/how-students-learn-best",
    "by": "AERO",
@@ -7811,7 +7814,7 @@
    "tags": []
   },
   {
-   "type": "read",
+   "type": "research",
    "title": "The Science of Learning",
    "url": "https://www.deansforimpact.org/tools-and-resources/the-science-of-learning",
    "by": "Deans for Impact",
@@ -7889,7 +7892,7 @@
    "strand": "Syntheses of the field"
   },
   {
-   "type": "read",
+   "type": "research",
    "title": "Great Teaching Toolkit: Evidence Review",
    "url": "https://evidencebased.education/reports/",
    "by": "Coe, Rauch, Kime and Singleton (Evidence Based Education)",
@@ -18280,6 +18283,193 @@
     "Free"
    ],
    "summary": "A large, regularly updated board of links for teachers supporting students with DLD, with a particular focus on adolescents. It gathers explanations of what DLD is, first-hand accounts from young people, checklists, diagnosis and treatment information, school-related articles and resources, vocabulary supports, wellbeing and behaviour, multilingualism, podcasts, professional learning and International DLD Day materials."
+  },
+  {
+   "type": "research",
+   "title": "Principles of Instruction: Research-Based Strategies That All Teachers Should Know",
+   "url": "https://www.aft.org/sites/default/files/Rosenshine.pdf",
+   "by": "Barak Rosenshine",
+   "meta": [
+    "2012",
+    "Foundational research",
+    "American Educator"
+   ],
+   "areas": [
+    2,
+    3
+   ],
+   "tags": [
+    "Foundational"
+   ],
+   "summary": "Rosenshine's ten principles, drawn from cognitive science, studies of master teachers and research on cognitive supports. The short article behind daily review, small steps, guided practice and checking for understanding."
+  },
+  {
+   "type": "research",
+   "title": "Cognitive Load During Problem Solving: Effects on Learning",
+   "url": "https://doi.org/10.1207/s15516709cog1202_4",
+   "by": "John Sweller",
+   "meta": [
+    "1988",
+    "Foundational research",
+    "Cognitive Science"
+   ],
+   "areas": [
+    1
+   ],
+   "tags": [
+    "Foundational"
+   ],
+   "summary": "The paper that launched cognitive load theory. Sweller shows that conventional problem solving can place such a heavy load on working memory that little is left over for learning.",
+   "region": "Australia"
+  },
+  {
+   "type": "research",
+   "title": "Cognitive Architecture and Instructional Design: 20 Years Later",
+   "url": "https://doi.org/10.1007/s10648-019-09465-5",
+   "by": "Sweller, van Merriënboer and Paas",
+   "meta": [
+    "2019",
+    "Open access",
+    "Educational Psychology Review"
+   ],
+   "areas": [
+    1,
+    2
+   ],
+   "tags": [
+    "Foundational",
+    "Open access"
+   ],
+   "summary": "The authors of the landmark 1998 account of cognitive load theory review two decades of further research, including the effects teachers now rely on such as worked examples, split attention and expertise reversal.",
+   "region": "Australia"
+  },
+  {
+   "type": "research",
+   "title": "Story of a Research Program",
+   "url": "https://edrev.asu.edu/index.php/ER/article/view/2025",
+   "by": "John Sweller",
+   "meta": [
+    "2016",
+    "Open access",
+    "Education Review"
+   ],
+   "areas": [
+    1
+   ],
+   "tags": [
+    "Open access"
+   ],
+   "summary": "John Sweller's own account of how cognitive load theory grew over four decades, from early problem-solving experiments to the theory used in classrooms today.",
+   "region": "Australia"
+  },
+  {
+   "type": "research",
+   "title": "Why Inquiry-based Approaches Harm Students' Learning",
+   "url": "https://www.cis.org.au/publication/why-inquiry-based-approaches-harm-students-learning/",
+   "by": "John Sweller, for the Centre for Independent Studies",
+   "meta": [
+    "2021",
+    "Analysis paper",
+    "Australia"
+   ],
+   "areas": [
+    2,
+    18
+   ],
+   "tags": [],
+   "summary": "Sweller sets out the evidence and the cognitive science for why explicit instruction is more effective than inquiry learning when students meet new material, and links the rise of inquiry approaches to Australia's falling results.",
+   "region": "Australia"
+  },
+  {
+   "type": "research",
+   "title": "Effective teaching practices for students with and without learning difficulties: Constructivism as a legitimate theory of learning AND of teaching?",
+   "url": "https://research.acer.edu.au/learning_processes/10/",
+   "by": "Ken Rowe (ACER)",
+   "meta": [
+    "2006",
+    "Background paper",
+    "Australia"
+   ],
+   "areas": [
+    2,
+    18
+   ],
+   "tags": [],
+   "summary": "Written after Rowe chaired the National Inquiry into the Teaching of Literacy, this paper weighs the evidence for direct, explicit instruction against constructivist approaches to teaching.",
+   "region": "Australia"
+  },
+  {
+   "type": "research",
+   "title": "Read About It: Scientific Evidence for Effective Teaching of Reading",
+   "url": "https://www.cis.org.au/app/uploads/2016/03/rr11.pdf",
+   "by": "Kerry Hempenstall, edited by Jennifer Buckingham (Centre for Independent Studies)",
+   "meta": [
+    "2016",
+    "Research report",
+    "Australia"
+   ],
+   "areas": [
+    33,
+    18
+   ],
+   "tags": [],
+   "summary": "A readable review of the research on learning to read from the 1960s to 2015, covering the five keys to reading and the case for explicit teaching in every classroom.",
+   "region": "Australia",
+   "strand": "Syntheses of the field"
+  },
+  {
+   "type": "research",
+   "title": "Strong Beginnings: Report of the Teacher Education Expert Panel",
+   "url": "https://www.education.gov.au/quality-initial-teacher-education-review/resources/strong-beginnings-report-teacher-education-expert-panel",
+   "by": "Teacher Education Expert Panel (chaired by Mark Scott)",
+   "meta": [
+    "2023",
+    "Government report",
+    "Australia"
+   ],
+   "areas": [
+    18,
+    16
+   ],
+   "tags": [],
+   "summary": "The national report whose 14 recommendations include core content every teaching degree must cover, starting with the brain and learning and effective teaching practices.",
+   "region": "Australia"
+  },
+  {
+   "type": "research",
+   "title": "Teaching for how students learn: A model of learning and teaching",
+   "url": "https://www.edresearch.edu.au/resources/teaching-how-students-learn-model-learning-and-teaching",
+   "by": "AERO",
+   "meta": [
+    "2023",
+    "Model and practice guides",
+    "Australia"
+   ],
+   "areas": [
+    1,
+    2
+   ],
+   "tags": [],
+   "summary": "AERO's model links what is known about how students learn to the teaching practices that fit each phase of learning. Read it alongside How students learn best, the evidence paper behind it.",
+   "region": "Australia"
+  },
+  {
+   "type": "research",
+   "title": "What makes great teaching? Review of the underpinning research",
+   "url": "https://www.suttontrust.com/our-research/great-teaching/",
+   "by": "Coe, Aloisi, Higgins and Major (Sutton Trust)",
+   "meta": [
+    "2014",
+    "Evidence review",
+    "UK"
+   ],
+   "areas": [
+    2,
+    16
+   ],
+   "tags": [],
+   "summary": "A review of more than 200 pieces of research on which elements of teaching have the strongest evidence of improving attainment. It also names popular practices with no grounding in research.",
+   "region": "UK"
   }
  ],
  "shows": [
