@@ -561,7 +561,7 @@ _AU_WORDS = re.compile(r"\b(Australia|Australian|Victoria|Victorian|NSW|New Sout
 # Australians whose work also appears through overseas hosts and publishers (a Canadian podcast interviewing Pamela Snow
 # counts as Australian). Added to these automatically: every person on the Voices shelf marked Australia, the writers of
 # the Australian Substacks and the hosts of the Australian podcasts. Add a name here when a new one turns up.
-AUSTRALIAN_PEOPLE = ["John Sweller", "Slava Kalyuga", "Anne Castles", "Deslea Konza", "Jennifer Buckingham", "Kerry Hempenstall",
+AUSTRALIAN_PEOPLE = ["Lorraine Hammond", "John Sweller", "Slava Kalyuga", "Anne Castles", "Deslea Konza", "Jennifer Buckingham", "Kerry Hempenstall",
                      "Tanya Serry", "Reid Smith", "Toni Hatten-Roberts", "David Morkunas", "Jordana Hunter", "Ross Fox",
                      "Joanna Barbousas", "Steven Capp", "Noel Pearson"]
 _AU = {}
