@@ -265,6 +265,10 @@ ul, ol { padding-left: 1.2rem; }
 .lib-card-title a { color: var(--navy); }
 .lib-card-title a:hover { color: var(--accent-text); text-decoration: underline; text-underline-offset: 3px; }
 .lib-by { font-size: 0.93rem; line-height: 1.45; color: var(--muted); }
+/* Who is responsible for a resource: first on the details line, darker and heavier than the rest. */
+.lib-who { color: var(--navy); font-weight: 600; }
+.lib-who-by { font-weight: 400; color: var(--muted); }
+.lib-search-hint { margin: 0.6rem 0 0; font-size: 0.95rem; color: var(--muted); }
 .lib-focus { font-size: 0.9rem; font-weight: 700; color: var(--accent-text); }
 .lib-summary { font-size: 0.98rem; line-height: 1.5; color: var(--body); }
 .lib-card-foot { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; margin-top: auto; padding-top: 0.6rem; }
