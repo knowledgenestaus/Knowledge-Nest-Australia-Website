@@ -1655,7 +1655,7 @@ def tools_section():
                    ('<p class="lib-tool-note">%s</p>' % e(t["note"])) if t.get("note") else "", e(t.get("access", "Free")), e(domain_of(t["url"]))))
     return ('<section class="lib-group lib-tools" id="tools"><h2>Free assessment tools <span class="lib-count">%d</span></h2>'
             '<p class="lib-group-lead">Every tool here is free to use, some with a free sign-in. Australian tools come first. '
-            'Each tool is described in its publisher's own terms. Where the publisher does not state something, the card says so.</p>'
+            'Each tool is described in the terms its publisher uses. Where the publisher does not state something, the card says so.</p>'
             '<dl class="lib-tool-key">%s</dl><div class="lib-grid">%s</div>'
             '<p class="lib-backtop"><a href="#strands">Back to the list of strands <span aria-hidden="true">&uarr;</span></a></p></section>'
             % (len(tools), key, "".join(tool(t) for t in tools)))
