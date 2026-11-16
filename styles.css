@@ -982,3 +982,11 @@ html:not(.js) .nav-sub-toggle { display: none; }
 @media (min-width: 901px) and (max-width: 960px) { .nav-menu { transform: translateX(-62%); } }
 
 .lib-meant { padding: 0; border: 0; background: none; font: inherit; font-weight: 700; color: var(--navy); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+
+/* Assessment guide: filter chips, and the longer rows folded so tools can be compared at a glance. */
+.lib-tool-filter { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0 1.25rem; }
+.lib-tool-filter .lib-chip { min-height: 44px; padding: 0.45rem 0.95rem; border: 2px solid var(--navy); border-radius: 999px; background: white; color: var(--navy); font: inherit; font-weight: 700; cursor: pointer; }
+.lib-tool-filter .lib-chip[aria-pressed="true"] { background: var(--navy); color: white; }
+.lib-tool-more { position: relative; z-index: 2; margin: 0.6rem 0 0.4rem; }
+.lib-tool-more > summary { cursor: pointer; font-weight: 700; color: var(--navy); padding: 0.4rem 0; }
+.lib-tool-more[open] > summary { margin-bottom: 0.4rem; }

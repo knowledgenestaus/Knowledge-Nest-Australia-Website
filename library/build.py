@@ -135,7 +135,7 @@ MUST_SUBSTACKS = []
 # A Substack in substacks.json that is not named here is added at the end, so a new one never disappears.
 SUBSTACK_ORDER = [
     "Dr Haili Hughes",
-    "Knowledge for Teachers", "Chalk Dust", "Dr Nathaniel Swain", "On Education", "The Disruptive Educator", "Bill Hansberry",
+    "Knowledge for Teachers", "Chalk Dust", "Dr Nathaniel Swain", "On Education", "The Disruptive Educator", "Seeking Nisaba",
     "VIC Maths Notes", "Shaun Brien", "Kylie Hoey", "Publican Policy", "The Digital Delusion",
     "The Learning Dispatch", "The Learning Spy", "Tips for Teachers", "No More Marking", "Cognitive Coaching", "Tom Sherrington",
     "Dylan Wiliam", "Carousel: Teaching, Learning, Leading", "Andrew Old's Education Battleground", "Powerful Knowledge",
@@ -236,10 +236,10 @@ STRANDS = {
               "neurodevelopmental and lasts. Good teaching and intervention still help a great deal, but the difficulty does not simply go away. "
               "I've gathered webinars, short videos, guides and research on both, alongside developmental language disorder, ADHD, autism and inclusive practice.",
         note="These resources are here to support your teaching. They are not a substitute for assessment or advice from a qualified "
-             "professional, such as a psychologist, paediatrician or speech pathologist. Only a qualified professional can diagnose a learning disability.",
+             "professional, such as a psychologist, paediatrician or speech pathologist. Only a qualified professional can diagnose a learning disability. Support should never wait for a diagnosis, and a referral need not wait either. In July 2025 the American Psychiatric Association clarified that the DSM-5 does not require six months of specialised intervention on top of six months of quality schooling that targets the student's weakness.",
         groups={
             "Learning difficulties": "Students who are behind for any reason. Most catch up with strong whole-class teaching and well-chosen intervention.",
-            "Learning disabilities": "Specific learning disorders that persist despite good teaching and intervention. They are diagnosed by a psychologist and count as a disability under Australian law.",
+            "Learning disabilities": "Specific learning disorders that persist despite good teaching and intervention. They are usually diagnosed by a psychologist, who checks that the difficulty has lasted at least six months despite teaching aimed at it, and that it is not explained by gaps in instruction. They count as a disability under Australian law.",
             "Other disabilities and developmental conditions": "Conditions that often sit alongside learning difficulties and shape how a student learns.",
             "Inclusion": "What schools are asked to do for every student with a disability, and how to do it well.",
         },
@@ -265,6 +265,8 @@ STRANDS[13] = dict(
     intro="Different assessments answer different questions. Start with the guide to free assessment tools, which says what each one is for, who it suits, "
           "how it is given and how long it takes. Below it are webinars, podcasts and articles on choosing assessments and using the results.",
     tools=True,
+    note="These tools help you decide what to teach next and who needs more support. None of them diagnoses a learning disability, "
+         "which takes a qualified professional such as a psychologist or speech pathologist.",
     strands=[
         ("Screening, diagnostic assessment and progress monitoring", "Finding the students who need more, working out why, and checking that the support is working.",
          ("For how these fit into the tiers, see", 14)),
@@ -277,7 +279,7 @@ STRANDS[14] = dict(
           "the students who need more are found early, and extra support grows in step with need. New to it? Begin with the first group below, "
           "then follow the tiers in order.",
     note="Looking for resources on a particular condition, such as dyslexia, developmental language disorder, ADHD or autism? "
-         "They sit under Learning difficulties, disabilities and inclusion.",
+         "They sit under Learning difficulties, disabilities and inclusion. Nothing here replaces assessment or advice from a qualified professional.",
     strands=[
         ("What MTSS is and where to start", "Plain introductions to the tiers, why schools are moving to them, and what the model does and does not ask of you.",
          ("For the conditions that often sit behind a student's difficulty, see", 25)),
@@ -1663,33 +1665,45 @@ def strand_id(name):
 
 
 TOOL_KINDS = [("Screening", "A quick check given to everyone, to find the students who may need more support. It tells you who, not why."),
-              ("Diagnostic", "A closer look at one student, usually after screening, to find out exactly what they can and cannot do so teaching can be targeted."),
-              ("Progress monitoring", "Short, repeated checks for students receiving extra support, to see whether it is working.")]
+              ("Diagnostic", "A closer look at one student, usually after screening, to find out exactly what they can and cannot do so teaching can be targeted. It does not diagnose a disability."),
+              ("Progress monitoring", "Short, repeated checks for students receiving extra support, to see whether it is working."),
+              ("Questionnaire", "A set of questions a student, parent or teacher answers, about feelings or beliefs to do with reading."),
+              ("Norms", "A table of typical scores, so one student's result on another test can be compared with students of the same age.")]
 
 
 def tools_section():
     """The guide to free assessment tools at the top of the Assessment page, from library/data/assessments.json."""
     tools = _load("assessments.json", {}).get("tools", [])
-    tools = sorted(tools, key=lambda t: not t.get("au"))   # Australian tools first, otherwise in file order
+    tools = sorted(tools, key=lambda t: (bool(t.get("adult")), not t.get("au")))   # Australian tools first, tools made for adults last, otherwise in file order
     key = "".join("<div><dt>%s</dt><dd>%s</dd></div>" % (e(k), e(v)) for k, v in TOOL_KINDS)
     def row(label, value):
         return "<div><dt>%s</dt><dd>%s</dd></div>" % (e(label), e(value)) if value else ""
     def tool(t):
         kinds = "".join('<span class="lib-tool-kind">%s</span>' % e(k) for k in t.get("kind", []))
         au = '<span class="lib-tool-kind lib-tool-au">Australian</span>' if t.get("au") else ""
-        return ('<article class="lib-card lib-tool"><p class="lib-tool-kinds">%s%s</p><h3 class="lib-card-title"><a href="%s" target="_blank" rel="noopener">%s%s</a></h3>'
+        return ('<article class="lib-card lib-tool" data-kinds="%s"><p class="lib-tool-kinds">%s%s</p><h3 class="lib-card-title"><a href="%s" target="_blank" rel="noopener">%s%s</a></h3>'
                 '<p class="lib-by"><span class="lib-who"><span class="lib-who-by">By</span> %s</span></p><dl class="lib-tool-facts">%s</dl>%s'
                 '<p class="lib-card-foot"><span class="lib-tag lib-tag-free">%s</span><span class="lib-source">Opens at %s</span></p></article>'
-                % (kinds, au, ea(t["url"]), title_html(t["name"]), NEWTAB, e(t["by"]),
+                % (ea("|".join(t.get("kind", []))), kinds, au, ea(t["url"]), title_html(t["name"]), NEWTAB, e(t["by"]),
                    row("Assesses", t.get("focus")) + row("Year levels", t.get("years")) + row("How it is given", t.get("delivery")) + row("Time", t.get("time"))
-                   + row("What it measures", t.get("tells")) + row("Stated purpose", t.get("who")),
+                   + '</dl><details class="lib-tool-more"><summary>What it measures and why you would use it</summary><dl class="lib-tool-facts">'
+                   + row("What it measures", t.get("tells")) + row("Stated purpose", t.get("who")) + "</dl></details><dl hidden>",
                    ('<p class="lib-tool-note">%s</p>' % e(t["note"])) if t.get("note") else "", e(t.get("access", "Free")), e(domain_of(t["url"]))))
+    counts = [(k, sum(1 for t in tools if k in t.get("kind", []))) for k, _ in TOOL_KINDS]
+    buttons = ('<div class="lib-tool-filter" role="group" aria-label="Show tools by kind"><button type="button" class="lib-chip" data-kind="" aria-pressed="true">All %d</button>%s</div>'
+               '<p class="sr-only" id="toolCount" aria-live="polite"></p>'
+               % (len(tools), "".join('<button type="button" class="lib-chip" data-kind="%s" aria-pressed="false">%s %d</button>' % (ea(k), e(k), n) for k, n in counts if n)))
+    script = ("<script>(function(){var b=document.querySelectorAll('.lib-tool-filter button'),c=document.querySelectorAll('.lib-tool'),n=document.getElementById('toolCount');"
+              "b.forEach(function(x){x.addEventListener('click',function(){var k=x.getAttribute('data-kind'),s=0;"
+              "b.forEach(function(y){y.setAttribute('aria-pressed',y===x?'true':'false');});"
+              "c.forEach(function(t){var on=!k||t.getAttribute('data-kinds').split('|').indexOf(k)!==-1;t.hidden=!on;if(on)s++;});"
+              "n.textContent=s+' tools shown.';});});})();</script>")
     return ('<section class="lib-group lib-tools" id="tools"><h2>Free assessment tools <span class="lib-count">%d</span></h2>'
             '<p class="lib-group-lead">Every tool here is free to use, some with a free sign-in. Australian tools come first. '
             'Each tool is described in the terms its publisher uses. Where the publisher does not state something, the card says so.</p>'
-            '<dl class="lib-tool-key">%s</dl><div class="lib-grid">%s</div>'
+            '<dl class="lib-tool-key">%s</dl>%s<div class="lib-grid">%s</div>%s'
             '<p class="lib-backtop"><a href="#strands">Back to the list of strands <span aria-hidden="true">&uarr;</span></a></p></section>'
-            % (len(tools), key, "".join(tool(t) for t in tools)))
+            % (len(tools), key, buttons, "".join(tool(t) for t in tools), script))
 
 
 def strand_sections(items, plan):
