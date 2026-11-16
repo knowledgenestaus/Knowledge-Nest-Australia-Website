@@ -18967,6 +18967,26 @@
    ]
   },
   {
+   "type": "read",
+   "title": "The Reading Rope: Key ideas behind the metaphor",
+   "url": "https://www.thereadingleague.org/wp-content/uploads/2023/11/TRLC-Educators-and-Specialists-The-Reading-Rope-Key-Ideas-Behind-the-Metaphor.pdf",
+   "by": "Hollis Scarborough (The Reading League)",
+   "meta": [
+    "Presentation slides",
+    "2023",
+    "USA"
+   ],
+   "areas": [
+    33
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Hollis Scarborough's own slides explaining the Reading Rope she published in 2001 and the ideas behind it.",
+   "region": "International",
+   "strand": "Scarborough's Reading Rope"
+  },
+  {
    "type": "research",
    "title": "Principles of Instruction: Research-Based Strategies That All Teachers Should Know",
    "url": "https://www.aft.org/sites/default/files/Rosenshine.pdf",
@@ -19231,6 +19251,25 @@
    ],
    "summary": "A practice guide with five recommendations for teaching problem solving in the upper primary and lower secondary years, each rated for the strength of its evidence.",
    "region": "International"
+  },
+  {
+   "type": "research",
+   "title": "Decoding, Reading, and Reading Disability",
+   "url": "https://www.nomanis.com.au/hubfs/Nomanis_June2023/Pdf/Decoding,%20Reading.pdf",
+   "by": "Philip Gough and William Tunmer",
+   "meta": [
+    "1986",
+    "Foundational research",
+    "Reprinted in Nomanis, 2023"
+   ],
+   "areas": [
+    33
+   ],
+   "tags": [
+    "Foundational"
+   ],
+   "summary": "The short paper that proposed the Simple View of Reading, in which reading comprehension is the product of decoding and language comprehension. It follows that a reading difficulty can come from decoding, from comprehension or from both.",
+   "strand": "The Simple View of Reading"
   }
  ],
  "shows": [
