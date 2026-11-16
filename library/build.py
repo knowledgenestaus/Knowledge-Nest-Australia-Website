@@ -1699,6 +1699,8 @@ def strand_sections(items, plan):
         nav.append((strand_id(name), name))
         ordered = [x for k in STRAND_ORDER for x in mix([y for y in sub if y["type"] == k])]
         ordered += [x for x in sub if x["type"] not in STRAND_ORDER]
+        # A resource marked "landmark" leads its strand whatever its type, so a plain primer is never buried.
+        ordered = [x for x in ordered if x.get("landmark")] + [x for x in ordered if not x.get("landmark")]
         lead = e(about)
         if more:
             lead += ' %s <a href="%s">%s</a>.' % (e(more[0]), area_page(AREA[more[1]]), e(AREA[more[1]]["name"]))
