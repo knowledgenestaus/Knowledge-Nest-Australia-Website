@@ -138,3 +138,12 @@ python3 library/build.py
 - **Australian.** Any one of: a known Australian named as creator, guest or presenter (so an overseas podcast interviewing an Australian counts); `"region": "Australia"`; a country or state on the details line; an Australian show or Substack; an address ending in `.au`. Known Australians are gathered from the Voices shelf, the Australian Substacks and shows, plus `AUSTRALIAN_PEOPLE` in `build.py`. Add a name there when a new one turns up.
 - **Who made it.** Every card opens its details line with the creator in bold ("By ..."), followed by any guest or presenter from a `"with ..."` item in `meta`. Keep guests in that form so they show and can be searched.
 - **People search.** The library search ranks a match on the creator or guest line first, offers names as you type (the `libPeople` list, built by `people_names`), and heads the results "By or featuring ..." when the search is one of those names.
+
+## Branches, the assessment tools guide and Voices (November 2026)
+
+- **Three branches where there was one.** "MTSS and assessment" is now three top-level areas: MTSS (area 14), Assessment (area 13) and Learning difficulties, disabilities and inclusion (area 25). The page addresses did not change. The old combined page redirects to MTSS (`_redirects`). Two of the three use stand-in illustrations (`domain-assessment.webp` is a copy of `research.webp`; `domain-learning-difficulties-disabilities-and-inclusion.webp` is a copy of `areas.webp`). Replace those files when new artwork is ready.
+- **Learning difficulties versus learning disabilities.** The area 25 page is grouped under four headings (Learning difficulties; Learning disabilities; Other disabilities and developmental conditions; Inclusion). A strand's group is the fourth item of its tuple in `STRANDS[25]`, and the group descriptions are in `groups`.
+- **Free assessment tools.** `library/data/assessments.json` holds the guide shown at the top of the Assessment page and in search. Only free tools belong there. Check free access on the publisher's own site, say exactly what is free, and write "Not stated" where the publisher gives no time or year level. Australian tools (`"au": true`) are listed first.
+- **Every Assessment entry needs a strand** from `STRANDS[13]`.
+- **Nothing by John Hattie** is included in the library.
+- **Voices** need a public, free home for the person's or organisation's work. People without one (for example John Sweller, Anne Castles, Jennifer Buckingham) are represented through Research, Learn and Listen instead.

@@ -73,10 +73,10 @@ START_HERE = [
     dict(title="Structured literacy", areas=[27, 28, 29, 30, 31, 10],
          text="Phonics and fluency, comprehension and vocabulary, spelling and writing, taught systematically from Foundation to Year 6.",
          picks=["Science of Reading Presentation by Pamela Snow", "S7 E2 The Top 5 Ways", "029 How to Teach Students to Write"]),
-    dict(title="Multi-tiered systems of support and inclusion", areas=[14],
+    dict(title="MTSS", areas=[14],
          text="How strong whole-class teaching, early screening and targeted intervention fit together so every student gets the right support.",
          picks=["Leading MTSS", "S04E10", "S5 E17 MTSS for Reading"]),
-    dict(title="Assessment and data", areas=[13, 4],
+    dict(title="Assessment", areas=[13, 4],
          text="Which assessments answer which questions, and how to use what they tell you without drowning in data.",
          picks=["027 Getting Assessment Right", "S03E04", "Using data in MTSS: Screening"]),
 ]
@@ -193,14 +193,17 @@ DOMAIN_OF = {
     "Literacy": [11, 26, 27, 28, 29, 30, 31, 32, 10, 33],
     "Maths": [34, 35, 36, 37, 38, 39],
     "Knowledge-rich curriculum": [6],
-    "MTSS and assessment": [13, 14, 25],
+    "MTSS": [14],
+    "Assessment": [13],
+    "Learning difficulties, disabilities and inclusion": [25],
     "Research and evidence": [18],
 }
 for a in AREAS:
     for name, ns in DOMAIN_OF.items():
         if a["n"] in ns:
             a["domain"] = name
-DOMAIN_ORDER = ["How learning works", "Teaching practice", "Literacy", "Maths", "Knowledge-rich curriculum", "MTSS and assessment",
+DOMAIN_ORDER = ["How learning works", "Teaching practice", "Literacy", "Maths", "Knowledge-rich curriculum", "MTSS", "Assessment",
+                "Learning difficulties, disabilities and inclusion",
                 "Coaching and professional learning", "Leadership and culture", "Implementation and change", "Research and evidence"]
 assert all(a["domain"] in DOMAIN_ORDER for a in AREAS)
 # From here on AREAS is in display order: topic by topic, and inside a topic in the order given in DOMAIN_OF (otherwise by number).
@@ -227,29 +230,48 @@ RETIRED_PAGES = {
 # An area that is not listed here is laid out by type, as before.
 STRANDS = {
     25: dict(
-        intro="Some students keep finding reading, writing, maths or language hard, even when the teaching is good. I've gathered webinars, "
-              "short videos, guides and research here to help you understand why, and what strong support looks like at Tier 1, Tier 2 and Tier 3. "
-              "You'll also find webinars and guides, most of them Australian, on supporting students with ADHD, autistic students and other students with additional needs.",
+        intro="Learning difficulties and learning disabilities are not the same thing, and the difference matters for what a school does next. "
+              "A learning difficulty is any struggle with reading, writing or maths, often the result of gaps in teaching, missed schooling or other circumstances, "
+              "and it usually responds well to strong teaching and timely intervention. A learning disability, such as dyslexia, dysgraphia or dyscalculia, is "
+              "neurodevelopmental and lasts. Good teaching and intervention still help a great deal, but the difficulty does not simply go away. "
+              "I've gathered webinars, short videos, guides and research on both, alongside developmental language disorder, ADHD, autism and inclusive practice.",
         note="These resources are here to support your teaching. They are not a substitute for assessment or advice from a qualified "
-             "professional, such as a psychologist, paediatrician or speech pathologist.",
+             "professional, such as a psychologist, paediatrician or speech pathologist. Only a qualified professional can diagnose a learning disability.",
+        groups={
+            "Learning difficulties": "Students who are behind for any reason. Most catch up with strong whole-class teaching and well-chosen intervention.",
+            "Learning disabilities": "Specific learning disorders that persist despite good teaching and intervention. They are diagnosed by a psychologist and count as a disability under Australian law.",
+            "Other disabilities and developmental conditions": "Conditions that often sit alongside learning difficulties and shape how a student learns.",
+            "Inclusion": "What schools are asked to do for every student with a disability, and how to do it well.",
+        },
         strands=[
-            ("Understanding learning difficulties", "What learning difficulties and specific learning disorders are, how schools notice them through "
-             "tiered support, and what reasonable adjustments look like.", ("For screening, intervention and the tiers across a whole school, see", 14)),
-            ("Developmental language disorder", "A common and often hidden condition that makes understanding and using language hard, and what teachers can do "
-             "alongside speech pathologists.", None),
-            ("Dyslexia", "Persistent difficulty with accurate and fluent word reading and spelling, and the teaching and intervention that the evidence supports.", None),
-            ("Dysgraphia and written expression", "Difficulties with handwriting, spelling and getting ideas onto the page, and how to teach and support each one.", None),
+            ("Understanding learning difficulties", "What learning difficulties are, how they differ from learning disabilities, how schools notice them through "
+             "tiered support, and what reasonable adjustments look like.", ("For screening, intervention and the tiers across a whole school, see", 14), "Learning difficulties"),
+            ("Dyslexia", "Persistent difficulty with accurate and fluent word reading and spelling, and the teaching and intervention that the evidence supports.", None, "Learning disabilities"),
+            ("Dysgraphia and written expression", "Difficulties with handwriting, spelling and getting ideas onto the page, and how to teach and support each one.", None, "Learning disabilities"),
             ("Dyscalculia and maths difficulties", "Persistent difficulty with number and calculation, how it differs from gaps in what has been taught, "
-             "and what effective maths intervention involves.", None),
+             "and what effective maths intervention involves.", None, "Learning disabilities"),
+            ("Developmental language disorder", "A common and often hidden condition that makes understanding and using language hard, and what teachers can do "
+             "alongside speech pathologists.", None, "Other disabilities and developmental conditions"),
             ("ADHD", "These are the webinars and guides I'd share with a teacher who wants to understand attention and motivation, "
-             "and to set up a calm classroom where students with ADHD can do well. A few are made for families, and say so.", None),
+             "and to set up a calm classroom where students with ADHD can do well. A few are made for families, and say so.", None, "Other disabilities and developmental conditions"),
             ("Autism", "Here you'll find webinars and classroom guides, most of them Australian, on communication, sensory needs, visual schedules and transitions, "
-             "with autistic voices alongside the research.", None),
+             "with autistic voices alongside the research.", None, "Other disabilities and developmental conditions"),
+            ("Related needs", "Working memory and coordination difficulties, which often sit alongside the learning difficulties above.", None, "Other disabilities and developmental conditions"),
             ("Supporting students with additional needs", "I've gathered the practical things here, including what the Disability Standards ask of us, "
-             "how to plan adjustments and Individual Education Plans, and how to work well with education support staff.", None),
-            ("Related needs", "Working memory and coordination difficulties, which often sit alongside the learning difficulties above.", None),
+             "how to plan adjustments and Individual Education Plans, and how to work well with education support staff.", None, "Inclusion"),
         ]),
 }
+STRANDS[13] = dict(
+    intro="Different assessments answer different questions. Start with the guide to free assessment tools, which says what each one is for, who it suits, "
+          "how it is given and how long it takes. Below it are webinars, podcasts and articles on choosing assessments and using the results.",
+    tools=True,
+    strands=[
+        ("Screening, diagnostic assessment and progress monitoring", "Finding the students who need more, working out why, and checking that the support is working.",
+         ("For how these fit into the tiers, see", 14)),
+        ("Formative assessment", "Finding out what students have learned while there is still time to respond.", ("For classroom techniques, see", 4)),
+        ("Summative assessment, marking and reporting", "Tests, grades, rubrics, comparative judgement and what to report.", None),
+        ("Using assessment data well", "Getting from numbers to decisions without drowning in data.", None),
+    ])
 STRANDS[33] = dict(
     intro="Good literacy teaching rests on a handful of big ideas about how children learn to read, write and use language. "
           "I've gathered the frameworks and the research behind them here, so you can see where our practice comes from and explain it with confidence.",
@@ -1059,7 +1081,9 @@ DOMAIN_ABOUT = {
     "Literacy": "Oral language, phonological awareness, phonics, fluency, vocabulary, comprehension, spelling, handwriting and writing, with the research behind them.",
     "Maths": "Clear, evidence-informed maths teaching from the early years up.",
     "Knowledge-rich curriculum": "Sequencing knowledge so learning builds, within and across subjects.",
-    "MTSS and assessment": "Screening, assessment and tiered support, including for students with learning difficulties, disorders and additional needs.",
+    "MTSS": "Multi-tiered systems of support, from strong teaching for all to targeted and intensive intervention.",
+    "Assessment": "Screening, diagnostic assessment and progress monitoring, with a guide to the free assessment tools you can use in Australia.",
+    "Learning difficulties, disabilities and inclusion": "Learning difficulties, learning disabilities such as dyslexia, developmental language disorder, ADHD and autism, and inclusive practice.",
     "Coaching and professional learning": "Instructional coaching and professional learning that changes practice.",
     "Leadership and culture": "Instructional leadership, school culture, behaviour and strong teams.",
     "Implementation and change": "Putting good ideas into practice, and bringing people with you.",
@@ -1069,9 +1093,7 @@ DOMAIN_ABOUT = {
 
 # What a domain covers, shown as chips on its page. These are elements of understanding, not separate pages.
 DOMAIN_ELEMENTS = {
-    "MTSS and assessment": ["Tier 1: strong teaching for all", "Tier 2: targeted support", "Tier 3: intensive support",
-                            "Screening", "Progress monitoring", "Assessment and data", "Learning difficulties and disorders",
-                            "ADHD, autism and additional needs"],
+    "MTSS": ["Tier 1: strong teaching for all", "Tier 2: targeted support", "Tier 3: intensive support", "Screening", "Progress monitoring"],
 }
 
 
@@ -1109,8 +1131,6 @@ SEO = {
         "Free resources on structured literacy and the science of reading, from phonemic awareness and phonics to fluency, vocabulary, comprehension and writing."),
     "library-domain-maths.html": ("Explicit maths teaching resources",
         "Free videos, webinars and reading on explicit maths teaching, number fact fluency, problem solving, fractions, maths intervention and dyscalculia."),
-    "library-domain-mtss-and-assessment.html": ("MTSS, assessment and learning difficulties",
-        "Free resources on MTSS and tiered support, screening and assessment, and supporting students with dyslexia, DLD, dyscalculia, ADHD, autism and other needs."),
     "library-domain-leadership-and-culture.html": ("School leadership, culture and behaviour",
         "Free webinars, podcasts and reading for school leaders on instructional leadership, school culture, trust and behaviour, and building strong teams."),
     "library-domain-implementation-and-change.html": ("Implementation and change in schools",
@@ -1232,7 +1252,6 @@ DOMAIN_INTRO = {
     "Teaching practice": "This is where you'll find explicit instruction, retrieval practice, checking for understanding, classroom routines, participation and feedback, with plenty of lessons to watch.",
     "Literacy": "I've organised structured literacy and the science of reading into ten areas, in the order a teacher meets them across the primary years. The frameworks area explains the Simple View of Reading, Scarborough's Reading Rope and Pamela Snow's Language House.",
     "Maths": "I've organised maths into six areas, from explicit teaching and number fact fluency to problem solving, maths intervention and dyscalculia, and leading maths across a school.",
-    "MTSS and assessment": "Here you'll find multi-tiered systems of support (MTSS), screening and assessment, and support for students with dyslexia, developmental language disorder (DLD), dyscalculia, ADHD, autism and other additional needs.",
     "Leadership and culture": "I've gathered resources for principals and school leaders on instructional leadership, school culture and behaviour, and teams and middle leadership.",
     "Implementation and change": "Here you'll find guides and podcast episodes on implementation science in schools and on leading people through change.",
 }
@@ -1344,7 +1363,7 @@ def build_home():
              '<p class="lib-own">Looking for my own articles and a downloadable guide? <a href="resources.html">Find them here</a>.</p>'
              '</div></section>' % elements)
     body += newsletter_box("library") + credit_panels()
-    body += '<script src="library/search.js?v=9" defer></script>'
+    body += '<script src="library/search.js?v=10" defer></script>'
     shelves = [(t["title"], public(t["page"])) for t in TYPES.values()]
     topics = [(d, public(domain_page(d, counts))) for d in DOMAIN_ORDER if domain_areas(d, counts)]
     write("library.html", *seo("library.html", "", ""), body, items=shelves + topics + [("Podcasts by the VTLM 2.0", public("library-vtlm.html"))])
@@ -1392,7 +1411,7 @@ TOPIC_SECTION_MIN = 10   # a topic gets its own section on a shelf when the shel
 
 
 def lower_first(name):
-    """"Literacy" -> "literacy", but "MTSS and assessment" keeps its capitals."""
+    """"Literacy" -> "literacy", but "MTSS" keeps its capitals."""
     return name if name.split()[0].isupper() else name[0].lower() + name[1:]
 
 
@@ -1612,16 +1631,53 @@ def strand_id(name):
     return "strand-" + re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
 
 
+TOOL_KINDS = [("Screening", "A quick check given to everyone, to find the students who may need more support. It tells you who, not why."),
+              ("Diagnostic", "A closer look at one student, usually after screening, to find out exactly what they can and cannot do so teaching can be targeted."),
+              ("Progress monitoring", "Short, repeated checks for students receiving extra support, to see whether it is working.")]
+
+
+def tools_section():
+    """The guide to free assessment tools at the top of the Assessment page, from library/data/assessments.json."""
+    tools = _load("assessments.json", {}).get("tools", [])
+    tools = sorted(tools, key=lambda t: not t.get("au"))   # Australian tools first, otherwise in file order
+    key = "".join("<div><dt>%s</dt><dd>%s</dd></div>" % (e(k), e(v)) for k, v in TOOL_KINDS)
+    def row(label, value):
+        return "<div><dt>%s</dt><dd>%s</dd></div>" % (e(label), e(value)) if value else ""
+    def tool(t):
+        kinds = "".join('<span class="lib-tool-kind">%s</span>' % e(k) for k in t.get("kind", []))
+        au = '<span class="lib-tool-kind lib-tool-au">Australian</span>' if t.get("au") else ""
+        return ('<article class="lib-card lib-tool"><p class="lib-tool-kinds">%s%s</p><h3 class="lib-card-title"><a href="%s" target="_blank" rel="noopener">%s%s</a></h3>'
+                '<p class="lib-by"><span class="lib-who"><span class="lib-who-by">By</span> %s</span></p><dl class="lib-tool-facts">%s</dl>%s'
+                '<p class="lib-card-foot"><span class="lib-tag lib-tag-free">%s</span><span class="lib-source">Opens at %s</span></p></article>'
+                % (kinds, au, ea(t["url"]), title_html(t["name"]), NEWTAB, e(t["by"]),
+                   row("Assesses", t.get("focus")) + row("Year levels", t.get("years")) + row("How it is given", t.get("delivery")) + row("Time", t.get("time"))
+                   + row("What it tells you", t.get("tells")) + row("Most useful for", t.get("who")),
+                   ('<p class="lib-tool-note">%s</p>' % e(t["note"])) if t.get("note") else "", e(t.get("access", "Free")), e(domain_of(t["url"]))))
+    return ('<section class="lib-group lib-tools" id="tools"><h2>Free assessment tools <span class="lib-count">%d</span></h2>'
+            '<p class="lib-group-lead">Every tool here is free to use, some with a free sign-in. Australian tools come first. '
+            'A tool is only as useful as the decision it informs, so start with the question you need answered.</p>'
+            '<dl class="lib-tool-key">%s</dl><div class="lib-grid">%s</div>'
+            '<p class="lib-backtop"><a href="#strands">Back to the list of strands <span aria-hidden="true">&uarr;</span></a></p></section>'
+            % (len(tools), key, "".join(tool(t) for t in tools)))
+
+
 def strand_sections(items, plan):
     """The main column of an area that is organised by strand: the note, a "Jump to" list of the strands, then one
     section per strand with its description, a count and its cards. Every card shows its type. Within a strand
     the order is Learn, Watch, Read, Research, Listen, with sources spread through each of those groups.
     Also returns an "On this page" box for the side column."""
-    nav, out = [], ""
-    for name, about, more in plan["strands"]:
+    nav, out, last_group = [], "", None
+    if plan.get("tools"):
+        nav.append(("tools", "Free assessment tools"))
+        out += tools_section()
+    for name, about, more, *rest in plan["strands"]:
         sub = [x for x in items if name in strands_of(x)]
         if not sub:
             continue
+        group = rest[0] if rest else None
+        if group and group != last_group:
+            out += '<div class="lib-strand-grouphead"><h2>%s</h2><p>%s</p></div>' % (e(group), e(plan.get("groups", {}).get(group, "")))
+            last_group = group
         nav.append((strand_id(name), name))
         ordered = [x for k in STRAND_ORDER for x in mix([y for y in sub if y["type"] == k])]
         ordered += [x for x in sub if x["type"] not in STRAND_ORDER]
@@ -1864,6 +1920,11 @@ def build_search_index():
         if words:
             row["s"] = c(words)
         idx.append(row)
+    # The free assessment tools are searchable too, and open the tool itself.
+    for t in sorted(_load("assessments.json", {}).get("tools", []), key=lambda t: not t.get("au")):
+        idx.append({"t": c(t["name"]), "b": c(t["by"]), "u": t["url"], "y": "tool", "m": [c(m) for m in (t.get("focus"), t.get("years")) if m],
+                    "a": ["Assessment"], "g": [t.get("access", "Free")], "d": domain_of(t["url"]),
+                    "s": c(" ".join([" ".join(t.get("kind", [])), t.get("tells", ""), t.get("who", ""), "assessment tool screener"]))})
     json.dump(idx, open(os.path.join(ROOT, "library-search.json"), "w", encoding="utf8"), ensure_ascii=False, separators=(",", ":"))
 
 
@@ -1925,7 +1986,7 @@ def warnings():
     prose += [("description of Substack '%s'" % s["title"], s.get("desc", "")) for s in SUBSTACKS]
     prose += [("Start here text '%s'" % t["title"], t["text"]) for t in START_HERE]
     prose += [("domain text '%s'" % d, text) for d, text in DOMAIN_ABOUT.items()]
-    prose += [("strand text '%s'" % name, text) for plan in STRANDS.values() for name, text, _ in plan["strands"]]
+    prose += [("strand text '%s'" % name, text) for plan in STRANDS.values() for name, text, *_ in plan["strands"]]
     prose += [("%s of the strands for area %d" % (k, n), plan.get(k, "")) for n, plan in STRANDS.items() for k in ("intro", "note")]
     prose += [("featured.json why line for '%s'" % x.get("title"), x.get("why", "")) for x in FEATURED.get("items") or []]
     prose += [("featured.json intro", FEATURED.get("intro", ""))]
