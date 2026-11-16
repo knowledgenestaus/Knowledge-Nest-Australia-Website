@@ -135,7 +135,7 @@ MUST_SUBSTACKS = []
 # A Substack in substacks.json that is not named here is added at the end, so a new one never disappears.
 SUBSTACK_ORDER = [
     "Dr Haili Hughes",
-    "Knowledge for Teachers", "Chalk Dust", "Dr Nathaniel Swain", "On Education", "The Disruptive Educator", "Bill Hansberry",
+    "Knowledge for Teachers", "Chalk Dust", "Dr Nathaniel Swain", "On Education", "The Disruptive Educator", "Seeking Nisaba",
     "VIC Maths Notes", "Shaun Brien", "Kylie Hoey", "Publican Policy", "The Digital Delusion",
     "The Learning Dispatch", "The Learning Spy", "Tips for Teachers", "No More Marking", "Cognitive Coaching", "Tom Sherrington",
     "Dylan Wiliam", "Carousel: Teaching, Learning, Leading", "Andrew Old's Education Battleground", "Powerful Knowledge",
