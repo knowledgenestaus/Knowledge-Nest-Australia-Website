@@ -16306,6 +16306,23 @@
    "summary": "History educator and curriculum thinker, and co-creator of the Opening Worlds humanities curriculum. Her blog, The Dignity of the Thing, is widely read on knowledge and curriculum."
   },
   {
+   "type": "voice",
+   "title": "Marshall Roberts",
+   "url": "https://marshallroberts.substack.com",
+   "by": "",
+   "meta": [
+    "Substack",
+    "Australia"
+   ],
+   "areas": [
+    25
+   ],
+   "tags": [],
+   "summary": "Tasmanian literacy tutor and chairperson of Code REaD Dyslexia Network. His Substack, Seeking Nisaba, covers dyslexia, diagnosis and Tier 3 intervention, and his writing on the DSM-5 helped prompt the 2025 clarification on diagnosing specific learning disorders.",
+   "region": "Australia",
+   "strand": "Dyslexia"
+  },
+  {
    "type": "read",
    "title": "Instructional Illusions",
    "url": "https://paulkirschner173727.substack.com/p/instructional-illusions",
@@ -18766,6 +18783,73 @@
     "Free"
    ],
    "summary": "A large, regularly updated board of links for teachers supporting students with DLD, with a particular focus on adolescents. It gathers explanations of what DLD is, first-hand accounts from young people, checklists, diagnosis and treatment information, school-related articles and resources, vocabulary supports, wellbeing and behaviour, multilingualism, podcasts, professional learning and International DLD Day materials."
+  },
+  {
+   "type": "read",
+   "title": "DSM-5 Gatekeeping?",
+   "url": "https://marshallroberts.substack.com/p/dsm-5-gatekeeping",
+   "by": "Marshall Roberts (Seeking Nisaba)",
+   "meta": [
+    "Substack",
+    "2025",
+    "Australia"
+   ],
+   "areas": [
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Roberts argues that the DSM-5 does not require six months of intervention before a specific learning disorder can be diagnosed, and that waiting delays help for older students. A later note links to the American Psychiatric Association's clarification confirming this.",
+   "region": "Australia",
+   "strand": "Dyslexia"
+  },
+  {
+   "type": "read",
+   "title": "APA clarifies DSM-5 diagnosis for SLDs",
+   "url": "https://codereadnetwork.org/advocacy/apa-clarifies-dsm-5-diagnosis-for-slds/",
+   "by": "Code REaD Dyslexia Network",
+   "meta": [
+    "Statement",
+    "2025",
+    "Australia"
+   ],
+   "areas": [
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "The statement endorsed by the American Psychiatric Association in July 2025. It says the DSM-5 should not be read as requiring six months of specialised intervention beyond quality schooling, extensive documentation or a measured non-response before a diagnosis.",
+   "region": "Australia",
+   "strand": [
+    "Understanding learning difficulties",
+    "Dyslexia"
+   ]
+  },
+  {
+   "type": "read",
+   "title": "When success is failure: \"implementation casualties\"",
+   "url": "https://marshallroberts.substack.com/p/when-success-is-failure-implementation",
+   "by": "Marshall Roberts (Seeking Nisaba)",
+   "meta": [
+    "Substack",
+    "2025",
+    "Australia"
+   ],
+   "areas": [
+    14,
+    25
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Roberts warns that a system-wide move to structured literacy can lift results for most students while those with the greatest need, including students with dyslexia, still miss the intensive support they require.",
+   "region": "Australia",
+   "strand": [
+    "Tier 2 and Tier 3 intervention",
+    "Dyslexia"
+   ]
   },
   {
    "type": "research",
