@@ -5,7 +5,10 @@
    "name": "DIBELS 8th Edition: Australasian version",
    "by": "University of Oregon",
    "url": "https://dibels.uoregon.edu/materials/dibels-australasian",
-   "kind": ["Screening", "Progress monitoring"],
+   "kind": [
+    "Screening",
+    "Progress monitoring"
+   ],
    "focus": "Reading",
    "years": "Foundation to Year 8",
    "delivery": "One-to-one. The Maze comprehension task can be given to a whole class.",
@@ -20,7 +23,9 @@
    "name": "Year 1 Phonics Check",
    "by": "Australian Government, on the Literacy Hub",
    "url": "https://www.literacyhub.edu.au/plan-teach-and-assess/year-1-phonics-check/",
-   "kind": ["Screening"],
+   "kind": [
+    "Screening"
+   ],
    "focus": "Phonics and decoding",
    "years": "Year 1 (usually Term 3), Year 2 and older struggling readers",
    "delivery": "One-to-one, online or on paper",
@@ -35,7 +40,9 @@
    "name": "Year 1 Number Check",
    "by": "Australian Government, on the Mathematics Hub",
    "url": "https://www.mathematicshub.edu.au/plan-teach-and-assess/assessing/y1-number-check/",
-   "kind": ["Screening"],
+   "kind": [
+    "Screening"
+   ],
    "focus": "Early number",
    "years": "Year 1",
    "delivery": "One-to-one interview, online or on paper",
@@ -50,77 +57,268 @@
    "name": "CC2: Castles and Coltheart Test 2",
    "by": "MOTIf, Macquarie University (Anne Castles and colleagues)",
    "url": "https://www.motif.org.au/cc2",
-   "kind": ["Diagnostic"],
+   "kind": [
+    "Diagnostic"
+   ],
    "focus": "Single-word reading",
    "years": "Ages 6 to 11 and a half (Australian norms)",
    "delivery": "One-to-one",
-   "time": "Not stated. Up to 120 words, stopping early after five errors in a row of each type.",
+   "time": "Not stated. Up to 120 words, stopping after five errors in a row of each type.",
    "tells": "Whether a reading difficulty lies in sounding out (nonwords such as gop), in recognising whole words (irregular words such as yacht), or in both. Scores are compared with more than 1000 Australian children.",
-   "who": "Intervention teachers, learning support staff and specialists working out why a particular student is struggling to read words.",
-   "access": "Free PDF to print (you give a few details). The digital version is paid.",
+   "who": "Intervention teachers, learning support staff and specialists working out why a student is struggling to read words.",
+   "access": "Free PDF to print (you give a few details). A paid digital version is also available.",
    "au": true
   },
   {
    "name": "LeST: Letter Sound Test",
    "by": "MOTIf, Macquarie University",
    "url": "https://www.motif.org.au/lest",
-   "kind": ["Diagnostic"],
+   "kind": [
+    "Diagnostic"
+   ],
    "focus": "Letter-sound knowledge",
    "years": "Beginning and struggling readers",
    "delivery": "One-to-one",
    "time": "Not stated. 51 single letters and letter combinations.",
-   "tells": "Exactly which letter-sound correspondences a student can and cannot say, so you know which ones to teach next.",
-   "who": "Teachers and tutors planning phonics teaching or intervention for an individual student.",
-   "access": "Free PDF to print (you give a few details). The digital version is paid.",
+   "tells": "Exactly which letters and letter combinations a student can sound out on their own, so you know which to teach next.",
+   "who": "Teachers and tutors planning phonics teaching or intervention for one student.",
+   "access": "Free PDF to print (you give a few details). A paid digital version is also available.",
    "au": true
   },
   {
-   "name": "Diagnostic Spelling Tests (DiSTn, DiSTi, DiSTs and DiST-m)",
-   "by": "MOTIf, Macquarie University (Saskia Kohnen and colleagues)",
-   "url": "https://www.motif.org.au/tests",
-   "kind": ["Diagnostic"],
-   "focus": "Spelling",
-   "years": "Primary years and older struggling spellers",
-   "delivery": "See each test's page",
-   "time": "Not stated",
-   "tells": "Four tests that separate the parts of spelling. DiSTn checks sound-letter rules using nonwords, DiSTi checks irregular words, DiSTs checks whether each sound is written with the right letters, and DiST-m checks spelling of morphological patterns.",
-   "who": "Anyone who needs to know why a student's spelling is weak before choosing what to teach.",
-   "access": "Free PDFs to print. Some also have paid digital versions.",
+   "name": "DiRT: Diagnostic Reading Test for Nonwords",
+   "by": "MOTIf, Macquarie University",
+   "url": "https://www.motif.org.au/dirt",
+   "kind": [
+    "Diagnostic"
+   ],
+   "focus": "Decoding",
+   "years": "Not stated",
+   "delivery": "One-to-one",
+   "time": "Not stated. 105 nonwords.",
+   "tells": "Which of more than 60 letter-sound rules a student can apply when reading made-up words. Where the CC2 shows whether nonword reading is a problem, the DiRT shows which rules are missing.",
+   "who": "Intervention staff who need a detailed map of the letter-sound rules to teach.",
+   "access": "Free PDF to print (you give a few details)",
+   "au": true
+  },
+  {
+   "name": "LIDT: Letter Identification Test",
+   "by": "MOTIf, Macquarie University",
+   "url": "https://www.motif.org.au/lidt",
+   "kind": [
+    "Diagnostic"
+   ],
+   "focus": "Letter identification",
+   "years": "Not stated",
+   "delivery": "Group or one-to-one",
+   "time": "Not stated. 29 items.",
+   "tells": "Whether a student knows that upper and lower case forms, such as d and D, are the same letter.",
+   "who": "Teachers of beginning readers, and anyone checking the earliest building blocks for an older struggling reader.",
+   "access": "Free PDF to print (you give a few details)",
+   "au": true
+  },
+  {
+   "name": "LetPos: Letter Position Test",
+   "by": "MOTIf, Macquarie University",
+   "url": "https://www.motif.org.au/letpos",
+   "kind": [
+    "Screening",
+    "Diagnostic"
+   ],
+   "focus": "Letter position in words",
+   "years": "Primary years",
+   "delivery": "Not stated",
+   "time": "Not stated. 60 words.",
+   "tells": "Whether a student mixes up the order of letters inside words, such as reading slime as smile. It is particularly useful for screening for letter position dyslexia.",
+   "who": "Specialists and intervention teachers who see a student making anagram-style reading errors.",
+   "access": "Free PDF to print (you give a few details)",
+   "au": true
+  },
+  {
+   "name": "TOC: Test of Orthographic Choice",
+   "by": "MOTIf, Macquarie University",
+   "url": "https://www.motif.org.au/toc",
+   "kind": [
+    "Diagnostic"
+   ],
+   "focus": "Written word recognition",
+   "years": "Compared with students in the same year level",
+   "delivery": "Not stated",
+   "time": "Not stated. 30 items and two practice items.",
+   "tells": "How well a student recognises correct spellings by sight. The student chooses the real word from a pair that sound the same, such as doar and door.",
+   "who": "Teachers and specialists who want to know whether a student is storing whole-word spellings.",
+   "access": "Free PDF to print (you give a few details)",
    "au": true
   },
   {
    "name": "TERC: Test of Everyday Reading Comprehension",
    "by": "MOTIf, Macquarie University (Genevieve McArthur and colleagues)",
-   "url": "https://www.motif.org.au/tests",
-   "kind": ["Diagnostic"],
+   "url": "https://www.motif.org.au/terc",
+   "kind": [
+    "Diagnostic"
+   ],
    "focus": "Reading comprehension",
-   "years": "See the test's page",
-   "delivery": "See the test's page",
-   "time": "Not stated",
-   "tells": "How well a student understands the kinds of reading they meet in everyday life.",
-   "who": "Teachers and specialists who want a measure of comprehension to sit beside word reading results.",
-   "access": "Free PDF to print. A paid digital version is also available.",
+   "years": "Not stated",
+   "delivery": "One-to-one",
+   "time": "Not stated. 10 items of increasing difficulty.",
+   "tells": "Whether a student's reading is good enough for everyday tasks, such as ordering from a canteen menu or following the instructions on a medicine bottle.",
+   "who": "Teachers and specialists working with older struggling readers, where functional reading matters.",
+   "access": "Free PDF to print (you give a few details). A paid digital version is also available.",
    "au": true
   },
   {
-   "name": "More MOTIf tests",
+   "name": "DiSTs: Diagnostic Spelling Test for Sounds",
    "by": "MOTIf, Macquarie University",
-   "url": "https://www.motif.org.au/tests",
-   "kind": ["Diagnostic", "Questionnaire"],
-   "focus": "Reading and spelling",
-   "years": "Children, adolescents and adults, depending on the test",
-   "delivery": "See each test's page",
+   "url": "https://www.motif.org.au/dists",
+   "kind": [
+    "Diagnostic"
+   ],
+   "focus": "Spelling",
+   "years": "Not stated",
+   "delivery": "Group or one-to-one",
+   "time": "Not stated. 32 sounds.",
+   "tells": "Whether a student can write the letter or letters for common English sounds when they hear each sound on its own.",
+   "who": "Teachers planning early spelling teaching, and intervention staff checking the basics.",
+   "access": "Free PDF to print (you give a few details). A paid digital version is also available.",
+   "au": true
+  },
+  {
+   "name": "DiSTn: Diagnostic Spelling Test for Nonwords",
+   "by": "MOTIf, Macquarie University",
+   "url": "https://www.motif.org.au/distn",
+   "kind": [
+    "Diagnostic"
+   ],
+   "focus": "Spelling",
+   "years": "Not stated",
+   "delivery": "Group or one-to-one",
+   "time": "Not stated. 74 nonwords.",
+   "tells": "Which of more than 40 sound-letter rules a student can apply when spelling made-up words.",
+   "who": "Anyone who needs to know exactly which spelling rules to teach a student or a group.",
+   "access": "Free PDF to print (you give a few details)",
+   "au": true
+  },
+  {
+   "name": "DiSTi: Diagnostic Spelling Test for Irregular Words",
+   "by": "MOTIf, Macquarie University",
+   "url": "https://www.motif.org.au/disti",
+   "kind": [
+    "Diagnostic"
+   ],
+   "focus": "Spelling",
+   "years": "Norms for Years 1 to 7",
+   "delivery": "Group or one-to-one",
+   "time": "Not stated. 74 irregular words.",
+   "tells": "How well a student has stored the spellings of whole words that cannot be worked out from sound-letter rules.",
+   "who": "Teachers and specialists comparing a student's irregular word spelling with others in the same year level.",
+   "access": "Free PDF to print (you give a few details). A paid digital version is also available.",
+   "au": true
+  },
+  {
+   "name": "DiST-m: Diagnostic Spelling Test for Morphology",
+   "by": "MOTIf, Macquarie University",
+   "url": "https://www.motif.org.au/distm",
+   "kind": [
+    "Diagnostic"
+   ],
+   "focus": "Spelling and morphology",
+   "years": "From around Year 3 through secondary school",
+   "delivery": "Group or one-to-one",
+   "time": "Not stated. 28 items.",
+   "tells": "Which common suffixes and morphological spelling rules, such as past tense -ed, a student has learned. There are no published norms, but the error analysis shows what to teach.",
+   "who": "Teachers deciding which morphological spellings to focus on in class or in intervention.",
+   "access": "Free PDF to print (you give a few details)",
+   "au": true
+  },
+  {
+   "name": "MAAST: Macquarie Advanced Adult Spelling Test",
+   "by": "MOTIf, Macquarie University",
+   "url": "https://www.motif.org.au/maast",
+   "kind": [
+    "Diagnostic"
+   ],
+   "focus": "Spelling",
+   "years": "Adults",
+   "delivery": "Not stated",
+   "time": "Not stated. 72 words.",
+   "tells": "How well an adult spells difficult words that are commonly misspelled.",
+   "who": "Those working with adults, including in tertiary and adult education.",
+   "access": "Free PDF to print (you give a few details)",
+   "au": true
+  },
+  {
+   "name": "RAT: Reading Anxiety Tests",
+   "by": "MOTIf, Macquarie University",
+   "url": "https://www.motif.org.au/rat",
+   "kind": [
+    "Questionnaire"
+   ],
+   "focus": "Reading anxiety",
+   "years": "Children, adolescents and adults",
+   "delivery": "Questionnaire, completed by the student or a parent",
    "time": "Not stated",
-   "tells": "The rest of the suite covers letter identification (LIDT), nonword reading (DiRT), written word recognition (TOC), letter position (LetPos), reading anxiety questionnaires (RAT), an advanced adult spelling test (MAAST) and Australian norms for the TOWRE.",
-   "who": "Specialists and intervention teams who want a full picture of one student's reading and spelling.",
-   "access": "Every test has a free PDF to print",
+   "tells": "Whether a child, adolescent or adult has raised levels of anxiety about reading. There are five versions, including parent-report forms.",
+   "who": "Wellbeing staff, psychologists and intervention teachers who suspect a struggling reader is also anxious about reading.",
+   "access": "Free PDFs to print. The parent report for children also has a digital version.",
+   "au": true
+  },
+  {
+   "name": "NeST: negative evaluations about reading",
+   "by": "MOTIf, Macquarie University",
+   "url": "https://www.motif.org.au/nest",
+   "kind": [
+    "Questionnaire"
+   ],
+   "focus": "Feelings about reading",
+   "years": "Primary years",
+   "delivery": "Questionnaire, with child, parent and teacher versions",
+   "time": "Not stated",
+   "tells": "Whether a primary student feels they have been judged negatively about their reading by peers, teachers or parents. There are no norms, but the answers give insight into how the student sees themselves.",
+   "who": "Teachers and wellbeing staff supporting a student whose confidence in reading is low.",
+   "access": "Free PDF to print (you give a few details)",
+   "au": true
+  },
+  {
+   "name": "Australian norms for the TOWRE",
+   "by": "MOTIf, Macquarie University",
+   "url": "https://www.motif.org.au/torwre-australian-norms",
+   "kind": [
+    "Norms"
+   ],
+   "focus": "Word reading speed",
+   "years": "Primary years",
+   "delivery": "Used with the Test of Word Reading Efficiency",
+   "time": "Not applicable",
+   "tells": "How an Australian primary student's score on the 1999 TOWRE compares with Australian children. Best used in the second half of the school year.",
+   "who": "Specialists who already own the original TOWRE, which is a paid test.",
+   "access": "Free PDF of the norms. The TOWRE itself is sold separately.",
+   "au": true,
+   "note": "The norms are for the original 1999 TOWRE, not TOWRE-2."
+  },
+  {
+   "name": "BAPPA-F and BAPPA-R: plural processing in aphasia",
+   "by": "MOTIf, Macquarie University",
+   "url": "https://www.motif.org.au/bappaf",
+   "kind": [
+    "Diagnostic"
+   ],
+   "focus": "Adult language",
+   "years": "Adults with aphasia",
+   "delivery": "Not stated",
+   "time": "Not stated",
+   "tells": "How well a person with aphasia produces plurals, and whether word frequency or regularity affects it.",
+   "who": "Speech pathologists working with adults. These two are not school assessments, and are listed so the suite is complete.",
+   "access": "Free PDF to print (you give a few details)",
    "au": true
   },
   {
    "name": "Acadience Reading K-6",
    "by": "Acadience Learning",
    "url": "https://acadiencelearning.org/acadience-reading/reading-k-6/",
-   "kind": ["Screening", "Progress monitoring"],
+   "kind": [
+    "Screening",
+    "Progress monitoring"
+   ],
    "focus": "Reading",
    "years": "Foundation to Year 6 (American Kindergarten to Grade 6)",
    "delivery": "Mostly one-to-one. Maze can be given to a whole class.",
@@ -135,7 +333,10 @@
    "name": "Acadience Math",
    "by": "Acadience Learning",
    "url": "https://acadiencelearning.org/acadience-math/",
-   "kind": ["Screening", "Progress monitoring"],
+   "kind": [
+    "Screening",
+    "Progress monitoring"
+   ],
    "focus": "Maths",
    "years": "Foundation to Year 6 (American Kindergarten to Grade 6)",
    "delivery": "Early numeracy measures are one-to-one. Computation and problem-solving measures can be given to a group.",
@@ -150,7 +351,11 @@
    "name": "The rest of the Acadience family",
    "by": "Acadience Learning",
    "url": "https://acadiencelearning.org/resource-hub/",
-   "kind": ["Screening", "Diagnostic", "Progress monitoring"],
+   "kind": [
+    "Screening",
+    "Diagnostic",
+    "Progress monitoring"
+   ],
    "focus": "Reading and spelling",
    "years": "Preschool to Year 12, depending on the measure",
    "delivery": "Depends on the measure. Reading 7-8 and 9-12 are group-administered.",
@@ -161,10 +366,32 @@
    "au": false
   },
   {
+   "name": "CUBED-3",
+   "by": "Language Dynamics Group (Douglas Petersen and Trina Spencer)",
+   "url": "https://languagedynamicsgroup.com/cubed/get-cubed/",
+   "kind": [
+    "Screening",
+    "Diagnostic",
+    "Progress monitoring"
+   ],
+   "focus": "Oral language, decoding and reading comprehension",
+   "years": "Preschool to Year 8",
+   "delivery": "Not stated",
+   "time": "Screening in less than 5 minutes",
+   "tells": "How a student is going in both halves of reading. The Narrative Language Measures look at listening and reading comprehension through story retelling, and the decoding measures look at phonemic awareness, orthographic mapping and decoding.",
+   "who": "Schools that want a language measure alongside their decoding screener, which most free tools do not offer.",
+   "access": "Free paper and pencil version to download for personal use. The digital version is paid.",
+   "au": false,
+   "note": "American norms and spelling."
+  },
+  {
    "name": "PAST: Phonological Awareness Screening Test",
    "by": "David Kilpatrick",
    "url": "https://thepasttest.com/",
-   "kind": ["Screening", "Diagnostic"],
+   "kind": [
+    "Screening",
+    "Diagnostic"
+   ],
    "focus": "Phonological and phonemic awareness",
    "years": "Foundation onwards, including older struggling readers",
    "delivery": "One-to-one, spoken",
