@@ -1651,11 +1651,11 @@ def tools_section():
                 '<p class="lib-card-foot"><span class="lib-tag lib-tag-free">%s</span><span class="lib-source">Opens at %s</span></p></article>'
                 % (kinds, au, ea(t["url"]), title_html(t["name"]), NEWTAB, e(t["by"]),
                    row("Assesses", t.get("focus")) + row("Year levels", t.get("years")) + row("How it is given", t.get("delivery")) + row("Time", t.get("time"))
-                   + row("What it tells you", t.get("tells")) + row("Most useful for", t.get("who")),
+                   + row("What it measures", t.get("tells")) + row("Stated purpose", t.get("who")),
                    ('<p class="lib-tool-note">%s</p>' % e(t["note"])) if t.get("note") else "", e(t.get("access", "Free")), e(domain_of(t["url"]))))
     return ('<section class="lib-group lib-tools" id="tools"><h2>Free assessment tools <span class="lib-count">%d</span></h2>'
             '<p class="lib-group-lead">Every tool here is free to use, some with a free sign-in. Australian tools come first. '
-            'A tool is only as useful as the decision it informs, so start with the question you need answered.</p>'
+            'Each tool is described in its publisher's own terms. Where the publisher does not state something, the card says so.</p>'
             '<dl class="lib-tool-key">%s</dl><div class="lib-grid">%s</div>'
             '<p class="lib-backtop"><a href="#strands">Back to the list of strands <span aria-hidden="true">&uarr;</span></a></p></section>'
             % (len(tools), key, "".join(tool(t) for t in tools)))
