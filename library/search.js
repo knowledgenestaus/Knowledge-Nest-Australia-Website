@@ -172,7 +172,7 @@
       if (!hits.length) {
         moreWrap.hidden = true;
         note.textContent = 'Nothing found yet. Try a broader word, or browse by type or area below. If something is missing, ';
-        var mail = el('a', '', 'email a suggestion');
+        var mail = el('a', 'lib-textlink', 'email a suggestion');
         mail.href = SUGGEST;
         note.appendChild(mail);
         note.appendChild(document.createTextNode('.'));

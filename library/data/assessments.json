@@ -11,9 +11,9 @@
    ],
    "focus": "Reading",
    "years": "Foundation to Year 8",
-   "delivery": "Not stated on the overview page",
-   "time": "One minute for each measure",
-   "tells": "A set of short, one-minute fluency measures for assessing the acquisition of literacy skills: letter naming fluency, phonemic segmentation fluency, nonsense word fluency, word reading fluency, oral reading fluency and Maze. For dyslexia screening, the subtests measure processing speed, phonological awareness and the alphabetic principle.",
+   "delivery": "One-to-one for five of the six measures. Maze can be given to a group.",
+   "time": "One minute each for five of the six measures. Maze takes three minutes.",
+   "tells": "A set of short fluency measures for assessing the acquisition of literacy skills: letter naming fluency, phonemic segmentation fluency, nonsense word fluency, word reading fluency, oral reading fluency and Maze. For dyslexia screening, the subtests measure processing speed, phonological awareness and the alphabetic principle.",
    "who": "Universal screening, benchmark assessment and progress monitoring. The publisher describes it as a way to regularly detect risk and monitor the development of early literacy and early reading skills.",
    "access": "Free download",
    "au": true,
@@ -49,7 +49,7 @@
    "time": "Not stated. Choose the 20-item check or the shorter 12-item check.",
    "tells": "Whether students are developing the number and counting knowledge expected in Year 1. The 20-item check covers numeral identification, number sequences, skip counting, subitising, counting, addition and subtraction (including partitioning and flexible strategies) and multiplicative thinking.",
    "who": "Checking progress and planning early intervention for children who may not yet be at the expected level of development. It is not compulsory.",
-   "access": "Free",
+   "access": "Free with a teacher sign-in",
    "au": true,
    "note": "Aligned to the Australian Curriculum: Mathematics Version 9."
   },
@@ -325,7 +325,7 @@
    "time": "Brief measures",
    "tells": "The acquisition of early literacy and reading skills through six brief measures: First Sound Fluency (phonemic awareness), Letter Naming Fluency, Phoneme Segmentation Fluency (phonemic awareness), Nonsense Word Fluency (the alphabetic principle and basic phonics), Oral Reading Fluency with Retell (advanced phonics, word attack and reading connected text) and Maze (reading comprehension).",
    "who": "Universal screening, with research-based benchmarks for all measures and grades, to monitor the development of early literacy skills, provide timely instructional support and prevent later reading difficulties.",
-   "access": "Free download from the Acadience Resource Hub. The online data system is paid.",
+   "access": "Free download from the Acadience Resource Hub after you register an email address. The online data system is paid.",
    "au": false,
    "note": "American norms and spelling."
   },
@@ -343,27 +343,26 @@
    "time": "Brief measures",
    "tells": "Early numeracy, computation and problem solving through seven measures: Beginning Quantity Discrimination, Number Identification Fluency (naming the numerals 1 to 99), Next Number Fluency, Advanced Quantity Discrimination, Missing Number Fluency, Computation, and Concepts and Applications.",
    "who": "Universal screening designed to predict early mathematics success and identify students experiencing difficulty in acquiring foundational maths skills, and to detect the effects of intervention.",
-   "access": "Free download from the Acadience Resource Hub. The online data system is paid.",
+   "access": "Free download from the Acadience Resource Hub after you register an email address. The online data system is paid.",
    "au": false,
    "note": "Aligned to American standards, so check the fit with your scope and sequence."
   },
   {
-   "name": "The rest of the Acadience family",
+   "name": "Acadience RAN and Acadience Spelling",
    "by": "Acadience Learning",
-   "url": "https://acadiencelearning.org/resource-hub/",
+   "url": "https://acadiencelearning.org/acadience-reading/",
    "kind": [
-    "Screening",
-    "Diagnostic",
-    "Progress monitoring"
+    "Screening"
    ],
-   "focus": "Reading and spelling",
-   "years": "Preschool to Year 12, depending on the measure",
-   "delivery": "Depends on the measure. Reading 7-8 and 9-12 are group-administered.",
-   "time": "Depends on the measure",
-   "tells": "Reading Pre-K (PELI), ages 3 to 5, for pre-literacy and oral language skills needed for school. RAN, Kindergarten to Grade 1, for quick and accurate naming of repeated sets of familiar items as a predictor of future reading difficulties. Reading 7-8, for content-area literacy skills. Reading Survey, a companion tool to determine instructional level and progress monitoring. Reading Diagnostic PA and WRD, for phonemic awareness and word reading and decoding. Reading Diagnostic CFOL, for comprehension, fluency and oral language. There are also Spelling and Reading 9-12 measures.",
-   "who": "Extending Acadience screening to younger or older students, and diagnostic follow-up for students identified by screening.",
-   "access": "Materials are listed in the Resource Hub. Check each one, as some are sold through the Acadience store.",
-   "au": false
+   "focus": "Rapid naming and spelling",
+   "years": "Foundation and Year 1 (American Kindergarten and Grade 1)",
+   "delivery": "Not stated on the overview pages",
+   "time": "Not stated on the overview pages",
+   "tells": "Acadience RAN assesses quick and accurate naming of repeated sets of familiar items. Acadience Spelling is a measure for Kindergarten and Grade 1 that the publisher says may be particularly useful where spelling is required as part of screening for reading difficulties such as dyslexia.",
+   "who": "Adding rapid naming and spelling measures to Acadience Reading K-6 screening in the first two years of school.",
+   "access": "Free download from the Acadience downloads pages. Other Acadience tools (Reading 7-8 and the Reading Diagnostic) are sold through the publisher Voyager Sopris, so they are not listed here.",
+   "au": false,
+   "note": "American norms and spelling."
   },
   {
    "name": "CUBED-3",
@@ -380,7 +379,7 @@
    "time": "Screening in less than 5 minutes",
    "tells": "The dimensions of literacy: language, decoding and their product, reading comprehension. The Narrative Language Measures (NLM Listening and NLM Reading) measure the ability to comprehend and produce complex, academic language. The Dynamic Decoding Measures have four subtests: Phonemic Awareness, Phoneme Manipulation, Orthographic Mapping and Decoding Inventory.",
    "who": "Screening these skills in under five minutes, then gathering further data to identify specific weaknesses in language or decoding to inform instruction.",
-   "access": "Free paper and pencil version to download for personal use. The digital version is paid.",
+   "access": "Free paper and pencil version to download for personal use after you give a name and email address. The digital version is paid.",
    "au": false,
    "note": "American norms and spelling."
   },
