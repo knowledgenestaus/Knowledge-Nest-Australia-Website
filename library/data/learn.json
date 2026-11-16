@@ -4269,6 +4269,26 @@
    "length": "Under 10 minutes",
    "audience": "Leaders",
    "kind": "explainer"
+  },
+  {
+   "title": "Reading decodables video series",
+   "url": "https://www.speldnsw.org.au/literacy/reading-decodables-video-series/",
+   "by": "SPELD NSW",
+   "meta": [
+    "Short video series",
+    "Australia"
+   ],
+   "areas": [
+    27
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Veronica Alexander from SPELD NSW shows how to read a decodable book with a student, with practical tips for teachers, tutors and families who are getting started.",
+   "length": "Series",
+   "audience": "Teachers",
+   "region": "Australia",
+   "kind": "series"
   }
  ]
 }

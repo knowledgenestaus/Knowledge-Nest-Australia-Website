@@ -456,6 +456,27 @@ def read_thumb(url, img, name):
             '<span class="lib-thumb-name">%s</span>%s</a>' % (fit, ea(url), e(name), pic))
 
 
+def curriculum_thumb(x):
+    """The picture across the top of a curriculum card, so every collection has something to recognise it by. It is the
+    source's own picture from thumbs.json (its share image, logo or a picture from the page), linked from the creator's
+    server and never copied, and shown whole on pale blue so a logo is never cropped or stretched. A collection with no
+    picture of its own shows one of the site's illustrations instead: the one for its topic, or the Curriculum one.
+    Behind either sits the source's name, which shows if the picture fails to load."""
+    img = THUMBS.get(x["url"])
+    cls = " lib-thumb-fit"
+    if not img:
+        topics = domains_of(x)
+        key = ("domain-" + domain_slug(topics[0])) if topics else "curriculum"
+        if not os.path.exists(os.path.join(ROOT, "assets", "illo", key + ".webp")):
+            key = "curriculum"
+        if os.path.exists(os.path.join(ROOT, "assets", "illo", key + ".webp")):
+            img, cls = "assets/illo/%s.webp" % key, " lib-thumb-fit lib-thumb-illo"
+    pic = ('<img src="%s" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="600" height="338" '
+           'onerror="this.remove()">' % ea(img)) if img else ""
+    return ('<a class="lib-thumb lib-thumb-read%s" href="%s" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">'
+            '<span class="lib-thumb-name">%s</span>%s</a>' % (cls if img else "", ea(x["url"]), e(x["by"] or x["title"]), pic))
+
+
 def card(x, show_type=True, level="h3", filterable=False):
     t = TYPES[x["type"]]
     bits = [e(m) for m in shown_meta(x)]
@@ -494,6 +515,8 @@ def card(x, show_type=True, level="h3", filterable=False):
         # What kind of video it is, shown on the corner of the picture. It is real text (the picture link is hidden from
         # screen readers, so the label sits outside it) and reads before the title.
         thumb += '<p class="lib-kind lib-kind-%s">%s</p>' % (x["type"], e(kind_label(x)))
+    elif x["type"] == "curriculum":
+        thumb = curriculum_thumb(x)
     elif read_top:
         # The article's lead image across the top of the card (no play button). Without one, or if it fails to load,
         # the tile shows the publication or source on pale blue, so every card in a row lines up.
@@ -503,10 +526,10 @@ def card(x, show_type=True, level="h3", filterable=False):
                 'onerror="this.remove()">%s' % (ea(stack["icon"]), line))
     head = '%s%s<%s class="lib-card-title"><a href="%s" target="_blank" rel="noopener">%s%s</a></%s>%s' % (
         badge, focus, level, ea(x["url"]), title_html(x["title"]), NEWTAB, level, ('<p class="lib-by">%s</p>' % line) if line else "")
-    # A small picture beside the heading: the show's cover art on episodes, the page's own preview image on research and
-    # curriculum (and on reading when READ_PICTURE is "side").
+    # A small picture beside the heading: the show's cover art on episodes, the page's own preview image on research
+    # (and on reading when READ_PICTURE is "side"). Curriculum cards carry their picture across the top instead.
     # Linked from the creator's server, never copied; if it fails to load it is removed and the card reads as plain text.
-    side_types = ("research", "curriculum") if read_top else ("read", "research", "curriculum")
+    side_types = ("research",) if read_top else ("read", "research")
     side = SHOW_ART.get(x["by"]) if x["type"] == "listen" else (THUMBS.get(x["url"]) if x["type"] in side_types else None)
     if side:
         w, h = (56, 56) if x["type"] == "listen" else (64, 64)
@@ -964,7 +987,7 @@ SEO = {
     "library-voices.html": ("Education researchers and writers to follow",
                             "The researchers, teachers, writers and organisations worth following, from Pamela Snow and Dylan Wiliam to the Grattan Institute, with links to their work."),
     "library-curriculum.html": ("Free curriculum and lesson materials",
-                                "Openly available lesson materials and scope and sequences, from Victorian Lesson Plans and the VTLM 2.0 guides to Core Knowledge, Oak and NCETM maths."),
+                                "Openly available lesson materials, scope and sequences and decodable readers. Australian collections first, then Core Knowledge, Oak, TextProject and more."),
     "library-vtlm.html": ("VTLM 2.0 podcasts for Victorian teachers",
                           "Podcast episodes matched to each element of learning and teaching in the Victorian Teaching and Learning Model 2.0, and to current Victorian priorities."),
     # Topics (domain pages)
@@ -1108,7 +1131,7 @@ SHELF_INTRO = {
     "listen": "My favourite education podcasts are at the top, and below them episodes sorted by topic, from the science of reading and explicit instruction to maths, MTSS and leadership.",
     "research": "Foundational papers, reviews and meta-analyses, grouped by topic. You'll find the classics on cognitive load and explicit instruction alongside reading research, coaching, leadership and implementation.",
     "voice": "The researchers, teachers, writers and organisations whose work I keep coming back to, in Australia and beyond. Each links to their own site, Substack or podcast.",
-    "curriculum": "Openly available lesson materials, scope and sequences and guides, from Victorian Lesson Plans and the VTLM 2.0 guides to Core Knowledge, Oak National Academy and NCETM.",
+    "curriculum": "Openly available lesson materials, scope and sequences, decodable readers and guides. Australian collections come first, from Victorian Lesson Plans and the Literacy Hub to Connective Fluency, followed by Core Knowledge, Oak National Academy, TextProject and more from overseas.",
 }
 # "See also" on an area page: closely related areas in other topics (Related areas already lists the same topic).
 SEE_ALSO = {
@@ -1358,7 +1381,22 @@ def build_types():
         lead = e(SHELF_INTRO.get(key, t["blurb"])) + " Every entry links to the original."
         intro = outro = ""
         hero_jump = ""
-        if key in ("voice", "curriculum"):
+        if key == "curriculum":
+            # Australian collections first, then those from overseas, each in alphabetical order. An entry is Australian
+            # when its "region" is "Australia"; anything else is filed under international.
+            items = sorted(items, key=lambda x: (x.get("region") != "Australia", x["title"].lower()))
+            for x in items:
+                if not x.get("region"):
+                    print('WARNING: curriculum entry has no "region" ("Australia" or "International"), filed under international: %s' % x["title"])
+            groups = [("australian", "Australian", "Written for Australian classrooms, by Australian teachers, organisations and education departments.",
+                       [x for x in items if x.get("region") == "Australia"]),
+                      ("international", "International", "Collections from overseas, mostly the United Kingdom and the United States. Year levels and spelling may need a little translating.",
+                       [x for x in items if x.get("region") != "Australia"])]
+            groups = [g for g in groups if g[3]]
+            nav = [(gid, name) for gid, name, _, _ in groups]
+            sections = "".join('<section class="lib-group" id="%s"><h2>%s <span class="lib-count">%d</span></h2><p class="lib-group-lead">%s</p>%s</section>'
+                               % (gid, name, len(sub), e(about), cards(sub, False, "h3")) for gid, name, about, sub in groups)
+        elif key == "voice":
             items = sorted(items, key=lambda x: x["title"].lower())
             nav, sections = [], '<section class="lib-group">%s</section>' % cards(items, False, "h2")
         elif key in ("watch", "learn", "read"):
