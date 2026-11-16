@@ -156,10 +156,10 @@
   },
   {
    "n": 13,
-   "name": "Assessment and data",
+   "name": "Assessment",
    "slug": "assessment-and-data",
    "domain": "Assessment and support",
-   "about": "Which assessments answer which questions, and how to use them without drowning in data.",
+   "about": "Which assessments answer which questions, a guide to the free assessment tools available in Australia, and how to use data without drowning in it.",
    "practices": [
     "Screening",
     "diagnostics",
@@ -170,10 +170,10 @@
   },
   {
    "n": 14,
-   "name": "Tiered support and inclusion",
+   "name": "MTSS",
    "slug": "tiered-support-and-inclusion",
    "domain": "Assessment and support",
-   "about": "How strong whole-class teaching, early screening and targeted intervention fit together.",
+   "about": "How multi-tiered systems of support (MTSS) fit together, from strong whole-class teaching and early screening to targeted intervention.",
    "practices": [
     "Tier 1, 2 and 3",
     "intervention selection",
@@ -183,10 +183,10 @@
   },
   {
    "n": 25,
-   "name": "Learning difficulties, disorders and additional needs",
+   "name": "Learning difficulties, disabilities and inclusion",
    "slug": "learning-difficulties-disorders-and-additional-needs",
    "domain": "Assessment and support",
-   "about": "Dyslexia, dysgraphia, dyscalculia, developmental language disorder, ADHD, autism and other additional needs, and what strong support looks like at every tier.",
+   "about": "Learning difficulties, learning disabilities such as dyslexia, dysgraphia and dyscalculia, developmental language disorder, ADHD and autism, and what inclusive support looks like at every tier.",
    "practices": [
     "Early identification",
     "evidence-based intervention",
@@ -1671,7 +1671,8 @@
    "subject": "Across subjects",
    "region": "Australia",
    "kind": "interview",
-   "audience": "Leaders"
+   "audience": "Leaders",
+   "strand": "Screening, diagnostic assessment and progress monitoring"
   },
   {
    "type": "watch",
@@ -1692,7 +1693,8 @@
    "subject": "Across subjects",
    "region": "Australia",
    "kind": "interview",
-   "audience": "Leaders"
+   "audience": "Leaders",
+   "strand": "Screening, diagnostic assessment and progress monitoring"
   },
   {
    "type": "watch",
@@ -4115,7 +4117,8 @@
     "Free"
    ],
    "summary": "Paul Spenceley, a science teacher involved in Wiliam and Black's King's College formative assessment project, shares classroom techniques he has refined over three decades.",
-   "focus": "Formative assessment"
+   "focus": "Formative assessment",
+   "strand": "Formative assessment"
   },
   {
    "type": "listen",
@@ -4433,7 +4436,8 @@
     "Free"
    ],
    "summary": "Daisy Christodoulou discusses getting assessment right, how assessment shapes what happens in classrooms, and the use of comparative judgement.",
-   "focus": "Assessment design"
+   "focus": "Assessment design",
+   "strand": "Summative assessment, marking and reporting"
   },
   {
    "type": "listen",
@@ -4451,7 +4455,8 @@
     "Free"
    ],
    "summary": "Lissie Doyle explains how to run test feedback so students think hard about the process and learn from their mistakes.",
-   "focus": "Whole-class feedback"
+   "focus": "Whole-class feedback",
+   "strand": "Formative assessment"
   },
   {
    "type": "listen",
@@ -4779,22 +4784,6 @@
     "Free"
    ],
    "summary": "Adrian Simpson critiques the use of meta-analysis and effect sizes to rank teaching strategies, questioning an approach that has shaped policy in Australia and the UK."
-  },
-  {
-   "type": "listen",
-   "title": "018 John Hattie on meta-analysis",
-   "url": "https://www.ollielovell.com/johnhattie/",
-   "by": "Education Research Reading Room",
-   "meta": [
-    "with John Hattie"
-   ],
-   "areas": [
-    18
-   ],
-   "tags": [
-    "Free"
-   ],
-   "summary": "John Hattie responds to Adrian Simpson's critique in the previous episode and defends meta-analysis as a way of identifying what works in teaching."
   },
   {
    "type": "listen",
@@ -6710,7 +6699,8 @@
     "Free"
    ],
    "summary": "Matthew Burns explains the different categories of assessment, what each is for, and how data can inform reading and maths instruction and intervention.",
-   "focus": "Using data to drive intervention"
+   "focus": "Using data to drive intervention",
+   "strand": "Screening, diagnostic assessment and progress monitoring"
   },
   {
    "type": "listen",
@@ -6727,7 +6717,8 @@
     "Free"
    ],
    "summary": "Jocelyn Seamer addresses the common challenge of tracking students' reading progress when a school no longer uses a benchmark assessment.",
-   "focus": "Tracking reading growth"
+   "focus": "Tracking reading growth",
+   "strand": "Screening, diagnostic assessment and progress monitoring"
   },
   {
    "type": "listen",
@@ -6744,7 +6735,8 @@
     "Free"
    ],
    "summary": "Jocelyn Seamer works through assessing and grading reading in Years 3 to 6 and aligning practice with the Australian Curriculum achievement standards.",
-   "focus": "Reading assessment in 3 to 6"
+   "focus": "Reading assessment in 3 to 6",
+   "strand": "Using assessment data well"
   },
   {
    "type": "listen",
@@ -7194,11 +7186,12 @@
    "tags": []
   },
   {
-   "type": "read",
+   "type": "research",
    "title": "The Reading Guarantee",
    "url": "https://grattan.edu.au/wp-content/uploads/2024/02/The-Reading-Guarantee-Grattan-Institute-Report.pdf",
    "by": "Grattan Institute",
    "meta": [
+    "2024",
     "Report",
     "Australia"
    ],
@@ -7209,11 +7202,12 @@
    "strand": "Syntheses of the field"
   },
   {
-   "type": "read",
+   "type": "research",
    "title": "The Maths Guarantee: How to boost students' learning in primary schools",
    "url": "https://grattan.edu.au/report/maths-guarantee/",
    "by": "Grattan Institute",
    "meta": [
+    "2025",
     "Report",
     "Australia"
    ],
@@ -7419,11 +7413,12 @@
    "tags": []
   },
   {
-   "type": "read",
+   "type": "research",
    "title": "What Works Best 2025: Evidence guide for excellent schools",
    "url": "https://education.nsw.gov.au/about-us/education-data-and-research/what-works-best/what-works-best-2025-evidence-guide-for-excellent-schools",
    "by": "Centre for Education Statistics and Evaluation (NSW)",
    "meta": [
+    "2025",
     "Evidence guide",
     "Australia"
    ],
@@ -7752,7 +7747,7 @@
    ]
   },
   {
-   "type": "read",
+   "type": "research",
    "title": "Cognitive load theory: Research that teachers really need to understand",
    "url": "https://education.nsw.gov.au/about-us/education-data-and-research/cese/publications/literature-reviews/cognitive-load-theory.html",
    "by": "Centre for Education Statistics and Evaluation (NSW)",
@@ -7782,7 +7777,7 @@
    "tags": []
   },
   {
-   "type": "read",
+   "type": "research",
    "title": "How students learn best: An overview of the evidence",
    "url": "https://edresearch.edu.au/resources/how-students-learn-best",
    "by": "AERO",
@@ -7811,7 +7806,7 @@
    "tags": []
   },
   {
-   "type": "read",
+   "type": "research",
    "title": "The Science of Learning",
    "url": "https://www.deansforimpact.org/tools-and-resources/the-science-of-learning",
    "by": "Deans for Impact",
@@ -7889,7 +7884,7 @@
    "strand": "Syntheses of the field"
   },
   {
-   "type": "read",
+   "type": "research",
    "title": "Great Teaching Toolkit: Evidence Review",
    "url": "https://evidencebased.education/reports/",
    "by": "Coe, Rauch, Kime and Singleton (Evidence Based Education)",
@@ -8881,7 +8876,8 @@
     13
    ],
    "tags": [],
-   "summary": "Director of Education at No More Marking and author of Seven Myths About Education and Making Good Progress? She writes about assessment, writing and technology."
+   "summary": "Director of Education at No More Marking and author of Seven Myths About Education and Making Good Progress? She writes about assessment, writing and technology.",
+   "strand": "Summative assessment, marking and reporting"
   },
   {
    "type": "voice",
@@ -8897,7 +8893,8 @@
     13
    ],
    "tags": [],
-   "summary": "Former secondary teacher and Emeritus Professor of Educational Assessment at the UCL Institute of Education. He is best known for his work on formative assessment."
+   "summary": "Former secondary teacher and Emeritus Professor of Educational Assessment at the UCL Institute of Education. He is best known for his work on formative assessment.",
+   "strand": "Formative assessment"
   },
   {
    "type": "voice",
@@ -9016,23 +9013,6 @@
   },
   {
    "type": "voice",
-   "title": "Lyn Stone",
-   "url": "https://lifelongliteracy.com/",
-   "by": "",
-   "meta": [
-    "Blog",
-    "Australia"
-   ],
-   "areas": [
-    31,
-    33
-   ],
-   "tags": [],
-   "strand": "Spelling and morphology",
-   "summary": "Linguist and founder of Lifelong Literacy. The author of Reading for Life, Spelling for Life and Language for Life, she writes and teaches on research-supported literacy instruction."
-  },
-  {
-   "type": "voice",
    "title": "Jocelyn Seamer",
    "url": "https://jocelynseamer.simplero.com/blog",
    "by": "",
@@ -9046,22 +9026,6 @@
    ],
    "tags": [],
    "summary": "Australian educator who supports teachers and school leaders with evidence-informed reading and writing instruction. She hosts The Structured Literacy Podcast."
-  },
-  {
-   "type": "voice",
-   "title": "Lorraine Hammond",
-   "url": "https://theconversation.com/profiles/lorraine-hammond-161310",
-   "by": "",
-   "meta": [
-    "Talks and articles",
-    "Australia"
-   ],
-   "areas": [
-    2,
-    3
-   ],
-   "tags": [],
-   "summary": "Associate Professor at Edith Cowan University in Western Australia, known for her work on explicit instruction and early reading. Her talks and articles make the practical case for explicit teaching."
   },
   {
    "type": "voice",
@@ -9381,7 +9345,8 @@
    "region": "Australia",
    "kind": "interview",
    "length": "10 to 30 minutes",
-   "audience": "Leaders"
+   "audience": "Leaders",
+   "strand": "Using assessment data well"
   },
   {
    "type": "watch",
@@ -9518,7 +9483,8 @@
    "region": "Australia",
    "kind": "interview",
    "length": "10 to 30 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "strand": "Using assessment data well"
   },
   {
    "type": "watch",
@@ -9737,7 +9703,8 @@
     13
    ],
    "tags": [],
-   "summary": "Karen Woods answers a common question from schools that have dropped benchmarking, namely how to listen to students read and what to look for."
+   "summary": "Karen Woods answers a common question from schools that have dropped benchmarking, namely how to listen to students read and what to look for.",
+   "strand": "Screening, diagnostic assessment and progress monitoring"
   },
   {
    "type": "read",
@@ -9902,7 +9869,8 @@
    "region": "Australia",
    "kind": "school story",
    "length": "Under 10 minutes",
-   "audience": "Leaders"
+   "audience": "Leaders",
+   "strand": "Screening, diagnostic assessment and progress monitoring"
   },
   {
    "type": "watch",
@@ -9958,7 +9926,8 @@
    "region": "Australia",
    "kind": "interview",
    "length": "Under 10 minutes",
-   "audience": "Leaders"
+   "audience": "Leaders",
+   "strand": "Screening, diagnostic assessment and progress monitoring"
   },
   {
    "type": "watch",
@@ -10362,7 +10331,8 @@
    "region": "UK",
    "kind": "talk",
    "length": "10 to 30 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "strand": "Formative assessment"
   },
   {
    "type": "watch",
@@ -10392,7 +10362,8 @@
    "region": "USA",
    "kind": "school story",
    "length": "10 to 30 minutes",
-   "audience": "Leaders"
+   "audience": "Leaders",
+   "strand": "Screening, diagnostic assessment and progress monitoring"
   },
   {
    "type": "watch",
@@ -11095,7 +11066,10 @@
   },
   {
    "type": "read",
-   "strand": "Understanding learning difficulties",
+   "strand": [
+    "Understanding learning difficulties",
+    "Screening, diagnostic assessment and progress monitoring"
+   ],
    "title": "Introduction to a multi-tiered system of supports",
    "url": "https://edresearch.edu.au/resources/intro-multi-tiered-system-supports",
    "by": "AERO",
@@ -11122,7 +11096,10 @@
   },
   {
    "type": "research",
-   "strand": "Understanding learning difficulties",
+   "strand": [
+    "Understanding learning difficulties",
+    "Screening, diagnostic assessment and progress monitoring"
+   ],
    "title": "Supporting students significantly behind in literacy and numeracy",
    "url": "https://www.edresearch.edu.au/resources/supporting-students-significantly-behind-literacy-and-numeracy",
    "by": "AERO (Kate de Bruin and colleagues)",
@@ -11233,7 +11210,10 @@
   },
   {
    "type": "research",
-   "strand": "Understanding learning difficulties",
+   "strand": [
+    "Understanding learning difficulties",
+    "Screening, diagnostic assessment and progress monitoring"
+   ],
    "title": "Assisting Students Struggling with Reading: Response to Intervention and Multi-Tier Intervention in the Primary Grades",
    "url": "https://ies.ed.gov/ncee/wwc/PracticeGuide/3",
    "by": "What Works Clearinghouse",
@@ -11711,7 +11691,10 @@
   },
   {
    "type": "read",
-   "strand": "Dyscalculia and maths difficulties",
+   "strand": [
+    "Dyscalculia and maths difficulties",
+    "Screening, diagnostic assessment and progress monitoring"
+   ],
    "title": "Learning Difficulties Information Guide: Numeracy",
    "url": "https://www.education.vic.gov.au/Documents/school/teachers/teachingresources/discipline/english/reading/numeracy-guide.pdf",
    "by": "Department of Education, Victoria",
@@ -12521,13 +12504,14 @@
    "strand": "Syntheses of the field"
   },
   {
-   "type": "read",
+   "type": "research",
    "title": "Teaching Reading Is Rocket Science: What expert teachers of reading should know and be able to do",
    "url": "https://www.aft.org/ae/summer2020/moats",
    "by": "Louisa Moats, American Educator",
    "meta": [
-    "Article",
     "2020",
+    "Foundational research",
+    "American Educator",
     "USA"
    ],
    "areas": [
@@ -12535,6 +12519,7 @@
     16
    ],
    "tags": [
+    "Foundational",
     "Free"
    ],
    "summary": "Louisa Moats on what expert teachers of reading should know and be able to do, in the 2020 edition of her paper for American Educator.",
@@ -14306,7 +14291,8 @@
     "Free"
    ],
    "summary": "A clear introduction to comparative judgement, where teachers compare two pieces of writing rather than marking against a rubric, why it is more reliable, and what adding AI judges changes.",
-   "region": "UK"
+   "region": "UK",
+   "strand": "Summative assessment, marking and reporting"
   },
   {
    "type": "read",
@@ -14325,7 +14311,8 @@
     "Free"
    ],
    "summary": "Christodoulou explains why grades suggest sharper differences between students than really exist, the distortions this causes, and why reporting the probability of each grade gives a more honest picture.",
-   "region": "UK"
+   "region": "UK",
+   "strand": "Summative assessment, marking and reporting"
   },
   {
    "type": "read",
@@ -14345,7 +14332,8 @@
     "Free"
    ],
    "summary": "Drawing on a national history essay assessment, Christodoulou looks at what judges reward, including factual accuracy, and offers advice on writing clearer criteria for both human and AI markers.",
-   "region": "UK"
+   "region": "UK",
+   "strand": "Summative assessment, marking and reporting"
   },
   {
    "type": "read",
@@ -14365,7 +14353,8 @@
     "Free"
    ],
    "summary": "Christodoulou argues that detailed written comments describe weaknesses without helping students fix them, and makes the case for whole-class feedback and practice that changes what students do next.",
-   "region": "UK"
+   "region": "UK",
+   "strand": "Formative assessment"
   },
   {
    "type": "read",
@@ -15502,7 +15491,8 @@
     "Free"
    ],
    "summary": "Summarises Dylan Wiliam and Siobhan Leahy's five formative assessment strategies with practical tips for minute-by-minute teaching decisions.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Formative assessment"
   },
   {
    "type": "read",
@@ -15752,7 +15742,8 @@
     "Free"
    ],
    "summary": "A guest piece reframing formative assessment as formative action, using short loops that turn classroom evidence into immediate teaching decisions.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Formative assessment"
   },
   {
    "type": "read",
@@ -15846,6 +15837,341 @@
    ],
    "tags": [],
    "summary": "Perth-based head of professional growth and author of Teaching One-Pagers. His site offers free one-page guides on the science of learning and links to his DistillED newsletter."
+  },
+  {
+   "type": "voice",
+   "title": "AERO",
+   "url": "https://www.edresearch.edu.au/",
+   "by": "",
+   "meta": [
+    "Research and practice guides",
+    "Australia"
+   ],
+   "areas": [
+    2,
+    1
+   ],
+   "tags": [],
+   "summary": "The Australian Education Research Organisation, Australia's national education evidence body. It publishes practice guides, explainers and classroom videos on how students learn and which teaching practices work."
+  },
+  {
+   "type": "voice",
+   "title": "Alison Clarke (Spelfabet)",
+   "url": "https://www.spelfabet.com.au/",
+   "by": "",
+   "meta": [
+    "Blog",
+    "Australia"
+   ],
+   "areas": [
+    27,
+    31
+   ],
+   "tags": [],
+   "summary": "Melbourne speech pathologist whose Spelfabet site has long been a first stop for phonics and spelling. Her blog explains the research in plain language and reviews resources."
+  },
+  {
+   "type": "voice",
+   "title": "Trisha Jha",
+   "url": "https://publicanpolicy.substack.com",
+   "by": "",
+   "meta": [
+    "Substack",
+    "Australia"
+   ],
+   "areas": [
+    18,
+    17
+   ],
+   "tags": [],
+   "summary": "Australian education policy researcher who writes Publican Policy, on evidence, school reform and how the science of learning is playing out in Australian policy."
+  },
+  {
+   "type": "voice",
+   "title": "Learning Difficulties Australia",
+   "url": "https://ldaustralia.org/",
+   "by": "",
+   "meta": [
+    "Association",
+    "Australia"
+   ],
+   "areas": [
+    25,
+    14
+   ],
+   "tags": [],
+   "summary": "A national association of teachers and other professionals dedicated to helping students with learning difficulties through effective, evidence-based teaching.",
+   "strand": "Understanding learning difficulties"
+  },
+  {
+   "type": "voice",
+   "title": "AUSPELD",
+   "url": "https://auspeld.org.au/",
+   "by": "",
+   "meta": [
+    "Guides and resources",
+    "Australia"
+   ],
+   "areas": [
+    25
+   ],
+   "tags": [],
+   "summary": "The Australian federation of SPELD associations, supporting children and adults with learning difficulties and specific learning disabilities. It publishes the Understanding Learning Difficulties guides for teachers and parents.",
+   "strand": "Understanding learning difficulties"
+  },
+  {
+   "type": "voice",
+   "title": "NSW Centre for Education Statistics and Evaluation",
+   "url": "https://education.nsw.gov.au/about-us/education-data-and-research/cese",
+   "by": "",
+   "meta": [
+    "Research summaries",
+    "Australia"
+   ],
+   "areas": [
+    2,
+    18
+   ],
+   "tags": [],
+   "summary": "The research and evaluation centre of the NSW Department of Education. It produces What Works Best and widely read plain-language summaries, including its papers on cognitive load theory."
+  },
+  {
+   "type": "voice",
+   "title": "Brad Nguyen",
+   "url": "https://www.bradnguyen.com/",
+   "by": "",
+   "meta": [
+    "Free maths program",
+    "Australia"
+   ],
+   "areas": [
+    35,
+    34
+   ],
+   "tags": [],
+   "summary": "Australian educator who created Connective Fluency, a free maths fluency program for Years 1 to 6 built on daily rehearsal, paired practice and timed computation."
+  },
+  {
+   "type": "voice",
+   "title": "Alex Blanksby",
+   "url": "https://vmnalex.substack.com",
+   "by": "",
+   "meta": [
+    "Substack",
+    "Australia"
+   ],
+   "areas": [
+    34,
+    39
+   ],
+   "tags": [],
+   "summary": "Writes VIC Maths Notes, a Substack on teaching maths explicitly and what the evidence means for Victorian classrooms."
+  },
+  {
+   "type": "voice",
+   "title": "Anita Archer",
+   "url": "https://explicitinstruction.org/",
+   "by": "",
+   "meta": [
+    "Classroom videos",
+    "USA"
+   ],
+   "areas": [
+    2
+   ],
+   "tags": [],
+   "summary": "Co-author of Explicit Instruction: Effective and Efficient Teaching and one of the best-known teachers of explicit instruction. Her site has free classroom videos of the practices in action."
+  },
+  {
+   "type": "voice",
+   "title": "Education Endowment Foundation",
+   "url": "https://educationendowmentfoundation.org.uk/",
+   "by": "",
+   "meta": [
+    "Guidance reports",
+    "UK"
+   ],
+   "areas": [
+    18,
+    17
+   ],
+   "tags": [],
+   "summary": "An independent English charity that funds and summarises research on what works in schools. It is known for its Teaching and Learning Toolkit and its guidance reports."
+  },
+  {
+   "type": "voice",
+   "title": "Emily Hanford (Sold a Story)",
+   "url": "https://features.apmreports.org/sold-a-story/",
+   "by": "",
+   "meta": [
+    "Podcast",
+    "USA"
+   ],
+   "areas": [
+    33,
+    18
+   ],
+   "tags": [],
+   "summary": "American journalist whose podcast Sold a Story investigated how reading came to be taught in ways that ignore the research. It changed the public conversation about reading instruction.",
+   "strand": "Syntheses of the field"
+  },
+  {
+   "type": "voice",
+   "title": "Louisa Moats",
+   "url": "https://louisamoats.com/",
+   "by": "",
+   "meta": [
+    "Articles and books",
+    "USA"
+   ],
+   "areas": [
+    33,
+    31
+   ],
+   "tags": [],
+   "summary": "American literacy researcher, author of Speech to Print and Teaching Reading Is Rocket Science, and lead author of the LETRS professional learning program.",
+   "strand": "Syntheses of the field"
+  },
+  {
+   "type": "voice",
+   "title": "Mark Seidenberg",
+   "url": "https://seidenbergreading.net/",
+   "by": "",
+   "meta": [
+    "Blog",
+    "USA"
+   ],
+   "areas": [
+    33
+   ],
+   "tags": [],
+   "summary": "Cognitive scientist and author of Language at the Speed of Sight. He writes about reading research and how it is used, and misused, in classrooms.",
+   "strand": "Syntheses of the field"
+  },
+  {
+   "type": "voice",
+   "title": "The Reading League",
+   "url": "https://www.thereadingleague.org/",
+   "by": "",
+   "meta": [
+    "Guides and video",
+    "USA"
+   ],
+   "areas": [
+    33
+   ],
+   "tags": [],
+   "summary": "An American non-profit that promotes the science of reading. It publishes the Science of Reading: Defining Guide and a large library of free talks.",
+   "strand": "Syntheses of the field"
+  },
+  {
+   "type": "voice",
+   "title": "The Writing Revolution (Judith Hochman)",
+   "url": "https://www.thewritingrevolution.org/",
+   "by": "",
+   "meta": [
+    "Writing instruction",
+    "USA"
+   ],
+   "areas": [
+    10
+   ],
+   "tags": [],
+   "summary": "The organisation founded by Judith Hochman to share the Hochman Method of explicit writing instruction, set out in The Writing Revolution, which she wrote with Natalie Wexler."
+  },
+  {
+   "type": "voice",
+   "title": "Joan Sedita",
+   "url": "https://keystoliteracy.com/blog/",
+   "by": "",
+   "meta": [
+    "Blog",
+    "USA"
+   ],
+   "areas": [
+    10,
+    30
+   ],
+   "tags": [],
+   "summary": "Founder of Keys to Literacy and creator of The Writing Rope. Her Literacy Lines blog covers writing, comprehension and vocabulary instruction."
+  },
+  {
+   "type": "voice",
+   "title": "Sarah Powell",
+   "url": "https://www.sarahpowellphd.com/",
+   "by": "",
+   "meta": [
+    "Research and resources",
+    "USA"
+   ],
+   "areas": [
+    38,
+    34
+   ],
+   "tags": [],
+   "summary": "Professor at the University of Texas at Austin who researches maths difficulties and intervention. Her site shares free resources on word problems and maths intervention."
+  },
+  {
+   "type": "voice",
+   "title": "Anna Stokke",
+   "url": "https://www.annastokke.com/",
+   "by": "",
+   "meta": [
+    "Podcast",
+    "Canada"
+   ],
+   "areas": [
+    34,
+    39
+   ],
+   "tags": [],
+   "summary": "Mathematics professor at the University of Winnipeg and host of the Chalk & Talk podcast, where she interviews researchers and teachers about evidence-based teaching."
+  },
+  {
+   "type": "voice",
+   "title": "Alex Quigley",
+   "url": "https://alexquigley.co.uk/",
+   "by": "",
+   "meta": [
+    "Blog",
+    "UK"
+   ],
+   "areas": [
+    29,
+    30
+   ],
+   "tags": [],
+   "summary": "Former English teacher and author of Closing the Vocabulary Gap, Closing the Reading Gap and Closing the Writing Gap. He blogs about literacy across the curriculum."
+  },
+  {
+   "type": "voice",
+   "title": "Mary Myatt",
+   "url": "https://marymyatt.substack.com",
+   "by": "",
+   "meta": [
+    "Substack",
+    "UK"
+   ],
+   "areas": [
+    6
+   ],
+   "tags": [],
+   "summary": "Education adviser and author of The Curriculum: Gallimaufry to Coherence. Her Substack, Curriculum 101, is about building an ambitious, coherent curriculum."
+  },
+  {
+   "type": "voice",
+   "title": "Christine Counsell",
+   "url": "https://thedignityofthethingblog.wordpress.com/",
+   "by": "",
+   "meta": [
+    "Blog",
+    "UK"
+   ],
+   "areas": [
+    6
+   ],
+   "tags": [],
+   "summary": "History educator and curriculum thinker, and co-creator of the Opening Worlds humanities curriculum. Her blog, The Dignity of the Thing, is widely read on knowledge and curriculum."
   },
   {
    "type": "read",
@@ -16262,7 +16588,8 @@
     "Free"
    ],
    "summary": "Janetos weighs the time cost of running records against what they actually tell teachers, and argues for alternative assessments that pinpoint gaps in decoding and word knowledge.",
-   "region": "USA"
+   "region": "USA",
+   "strand": "Screening, diagnostic assessment and progress monitoring"
   },
   {
    "type": "read",
@@ -16761,7 +17088,10 @@
    ],
    "summary": "After her daughter's late dyslexia diagnosis despite strong standardised scores, the author lists signs teachers can watch for in reading, spelling and writing that test scores can miss.",
    "region": "International",
-   "strand": "Dyslexia"
+   "strand": [
+    "Dyslexia",
+    "Screening, diagnostic assessment and progress monitoring"
+   ]
   },
   {
    "type": "read",
@@ -16781,7 +17111,8 @@
     "Free"
    ],
    "summary": "Shinn explains multiple gating, a simple stepwise approach to reading screening that tests everyone briefly and only assesses further when needed, as an alternative to overloaded screening systems.",
-   "region": "USA"
+   "region": "USA",
+   "strand": "Screening, diagnostic assessment and progress monitoring"
   },
   {
    "type": "read",
@@ -16820,7 +17151,8 @@
     "Free"
    ],
    "summary": "Shinn reflects on how to read progress monitoring graphs from curriculum-based measures, including rate of improvement and when the data signal that an intervention should change.",
-   "region": "USA"
+   "region": "USA",
+   "strand": "Screening, diagnostic assessment and progress monitoring"
   },
   {
    "type": "read",
@@ -16840,7 +17172,8 @@
     "Free"
    ],
    "summary": "A long defence of oral reading fluency measures as a screening and progress monitoring tool, answering the common worry that they ignore comprehension.",
-   "region": "USA"
+   "region": "USA",
+   "strand": "Screening, diagnostic assessment and progress monitoring"
   },
   {
    "type": "read",
@@ -16879,7 +17212,8 @@
     "Free"
    ],
    "summary": "Drawing on 40 years of MTSS work, Shinn describes how benchmark screening has grown into too many tests, and argues for a simpler purpose and fewer measures.",
-   "region": "USA"
+   "region": "USA",
+   "strand": "Screening, diagnostic assessment and progress monitoring"
   },
   {
    "type": "read",
@@ -17059,7 +17393,8 @@
     "Free"
    ],
    "summary": "Explains why reported progress can appear to drop when schools adopt better teaching and more reliable assessment, and how leaders can prepare parents and staff for it.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Summative assessment, marking and reporting"
   },
   {
    "type": "read",
@@ -17294,7 +17629,8 @@
     "Free"
    ],
    "summary": "Argues for standardised assessments at the end of Year 6 and Year 10 in Australia, weighing objections and explaining what such data could tell schools about maths gaps.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Summative assessment, marking and reporting"
   },
   {
    "type": "read",
@@ -18280,6 +18616,193 @@
     "Free"
    ],
    "summary": "A large, regularly updated board of links for teachers supporting students with DLD, with a particular focus on adolescents. It gathers explanations of what DLD is, first-hand accounts from young people, checklists, diagnosis and treatment information, school-related articles and resources, vocabulary supports, wellbeing and behaviour, multilingualism, podcasts, professional learning and International DLD Day materials."
+  },
+  {
+   "type": "research",
+   "title": "Principles of Instruction: Research-Based Strategies That All Teachers Should Know",
+   "url": "https://www.aft.org/sites/default/files/Rosenshine.pdf",
+   "by": "Barak Rosenshine",
+   "meta": [
+    "2012",
+    "Foundational research",
+    "American Educator"
+   ],
+   "areas": [
+    2,
+    3
+   ],
+   "tags": [
+    "Foundational"
+   ],
+   "summary": "Rosenshine's ten principles, drawn from cognitive science, studies of master teachers and research on cognitive supports. The short article behind daily review, small steps, guided practice and checking for understanding."
+  },
+  {
+   "type": "research",
+   "title": "Cognitive Load During Problem Solving: Effects on Learning",
+   "url": "https://doi.org/10.1207/s15516709cog1202_4",
+   "by": "John Sweller",
+   "meta": [
+    "1988",
+    "Foundational research",
+    "Cognitive Science"
+   ],
+   "areas": [
+    1
+   ],
+   "tags": [
+    "Foundational"
+   ],
+   "summary": "The paper that launched cognitive load theory. Sweller shows that conventional problem solving can place such a heavy load on working memory that little is left over for learning.",
+   "region": "Australia"
+  },
+  {
+   "type": "research",
+   "title": "Cognitive Architecture and Instructional Design: 20 Years Later",
+   "url": "https://doi.org/10.1007/s10648-019-09465-5",
+   "by": "Sweller, van Merriënboer and Paas",
+   "meta": [
+    "2019",
+    "Open access",
+    "Educational Psychology Review"
+   ],
+   "areas": [
+    1,
+    2
+   ],
+   "tags": [
+    "Foundational",
+    "Open access"
+   ],
+   "summary": "The authors of the landmark 1998 account of cognitive load theory review two decades of further research, including the effects teachers now rely on such as worked examples, split attention and expertise reversal.",
+   "region": "Australia"
+  },
+  {
+   "type": "research",
+   "title": "Story of a Research Program",
+   "url": "https://edrev.asu.edu/index.php/ER/article/view/2025",
+   "by": "John Sweller",
+   "meta": [
+    "2016",
+    "Open access",
+    "Education Review"
+   ],
+   "areas": [
+    1
+   ],
+   "tags": [
+    "Open access"
+   ],
+   "summary": "John Sweller's own account of how cognitive load theory grew over four decades, from early problem-solving experiments to the theory used in classrooms today.",
+   "region": "Australia"
+  },
+  {
+   "type": "research",
+   "title": "Why Inquiry-based Approaches Harm Students' Learning",
+   "url": "https://www.cis.org.au/publication/why-inquiry-based-approaches-harm-students-learning/",
+   "by": "John Sweller, for the Centre for Independent Studies",
+   "meta": [
+    "2021",
+    "Analysis paper",
+    "Australia"
+   ],
+   "areas": [
+    2,
+    18
+   ],
+   "tags": [],
+   "summary": "Sweller sets out the evidence and the cognitive science for why explicit instruction is more effective than inquiry learning when students meet new material, and links the rise of inquiry approaches to Australia's falling results.",
+   "region": "Australia"
+  },
+  {
+   "type": "research",
+   "title": "Effective teaching practices for students with and without learning difficulties: Constructivism as a legitimate theory of learning AND of teaching?",
+   "url": "https://research.acer.edu.au/learning_processes/10/",
+   "by": "Ken Rowe (ACER)",
+   "meta": [
+    "2006",
+    "Background paper",
+    "Australia"
+   ],
+   "areas": [
+    2,
+    18
+   ],
+   "tags": [],
+   "summary": "Written after Rowe chaired the National Inquiry into the Teaching of Literacy, this paper weighs the evidence for direct, explicit instruction against constructivist approaches to teaching.",
+   "region": "Australia"
+  },
+  {
+   "type": "research",
+   "title": "Read About It: Scientific Evidence for Effective Teaching of Reading",
+   "url": "https://www.cis.org.au/app/uploads/2016/03/rr11.pdf",
+   "by": "Kerry Hempenstall, edited by Jennifer Buckingham (Centre for Independent Studies)",
+   "meta": [
+    "2016",
+    "Research report",
+    "Australia"
+   ],
+   "areas": [
+    33,
+    18
+   ],
+   "tags": [],
+   "summary": "A readable review of the research on learning to read from the 1960s to 2015, covering the five keys to reading and the case for explicit teaching in every classroom.",
+   "region": "Australia",
+   "strand": "Syntheses of the field"
+  },
+  {
+   "type": "research",
+   "title": "Strong Beginnings: Report of the Teacher Education Expert Panel",
+   "url": "https://www.education.gov.au/quality-initial-teacher-education-review/resources/strong-beginnings-report-teacher-education-expert-panel",
+   "by": "Teacher Education Expert Panel (chaired by Mark Scott)",
+   "meta": [
+    "2023",
+    "Government report",
+    "Australia"
+   ],
+   "areas": [
+    18,
+    16
+   ],
+   "tags": [],
+   "summary": "The national report whose 14 recommendations include core content every teaching degree must cover, starting with the brain and learning and effective teaching practices.",
+   "region": "Australia"
+  },
+  {
+   "type": "research",
+   "title": "Teaching for how students learn: A model of learning and teaching",
+   "url": "https://www.edresearch.edu.au/resources/teaching-how-students-learn-model-learning-and-teaching",
+   "by": "AERO",
+   "meta": [
+    "2023",
+    "Model and practice guides",
+    "Australia"
+   ],
+   "areas": [
+    1,
+    2
+   ],
+   "tags": [],
+   "summary": "AERO's model links what is known about how students learn to the teaching practices that fit each phase of learning. Read it alongside How students learn best, the evidence paper behind it.",
+   "region": "Australia"
+  },
+  {
+   "type": "research",
+   "title": "What makes great teaching? Review of the underpinning research",
+   "url": "https://www.suttontrust.com/our-research/great-teaching/",
+   "by": "Coe, Aloisi, Higgins and Major (Sutton Trust)",
+   "meta": [
+    "2014",
+    "Evidence review",
+    "UK"
+   ],
+   "areas": [
+    2,
+    16
+   ],
+   "tags": [],
+   "summary": "A review of more than 200 pieces of research on which elements of teaching have the strongest evidence of improving attainment. It also names popular practices with no grounding in research.",
+   "region": "UK"
   }
  ],
  "shows": [

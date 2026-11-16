@@ -9,7 +9,7 @@
   var clear = document.getElementById('clearSearch');
   if (!form || !input || !section) return;
 
-  var LABELS = { watch: 'Watch', listen: 'Listen', read: 'Read', research: 'Research', voice: 'Voices', curriculum: 'Curriculum', learn: 'Learn' };
+  var LABELS = { watch: 'Watch', listen: 'Listen', read: 'Read', research: 'Research', voice: 'Voices', curriculum: 'Curriculum', learn: 'Learn', tool: 'Assessment tool' };
   var SUGGEST = 'mailto:jo@knowledgenest.com.au?subject=Library%20suggestion';
   var PAGE = 60;   // results shown at a time; "Show more" brings the next lot
   var index = null;

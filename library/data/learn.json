@@ -125,7 +125,8 @@
    "length": "30 to 60 minutes",
    "audience": "Teachers",
    "region": "UK",
-   "kind": "webinar"
+   "kind": "webinar",
+   "strand": "Formative assessment"
   },
   {
    "title": "The Differentiation Conundrum: How to Pair Explicit Instruction with High Potential Learning",
@@ -190,7 +191,8 @@
    "length": "30 to 60 minutes",
    "audience": "Leaders",
    "region": "USA",
-   "kind": "webinar"
+   "kind": "webinar",
+   "strand": "Screening, diagnostic assessment and progress monitoring"
   },
   {
    "title": "MTSS in Specialist Schools: Same-Same or Different?",
@@ -394,7 +396,8 @@
    "length": "30 to 60 minutes",
    "audience": "Leaders",
    "region": "Australia",
-   "kind": "webinar"
+   "kind": "webinar",
+   "strand": "Screening, diagnostic assessment and progress monitoring"
   },
   {
    "title": "Building Strong Writers in Lower Primary: Structured, Explicit Instruction from Sentence to Text Level",
@@ -742,7 +745,8 @@
     "After our last data meeting, what changed in classrooms the following week?",
     "Which assessments do we collect but rarely act on?"
    ],
-   "kind": "webinar"
+   "kind": "webinar",
+   "strand": "Using assessment data well"
   },
   {
    "title": "Principal as Lead Learner Series: Enabling Learning, Embedding Explicit Instruction Schoolwide",
@@ -1009,7 +1013,8 @@
    "length": "30 to 60 minutes",
    "audience": "Leaders",
    "region": "USA",
-   "kind": "webinar"
+   "kind": "webinar",
+   "strand": "Screening, diagnostic assessment and progress monitoring"
   },
   {
    "title": "Principals' Forum: Marsden Road Public School, with Manisha Gazula",
@@ -1162,7 +1167,8 @@
    "length": "30 to 60 minutes",
    "audience": "Leaders",
    "region": "Australia",
-   "kind": "webinar"
+   "kind": "webinar",
+   "strand": "Screening, diagnostic assessment and progress monitoring"
   },
   {
    "title": "What you need to know about teaching primary mathematics",
@@ -1550,7 +1556,8 @@
    "length": "30 to 60 minutes",
    "audience": "Teachers",
    "region": "Australia",
-   "kind": "webinar"
+   "kind": "webinar",
+   "strand": "Screening, diagnostic assessment and progress monitoring"
   },
   {
    "title": "The Myth of Discovery-Based Learning in Maths",
@@ -1764,7 +1771,8 @@
    "length": "30 to 60 minutes",
    "audience": "Teachers",
    "region": "UK",
-   "kind": "webinar"
+   "kind": "webinar",
+   "strand": "Summative assessment, marking and reporting"
   },
   {
    "title": "What is the Science of Maths? Implications for Instruction",
@@ -2201,7 +2209,8 @@
    "length": "30 to 60 minutes",
    "audience": "Teachers",
    "region": "UK",
-   "kind": "talk"
+   "kind": "talk",
+   "strand": "Formative assessment"
   },
   {
    "title": "Dylan Wiliam: Leading teacher learning communities",
@@ -2264,7 +2273,8 @@
    "length": "30 to 60 minutes",
    "audience": "Leaders",
    "region": "USA",
-   "kind": "talk"
+   "kind": "talk",
+   "strand": "Screening, diagnostic assessment and progress monitoring"
   },
   {
    "title": "Morphology and spelling, with Lyn Stone",
@@ -2394,7 +2404,10 @@
    "strand": "Knowledge and comprehension"
   },
   {
-   "strand": "Understanding learning difficulties",
+   "strand": [
+    "Understanding learning difficulties",
+    "Screening, diagnostic assessment and progress monitoring"
+   ],
    "title": "Dr Kate Jacobs: Specific learning disorders (SLDs)",
    "url": "https://www.youtube.com/watch?v=pK2JBp1rtk8",
    "by": "Learning Difficulties Australia, with Kate Jacobs",
@@ -2417,7 +2430,10 @@
    "kind": "webinar"
   },
   {
-   "strand": "Understanding learning difficulties",
+   "strand": [
+    "Understanding learning difficulties",
+    "Screening, diagnostic assessment and progress monitoring"
+   ],
    "title": "Sarah Asome: Response to intervention",
    "url": "https://www.youtube.com/watch?v=RbcgktNpBq4",
    "by": "Learning Difficulties Australia, with Sarah Asome",
@@ -2586,7 +2602,10 @@
    "kind": "webinar"
   },
   {
-   "strand": "Dyslexia",
+   "strand": [
+    "Dyslexia",
+    "Screening, diagnostic assessment and progress monitoring"
+   ],
    "title": "Early identification of dyslexia: Research to practice, with Dr Hugh Catts",
    "url": "https://www.youtube.com/watch?v=OketeC-a1YU",
    "by": "The Windward Institute, with Hugh Catts",
@@ -2783,7 +2802,10 @@
    "kind": "webinar"
   },
   {
-   "strand": "Dysgraphia and written expression",
+   "strand": [
+    "Dysgraphia and written expression",
+    "Using assessment data well"
+   ],
    "title": "Evidence-based handwriting instruction and assessment webinar",
    "url": "https://www.youtube.com/watch?v=10sozBLV7Ko",
    "by": "Iowa Reading Research Center",
@@ -2929,7 +2951,10 @@
    "kind": "webinar"
   },
   {
-   "strand": "Dyscalculia and maths difficulties",
+   "strand": [
+    "Dyscalculia and maths difficulties",
+    "Screening, diagnostic assessment and progress monitoring"
+   ],
    "title": "Intensive intervention in mathematics: Course content",
    "url": "https://intensiveintervention.org/training/course-content/intensive-intervention-mathematics",
    "by": "National Center on Intensive Intervention",
@@ -4224,7 +4249,8 @@
    "region": "Australia",
    "length": "Under 10 minutes",
    "audience": "Leaders",
-   "kind": "explainer"
+   "kind": "explainer",
+   "strand": "Using assessment data well"
   },
   {
    "title": "Reading decodables video series",

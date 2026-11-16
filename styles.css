@@ -955,3 +955,20 @@ html:not(.js) .nav-sub-toggle { display: none; }
 .hero-figure::after { content: ""; position: absolute; z-index: -1; inset: -8% -12% -10%; pointer-events: none;
   background: radial-gradient(closest-side, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.82) 45%, rgba(255,255,255,0.4) 75%, rgba(255,255,255,0) 100%); }
 @media (max-width: 899px) { .hero-figure::after { inset: -14% -8%; } }
+
+/* Assessment tools guide and grouped strands */
+.lib-tool-key { display: grid; gap: 0.6rem; margin: 0 0 1.4rem; padding: 1rem 1.1rem; background: var(--sky-soft); border-radius: 12px; }
+.lib-tool-key div { display: grid; gap: 0.1rem; }
+.lib-tool-key dt { font-weight: 700; color: var(--navy); }
+.lib-tool-key dd { margin: 0; }
+.lib-tool-kinds { display: flex; flex-wrap: wrap; gap: 0.35rem; margin: 0 0 0.5rem; }
+.lib-tool-kind { font-size: 0.8rem; font-weight: 600; padding: 0.15rem 0.6rem; border-radius: 999px; background: var(--sky-soft); color: var(--navy); }
+.lib-tool-au { background: var(--navy); color: white; }
+.lib-tool-facts { margin: 0.6rem 0 0; display: grid; gap: 0.45rem; font-size: 0.95rem; }
+.lib-tool-facts dt { font-weight: 700; color: var(--navy); font-size: 0.85rem; }
+.lib-tool-facts dd { margin: 0; }
+.lib-tool-note { font-size: 0.9rem; color: var(--muted); margin: 0.6rem 0 0; }
+.lib-strand-grouphead { margin: 2.6rem 0 0.4rem; padding-top: 1.4rem; border-top: 2px solid var(--sky-soft); }
+.lib-strand-grouphead h2 { margin: 0 0 0.2rem; }
+.lib-strand-grouphead p { margin: 0; color: var(--muted); }
+.lib-type-tool { background: var(--sky-soft); color: var(--navy); }
