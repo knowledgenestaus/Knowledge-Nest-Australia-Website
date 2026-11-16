@@ -1650,7 +1650,8 @@
    "subject": "Across subjects",
    "region": "Australia",
    "kind": "school story",
-   "audience": "Leaders"
+   "audience": "Leaders",
+   "strand": "Leading and implementing MTSS"
   },
   {
    "type": "watch",
@@ -1672,7 +1673,10 @@
    "region": "Australia",
    "kind": "interview",
    "audience": "Leaders",
-   "strand": "Screening, diagnostic assessment and progress monitoring"
+   "strand": [
+    "Screening, diagnostic assessment and progress monitoring",
+    "Screening and data in MTSS"
+   ]
   },
   {
    "type": "watch",
@@ -1694,7 +1698,10 @@
    "region": "Australia",
    "kind": "interview",
    "audience": "Leaders",
-   "strand": "Screening, diagnostic assessment and progress monitoring"
+   "strand": [
+    "Screening, diagnostic assessment and progress monitoring",
+    "Screening and data in MTSS"
+   ]
   },
   {
    "type": "watch",
@@ -1715,7 +1722,8 @@
    "subject": "Across subjects",
    "region": "Australia",
    "kind": "interview",
-   "audience": "Leaders"
+   "audience": "Leaders",
+   "strand": "Leading and implementing MTSS"
   },
   {
    "type": "watch",
@@ -2438,7 +2446,6 @@
     "UK"
    ],
    "areas": [
-    14,
     5
    ],
    "tags": [
@@ -3108,7 +3115,8 @@
    ],
    "subject": "Literacy and English",
    "region": "UK",
-   "kind": "classroom footage"
+   "kind": "classroom footage",
+   "strand": "Tier 2 and Tier 3 intervention"
   },
   {
    "type": "watch",
@@ -3302,7 +3310,10 @@
    "summary": "Teaching assistants deliver a structured early reading intervention, ABRACADABRA, to Year 1 pupils in a UK school, adapting sessions to revisit the sounds children need more practice with.",
    "subject": "Literacy and English",
    "region": "UK",
-   "strand": "Supporting students with additional needs",
+   "strand": [
+    "Supporting students with additional needs",
+    "Tier 2 and Tier 3 intervention"
+   ],
    "kind": "classroom footage"
   },
   {
@@ -3649,7 +3660,6 @@
     "UK"
    ],
    "areas": [
-    14,
     2,
     25
    ],
@@ -3671,7 +3681,6 @@
     "UK"
    ],
    "areas": [
-    14,
     2,
     25
    ],
@@ -4954,7 +4963,8 @@
     "Free"
    ],
    "summary": "Sarah Brown and Stephanie Stollar work through six common mistakes schools make when implementing multi-tiered systems of support, and what to do instead.",
-   "focus": "Implementing MTSS"
+   "focus": "Implementing MTSS",
+   "strand": "Leading and implementing MTSS"
   },
   {
    "type": "listen",
@@ -4971,7 +4981,8 @@
     "Free"
    ],
    "summary": "Sarah Asome, principal of Bentleigh West Primary School, explains what multi-tiered systems of support look like in practice and how her school aligns its tiers.",
-   "focus": "Making every tier count"
+   "focus": "Making every tier count",
+   "strand": "What MTSS is and where to start"
   },
   {
    "type": "listen",
@@ -4982,7 +4993,6 @@
     "with Veronica Alexander"
    ],
    "areas": [
-    14,
     18,
     25
    ],
@@ -5211,7 +5221,6 @@
    "by": "Evidence into Action",
    "meta": [],
    "areas": [
-    14,
     25
    ],
    "tags": [
@@ -5252,7 +5261,8 @@
     "Free"
    ],
    "summary": "Stephanie Stollar explains how MTSS for reading differs from traditional RTI, describing it as a comprehensive framework for systems change.",
-   "focus": "MTSS for reading"
+   "focus": "MTSS for reading",
+   "strand": "What MTSS is and where to start"
   },
   {
    "type": "listen",
@@ -6702,7 +6712,8 @@
     "Free"
    ],
    "summary": "Jocelyn Seamer outlines the critical factors in strong Tier 1 instruction, arguing it is the real key to inclusive teaching.",
-   "focus": "Tier 1"
+   "focus": "Tier 1",
+   "strand": "Tier 1 teaching for every student"
   },
   {
    "type": "listen",
@@ -6719,7 +6730,8 @@
     "Free"
    ],
    "summary": "Jocelyn Seamer identifies five reasons Tier 2 intervention often fails, including misalignment with Tier 1 and asking struggling students to learn from separate programs.",
-   "focus": "Tier 2"
+   "focus": "Tier 2",
+   "strand": "Tier 2 and Tier 3 intervention"
   },
   {
    "type": "listen",
@@ -6736,7 +6748,8 @@
     "Free"
    ],
    "summary": "Jessica Colleu Terradas shares what she learned from visiting experts in the USA, England and France about effective literacy screening and intervention for at-risk students.",
-   "focus": "Screening and intervention"
+   "focus": "Screening and intervention",
+   "strand": "Screening and data in MTSS"
   },
   {
    "type": "listen",
@@ -6745,7 +6758,6 @@
    "by": "Evidence into Action",
    "meta": [],
    "areas": [
-    14,
     25
    ],
    "tags": [
@@ -8280,7 +8292,8 @@
    "areas": [
     14
    ],
-   "tags": []
+   "tags": [],
+   "strand": "Tier 1 teaching for every student"
   },
   {
    "type": "research",
@@ -9099,7 +9112,11 @@
     "F-10",
     "Australian Curriculum v9, Victorian Curriculum 2.0, NSW"
    ],
-   "areas": [],
+   "areas": [
+    6,
+    2,
+    34
+   ],
    "tags": [
     "Free account needed"
    ],
@@ -9217,7 +9234,12 @@
     "F-2",
     "Victorian Curriculum 2.0"
    ],
-   "areas": [],
+   "areas": [
+    27,
+    31,
+    32,
+    28
+   ],
    "tags": [
     "Free"
    ],
@@ -9233,7 +9255,11 @@
     "F-10",
     "Victorian Curriculum 2.0 and VTLM 2.0"
    ],
-   "areas": [],
+   "areas": [
+    2,
+    27,
+    34
+   ],
    "tags": [
     "Free"
    ],
@@ -9249,7 +9275,10 @@
     "F-10",
     "VTLM 2.0"
    ],
-   "areas": [],
+   "areas": [
+    2,
+    1
+   ],
    "tags": [
     "Free"
    ],
@@ -9283,7 +9312,10 @@
    "kind": "interview",
    "length": "10 to 30 minutes",
    "audience": "Leaders",
-   "strand": "Using assessment data well"
+   "strand": [
+    "Using assessment data well",
+    "Screening and data in MTSS"
+   ]
   },
   {
    "type": "watch",
@@ -9670,7 +9702,6 @@
     "Australia"
    ],
    "areas": [
-    14,
     25
    ],
    "tags": [
@@ -9760,7 +9791,8 @@
     15
    ],
    "tags": [],
-   "summary": "Stephanie Dehghani takes Graham Nuthall's line that ability is the consequence, not the cause, of what children learn, and considers what it means for supporting every student."
+   "summary": "Stephanie Dehghani takes Graham Nuthall's line that ability is the consequence, not the cause, of what children learn, and considers what it means for supporting every student.",
+   "strand": "Tier 1 teaching for every student"
   },
   {
    "type": "curriculum",
@@ -9807,7 +9839,10 @@
    "kind": "school story",
    "length": "Under 10 minutes",
    "audience": "Leaders",
-   "strand": "Screening, diagnostic assessment and progress monitoring"
+   "strand": [
+    "Screening, diagnostic assessment and progress monitoring",
+    "Leading and implementing MTSS"
+   ]
   },
   {
    "type": "watch",
@@ -9835,7 +9870,8 @@
    "region": "Australia",
    "kind": "interview",
    "length": "Under 10 minutes",
-   "audience": "Leaders"
+   "audience": "Leaders",
+   "strand": "Leading and implementing MTSS"
   },
   {
    "type": "watch",
@@ -9864,7 +9900,10 @@
    "kind": "interview",
    "length": "Under 10 minutes",
    "audience": "Leaders",
-   "strand": "Screening, diagnostic assessment and progress monitoring"
+   "strand": [
+    "Screening, diagnostic assessment and progress monitoring",
+    "Leading and implementing MTSS"
+   ]
   },
   {
    "type": "watch",
@@ -9891,7 +9930,8 @@
    "region": "Australia",
    "kind": "interview",
    "length": "Under 10 minutes",
-   "audience": "Leaders"
+   "audience": "Leaders",
+   "strand": "Leading and implementing MTSS"
   },
   {
    "type": "watch",
@@ -9982,7 +10022,6 @@
    ],
    "areas": [
     38,
-    14,
     25
    ],
    "tags": [
@@ -10025,7 +10064,8 @@
    "region": "Australia",
    "kind": "school story",
    "length": "Under 10 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "strand": "Tier 2 and Tier 3 intervention"
   },
   {
    "type": "watch",
@@ -10211,7 +10251,8 @@
    ],
    "subject": "Literacy and English",
    "region": "UK",
-   "kind": "classroom footage"
+   "kind": "classroom footage",
+   "strand": "Tier 2 and Tier 3 intervention"
   },
   {
    "type": "watch",
@@ -10300,7 +10341,10 @@
    "kind": "school story",
    "length": "10 to 30 minutes",
    "audience": "Leaders",
-   "strand": "Screening, diagnostic assessment and progress monitoring"
+   "strand": [
+    "Screening, diagnostic assessment and progress monitoring",
+    "Leading and implementing MTSS"
+   ]
   },
   {
    "type": "watch",
@@ -10983,7 +11027,6 @@
     "Australia"
    ],
    "areas": [
-    14,
     25
    ],
    "tags": [
@@ -11005,7 +11048,8 @@
    "type": "read",
    "strand": [
     "Understanding learning difficulties",
-    "Screening, diagnostic assessment and progress monitoring"
+    "Screening, diagnostic assessment and progress monitoring",
+    "What MTSS is and where to start"
    ],
    "title": "Introduction to a multi-tiered system of supports",
    "url": "https://edresearch.edu.au/resources/intro-multi-tiered-system-supports",
@@ -11029,13 +11073,15 @@
     "3-6",
     "Secondary"
    ],
-   "region": "Australia"
+   "region": "Australia",
+   "landmark": true
   },
   {
    "type": "research",
    "strand": [
     "Understanding learning difficulties",
-    "Screening, diagnostic assessment and progress monitoring"
+    "Screening, diagnostic assessment and progress monitoring",
+    "Tier 2 and Tier 3 intervention"
    ],
    "title": "Supporting students significantly behind in literacy and numeracy",
    "url": "https://www.edresearch.edu.au/resources/supporting-students-significantly-behind-literacy-and-numeracy",
@@ -11067,8 +11113,7 @@
     "Australia"
    ],
    "areas": [
-    25,
-    14
+    25
    ],
    "tags": [
     "Free"
@@ -11093,8 +11138,7 @@
     "Australia"
    ],
    "areas": [
-    25,
-    14
+    25
    ],
    "tags": [
     "Free"
@@ -11114,8 +11158,7 @@
     "Australia"
    ],
    "areas": [
-    25,
-    14
+    25
    ],
    "tags": [
     "Free"
@@ -11134,7 +11177,6 @@
     "UK"
    ],
    "areas": [
-    14,
     2,
     25
    ],
@@ -11149,7 +11191,8 @@
    "type": "research",
    "strand": [
     "Understanding learning difficulties",
-    "Screening, diagnostic assessment and progress monitoring"
+    "Screening, diagnostic assessment and progress monitoring",
+    "Tier 2 and Tier 3 intervention"
    ],
    "title": "Assisting Students Struggling with Reading: Response to Intervention and Multi-Tier Intervention in the Primary Grades",
    "url": "https://ies.ed.gov/ncee/wwc/PracticeGuide/3",
@@ -11181,8 +11224,7 @@
    ],
    "areas": [
     25,
-    11,
-    14
+    11
    ],
    "tags": [
     "Free"
@@ -11211,8 +11253,7 @@
    ],
    "areas": [
     25,
-    11,
-    14
+    11
    ],
    "tags": [
     "Free"
@@ -11241,8 +11282,7 @@
    ],
    "areas": [
     25,
-    11,
-    14
+    11
    ],
    "tags": [
     "Free"
@@ -11272,8 +11312,7 @@
    "areas": [
     25,
     11,
-    29,
-    14
+    29
    ],
    "tags": [
     "Free"
@@ -11302,8 +11341,7 @@
    ],
    "areas": [
     25,
-    11,
-    14
+    11
    ],
    "tags": [
     "Free"
@@ -11323,7 +11361,6 @@
    ],
    "areas": [
     11,
-    14,
     25
    ],
    "tags": [
@@ -11343,8 +11380,7 @@
    ],
    "areas": [
     25,
-    11,
-    14
+    11
    ],
    "tags": [
     "Free"
@@ -11365,8 +11401,7 @@
    "areas": [
     25,
     11,
-    27,
-    14
+    27
    ],
    "tags": [
     "Free"
@@ -11386,8 +11421,7 @@
     "USA"
    ],
    "areas": [
-    25,
-    14
+    25
    ],
    "tags": [
     "Free"
@@ -11416,8 +11450,7 @@
     "USA"
    ],
    "areas": [
-    25,
-    14
+    25
    ],
    "tags": [
     "Free"
@@ -11438,8 +11471,7 @@
    ],
    "areas": [
     25,
-    11,
-    14
+    11
    ],
    "tags": [
     "Free"
@@ -11449,7 +11481,10 @@
   },
   {
    "type": "research",
-   "strand": "Dyslexia",
+   "strand": [
+    "Dyslexia",
+    "Tier 2 and Tier 3 intervention"
+   ],
    "title": "Providing Reading Interventions for Students in Grades 4 to 9",
    "url": "https://ies.ed.gov/ncee/wwc/PracticeGuide/29",
    "by": "What Works Clearinghouse",
@@ -11482,8 +11517,7 @@
    "areas": [
     25,
     32,
-    10,
-    14
+    10
    ],
    "tags": [
     "Free"
@@ -11513,8 +11547,7 @@
    "areas": [
     25,
     32,
-    10,
-    14
+    10
    ],
    "tags": [
     "Free"
@@ -11536,7 +11569,6 @@
    "areas": [
     10,
     32,
-    14,
     25
    ],
    "tags": [
@@ -11558,7 +11590,6 @@
    "areas": [
     25,
     38,
-    14,
     18
    ],
    "tags": [
@@ -11588,8 +11619,7 @@
    ],
    "areas": [
     25,
-    38,
-    14
+    38
    ],
    "tags": [
     "Free"
@@ -11616,8 +11646,7 @@
    ],
    "areas": [
     25,
-    38,
-    14
+    38
    ],
    "tags": [
     "Free"
@@ -11643,7 +11672,6 @@
    "areas": [
     25,
     38,
-    14,
     13
    ],
    "tags": [
@@ -11655,7 +11683,10 @@
   },
   {
    "type": "read",
-   "strand": "Dyscalculia and maths difficulties",
+   "strand": [
+    "Dyscalculia and maths difficulties",
+    "Tier 2 and Tier 3 intervention"
+   ],
    "title": "Principles for designing intervention in mathematics",
    "url": "https://intensiveintervention.org/resource/principles-designing-intervention-mathematics",
    "by": "National Center on Intensive Intervention",
@@ -11687,7 +11718,6 @@
    ],
    "areas": [
     1,
-    14,
     5,
     25
    ],
@@ -11718,7 +11748,6 @@
    ],
    "areas": [
     1,
-    14,
     25
    ],
    "tags": [
@@ -11738,8 +11767,7 @@
     "International"
    ],
    "areas": [
-    25,
-    14
+    25
    ],
    "tags": [
     "Free"
@@ -11768,7 +11796,6 @@
    ],
    "areas": [
     25,
-    14,
     5
    ],
    "tags": [
@@ -11795,7 +11822,6 @@
    ],
    "areas": [
     25,
-    14,
     5
    ],
    "tags": [
@@ -11823,7 +11849,6 @@
    ],
    "areas": [
     25,
-    14,
     18
    ],
    "tags": [
@@ -11844,7 +11869,6 @@
    ],
    "areas": [
     25,
-    14,
     5
    ],
    "tags": [
@@ -11870,7 +11894,6 @@
    ],
    "areas": [
     25,
-    14,
     20
    ],
    "tags": [
@@ -11897,7 +11920,6 @@
    ],
    "areas": [
     25,
-    14,
     5
    ],
    "tags": [
@@ -11923,7 +11945,6 @@
    ],
    "areas": [
     25,
-    14,
     20
    ],
    "tags": [
@@ -11950,7 +11971,6 @@
    ],
    "areas": [
     25,
-    14,
     5
    ],
    "tags": [
@@ -11977,7 +11997,6 @@
    ],
    "areas": [
     25,
-    14,
     5
    ],
    "tags": [
@@ -12005,7 +12024,6 @@
    ],
    "areas": [
     25,
-    14,
     20
    ],
    "tags": [
@@ -12033,8 +12051,7 @@
     "Australia"
    ],
    "areas": [
-    25,
-    14
+    25
    ],
    "tags": [
     "Free"
@@ -12057,8 +12074,7 @@
     "Australia"
    ],
    "areas": [
-    25,
-    14
+    25
    ],
    "tags": [
     "Free"
@@ -12084,7 +12100,6 @@
    ],
    "areas": [
     25,
-    14,
     5
    ],
    "tags": [
@@ -12110,7 +12125,6 @@
     "Australia"
    ],
    "areas": [
-    14,
     21,
     17,
     25
@@ -12123,7 +12137,10 @@
   },
   {
    "type": "watch",
-   "strand": "Supporting students with additional needs",
+   "strand": [
+    "Supporting students with additional needs",
+    "Tier 1 teaching for every student"
+   ],
    "title": "High quality teaching: The 'five-a-day' principle",
    "url": "https://www.youtube.com/watch?v=a_4U73xozWk",
    "by": "Education Endowment Foundation",
@@ -12163,7 +12180,6 @@
    ],
    "areas": [
     25,
-    14,
     19
    ],
    "tags": [
@@ -12190,7 +12206,6 @@
    ],
    "areas": [
     25,
-    14,
     19
    ],
    "tags": [
@@ -12217,7 +12232,6 @@
    ],
    "areas": [
     25,
-    14,
     19
    ],
    "tags": [
@@ -12244,7 +12258,6 @@
    ],
    "areas": [
     25,
-    14,
     19
    ],
    "tags": [
@@ -12271,7 +12284,6 @@
    ],
    "areas": [
     25,
-    14,
     19,
     20
    ],
@@ -13431,8 +13443,7 @@
    ],
    "areas": [
     25,
-    2,
-    14
+    2
    ],
    "tags": [
     "Free"
@@ -13603,7 +13614,8 @@
     "Free"
    ],
    "summary": "Wexler contrasts a struggling reader whose interventions are unrelated to class work with one whose support reinforces the core curriculum, and argues that coherence across support lowers cognitive load.",
-   "region": "USA"
+   "region": "USA",
+   "strand": "Tier 2 and Tier 3 intervention"
   },
   {
    "type": "read",
@@ -13644,7 +13656,8 @@
     "Free"
    ],
    "summary": "Wexler explains why many older students still struggle to read, why upper-grade teachers need different training from early-years teachers, and which approaches look promising.",
-   "region": "USA"
+   "region": "USA",
+   "strand": "Tier 1 teaching for every student"
   },
   {
    "type": "read",
@@ -13845,7 +13858,8 @@
     "Free"
    ],
    "summary": "Ashman responds to the objection that explicit teaching ignores individual differences, questioning differentiation as a cure-all and explaining which differences between students really matter for instruction.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Tier 1 teaching for every student"
   },
   {
    "type": "read",
@@ -13886,7 +13900,8 @@
     "Free"
    ],
    "summary": "Ashman links tiered support to whole-class teaching, arguing that explicit teaching, including structured literacy, is a strong Tier 1 approach for learning and behaviour and is inclusive of students with disabilities.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Tier 1 teaching for every student"
   },
   {
    "type": "read",
@@ -13968,7 +13983,8 @@
     "Free"
    ],
    "summary": "Ashman discusses a paper drawing parallels between Universal Design for Learning and learning styles, and raises concerns about its evidence base, its planning workload and its spread into policy.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Tier 1 teaching for every student"
   },
   {
    "type": "read",
@@ -14088,7 +14104,8 @@
     "Free"
    ],
    "summary": "Barton summarises Linda Graham and colleagues' review of differentiation research, which found the term used for very different, sometimes incompatible practices, and discusses what that means for teachers.",
-   "region": "UK"
+   "region": "UK",
+   "strand": "Tier 1 teaching for every student"
   },
   {
    "type": "read",
@@ -14188,7 +14205,8 @@
     "Free"
    ],
    "summary": "Barton summarises an EEF evaluation comparing setting and mixed-attainment groups in lower secondary maths, covering effects on progress and confidence and the implications for schools deciding how to group.",
-   "region": "UK"
+   "region": "UK",
+   "strand": "Tier 1 teaching for every student"
   },
   {
    "type": "read",
@@ -14411,7 +14429,8 @@
     "Free"
    ],
    "summary": "Christodoulou argues that the answer for older students who leave school without basic English and maths is better teaching of foundational skills, rather than steering them early into vocational routes.",
-   "region": "UK"
+   "region": "UK",
+   "strand": "Tier 1 teaching for every student"
   },
   {
    "type": "read",
@@ -14453,7 +14472,8 @@
     "Free"
    ],
    "summary": "Birch explains how new research on prior knowledge and the expertise reversal effect has partly changed her view on whether gifted learners always need explicit teaching before problem solving.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Tier 1 teaching for every student"
   },
   {
    "type": "read",
@@ -14466,7 +14486,6 @@
     "Australia"
    ],
    "areas": [
-    14,
     25,
     2
    ],
@@ -14537,7 +14556,8 @@
     "Free"
    ],
    "summary": "Using her own fear of flying, Birch argues that school accommodations for anxiety can reinforce avoidance, and that participation and low-stakes testing better support students' competence and belonging.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Tier 1 teaching for every student"
   },
   {
    "type": "read",
@@ -14944,7 +14964,8 @@
     "Free"
    ],
    "summary": "Hughes contrasts differentiation that dumbs down tasks or multiplies planning with responsive teaching, which keeps the learning ambitious for everyone and adjusts support when evidence shows it is needed.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Tier 1 teaching for every student"
   },
   {
    "type": "read",
@@ -14985,7 +15006,8 @@
     "Free"
    ],
    "summary": "Hughes questions how Universal Design for Learning is presented to teachers, raising concerns about workload, unlimited student choice and drift towards learning-styles thinking.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Tier 1 teaching for every student"
   },
   {
    "type": "read",
@@ -15006,7 +15028,8 @@
     "Free"
    ],
    "summary": "Prompted by a Victorian primary principal's talk, Hughes examines how the phrase \"our kids can't\" lowers expectations, and how explicit, systematic teaching makes ambitious goals reachable for all students.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Tier 1 teaching for every student"
   },
   {
    "type": "read",
@@ -15428,7 +15451,8 @@
     "Free"
    ],
    "summary": "Argues for scaffolding upwards rather than differentiating downwards, with worked examples of writing frames and guided practice that keep the task demanding while supporting students who struggle.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Tier 1 teaching for every student"
   },
   {
    "type": "read",
@@ -15813,8 +15837,7 @@
     "Australia"
    ],
    "areas": [
-    25,
-    14
+    25
    ],
    "tags": [],
    "summary": "A national association of teachers and other professionals dedicated to helping students with learning difficulties through effective, evidence-based teaching.",
@@ -16666,7 +16689,8 @@
     "Free"
    ],
    "summary": "Myatt explores how well-meant supports, such as simplified tasks and heavy prompting, can lower expectations, and how to keep challenge high while making it manageable for all pupils.",
-   "region": "UK"
+   "region": "UK",
+   "strand": "Tier 1 teaching for every student"
   },
   {
    "type": "read",
@@ -16686,7 +16710,8 @@
     "Free"
    ],
    "summary": "A short account of a whole-class reading lesson where pupils with additional needs worked alongside peers on the same rich text, and what made that possible.",
-   "region": "UK"
+   "region": "UK",
+   "strand": "Tier 1 teaching for every student"
   },
   {
    "type": "read",
@@ -16806,7 +16831,8 @@
     "Free"
    ],
    "summary": "Discusses a study in which struggling Year 3 readers did better with challenging, content-rich texts plus explicit teaching of multisyllabic words than with lower-level texts.",
-   "region": "USA"
+   "region": "USA",
+   "strand": "Tier 2 and Tier 3 intervention"
   },
   {
    "type": "read",
@@ -16885,7 +16911,8 @@
     "Free"
    ],
    "summary": "Questions guided reading with levelled books, and describes how small-group teaching can instead target specific skills for the children who need extra support.",
-   "region": "International"
+   "region": "International",
+   "strand": "Tier 1 teaching for every student"
   },
   {
    "type": "read",
@@ -17029,7 +17056,10 @@
    ],
    "summary": "Shinn explains multiple gating, a simple stepwise approach to reading screening that tests everyone briefly and only assesses further when needed, as an alternative to overloaded screening systems.",
    "region": "USA",
-   "strand": "Screening, diagnostic assessment and progress monitoring"
+   "strand": [
+    "Screening, diagnostic assessment and progress monitoring",
+    "Screening and data in MTSS"
+   ]
   },
   {
    "type": "read",
@@ -17048,7 +17078,8 @@
     "Free"
    ],
    "summary": "A short warning against treating the 80, 15 and 5 per cent figures in MTSS triangles as targets, arguing schools should simply know which students need more intensive support.",
-   "region": "USA"
+   "region": "USA",
+   "strand": "What MTSS is and where to start"
   },
   {
    "type": "read",
@@ -17069,7 +17100,10 @@
    ],
    "summary": "Shinn reflects on how to read progress monitoring graphs from curriculum-based measures, including rate of improvement and when the data signal that an intervention should change.",
    "region": "USA",
-   "strand": "Screening, diagnostic assessment and progress monitoring"
+   "strand": [
+    "Screening, diagnostic assessment and progress monitoring",
+    "Screening and data in MTSS"
+   ]
   },
   {
    "type": "read",
@@ -17109,7 +17143,8 @@
     "Free"
    ],
    "summary": "Argues that secondary MTSS often copies primary practices that do not fit, and that schools must first decide who needs support using measures suited to older students.",
-   "region": "USA"
+   "region": "USA",
+   "strand": "Leading and implementing MTSS"
   },
   {
    "type": "read",
@@ -17130,7 +17165,10 @@
    ],
    "summary": "Drawing on 40 years of MTSS work, Shinn describes how benchmark screening has grown into too many tests, and argues for a simpler purpose and fewer measures.",
    "region": "USA",
-   "strand": "Screening, diagnostic assessment and progress monitoring"
+   "strand": [
+    "Screening, diagnostic assessment and progress monitoring",
+    "Screening and data in MTSS"
+   ]
   },
   {
    "type": "read",
@@ -17250,7 +17288,8 @@
     "Free"
    ],
    "summary": "A summary of research on small-group tutoring in Australia after COVID, covering what makes tutoring effective and what systems and schools should do next.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Tier 2 and Tier 3 intervention"
   },
   {
    "type": "read",
@@ -17270,7 +17309,8 @@
     "Free"
    ],
    "summary": "An Australian leader argues that much reading intervention is too infrequent, too different from good teaching or poorly matched to need, and describes what effective intervention should look like.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Tier 2 and Tier 3 intervention"
   },
   {
    "type": "read",
@@ -17467,7 +17507,8 @@
     "Free"
    ],
    "summary": "A teacher reads widely on writing instruction, including free AERO courses, and draws out what strong whole-class writing teaching should include, with sentence-level work at its centre.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Tier 1 teaching for every student"
   },
   {
    "type": "read",
