@@ -16499,6 +16499,23 @@
    "strand": "Leading and implementing MTSS"
   },
   {
+   "type": "voice",
+   "title": "International MTSS Association",
+   "url": "https://www.mtssassociation.org/mtss-action-network",
+   "by": "",
+   "meta": [
+    "Association",
+    "International"
+   ],
+   "areas": [
+    14
+   ],
+   "tags": [],
+   "summary": "The first professional association dedicated to multi-tiered systems of support, led by founding executive director Joan Schumann. The link opens its MTSS Action Network, a free community with online sessions for teachers, leaders and implementation teams.",
+   "region": "International",
+   "strand": "Leading and implementing MTSS"
+  },
+  {
    "type": "read",
    "title": "Instructional Illusions",
    "url": "https://paulkirschner173727.substack.com/p/instructional-illusions",
@@ -19370,6 +19387,26 @@
    ],
    "summary": "Linnea Ehri describes the four phases children move through as they learn to read and spell words, from pre-alphabetic to consolidated alphabetic, drawing on more than 50 years of her research.",
    "region": "International"
+  },
+  {
+   "type": "research",
+   "title": "Tiered systems of support in education: A focus on MTSS",
+   "url": "https://www.oecd.org/en/publications/tiered-systems-of-support-in-education_158128c5-en.html",
+   "by": "OECD",
+   "meta": [
+    "2026",
+    "Working paper",
+    "International"
+   ],
+   "areas": [
+    14
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "An OECD working paper that examines MTSS and related tiered frameworks in compulsory education across OECD countries, drawing together research and policy documents.",
+   "region": "International",
+   "strand": "What MTSS is and where to start"
   }
  ],
  "shows": [
