@@ -8564,7 +8564,8 @@
     30,
     10
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Australian speech pathologist and educator who writes about best practice in language and literacy teaching. She co-hosts the Jones & McLean podcast."
   },
   {
    "type": "voice",
@@ -8581,7 +8582,8 @@
     18
    ],
    "tags": [],
-   "strand": "The Language House"
+   "strand": "The Language House",
+   "summary": "Professor of Cognitive Psychology at La Trobe University and co-founder of its Science of Language and Reading (SOLAR) Lab. Her blog, The Snow Report, covers reading instruction, language and the use of evidence in education."
   },
   {
    "type": "voice",
@@ -8597,7 +8599,8 @@
     6,
     30
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Teacher, instructional coach and La Trobe University researcher who founded Think Forward Educators. He wrote Harnessing the Science of Learning and co-hosts the Chalk Dust podcast."
   },
   {
    "type": "voice",
@@ -8613,7 +8616,8 @@
     4,
     5
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Australian educator whose Substack, On Education, looks at evidence-based teaching, literacy and education policy, with an eye on secondary English. She co-hosts the Chalk Dust podcast."
   },
   {
    "type": "voice",
@@ -8629,7 +8633,8 @@
     4,
     16
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Works with schools and systems on explicit, responsive teaching, helping teachers and instructional leaders refine their practice. She co-hosts the Jones & McLean podcast."
   },
   {
    "type": "voice",
@@ -8645,7 +8650,8 @@
     34,
     16
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Melbourne teacher and host of the Education Research Reading Room podcast. He wrote Sweller's Cognitive Load Theory in Action and Tools for Teachers."
   },
   {
    "type": "voice",
@@ -8661,7 +8667,8 @@
     16,
     17
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Australian teacher who started in high schools and returned to the profession as a primary teacher. He hosts the Knowledge for Teachers podcast and writes about teaching and school improvement."
   },
   {
    "type": "voice",
@@ -8677,7 +8684,8 @@
     2,
     18
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Australian teacher, writer and podcaster. His Substack, Filling the Pail, makes the case for explicit teaching and takes on common myths about education."
   },
   {
    "type": "voice",
@@ -8693,7 +8701,8 @@
     33
    ],
    "tags": [],
-   "strand": "Syntheses of the field"
+   "strand": "Syntheses of the field",
+   "summary": "An Australian initiative that promotes effective, evidence-based reading instruction for every child. Its site offers explainers, classroom resources and webinar recordings."
   },
   {
    "type": "voice",
@@ -8709,7 +8718,8 @@
     2,
     18
    ],
-   "tags": []
+   "tags": [],
+   "summary": "A classroom teacher for many years and now a professor at Academica University of Applied Sciences. He co-wrote How Learning Happens with Paul Kirschner and writes The Learning Dispatch."
   },
   {
    "type": "voice",
@@ -8724,7 +8734,8 @@
     1,
     18
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Emeritus professor of educational psychology at the Open University of the Netherlands and co-author of How Learning Happens. He blogs at 3-Star Learning Experiences."
   },
   {
    "type": "voice",
@@ -8740,7 +8751,8 @@
     5,
     15
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Author of the High Impact Teaching series, including Motivated Teaching. His Evidence Snacks newsletter shares one big idea from learning science in a five-minute read each week."
   },
   {
    "type": "voice",
@@ -8756,7 +8768,8 @@
     4,
     16
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Former headteacher who now works with schools on teaching and curriculum. He wrote Rosenshine's Principles in Action, co-created the Teaching WalkThrus series and blogs at Teacherhead."
   },
   {
    "type": "voice",
@@ -8772,7 +8785,8 @@
     5,
     16
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Author of Teach Like a Champion, which grew from close study of what highly effective teachers do. His blog pairs classroom video with commentary on technique."
   },
   {
    "type": "voice",
@@ -8786,7 +8800,8 @@
    "areas": [
     16
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Josh Goodrich is the founder of Steplab, a platform for instructional coaching and professional development, and the author of Responsive Coaching. The Steplab site shares essays and guides on how teachers improve."
   },
   {
    "type": "voice",
@@ -8800,7 +8815,8 @@
    "areas": [
     16
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Associate Professor at La Trobe University who led in secondary schools in England for 20 years. The author of ten books, she writes about mentoring, coaching and teacher development."
   },
   {
    "type": "voice",
@@ -8815,7 +8831,8 @@
     4,
     34
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Maths teacher, author of How I Wish I'd Taught Maths and Tips for Teachers, and host of the Mr Barton Maths Podcast. His newsletter shares a classroom tip each week."
   },
   {
    "type": "voice",
@@ -8830,7 +8847,8 @@
     2,
     16
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Teacher, instructional coach and author of Just Tell Them, a guide to explicit instruction. He writes at Education Rickshaw and hosts the Progressively Incorrect podcast."
   },
   {
    "type": "voice",
@@ -8846,7 +8864,8 @@
     10,
     18
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Former English teacher, now a writer and trainer. He wrote Making Kids Cleverer and What If Everything You Knew About Education Was Wrong?, and blogs at The Learning Spy."
   },
   {
    "type": "voice",
@@ -8861,7 +8880,8 @@
     10,
     13
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Director of Education at No More Marking and author of Seven Myths About Education and Making Good Progress? She writes about assessment, writing and technology."
   },
   {
    "type": "voice",
@@ -8876,7 +8896,8 @@
     4,
     13
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Former secondary teacher and Emeritus Professor of Educational Assessment at the UCL Institute of Education. He is best known for his work on formative assessment."
   },
   {
    "type": "voice",
@@ -8894,7 +8915,8 @@
     33
    ],
    "tags": [],
-   "strand": "Knowledge and comprehension"
+   "strand": "Knowledge and comprehension",
+   "summary": "Education writer, author of The Knowledge Gap and co-author of The Writing Revolution. Her newsletter, Minding the Gap, looks at schooling through the lens of cognitive science."
   },
   {
    "type": "voice",
@@ -8910,7 +8932,8 @@
     33
    ],
    "tags": [],
-   "strand": "Syntheses of the field"
+   "strand": "Syntheses of the field",
+   "summary": "Distinguished Professor Emeritus at the University of Illinois Chicago and a member of the US National Reading Panel. His blog answers teachers' questions about reading research and instruction."
   },
   {
    "type": "voice",
@@ -8925,7 +8948,8 @@
     1,
     6
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Professor of Psychology at the University of Virginia and author of Why Don't Students Like School? He writes about what cognitive science means for the classroom."
   },
   {
    "type": "voice",
@@ -8940,7 +8964,8 @@
     3,
     15
    ],
-   "tags": []
+   "tags": [],
+   "summary": "A group of cognitive psychologists who make research on learning accessible to teachers and students. They are known for their six strategies for effective learning."
   },
   {
    "type": "voice",
@@ -8954,7 +8979,8 @@
    "areas": [
     3
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Cognitive scientist Pooja Agarwal, co-author of Powerful Teaching, shares free guides and resources on retrieval practice and other research-backed strategies."
   },
   {
    "type": "voice",
@@ -8969,7 +8995,8 @@
     2,
     18
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Education journalist and author. Her newsletter, The Bell Ringer, reports on the science of learning and how it plays out in classrooms."
   },
   {
    "type": "voice",
@@ -8984,7 +9011,8 @@
     1,
     2
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Educators and researchers at the Ontario Institute for Studies in Education, University of Toronto. Their newsletter examines the latest research on the science of learning and what it means for teaching."
   },
   {
    "type": "voice",
@@ -9000,7 +9028,8 @@
     33
    ],
    "tags": [],
-   "strand": "Spelling and morphology"
+   "strand": "Spelling and morphology",
+   "summary": "Linguist and founder of Lifelong Literacy. The author of Reading for Life, Spelling for Life and Language for Life, she writes and teaches on research-supported literacy instruction."
   },
   {
    "type": "voice",
@@ -9015,7 +9044,8 @@
     27,
     31
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Australian educator who supports teachers and school leaders with evidence-informed reading and writing instruction. She hosts The Structured Literacy Podcast."
   },
   {
    "type": "voice",
@@ -9030,7 +9060,8 @@
     2,
     3
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Associate Professor at Edith Cowan University in Western Australia, known for her work on explicit instruction and early reading. Her talks and articles make the practical case for explicit teaching."
   },
   {
    "type": "voice",
@@ -9045,7 +9076,8 @@
     4,
     5
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Science teacher and Education Director at Carousel. The author of Teaching Secondary Science, he writes about teaching, learning and leading."
   },
   {
    "type": "voice",
@@ -9057,7 +9089,8 @@
     "Australia"
    ],
    "areas": [],
-   "tags": []
+   "tags": [],
+   "summary": "An Australian community of teachers and leaders, founded by Nathaniel Swain, that shares the science of learning. It runs webinars, events and networks for educators."
   },
   {
    "type": "voice",
@@ -9069,7 +9102,8 @@
     "UK"
    ],
    "areas": [],
-   "tags": []
+   "tags": [],
+   "summary": "A network of schools in England, supported by the Education Endowment Foundation, that helps other schools put evidence into practice. Its blog and videos show what that looks like."
   },
   {
    "type": "voice",
@@ -9085,7 +9119,8 @@
     19,
     21
    ],
-   "tags": []
+   "tags": [],
+   "summary": "An English education charity that trains teachers and school leaders. Its research and insight pages cover teaching, leadership and educational disadvantage."
   },
   {
    "type": "voice",
@@ -9101,7 +9136,8 @@
     17,
     19
    ],
-   "tags": []
+   "tags": [],
+   "summary": "A national online publication for school educators, published by the Australian Council for Educational Research, with articles, podcasts and videos on teaching and leadership."
   },
   {
    "type": "voice",
@@ -9116,7 +9152,8 @@
     17,
     18
    ],
-   "tags": []
+   "tags": [],
+   "summary": "An Australian organisation that helps educators use evidence well. It is known for its Teaching and Learning Toolkit and guidance reports."
   },
   {
    "type": "voice",
@@ -9131,7 +9168,8 @@
     6,
     39
    ],
-   "tags": []
+   "tags": [],
+   "summary": "An independent Australian public policy think tank. Its education program publishes reports on reading, maths, curriculum and school improvement."
   },
   {
    "type": "voice",
@@ -9147,7 +9185,8 @@
     30,
     10
    ],
-   "tags": []
+   "tags": [],
+   "summary": "Ofsted is England's school inspectorate. This series reviews the research evidence on teaching each curriculum subject."
   },
   {
    "type": "curriculum",
