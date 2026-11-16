@@ -275,7 +275,7 @@ STRANDS[13] = dict(
         ("Using assessment data well", "Getting from numbers to decisions without drowning in data.", None),
     ])
 STRANDS[14] = dict(
-    intro="A multi-tiered system of supports (MTSS) is a way of organising a whole school so that every student gets strong teaching, "
+    intro="Multi-tiered systems of support (MTSS) are a way of organising a whole school so that every student gets strong teaching, "
           "the students who need more are found early, and extra support grows in step with need. New to it? Begin with the first group below, "
           "then follow the tiers in order.",
     note="Looking for resources on a particular condition, such as dyslexia, developmental language disorder, ADHD or autism? "
@@ -749,7 +749,7 @@ def _spread(entries):
     return [x for u in out for x in u]
 
 
-def folded_cards(entries, show_type=True, mixed=True, first=6):
+def folded_cards(entries, show_type=True, mixed=True, first=6, what=""):
     """Cards for one section of an area page. A long section shows its first six, with the rest in a "Show N more"
     fold, so a phone reader can scan every section without scrolling through dozens of cards. The folded cards are
     still in the page, so search engines and the browser's find-in-page see them."""
@@ -761,7 +761,8 @@ def folded_cards(entries, show_type=True, mixed=True, first=6):
     if len(entries) <= first + 3:
         return cards(entries, show_type, mixed=False)
     return (cards(entries[:first], show_type, mixed=False) +
-            '<details class="lib-expand lib-fold"><summary>Show %d more</summary>%s</details>' % (len(entries) - first, cards(entries[first:], show_type, mixed=False)))
+            '<details class="lib-expand lib-fold"><summary><span class="lib-fold-show">Show %d more%s</span><span class="lib-fold-hide">Show fewer%s</span></summary>%s</details>'
+            % (len(entries) - first, (" in " + e(what)) if what else "", (" in " + e(what)) if what else "", cards(entries[first:], show_type, mixed=False)))
 
 
 def cards(entries, show_type=True, level="h3", filterable=False, mixed=True):
@@ -918,6 +919,7 @@ def filtered_list(items, kind):
 def hero(tagline, h1, lead, crumbs=None, extra="", art=None):
     crumb = ""
     if crumbs:
+        crumbs = [c for i, c in enumerate(crumbs) if i == 0 or c[0] != crumbs[i - 1][0]]   # never the same name twice in a row
         parts = ['<a href="%s">%s</a>' % (h, e(l)) if h else '<span aria-current="page">%s</span>' % e(l) for l, h in crumbs]
         crumb = '<nav class="lib-crumbs" aria-label="Breadcrumb">%s</nav>' % " <span aria-hidden=\"true\">/</span> ".join(parts)
     pic = illo(art, "page-hero-illo", 360) if art else ""
@@ -1192,7 +1194,7 @@ AREA_SEO = {
     26: ("Phonemic awareness teaching resources",
          "Videos and reading on teaching phonological and phonemic awareness, including blending, segmenting and phoneme manipulation, and why it works best with letters."),
     27: ("Phonics lesson videos and resources",
-         "Watch phonics lessons being taught, and find webinars, podcasts and guides on systematic phonics, decodable texts and the Phonics Screening Check."),
+         "Watch phonics lessons being taught, and find webinars, podcasts and guides on systematic phonics, decodable texts and the Year 1 Phonics Check."),
     28: ("Reading fluency teaching resources",
          "Videos and reading on building reading fluency, with echo, choral and paired reading, repeated reading, modelled fluent reading and fluency intervention."),
     29: ("Explicit vocabulary instruction resources",
@@ -1733,7 +1735,7 @@ def strand_sections(items, plan):
             lead += ' %s <a href="%s">%s</a>.' % (e(more[0]), area_page(AREA[more[1]]), e(AREA[more[1]]["name"]))
         out += ('<section class="lib-group lib-strand-group" id="%s"><h2>%s <span class="lib-count">%d</span></h2><p class="lib-group-lead">%s</p>%s'
                 '<p class="lib-backtop"><a href="#strands">Back to the list of strands <span aria-hidden="true">&uarr;</span></a></p></section>'
-                % (strand_id(name), title_html(name), len(sub), lead, folded_cards(ordered, True, mixed=False)))
+                % (strand_id(name), title_html(name), len(sub), lead, folded_cards(ordered, True, mixed=False, what=name)))
     links = "".join('<a href="#%s">%s</a>' % (i, e(l)) for i, l in nav)
     top = ('<p class="lib-note">%s</p>' % e(plan["note"])) if plan.get("note") else ""
     top += '<nav class="lib-toc lib-toc-wrap" id="strands" aria-label="Strands on this page">%s%s</nav>' % (label_html("Jump to:"), links)
@@ -1759,7 +1761,7 @@ def build_areas():
             sections, strand_nav = strand_sections(items, plan)
         for k in ([] if plan else present):
             sub = [x for x in items if x["type"] == k]
-            sections += '<section class="lib-group" id="%s"><h2>%s <span class="lib-count">%d</span></h2>%s</section>' % (k, TYPES[k]["label"], len(sub), folded_cards(sub, False))
+            sections += '<section class="lib-group" id="%s"><h2>%s <span class="lib-count">%d</span></h2>%s</section>' % (k, TYPES[k]["label"], len(sub), folded_cards(sub, False, what=TYPES[k]["label"]))
         related = "".join('<li><a href="%s">%s</a></li>' % (area_page(b), e(b["name"])) for b in AREAS
                           if b["domain"] == a["domain"] and b["n"] != a["n"] and grouped.get(b["n"]))
         side = strand_nav
