@@ -9126,7 +9126,8 @@
    "areas": [],
    "tags": [
     "Free account needed"
-   ]
+   ],
+   "region": "Australia"
   },
   {
    "type": "curriculum",
@@ -9143,7 +9144,8 @@
    ],
    "tags": [
     "Free"
-   ]
+   ],
+   "region": "Australia"
   },
   {
    "type": "curriculum",
@@ -9158,7 +9160,8 @@
    "areas": [],
    "tags": [
     "Free"
-   ]
+   ],
+   "region": "International"
   },
   {
    "type": "curriculum",
@@ -9173,7 +9176,8 @@
    "areas": [],
    "tags": [
     "Free"
-   ]
+   ],
+   "region": "International"
   },
   {
    "type": "curriculum",
@@ -9190,7 +9194,8 @@
    ],
    "tags": [
     "Free"
-   ]
+   ],
+   "region": "International"
   },
   {
    "type": "curriculum",
@@ -9206,7 +9211,8 @@
    ],
    "tags": [
     "Free"
-   ]
+   ],
+   "region": "International"
   },
   {
    "type": "curriculum",
@@ -9222,7 +9228,8 @@
    ],
    "tags": [
     "Free account needed"
-   ]
+   ],
+   "region": "International"
   },
   {
    "type": "curriculum",
@@ -9237,7 +9244,8 @@
    "areas": [],
    "tags": [
     "Free"
-   ]
+   ],
+   "region": "Australia"
   },
   {
    "type": "curriculum",
@@ -9252,7 +9260,8 @@
    "areas": [],
    "tags": [
     "Free"
-   ]
+   ],
+   "region": "Australia"
   },
   {
    "type": "curriculum",
@@ -9267,7 +9276,8 @@
    "areas": [],
    "tags": [
     "Free"
-   ]
+   ],
+   "region": "Australia"
   },
   {
    "type": "watch",
@@ -9789,7 +9799,8 @@
    "tags": [
     "Free"
    ],
-   "summary": "Volunteer-written Australian units for teaching reading comprehension explicitly within a knowledge-rich curriculum, with slides, workbooks, readings and assessments. Trial units open from a shared Google Drive folder."
+   "summary": "Volunteer-written Australian units for teaching reading comprehension explicitly within a knowledge-rich curriculum, with slides, workbooks, readings and assessments. Trial units open from a shared Google Drive folder.",
+   "region": "Australia"
   },
   {
    "type": "watch",
@@ -17853,7 +17864,8 @@
    "tags": [
     "Free"
    ],
-   "summary": "122 ready-to-teach lessons across the 24 phases of the Literacy Hub phonics progression, each with slides, student sheets, decodable texts and progress checks. Includes morphology lessons such as plural -s and the prefix un-."
+   "summary": "122 ready-to-teach lessons across the 24 phases of the Literacy Hub phonics progression, each with slides, student sheets, decodable texts and progress checks. Includes morphology lessons such as plural -s and the prefix un-.",
+   "region": "Australia"
   },
   {
    "type": "curriculum",
@@ -17872,7 +17884,8 @@
    "tags": [
     "Free"
    ],
-   "summary": "Free slide decks, decodable passages and home practice for every UFLI Foundations lesson, including later units on prefixes and suffixes. The lesson manual itself is sold separately."
+   "summary": "Free slide decks, decodable passages and home practice for every UFLI Foundations lesson, including later units on prefixes and suffixes. The lesson manual itself is sold separately.",
+   "region": "International"
   },
   {
    "type": "curriculum",
@@ -17890,7 +17903,8 @@
    "tags": [
     "Free"
    ],
-   "summary": "Downloadable decodable books in two sequences, written to give students plenty of connected text to practise on. Printed sets can also be bought."
+   "summary": "Downloadable decodable books in two sequences, written to give students plenty of connected text to practise on. Printed sets can also be bought.",
+   "region": "Australia"
   },
   {
    "type": "curriculum",
@@ -17907,7 +17921,8 @@
    "tags": [
     "Free"
    ],
-   "summary": "A growing library of free decodable books to download, organised from basic to more complex code."
+   "summary": "A growing library of free decodable books to download, organised from basic to more complex code.",
+   "region": "Australia"
   },
   {
    "type": "curriculum",
@@ -17927,7 +17942,8 @@
    "tags": [
     "Free"
    ],
-   "summary": "Guidance on the parts of an explicit lesson for teaching literacy skills, including spelling and vocabulary."
+   "summary": "Guidance on the parts of an explicit lesson for teaching literacy skills, including spelling and vocabulary.",
+   "region": "Australia"
   },
   {
    "type": "curriculum",
@@ -17943,7 +17959,8 @@
    "tags": [
     "Free account needed"
    ],
-   "summary": "Ready-to-teach explicit and Direct Instruction programs mapped to the Australian Curriculum, free to Australian teachers with a free account."
+   "summary": "Ready-to-teach explicit and Direct Instruction programs mapped to the Australian Curriculum, free to Australian teachers with a free account.",
+   "region": "Australia"
   },
   {
    "type": "curriculum",
@@ -17962,7 +17979,8 @@
    "tags": [
     "Free"
    ],
-   "summary": "Small-step schemes of learning with reasoning and problem-solving questions and end-of-block assessments, free to download. Some extra resources are paid."
+   "summary": "Small-step schemes of learning with reasoning and problem-solving questions and end-of-block assessments, free to download. Some extra resources are paid.",
+   "region": "International"
   },
   {
    "type": "curriculum",
@@ -17980,7 +17998,221 @@
    "tags": [
     "Free account needed"
    ],
-   "summary": "Editable weekly writing units for every primary year level, built on The Writing Revolution's sequence of sentence, paragraph and text skills and written for Australian classrooms. Register with your name and email to download."
+   "summary": "Editable weekly writing units for every primary year level, built on The Writing Revolution's sequence of sentence, paragraph and text skills and written for Australian classrooms. Register with your name and email to download.",
+   "region": "Australia"
+  },
+  {
+   "type": "curriculum",
+   "title": "Connective Fluency",
+   "url": "https://www.bradnguyen.com/connectivefluency",
+   "by": "Brad Nguyen",
+   "meta": [
+    "Maths: number facts and computation",
+    "Years 1-6",
+    "Australian Curriculum"
+   ],
+   "areas": [
+    35,
+    34
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A free maths fluency program built on three short routines, namely whole-class incremental rehearsal, paired fact practice and timed computation practice. The slides, booklets and diagnostic assessments are sent once you fill in a short form.",
+   "region": "Australia"
+  },
+  {
+   "type": "curriculum",
+   "title": "Decodable readers at home: where to find free books",
+   "url": "https://www.speldnsw.org.au/parents-hub/decodable-readers-at-home/",
+   "by": "SPELD NSW",
+   "meta": [
+    "Decodable readers",
+    "Beginning and catch-up readers",
+    "NSW"
+   ],
+   "areas": [
+    27
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "SPELD NSW's guide to the free decodable books you can download or read on a screen, with a link to each collection, plus libraries that lend decodable sets. Handy to pass on to families.",
+   "region": "Australia"
+  },
+  {
+   "type": "curriculum",
+   "title": "SPELD NSW Decodable Book Selectors",
+   "url": "https://www.speldnsw.org.au/literacy/decodable-book-selectors/",
+   "by": "SPELD NSW",
+   "meta": [
+    "Decodable readers",
+    "Primary",
+    "NSW"
+   ],
+   "areas": [
+    27
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "More than ten selectors, each built around a different phonics scope and sequence, that help you choose books from a range of decodable series to suit what your students have been taught. Free through the SPELD NSW Learning and Resources Hub.",
+   "region": "Australia"
+  },
+  {
+   "type": "curriculum",
+   "title": "TextProject: free texts for students and teachers",
+   "url": "https://textproject.org/",
+   "by": "TextProject",
+   "meta": [
+    "Reading texts and vocabulary",
+    "K-12 (USA)"
+   ],
+   "areas": [
+    30,
+    29
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Free, research-based texts to download for every stage of school, from DecodableReads and BeginningReads to FYI for Kids and TopicReads, along with vocabulary resources such as word pictures and core vocabulary maps.",
+   "region": "International"
+  },
+  {
+   "type": "curriculum",
+   "title": "DataWORKS Explicit Direct Instruction resources",
+   "url": "https://dataworks-ed.com/resources/",
+   "by": "DataWORKS Educational Research",
+   "meta": [
+    "Explicit Direct Instruction",
+    "K-12 (USA)"
+   ],
+   "areas": [
+    2,
+    4
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Posters on lesson design, lesson delivery, engagement and feedback, an EDI lesson template, vocabulary lists, reading and writing checklists and white papers from the team behind Explicit Direct Instruction. Some downloads ask for your email address.",
+   "region": "International"
+  },
+  {
+   "type": "curriculum",
+   "title": "Sounds-Write free First Steps decodable e-books",
+   "url": "https://sounds-write.co.uk/free-resources/",
+   "by": "Sounds-Write",
+   "meta": [
+    "Decodable readers and activities",
+    "Beginning readers",
+    "UK"
+   ],
+   "areas": [
+    27
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Two free collections of short decodable e-books, one for the Initial Code and one for the Extended Code, alongside tracking activities and other downloads for teachers.",
+   "region": "International"
+  },
+  {
+   "type": "curriculum",
+   "title": "Moon Dogs at Home: free decodable books for older readers",
+   "url": "https://phonicbooks.co.uk/collections/free-resources-decodable-books",
+   "by": "Phonic Books",
+   "meta": [
+    "Decodable readers",
+    "Catch-up readers",
+    "UK"
+   ],
+   "areas": [
+    27
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A set of free Moon Dogs decodable books, each with matching activity sheets, for older students who are still learning the code.",
+   "region": "International"
+  },
+  {
+   "type": "curriculum",
+   "title": "Oxford Owl free eBook library",
+   "url": "https://www.oxfordowl.co.uk/for-home/find-a-book/library-page/",
+   "by": "Oxford University Press",
+   "meta": [
+    "E-books for phonics practice",
+    "Primary",
+    "UK"
+   ],
+   "areas": [
+    27
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A free library of e-books to read on a screen. Filter by Letters and Sounds phase or Read Write Inc. level to find books that match the phonics a child has been taught.",
+   "region": "International"
+  },
+  {
+   "type": "curriculum",
+   "title": "M.I.N.D. Facts on Fire",
+   "url": "https://brianponcy.wixsite.com/mind/copy-of-mind-facts-on-fire",
+   "by": "Brian Poncy and Gary Duhon",
+   "meta": [
+    "Maths: number facts and computation",
+    "Primary",
+    "USA"
+   ],
+   "areas": [
+    35,
+    38
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A whole-school routine of four minutes a day. Every student practises number facts and computation at their own level and moves through a set skill sequence as they reach mastery. The manual, scope and sequence and practice probes are free to download.",
+   "region": "International"
+  },
+  {
+   "type": "curriculum",
+   "title": "M.I.N.D. Skill Remediation",
+   "url": "https://brianponcy.wixsite.com/mind/mind-skill-remediation",
+   "by": "Brian Poncy and Gary Duhon",
+   "meta": [
+    "Maths: small-group intervention",
+    "Primary",
+    "USA"
+   ],
+   "areas": [
+    38,
+    35
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A scripted small-group intervention for early numeracy, addition, subtraction, multiplication and division, with placement probes, decision rules and ready-to-print units.",
+   "region": "International"
+  },
+  {
+   "type": "curriculum",
+   "title": "M.I.N.D. intervention resources",
+   "url": "https://brianponcy.wixsite.com/mind/intervention-resources",
+   "by": "Brian Poncy and Gary Duhon",
+   "meta": [
+    "Maths: computation interventions",
+    "Primary",
+    "USA"
+   ],
+   "areas": [
+    38,
+    35
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "A decision-making guide and free materials for well-researched computation interventions, including flashcard drill, Cover, Copy and Compare, taped problems and explicit timing.",
+   "region": "International"
   }
  ],
  "shows": [

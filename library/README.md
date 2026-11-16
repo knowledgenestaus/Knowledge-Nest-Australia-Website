@@ -125,3 +125,8 @@ python3 library/build.py
 - `--week` is the Monday the picks are for. Left out, it is today if today is Monday in Melbourne, otherwise next Monday.
 - `--data DIR` points at a copy of `library/data` for a trial run. The script uses only Python's standard library; HTTPS goes
   through any proxy set in the environment.
+
+## Curriculum shelf: Australian first, a picture on every card (November 2026)
+
+- **Two sections.** `library-curriculum.html` lists Australian collections first, then international ones, each in alphabetical order. A curriculum entry needs `"region"`: `"Australia"` puts it in the first section and anything else (`"International"`) in the second. The build prints a WARNING for a curriculum entry with no region. An overseas program with an Australian edition (UFLI) is filed under international.
+- **Pictures.** Every curriculum card has a picture across the top. Add the source's own picture (its share image, logo or a picture from the page) to `thumbs.json`, keyed by the entry's link; it stays on the creator's server and is shown whole on white, never cropped or enlarged (`.lib-thumb-fit` in `styles.css`). A collection whose site offers no picture (the Arc pages, M.I.N.D., Good to Great Schools) shows the site's own illustration for its topic, or the Curriculum one (`curriculum_thumb` in `build.py`).
