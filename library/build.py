@@ -236,10 +236,10 @@ STRANDS = {
               "neurodevelopmental and lasts. Good teaching and intervention still help a great deal, but the difficulty does not simply go away. "
               "I've gathered webinars, short videos, guides and research on both, alongside developmental language disorder, ADHD, autism and inclusive practice.",
         note="These resources are here to support your teaching. They are not a substitute for assessment or advice from a qualified "
-             "professional, such as a psychologist, paediatrician or speech pathologist. Only a qualified professional can diagnose a learning disability. Support should never wait for a diagnosis.",
+             "professional, such as a psychologist, paediatrician or speech pathologist. Only a qualified professional can diagnose a learning disability. Support should never wait for a diagnosis, and a referral need not wait either. In July 2025 the American Psychiatric Association clarified that the DSM-5 does not require six months of specialised intervention on top of six months of quality schooling that targets the student's weakness.",
         groups={
             "Learning difficulties": "Students who are behind for any reason. Most catch up with strong whole-class teaching and well-chosen intervention.",
-            "Learning disabilities": "Specific learning disorders that persist despite good teaching and intervention. They are usually diagnosed by a psychologist, and only after targeted intervention over at least six months has not closed the gap. They count as a disability under Australian law.",
+            "Learning disabilities": "Specific learning disorders that persist despite good teaching and intervention. They are usually diagnosed by a psychologist, who checks that the difficulty has lasted at least six months despite teaching aimed at it, and that it is not explained by gaps in instruction. They count as a disability under Australian law.",
             "Other disabilities and developmental conditions": "Conditions that often sit alongside learning difficulties and shape how a student learns.",
             "Inclusion": "What schools are asked to do for every student with a disability, and how to do it well.",
         },
