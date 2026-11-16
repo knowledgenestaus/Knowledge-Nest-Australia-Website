@@ -1071,7 +1071,7 @@ def type_tiles():
     out = [tile(t["page"], key, t["tile"], t["blurb"], count(key), t["noun"]) for key, t in TYPES.items()]
     used = set(n for x in ENTRIES for n in x["areas"])
     n_areas = len([d for d in DOMAIN_ORDER if any(a["domain"] == d and a["n"] in used for a in AREAS)])
-    out.append(tile("library.html#areas", "areas", "By area of practice", "Ten nests of knowledge, from how learning works to leading change.", n_areas, "areas"))
+    out.append(tile("library.html#areas", "areas", "By area of practice", "Twelve nests of knowledge, from how learning works to leading change.", n_areas, "areas"))
     return '<div class="kn-tiles">%s</div>' % "".join(out)
 
 
@@ -1348,8 +1348,8 @@ def build_home():
     body += ('<section class="section lib-results-section" id="results" hidden><div class="container">'
              '<h2 id="resultsHeading" tabindex="-1">Search results</h2><p class="lib-results-note" id="resultsNote" role="status" aria-live="polite"></p>'
              '<div id="resultsList"></div><p><button type="button" class="btn btn-primary btn-sm" id="clearSearch">Clear search</button></p></div></section>')
-    body += ('<section class="section section-tint" id="types"><div class="container"><div class="section-header"><p class="kn-eyebrow">%d resources, each linked to its creator</p><h2>Browse the library</h2>'
-             '<p>Know how you want to learn today? Pick a shelf.</p></div>%s</div></section>' % (len(ENTRIES), type_tiles()))
+    body += ('<section class="section section-tint" id="types"><div class="container"><div class="section-header"><p class="kn-eyebrow">%s resources, each linked to its creator</p><h2>Browse the library</h2>'
+             '<p>Know how you want to learn today? Pick a shelf.</p></div>%s</div></section>' % (format(len(ENTRIES), ','), type_tiles()))
     body += ('<section class="section section-tint" id="areas"><div class="container"><div class="section-header"><h2>Browse by area</h2>'
              '<p>Every area gathers videos, podcasts, reading and research in one place.</p></div>%s</div></section>'
              % area_index(counts))
@@ -1363,7 +1363,7 @@ def build_home():
              '<p class="lib-own">Looking for my own articles and a downloadable guide? <a href="resources.html">Find them here</a>.</p>'
              '</div></section>' % elements)
     body += newsletter_box("library") + credit_panels()
-    body += '<script src="library/search.js?v=10" defer></script>'
+    body += '<script src="library/search.js?v=11" defer></script>'
     shelves = [(t["title"], public(t["page"])) for t in TYPES.values()]
     topics = [(d, public(domain_page(d, counts))) for d in DOMAIN_ORDER if domain_areas(d, counts)]
     write("library.html", *seo("library.html", "", ""), body, items=shelves + topics + [("Podcasts by the VTLM 2.0", public("library-vtlm.html"))])
@@ -1880,8 +1880,8 @@ def build_home_block():
     credit = ('<p class="kn-credit-line">This is a collection of other people\'s brilliant work. Each entry names its creator and links straight '
               'to the original. Not sure where to begin? <a href="library.html#start">Try the starting points</a>.</p>')
     block = (featured_panel("home") +
-             '<section class="section section-tint" id="types"><div class="container"><div class="section-header"><p class="kn-eyebrow">%d resources, each linked to its creator</p><h2>Browse the library</h2>'
-             '<p>Pick a shelf to start. Every resource links to its creator\'s original.</p></div>%s%s</div></section>' % (len(ENTRIES), type_tiles(), credit)
+             '<section class="section section-tint" id="types"><div class="container"><div class="section-header"><p class="kn-eyebrow">%s resources, each linked to its creator</p><h2>Browse the library</h2>'
+             '<p>Pick a shelf to start. Every resource links to its creator\'s original.</p></div>%s%s</div></section>' % (format(len(ENTRIES), ','), type_tiles(), credit)
              + look_inside() + newsletter_box("home"))
     src = src[:src.index(start) + len(start)] + "\n" + block + "\n" + src[src.index(end):]
     open(path, "w", encoding="utf8").write(src)

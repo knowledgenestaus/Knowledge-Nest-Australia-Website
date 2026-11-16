@@ -5603,23 +5603,6 @@
   },
   {
    "type": "listen",
-   "title": "021 Understanding by Design",
-   "url": "https://www.ollielovell.com/jaymctighe/",
-   "by": "Education Research Reading Room",
-   "meta": [
-    "with Jay McTighe"
-   ],
-   "areas": [
-    6
-   ],
-   "tags": [
-    "Free"
-   ],
-   "summary": "Jay McTighe discusses Understanding by Design and planning backwards from the understandings students should reach.",
-   "focus": "Backwards design"
-  },
-  {
-   "type": "listen",
    "title": "S6 E26 What Goes into a Great Text-Based Unit?",
    "url": "https://www.buzzsprout.com/1987785/episodes/18275958-summer-series-what-goes-into-a-great-text-based-unit",
    "by": "The Structured Literacy Podcast",
@@ -5706,40 +5689,6 @@
    "summary": "Charlotte Peverett, a learning specialist and inclusion outreach coach, discusses structures, routines and holding high expectations for all students, including diverse learners.",
    "focus": "High expectations for diverse learners",
    "strand": "Supporting students with additional needs"
-  },
-  {
-   "type": "listen",
-   "title": "108 Making Restorative Conversations Work",
-   "url": "https://www.ollielovell.com/billhansberry/",
-   "by": "Education Research Reading Room",
-   "meta": [
-    "with Bill Hansberry"
-   ],
-   "areas": [
-    5
-   ],
-   "tags": [
-    "Free"
-   ],
-   "summary": "Bill Hansberry sets out a practical approach to restorative practices in schools and what makes restorative conversations work.",
-   "focus": "Restorative conversations"
-  },
-  {
-   "type": "listen",
-   "title": "008 Trauma Informed Positive Education",
-   "url": "https://www.ollielovell.com/tombrunzell/",
-   "by": "Education Research Reading Room",
-   "meta": [
-    "with Tom Brunzell"
-   ],
-   "areas": [
-    5
-   ],
-   "tags": [
-    "Free"
-   ],
-   "summary": "Tom Brunzell discusses trauma-informed positive education and compares his experience of schooling in the United States and Australia.",
-   "focus": "Trauma-informed practice"
   },
   {
    "type": "listen",
@@ -7458,20 +7407,6 @@
   },
   {
    "type": "read",
-   "title": "Direct Instruction works, says 50 years of research",
-   "url": "https://www.tes.com/magazine/archive/direct-instruction-works-says-50-years-research",
-   "by": "Tes",
-   "meta": [
-    "News report",
-    "UK"
-   ],
-   "areas": [
-    2
-   ],
-   "tags": []
-  },
-  {
-   "type": "read",
    "title": "How to get primary students excited about spelling",
    "url": "https://www.teachermagazine.com/au_en/articles/how-to-get-primary-students-excited-about-spelling",
    "by": "Teacher magazine (ACER)",
@@ -7886,7 +7821,7 @@
   {
    "type": "research",
    "title": "Great Teaching Toolkit: Evidence Review",
-   "url": "https://evidencebased.education/reports/",
+   "url": "https://assets.website-files.com/5ee28729f7b4a5fa99bef2b3/5ee9f507021911ae35ac6c4d_EBE_GTT_EVIDENCE%20REVIEW_DIGITAL.pdf",
    "by": "Coe, Rauch, Kime and Singleton (Evidence Based Education)",
    "meta": [
     "Evidence review",
@@ -8080,13 +8015,13 @@
    "url": "https://my.chartered.college/impact_article/expertise-reversal-effect-and-its-instructional-implications/",
    "by": "Slava Kalyuga",
    "meta": [
-    "Article",
-    "UK"
+    "Article"
    ],
    "areas": [
     1
    ],
-   "tags": []
+   "tags": [],
+   "region": "Australia"
   },
   {
    "type": "research",
@@ -8104,17 +8039,19 @@
   },
   {
    "type": "research",
-   "title": "Improving Students' Learning With Effective Learning Techniques",
+   "title": "Which Study Strategies Make the Grade? A summary of Dunlosky and colleagues (2013)",
    "url": "https://www.psychologicalscience.org/news/releases/which-study-strategies-make-the-grade.html",
-   "by": "Dunlosky and colleagues",
+   "by": "Association for Psychological Science",
    "meta": [
+    "Summary of a research review",
     "2013",
-    "Review"
+    "USA"
    ],
    "areas": [
     3
    ],
-   "tags": []
+   "tags": [],
+   "summary": "A short summary of the review by Dunlosky and colleagues that rated ten study techniques. Practice testing and distributed practice were rated most useful, and the page links to the full report."
   },
   {
    "type": "research",
@@ -8146,12 +8083,12 @@
   },
   {
    "type": "research",
-   "title": "Project Follow Through",
+   "title": "Project Follow Through: An overview of the evaluation",
    "url": "https://www.nifdi.org/what-is-di/project-follow-through",
-   "by": "US Office of Education evaluation",
+   "by": "National Institute for Direct Instruction",
    "meta": [
-    "1977",
-    "Large-scale evaluation"
+    "Overview of the 1977 evaluation",
+    "USA"
    ],
    "areas": [
     2
@@ -8560,7 +8497,7 @@
     10
    ],
    "tags": [],
-   "summary": "Australian speech pathologist and educator who writes about best practice in language and literacy teaching. She co-hosts the Jones & McLean podcast."
+   "summary": "Australian language and literacy expert who advises school systems on English and literacy, lectures and researches, and is completing a PhD at La Trobe University. Her blog covers best practice in language and literacy teaching, and she co-hosts the Jones & McLean podcast."
   },
   {
    "type": "voice",
@@ -8578,7 +8515,7 @@
    ],
    "tags": [],
    "strand": "The Language House",
-   "summary": "Professor of Cognitive Psychology at La Trobe University and co-founder of its Science of Language and Reading (SOLAR) Lab. Her blog, The Snow Report, covers reading instruction, language and the use of evidence in education."
+   "summary": "Distinguished Professor of Cognitive Psychology at La Trobe University and co-director of its Science of Language and Reading (SOLAR) Lab. Her blog, The Snow Report, covers reading instruction, language and the use of evidence in education."
   },
   {
    "type": "voice",
@@ -8796,7 +8733,7 @@
     16
    ],
    "tags": [],
-   "summary": "Josh Goodrich is the founder of Steplab, a platform for instructional coaching and professional development, and the author of Responsive Coaching. The Steplab site shares essays and guides on how teachers improve."
+   "summary": "Josh Goodrich is a co-founder of Steplab, a platform for instructional coaching and professional development, and the author of Responsive Coaching. The Steplab site shares essays and guides on how teachers improve."
   },
   {
    "type": "voice",
@@ -9014,7 +8951,7 @@
   {
    "type": "voice",
    "title": "Jocelyn Seamer",
-   "url": "https://jocelynseamer.simplero.com/blog",
+   "url": "https://www.jocelynseamereducation.com/blog",
    "by": "",
    "meta": [
     "Blog and podcast",
@@ -13017,26 +12954,6 @@
   },
   {
    "type": "read",
-   "title": "Oracy floats on a sea of knowledge",
-   "url": "https://daviddidau.substack.com/p/oracy-floats-on-a-sea-of-knowledge",
-   "by": "David Didau (The Learning Spy)",
-   "meta": [
-    "Substack",
-    "2026",
-    "UK"
-   ],
-   "areas": [
-    11,
-    6
-   ],
-   "tags": [
-    "Free"
-   ],
-   "summary": "Didau weighs England's push to give oracy equal status with reading and writing. He argues students speak well when they know a lot, and sets out what schools should prioritise instead.",
-   "region": "UK"
-  },
-  {
-   "type": "read",
    "title": "How to embed writing instruction into your English curriculum",
    "url": "https://daviddidau.substack.com/p/how-to-embed-writing-instruction",
    "by": "David Didau (The Learning Spy)",
@@ -15938,7 +15855,7 @@
   {
    "type": "voice",
    "title": "Brad Nguyen",
-   "url": "https://www.bradnguyen.com/",
+   "url": "https://www.bradnguyen.com/connectivefluency",
    "by": "",
    "meta": [
     "Free maths program",
@@ -15949,7 +15866,7 @@
     34
    ],
    "tags": [],
-   "summary": "Australian educator who created Connective Fluency, a free maths fluency program for Years 1 to 6 built on daily rehearsal, paired practice and timed computation."
+   "summary": "Australian educator who created Connective Fluency, a free maths fluency program for Years 1 to 6 built on whole-class rehearsal, paired fluency practice and timed computation."
   },
   {
    "type": "voice",
@@ -18400,7 +18317,7 @@
     34
    ],
    "tags": [
-    "Free"
+    "Free account needed"
    ],
    "summary": "A free maths fluency program built on three short routines, namely whole-class incremental rehearsal, paired fact practice and timed computation practice. The slides, booklets and diagnostic assessments are sent once you fill in a short form.",
    "region": "Australia"
@@ -18533,9 +18450,9 @@
     27
    ],
    "tags": [
-    "Free"
+    "Free account needed"
    ],
-   "summary": "A free library of e-books to read on a screen. Filter by Letters and Sounds phase or Read Write Inc. level to find books that match the phonics a child has been taught.",
+   "summary": "A library of e-books to read on a screen, free once you register. Filter by Letters and Sounds phase or Read Write Inc. level to find the decodable books that match the phonics a child has been taught, as the library also holds levelled readers.",
    "region": "International"
   },
   {
@@ -19254,13 +19171,6 @@
      "url": "https://www.ollielovell.com/samgibbs1/"
     },
     {
-     "title": "021 Understanding by Design",
-     "by": "Education Research Reading Room",
-     "guest": "Jay McTighe",
-     "focus": "Backwards design",
-     "url": "https://www.ollielovell.com/jaymctighe/"
-    },
-    {
      "title": "099 Writing Quality Maths Lessons",
      "by": "Education Research Reading Room",
      "guest": "David Morkunas",
@@ -19324,20 +19234,6 @@
      "guest": "Charlotte Peverett",
      "focus": "High expectations for diverse learners",
      "url": "https://knowledgeforteachers.podbean.com/e/s02e16-charlotte-peverett-on-the-importance-of-having-high-expectations-for-all-students-including-diverse-learners/"
-    },
-    {
-     "title": "108 Making Restorative Conversations Work",
-     "by": "Education Research Reading Room",
-     "guest": "Bill Hansberry",
-     "focus": "Restorative conversations",
-     "url": "https://www.ollielovell.com/billhansberry/"
-    },
-    {
-     "title": "008 Trauma Informed Positive Education",
-     "by": "Education Research Reading Room",
-     "guest": "Tom Brunzell",
-     "focus": "Trauma-informed practice",
-     "url": "https://www.ollielovell.com/tombrunzell/"
     }
    ],
    "Explicit teaching: overview": [
