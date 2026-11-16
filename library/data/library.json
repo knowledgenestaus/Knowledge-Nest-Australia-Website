@@ -9019,23 +9019,6 @@
   },
   {
    "type": "voice",
-   "title": "Lyn Stone",
-   "url": "https://lifelongliteracy.com/",
-   "by": "",
-   "meta": [
-    "Blog",
-    "Australia"
-   ],
-   "areas": [
-    31,
-    33
-   ],
-   "tags": [],
-   "strand": "Spelling and morphology",
-   "summary": "Linguist and founder of Lifelong Literacy. The author of Reading for Life, Spelling for Life and Language for Life, she writes and teaches on research-supported literacy instruction."
-  },
-  {
-   "type": "voice",
    "title": "Jocelyn Seamer",
    "url": "https://jocelynseamer.simplero.com/blog",
    "by": "",
@@ -12508,13 +12491,14 @@
    "strand": "Syntheses of the field"
   },
   {
-   "type": "read",
+   "type": "research",
    "title": "Teaching Reading Is Rocket Science: What expert teachers of reading should know and be able to do",
    "url": "https://www.aft.org/ae/summer2020/moats",
    "by": "Louisa Moats, American Educator",
    "meta": [
-    "Article",
     "2020",
+    "Foundational research",
+    "American Educator",
     "USA"
    ],
    "areas": [
@@ -12522,6 +12506,7 @@
     16
    ],
    "tags": [
+    "Foundational",
     "Free"
    ],
    "summary": "Louisa Moats on what expert teachers of reading should know and be able to do, in the 2020 edition of her paper for American Educator.",
