@@ -16511,7 +16511,7 @@
     14
    ],
    "tags": [],
-   "summary": "The first professional association dedicated to multi-tiered systems of support, led by founding executive director Joan Schumann. The link opens its MTSS Action Network, a free community with online sessions for teachers, leaders and implementation teams.",
+   "summary": "The first professional association dedicated to multi-tiered systems of support, led by founding executive director Joan Schumann. The link opens its MTSS Action Network, a free community with online sessions for teachers, leaders and implementation teams. It also publishes the open-access Journal of Multitiered System of Supports.",
    "region": "International",
    "strand": "Leading and implementing MTSS"
   },
@@ -19407,6 +19407,67 @@
    "summary": "An OECD working paper that examines MTSS and related tiered frameworks in compulsory education across OECD countries, drawing together research and policy documents.",
    "region": "International",
    "strand": "What MTSS is and where to start"
+  },
+  {
+   "type": "research",
+   "title": "Journal of Multitiered System of Supports: Volume 1, Number 1",
+   "url": "https://jmtss.org/index.php/jmtss/issue/view/2",
+   "by": "International MTSS Association",
+   "meta": [
+    "2026",
+    "Journal issue",
+    "International"
+   ],
+   "areas": [
+    14
+   ],
+   "tags": [
+    "Open access"
+   ],
+   "summary": "The first issue of the first peer-reviewed journal dedicated to MTSS, published in October 2026 and free to read. Its four articles cover what MTSS is, implementing integrated MTSS, a social and emotional learning program in the middle years, and developing leaders.",
+   "region": "International",
+   "strand": "What MTSS is and where to start"
+  },
+  {
+   "type": "research",
+   "title": "Multitiered System of Supports: Conceptual Clarity and Vision for the New Journal",
+   "url": "https://jmtss.org/index.php/jmtss/article/view/21",
+   "by": "Matthew Burns and Erin Chaparro (Journal of Multitiered System of Supports)",
+   "meta": [
+    "2026",
+    "Conceptual article",
+    "USA"
+   ],
+   "areas": [
+    14
+   ],
+   "tags": [
+    "Open access"
+   ],
+   "summary": "Burns and Chaparro trace the history of MTSS and name its core components as evidence-based core instruction, universal screening, targeted interventions, progress monitoring and implementation fidelity.",
+   "region": "International",
+   "strand": "What MTSS is and where to start"
+  },
+  {
+   "type": "research",
+   "title": "Implementing Integrated Multitiered System of Supports: A Retrospective Study",
+   "url": "https://jmtss.org/index.php/jmtss/article/view/5",
+   "by": "Gandhi, Lembke and Pierce (Journal of Multitiered System of Supports)",
+   "meta": [
+    "2026",
+    "Descriptive study",
+    "USA"
+   ],
+   "areas": [
+    14,
+    17
+   ],
+   "tags": [
+    "Open access"
+   ],
+   "summary": "Using data from 66 American primary schools, the authors describe where implementing integrated MTSS proved easy or hard. Common barriers included inconsistent assessment of wellbeing, weak fidelity of instruction and intervention, and misuse of assessment tools or decision rules.",
+   "region": "International",
+   "strand": "Leading and implementing MTSS"
   }
  ],
  "shows": [
