@@ -980,3 +980,5 @@ html:not(.js) .nav-sub-toggle { display: none; }
 /* On laptop widths the Library menu is nudged left so it never runs past the edge of the window. */
 @media (min-width: 901px) and (max-width: 1180px) { .nav-menu { transform: translateX(-70%); } }
 @media (min-width: 901px) and (max-width: 960px) { .nav-menu { transform: translateX(-62%); } }
+
+.lib-meant { padding: 0; border: 0; background: none; font: inherit; font-weight: 700; color: var(--navy); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }

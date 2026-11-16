@@ -864,7 +864,8 @@
    ],
    "subject": "Across subjects",
    "region": "USA",
-   "kind": "classroom footage with commentary"
+   "kind": "classroom footage with commentary",
+   "minutes": 4
   },
   {
    "type": "watch",
@@ -888,7 +889,8 @@
    ],
    "subject": "Maths",
    "region": "USA",
-   "kind": "classroom footage with commentary"
+   "kind": "classroom footage with commentary",
+   "minutes": 1
   },
   {
    "type": "watch",
@@ -913,7 +915,8 @@
    ],
    "subject": "Literacy and English",
    "region": "Australia",
-   "kind": "classroom footage with commentary"
+   "kind": "classroom footage with commentary",
+   "minutes": 6
   },
   {
    "type": "watch",
@@ -936,7 +939,8 @@
    ],
    "subject": "Across subjects",
    "region": "USA",
-   "kind": "classroom footage with commentary"
+   "kind": "classroom footage with commentary",
+   "minutes": 2
   },
   {
    "type": "watch",
@@ -1769,7 +1773,8 @@
    ],
    "subject": "Literacy and English",
    "region": "USA",
-   "kind": "classroom footage"
+   "kind": "classroom footage",
+   "minutes": 6
   },
   {
    "type": "watch",
@@ -1795,7 +1800,8 @@
    ],
    "subject": "Literacy and English",
    "region": "USA",
-   "kind": "classroom footage"
+   "kind": "classroom footage",
+   "minutes": 8
   },
   {
    "type": "watch",
@@ -3869,7 +3875,8 @@
    ],
    "subject": "Maths",
    "region": "UK",
-   "kind": "classroom footage"
+   "kind": "classroom footage",
+   "minutes": 1
   },
   {
    "type": "watch",
@@ -3894,7 +3901,8 @@
    ],
    "subject": "Maths",
    "region": "UK",
-   "kind": "classroom footage"
+   "kind": "classroom footage",
+   "minutes": 7
   },
   {
    "type": "watch",
@@ -3918,7 +3926,8 @@
    ],
    "subject": "Maths",
    "region": "UK",
-   "kind": "classroom footage"
+   "kind": "classroom footage",
+   "minutes": 4
   },
   {
    "type": "watch",
@@ -3942,7 +3951,8 @@
    ],
    "subject": "Maths",
    "region": "UK",
-   "kind": "classroom footage"
+   "kind": "classroom footage",
+   "minutes": 5
   },
   {
    "type": "watch",
@@ -3966,7 +3976,8 @@
    ],
    "subject": "Maths",
    "region": "UK",
-   "kind": "classroom footage"
+   "kind": "classroom footage",
+   "minutes": 4
   },
   {
    "type": "listen",
@@ -3983,7 +3994,8 @@
     "Free"
    ],
    "summary": "Anita Archer sets out what explicit instruction involves and how teachers can apply it lesson by lesson, in the episode marking five years of the podcast.",
-   "focus": "Explicit instruction"
+   "focus": "Explicit instruction",
+   "minutes": 97
   },
   {
    "type": "listen",
@@ -4001,7 +4013,8 @@
     "Free"
    ],
    "summary": "John Hollingsworth, co-creator of Explicit Direct Instruction, explains the approach and how its lesson components turn research on effective teaching into daily classroom routines.",
-   "focus": "Checking for understanding"
+   "focus": "Checking for understanding",
+   "minutes": 136
   },
   {
    "type": "listen",
@@ -4019,7 +4032,8 @@
     "Free"
    ],
    "summary": "Lorraine Hammond discusses her study of teachers taking up explicit instruction, and a directive coaching model in which the coach acts as an expert guide.",
-   "focus": "Instructional coaching"
+   "focus": "Instructional coaching",
+   "minutes": 106
   },
   {
    "type": "listen",
@@ -4037,7 +4051,8 @@
     "Free"
    ],
    "summary": "Chemistry teacher Adam Boxer talks through how he runs the opening ten minutes of a lesson, a practical listen for anyone tightening lesson starts and routines.",
-   "focus": "Daily review"
+   "focus": "Daily review",
+   "minutes": 127
   },
   {
    "type": "listen",
@@ -4055,7 +4070,8 @@
     "Free"
    ],
    "summary": "Maths teacher and blogger Michael Pershan discusses what the research says about worked examples and how to use them well when teaching new procedures.",
-   "focus": "Worked examples"
+   "focus": "Worked examples",
+   "minutes": 140
   },
   {
    "type": "listen",
@@ -4073,7 +4089,8 @@
     "Free"
    ],
    "summary": "Doug Lemov of Uncommon Schools discusses Teach Like a Champion and the classroom techniques his team has drawn from studying highly effective teachers.",
-   "focus": "Participation techniques"
+   "focus": "Participation techniques",
+   "minutes": 107
   },
   {
    "type": "listen",
@@ -4091,7 +4108,8 @@
     "Free"
    ],
    "summary": "Craig Barton lays out his whole philosophy of maths teaching and how he enacts it, covering knowledge versus skills, explicit instruction and diagnostic questions.",
-   "focus": "Hinge questions"
+   "focus": "Hinge questions",
+   "minutes": 124
   },
   {
    "type": "listen",
@@ -4108,7 +4126,8 @@
     "Free"
    ],
    "summary": "Harry Fletcher-Wood discusses responsive teaching, his practical take on formative assessment, and how teachers can find out what students have understood and adjust.",
-   "focus": "Responsive teaching"
+   "focus": "Responsive teaching",
+   "minutes": 96
   },
   {
    "type": "listen",
@@ -4127,7 +4146,8 @@
    ],
    "summary": "Paul Spenceley, a science teacher involved in Wiliam and Black's King's College formative assessment project, shares classroom techniques he has refined over three decades.",
    "focus": "Formative assessment",
-   "strand": "Formative assessment"
+   "strand": "Formative assessment",
+   "minutes": 105
   },
   {
    "type": "listen",
@@ -4144,7 +4164,8 @@
     "Free"
    ],
    "summary": "Kristian Still discusses his book Test-Enhanced Learning, bringing together retrieval, spaced practice, interleaving and successive relearning into routines schools can use.",
-   "focus": "Retrieval practice"
+   "focus": "Retrieval practice",
+   "minutes": 66
   },
   {
    "type": "listen",
@@ -4162,7 +4183,8 @@
     "Free"
    ],
    "summary": "Daniel Willingham discusses his book Outsmart Your Brain, explaining why learning is hard and which study habits help students learn independently.",
-   "focus": "Study habits"
+   "focus": "Study habits",
+   "minutes": 78
   },
   {
    "type": "listen",
@@ -4179,7 +4201,8 @@
     "Free"
    ],
    "summary": "Peps Mccrea discusses his book Motivated Teaching and how to build students' motivation to learn in the classroom.",
-   "focus": "Motivation"
+   "focus": "Motivation",
+   "minutes": 125
   },
   {
    "type": "listen",
@@ -4198,7 +4221,8 @@
    ],
    "summary": "Professor Pamela Snow, a psychologist and speech pathologist, discusses phonics and reading instruction, and how adults can draw accurate accounts from children and young people.",
    "focus": "Systematic synthetic phonics",
-   "strand": "Syntheses of the field"
+   "strand": "Syntheses of the field",
+   "minutes": 82
   },
   {
    "type": "listen",
@@ -4215,7 +4239,8 @@
     "Free"
    ],
    "summary": "Educational linguist Lyn Stone discusses literacy instruction and the Big Six components of reading, with plenty for teachers wanting a clear overview.",
-   "strand": "The Big Six and the five components"
+   "strand": "The Big Six and the five components",
+   "minutes": 96
   },
   {
    "type": "listen",
@@ -4233,7 +4258,8 @@
     "Free"
    ],
    "summary": "Jennifer Buckingham compares literacy instruction and policy in the UK, Ireland and Australia, including curriculum, teacher education, assessment and inspection, and how these affect results.",
-   "strand": "Syntheses of the field"
+   "strand": "Syntheses of the field",
+   "minutes": 106
   },
   {
    "type": "listen",
@@ -4250,7 +4276,8 @@
     "Free"
    ],
    "summary": "Doug Lemov discusses The Teach Like a Champion Guide to the Science of Reading, including book choice, book-driven objectives and the place of writing.",
-   "focus": "Teaching reading through whole texts"
+   "focus": "Teaching reading through whole texts",
+   "minutes": 91
   },
   {
    "type": "listen",
@@ -4267,7 +4294,8 @@
     "Free"
    ],
    "summary": "Margaret McKeown, emerita professor at the University of Pittsburgh, discusses robust vocabulary instruction and how teachers can choose and teach words so they stick.",
-   "focus": "Explicit vocabulary teaching"
+   "focus": "Explicit vocabulary teaching",
+   "minutes": 111
   },
   {
    "type": "listen",
@@ -4284,7 +4312,8 @@
     "Free"
    ],
    "summary": "Margaret McKeown outlines the Questioning the Author approach to reading comprehension, then gives feedback on a lesson plan Ollie Lovell built from its strategies.",
-   "focus": "Comprehension through questioning"
+   "focus": "Comprehension through questioning",
+   "minutes": 107
   },
   {
    "type": "listen",
@@ -4301,7 +4330,8 @@
     "Free"
    ],
    "summary": "Judith Hochman, creator of the Hochman Method and founder of The Writing Revolution, explains her method for teaching students to write and how schools can adopt it.",
-   "focus": "Sentence-level writing"
+   "focus": "Sentence-level writing",
+   "minutes": 106
   },
   {
    "type": "listen",
@@ -4319,7 +4349,8 @@
     "Free"
    ],
    "summary": "Nathaniel Swain, a La Trobe University lecturer and former primary learning specialist, discusses how writing can be used to help students learn content.",
-   "focus": "Writing to consolidate knowledge"
+   "focus": "Writing to consolidate knowledge",
+   "minutes": 104
   },
   {
    "type": "listen",
@@ -4336,7 +4367,8 @@
     "Free"
    ],
    "summary": "Karen Harris shares five decades of work on Self-Regulated Strategy Development for writing, and gives feedback on a demonstration SRSD lesson taught by Ollie Lovell.",
-   "focus": "Strategy instruction (SRSD)"
+   "focus": "Strategy instruction (SRSD)",
+   "minutes": 155
   },
   {
    "type": "listen",
@@ -4355,7 +4387,8 @@
    ],
    "summary": "E.D. Hirsch, founder of the Core Knowledge Foundation and author of Cultural Literacy, makes the case for why shared knowledge matters in schooling.",
    "focus": "Why knowledge matters",
-   "strand": "Knowledge and comprehension"
+   "strand": "Knowledge and comprehension",
+   "minutes": 67
   },
   {
    "type": "listen",
@@ -4374,7 +4407,8 @@
     "Free"
    ],
    "summary": "Journalist Natalie Wexler discusses The Knowledge Gap and her argument that building knowledge is central to reading comprehension in American schools.",
-   "strand": "Knowledge and comprehension"
+   "strand": "Knowledge and comprehension",
+   "minutes": 108
   },
   {
    "type": "listen",
@@ -4392,7 +4426,8 @@
     "Free"
    ],
    "summary": "Ben Jensen of Learning First explains why curriculum matters so much for school and system improvement, drawing on his advisory work across education systems.",
-   "focus": "Curriculum as the foundation"
+   "focus": "Curriculum as the foundation",
+   "minutes": 103
   },
   {
    "type": "listen",
@@ -4410,7 +4445,8 @@
     "Free"
    ],
    "summary": "David Morkunas explains what goes into writing high-quality maths lessons and how those principles are built into the Explicit Mathematics Program.",
-   "focus": "Lesson design"
+   "focus": "Lesson design",
+   "minutes": 85
   },
   {
    "type": "listen",
@@ -4428,7 +4464,8 @@
     "Free"
    ],
    "summary": "Amy Haywood and Nick Parkinson from the Grattan Institute discuss their research on primary maths and what systems need to do to improve it.",
-   "focus": "System approaches to primary maths"
+   "focus": "System approaches to primary maths",
+   "minutes": 131
   },
   {
    "type": "listen",
@@ -4446,7 +4483,8 @@
    ],
    "summary": "Daisy Christodoulou discusses getting assessment right, how assessment shapes what happens in classrooms, and the use of comparative judgement.",
    "focus": "Assessment design",
-   "strand": "Summative assessment, marking and reporting"
+   "strand": "Summative assessment, marking and reporting",
+   "minutes": 116
   },
   {
    "type": "listen",
@@ -4465,7 +4503,8 @@
    ],
    "summary": "Lissie Doyle explains how to run test feedback so students think hard about the process and learn from their mistakes.",
    "focus": "Whole-class feedback",
-   "strand": "Formative assessment"
+   "strand": "Formative assessment",
+   "minutes": 77
   },
   {
    "type": "listen",
@@ -4483,7 +4522,8 @@
     "Free"
    ],
    "summary": "Tom Bennett, researchED founder and behaviour adviser to the UK government, discusses behaviour management and what teachers and schools can do to run calm classrooms.",
-   "focus": "Behaviour management"
+   "focus": "Behaviour management",
+   "minutes": 140
   },
   {
    "type": "listen",
@@ -4500,7 +4540,8 @@
     "Free"
    ],
    "summary": "Bill Rogers discusses the human needs behind challenging behaviour and shares practical strategies teachers can use, told through stories from his own classroom practice.",
-   "focus": "Behaviour management"
+   "focus": "Behaviour management",
+   "minutes": 134
   },
   {
    "type": "listen",
@@ -4516,7 +4557,8 @@
    "tags": [
     "Free"
    ],
-   "summary": "Katharine Birbalsingh, founder of Michaela Community School in London, discusses standards, consistency and the routines behind the school's reputation for strictness."
+   "summary": "Katharine Birbalsingh, founder of Michaela Community School in London, discusses standards, consistency and the routines behind the school's reputation for strictness.",
+   "minutes": 61
   },
   {
    "type": "listen",
@@ -4533,7 +4575,8 @@
     "Free"
    ],
    "summary": "Josh Goodrich explains instructional coaching and how it helps teachers improve. This is part a of two; in part b he coaches Ollie Lovell.",
-   "focus": "Instructional coaching"
+   "focus": "Instructional coaching",
+   "minutes": 121
   },
   {
    "type": "listen",
@@ -4550,7 +4593,8 @@
     "Free"
    ],
    "summary": "Peps Mccrea, of Ambition Institute and Steplab, discusses how teacher expertise develops and what that means for those who support teachers.",
-   "focus": "Developing expertise"
+   "focus": "Developing expertise",
+   "minutes": 99
   },
   {
    "type": "listen",
@@ -4567,7 +4611,8 @@
     "Free"
    ],
    "summary": "Researcher Sam Sims discusses two reports he led on what makes professional development effective and what this means for school leaders.",
-   "focus": "Effective professional learning"
+   "focus": "Effective professional learning",
+   "minutes": 100
   },
   {
    "type": "listen",
@@ -4584,7 +4629,8 @@
     "Free"
    ],
    "summary": "Harry Fletcher-Wood shares what it takes to design professional development for teachers that goes deep and changes practice.",
-   "focus": "Running professional learning"
+   "focus": "Running professional learning",
+   "minutes": 128
   },
   {
    "type": "listen",
@@ -4602,7 +4648,8 @@
     "Free"
    ],
    "summary": "Deputy headteacher Alex Evans describes how St Luke's moved from the bottom 20 per cent of schools nationally to the top 20 per cent in four years, using instructional coaching.",
-   "focus": "School improvement through coaching"
+   "focus": "School improvement through coaching",
+   "minutes": 121
   },
   {
    "type": "listen",
@@ -4620,7 +4667,8 @@
     "Free"
    ],
    "summary": "Viviane Robinson discusses her book Reduce Change to Increase Improvement and her engagement approach to leading school improvement.",
-   "focus": "Fewer, deeper priorities"
+   "focus": "Fewer, deeper priorities",
+   "minutes": 111
   },
   {
    "type": "listen",
@@ -4638,7 +4686,8 @@
     "Free"
    ],
    "summary": "Viviane Robinson returns to discuss virtuous educational leadership and what it means for leaders to do the right work in the right way.",
-   "focus": "Leadership conversations"
+   "focus": "Leadership conversations",
+   "minutes": 108
   },
   {
    "type": "listen",
@@ -4655,7 +4704,8 @@
    "tags": [
     "Free"
    ],
-   "summary": "Dylan Wiliam discusses how leaders can build teacher professional development around formative assessment to improve outcomes for students."
+   "summary": "Dylan Wiliam discusses how leaders can build teacher professional development around formative assessment to improve outcomes for students.",
+   "minutes": 133
   },
   {
    "type": "listen",
@@ -4672,7 +4722,8 @@
     "Free"
    ],
    "summary": "Principal Sue Knight, who has led several school turnarounds grounded in the science of learning, shares her three principles for effective school leadership.",
-   "focus": "Leading a school"
+   "focus": "Leading a school",
+   "minutes": 110
   },
   {
    "type": "listen",
@@ -4689,7 +4740,8 @@
     "Free"
    ],
    "summary": "Principal Steve Capp explains what it took to turn around two primary schools, with advice ranging from pedagogy to management.",
-   "focus": "Leading a primary school"
+   "focus": "Leading a primary school",
+   "minutes": 114
   },
   {
    "type": "listen",
@@ -4706,7 +4758,8 @@
    "tags": [
     "Free"
    ],
-   "summary": "Greg Ashman discusses what makes Ballarat Clarendon College a high-performing school, including shared expectations, professional learning, shared lesson plans and use of data."
+   "summary": "Greg Ashman discusses what makes Ballarat Clarendon College a high-performing school, including shared expectations, professional learning, shared lesson plans and use of data.",
+   "minutes": 69
   },
   {
    "type": "listen",
@@ -4724,7 +4777,8 @@
     "Free"
    ],
    "summary": "Principal Lee Musumeci and deputies Mark McClements and Kelly Plunkett describe the approach behind Challis Community Primary School in Armadale, Western Australia.",
-   "focus": "A whole-school case study"
+   "focus": "A whole-school case study",
+   "minutes": 95
   },
   {
    "type": "listen",
@@ -4741,7 +4795,8 @@
     "Free"
    ],
    "summary": "Jonathan Sharples of the Education Endowment Foundation gives practical advice on implementation, helping programs and initiatives have the greatest effect in a school.",
-   "focus": "Implementation"
+   "focus": "Implementation",
+   "minutes": 125
   },
   {
    "type": "listen",
@@ -4758,7 +4813,8 @@
     "Free"
    ],
    "summary": "James Mannion discusses his book Making Change Stick and how schools and organisations can implement changes so that they last.",
-   "focus": "Making change stick"
+   "focus": "Making change stick",
+   "minutes": 135
   },
   {
    "type": "listen",
@@ -4776,7 +4832,8 @@
     "Free"
    ],
    "summary": "Arran Hamilton and Dylan Wiliam discuss Making Room for Impact and de-implementation, the work of deciding what schools should stop doing to free time for what matters.",
-   "focus": "De-implementation"
+   "focus": "De-implementation",
+   "minutes": 130
   },
   {
    "type": "listen",
@@ -4792,7 +4849,8 @@
    "tags": [
     "Free"
    ],
-   "summary": "Adrian Simpson critiques the use of meta-analysis and effect sizes to rank teaching strategies, questioning an approach that has shaped policy in Australia and the UK."
+   "summary": "Adrian Simpson critiques the use of meta-analysis and effect sizes to rank teaching strategies, questioning an approach that has shaped policy in Australia and the UK.",
+   "minutes": 105
   },
   {
    "type": "listen",
@@ -4808,7 +4866,8 @@
    "tags": [
     "Free"
    ],
-   "summary": "Daniel Willingham discusses When Can You Trust the Experts? and offers ways for teachers to judge education research and separate sound claims from weak ones."
+   "summary": "Daniel Willingham discusses When Can You Trust the Experts? and offers ways for teachers to judge education research and separate sound claims from weak ones.",
+   "minutes": 60
   },
   {
    "type": "listen",
@@ -4824,7 +4883,8 @@
    "tags": [
     "Free"
    ],
-   "summary": "Josh Cuevas examines whether learning styles exist and matter, then discusses dual coding and whether independent silent reading helps or hinders literacy gains."
+   "summary": "Josh Cuevas examines whether learning styles exist and matter, then discusses dual coding and whether independent silent reading helps or hinders literacy gains.",
+   "minutes": 98
   },
   {
    "type": "listen",
@@ -4840,7 +4900,8 @@
    "tags": [
     "Free"
    ],
-   "summary": "Benjamin Riley, founder of Cognitive Resonance and formerly of Deans for Impact, discusses human cognition, generative AI and the risks of AI in education."
+   "summary": "Benjamin Riley, founder of Cognitive Resonance and formerly of Deans for Impact, discusses human cognition, generative AI and the risks of AI in education.",
+   "minutes": 107
   },
   {
    "type": "listen",
@@ -4858,7 +4919,8 @@
     "Free"
    ],
    "summary": "Carl Hendrick, co-author of How Learning Happens, discusses five things every teacher should do and how to bridge research and classroom practice.",
-   "focus": "Core teaching habits"
+   "focus": "Core teaching habits",
+   "minutes": 93
   },
   {
    "type": "listen",
@@ -4875,7 +4937,8 @@
    "tags": [
     "Free"
    ],
-   "summary": "Paul Kirschner and Nidhi Sachdeva discuss their book Becoming an Expert Teacher, challenging the idea that great teaching is innate or comes simply with years of experience."
+   "summary": "Paul Kirschner and Nidhi Sachdeva discuss their book Becoming an Expert Teacher, challenging the idea that great teaching is innate or comes simply with years of experience.",
+   "minutes": 72
   },
   {
    "type": "listen",
@@ -4892,7 +4955,8 @@
     "Free"
    ],
    "summary": "Haili Hughes of La Trobe University discusses how teachers improve, the realities of implementing evidence-informed instruction and how leaders can avoid lethal mutations.",
-   "focus": "How teachers improve"
+   "focus": "How teachers improve",
+   "minutes": 75
   },
   {
    "type": "listen",
@@ -4910,7 +4974,8 @@
     "Free"
    ],
    "summary": "Zach Groshell, author of Just Tell Them, joins Brendan Lee for a second conversation on what schools need to consider about coaching, culture and change.",
-   "focus": "Coaching, culture and change"
+   "focus": "Coaching, culture and change",
+   "minutes": 64
   },
   {
    "type": "listen",
@@ -4927,7 +4992,8 @@
     "Free"
    ],
    "summary": "Stuart Kime of Evidence Based Education discusses the Great Teaching Toolkit and why knowing the research does not automatically change what teachers do.",
-   "focus": "The knowing-doing gap"
+   "focus": "The knowing-doing gap",
+   "minutes": 82
   },
   {
    "type": "listen",
@@ -4945,7 +5011,8 @@
     "Free"
    ],
    "summary": "Leaders from the Junior School of Trinity Anglican College, Albury, explain how a large school moved from islands of excellence to a coherent, low-variance instructional model.",
-   "focus": "Staff culture and retention"
+   "focus": "Staff culture and retention",
+   "minutes": 62
   },
   {
    "type": "listen",
@@ -4964,7 +5031,8 @@
    ],
    "summary": "Sarah Brown and Stephanie Stollar work through six common mistakes schools make when implementing multi-tiered systems of support, and what to do instead.",
    "focus": "Implementing MTSS",
-   "strand": "Leading and implementing MTSS"
+   "strand": "Leading and implementing MTSS",
+   "minutes": 65
   },
   {
    "type": "listen",
@@ -4982,7 +5050,8 @@
    ],
    "summary": "Sarah Asome, principal of Bentleigh West Primary School, explains what multi-tiered systems of support look like in practice and how her school aligns its tiers.",
    "focus": "Making every tier count",
-   "strand": "What MTSS is and where to start"
+   "strand": "What MTSS is and where to start",
+   "minutes": 68
   },
   {
    "type": "listen",
@@ -5001,7 +5070,8 @@
    ],
    "summary": "Veronica Alexander, CEO of SPELD NSW, addresses five persistent myths about dyslexia and explains the design of the SPELL systematic spelling program.",
    "focus": "Dyslexia",
-   "strand": "Dyslexia"
+   "strand": "Dyslexia",
+   "minutes": 77
   },
   {
    "type": "listen",
@@ -5019,7 +5089,8 @@
     "Free"
    ],
    "summary": "Kent Johnson and Andrew Kieta of Morningside Academy explain the Morningside Model and how it helps students catch up without watering down the work.",
-   "focus": "Fluency building"
+   "focus": "Fluency building",
+   "minutes": 125
   },
   {
    "type": "listen",
@@ -5036,7 +5107,8 @@
     "Free"
    ],
    "summary": "Brian Poncy returns to discuss maths fact fluency and shares first-year results from a large rollout of the free Facts on Fire program in a Texas school district.",
-   "focus": "Fact fluency"
+   "focus": "Fact fluency",
+   "minutes": 59
   },
   {
    "type": "listen",
@@ -5054,7 +5126,8 @@
     "Free"
    ],
    "summary": "Kristopher Boulton argues that many student errors in maths are predictable results of how concepts are taught, and shows how better instructional design can prevent misconceptions.",
-   "focus": "Clear explanations"
+   "focus": "Clear explanations",
+   "minutes": 69
   },
   {
    "type": "listen",
@@ -5069,7 +5142,8 @@
    "tags": [
     "Free"
    ],
-   "summary": "In a solo episode, Anna Stokke examines five common beliefs about maths teaching that sound convincing but are not supported by high-quality evidence."
+   "summary": "In a solo episode, Anna Stokke examines five common beliefs about maths teaching that sound convincing but are not supported by high-quality evidence.",
+   "minutes": 22
   },
   {
    "type": "listen",
@@ -5087,7 +5161,8 @@
     "Free"
    ],
    "summary": "Héctor Ruiz Martín explains what memory research says about why students forget, why transfer is difficult, and the roles of prior knowledge and retrieval.",
-   "focus": "How memory works"
+   "focus": "How memory works",
+   "minutes": 59
   },
   {
    "type": "listen",
@@ -5105,7 +5180,8 @@
     "Free"
    ],
    "summary": "Doug Lemov discusses educational equity and why strong teaching, clear behaviour routines, high expectations and academic rigour help every student succeed.",
-   "focus": "High expectations"
+   "focus": "High expectations",
+   "minutes": 65
   },
   {
    "type": "listen",
@@ -5122,7 +5198,8 @@
    "tags": [
     "Free"
    ],
-   "summary": "Nidhi Sachdeva and Paul Kirschner discuss what makes an expert teacher and how teaching expertise can be deliberately developed, drawing on their book Becoming an Expert Teacher."
+   "summary": "Nidhi Sachdeva and Paul Kirschner discuss what makes an expert teacher and how teaching expertise can be deliberately developed, drawing on their book Becoming an Expert Teacher.",
+   "minutes": 73
   },
   {
    "type": "listen",
@@ -5137,7 +5214,8 @@
     "Free"
    ],
    "summary": "Alex Quigley, Kirsten Mould and guests discuss the EEF's updated implementation guidance and what good implementation looks like in practice in schools.",
-   "focus": "Implementation"
+   "focus": "Implementation",
+   "minutes": 69
   },
   {
    "type": "listen",
@@ -5152,7 +5230,8 @@
     "Free"
    ],
    "summary": "Alex Quigley, Chloe Butlin and guests explore the foundations of effective writing instruction, including common misconceptions and the relationship between reading and writing.",
-   "focus": "Foundations of writing"
+   "focus": "Foundations of writing",
+   "minutes": 30
   },
   {
    "type": "listen",
@@ -5167,7 +5246,8 @@
     "Free"
    ],
    "summary": "Alex Quigley and Chloe Butlin talk with experts and practitioners from different phases about why subject-specific talk matters across the curriculum.",
-   "focus": "Structured talk"
+   "focus": "Structured talk",
+   "minutes": 39
   },
   {
    "type": "listen",
@@ -5182,7 +5262,8 @@
     "Free"
    ],
    "summary": "Alex Quigley and Grace Coker explore problem solving in maths and why it is a priority, with guests including Camilla Gilmore and Helen Drury.",
-   "focus": "Problem solving"
+   "focus": "Problem solving",
+   "minutes": 49
   },
   {
    "type": "listen",
@@ -5197,7 +5278,8 @@
     "Free"
    ],
    "summary": "Sue Gifford discusses the research evidence on manipulatives in maths, then primary and secondary practitioners describe how they use them in classrooms.",
-   "focus": "Concrete and pictorial representations"
+   "focus": "Concrete and pictorial representations",
+   "minutes": 42
   },
   {
    "type": "listen",
@@ -5212,7 +5294,8 @@
     "Free"
    ],
    "summary": "Alex Quigley and Corinne Settle discuss implementing metacognitive strategies, with experts and practitioners describing what the approaches look like in practice and their effect on learners.",
-   "focus": "Metacognition"
+   "focus": "Metacognition",
+   "minutes": 35
   },
   {
    "type": "listen",
@@ -5228,7 +5311,8 @@
    ],
    "summary": "Alex Quigley and Kirsten Mould discuss the EEF's updated guidance on deploying teaching assistants, with Gary Aubin and practitioners reflecting on what works in their settings.",
    "focus": "Education support staff",
-   "strand": "Supporting students with additional needs"
+   "strand": "Supporting students with additional needs",
+   "minutes": 47
   },
   {
    "type": "listen",
@@ -5262,7 +5346,8 @@
    ],
    "summary": "Stephanie Stollar explains how MTSS for reading differs from traditional RTI, describing it as a comprehensive framework for systems change.",
    "focus": "MTSS for reading",
-   "strand": "What MTSS is and where to start"
+   "strand": "What MTSS is and where to start",
+   "minutes": 42
   },
   {
    "type": "listen",
@@ -5278,7 +5363,8 @@
     "Free"
    ],
    "summary": "Susan Lambert draws on past episodes with Steve Graham, Young-Suk Grace Kim, Natalie Wexler and Judith Hochman to give an overview of science-based writing instruction.",
-   "strand": "The Writing Rope and views of writing"
+   "strand": "The Writing Rope and views of writing",
+   "minutes": 36
   },
   {
    "type": "listen",
@@ -5341,7 +5427,8 @@
     "Free"
    ],
    "summary": "Tom Bennett, founder of researchED and behaviour adviser to the UK government, shares his path into teaching and the lessons behind Running the Room.",
-   "focus": "Routines and running the room"
+   "focus": "Routines and running the room",
+   "minutes": 78
   },
   {
    "type": "listen",
@@ -5358,7 +5445,8 @@
     "Free"
    ],
    "summary": "Tim McDonald discusses his Centre for Independent Studies paper on teaching behaviour and what building a behaviour curriculum involves for schools.",
-   "focus": "Teaching behaviour explicitly"
+   "focus": "Teaching behaviour explicitly",
+   "minutes": 76
   },
   {
    "type": "listen",
@@ -5375,7 +5463,8 @@
     "Free"
    ],
    "summary": "Mark Dowley unpacks The Classroom Management Handbook, which he co-authored with Ollie Lovell, and its practical guidance on managing behaviour to maximise learning.",
-   "focus": "Managing behaviour to maximise learning"
+   "focus": "Managing behaviour to maximise learning",
+   "minutes": 72
   },
   {
    "type": "listen",
@@ -5392,7 +5481,8 @@
     "Free"
    ],
    "summary": "John Sweller explains cognitive load theory, the limits of working memory, and how the theory should guide classroom practice, particularly in mathematics.",
-   "focus": "Cognitive load"
+   "focus": "Cognitive load",
+   "minutes": 59
   },
   {
    "type": "listen",
@@ -5409,7 +5499,8 @@
     "Free"
    ],
    "summary": "Professor Andrew Martin of UNSW discusses load reduction instruction and his research on student motivation and engagement.",
-   "focus": "Load reduction instruction"
+   "focus": "Load reduction instruction",
+   "minutes": 88
   },
   {
    "type": "listen",
@@ -5424,7 +5515,8 @@
     "Free"
    ],
    "summary": "An EEF panel explores the findings of the evidence review Cognitive Science in the Classroom and what they mean for classroom practice.",
-   "focus": "Cognitive science in the classroom"
+   "focus": "Cognitive science in the classroom",
+   "minutes": 52
   },
   {
    "type": "listen",
@@ -5441,7 +5533,8 @@
     "Free"
    ],
    "summary": "Nathaniel Swain discusses his book Harnessing the Science of Learning and the decisions schools and teachers face in prioritising what matters.",
-   "focus": "Science of learning priorities"
+   "focus": "Science of learning priorities",
+   "minutes": 93
   },
   {
    "type": "listen",
@@ -5458,7 +5551,8 @@
     "Free"
    ],
    "summary": "Sarah Cottingham discusses her book on Ausubel's meaningful learning and what the theory suggests about connecting new content to what students already know.",
-   "focus": "Connecting to prior knowledge"
+   "focus": "Connecting to prior knowledge",
+   "minutes": 186
   },
   {
    "type": "listen",
@@ -5475,7 +5569,8 @@
     "Free"
    ],
    "summary": "Paul Kirschner, Carl Hendrick and Jim Heal discuss their book Instructional Illusions and how to bridge the gap between education research and practice.",
-   "focus": "Engagement versus learning"
+   "focus": "Engagement versus learning",
+   "minutes": 74
   },
   {
    "type": "listen",
@@ -5492,7 +5587,8 @@
     "Free"
    ],
    "summary": "Kate Jones explains what retrieval practice looks like in the classroom, shares strategies for making it a habit and clears up common misunderstandings.",
-   "focus": "Retrieval practice"
+   "focus": "Retrieval practice",
+   "minutes": 95
   },
   {
    "type": "listen",
@@ -5507,7 +5603,8 @@
     "Free"
    ],
    "summary": "Alex Quigley, Rachael Cattrall and guests discuss how retrieval practice has evolved and how cognitive science principles are being applied in classrooms.",
-   "focus": "Retrieval practice"
+   "focus": "Retrieval practice",
+   "minutes": 57
   },
   {
    "type": "listen",
@@ -5524,7 +5621,8 @@
     "Free"
    ],
    "summary": "Jocelyn Seamer explains how short curriculum organisers clarify what to teach and help students know what to focus on during retrieval and review.",
-   "focus": "Daily review"
+   "focus": "Daily review",
+   "minutes": 15
   },
   {
    "type": "listen",
@@ -5541,7 +5639,8 @@
     "Free"
    ],
    "summary": "Elizabeth and Robert Bjork explain what makes a difficulty desirable, and why strategies that feel effortful often produce stronger, longer-lasting learning than those that feel easy.",
-   "focus": "Spacing and desirable difficulties"
+   "focus": "Spacing and desirable difficulties",
+   "minutes": 55
   },
   {
    "type": "listen",
@@ -5558,7 +5657,8 @@
     "Free"
    ],
    "summary": "Kimberly Nix Berens, founder of Fit Learning, explains the science of behaviour and precision teaching, and why observable, measurable learning matters in classrooms.",
-   "focus": "Precision teaching"
+   "focus": "Precision teaching",
+   "minutes": 78
   },
   {
    "type": "listen",
@@ -5575,7 +5675,8 @@
     "Free"
    ],
    "summary": "Bethany Rittle-Johnson of Vanderbilt University discusses her research on conceptual and procedural knowledge in maths, along with worked examples and self-explanation.",
-   "focus": "Conceptual and procedural knowledge"
+   "focus": "Conceptual and procedural knowledge",
+   "minutes": 64
   },
   {
    "type": "listen",
@@ -5592,7 +5693,8 @@
     "Free"
    ],
    "summary": "Byers, Leighton and Perry discuss their work on developing self-regulated learners, with Terry Byers drawing on his role at Anglican Church Grammar School in Brisbane.",
-   "focus": "Self-regulated learners"
+   "focus": "Self-regulated learners",
+   "minutes": 120
   },
   {
    "type": "listen",
@@ -5609,7 +5711,8 @@
     "Free"
    ],
    "summary": "Sam Gibbs, trust lead for curriculum at the Greater Manchester Education Trust, explains concept-led curriculum design. This is part a of episode 83.",
-   "focus": "Concept-led curriculum sequencing"
+   "focus": "Concept-led curriculum sequencing",
+   "minutes": 110
   },
   {
    "type": "listen",
@@ -5626,7 +5729,8 @@
     "Free"
    ],
    "summary": "Jocelyn Seamer shares how she writes and teaches text-based units that engage all students in age-appropriate content. A Summer Series replay of a listener favourite.",
-   "focus": "Text-based units"
+   "focus": "Text-based units",
+   "minutes": 15
   },
   {
    "type": "listen",
@@ -5643,7 +5747,8 @@
     "Free"
    ],
    "summary": "Jocelyn Seamer looks beyond polarised views of scripted programs, using Blanchard's Situational Leadership Model to consider when scripts suit teachers at different stages.",
-   "focus": "Shared lesson materials"
+   "focus": "Shared lesson materials",
+   "minutes": 18
   },
   {
    "type": "listen",
@@ -5662,7 +5767,8 @@
    ],
    "summary": "Natalie Wexler discusses what drives reading comprehension and why knowledge-rich instruction matters for every learner, drawing on The Knowledge Gap and Beyond the Science of Reading.",
    "focus": "Knowledge-rich curriculum",
-   "strand": "Knowledge and comprehension"
+   "strand": "Knowledge and comprehension",
+   "minutes": 72
   },
   {
    "type": "listen",
@@ -5679,7 +5785,8 @@
     "Free"
    ],
    "summary": "Brandi Simonsen, co-director of the US National Center on PBIS, gives a practical guide to understanding and supporting positive student behaviour.",
-   "focus": "Positive classroom management"
+   "focus": "Positive classroom management",
+   "minutes": 86
   },
   {
    "type": "listen",
@@ -5698,7 +5805,8 @@
    ],
    "summary": "Charlotte Peverett, a learning specialist and inclusion outreach coach, discusses structures, routines and holding high expectations for all students, including diverse learners.",
    "focus": "High expectations for diverse learners",
-   "strand": "Supporting students with additional needs"
+   "strand": "Supporting students with additional needs",
+   "minutes": 76
   },
   {
    "type": "listen",
@@ -5730,7 +5838,8 @@
     "Free"
    ],
    "summary": "Anita Archer, co-author of Explicit Instruction: Effective and Efficient Teaching, explains what explicit instruction is and why it works.",
-   "focus": "Explicit instruction"
+   "focus": "Explicit instruction",
+   "minutes": 78
   },
   {
    "type": "listen",
@@ -5747,7 +5856,8 @@
     "Free"
    ],
    "summary": "Tom Sherrington, author of Rosenshine's Principles in Action, explains how Rosenshine's Principles of Instruction became a foundation for his own practice and work with teachers.",
-   "focus": "Rosenshine's principles"
+   "focus": "Rosenshine's principles",
+   "minutes": 63
   },
   {
    "type": "listen",
@@ -5764,7 +5874,8 @@
     "Free"
    ],
    "summary": "Jocelyn Seamer explains primacy and recency, the finding that students best remember the start and end of lessons, and how to plan lessons around it.",
-   "focus": "Using the start of the lesson"
+   "focus": "Using the start of the lesson",
+   "minutes": 18
   },
   {
    "type": "listen",
@@ -5781,7 +5892,8 @@
     "Free"
    ],
    "summary": "Alexander Renkl explains how self-explanation, students' internal dialogue, affects learning from worked examples and problem solving, and how teachers can prompt it.",
-   "focus": "Self-explanation"
+   "focus": "Self-explanation",
+   "minutes": 107
   },
   {
    "type": "listen",
@@ -5798,7 +5910,8 @@
     "Free"
    ],
    "summary": "Oliver Caviglioli, a former special school principal and expert in visual teaching strategies, discusses information design and how to present ideas clearly.",
-   "focus": "Dual coding and information design"
+   "focus": "Dual coding and information design",
+   "minutes": 148
   },
   {
    "type": "listen",
@@ -5845,7 +5958,8 @@
     "Free"
    ],
    "summary": "Jocelyn Seamer discusses how to keep student engagement high in low-variance instruction. A Summer Series replay of a listener favourite.",
-   "focus": "Participation in low variance lessons"
+   "focus": "Participation in low variance lessons",
+   "minutes": 22
   },
   {
    "type": "listen",
@@ -5862,7 +5976,8 @@
     "Free"
    ],
    "summary": "Maths teacher Sammy Kempner of The Totteridge Academy in London describes teaching with group work, accountability and chants, in a department whose results improved markedly.",
-   "focus": "Choral response and accountable group work"
+   "focus": "Choral response and accountable group work",
+   "minutes": 145
   },
   {
    "type": "listen",
@@ -5879,7 +5994,8 @@
     "Free"
    ],
    "summary": "Craig Barton and Ollie Lovell launch their Tips and Tools for Teachers series, each sharing three tips, tools or takeaways from the month.",
-   "focus": "Practical classroom techniques"
+   "focus": "Practical classroom techniques",
+   "minutes": 78
   },
   {
    "type": "listen",
@@ -5896,7 +6012,8 @@
     "Free"
    ],
    "summary": "Instructional coach Bron Ryrie Jones discusses responsive teaching, techniques for checking for understanding, and the role of instructional playbooks in building teacher expertise.",
-   "focus": "Responsive teaching and playbooks"
+   "focus": "Responsive teaching and playbooks",
+   "minutes": 79
   },
   {
    "type": "listen",
@@ -5913,7 +6030,8 @@
     "Free"
    ],
    "summary": "Sarah Powell of the University of Texas at Austin shares what her research says about teaching students to solve maths word problems.",
-   "focus": "Word problems"
+   "focus": "Word problems",
+   "minutes": 78
   },
   {
    "type": "listen",
@@ -5930,7 +6048,8 @@
     "Free"
    ],
    "summary": "Jocelyn Seamer argues that independent research projects ask novices to teach themselves complex topics without enough support, drawing on cognitive load theory and research on emotion in learning.",
-   "focus": "Independent tasks"
+   "focus": "Independent tasks",
+   "minutes": 26
   },
   {
    "type": "listen",
@@ -5947,7 +6066,8 @@
     "Free"
    ],
    "summary": "Jocelyn Seamer explains how to read phonics screening check results, using score sheets to work out where students need help and what to do next.",
-   "focus": "After the Year 1 Phonics Check"
+   "focus": "After the Year 1 Phonics Check",
+   "minutes": 34
   },
   {
    "type": "listen",
@@ -5964,7 +6084,8 @@
     "Free"
    ],
    "summary": "Jocelyn Seamer gives practical guidance on choosing a phonics program, including the difference between evidence-based and evidence-informed programs.",
-   "focus": "Choosing a phonics program"
+   "focus": "Choosing a phonics program",
+   "minutes": 28
   },
   {
    "type": "listen",
@@ -5981,7 +6102,8 @@
     "Free"
    ],
    "summary": "Jocelyn Seamer questions the assumption that whole-class phonics is most effective and uses cognitive load theory and intervention research to argue for targeted Tier 1 grouping.",
-   "focus": "Grouping for phonics"
+   "focus": "Grouping for phonics",
+   "minutes": 24
   },
   {
    "type": "listen",
@@ -5998,7 +6120,8 @@
     "Free"
    ],
    "summary": "Jocelyn Seamer challenges the idea that whole-class phonics is more equitable than targeted grouping, drawing on cognitive load theory and the limits of working memory.",
-   "focus": "Whole-class phonics"
+   "focus": "Whole-class phonics",
+   "minutes": 27
   },
   {
    "type": "listen",
@@ -6015,7 +6138,8 @@
     "Free"
    ],
    "summary": "Jocelyn Seamer weighs the research on decodable and levelled texts, separating findings teachers can rely on from weaker claims.",
-   "focus": "Decodable texts"
+   "focus": "Decodable texts",
+   "minutes": 25
   },
   {
    "type": "listen",
@@ -6032,7 +6156,8 @@
     "Free"
    ],
    "summary": "Jocelyn Seamer shares a whole-class way to assess phonics knowledge at the start of the year, using whiteboards and five graphemes a day.",
-   "focus": "Phonics assessment"
+   "focus": "Phonics assessment",
+   "minutes": 14
   },
   {
    "type": "listen",
@@ -6049,7 +6174,8 @@
     "Free"
    ],
    "summary": "Jocelyn Seamer reviews forty years of research on picture mnemonics in phonics and offers five practical shifts to make them work as a teaching tool.",
-   "focus": "Phonics routines"
+   "focus": "Phonics routines",
+   "minutes": 16
   },
   {
    "type": "listen",
@@ -6067,7 +6193,8 @@
    ],
    "summary": "Pamela Snow reflects on the long push for evidence-based reading instruction and why changing practice takes effort from the whole education community.",
    "focus": "Changing reading instruction",
-   "strand": "Syntheses of the field"
+   "strand": "Syntheses of the field",
+   "minutes": 80
   },
   {
    "type": "listen",
@@ -6085,7 +6212,8 @@
    ],
    "summary": "Mandy Nayton, CEO of the Dyslexia-SPELD Foundation, explains what the science of reading is and is not, and how students learn to read.",
    "focus": "Science of reading overview",
-   "strand": "Syntheses of the field"
+   "strand": "Syntheses of the field",
+   "minutes": 83
   },
   {
    "type": "listen",
@@ -6102,7 +6230,8 @@
     "Free"
    ],
    "summary": "Teacher James Dobson describes applying evidence-based practice, including Direct Instruction programs, with students in their first year of school.",
-   "focus": "Foundation year teaching"
+   "focus": "Foundation year teaching",
+   "minutes": 99
   },
   {
    "type": "listen",
@@ -6120,7 +6249,8 @@
    ],
    "summary": "Emina McLean discusses the challenges of translating literacy research into practice and building effective systems for teaching literacy in schools.",
    "focus": "Research translation in literacy",
-   "strand": "Syntheses of the field"
+   "strand": "Syntheses of the field",
+   "minutes": 78
   },
   {
    "type": "listen",
@@ -6138,7 +6268,8 @@
     "Free"
    ],
    "summary": "Jocelyn Seamer shares five evidence-informed moves for reading in Years 3 to 6, including language-rich talk, explicit code knowledge, partner reading and careful text selection.",
-   "focus": "Reading success in 3 to 6"
+   "focus": "Reading success in 3 to 6",
+   "minutes": 21
   },
   {
    "type": "listen",
@@ -6155,7 +6286,8 @@
     "Free"
    ],
    "summary": "Jocelyn Seamer discusses effective literacy instruction in upper primary and how to move beyond levelled texts and strategy-heavy comprehension lessons.",
-   "focus": "Structured literacy in 3 to 6"
+   "focus": "Structured literacy in 3 to 6",
+   "minutes": 81
   },
   {
    "type": "listen",
@@ -6172,7 +6304,8 @@
     "Free"
    ],
    "summary": "Christopher Such discusses his book Primary Reading Simplified and what close reading looks like in a primary classroom.",
-   "focus": "Close reading"
+   "focus": "Close reading",
+   "minutes": 88
   },
   {
    "type": "listen",
@@ -6187,7 +6320,8 @@
     "Free"
    ],
    "summary": "An EEF panel including Tim Rasinski discusses the evidence on why fluency matters in teaching children to read and how to develop it.",
-   "focus": "Fluency"
+   "focus": "Fluency",
+   "minutes": 55
   },
   {
    "type": "listen",
@@ -6204,7 +6338,8 @@
    ],
    "summary": "An EEF panel including Kate Cain discusses the reading comprehension house from the guidance report Improving Literacy in Key Stage 2 and how it supports teaching.",
    "focus": "Comprehension",
-   "strand": "Knowledge and comprehension"
+   "strand": "Knowledge and comprehension",
+   "minutes": 54
   },
   {
    "type": "listen",
@@ -6221,7 +6356,8 @@
     "Free"
    ],
    "summary": "Jocelyn Seamer introduces four dimensions of text demand to help teachers choose rich texts that challenge students without overwhelming them, moving beyond levelling systems.",
-   "focus": "Text complexity and text selection"
+   "focus": "Text complexity and text selection",
+   "minutes": 17
   },
   {
    "type": "listen",
@@ -6240,7 +6376,8 @@
    ],
    "summary": "Jocelyn Seamer explores where comprehension strategies fit within overall reading instruction. A Summer Series replay of a listener favourite.",
    "focus": "Comprehension strategies",
-   "strand": "Knowledge and comprehension"
+   "strand": "Knowledge and comprehension",
+   "minutes": 18
   },
   {
    "type": "listen",
@@ -6257,7 +6394,8 @@
     "Free"
    ],
    "summary": "Jocelyn Seamer talks through the shifts in thinking needed when moving away from small-group guided reading. A Summer Series replay of a listener favourite.",
-   "focus": "Moving on from guided reading"
+   "focus": "Moving on from guided reading",
+   "minutes": 24
   },
   {
    "type": "listen",
@@ -6274,7 +6412,8 @@
     "Free"
    ],
    "summary": "Jocelyn Seamer explains how spelling that is not automatic takes up working memory students need for writing, especially in upper primary and early secondary.",
-   "focus": "Reviewing a spelling approach"
+   "focus": "Reviewing a spelling approach",
+   "minutes": 26
   },
   {
    "type": "listen",
@@ -6291,7 +6430,8 @@
     "Free"
    ],
    "summary": "Part two turns practical, with Jocelyn Seamer explaining how to plan spelling instruction for the real mix of spellers in upper primary and early secondary classes.",
-   "focus": "Reviewing a spelling approach"
+   "focus": "Reviewing a spelling approach",
+   "minutes": 23
   },
   {
    "type": "listen",
@@ -6307,7 +6447,8 @@
    "tags": [
     "Free"
    ],
-   "focus": "Evaluating spelling instruction"
+   "focus": "Evaluating spelling instruction",
+   "minutes": 25
   },
   {
    "type": "listen",
@@ -6324,7 +6465,8 @@
     "Free"
    ],
    "summary": "Jocelyn Seamer shows how spelling lessons in Years 3 to 6 can be both explicit and engaging, challenging the idea that structured teaching must be dull.",
-   "focus": "Explicit spelling in 3 to 6"
+   "focus": "Explicit spelling in 3 to 6",
+   "minutes": 13
   },
   {
    "type": "listen",
@@ -6341,7 +6483,8 @@
     "Free"
    ],
    "summary": "Jocelyn Seamer reviews the key features of explicit instruction and explains why some common spelling practices are less explicit than they first appear.",
-   "focus": "Explicit spelling"
+   "focus": "Explicit spelling",
+   "minutes": 23
   },
   {
    "type": "listen",
@@ -6358,7 +6501,8 @@
     "Free"
    ],
    "summary": "Jocelyn Seamer shares tips for finding time for morphology in a crowded literacy block, in both the early years and upper primary.",
-   "focus": "Morphology"
+   "focus": "Morphology",
+   "minutes": 13
   },
   {
    "type": "listen",
@@ -6375,7 +6519,8 @@
     "Free"
    ],
    "summary": "Nathaniel Swain of La Trobe University, founder of Think Forward Educators, returns to discuss how to develop strong writing skills in students.",
-   "focus": "Developing writing skills"
+   "focus": "Developing writing skills",
+   "minutes": 54
   },
   {
    "type": "listen",
@@ -6392,7 +6537,8 @@
     "Free"
    ],
    "summary": "Leslie Laud, founding director of ThinkSRSD, explains the program's key writing strategies, including mnemonics, and how to apply them across year levels and genres.",
-   "focus": "Implementing a writing approach"
+   "focus": "Implementing a writing approach",
+   "minutes": 73
   },
   {
    "type": "listen",
@@ -6411,7 +6557,8 @@
    ],
    "summary": "Jocelyn Seamer sets out the research foundation for integrating reading and writing instruction, including Fitzgerald and Shanahan's shared knowledge framework.",
    "focus": "Connecting reading and writing",
-   "strand": "The Writing Rope and views of writing"
+   "strand": "The Writing Rope and views of writing",
+   "minutes": 22
   },
   {
    "type": "listen",
@@ -6428,7 +6575,8 @@
     "Free"
    ],
    "summary": "Jocelyn Seamer presents five evidence-informed strategies for integrating reading and writing, beginning with having students both read and write in phonics lessons.",
-   "focus": "Connecting reading and writing"
+   "focus": "Connecting reading and writing",
+   "minutes": 21
   },
   {
    "type": "listen",
@@ -6445,7 +6593,8 @@
     "Free"
    ],
    "summary": "Jocelyn Seamer reflects on a failed writing experiment of her own and explains why automatic handwriting and spelling are prerequisites for composition.",
-   "focus": "Writing volume"
+   "focus": "Writing volume",
+   "minutes": 20
   },
   {
    "type": "listen",
@@ -6462,7 +6611,8 @@
     "Free"
    ],
    "summary": "Jocelyn Seamer uses cognitive load theory to explain why students struggle with persuasive writing and identifies five common mistakes in how it is taught.",
-   "focus": "Persuasive writing"
+   "focus": "Persuasive writing",
+   "minutes": 19
   },
   {
    "type": "listen",
@@ -6481,7 +6631,8 @@
    ],
    "summary": "Jocelyn Seamer links oral language to theoretical frameworks for reading and shares five tips for including it across all areas of the curriculum.",
    "focus": "Oral language for reading and spelling",
-   "strand": "Oral language as the foundation"
+   "strand": "Oral language as the foundation",
+   "minutes": 20
   },
   {
    "type": "listen",
@@ -6499,7 +6650,8 @@
    ],
    "summary": "Alex Quigley, Alex Reynolds and guests including Jessie Ricketts discuss vocabulary instruction and its connections to reading and the curriculum.",
    "focus": "Vocabulary and language",
-   "strand": "Oral language as the foundation"
+   "strand": "Oral language as the foundation",
+   "minutes": 59
   },
   {
    "type": "listen",
@@ -6516,7 +6668,8 @@
     "Free"
    ],
    "summary": "Amy Haywood and Nick Parkinson unpack the Grattan Institute's Maths Guarantee report, including equity gaps in maths and the need for high-quality curriculum materials.",
-   "focus": "System approaches to primary maths"
+   "focus": "System approaches to primary maths",
+   "minutes": 98
   },
   {
    "type": "listen",
@@ -6536,7 +6689,8 @@
    ],
    "summary": "Cognitive neuroscientist Daniel Ansari explains what young children need to understand about numbers and why some students struggle with maths from the start.",
    "focus": "Number sense and maths difficulties",
-   "strand": "Dyscalculia and maths difficulties"
+   "strand": "Dyscalculia and maths difficulties",
+   "minutes": 82
   },
   {
    "type": "listen",
@@ -6554,7 +6708,8 @@
     "Free"
    ],
    "summary": "Professor Nancy Jordan discusses her research on early numeracy, including number sense, screeners, intervention and fractions.",
-   "focus": "Early numeracy screening"
+   "focus": "Early numeracy screening",
+   "minutes": 69
   },
   {
    "type": "listen",
@@ -6571,7 +6726,8 @@
     "Free"
    ],
    "summary": "Brian Poncy of Oklahoma State University, creator of Facts on Fire, explains why fluency is an overlooked foundation for long-term success in maths.",
-   "focus": "Fact fluency"
+   "focus": "Fact fluency",
+   "minutes": 95
   },
   {
    "type": "listen",
@@ -6588,7 +6744,8 @@
     "Free"
    ],
    "summary": "Sarah Powell and Anna Stokke respond to an NCSM statement criticising the Science of Math movement and explain what the movement is.",
-   "focus": "Evidence-based maths teaching"
+   "focus": "Evidence-based maths teaching",
+   "minutes": 65
   },
   {
    "type": "listen",
@@ -6605,7 +6762,8 @@
     "Free"
    ],
    "summary": "Pamela Snow returns to talk with Anna Stokke about the common arguments used to dismiss rigorous research in education, such as teaching being too complex to study and every child learning differently, and why experience alone cannot show which practices work.",
-   "focus": "Evidence in education"
+   "focus": "Evidence in education",
+   "minutes": 70
   },
   {
    "type": "listen",
@@ -6624,7 +6782,8 @@
    ],
    "summary": "Pamela Snow talks with Anna Stokke about evidence-based ways to teach reading, school as a health intervention, the golden mean fallacy in education and how teacher preparation can improve.",
    "focus": "Evidence in education",
-   "strand": "Syntheses of the field"
+   "strand": "Syntheses of the field",
+   "minutes": 71
   },
   {
    "type": "listen",
@@ -6641,7 +6800,8 @@
     "Free"
    ],
    "summary": "Craig Barton, author of How I Wish I Taught Maths, talks with Brendan Lee about what he has learned about becoming a better maths teacher.",
-   "focus": "Maths teaching craft"
+   "focus": "Maths teaching craft",
+   "minutes": 108
   },
   {
    "type": "listen",
@@ -6659,7 +6819,8 @@
    ],
    "summary": "Matthew Burns explains the different categories of assessment, what each is for, and how data can inform reading and maths instruction and intervention.",
    "focus": "Using data to drive intervention",
-   "strand": "Screening, diagnostic assessment and progress monitoring"
+   "strand": "Screening, diagnostic assessment and progress monitoring",
+   "minutes": 76
   },
   {
    "type": "listen",
@@ -6677,7 +6838,8 @@
    ],
    "summary": "Jocelyn Seamer addresses the common challenge of tracking students' reading progress when a school no longer uses a benchmark assessment.",
    "focus": "Tracking reading growth",
-   "strand": "Screening, diagnostic assessment and progress monitoring"
+   "strand": "Screening, diagnostic assessment and progress monitoring",
+   "minutes": 15
   },
   {
    "type": "listen",
@@ -6695,7 +6857,8 @@
    ],
    "summary": "Jocelyn Seamer works through assessing and grading reading in Years 3 to 6 and aligning practice with the Australian Curriculum achievement standards.",
    "focus": "Reading assessment in 3 to 6",
-   "strand": "Using assessment data well"
+   "strand": "Using assessment data well",
+   "minutes": 22
   },
   {
    "type": "listen",
@@ -6713,7 +6876,8 @@
    ],
    "summary": "Jocelyn Seamer outlines the critical factors in strong Tier 1 instruction, arguing it is the real key to inclusive teaching.",
    "focus": "Tier 1",
-   "strand": "Tier 1 teaching for every student"
+   "strand": "Tier 1 teaching for every student",
+   "minutes": 19
   },
   {
    "type": "listen",
@@ -6731,7 +6895,8 @@
    ],
    "summary": "Jocelyn Seamer identifies five reasons Tier 2 intervention often fails, including misalignment with Tier 1 and asking struggling students to learn from separate programs.",
    "focus": "Tier 2",
-   "strand": "Tier 2 and Tier 3 intervention"
+   "strand": "Tier 2 and Tier 3 intervention",
+   "minutes": 22
   },
   {
    "type": "listen",
@@ -6749,7 +6914,8 @@
    ],
    "summary": "Jessica Colleu Terradas shares what she learned from visiting experts in the USA, England and France about effective literacy screening and intervention for at-risk students.",
    "focus": "Screening and intervention",
-   "strand": "Screening and data in MTSS"
+   "strand": "Screening and data in MTSS",
+   "minutes": 79
   },
   {
    "type": "listen",
@@ -6765,7 +6931,8 @@
    ],
    "summary": "Alex Quigley, Kirsten Mould and guests including Gary Aubin discuss how best to support pupils with special educational needs in mainstream classrooms.",
    "focus": "Adaptive teaching",
-   "strand": "Supporting students with additional needs"
+   "strand": "Supporting students with additional needs",
+   "minutes": 69
   },
   {
    "type": "listen",
@@ -6782,7 +6949,8 @@
     "Free"
    ],
    "summary": "Part b of episode 74: Josh Goodrich coaches Ollie Lovell, with videos of the coaching sessions linked in the show notes.",
-   "focus": "A coaching session modelled"
+   "focus": "A coaching session modelled",
+   "minutes": 123
   },
   {
    "type": "listen",
@@ -6799,7 +6967,8 @@
     "Free"
    ],
    "summary": "English teacher Jamie Clark discusses his book One-Pagers and how its summaries of teaching techniques can be used for professional learning.",
-   "focus": "One-pagers for professional learning"
+   "focus": "One-pagers for professional learning",
+   "minutes": 65
   },
   {
    "type": "listen",
@@ -6814,7 +6983,8 @@
     "Free"
    ],
    "summary": "An EEF panel including Harry Fletcher-Wood discusses the key insights from the guidance report Effective Professional Development.",
-   "focus": "Effective professional development"
+   "focus": "Effective professional development",
+   "minutes": 54
   },
   {
    "type": "listen",
@@ -6831,7 +7001,8 @@
     "Free"
    ],
    "summary": "Jeanette Breen of Templestowe Heights Primary School shares insights from her tour of some of the highest-performing schools in the UK.",
-   "focus": "Lessons from high-performing schools"
+   "focus": "Lessons from high-performing schools",
+   "minutes": 106
   },
   {
    "type": "listen",
@@ -6848,7 +7019,8 @@
     "Free"
    ],
    "summary": "Ray Boyd, foundation principal of Dayton Primary School, reflects on leadership, vision and the pedagogical shift he led at West Beechboro Primary School.",
-   "focus": "Vision and school culture"
+   "focus": "Vision and school culture",
+   "minutes": 83
   },
   {
    "type": "listen",
@@ -6863,7 +7035,8 @@
     "Free"
    ],
    "summary": "Alex Quigley, Kirsten Mould and guests including Nick Brook discuss what evidence-informed leadership looks like in schools.",
-   "focus": "Evidence-informed leadership"
+   "focus": "Evidence-informed leadership",
+   "minutes": 63
   },
   {
    "type": "listen",
@@ -6880,7 +7053,8 @@
     "Free"
    ],
    "summary": "Jonathan Sharples unpacks the EEF's updated A School's Guide to Implementation, explaining what changed, why, and what each key element involves.",
-   "focus": "Implementation"
+   "focus": "Implementation",
+   "minutes": 77
   },
   {
    "type": "listen",
@@ -6897,7 +7071,8 @@
     "Free"
    ],
    "summary": "Jocelyn Seamer works through the elements of rolling out a new teaching program in a school, from careful planning to execution.",
-   "focus": "Implementing a new program"
+   "focus": "Implementing a new program",
+   "minutes": 22
   },
   {
    "type": "listen",
@@ -6914,7 +7089,8 @@
     "Free"
    ],
    "summary": "Jocelyn Seamer discusses a new AERO guidance report on why most professional development does not work and what makes school improvement last.",
-   "focus": "Sustaining improvement"
+   "focus": "Sustaining improvement",
+   "minutes": 24
   },
   {
    "type": "listen",
@@ -6931,7 +7107,8 @@
     "Free"
    ],
    "summary": "Trisha Jha of the Centre for Independent Studies unpacks her reports on what the science of learning is and teachers' experiences implementing it.",
-   "focus": "Teachers' experience of science of learning reform"
+   "focus": "Teachers' experience of science of learning reform",
+   "minutes": 97
   },
   {
    "type": "read",
@@ -10370,7 +10547,8 @@
    ],
    "subject": "Across subjects",
    "region": "UK",
-   "kind": "classroom footage with commentary"
+   "kind": "classroom footage with commentary",
+   "minutes": 2
   },
   {
    "type": "watch",
@@ -10396,7 +10574,8 @@
    ],
    "subject": "Literacy and English",
    "region": "UK",
-   "kind": "classroom footage with commentary"
+   "kind": "classroom footage with commentary",
+   "minutes": 1
   },
   {
    "type": "watch",
@@ -10448,7 +10627,8 @@
    ],
    "subject": "Across subjects",
    "region": "USA",
-   "kind": "classroom footage with commentary"
+   "kind": "classroom footage with commentary",
+   "minutes": 1
   },
   {
    "type": "watch",
@@ -10499,7 +10679,8 @@
    ],
    "subject": "Literacy and English",
    "region": "UK",
-   "kind": "classroom footage with commentary"
+   "kind": "classroom footage with commentary",
+   "minutes": 4
   },
   {
    "type": "watch",
@@ -10525,7 +10706,8 @@
    ],
    "subject": "Other subjects",
    "region": "USA",
-   "kind": "classroom footage with commentary"
+   "kind": "classroom footage with commentary",
+   "minutes": 3
   },
   {
    "type": "watch",
@@ -10601,7 +10783,8 @@
    ],
    "subject": "Maths",
    "region": "UK",
-   "kind": "classroom footage with commentary"
+   "kind": "classroom footage with commentary",
+   "minutes": 5
   },
   {
    "type": "watch",
@@ -10627,7 +10810,8 @@
    ],
    "subject": "Literacy and English",
    "region": "USA",
-   "kind": "classroom footage with commentary"
+   "kind": "classroom footage with commentary",
+   "minutes": 4
   },
   {
    "type": "watch",
@@ -10676,7 +10860,8 @@
    ],
    "subject": "Other subjects",
    "region": "USA",
-   "kind": "classroom footage with commentary"
+   "kind": "classroom footage with commentary",
+   "minutes": 5
   },
   {
    "type": "watch",
@@ -10752,7 +10937,8 @@
    ],
    "subject": "Other subjects",
    "region": "USA",
-   "kind": "classroom footage with commentary"
+   "kind": "classroom footage with commentary",
+   "minutes": 4
   },
   {
    "type": "watch",
@@ -10777,7 +10963,8 @@
    ],
    "subject": "Literacy and English",
    "region": "USA",
-   "kind": "classroom footage with commentary"
+   "kind": "classroom footage with commentary",
+   "minutes": 4
   },
   {
    "type": "watch",
@@ -10802,7 +10989,8 @@
    ],
    "subject": "Literacy and English",
    "region": "UK",
-   "kind": "classroom footage with commentary"
+   "kind": "classroom footage with commentary",
+   "minutes": 5
   },
   {
    "type": "watch",
@@ -10826,7 +11014,8 @@
    ],
    "subject": "Across subjects",
    "region": "USA",
-   "kind": "classroom footage with commentary"
+   "kind": "classroom footage with commentary",
+   "minutes": 3
   },
   {
    "type": "watch",
@@ -10851,7 +11040,8 @@
    ],
    "subject": "Literacy and English",
    "region": "USA",
-   "kind": "classroom footage with commentary"
+   "kind": "classroom footage with commentary",
+   "minutes": 2
   },
   {
    "type": "watch",
@@ -12767,7 +12957,8 @@
    ],
    "summary": "Wesley Hoover talks through the Simple View of Reading and how the Cognitive Foundations Framework extends it. The podcast is produced by a publisher, Voyager Sopris Learning.",
    "focus": "The Simple View of Reading",
-   "strand": "The Simple View of Reading"
+   "strand": "The Simple View of Reading",
+   "minutes": 45
   },
   {
    "type": "listen",
@@ -15741,7 +15932,8 @@
     "Free"
    ],
    "summary": "Susan Lambert talks with Jamie Clark about how he condenses research into one-page summaries for teachers, including a close look at his think, pair, share one-pager.",
-   "focus": "One-pagers for professional learning"
+   "focus": "One-pagers for professional learning",
+   "minutes": 44
   },
   {
    "type": "listen",

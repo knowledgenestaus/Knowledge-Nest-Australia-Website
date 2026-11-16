@@ -468,7 +468,20 @@ def shown_meta(x):
     meta = [m for m in x["meta"] if m and m.strip() and m.strip().lower() != "none"]
     if x["type"] == "learn" and x.get("length") and not any(re.search(r"minute|hour|session|animation|\d:\d\d", m, re.I) for m in meta):
         meta = [x["length"]] + meta
+    # Videos and podcast episodes say how long they run when the running time is known ("minutes" in the data).
+    if x["type"] in ("watch", "listen") and x.get("minutes") and not any(re.search(r"minute|hour|\d:\d\d", m, re.I) for m in meta):
+        guests = [m for m in meta if re.match(r"with\s", m, re.I)]
+        meta = guests + [run_time(x["minutes"])] + [m for m in meta if m not in guests]
     return meta
+
+
+def run_time(minutes):
+    """A running time in words: "About 8 minutes", "About 1 hour", "About 1 hour 20 minutes" (to the nearest five past the hour)."""
+    if minutes < 55:
+        return "About %d minute%s" % (minutes, "" if minutes == 1 else "s")
+    h, m = divmod(int(round(minutes / 5.0)) * 5, 60)
+    hours = "%d hour%s" % (h, "" if h == 1 else "s")
+    return "About %s" % hours if not m else "About %s %d minutes" % (hours, m)
 
 
 def shown_tags(x):
@@ -1381,7 +1394,7 @@ def build_home():
              '<p class="lib-own">Looking for my own articles and a downloadable guide? <a href="resources.html">Find them here</a>.</p>'
              '</div></section>' % elements)
     body += newsletter_box("library") + credit_panels()
-    body += '<script src="library/search.js?v=11" defer></script>'
+    body += '<script src="library/search.js?v=12" defer></script>'
     shelves = [(t["title"], public(t["page"])) for t in TYPES.values()]
     topics = [(d, public(domain_page(d, counts))) for d in DOMAIN_ORDER if domain_areas(d, counts)]
     write("library.html", *seo("library.html", "", ""), body, items=shelves + topics + [("Podcasts by the VTLM 2.0", public("library-vtlm.html"))])
@@ -1909,22 +1922,45 @@ def build_home_block():
 
 def people_names():
     """Every person and organisation a visitor might search for: creators, hosts, publications, guests and presenters,
-    and the people on the Voices shelf. Offered as suggestions under the library search box."""
-    names = set()
+    and the people on the Voices shelf. Offered as suggestions under the library search box. Only whole names go in:
+    a single word is kept when it is somebody's full credit ("AERO", "Understood"), never when it is a piece of a longer
+    name, and a place on its own ("Victoria") is not a name."""
+    places = {"victoria", "south australia", "western australia", "new south wales", "nsw", "queensland", "tasmania", "australia", "new zealand",
+              "england", "ireland", "scotland", "wales", "uk", "usa", "canada", "northern territory", "act"}
+    org = re.compile(r"\b(University|Department|Education|School|Institute|Centre|Center|Foundation|Association|Authority|Services|Council|Government|"
+                     r"Network|Hub|Project|Research|Academy|College|Society|Group|Trust|Curriculum|Assessment|Literacy|Learning|Podcast|Magazine|Reports)\b")
+    person = re.compile(r"^[A-Z][\w'’.-]+(\s+(?:[A-Z][\w'’.-]+|de|van|von|der|le|la)){1,3}$")
+    whole = set((x.get("by") or "").strip() for x in ENTRIES)
+    names = {}
+    def keep(n):
+        n = n.strip(" .")
+        if not (3 < len(n) < 60) or n[0].islower() or n[0].isdigit() or n.lower() in places:
+            return
+        if re.search(r"\b(guests|colleagues|others|formerly|project|Premier of)\b", n):
+            return
+        if " " not in n and n not in whole:
+            return
+        names.setdefault(re.sub(r"[^a-z0-9]+", "", n.lower()), n)
     def add(text):
-        for part in re.split(r",\s+with\s+|\s+\(|\)|,\s+(?:for|on)\s+", text or ""):
-            for n in re.split(r",\s*|\s+and\s+", re.sub(r"^(with|by)\s+", "", part.strip(), flags=re.I)):
-                n = n.strip(" .")
-                if 3 < len(n) < 60 and not re.search(r"\b(guests|colleagues|others|formerly)\b", n) and not n[0].islower() and not n[0].isdigit():
-                    names.add(n)
+        text = re.sub(r"^(with|by)\s+", "", (text or "").strip(), flags=re.I)
+        for part in re.split(r",\s+with\s+|\s+\(|\)|,\s+(?:for|on)\s+", text):
+            part = re.sub(r"^(with|by)\s+", "", part.strip(), flags=re.I)
+            for piece in re.split(r",\s*", part):
+                sides = re.split(r"\s+and\s+", piece)
+                # "A and B" is two people only when both sides read as people; an organisation keeps its "and".
+                if len(sides) > 1 and all(person.match(x.strip()) and not org.search(x) for x in sides):
+                    for x in sides:
+                        keep(x)
+                else:
+                    keep(piece)
     for x in ENTRIES:
         add(x.get("by"))
         if x["type"] == "voice":
-            names.add(x["title"])
+            add(x["title"])
         for m in x.get("meta", []):
             if re.match(r"with\s", m or "", re.I):
                 add(m)
-    return sorted(names, key=str.lower)
+    return sorted(names.values(), key=str.lower)
 
 
 def build_search_index():
@@ -1939,6 +1975,8 @@ def build_search_index():
         words = " ".join(v for v in [x.get("focus", ""), " ".join(strands_of(x)), x.get("summary", ""), " ".join(domains_of(x)), search_words(x)] if v)   # searched, not shown
         if words:
             row["s"] = c(words)
+        if x.get("summary"):
+            row["p"] = c(x["summary"])   # shown on the result card
         idx.append(row)
     # The free assessment tools are searchable too, and open the tool itself.
     for t in sorted(_load("assessments.json", {}).get("tools", []), key=lambda t: not t.get("au")):
