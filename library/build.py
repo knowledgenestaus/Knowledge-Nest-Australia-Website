@@ -620,7 +620,7 @@ _AU_WORDS = re.compile(r"\b(Australia|Australian|Victoria|Victorian|NSW|New Sout
 # the Australian Substacks and the hosts of the Australian podcasts. Add a name here when a new one turns up.
 AUSTRALIAN_PEOPLE = ["Lorraine Hammond", "Lyn Stone", "John Sweller", "Slava Kalyuga", "Anne Castles", "Deslea Konza", "Jennifer Buckingham", "Kerry Hempenstall",
                      "Tanya Serry", "Reid Smith", "Toni Hatten-Roberts", "David Morkunas", "Jordana Hunter", "Ross Fox",
-                     "Joanna Barbousas", "Steven Capp", "Noel Pearson"]
+                     "Joanna Barbousas", "Steven Capp", "Noel Pearson", "Genevieve McArthur", "Sarah Buckley"]
 _AU = {}
 
 
