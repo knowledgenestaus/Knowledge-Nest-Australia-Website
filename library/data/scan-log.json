@@ -1,5 +1,5 @@
 {
- "last_scan": "2026-11-17",
+ "last_scan": "2026-11-19",
  "note": "Kept by the regular library scan. feeds lists where each source was checked, passed_over lists links looked at and not proposed. Dedupe by title as well as link: the library lists Think Forward Educators webinars under their own site address, not YouTube.",
  "feeds": {
   "3-Star Learning Experiences": "https://3starlearningexperiences.wordpress.com/feed/",
@@ -75,7 +75,9 @@
   "Substacks": "Each publication in substacks.json: <address>/api/v1/archive?sort=new&limit=25 (python3 library/tools/feature_week.py --suggest --days 10)",
   "Think Forward Educators webinars": "https://www.youtube.com/feeds/videos.xml?channel_id=UCh7_S9XtOXwHycjY5nhmjWg (library entries use the thinkforwardeducators.org/past-webinars-1 address)",
   "Melissa and Lori Love Literacy (audio)": "https://rss.buzzsprout.com/287733.rss",
-  "InnerDrive Science of Learning (audio)": "https://anchor.fm/s/10ace0d64/podcast/rss"
+  "InnerDrive Science of Learning (audio)": "https://anchor.fm/s/10ace0d64/podcast/rss",
+  "Mr Barton Maths Podcast": "https://www.mrbartonmaths.com/blog/feed/",
+  "Emina McLean blog": "https://www.eminamclean.com/blog-feed.xml"
  },
  "could_not_check": {
   "AERO": "edresearch.edu.au needs a browser",
@@ -83,12 +85,12 @@
   "researchED": "no new uploads on the channel found",
   "Five from Five blog": "no working feed",
   "Reach All Readers": "feed did not parse",
-  "Mr Barton Maths Podcast": "feed did not parse",
   "Shanahan on Literacy": "feed did not parse",
   "Jamie Clark newsletter": "no feed found",
   "Peps Mccrea snacks": "feed did not parse",
-  "Emina McLean blog": "no feed found",
-  "YouTube video pages": "rate limited, channel feeds still work"
+  "YouTube video pages": "rate limited, channel feeds still work",
+  "Spelfabet": "feed timed out on 19 November 2026",
+  "Five from Five site": "site returned an error on 19 November 2026"
  },
  "passed_over": [
   {
@@ -238,6 +240,42 @@
   {
    "url": "https://theeconomyofmeaning.com/2026/11/08/what-determines-how-well-you-understand-what-you-read-an-analysis-of-nearly-50000-correlations/",
    "why": "held back to keep the list to 12 or fewer"
+  },
+  {
+   "url": "https://educationrickshaw.com/s6e2-beth-hawks-on-show-your-work-and-the-science-of-learning-in-real-classrooms/",
+   "why": "short interview about the guest's new book"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=8Jn-DeY7kQQ",
+   "why": "Steplab webinar introducing its own platform content"
+  },
+  {
+   "url": "https://harriettjanetos.substack.com/p/kind-to-be-cruel-the-unintended-consequences",
+   "why": "reply to another blogger"
+  },
+  {
+   "url": "https://mutallyassuredinstruction.substack.com/p/things-that-can-get-in-the-bin",
+   "why": "criticises named people and organisations"
+  },
+  {
+   "url": "https://theeconomyofmeaning.com/2026/11/15/is-old-research-a-problem/",
+   "why": "short commentary"
+  },
+  {
+   "url": "https://nataliewexler.substack.com/p/my-visit-to-alpha-school-part-1",
+   "why": "first part of an unfinished series about one US school"
+  },
+  {
+   "url": "https://substack.nomoremarking.com/p/the-great-alpha-debate",
+   "why": "commentary on a current debate about one US school"
+  },
+  {
+   "url": "https://daviddidau.substack.com/p/writing-well-requires-both-textual",
+   "why": "introduces a lesson pack"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=mDNK90xkOKk",
+   "why": "book study session, one of a set"
   }
  ]
 }
