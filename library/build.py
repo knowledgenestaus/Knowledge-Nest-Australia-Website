@@ -26,7 +26,7 @@ SUGGEST = "mailto:%s?subject=Library%%20suggestion" % EMAIL
 # topics and areas of practice instead: see filter_bar.)
 TOPICS = OrderedDict([
     ("Explicit instruction", [2, 3, 4, 23, 24]),
-    ("Cognitive science", [1, 3, 15]),
+    ("Cognitive science", [1, 3]),
     ("English", [11, 26, 27, 28, 29, 30, 31, 32, 10, 33]),
     ("Maths", [34, 35, 36, 37, 38, 39]),
     ("Multi-tiered systems of support", []),   # split out of area 14 by keyword, below
@@ -223,6 +223,9 @@ RETIRED_PAGES = {
     "library-mathematics.html": ("library-domain-maths.html", "Maths"),
     "library-change-management.html": ("library-implementation.html", "Implementation and change"),
     "library-domain-implementation-and-change.html": ("library-implementation.html", "Implementation and change"),
+    # How learning works became one page laid out by strand (November 2026): its topic page and the motivation area moved into it.
+    "library-domain-how-learning-works.html": ("library-how-learning-happens.html", "How learning works"),
+    "library-motivation-self-efficacy-and-metacognition.html": ("library-how-learning-happens.html", "How learning works"),
 }
 
 # Areas whose page is organised by strand (a series per topic) instead of by type, keyed by area number.
@@ -322,6 +325,39 @@ STRANDS[33] = dict(
          "compound over time.", ("For classroom practice, see", 11)),
         ("Spelling and morphology", "Spelling draws on language knowledge, not visual memory alone. Good spellers draw on sounds, letter patterns and meaningful word parts together.",
          ("For classroom practice, see", 31)),
+    ])
+STRANDS[1] = dict(
+    intro="How students learn is the ground the rest of this library stands on. I've sorted these resources by the ideas a teacher meets most often, "
+          "from memory and cognitive load to motivation and metacognition. New to it? Begin with the big picture, then follow whichever idea you want to understand better.",
+    art="domain-how-learning-works",
+    groups={
+        "Start here": "New to the science of learning? These give you the whole picture first.",
+        "How learning happens": "Six ideas from cognitive science that explain why some teaching sticks and some does not.",
+        "Motivation and managing learning": "How success builds belief, and how students learn to manage their own learning.",
+        "Going further": "For when the main ideas are familiar.",
+    },
+    strands=[
+        ("The big picture", "Short animations, overviews and evidence summaries that explain how learning happens from start to finish. "
+         "If you are short on time, start with one of the animations.", None, "Start here"),
+        ("Memory", "Working memory is where we think, and it can hold only a little at once. Long-term memory is where knowledge is stored, and it has no known limit. "
+         "Learning is a lasting change in long-term memory, and students remember what they think about.", None, "How learning happens"),
+        ("Cognitive load", "Cognitive load theory, developed by John Sweller at UNSW, explains why new material overwhelms working memory so easily, "
+         "and how worked examples, small steps and uncluttered presentation leave room to learn.", ("For this in maths lessons, see", 34), "How learning happens"),
+        ("Attention", "Students can only learn what they attend to. These pieces look at securing and directing attention, removing distraction, "
+         "and the routines that make paying attention a habit.", ("For classroom routines, see", 5), "How learning happens"),
+        ("Prior knowledge and schema", "What students already know shapes what they can learn next. New ideas stick when they connect to knowledge that is "
+         "already organised in long-term memory, which is why thinking skills depend on knowing things.", ("For curriculum that builds knowledge in order, see", 6), "How learning happens"),
+        ("Novices and experts", "Novices and experts learn differently. Beginners need full guidance and worked examples, and that guidance should fade as knowledge grows, "
+         "because support that helps a novice can get in the way of someone more expert. Researchers call this the expertise reversal effect.",
+         ("For the teaching that follows from this, see", 2), "How learning happens"),
+        ("Forgetting and remembering", "Forgetting is normal, and it can be planned for. These pieces explain why revisiting, retrieving and elaborating on knowledge makes it last, "
+         "and why learning that feels harder in the moment often lasts longer.", ("For classroom practice, see", 3), "How learning happens"),
+        ("Motivation and self-efficacy", "Motivation tends to follow success more than it comes before it. These pieces look at how clear teaching, early wins and classroom norms "
+         "build students' belief that they can learn, and at anxiety and avoidance.", ("For practice that builds success, see", 24), "Motivation and managing learning"),
+        ("Metacognition and study strategies", "Teaching students to plan, monitor and evaluate their own learning, and to use the study strategies the evidence supports, "
+         "such as practice testing and spacing.", None, "Motivation and managing learning"),
+        ("Books, debates and voices", "Conversations with the authors of books many schools are reading, answers to the common criticisms of the science of learning, "
+         "and the people and organisations worth following.", ("For myths and live debates, see", 18), "Going further"),
     ])
 STRAND_ORDER = ("learn", "watch", "read", "research", "listen")   # within a strand: webinars first, then by type
 
@@ -1113,7 +1149,7 @@ def type_tiles():
 
 
 DOMAIN_ABOUT = {
-    "How learning works": "Memory, attention and motivation, and what they mean for teaching.",
+    "How learning works": "Memory, cognitive load, attention, prior knowledge and motivation, and what they mean for teaching.",
     "Teaching practice": "Explicit instruction, retrieval, checking for understanding, routines and feedback.",
     "Literacy": "Oral language, phonological awareness, phonics, fluency, vocabulary, comprehension, spelling, handwriting and writing, with the research behind them.",
     "Maths": "Clear, evidence-informed maths teaching from the early years up.",
@@ -1160,8 +1196,6 @@ SEO = {
     "library-vtlm.html": ("VTLM 2.0 podcasts for Victorian teachers",
                           "Podcast episodes matched to each element of learning and teaching in the Victorian Teaching and Learning Model 2.0, and to current Victorian priorities."),
     # Topics (domain pages)
-    "library-domain-how-learning-works.html": ("Cognitive science and how students learn",
-        "Free videos, podcasts and reading on how students learn, from working memory and cognitive load theory to motivation, self-efficacy and metacognition."),
     "library-domain-teaching-practice.html": ("Explicit teaching practice resources",
         "Free resources on explicit instruction, retrieval practice, checking for understanding, classroom routines, participation and feedback, with lesson videos."),
     "library-domain-literacy.html": ("Structured literacy and science of reading",
@@ -1175,10 +1209,8 @@ SEO = {
 }
 # Areas of practice, by area number: (title words, description).
 AREA_SEO = {
-    1: ("Cognitive load theory and memory resources",
-        "Free videos, podcasts and reading on working memory, cognitive load, prior knowledge and why novices learn differently from experts, chosen for teachers."),
-    15: ("Motivation, self-efficacy and metacognition",
-         "Reading, podcasts and webinars on how success builds motivation and belief, and how students learn to plan, monitor and manage their own learning."),
+    1: ("Cognitive science and how students learn",
+        "Free videos, podcasts and reading on how students learn, sorted by idea, from working memory and cognitive load theory to motivation and metacognition."),
     2: ("Explicit instruction videos and resources",
         "Lesson videos, webinars, podcasts and reading on explicit instruction, from Rosenshine's Principles and worked examples to guided practice and fading support."),
     3: ("Retrieval practice and spaced review",
@@ -1250,7 +1282,6 @@ AREA_SEO = {
 # by strand (STRANDS) already have their own introduction there.
 AREA_INTRO = {
     1: "I've gathered explainers, podcast episodes and reading on cognitive load theory, working memory and schema building here. They are a good place to start if you want to know why explicit teaching works.",
-    15: "Here you'll find reading and podcast episodes on motivation, self-efficacy, metacognition and study strategies. Many of them make the case that success comes first and belief follows.",
     2: "This is the biggest area in the library. You'll find lessons you can watch being taught, Rosenshine's Principles of Instruction, webinars and podcasts, from the first explanation through worked examples to independent practice.",
     3: "I've gathered classroom videos, podcast episodes and guides on retrieval practice, spacing, interleaving and daily review. Most show how to build them into the first minutes of a lesson.",
     4: "Here you'll find classroom clips and reading on hinge questions, mini whiteboards, cold call and other response systems, and on what to do when the answers show students haven't got it yet.",
@@ -1285,7 +1316,6 @@ AREA_INTRO = {
 }
 # The same for topic pages, after the topic's one-line description.
 DOMAIN_INTRO = {
-    "How learning works": "I've gathered resources on cognitive science, cognitive load theory, memory and motivation here, in two areas of practice. Start with how learning happens if you're new to it.",
     "Teaching practice": "This is where you'll find explicit instruction, retrieval practice, checking for understanding, classroom routines, participation and feedback, with plenty of lessons to watch.",
     "Literacy": "I've organised structured literacy and the science of reading into ten areas, in the order a teacher meets them across the primary years. The frameworks area explains the Simple View of Reading, Scarborough's Reading Rope and Pamela Snow's Language House.",
     "Maths": "I've organised maths into six areas, from explicit teaching and number fact fluency to problem solving, maths intervention and dyscalculia, and leading maths across a school.",
@@ -1301,7 +1331,7 @@ SHELF_INTRO = {
 }
 # "See also" on an area page: closely related areas in other topics (Related areas already lists the same topic).
 SEE_ALSO = {
-    1: [3, 2, 15], 15: [24, 1], 2: [34, 4, 23], 3: [35, 1], 4: [13, 23], 5: [20, 23], 23: [4, 11], 24: [3, 15],
+    1: [3, 2, 24], 2: [34, 4, 23], 3: [35, 1], 4: [13, 23], 5: [20, 23], 23: [4, 11], 24: [3, 1],
     11: [33, 25], 26: [27, 33], 27: [26, 25, 33], 28: [27, 30], 29: [30, 11], 30: [6, 29], 31: [27, 25], 32: [10, 25],
     10: [32, 33], 33: [27, 30, 18], 34: [2, 4], 35: [3, 38], 36: [37], 37: [36, 35], 38: [14, 25], 39: [19, 18],
     6: [30, 19], 13: [14, 25, 4], 14: [13, 25, 38, 17], 25: [14, 13, 33, 38, 11], 16: [19, 17], 19: [16, 17], 20: [5, 19], 21: [16, 17],
@@ -1757,7 +1787,7 @@ def build_areas():
         chips = ('<p class="lib-practices">%s%s</p>' % (label_html("Practices in this area:"), "".join("<em>%s</em>" % e(p[0].upper() + p[1:]) for p in a["practices"]))) if a["practices"] else ""
         lead = plan["intro"] if plan else " ".join(x for x in [a["about"], AREA_INTRO.get(a["n"], "")] if x)
         body = hero(a["domain"], a["name"], e(lead), crumbs=[("Library", "library.html"), (a["domain"], domain_page(a["domain"], {n: len(v) for n, v in grouped.items()}) if len(domain_areas(a["domain"], {n: len(v) for n, v in grouped.items()})) > 1 else "library.html#areas"), (a["name"], None)],
-                    extra=chips + ("" if plan else jump([(k, TYPES[k]["label"]) for k in present])))
+                    extra=chips + ("" if plan else jump([(k, TYPES[k]["label"]) for k in present])), art=plan.get("art") if plan else None)
         sections, strand_nav = "", ""
         if plan:
             sections, strand_nav = strand_sections(items, plan)
