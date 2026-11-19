@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap">
-  <link rel="stylesheet" href="styles.css?v=115">
+  <link rel="stylesheet" href="styles.css?v=116">
   <script>document.documentElement.classList.add('js');</script>
   <script type="application/ld+json">
 {
@@ -224,6 +224,6 @@
   document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 </script>
 
-<script id="navMenuJs">(function(){var li=document.querySelector(".nav-has-menu");if(!li)return;var b=li.querySelector(".nav-sub-toggle");function set(o){li.classList.toggle("open",o);b.setAttribute("aria-expanded",String(o));}b.addEventListener("click",function(ev){ev.stopPropagation();set(!li.classList.contains("open"));});document.addEventListener("click",function(ev){if(!li.contains(ev.target))set(false);});li.addEventListener("keydown",function(ev){if(ev.key==="Escape"&&li.classList.contains("open")){set(false);b.focus();ev.stopPropagation();}});li.addEventListener("focusout",function(ev){if(ev.relatedTarget&&!li.contains(ev.relatedTarget))set(false);});})();</script>
+<script id="navMenuJs">(function(){var li=document.querySelector(".nav-has-menu");if(!li)return;var b=li.querySelector(".nav-sub-toggle");var hov=window.matchMedia("(hover: hover) and (min-width: 901px)");var over=false;function sync(){b.setAttribute("aria-expanded",String(li.classList.contains("open")||(over&&hov.matches&&!li.classList.contains("dismissed"))));}function set(o){li.classList.toggle("open",o);sync();}b.addEventListener("click",function(ev){ev.stopPropagation();li.classList.remove("dismissed");set(!li.classList.contains("open"));});document.addEventListener("click",function(ev){if(!li.contains(ev.target))set(false);});li.addEventListener("mouseenter",function(){over=true;sync();});li.addEventListener("mouseleave",function(){over=false;li.classList.remove("dismissed");sync();});li.addEventListener("keydown",function(ev){if(ev.key==="Escape"&&(li.classList.contains("open")||(over&&hov.matches))){if(over)li.classList.add("dismissed");set(false);b.focus();ev.stopPropagation();}});document.addEventListener("keydown",function(ev){if(ev.key==="Escape"&&over&&hov.matches&&!li.classList.contains("dismissed")){li.classList.add("dismissed");set(false);}});li.addEventListener("focusout",function(ev){if(ev.relatedTarget&&!li.contains(ev.relatedTarget))set(false);});})();</script>
 </body>
 </html>

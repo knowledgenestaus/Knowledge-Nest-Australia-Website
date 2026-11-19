@@ -262,12 +262,29 @@
         showMore(false);
       }
       section.hidden = false;
-      if (focus) { heading.focus(); section.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+      if (focus) { heading.focus({ preventScroll: true }); reveal(focus === 'load'); }
     }).catch(function () {
       note.textContent = 'Search could not load. Please browse by type or area below.';
       list.textContent = '';
       section.hidden = false;
     });
+  }
+
+  // Bring the results into view below the sticky menu. The results section has a scroll margin
+  // for the menu. A search that arrives in the address (from the home page or the 404 page) runs
+  // before images and fonts finish loading, which pushes the results down, so it scrolls again
+  // once the page has loaded, unless the visitor has already scrolled themselves.
+  function reveal(onLoad) {
+    var smooth = !(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+    section.scrollIntoView({ behavior: smooth && !onLoad ? 'smooth' : 'auto', block: 'start' });
+    if (!onLoad) return;
+    var moved = false;
+    var mark = function () { moved = true; };
+    ['wheel', 'touchstart', 'keydown'].forEach(function (t) { window.addEventListener(t, mark, { once: true, passive: true }); });
+    var again = function () { if (!moved) section.scrollIntoView({ behavior: 'auto', block: 'start' }); };
+    if (document.readyState === 'complete') setTimeout(again, 0);
+    else window.addEventListener('load', again, { once: true });
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(again);
   }
 
   form.addEventListener('submit', function (ev) {
@@ -283,5 +300,5 @@
   });
 
   var initial = new URLSearchParams(location.search).get('q');
-  if (initial) { input.value = initial; run(initial, true); }
+  if (initial) { input.value = initial; run(initial, 'load'); }
 })();
