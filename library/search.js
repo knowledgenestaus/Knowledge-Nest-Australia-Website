@@ -272,19 +272,18 @@
 
   // Bring the results into view below the sticky menu. The results section has a scroll margin
   // for the menu. A search that arrives in the address (from the home page or the 404 page) runs
-  // before images and fonts finish loading, which pushes the results down, so it scrolls again
-  // once the page has loaded, unless the visitor has already scrolled themselves.
+  // before images and fonts finish loading, which pushes the results down, so it lands instantly and
+  // checks again once the page has loaded. It never moves the page once the visitor has scrolled,
+  // tapped, clicked or pressed a key themselves.
+  var userMoved = false;
   function reveal(onLoad) {
     var smooth = !(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
-    section.scrollIntoView({ behavior: smooth && !onLoad ? 'smooth' : 'auto', block: 'start' });
-    if (!onLoad) return;
-    var moved = false;
-    var mark = function () { moved = true; };
-    ['wheel', 'touchstart', 'keydown'].forEach(function (t) { window.addEventListener(t, mark, { once: true, passive: true }); });
-    var again = function () { if (!moved) section.scrollIntoView({ behavior: 'auto', block: 'start' }); };
-    if (document.readyState === 'complete') setTimeout(again, 0);
-    else window.addEventListener('load', again, { once: true });
-    if (document.fonts && document.fonts.ready) document.fonts.ready.then(again);
+    if (!onLoad) { section.scrollIntoView({ behavior: smooth ? 'smooth' : 'instant', block: 'start' }); return; }
+    var land = function () { if (!userMoved) section.scrollIntoView({ behavior: 'instant', block: 'start' }); };
+    land();
+    if (document.readyState === 'complete') setTimeout(land, 0);
+    else window.addEventListener('load', land, { once: true });
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(land);
   }
 
   form.addEventListener('submit', function (ev) {
@@ -300,5 +299,10 @@
   });
 
   var initial = new URLSearchParams(location.search).get('q');
-  if (initial) { input.value = initial; run(initial, 'load'); }
+  if (initial) {
+    var mark = function () { userMoved = true; };
+    ['wheel', 'touchstart', 'pointerdown', 'keydown'].forEach(function (t) { window.addEventListener(t, mark, { once: true, passive: true }); });
+    input.value = initial;
+    run(initial, 'load');
+  }
 })();

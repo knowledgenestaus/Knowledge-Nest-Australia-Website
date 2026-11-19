@@ -1400,7 +1400,7 @@ def build_home():
              '<p class="lib-own">Looking for my own articles and a downloadable guide? <a href="resources.html">Find them here</a>.</p>'
              '</div></section>' % elements)
     body += newsletter_box("library") + credit_panels()
-    body += '<script src="library/search.js?v=13" defer></script>'
+    body += '<script src="library/search.js?v=14" defer></script>'
     shelves = [(t["title"], public(t["page"])) for t in TYPES.values()]
     topics = [(d, public(domain_page(d, counts))) for d in DOMAIN_ORDER if domain_areas(d, counts)]
     write("library.html", *seo("library.html", "", ""), body, items=shelves + topics + [("Podcasts by the VTLM 2.0", public("library-vtlm.html"))])
@@ -1900,14 +1900,16 @@ def nav_menu():
 # and aria-expanded follows what is actually showing. "dismissed" hides the hover menu until the mouse leaves.
 NAV_JS = ('<script id="navMenuJs">(function(){var li=document.querySelector(".nav-has-menu");if(!li)return;var b=li.querySelector(".nav-sub-toggle");'
           'var hov=window.matchMedia("(hover: hover) and (min-width: 901px)");var over=false;'
-          'function sync(){b.setAttribute("aria-expanded",String(li.classList.contains("open")||(over&&hov.matches&&!li.classList.contains("dismissed"))));}'
+          'function showing(){return li.classList.contains("open")||(over&&hov.matches&&!li.classList.contains("dismissed"));}'
+          'function sync(){b.setAttribute("aria-expanded",String(showing()));}'
           'function set(o){li.classList.toggle("open",o);sync();}'
-          'b.addEventListener("click",function(ev){ev.stopPropagation();li.classList.remove("dismissed");set(!li.classList.contains("open"));});'
+          'function shut(){if(over)li.classList.add("dismissed");set(false);}'
+          'b.addEventListener("click",function(ev){ev.stopPropagation();if(showing()){shut();}else{li.classList.remove("dismissed");set(true);}});'
           'document.addEventListener("click",function(ev){if(!li.contains(ev.target))set(false);});'
           'li.addEventListener("mouseenter",function(){over=true;sync();});'
           'li.addEventListener("mouseleave",function(){over=false;li.classList.remove("dismissed");sync();});'
-          'li.addEventListener("keydown",function(ev){if(ev.key==="Escape"&&(li.classList.contains("open")||(over&&hov.matches))){if(over)li.classList.add("dismissed");set(false);b.focus();ev.stopPropagation();}});'
-          'document.addEventListener("keydown",function(ev){if(ev.key==="Escape"&&over&&hov.matches&&!li.classList.contains("dismissed")){li.classList.add("dismissed");set(false);}});'
+          'li.addEventListener("keydown",function(ev){if(ev.key==="Escape"&&showing()){shut();b.focus();ev.stopPropagation();}});'
+          'document.addEventListener("keydown",function(ev){if(ev.key==="Escape"&&showing())shut();});'
           'li.addEventListener("focusout",function(ev){if(ev.relatedTarget&&!li.contains(ev.relatedTarget))set(false);});})();</script>')
 
 
