@@ -50,7 +50,8 @@
     "Which idea from this session challenges something we currently do?",
     "What is one small change we could each trial before the next session?"
    ],
-   "kind": "series"
+   "kind": "series",
+   "strand": "Books, debates and voices"
   },
   {
    "title": "The Science of Learning: explainer series",
@@ -75,7 +76,8 @@
     "Where does this idea already show up in our lessons?",
     "What would it look like to use it more deliberately next week?"
    ],
-   "kind": "explainer"
+   "kind": "explainer",
+   "strand": "The big picture"
   },
   {
    "title": "Leading explicit teaching: information session",
@@ -235,8 +237,7 @@
    ],
    "areas": [
     2,
-    1,
-    15
+    1
    ],
    "tags": [
     "Free"
@@ -245,7 +246,8 @@
    "length": "30 to 60 minutes",
    "audience": "Teachers",
    "region": "UK",
-   "kind": "webinar"
+   "kind": "webinar",
+   "strand": "Books, debates and voices"
   },
   {
    "title": "Introduction to MTSS in Practice: Building Strong Tier 1 Instruction and Aligned Tier 2 Support",
@@ -359,7 +361,8 @@
    "length": "30 to 60 minutes",
    "audience": "Teachers",
    "region": "USA",
-   "kind": "webinar"
+   "kind": "webinar",
+   "strand": "Books, debates and voices"
   },
   {
    "title": "The Maths Guarantee: How to Implement Great Primary Maths Teaching",
@@ -846,7 +849,8 @@
    "length": "30 to 60 minutes",
    "audience": "Teachers",
    "region": "UK",
-   "kind": "webinar"
+   "kind": "webinar",
+   "strand": "Books, debates and voices"
   },
   {
    "title": "Using Talk as a Cognitive Lever",
@@ -1295,7 +1299,8 @@
    "length": "30 to 60 minutes",
    "audience": "Teachers",
    "region": "Australia",
-   "kind": "webinar"
+   "kind": "webinar",
+   "strand": "The big picture"
   },
   {
    "title": "Principals' Forum: Leading Change through Complexity",
@@ -1766,7 +1771,8 @@
    "length": "30 to 60 minutes",
    "audience": "Teachers",
    "region": "Australia",
-   "kind": "webinar"
+   "kind": "webinar",
+   "strand": "Forgetting and remembering"
   },
   {
    "title": "Improving Writing",
@@ -1809,7 +1815,8 @@
    "length": "30 to 60 minutes",
    "audience": "Teachers",
    "region": "Australia",
-   "kind": "webinar"
+   "kind": "webinar",
+   "strand": "Cognitive load"
   },
   {
    "title": "Leading a Whole School Approach to Classroom Management",
@@ -1918,7 +1925,8 @@
    "length": "30 to 60 minutes",
    "audience": "Teachers",
    "region": "Australia",
-   "kind": "webinar"
+   "kind": "webinar",
+   "strand": "Books, debates and voices"
   },
   {
    "title": "Helping struggling readers to catch up: lessons from Parafield Gardens High School",
@@ -2104,7 +2112,7 @@
     "UK"
    ],
    "areas": [
-    15,
+    1,
     5
    ],
    "tags": [
@@ -2114,7 +2122,8 @@
    "length": "30 to 60 minutes",
    "audience": "Teachers",
    "region": "UK",
-   "kind": "talk"
+   "kind": "talk",
+   "strand": "Motivation and self-efficacy"
   },
   {
    "title": "Group PD that really works",
@@ -2573,7 +2582,10 @@
    "kind": "webinar"
   },
   {
-   "strand": "Dyslexia",
+   "strand": [
+    "Dyslexia",
+    "Motivation and self-efficacy"
+   ],
    "title": "Why are children who struggle with reading at higher risk of emotional problems?",
    "url": "https://www.youtube.com/watch?v=jkm_9r1sa9o",
    "by": "Macquarie University Centre for Reading",
@@ -2582,7 +2594,7 @@
     "Australia"
    ],
    "areas": [
-    15,
+    1,
     25
    ],
    "tags": [
@@ -2982,7 +2994,10 @@
    "kind": "series"
   },
   {
-   "strand": "Related needs",
+   "strand": [
+    "Related needs",
+    "Memory"
+   ],
    "title": "Joni Holmes: Working memory and classroom learning",
    "url": "https://www.youtube.com/watch?v=WUxo5s8HHcE",
    "by": "Cambridge University Press ELT, with Joni Holmes",
@@ -3048,7 +3063,10 @@
    "kind": "webinar"
   },
   {
-   "strand": "ADHD",
+   "strand": [
+    "ADHD",
+    "Motivation and self-efficacy"
+   ],
    "title": "Why rewards don't always stick: Understanding ADHD and motivation, with Rebecca McLinden",
    "url": "https://www.youtube.com/watch?v=ntSFwNHtdw8",
    "by": "ADHD Australia, with Rebecca McLinden",
@@ -3058,7 +3076,7 @@
    ],
    "areas": [
     25,
-    15,
+    1,
     5
    ],
    "tags": [
@@ -3208,7 +3226,10 @@
    "kind": "talk"
   },
   {
-   "strand": "Autism",
+   "strand": [
+    "Autism",
+    "Attention"
+   ],
    "title": "Executive functioning: Webinar recording and resources",
    "url": "https://www.positivepartnerships.com.au/resources/practical-tools-information-sheets/executive-functioning",
    "by": "Positive Partnerships",
@@ -3220,7 +3241,7 @@
    "areas": [
     25,
     5,
-    15
+    1
    ],
    "tags": [
     "Free"
@@ -3754,7 +3775,10 @@
    "audience": "Teachers",
    "region": "International",
    "kind": "talk",
-   "strand": "How word reading develops"
+   "strand": [
+    "How word reading develops",
+    "Books, debates and voices"
+   ]
   },
   {
    "title": "An interview with Dr Louisa Moats: Revisiting Teaching Reading Is Rocket Science 2020",
@@ -4010,7 +4034,8 @@
    "summary": "Jamie Clark talks with Australian teacher and researcher Nathaniel Swain about the science of learning movement and practical classroom strategies drawn from it.",
    "audience": "Teachers",
    "region": "UK",
-   "kind": "interview"
+   "kind": "interview",
+   "strand": "Books, debates and voices"
   },
   {
    "title": "Direct instruction demystified, with Zach Groshell",
@@ -4050,7 +4075,8 @@
    "summary": "Maths teacher Peter Sherwin joins Jamie Clark to unpack Bjork and Bjork's desirable difficulties and how to design lessons that make learning stick.",
    "audience": "Teachers",
    "region": "UK",
-   "kind": "interview"
+   "kind": "interview",
+   "strand": "Forgetting and remembering"
   },
   {
    "title": "Dr Jennifer Throndsen: Raising up readers, strategies to help students access challenging text",

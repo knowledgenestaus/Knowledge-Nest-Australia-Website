@@ -2,28 +2,18 @@
  "areas": [
   {
    "n": 1,
-   "name": "How learning happens",
+   "name": "How learning works",
    "slug": "how-learning-happens",
    "domain": "How learning works",
-   "about": "Why memory, attention and prior knowledge decide what students learn, and why novices learn differently from experts.",
+   "about": "How memory, attention, prior knowledge and motivation shape what students learn, and what that means for teaching.",
    "practices": [
     "Working memory limits",
+    "managing cognitive load",
     "schema building",
     "novice and expert differences",
-    "forgetting"
-   ]
-  },
-  {
-   "n": 15,
-   "name": "Motivation, self-efficacy and metacognition",
-   "slug": "motivation-self-efficacy-and-metacognition",
-   "domain": "How learning works",
-   "about": "How success builds belief, and how students learn to manage their own learning.",
-   "practices": [
-    "Mastery experiences",
-    "attribution",
-    "study strategies",
-    "self-regulation"
+    "forgetting",
+    "mastery experiences",
+    "study strategies"
    ]
   },
   {
@@ -522,7 +512,8 @@
    ],
    "subject": "Across subjects",
    "region": "Australia",
-   "kind": "classroom footage with commentary"
+   "kind": "classroom footage with commentary",
+   "strand": "Prior knowledge and schema"
   },
   {
    "type": "watch",
@@ -944,7 +935,8 @@
    ],
    "areas": [
     5,
-    23
+    23,
+    1
    ],
    "tags": [
     "Free"
@@ -957,7 +949,8 @@
    ],
    "subject": "Across subjects",
    "region": "UK",
-   "kind": "classroom footage with commentary"
+   "kind": "classroom footage with commentary",
+   "strand": "Attention"
   },
   {
    "type": "watch",
@@ -1302,7 +1295,8 @@
     "Australia"
    ],
    "areas": [
-    5
+    5,
+    1
    ],
    "tags": [
     "Free"
@@ -1315,7 +1309,8 @@
    ],
    "subject": "Across subjects",
    "region": "Australia",
-   "kind": "classroom footage with commentary"
+   "kind": "classroom footage with commentary",
+   "strand": "Attention"
   },
   {
    "type": "watch",
@@ -1563,7 +1558,8 @@
    "subject": "Across subjects",
    "region": "Australia",
    "kind": "explainer",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "strand": "The big picture"
   },
   {
    "type": "watch",
@@ -1583,7 +1579,8 @@
    "subject": "Across subjects",
    "region": "Australia",
    "kind": "explainer",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "strand": "The big picture"
   },
   {
    "type": "watch",
@@ -3411,7 +3408,8 @@
    "summary": "Worked examples that break multi-step maths processes into manageable parts.",
    "subject": "Maths",
    "region": "UK",
-   "kind": "classroom footage"
+   "kind": "classroom footage",
+   "strand": "Cognitive load"
   },
   {
    "type": "watch",
@@ -3533,7 +3531,8 @@
    "summary": "A Year 1 maths activity designed to activate what pupils already know.",
    "subject": "Maths",
    "region": "UK",
-   "kind": "classroom footage"
+   "kind": "classroom footage",
+   "strand": "Prior knowledge and schema"
   },
   {
    "type": "watch",
@@ -3645,7 +3644,8 @@
    ],
    "subject": "Across subjects",
    "region": "UK",
-   "kind": "classroom footage with commentary"
+   "kind": "classroom footage with commentary",
+   "strand": "The big picture"
   },
   {
    "type": "watch",
@@ -4166,15 +4166,15 @@
     "with Daniel Willingham"
    ],
    "areas": [
-    1,
-    15
+    1
    ],
    "tags": [
     "Free"
    ],
    "summary": "Daniel Willingham discusses his book Outsmart Your Brain, explaining why learning is hard and which study habits help students learn independently.",
    "focus": "Study habits",
-   "minutes": 78
+   "minutes": 78,
+   "strand": "Metacognition and study strategies"
   },
   {
    "type": "listen",
@@ -4185,14 +4185,15 @@
     "with Peps Mccrea"
    ],
    "areas": [
-    15
+    1
    ],
    "tags": [
     "Free"
    ],
    "summary": "Peps Mccrea discusses his book Motivated Teaching and how to build students' motivation to learn in the classroom.",
    "focus": "Motivation",
-   "minutes": 125
+   "minutes": 125,
+   "strand": "Motivation and self-efficacy"
   },
   {
    "type": "listen",
@@ -4909,7 +4910,8 @@
    ],
    "summary": "Carl Hendrick, co-author of How Learning Happens, discusses five things every teacher should do and how to bridge research and classroom practice.",
    "focus": "Core teaching habits",
-   "minutes": 93
+   "minutes": 93,
+   "strand": "Books, debates and voices"
   },
   {
    "type": "listen",
@@ -4927,7 +4929,8 @@
     "Free"
    ],
    "summary": "Paul Kirschner and Nidhi Sachdeva discuss their book Becoming an Expert Teacher, challenging the idea that great teaching is innate or comes simply with years of experience.",
-   "minutes": 72
+   "minutes": 72,
+   "strand": "Books, debates and voices"
   },
   {
    "type": "listen",
@@ -5151,7 +5154,8 @@
    ],
    "summary": "Héctor Ruiz Martín explains what memory research says about why students forget, why transfer is difficult, and the roles of prior knowledge and retrieval.",
    "focus": "How memory works",
-   "minutes": 59
+   "minutes": 59,
+   "strand": "Memory"
   },
   {
    "type": "listen",
@@ -5188,7 +5192,8 @@
     "Free"
    ],
    "summary": "Nidhi Sachdeva and Paul Kirschner discuss what makes an expert teacher and how teaching expertise can be deliberately developed, drawing on their book Becoming an Expert Teacher.",
-   "minutes": 73
+   "minutes": 73,
+   "strand": "Books, debates and voices"
   },
   {
    "type": "listen",
@@ -5283,14 +5288,15 @@
    "by": "Evidence into Action",
    "meta": [],
    "areas": [
-    15
+    1
    ],
    "tags": [
     "Free"
    ],
    "summary": "Alex Quigley and Corinne Settle discuss implementing metacognitive strategies, with experts and practitioners describing what the approaches look like in practice and their effect on learners.",
    "focus": "Metacognition",
-   "minutes": 35
+   "minutes": 35,
+   "strand": "Metacognition and study strategies"
   },
   {
    "type": "listen",
@@ -5475,14 +5481,16 @@
     "with John Sweller"
    ],
    "areas": [
-    5
+    5,
+    1
    ],
    "tags": [
     "Free"
    ],
    "summary": "John Sweller explains cognitive load theory, the limits of working memory, and how the theory should guide classroom practice, particularly in mathematics.",
    "focus": "Cognitive load",
-   "minutes": 59
+   "minutes": 59,
+   "strand": "Cognitive load"
   },
   {
    "type": "listen",
@@ -5493,14 +5501,16 @@
     "with Andrew Martin"
    ],
    "areas": [
-    5
+    5,
+    1
    ],
    "tags": [
     "Free"
    ],
    "summary": "Professor Andrew Martin of UNSW discusses load reduction instruction and his research on student motivation and engagement.",
    "focus": "Load reduction instruction",
-   "minutes": 88
+   "minutes": 88,
+   "strand": "Cognitive load"
   },
   {
    "type": "listen",
@@ -5516,7 +5526,8 @@
    ],
    "summary": "An EEF panel explores the findings of the evidence review Cognitive Science in the Classroom and what they mean for classroom practice.",
    "focus": "Cognitive science in the classroom",
-   "minutes": 52
+   "minutes": 52,
+   "strand": "The big picture"
   },
   {
    "type": "listen",
@@ -5534,7 +5545,8 @@
    ],
    "summary": "Nathaniel Swain discusses his book Harnessing the Science of Learning and the decisions schools and teachers face in prioritising what matters.",
    "focus": "Science of learning priorities",
-   "minutes": 93
+   "minutes": 93,
+   "strand": "Books, debates and voices"
   },
   {
    "type": "listen",
@@ -5552,7 +5564,8 @@
    ],
    "summary": "Sarah Cottingham discusses her book on Ausubel's meaningful learning and what the theory suggests about connecting new content to what students already know.",
    "focus": "Connecting to prior knowledge",
-   "minutes": 186
+   "minutes": 186,
+   "strand": "Prior knowledge and schema"
   },
   {
    "type": "listen",
@@ -5570,7 +5583,8 @@
    ],
    "summary": "Paul Kirschner, Carl Hendrick and Jim Heal discuss their book Instructional Illusions and how to bridge the gap between education research and practice.",
    "focus": "Engagement versus learning",
-   "minutes": 74
+   "minutes": 74,
+   "strand": "Books, debates and voices"
   },
   {
    "type": "listen",
@@ -5635,14 +5649,16 @@
     "with Elizabeth Bjork and Robert Bjork"
    ],
    "areas": [
-    3
+    3,
+    1
    ],
    "tags": [
     "Free"
    ],
    "summary": "Elizabeth and Robert Bjork explain what makes a difficulty desirable, and why strategies that feel effortful often produce stronger, longer-lasting learning than those that feel easy.",
    "focus": "Spacing and desirable difficulties",
-   "minutes": 55
+   "minutes": 55,
+   "strand": "Forgetting and remembering"
   },
   {
    "type": "listen",
@@ -5689,14 +5705,16 @@
     "with Byers, Leighton and Perry"
    ],
    "areas": [
-    24
+    24,
+    1
    ],
    "tags": [
     "Free"
    ],
    "summary": "Byers, Leighton and Perry discuss their work on developing self-regulated learners, with Terry Byers drawing on his role at Anglican Church Grammar School in Brisbane.",
    "focus": "Self-regulated learners",
-   "minutes": 120
+   "minutes": 120,
+   "strand": "Metacognition and study strategies"
   },
   {
    "type": "listen",
@@ -6044,14 +6062,16 @@
     "with Jocelyn Seamer"
    ],
    "areas": [
-    24
+    24,
+    1
    ],
    "tags": [
     "Free"
    ],
    "summary": "Jocelyn Seamer argues that independent research projects ask novices to teach themselves complex topics without enough support, drawing on cognitive load theory and research on emotion in learning.",
    "focus": "Independent tasks",
-   "minutes": 26
+   "minutes": 26,
+   "strand": "Novices and experts"
   },
   {
    "type": "listen",
@@ -7578,7 +7598,8 @@
     1
    ],
    "tags": [],
-   "summary": "A high-level overview of the science of learning, organised around nine insights and what each means for classrooms."
+   "summary": "A high-level overview of the science of learning, organised around nine insights and what each means for classrooms.",
+   "strand": "The big picture"
   },
   {
    "type": "read",
@@ -7593,7 +7614,8 @@
     1
    ],
    "tags": [],
-   "summary": "A practical guide that uses examples from the NSW syllabuses to show how teachers can apply cognitive load theory."
+   "summary": "A practical guide that uses examples from the NSW syllabuses to show how teachers can apply cognitive load theory.",
+   "strand": "Cognitive load"
   },
   {
    "type": "research",
@@ -7916,7 +7938,8 @@
    "tags": [
     "Foundational"
    ],
-   "summary": "The landmark paper arguing that minimally guided approaches, such as discovery and inquiry learning, are less effective than guided instruction for novices."
+   "summary": "The landmark paper arguing that minimally guided approaches, such as discovery and inquiry learning, are less effective than guided instruction for novices.",
+   "strand": "Novices and experts"
   },
   {
    "type": "research",
@@ -7928,12 +7951,14 @@
     "Foundational research"
    ],
    "areas": [
-    2
+    2,
+    1
    ],
    "tags": [
     "Foundational"
    ],
-   "summary": "A readable account for teachers of why fully guided instruction suits novice learners, written for American Educator."
+   "summary": "A readable account for teachers of why fully guided instruction suits novice learners, written for American Educator.",
+   "strand": "Novices and experts"
   },
   {
    "type": "research",
@@ -7949,7 +7974,8 @@
     1
    ],
    "tags": [],
-   "summary": "The NSW paper that describes the research on cognitive load theory and what it means for teaching."
+   "summary": "The NSW paper that describes the research on cognitive load theory and what it means for teaching.",
+   "strand": "Cognitive load"
   },
   {
    "type": "read",
@@ -7965,7 +7991,8 @@
     1
    ],
    "tags": [],
-   "summary": "A one-page poster on the principles of cognitive load theory."
+   "summary": "A one-page poster on the principles of cognitive load theory.",
+   "strand": "Cognitive load"
   },
   {
    "type": "research",
@@ -7981,7 +8008,8 @@
     1
    ],
    "tags": [],
-   "summary": "AERO's overview of the evidence on how students learn."
+   "summary": "AERO's overview of the evidence on how students learn.",
+   "strand": "The big picture"
   },
   {
    "type": "read",
@@ -7996,7 +8024,8 @@
     1
    ],
    "tags": [],
-   "summary": "AERO's collection of research summaries and explainers on teaching in line with how students learn."
+   "summary": "AERO's collection of research summaries and explainers on teaching in line with how students learn.",
+   "strand": "The big picture"
   },
   {
    "type": "research",
@@ -8012,7 +8041,8 @@
     1
    ],
    "tags": [],
-   "summary": "Deans for Impact's summary of cognitive science research on how students learn, set out as principles with their classroom implications."
+   "summary": "Deans for Impact's summary of cognitive science research on how students learn, set out as principles with their classroom implications.",
+   "strand": "The big picture"
   },
   {
    "type": "research",
@@ -8024,12 +8054,14 @@
     "Foundational research"
    ],
    "areas": [
-    3
+    3,
+    1
    ],
    "tags": [
     "Foundational"
    ],
-   "summary": "John Dunlosky's article for teachers on which study strategies help students learn and which do not, written for American Educator."
+   "summary": "John Dunlosky's article for teachers on which study strategies help students learn and which do not, written for American Educator.",
+   "strand": "Metacognition and study strategies"
   },
   {
    "type": "read",
@@ -8045,7 +8077,8 @@
     1
    ],
    "tags": [],
-   "summary": "Daniel Willingham on why memory follows what students think about, and what that means for lesson planning."
+   "summary": "Daniel Willingham on why memory follows what students think about, and what that means for lesson planning.",
+   "strand": "Memory"
   },
   {
    "type": "read",
@@ -8296,7 +8329,8 @@
    ],
    "tags": [],
    "region": "Australia",
-   "summary": "Slava Kalyuga explains the expertise reversal effect, in which guidance that helps novices can hinder more expert learners."
+   "summary": "Slava Kalyuga explains the expertise reversal effect, in which guidance that helps novices can hinder more expert learners.",
+   "strand": "Novices and experts"
   },
   {
    "type": "research",
@@ -8311,7 +8345,8 @@
     1
    ],
    "tags": [],
-   "summary": "The EEF's review of the evidence for cognitive science approaches when they are used in classrooms."
+   "summary": "The EEF's review of the evidence for cognitive science approaches when they are used in classrooms.",
+   "strand": "The big picture"
   },
   {
    "type": "research",
@@ -8324,10 +8359,12 @@
     "USA"
    ],
    "areas": [
-    3
+    3,
+    1
    ],
    "tags": [],
-   "summary": "A short summary of the review by Dunlosky and colleagues that rated ten study techniques. Practice testing and distributed practice were rated most useful, and the page links to the full report."
+   "summary": "A short summary of the review by Dunlosky and colleagues that rated ten study techniques. Practice testing and distributed practice were rated most useful, and the page links to the full report.",
+   "strand": "Metacognition and study strategies"
   },
   {
    "type": "research",
@@ -8442,10 +8479,11 @@
     "Longitudinal study"
    ],
    "areas": [
-    15
+    1
    ],
    "tags": [],
-   "summary": "A longitudinal study of primary students that examined how motivation and achievement in maths relate over time."
+   "summary": "A longitudinal study of primary students that examined how motivation and achievement in maths relate over time.",
+   "strand": "Motivation and self-efficacy"
   },
   {
    "type": "research",
@@ -8888,7 +8926,8 @@
     16
    ],
    "tags": [],
-   "summary": "Melbourne teacher and host of the Education Research Reading Room podcast. He wrote Sweller's Cognitive Load Theory in Action and Tools for Teachers."
+   "summary": "Melbourne teacher and host of the Education Research Reading Room podcast. He wrote Sweller's Cognitive Load Theory in Action and Tools for Teachers.",
+   "strand": "Cognitive load"
   },
   {
    "type": "voice",
@@ -8922,7 +8961,8 @@
     18
    ],
    "tags": [],
-   "summary": "Australian teacher, writer and podcaster. His Substack, Filling the Pail, makes the case for explicit teaching and takes on common myths about education."
+   "summary": "Australian teacher, writer and podcaster. His Substack, Filling the Pail, makes the case for explicit teaching and takes on common myths about education.",
+   "strand": "Books, debates and voices"
   },
   {
    "type": "voice",
@@ -8956,7 +8996,8 @@
     18
    ],
    "tags": [],
-   "summary": "A classroom teacher for many years and now a professor at Academica University of Applied Sciences. He co-wrote How Learning Happens with Paul Kirschner and writes The Learning Dispatch."
+   "summary": "A classroom teacher for many years and now a professor at Academica University of Applied Sciences. He co-wrote How Learning Happens with Paul Kirschner and writes The Learning Dispatch.",
+   "strand": "Books, debates and voices"
   },
   {
    "type": "voice",
@@ -8972,7 +9013,8 @@
     18
    ],
    "tags": [],
-   "summary": "Emeritus professor of educational psychology at the Open University of the Netherlands and co-author of How Learning Happens. He blogs at 3-Star Learning Experiences."
+   "summary": "Emeritus professor of educational psychology at the Open University of the Netherlands and co-author of How Learning Happens. He blogs at 3-Star Learning Experiences.",
+   "strand": "Books, debates and voices"
   },
   {
    "type": "voice",
@@ -8986,10 +9028,11 @@
    "areas": [
     2,
     5,
-    15
+    1
    ],
    "tags": [],
-   "summary": "Author of the High Impact Teaching series, including Motivated Teaching. His Evidence Snacks newsletter shares one big idea from learning science in a five-minute read each week."
+   "summary": "Author of the High Impact Teaching series, including Motivated Teaching. His Evidence Snacks newsletter shares one big idea from learning science in a five-minute read each week.",
+   "strand": "Motivation and self-efficacy"
   },
   {
    "type": "voice",
@@ -9188,7 +9231,8 @@
     6
    ],
    "tags": [],
-   "summary": "Professor of Psychology at the University of Virginia and author of Why Don't Students Like School? He writes about what cognitive science means for the classroom."
+   "summary": "Professor of Psychology at the University of Virginia and author of Why Don't Students Like School? He writes about what cognitive science means for the classroom.",
+   "strand": "Memory"
   },
   {
    "type": "voice",
@@ -9201,10 +9245,11 @@
    ],
    "areas": [
     3,
-    15
+    1
    ],
    "tags": [],
-   "summary": "A group of cognitive psychologists who make research on learning accessible to teachers and students. They are known for their six strategies for effective learning."
+   "summary": "A group of cognitive psychologists who make research on learning accessible to teachers and students. They are known for their six strategies for effective learning.",
+   "strand": "Metacognition and study strategies"
   },
   {
    "type": "voice",
@@ -9251,7 +9296,8 @@
     2
    ],
    "tags": [],
-   "summary": "Educators and researchers at the Ontario Institute for Studies in Education, University of Toronto. Their newsletter examines the latest research on the science of learning and what it means for teaching."
+   "summary": "Educators and researchers at the Ontario Institute for Studies in Education, University of Toronto. Their newsletter examines the latest research on the science of learning and what it means for teaching.",
+   "strand": "Books, debates and voices"
   },
   {
    "type": "voice",
@@ -9584,7 +9630,8 @@
     "Free"
    ],
    "region": "Australia",
-   "summary": "The Victorian Department's guides to the Victorian Teaching and Learning Model 2.0."
+   "summary": "The Victorian Department's guides to the Victorian Teaching and Learning Model 2.0.",
+   "strand": "The big picture"
   },
   {
    "type": "watch",
@@ -9838,7 +9885,8 @@
    "region": "Australia",
    "kind": "explainer",
    "length": "Under 10 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "strand": "Cognitive load"
   },
   {
    "type": "watch",
@@ -9866,7 +9914,8 @@
    "region": "Australia",
    "kind": "explainer",
    "length": "Under 10 minutes",
-   "audience": "Teachers"
+   "audience": "Teachers",
+   "strand": "The big picture"
   },
   {
    "type": "watch",
@@ -9992,7 +10041,8 @@
     1
    ],
    "tags": [],
-   "summary": "A brief teacher-written introduction to cognitive load theory by Martin Ravindran, suitable as pre-reading for a staff session."
+   "summary": "A brief teacher-written introduction to cognitive load theory by Martin Ravindran, suitable as pre-reading for a staff session.",
+   "strand": "Cognitive load"
   },
   {
    "type": "read",
@@ -10091,11 +10141,14 @@
    ],
    "areas": [
     14,
-    15
+    1
    ],
    "tags": [],
    "summary": "Stephanie Dehghani takes Graham Nuthall's line that ability is the consequence, not the cause, of what children learn, and considers what it means for supporting every student.",
-   "strand": "Tier 1 teaching for every student"
+   "strand": [
+    "Tier 1 teaching for every student",
+    "Motivation and self-efficacy"
+   ]
   },
   {
    "type": "curriculum",
@@ -10974,7 +11027,8 @@
     "USA"
    ],
    "areas": [
-    5
+    5,
+    1
    ],
    "tags": [
     "Free"
@@ -10986,7 +11040,8 @@
    "subject": "Other subjects",
    "region": "USA",
    "kind": "classroom footage with commentary",
-   "minutes": 5
+   "minutes": 5,
+   "strand": "Attention"
   },
   {
    "type": "watch",
@@ -12023,7 +12078,10 @@
   },
   {
    "type": "watch",
-   "strand": "Related needs",
+   "strand": [
+    "Related needs",
+    "Memory"
+   ],
    "title": "Supporting working memory in the primary classroom",
    "url": "https://www.youtube.com/watch?v=GNjBj7l1458",
    "by": "Education Endowment Foundation",
@@ -12052,7 +12110,10 @@
   },
   {
    "type": "read",
-   "strand": "Related needs",
+   "strand": [
+    "Related needs",
+    "Memory"
+   ],
    "title": "Understanding working memory: A classroom guide",
    "url": "https://calm.mrc-cbu.cam.ac.uk/wp-content/uploads/calm/sites/5/2024/03/WM-classroom-guide.pdf",
    "by": "Susan Gathercole and Tracy Packiam Alloway",
@@ -13352,14 +13413,15 @@
    ],
    "areas": [
     5,
-    15,
+    1,
     23
    ],
    "tags": [
     "Free"
    ],
    "summary": "Swain describes two classroom cultures that block learning, opting out and perfectionism, and explains how a deliberate culture of error and expected participation helps students take the risks learning needs.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Motivation and self-efficacy"
   },
   {
    "type": "read",
@@ -13379,7 +13441,8 @@
     "Free"
    ],
    "summary": "Swain answers the claim that explicit teaching produces passive learners. He shows how building secure foundations first lets students generate and apply ideas, so knowledge becomes something to think with.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Novices and experts"
   },
   {
    "type": "read",
@@ -13462,7 +13525,8 @@
     "Free"
    ],
    "summary": "Sherrington uses a simple memory model to explain how talk supports learning, and argues that if talk helps students learn, routines must give every student the chance to talk, not just a few.",
-   "region": "UK"
+   "region": "UK",
+   "strand": "Memory"
   },
   {
    "type": "read",
@@ -13604,7 +13668,8 @@
     "Free"
    ],
    "summary": "Hendrick answers common criticisms of the science of learning, such as claims it is dogma or de-skills teachers, and sets out the research base and the equity case for it.",
-   "region": "UK"
+   "region": "UK",
+   "strand": "Books, debates and voices"
   },
   {
    "type": "read",
@@ -13637,14 +13702,15 @@
     "UK"
    ],
    "areas": [
-    15,
+    1,
     18
    ],
    "tags": [
     "Free"
    ],
    "summary": "Hendrick reviews new evidence that growth mindset interventions do little for achievement on their own, and argues that real success through effective practice is what builds students' belief in themselves.",
-   "region": "UK"
+   "region": "UK",
+   "strand": "Motivation and self-efficacy"
   },
   {
    "type": "read",
@@ -13684,7 +13750,8 @@
     "Free"
    ],
    "summary": "Using two recent studies, Hendrick shows that students can remember more yet apply no better, and argues retrieval practice works best to maintain knowledge that has first been properly understood.",
-   "region": "UK"
+   "region": "UK",
+   "strand": "Forgetting and remembering"
   },
   {
    "type": "read",
@@ -13744,7 +13811,8 @@
     "Free"
    ],
    "summary": "Hendrick traces how translations and selective readings turned Vygotsky into a champion of discovery learning, and argues his own work placed far more weight on teaching systematic, scientific concepts.",
-   "region": "UK"
+   "region": "UK",
+   "strand": "Books, debates and voices"
   },
   {
    "type": "read",
@@ -13889,7 +13957,8 @@
     "Free"
    ],
    "summary": "Wexler argues that explicit instruction and retrieval practice are not enough on their own, and that students also need to elaborate on new knowledge, with writing as a practical way to do it.",
-   "region": "USA"
+   "region": "USA",
+   "strand": "Forgetting and remembering"
   },
   {
    "type": "read",
@@ -14053,7 +14122,8 @@
     "Free"
    ],
    "summary": "Wexler introduces Graham Nuthall's research on what students actually learn in class, including his finding that students typically need to meet a concept several times before it sticks.",
-   "region": "USA"
+   "region": "USA",
+   "strand": "Forgetting and remembering"
   },
   {
    "type": "read",
@@ -14066,14 +14136,15 @@
     "USA"
    ],
    "areas": [
-    15,
+    1,
     2
    ],
    "tags": [
     "Free"
    ],
    "summary": "Wexler argues that motivation tends to follow achievement, so clear teaching that lets students succeed is a more reliable way to motivate them than choice, relevance or rewards.",
-   "region": "USA"
+   "region": "USA",
+   "strand": "Motivation and self-efficacy"
   },
   {
    "type": "read",
@@ -14188,13 +14259,14 @@
    ],
    "areas": [
     2,
-    15
+    1
    ],
    "tags": [
     "Free"
    ],
    "summary": "The last in Ashman's series takes on the claim that explicit teaching kills motivation, arguing from experience and research that early success through clear instruction is what motivates learners.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Motivation and self-efficacy"
   },
   {
    "type": "read",
@@ -14434,13 +14506,14 @@
    ],
    "areas": [
     34,
-    15
+    1
    ],
    "tags": [
     "Free"
    ],
    "summary": "Barton unpacks a study of primary maths worksheets pairing correct and incorrect worked examples with self-explanation prompts, looking at their effect on students' motivation and how they view errors.",
-   "region": "UK"
+   "region": "UK",
+   "strand": "Motivation and self-efficacy"
   },
   {
    "type": "read",
@@ -14474,13 +14547,14 @@
    ],
    "areas": [
     38,
-    15
+    1
    ],
    "tags": [
     "Free"
    ],
    "summary": "Barton summarises a very large international analysis linking maths anxiety with lower achievement, and considers what teachers can reasonably take from a correlational finding of this kind.",
-   "region": "UK"
+   "region": "UK",
+   "strand": "Motivation and self-efficacy"
   },
   {
    "type": "read",
@@ -14500,7 +14574,8 @@
     "Free"
    ],
    "summary": "Barton breaks down a meta-analysis of classroom experiments on adding pictures and diagrams to explanations, including where visuals helped most and how to use them well.",
-   "region": "UK"
+   "region": "UK",
+   "strand": "Cognitive load"
   },
   {
    "type": "read",
@@ -14617,14 +14692,15 @@
     "UK"
    ],
    "areas": [
-    15,
+    1,
     18
    ],
    "tags": [
     "Free"
    ],
    "summary": "Christodoulou explains why tailoring lessons to students' interests rarely improves learning, and warns that arguments for personalisation often promise better pacing but deliver isolated screen time.",
-   "region": "UK"
+   "region": "UK",
+   "strand": "Motivation and self-efficacy"
   },
   {
    "type": "read",
@@ -14644,7 +14720,8 @@
     "Free"
    ],
    "summary": "Christodoulou revisits a myth from her own book, arguing that skills such as creativity and critical thinking depend on knowledge of a particular domain, and considers what follows for schools.",
-   "region": "UK"
+   "region": "UK",
+   "strand": "Prior knowledge and schema"
   },
   {
    "type": "read",
@@ -14684,7 +14761,8 @@
     "Free"
    ],
    "summary": "Starting with her grandmother's mental arithmetic, Christodoulou asks whether technology lets us skip the practice that builds knowledge and skill, and why schools need to keep those cognitive muscles working.",
-   "region": "UK"
+   "region": "UK",
+   "strand": "Prior knowledge and schema"
   },
   {
    "type": "read",
@@ -14704,7 +14782,8 @@
     "Free"
    ],
    "summary": "Using a marathon metaphor, Christodoulou explains why students should still learn to write when AI can produce text, because the purpose of writing in school is the thinking it builds.",
-   "region": "UK"
+   "region": "UK",
+   "strand": "Memory"
   },
   {
    "type": "read",
@@ -14788,7 +14867,10 @@
    ],
    "summary": "Birch explains how new research on prior knowledge and the expertise reversal effect has partly changed her view on whether gifted learners always need explicit teaching before problem solving.",
    "region": "Australia",
-   "strand": "Tier 1 teaching for every student"
+   "strand": [
+    "Tier 1 teaching for every student",
+    "Novices and experts"
+   ]
   },
   {
    "type": "read",
@@ -14843,14 +14925,15 @@
     "Australia"
    ],
    "areas": [
-    15,
+    1,
     5
    ],
    "tags": [
     "Free"
    ],
    "summary": "Birch questions the hunt for intrinsic motivation in school subjects and describes realistic alternatives, such as teacher enthusiasm, clear rationales and success, that support students' effort and learning.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Motivation and self-efficacy"
   },
   {
    "type": "read",
@@ -14863,7 +14946,7 @@
     "Australia"
    ],
    "areas": [
-    15,
+    1,
     20,
     14
    ],
@@ -14872,7 +14955,10 @@
    ],
    "summary": "Using her own fear of flying, Birch argues that school accommodations for anxiety can reinforce avoidance, and that participation and low-stakes testing better support students' competence and belonging.",
    "region": "Australia",
-   "strand": "Tier 1 teaching for every student"
+   "strand": [
+    "Tier 1 teaching for every student",
+    "Motivation and self-efficacy"
+   ]
   },
   {
    "type": "read",
@@ -15110,13 +15196,14 @@
    "areas": [
     5,
     20,
-    15
+    1
    ],
    "tags": [
     "Free"
    ],
    "summary": "Drawing on Peps Mccrea's work, Lemov explains how students' sense of what peers approve of shapes their behaviour, and how teachers can amplify positive norms, especially around academic effort.",
-   "region": "USA"
+   "region": "USA",
+   "strand": "Motivation and self-efficacy"
   },
   {
    "type": "read",
@@ -15177,7 +15264,8 @@
     "Free"
    ],
    "summary": "Lemov shares notes on Daniel Willingham's explanation of why stories are easier to understand and remember, and what that means for how teachers structure explanations and use shared stories.",
-   "region": "USA"
+   "region": "USA",
+   "strand": "Memory"
   },
   {
    "type": "read",
@@ -15538,7 +15626,8 @@
     "Free"
    ],
    "summary": "Explains working memory, long-term memory and schemas, then offers six ways to plan instruction that avoids overload. Draws on the NSW CESE classroom practice guide.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Cognitive load"
   },
   {
    "type": "read",
@@ -15557,7 +15646,8 @@
     "Free"
    ],
    "summary": "Shows how to design slides and handouts that cut clutter, keep information visible and keep related material together, with short subject examples for each cognitive load effect.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Cognitive load"
   },
   {
    "type": "read",
@@ -15587,13 +15677,15 @@
     "Australia"
    ],
    "areas": [
-    3
+    3,
+    1
    ],
    "tags": [
     "Free"
    ],
    "summary": "A poster version of Carl Hendrick's seven principles for retrieval practice, covering the value of forgetting and pitching enough challenge early. Useful for checking that quizzing is doing real work.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Forgetting and remembering"
   },
   {
    "type": "read",
@@ -15605,14 +15697,15 @@
     "Australia"
    ],
    "areas": [
-    15,
+    1,
     3
    ],
    "tags": [
     "Free"
    ],
    "summary": "An A3 poster on retrieval practice, spacing, interleaving, dual coding and elaboration, explaining why and how to use each. Suitable to share with secondary students and families.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Metacognition and study strategies"
   },
   {
    "type": "read",
@@ -15644,13 +15737,15 @@
    ],
    "areas": [
     2,
-    18
+    18,
+    1
    ],
    "tags": [
     "Free"
    ],
    "summary": "Sets out why fully guided instruction beats minimal guidance for novices, drawing on Kirschner, Sweller and Clark, and shows the I do, we do, you do sequence with fading.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Novices and experts"
   },
   {
    "type": "read",
@@ -15821,7 +15916,8 @@
     "Free"
    ],
    "summary": "Distils Daniel Willingham's account of how thinking and memory work, and what that means for planning lessons that make students think hard about the right things.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Memory"
   },
   {
    "type": "read",
@@ -15852,14 +15948,14 @@
     "Australia"
    ],
    "areas": [
-    1,
-    15
+    1
    ],
    "tags": [
     "Free"
    ],
    "summary": "Explains why students remember what they produce themselves, and offers five classroom moves for sequencing AI use so it does not take over the thinking students need to do.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Forgetting and remembering"
   },
   {
    "type": "read",
@@ -15897,7 +15993,8 @@
     "Free"
    ],
    "summary": "A framework for designing lessons that secure, direct and orchestrate students' attention, written up from a webinar. Covers distractions from devices, peers, the room and busy slides.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Attention"
   },
   {
    "type": "read",
@@ -16018,7 +16115,8 @@
     "Free"
    ],
    "summary": "Looks at the evidence on handwriting versus typing and argues the slowness of handwriting can aid learning, with guidance on deciding which to use.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Memory"
   },
   {
    "type": "read",
@@ -16075,7 +16173,8 @@
     "Free"
    ],
    "summary": "Jamie Clark walks Tom Rogers through five one-pagers, on minimising distractions, worked examples, activating prior knowledge, think, pair, share and low-stakes recall.",
-   "focus": "Five core techniques"
+   "focus": "Five core techniques",
+   "strand": "Books, debates and voices"
   },
   {
    "type": "listen",
@@ -16177,7 +16276,8 @@
     16
    ],
    "tags": [],
-   "summary": "Perth-based head of professional growth and author of Teaching One-Pagers. His site offers free one-page guides on the science of learning and links to his DistillED newsletter."
+   "summary": "Perth-based head of professional growth and author of Teaching One-Pagers. His site offers free one-page guides on the science of learning and links to his DistillED newsletter.",
+   "strand": "Books, debates and voices"
   },
   {
    "type": "voice",
@@ -16193,7 +16293,8 @@
     1
    ],
    "tags": [],
-   "summary": "The Australian Education Research Organisation, Australia's national education evidence body. It publishes practice guides, explainers and classroom videos on how students learn and which teaching practices work."
+   "summary": "The Australian Education Research Organisation, Australia's national education evidence body. It publishes practice guides, explainers and classroom videos on how students learn and which teaching practices work.",
+   "strand": "Books, debates and voices"
   },
   {
    "type": "voice",
@@ -16583,7 +16684,8 @@
     "Free"
    ],
    "summary": "Kirschner outlines ten classroom practices that look effective but are not, such as busy engagement and motivation first, and explains what the research suggests teachers do instead.",
-   "region": "International"
+   "region": "International",
+   "strand": "Books, debates and voices"
   },
   {
    "type": "read",
@@ -16603,7 +16705,8 @@
     "Free"
    ],
    "summary": "Kirschner separates a knowledge-rich curriculum, which is sequenced so ideas build on each other across years, from one that simply piles up facts, and explains why the difference matters for teachers and schools.",
-   "region": "International"
+   "region": "International",
+   "strand": "Prior knowledge and schema"
   },
   {
    "type": "read",
@@ -16662,7 +16765,8 @@
     "Free"
    ],
    "summary": "A clear explainer on the limits of working memory and how schemas and chunking let learners hold and use more, with implications for how teachers sequence and present new material.",
-   "region": "International"
+   "region": "International",
+   "strand": "Prior knowledge and schema"
   },
   {
    "type": "read",
@@ -16683,7 +16787,8 @@
     "Free"
    ],
    "summary": "Kirschner questions failure-first lesson designs, arguing that struggle before students have the knowledge to make sense of it is rarely a desirable difficulty, and that support should come first.",
-   "region": "International"
+   "region": "International",
+   "strand": "Novices and experts"
   },
   {
    "type": "read",
@@ -16697,13 +16802,15 @@
    ],
    "areas": [
     24,
-    3
+    3,
+    1
    ],
    "tags": [
     "Free"
    ],
    "summary": "An explanation of reduced feedback, the least known of the Bjorks' desirable difficulties, and how gradually stepping back from instant correction can build lasting learning and self-regulation.",
-   "region": "International"
+   "region": "International",
+   "strand": "Forgetting and remembering"
   },
   {
    "type": "read",
@@ -17874,13 +17981,15 @@
     "Australia"
    ],
    "areas": [
-    2
+    2,
+    1
    ],
    "tags": [
     "Free"
    ],
    "summary": "Explains why novices need expert thinking made visible, and how worked examples and think-alouds help, with an example video made for a class.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Novices and experts"
   },
   {
    "type": "read",
@@ -17893,13 +18002,15 @@
     "Australia"
    ],
    "areas": [
-    3
+    3,
+    1
    ],
    "tags": [
     "Free"
    ],
    "summary": "Explains how interleaving mixed practice fights forgetting, and how one teacher fits interleaved revision lessons into a busy senior timetable.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Forgetting and remembering"
   },
   {
    "type": "read",
@@ -18119,7 +18230,8 @@
     "Free"
    ],
    "summary": "A primary lesson recount showing dual coding used properly, with words, diagrams and gesture working together rather than decorative icons on slides.",
-   "region": "UK"
+   "region": "UK",
+   "strand": "Cognitive load"
   },
   {
    "type": "read",
@@ -18158,7 +18270,8 @@
     "Free"
    ],
    "summary": "The first in a series on task design, explaining how tasks such as comparing, sequencing and chunking help primary children organise knowledge so it sticks.",
-   "region": "UK"
+   "region": "UK",
+   "strand": "Prior knowledge and schema"
   },
   {
    "type": "read",
@@ -18278,7 +18391,8 @@
     "Free"
    ],
    "summary": "Willingham proposes a guiding rule for school AI policies, that students should only use AI for tasks they can already do well, so the tools do not replace important thinking.",
-   "region": "USA"
+   "region": "USA",
+   "strand": "Novices and experts"
   },
   {
    "type": "read",
@@ -19325,7 +19439,8 @@
     "Foundational"
    ],
    "summary": "The paper that launched cognitive load theory. Sweller shows that conventional problem solving can place such a heavy load on working memory that little is left over for learning.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Cognitive load"
   },
   {
    "type": "research",
@@ -19346,7 +19461,8 @@
     "Open access"
    ],
    "summary": "The authors of the landmark 1998 account of cognitive load theory review two decades of further research, including the effects teachers now rely on such as worked examples, split attention and expertise reversal.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Cognitive load"
   },
   {
    "type": "research",
@@ -19365,7 +19481,8 @@
     "Open access"
    ],
    "summary": "John Sweller's own account of how cognitive load theory grew over four decades, from early problem-solving experiments to the theory used in classrooms today.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "Cognitive load"
   },
   {
    "type": "research",
@@ -19456,7 +19573,8 @@
    ],
    "tags": [],
    "summary": "AERO's model links what is known about how students learn to the teaching practices that fit each phase of learning. Read it alongside How students learn best, the evidence paper behind it.",
-   "region": "Australia"
+   "region": "Australia",
+   "strand": "The big picture"
   },
   {
    "type": "research",
@@ -19910,7 +20028,7 @@
     "Australia"
    ],
    "areas": [
-    15,
+    1,
     39
    ],
    "tags": [
@@ -19919,7 +20037,8 @@
    "summary": "In Teacher's Research Files podcast, Jo Earp talks with ACER Senior Research Fellow Dr Sarah Buckley about maths anxiety, what it looks like for students and for teachers, what the research says about its impact, and the strategies and supports that can make a difference.",
    "focus": "Maths anxiety",
    "region": "Australia",
-   "minutes": 31
+   "minutes": 31,
+   "strand": "Motivation and self-efficacy"
   },
   {
    "type": "listen",
