@@ -4447,6 +4447,26 @@
    "audience": "Teachers",
    "region": "UK",
    "kind": "interview"
+  },
+  {
+   "title": "Tim McDonald: We need to teach behaviour in Australian schools (A Matter of Translation 2023)",
+   "url": "https://www.youtube.com/watch?v=uhXKEr6itAE",
+   "by": "A Learner's Toolkit, with Tim McDonald",
+   "meta": [
+    "2023",
+    "Australia"
+   ],
+   "areas": [
+    5,
+    20
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Tim McDonald's conference session on why behaviour needs to be taught in Australian schools, and what that asks of teachers and leaders. A companion to his paper on teaching behaviour.",
+   "audience": "Teachers",
+   "region": "Australia",
+   "kind": "talk"
   }
  ]
 }
