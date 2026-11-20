@@ -79,7 +79,11 @@ START_HERE = [
     dict(title="Assessment", areas=[13, 4],
          text="Which assessments answer which questions, and how to use what they tell you without drowning in data.",
          picks=["027 Getting Assessment Right", "S03E04", "Using data in MTSS: Screening"]),
+    dict(title="Choosing evidence-based programs", areas=[18, 17],
+         text="Before you buy a program, how do you tell whether it has been tested, how well, and whether it suits your students?",
+         picks=["Standards of evidence", "Reading Pledge", "S1 E13 The List"]),
 ]
+_NUMBER = {3: "three", 4: "four", 5: "five", 6: "six", 7: "seven", 8: "eight"}
 
 AREAS = sorted(DATA["areas"], key=lambda a: a["n"])
 AREA = {a["n"]: a for a in AREAS}
@@ -178,7 +182,20 @@ TYPES = OrderedDict([
                    blurb="The researchers, teachers, writers and organisations worth your time.")),
     ("curriculum", dict(label="Curriculum", page="library-curriculum.html", title="Curriculum: free lesson materials", tile="Curriculum", noun="collections",
                         blurb="Openly available lesson materials, scope and sequences.")),
+    ("tools", dict(label="Tools", page="library-tools.html", title="Tools: Free digital tools for teaching", tile="Tools", noun="free tools", short="tools",
+                   blurb="Free dictionaries, word tools, virtual maths manipulatives, timers and name pickers.")),
 ])
+
+# The Tools shelf is grouped by what a tool is for (an entry's "group"), in this order. Each group has one line of introduction.
+TOOL_GROUPS = [
+    ("Words and meanings", "Dictionaries that explain words in plain language, for planning student-friendly definitions."),
+    ("Word origins and word parts", "Where words come from and how they are built, for morphology, etymology and spelling lessons."),
+    ("Phonics and word building", "On-screen letter tiles and boards for blending, segmenting and word chains."),
+    ("Checking a text", "Quick checks on how hard a passage is likely to be."),
+    ("Maths manipulatives", "Virtual versions of counters, ten frames, base ten blocks, fraction models and number lines, to project while you model."),
+    ("Maths practice and graphing", "Ready-made daily review, fact practice, diagnostic questions and graphing."),
+    ("Timers, pickers and classroom screens", "Small helpers for routines: countdowns, random name pickers and a screen for instructions."),
+]
 
 
 def illo(key, cls="kn-illo", size=320):
@@ -499,20 +516,61 @@ def kind_label(x):
 def search_words(x):
     """Extra words an entry should be found by. Maths is the site's one name for the topic, so the other two names are added."""
     words = "maths mathematics numeracy" if "Maths" in domains_of(x) else ""
-    return words + (" times tables" if 35 in x["areas"] else "")   # number facts are what many teachers call times tables
+    words += " times tables" if 35 in x["areas"] else ""   # number facts are what many teachers call times tables
+    # The words teachers type when they have a problem, not a topic.
+    if 5 in x["areas"] or 20 in x["areas"]:
+        words += " noisy noise calling out talking chatty disruptive disruption wont listen low level behaviour management classroom management graduate beginning teacher"
+    if x.get("choose"):
+        words += " choosing choose select selecting pick evaluate evaluating review program programs evidence based evidence-based intervention curriculum which program should we buy purchase"
+    text = " ".join([x["title"], x.get("summary", ""), x["by"]]).lower()
+    if "direct instruction" in text or "engelmann" in text:
+        words += " direct instruction di engelmann scripted lessons"
+    if re.search(r"teaching assistant|education support|learning support", text):
+        words += " education support es aide integration aide teacher aide lsa teaching assistant"
+    if x["type"] == "tools":
+        words += " tool tools digital online free website app " + x.get("group", "").lower()
+        if "manipulative" in x.get("group", "").lower():
+            words += " manipulatives concrete materials counters base ten mab blocks ten frame fraction number line virtual"
+    return words
 
 
 def shown_meta(x):
     """The details line of a card: empty items and a literal "None" from the sheet are dropped. A Learn session
     with no running time falls back to its length band, so every session says roughly how long it is."""
     meta = [m for m in x["meta"] if m and m.strip() and m.strip().lower() != "none"]
-    if x["type"] == "learn" and x.get("length") and not any(re.search(r"minute|hour|session|animation|\d:\d\d", m, re.I) for m in meta):
+    if x["type"] == "learn" and x.get("minutes") and not any(re.search(r"minute|hour|session|animation|\d:\d\d", m, re.I) for m in meta):
+        meta = [run_time(x["minutes"])] + meta
+    elif x["type"] == "learn" and x.get("length") and not any(re.search(r"minute|hour|session|animation|\d:\d\d", m, re.I) for m in meta):
         meta = [x["length"]] + meta
     # Videos and podcast episodes say how long they run when the running time is known ("minutes" in the data).
     if x["type"] in ("watch", "listen") and x.get("minutes") and not any(re.search(r"minute|hour|\d:\d\d", m, re.I) for m in meta):
         guests = [m for m in meta if re.match(r"with\s", m, re.I)]
         meta = guests + [run_time(x["minutes"])] + [m for m in meta if m not in guests]
     return meta
+
+
+def minutes_of(x):
+    """An entry's running time in minutes, from "minutes" or from a time on its details line ("6:35", "1:02:10", "About 45 minutes")."""
+    if x.get("minutes"):
+        return x["minutes"]
+    for m in x["meta"]:
+        t = re.match(r"^(?:(\d+):)?(\d{1,2}):(\d\d)$", (m or "").strip())
+        if t:
+            return max(1, int(round((int(t.group(1) or 0) * 3600 + int(t.group(2)) * 60 + int(t.group(3))) / 60.0)))
+        t = re.match(r"^(?:About )?(\d+) minutes?$", (m or "").strip(), re.I)
+        if t:
+            return int(t.group(1))
+    return None
+
+
+def length_band(x):
+    """The Length menu's band for a video or episode: its own "length" when it has one, else worked out from its running time."""
+    if x.get("length"):
+        return x["length"]
+    m = minutes_of(x)
+    if not m:
+        return NO_LENGTH
+    return LENGTHS[0] if m < 10 else (LENGTHS[1] if m <= 30 else (LENGTHS[2] if m <= 60 else LENGTHS[3]))
 
 
 def run_time(minutes):
@@ -600,8 +658,10 @@ def card(x, show_type=True, level="h3", filterable=False):
                 ea("|".join(domains_of(x))), ",".join(str(n) for n in x["areas"]), ea(kind_label(x)), ea(source_of(x)), ea(text))
         if x["type"] == "watch":
             data += ' data-bands="%s" data-subject="%s"' % (",".join(x.get("bands", [])), ea(x.get("subject", "")))
+        if x["type"] in ("watch", "listen"):
+            data += ' data-length="%s"' % ea(length_band(x))
         if x["type"] == "learn":
-            data += ' data-length="%s" data-audience="%s" data-access="%s"' % (ea(x.get("length") or NO_LENGTH), ea(x.get("audience", "")), ea(access_of(x)))
+            data += ' data-length="%s" data-audience="%s" data-access="%s"' % (ea(length_band(x)), ea(x.get("audience", "")), ea(access_of(x)))
     thumb = ""
     stack = stack_of(x)
     read_top = x["type"] == "read" and READ_PICTURE == "top"
@@ -843,11 +903,13 @@ def shelf_menus(items, kind):
         main.append(field("fBand", "Year level", "bands", [("F-2", "Foundation to Year 2"), ("3-6", "Years 3 to 6"), ("Secondary", "Secondary")],
                           "All year levels", " lib-field-extra"))
         main.append(field("fKind", "What you will see", "kind", [(k, k) for k in kinds], "Any kind of video", " lib-field-extra"))
+        lengths = [v for v in LENGTHS + [NO_LENGTH] if any(length_band(x) == v for x in items)]
+        more.append(field("fLength", "Length", "length", [(v, v) for v in lengths], "Any length"))
         subjects = [v for v in ["Literacy and English", "Maths", "Across subjects", "Other subjects"] if any(x.get("subject") == v for x in items)]
         more.append(field("fSubject", "Lesson subject", "subject", [(v, v) for v in subjects], "All subjects"))
     else:
         main.append(field("fKind", "Format", "kind", [(k, k) for k in kinds], "Any format", " lib-field-extra"))
-        lengths = [v for v in LENGTHS + [NO_LENGTH] if any((x.get("length") or NO_LENGTH) == v for x in items)]
+        lengths = [v for v in LENGTHS + [NO_LENGTH] if any(length_band(x) == v for x in items)]
         main.append(field("fLength", "Length", "length", [(v, v) for v in lengths], "Any length", " lib-field-extra"))
         audiences = sorted(set(x.get("audience") for x in items if x.get("audience")))
         more.append(field("fAudience", "Made for", "audience", [(v, v) for v in audiences], "Everyone"))
@@ -863,7 +925,7 @@ def shelf_menus(items, kind):
     return ('<form class="lib-filters lib-filters-top" id="libFilters" aria-label="Filter this shelf"><div class="lib-filter-row lib-filter-main">%s</div>'
             '<details class="lib-morefilters" id="libMoreFilters"><summary>More filters</summary><div class="lib-filter-row">%s</div></details>'
             '<p class="lib-filter-status"><span id="fCount" role="status" aria-live="polite"></span> '
-            '<button type="reset" class="lib-reset">Clear filters</button></p></form>'
+            '<button type="reset" class="lib-reset">Clear filters</button> <button type="button" class="lib-reset lib-copy" id="libCopy" hidden>Copy link to this view</button><span class="lib-copied" id="libCopied" role="status" aria-live="polite"></span></p></form>'
             '<div class="lib-chips lib-chips-topics" id="libChips"><p>Browse by topic</p><div>%s</div></div>' % ("".join(main), "".join(more), chips))
 
 
@@ -919,7 +981,7 @@ def shelf_list(items, kind):
             + '<p class="lib-empty" id="libEmpty" hidden>No %s match those choices yet. Try clearing one of the menus, or %s. '
             'If you know something that belongs here, <a href="%s">email a suggestion</a>. '
             '<button type="reset" form="libFilters" class="lib-reset">Clear filters</button></p>' % (t["short"], hint, SUGGEST)
-            + '<script src="library/filter.js?v=7" defer></script>')
+            + '<script src="library/filter.js?v=8" defer></script>')
 
 
 def filter_bar(items, kind):
@@ -934,6 +996,9 @@ def filter_bar(items, kind):
     sources = sorted(set(source_of(x) for x in items if x["by"]), key=str.lower)
     fields.append('<div class="lib-field"><label for="fBy">%s</label><select id="fBy" data-filter="by">%s</select></div>'
                   % (by_label, options([(v, v) for v in sources], "All %ss" % by_label.lower())))
+    lengths = [v for v in LENGTHS + [NO_LENGTH] if any(length_band(x) == v for x in items)]
+    fields.append('<div class="lib-field"><label for="fLength">Length</label><select id="fLength" data-filter="length">%s</select></div>'
+                  % options([(v, v) for v in lengths], "Any length"))
     fields.append('<div class="lib-field lib-field-wide"><label for="fText">Search within this page</label>'
                   '<input type="search" id="fText" placeholder="e.g. worked examples" autocomplete="off"></div>')
     chips = "".join('<button type="button" class="lib-chip" data-topic="%s">%s <span>%d</span></button>'
@@ -942,7 +1007,7 @@ def filter_bar(items, kind):
             + '<div class="lib-chips" id="libChips"><p>Browse by category</p><div>%s</div></div>' % chips +
             '<form class="lib-filters" id="libFilters"><div class="lib-filter-row">%s</div>'
             '<p class="lib-filter-status"><span id="fCount" role="status" aria-live="polite"></span> '
-            '<button type="reset" class="lib-reset">Clear filters</button></p></form>' % "".join(fields))
+            '<button type="reset" class="lib-reset">Clear filters</button> <button type="button" class="lib-reset lib-copy" id="libCopy" hidden>Copy link to this view</button><span class="lib-copied" id="libCopied" role="status" aria-live="polite"></span></p></form>' % "".join(fields))
 
 
 def filtered_list(items, kind):
@@ -951,7 +1016,7 @@ def filtered_list(items, kind):
             + '<p class="lib-more" hidden><button type="button" class="btn btn-primary" id="libMore">Show more</button></p>'
             + '<p class="lib-empty" id="libEmpty" hidden>Nothing matches those filters yet. Try clearing one, or <a href="%s">email a suggestion</a>. '
             '<button type="reset" form="libFilters" class="lib-reset">Clear filters</button></p>' % SUGGEST
-            + '<script src="library/filter.js?v=7" defer></script>')
+            + '<script src="library/filter.js?v=8" defer></script>')
 
 
 def hero(tagline, h1, lead, crumbs=None, extra="", art=None):
@@ -990,8 +1055,8 @@ def start_here(limit=None):
     return ('<section class="section" id="start"><div class="container"><div class="section-header section-header-illo">ILLO_START<div><p class="kn-eyebrow">Not sure where to begin?</p><h2>Start here</h2>'
             '<p>%s good places to begin a school\'s professional learning.</p></div></div>'
             '<div class="lib-starts%s">%s</div>%s</div></section>' % (
-                "Three" if limit == 3 else "Five", " lib-starts-three" if limit == 3 else "", "".join(cards_html),
-                '<p class="lib-starts-more"><a href="library.html#start">See all five starting points %s</a></p>' % ARROW if limit else "")).replace("ILLO_START", illo("start", "section-illo", 200))
+                "Three" if limit == 3 else _NUMBER[len(START_HERE)].capitalize(), " lib-starts-three" if limit == 3 else "", "".join(cards_html),
+                '<p class="lib-starts-more"><a href="library.html#start">See all %s starting points %s</a></p>' % (_NUMBER[len(START_HERE)], ARROW) if limit else "")).replace("ILLO_START", illo("start", "section-illo", 200))
 
 
 MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
@@ -1177,6 +1242,8 @@ DOMAIN_ELEMENTS = {
 # and that no two pages share a title or a description. "%d" in a description is replaced with the page's count.
 BRAND = " | Knowledge Nest"
 SEO = {
+    "library-tools.html": ("Free digital tools for teachers",
+                           "Free online dictionaries, word origin and word part tools, virtual maths manipulatives, timers and name pickers for teachers, each linked to its maker."),
     "library.html": ("Free teacher professional learning library",
                      "Free classroom videos, webinars, podcasts, articles and research for Australian teachers and school leaders, sorted by topic and linked to each creator."),
     "library-watch.html": ("Classroom videos of teachers teaching",
@@ -1324,8 +1391,9 @@ DOMAIN_INTRO = {
 }
 # A fuller introduction for shelves whose one-line blurb is thin (Watch, Learn and Read have their own).
 SHELF_INTRO = {
+    "tools": "Free digital tools you can open and use in a lesson or while planning. There are dictionaries, word origin and word part tools, virtual maths manipulatives, practice generators, timers and name pickers. Each one is free to use, and I have said so where a free account or advertising is involved.",
     "listen": "My favourite education podcasts are at the top, and below them episodes sorted by topic, from the science of reading and explicit instruction to maths, MTSS and leadership.",
-    "research": "Foundational papers, reviews and meta-analyses, grouped by topic. You'll find the classics on cognitive load and explicit instruction alongside reading research, coaching, leadership and implementation.",
+    "research": "Foundational papers, reviews and meta-analyses, grouped by the questions teachers and leaders ask, from how learning works to judging a claim about what works. Wherever I can, the link opens a free full copy. You'll find the classics on cognitive load and explicit instruction alongside reading research, coaching, leadership and implementation.",
     "voice": "The researchers, teachers, writers and organisations whose work I keep coming back to, in Australia and beyond. Each links to their own site, Substack or podcast.",
     "curriculum": "Openly available lesson materials, scope and sequences, decodable readers and guides. Australian collections come first, from Victorian Lesson Plans and the Literacy Hub to Connective Fluency, followed by Core Knowledge, Oak National Academy, TextProject and more from overseas.",
 }
@@ -1413,7 +1481,7 @@ def build_home():
             "leadership, chosen with Australian teachers and school leaders in mind.")
     body = hero("A curated collection, free for teachers and leaders", "The Knowledge Nest Library", lead, extra=search, art="home")
     body += ('<section class="section lib-results-section" id="results" hidden><div class="container">'
-             '<h2 id="resultsHeading" tabindex="-1">Search results</h2><p class="lib-results-note" id="resultsNote" role="status" aria-live="polite"></p>'
+             '<h2 id="resultsHeading" tabindex="-1">Search results</h2><p class="lib-results-note" id="resultsNote" role="status" aria-live="polite"></p><p class="lib-copy-row"><button type="button" class="lib-reset lib-copy" id="libCopy" hidden>Copy link to this view</button><span class="lib-copied" id="libCopied" role="status" aria-live="polite"></span></p>'
              '<div id="resultsList"></div><p><button type="button" class="btn btn-primary btn-sm" id="clearSearch">Clear search</button></p></div></section>')
     body += ('<section class="section section-tint" id="types"><div class="container"><div class="section-header"><p class="kn-eyebrow">%s resources, each linked to its creator</p><h2>Browse the library</h2>'
              '<p>Know how you want to learn today? Pick a shelf.</p></div>%s</div></section>' % (format(len(ENTRIES), ','), type_tiles()))
@@ -1430,7 +1498,7 @@ def build_home():
              '<p class="lib-own">Looking for my own articles and a downloadable guide? <a href="resources.html">Find them here</a>.</p>'
              '</div></section>' % elements)
     body += newsletter_box("library") + credit_panels()
-    body += '<script src="library/search.js?v=12" defer></script>'
+    body += '<script src="library/search.js?v=13" defer></script>'
     shelves = [(t["title"], public(t["page"])) for t in TYPES.values()]
     topics = [(d, public(domain_page(d, counts))) for d in DOMAIN_ORDER if domain_areas(d, counts)]
     write("library.html", *seo("library.html", "", ""), body, items=shelves + topics + [("Podcasts by the VTLM 2.0", public("library-vtlm.html"))])
@@ -1452,6 +1520,45 @@ def domain_sections(entries, show_type=False):
     if groups.get(""):
         nav.append(("more", "More"))
         out.append('<section class="lib-group" id="more"><h2>More <span class="lib-count">%d</span></h2>%s</section>' % (len(groups[""]), cards(groups[""], show_type)))
+    return nav, "".join(out)
+
+
+# The Research shelf is laid out by the questions teachers and leaders bring to it. A paper sits in the first group
+# that holds one of its areas (its first area decides, then the others).
+RESEARCH_GROUPS = [
+    ("how-learning-works", "How learning works", "Memory, cognitive load, retrieval, spacing and what they mean for teaching.", [1, 3]),
+    ("explicit-instruction", "Explicit instruction and classroom practice", "The research behind explicit teaching, checking for understanding, participation, feedback and practice.", [2, 4, 23, 24]),
+    ("behaviour", "Classroom management and behaviour", "Routines, classroom management and whole-school approaches to behaviour.", [5, 20]),
+    ("reading", "Learning to read", "Phonemic awareness, phonics, fluency and the major reviews of reading research.", [33, 26, 27, 28]),
+    ("language", "Language, vocabulary and comprehension", "Oral language, vocabulary, background knowledge and reading comprehension.", [11, 29, 30]),
+    ("writing", "Writing, spelling and handwriting", "What the research says about teaching writing, spelling, morphology and handwriting.", [10, 31, 32]),
+    ("maths", "Maths", "Explicit teaching, fluency, representations and intervention in maths.", [34, 35, 36, 37, 38, 39]),
+    ("curriculum", "Knowledge and curriculum", "Why what is taught matters, and the evidence for a knowledge-rich curriculum.", [6]),
+    ("mtss", "Assessment, MTSS and intervention", "Screening, progress monitoring, tiered support and what makes intervention work.", [13, 14]),
+    ("difficulties", "Learning difficulties and disabilities", "Dyslexia, developmental language disorder, dyscalculia, ADHD and related needs.", [25]),
+    ("coaching", "Coaching and professional learning", "What changes teaching: coaching, professional development and habit.", [16]),
+    ("leadership", "Leadership and implementation", "What leaders do that affects learning, and how to put a practice in place so it lasts.", [19, 21, 17]),
+    ("evidence", "Reading research well", "Effect sizes, study design, myths and how to judge a claim about what works.", [18]),
+]
+
+
+def research_sections(entries):
+    home = {}
+    for gid, _, _, ns in RESEARCH_GROUPS:
+        for n in ns:
+            home[n] = gid
+    groups = defaultdict(list)
+    for x in entries:
+        groups[next((home[n] for n in x["areas"] if n in home), "")].append(x)
+    nav, out = [], []
+    for gid, name, about, _ in RESEARCH_GROUPS:
+        if groups.get(gid):
+            nav.append(("r-" + gid, name))
+            out.append('<section class="lib-group" id="r-%s"><h2>%s <span class="lib-count">%d</span></h2><p class="lib-group-lead">%s</p>%s</section>'
+                       % (gid, e(name), len(groups[gid]), e(about), cards(groups[gid], False)))
+    if groups.get(""):
+        nav.append(("more", "More"))
+        out.append('<section class="lib-group" id="more"><h2>More <span class="lib-count">%d</span></h2>%s</section>' % (len(groups[""]), cards(groups[""], False)))
     return nav, "".join(out)
 
 
@@ -1609,7 +1716,19 @@ def build_types():
                         "Looking for something specific? Use the categories and search below to find episodes on the topic you're working on.</p>%s</section>"
                         % (len(items), filtered_list(items, key)))
         elif key == "research":
-            nav, sections = domain_sections(items)
+            nav, sections = research_sections(items)
+        elif key == "tools":
+            nav, out = [], []
+            named = [g for g, _ in TOOL_GROUPS]
+            for g, about in TOOL_GROUPS + [("More tools", "")]:
+                sub_items = [x for x in items if (x.get("group") if x.get("group") in named else "More tools") == g]
+                if not sub_items:
+                    continue
+                gid = "g-" + re.sub(r"[^a-z0-9]+", "-", g.lower()).strip("-")
+                nav.append((gid, g))
+                out.append('<section class="lib-group" id="%s"><h2>%s <span class="lib-count">%d</span></h2>%s%s</section>'
+                           % (gid, e(g), len(sub_items), ('<p class="lib-group-lead">%s</p>' % e(about)) if about else "", cards(sub_items, False, "h3")))
+            sections = "".join(out)
         else:
             nav, sections = grouped_sections(items)
         if key == "read":
@@ -2143,7 +2262,7 @@ def warnings():
             out.append("Learn entry '%s' has no audience, so it disappears when the Made for menu is used" % x["title"])
         if x.get("length") and x["length"] not in LENGTHS:
             out.append("Learn entry '%s' has a length (%r) that is not one of the Length menu's bands" % (x["title"], x["length"]))
-    unstated = [x["title"] for x in learn if not x.get("length")]
+    unstated = [x["title"] for x in learn if length_band(x) == NO_LENGTH]
     if unstated:
         out.append("%d Learn entries have no running time, so the Length menu files them under '%s': %s" % (len(unstated), NO_LENGTH, "; ".join(unstated)))
     for p in WATCH_START:

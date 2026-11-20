@@ -149,3 +149,12 @@ python3 library/build.py
 - **No restorative practice resources.** Jo does not consider restorative practice aligned with current research, so nothing that promotes it is listed, whoever made it.
 - **Nothing behind a paywall.** A link that meters or locks its article (Tes, paid-only Substack posts) is removed. Tools that need a free sign-up say so on the card.
 - **Voices** need a public, free home for the person's or organisation's work. People without one (for example John Sweller, Anne Castles, Jennifer Buckingham) are represented through Research, Learn and Listen instead.
+
+## Tools shelf, research categories, lengths and sharing (November 2026)
+
+- **Tools shelf** (`library-tools.html`): free digital tools to use in a lesson or while planning. An entry has type `"tools"` and a `"group"` that matches a name in `TOOL_GROUPS` in `build.py` (anything else lands under "More tools"). Only tools that are free to use belong here; say so in the summary or with the "Free account needed" tag where a sign-up or advertising is involved.
+- **Research is grouped by the questions people bring to it** (`RESEARCH_GROUPS` in `build.py`): each group lists the areas it gathers, and a paper sits in the first group that holds one of its areas. Link to a free full copy wherever one exists.
+- **Length.** Every video and episode is given a length band (`length_band`): its own `"length"`, or one worked out from `"minutes"` or a time on its details line. Watch, Learn and Listen all have a Length menu. Add `"minutes"` to an entry whenever the running time is known.
+- **Copy link to this view.** A filtered shelf and a search both keep their choices in the page address. The button beside "Clear filters" (and above the search results) copies that address, or opens the phone's share sheet.
+- **Search words.** `search_words` in `build.py` adds the words teachers type when they have a problem (noisy, calling out, choosing a program, aide). An entry with `"choose": true` is found by searches about choosing or evaluating a program. Short forms and everyday words are paired in `SAME` in `search.js`.
+- **Starting points.** "Start here" now has six, the sixth on choosing evidence-based programs; the count in the heading follows the list.

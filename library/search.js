@@ -9,8 +9,8 @@
   var clear = document.getElementById('clearSearch');
   if (!form || !input || !section) return;
 
-  var LABELS = { watch: 'Watch', listen: 'Listen', read: 'Read', research: 'Research', voice: 'Voices', curriculum: 'Curriculum', learn: 'Learn', tool: 'Assessment tool' };
-  var WORDS = { watch: 'video videos classroom footage', listen: 'podcast podcasts episode audio', read: 'article articles blog post reading', research: 'paper papers study report evidence', voice: 'voice person people blog', curriculum: 'curriculum materials lessons program', learn: 'webinar webinars session professional learning video', tool: 'assessment test screener' };
+  var LABELS = { watch: 'Watch', listen: 'Listen', read: 'Read', research: 'Research', voice: 'Voices', curriculum: 'Curriculum', learn: 'Learn', tool: 'Assessment tool', tools: 'Tools' };
+  var WORDS = { watch: 'video videos classroom footage', listen: 'podcast podcasts episode audio', read: 'article articles blog post reading', research: 'paper papers study report evidence', voice: 'voice person people blog', curriculum: 'curriculum materials lessons program', learn: 'webinar webinars session professional learning video', tool: 'assessment test screener', tools: 'tool tools digital online website app' };
   var SUGGEST = 'mailto:jo@knowledgenest.com.au?subject=Library%20suggestion';
   var PAGE = 60;   // results shown at a time; "Show more" brings the next lot
   var index = null;
@@ -47,10 +47,13 @@
     ['clt', 'cognitive load'], ['sor', 'science of reading'], ['sol', 'science of learning'], ['pd', 'professional learning'], ['pl', 'professional learning'],
     ['di', 'direct instruction'], ['edi', 'explicit direct instruction'], ['mwb', 'mini whiteboard'], ['otr', 'opportunities to respond'],
     ['pa', 'phonemic awareness'], ['iep', 'individual education plan'], ['tlac', 'teach like a champion'], ['vtlm', 'victorian teaching and learning model'],
-    ['whiteboards', 'mini whiteboard'], ['decodables', 'decodable'], ['screener', 'screening'], ['timestables', 'times tables']
+    ['whiteboards', 'mini whiteboard'], ['decodables', 'decodable'], ['screener', 'screening'], ['timestables', 'times tables'],
+    ['crt', 'relief'], ['casual', 'relief'], ['grad', 'graduate'], ['aide', 'teaching assistant'], ['ta', 'teaching assistant'], ['esl', 'eal'],
+    ['manipulatives', 'manipulative'], ['mab', 'base ten'], ['etymology', 'word origins'], ['morphemes', 'morphology'], ['dictionaries', 'dictionary'],
+    ['programs', 'program'], ['interventions', 'intervention'], ['sas', 'sold a story'], ['dibels', 'screening'], ['naplan', 'assessment']
   ];
   // Little words that say nothing about the topic are left out of a longer search.
-  var SMALL = ['a', 'an', 'the', 'of', 'for', 'in', 'on', 'and', 'to', 'with', 'about', 'how', 'what', 'is', 'are', 'my', 'do', 'i', 'can', 'resources', 'resource'];
+  var SMALL = ['a', 'an', 'the', 'of', 'for', 'in', 'on', 'and', 'to', 'with', 'about', 'how', 'what', 'is', 'are', 'my', 'do', 'i', 'can', 'resources', 'resource', 'we', 'should', 'which', 'best', 'good', 'help', 'need', 'our', 'me'];
 
   // Every form a search word is looked for in: both spellings, singular for plural, and any short form or phrase it stands for.
   function forms(word) {
@@ -155,7 +158,30 @@
     return a;
   }
 
+  var copy = document.getElementById('libCopy');
+  var copied = document.getElementById('libCopied');
+  if (copy) copy.addEventListener('click', function () {
+    var url = location.href;
+    var done = function () { if (copied) copied.textContent = 'Link copied. Paste it into an email or message.'; };
+    var byHand = function () {
+      var t = document.createElement('textarea');
+      t.value = url; t.setAttribute('readonly', ''); t.style.position = 'fixed'; t.style.opacity = '0';
+      document.body.appendChild(t); t.select();
+      try { document.execCommand('copy'); done(); } catch (e) { if (copied) copied.textContent = 'Copy the address from the top of your browser.'; }
+      document.body.removeChild(t);
+    };
+    if (navigator.share && window.matchMedia && window.matchMedia('(pointer: coarse)').matches) {
+      navigator.share({ title: document.title, url: url }).catch(function () {});
+    } else if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url).then(done, byHand);
+    } else {
+      byHand();
+    }
+  });
+
   function setAddress(q) {
+    if (copy) copy.hidden = !q;
+    if (copied) copied.textContent = '';
     try { history.replaceState(null, '', q ? '?q=' + encodeURIComponent(q) : location.pathname); } catch (e) {}
   }
 

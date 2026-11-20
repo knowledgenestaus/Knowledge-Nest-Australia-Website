@@ -518,6 +518,9 @@ html:not(.js) .lib-seeall, html:not(.js) .lib-topic-areas, html:not(.js) .lib-to
 }
 .lib-results-section { padding-bottom: 1rem; }
 .lib-results-note { margin: 0.4rem 0 1.25rem; }
+.lib-copy-row { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; margin: -0.5rem 0 1.25rem; }
+.lib-copy-row:has(.lib-copy[hidden]) { display: none; }
+.lib-copied { font-size: 0.95rem; font-weight: 600; color: var(--body); }
 #resultsList { margin-bottom: 1.5rem; }
 .library-banner { display: block; padding: 1.75rem; border-radius: 20px; background: var(--navy); color: white; }
 

@@ -12,6 +12,8 @@
   var more = document.getElementById('libMore');
   var moreWrap = more ? more.parentNode : null;
   var empty = document.getElementById('libEmpty');
+  var copy = document.getElementById('libCopy');
+  var copied = document.getElementById('libCopied');
   var topicSelect = document.getElementById('fTopic');
   var areaSelect = document.getElementById('fArea');
   var browse = Array.prototype.slice.call(document.querySelectorAll('.lib-browse'));
@@ -71,6 +73,8 @@
       card.hidden = !ok || hits > shown;
     });
     var on = active();
+    if (copy) copy.hidden = !on;   // a filtered view has its own address, so it can be shared
+    if (copied) copied.textContent = '';
     count.textContent = hits === cards.length ? 'Showing all ' + hits + '.' : hits + ' of ' + cards.length + ' match.';
     if (moreWrap) moreWrap.hidden = hits <= shown;
     if (more) more.textContent = 'Show more (' + Math.max(hits - shown, 0) + ' left)';
@@ -127,6 +131,27 @@
     var next = cards.filter(function (card) { return !card.hidden; })[before];
     var link = next && next.querySelector('.lib-card-title a');
     if (link) link.focus();
+  });
+
+  // "Copy link to this view": the address already holds the filters, so copying it shares exactly this list.
+  // A phone offers its own share sheet where it has one.
+  if (copy) copy.addEventListener('click', function () {
+    var url = location.href;
+    var done = function () { if (copied) copied.textContent = 'Link copied. Paste it into an email or message.'; };
+    var byHand = function () {
+      var t = document.createElement('textarea');
+      t.value = url; t.setAttribute('readonly', ''); t.style.position = 'fixed'; t.style.opacity = '0';
+      document.body.appendChild(t); t.select();
+      try { document.execCommand('copy'); done(); } catch (e) { if (copied) copied.textContent = 'Copy the address from the top of your browser.'; }
+      document.body.removeChild(t);
+    };
+    if (navigator.share && window.matchMedia && window.matchMedia('(pointer: coarse)').matches) {
+      navigator.share({ title: document.title, url: url }).catch(function () {});
+    } else if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url).then(done, byHand);
+    } else {
+      byHand();
+    }
   });
 
   // Topic buttons set the Topic menu.
