@@ -4467,6 +4467,180 @@
    "audience": "Teachers",
    "region": "Australia",
    "kind": "talk"
+  },
+  {
+   "title": "Upper Primary Knowledge Builder",
+   "url": "https://www.youtube.com/playlist?list=PLQHuRefrknn4raUiE_A7g8RXk1wSWlOYT",
+   "by": "Jocelyn Seamer",
+   "meta": [
+    "10 short videos",
+    "About 45 minutes in total",
+    "Australia"
+   ],
+   "areas": [
+    30,
+    28
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Ten short videos on literacy in Years 3 to 6, covering levelled texts, text-dependent questions, comprehension strategies, oral reading practice and supporting students whose phonics is still shaky.",
+   "length": "Series",
+   "audience": "Teachers",
+   "region": "Australia",
+   "kind": "series"
+  },
+  {
+   "title": "The Top 3 Mistakes Foundation Teachers Make in Reading Instruction (and how to avoid them)",
+   "url": "https://www.youtube.com/playlist?list=PLQHuRefrknn4B5u3ZxahdmhZFEGiNlzzE",
+   "by": "Jocelyn Seamer",
+   "meta": [
+    "Four videos",
+    "About 55 minutes in total",
+    "Australia"
+   ],
+   "areas": [
+    27
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Jocelyn Seamer works through three common missteps in Foundation reading, namely sight words, assuming that taught means learned, and literacy centres used as instruction, and what to do instead.",
+   "length": "Series",
+   "audience": "Teachers",
+   "region": "Australia",
+   "kind": "series"
+  },
+  {
+   "title": "Morphology Playlist",
+   "url": "https://www.youtube.com/playlist?list=PLQHuRefrknn5FYDK-y4iKvvQb6CgLQQXM",
+   "by": "Jocelyn Seamer",
+   "meta": [
+    "12 short videos",
+    "About 30 minutes in total",
+    "Australia"
+   ],
+   "areas": [
+    31
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Jocelyn Seamer's morphology videos gathered in one place, including an overview of morphology instruction for each stage from Foundation to Year 6.",
+   "length": "Series",
+   "audience": "Teachers",
+   "region": "Australia",
+   "kind": "series"
+  },
+  {
+   "title": "Tuesday Tips",
+   "url": "https://www.youtube.com/playlist?list=PLQHuRefrknn4TIxokOkHfsMt9MvnICUZj",
+   "by": "Jocelyn Seamer",
+   "meta": [
+    "56 short videos",
+    "One to three minutes each",
+    "Australia"
+   ],
+   "areas": [
+    27,
+    31
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Quick classroom tips for the literacy block, each one to three minutes long, on blending, fluency, phonics assessment, spelling, morphology and simple ways to organise resources.",
+   "length": "Series",
+   "audience": "Teachers",
+   "region": "Australia",
+   "kind": "series"
+  },
+  {
+   "title": "5 Ways to Take Control of Your Literacy Block in the Early Years",
+   "url": "https://www.jocelynseamereducation.com/5ways",
+   "by": "Jocelyn Seamer",
+   "meta": [
+    "Free email course",
+    "Five days",
+    "Australia"
+   ],
+   "areas": [
+    27,
+    10
+   ],
+   "tags": [
+    "Free account needed"
+   ],
+   "summary": "A five-day email course of short clips and downloads on the elements of an early years literacy block, from explicit phonics and decoding to sentence-level writing, shared writing and literature-rich units. It is about practices, not a program.",
+   "length": "Series",
+   "audience": "Teachers",
+   "region": "Australia",
+   "kind": "series"
+  },
+  {
+   "title": "Literacy Success in Years 3-6: Five Steps to Get Your Team's Bus on the Road",
+   "url": "https://www.jocelynseamereducation.com/3-6",
+   "by": "Jocelyn Seamer",
+   "meta": [
+    "Free email course",
+    "Five days",
+    "Australia"
+   ],
+   "areas": [
+    30,
+    21
+   ],
+   "tags": [
+    "Free account needed"
+   ],
+   "summary": "A five-day email course of short clips and downloads that helps a Year 3 to 6 team map the parts of a structured literacy block, name its existing strengths and choose its first actions.",
+   "length": "Series",
+   "audience": "Leaders",
+   "region": "Australia",
+   "kind": "series"
+  },
+  {
+   "title": "Beyond Genre: Connected Reading and Writing Instruction in the Primary School Years",
+   "url": "https://www.jocelynseamereducation.com/beyond",
+   "by": "Jocelyn Seamer",
+   "meta": [
+    "Free email course",
+    "Five days",
+    "Australia"
+   ],
+   "areas": [
+    10,
+    30
+   ],
+   "tags": [
+    "Free account needed"
+   ],
+   "summary": "A five-day email course of short clips and downloads on where genre fits in reading and writing instruction, and how to connect the two within the literacy block.",
+   "length": "Series",
+   "audience": "Teachers",
+   "region": "Australia",
+   "kind": "series"
+  },
+  {
+   "title": "Managing the Range: A Free Audio Course for Teachers in Years 3 to 6",
+   "url": "https://www.jocelynseamereducation.com/managing-the-range",
+   "by": "Jocelyn Seamer",
+   "meta": [
+    "Free audio course",
+    "Six episodes",
+    "Australia"
+   ],
+   "areas": [
+    30,
+    28
+   ],
+   "tags": [
+    "Free account needed"
+   ],
+   "summary": "A six-episode audio course with PDF downloads on meeting the wide range of needs in a Years 3 to 6 class, covering word-level instruction, fluency, syntax and text-based units.",
+   "length": "Series",
+   "audience": "Teachers",
+   "region": "Australia",
+   "kind": "series"
   }
  ]
 }
