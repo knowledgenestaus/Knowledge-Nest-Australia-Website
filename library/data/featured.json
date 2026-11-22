@@ -1,27 +1,49 @@
 {
- "week_of": "2026-11-16",
+ "week_of": "2026-11-23",
  "intro": "Three free pieces I think are worth your time this week, chosen from the Substacks I follow most closely. Each one opens on the writer's own Substack.",
  "items": [
+  {
+   "url": "https://nataliewexler.substack.com/p/my-visit-to-alpha-school-part-1",
+   "title": "My Visit to Alpha School (a three-part series)",
+   "by": "Natalie Wexler (Minding the Gap)",
+   "why": "I've been following the Alpha School story with great interest, and this is the most thorough first-hand account I've read. Wexler visits the Austin campus, hears from Carl Hendrick on why technology may be the way to deliver well-sequenced, systematic instruction at scale, and weighs up the concerns too. Parts 2 and 3 are on her Substack.",
+   "image": "https://substackcdn.com/image/fetch/w_600,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdfaaff5b-ab3e-4cfe-bb00-098ace6e65fe_1024x608.jpeg"
+  },
+  {
+   "url": "https://carouselteachlearnlead.substack.com/p/no-notes-why-id-ban-copying-from",
+   "title": "No Notes: Why I’d ban \"copying from the board\"",
+   "by": "Adam Boxer (Carousel: Teaching, Learning, Leading)",
+   "why": "Adam Boxer makes a persuasive case that students copying notes from the board learn very little. He suggests handing out the notes and spending that time on questioning and practice instead, which would make a great conversation starter with your team before planning for next year.",
+   "image": "https://substackcdn.com/image/fetch/w_600,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F215133be-d0e8-4923-a158-c79b4ea1f4bd_1500x1289.png"
+  },
+  {
+   "url": "https://mutallyassuredinstruction.substack.com/p/observing-the-unobservable",
+   "title": "Observing the unobservable",
+   "by": "Shaun Brien",
+   "why": "Australian teacher Shaun Brien on why peer observation so often misses what expert teachers actually do. His practical suggestions, like agreeing on a focus before the lesson and tracking the rate and type of questions, are worth a look as you plan observations for next year.",
+   "image": "https://substackcdn.com/image/fetch/w_600,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fed06a2a8-999c-476f-bf69-5c979ce2faff_1670x942.png"
+  }
+ ],
+ "archive": [
   {
    "url": "https://nataliewexler.substack.com/p/yes-writing-does-advance-thinking",
    "title": "Yes, Writing Does Advance Thinking",
    "by": "Natalie Wexler (Minding the Gap)",
-   "why": "With end-of-year writing tasks everywhere, I loved Wexler's clear case for why writing about what students have learned deepens their thinking, in every subject and not just English.",
+   "week_of": "2026-11-16",
    "image": "https://substackcdn.com/image/fetch/w_600,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0c7db62c-9d13-4400-9a41-20a99a41a9af_482x361.jpeg"
   },
   {
    "url": "https://tipsforteachers.substack.com/p/research-bite-77-exploring-how-understanding",
    "title": "Research Bite #77: Understanding the equals sign and solving equivalence problems",
    "by": "Craig Barton (Tips for Teachers)",
-   "why": "A quick, practical read for anyone teaching maths in the primary years. In this study nearly half of students finishing primary school read the equals sign as 'work out the answer', and those who saw it as meaning 'the same value' did better."
+   "week_of": "2026-11-16"
   },
   {
    "url": "https://carlhendrick.substack.com/p/is-understanding-just-remembering",
    "title": "Is Understanding Just \"Remembering in Disguise\"?",
    "by": "Carl Hendrick (The Learning Dispatch)",
-   "why": "If you've ever heard memorisation and understanding set up as opposites, read this. Hendrick unpacks a new paper by John Sweller and colleagues arguing that understanding comes from remembering ideas that interact, which matters for how we plan explanations.",
+   "week_of": "2026-11-16",
    "image": "https://substackcdn.com/image/fetch/w_600,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2134887f-beef-457b-b28d-43e527106066_3200x1800.png"
   }
- ],
- "archive": []
+ ]
 }
