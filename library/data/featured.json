@@ -1,27 +1,48 @@
 {
- "week_of": "2026-11-16",
+ "week_of": "2026-11-23",
  "intro": "Three free pieces I think are worth your time this week, chosen from the Substacks I follow most closely. Each one opens on the writer's own Substack.",
  "items": [
+  {
+   "url": "https://scienceofreadingclassroom.substack.com/p/that-wasnt-nearly-as-hard-as-i-thought",
+   "title": "Accessing Stretch Text With a Whole Class Grapple",
+   "by": "Erin Hanrahan (Science of Reading Classroom)",
+   "why": "A Year 8 teacher shows how she took a mixed class, including students in reading intervention, through the Declaration of Independence using a vocabulary preview, repeated readings and partner work. A practical model for anyone wanting to bring challenging text into their subject.",
+   "image": "https://substackcdn.com/image/fetch/w_600,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F86025da7-aadc-47fa-b0c9-b75bb20439ad_711x611.png"
+  },
+  {
+   "url": "https://carouselteachlearnlead.substack.com/p/no-notes-why-id-ban-copying-from",
+   "title": "No Notes: Why I’d ban \"copying from the board\"",
+   "by": "Adam Boxer (Carousel: Teaching, Learning, Leading)",
+   "why": "Adam Boxer makes a persuasive case that students copying notes from the board learn very little. He suggests handing out the notes and spending that time on questioning and practice instead, which would make a great conversation starter with your team before planning for next year.",
+   "image": "https://substackcdn.com/image/fetch/w_600,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F215133be-d0e8-4923-a158-c79b4ea1f4bd_1500x1289.png"
+  },
+  {
+   "url": "https://marymyatt.substack.com/p/transition-should-extend-learning",
+   "title": "Transition should extend learning, not restart it",
+   "by": "Mary Myatt (Curriculum 101)",
+   "why": "With Year 6 students about to head off to secondary school, Myatt asks secondary teachers to look closely at what students have already learned so that Year 7 builds on it rather than starting again. Her four questions would be a great focus for a transition meeting."
+  }
+ ],
+ "archive": [
   {
    "url": "https://nataliewexler.substack.com/p/yes-writing-does-advance-thinking",
    "title": "Yes, Writing Does Advance Thinking",
    "by": "Natalie Wexler (Minding the Gap)",
-   "why": "With end-of-year writing tasks everywhere, I loved Wexler's clear case for why writing about what students have learned deepens their thinking, in every subject and not just English.",
+   "week_of": "2026-11-16",
    "image": "https://substackcdn.com/image/fetch/w_600,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0c7db62c-9d13-4400-9a41-20a99a41a9af_482x361.jpeg"
   },
   {
    "url": "https://tipsforteachers.substack.com/p/research-bite-77-exploring-how-understanding",
    "title": "Research Bite #77: Understanding the equals sign and solving equivalence problems",
    "by": "Craig Barton (Tips for Teachers)",
-   "why": "A quick, practical read for anyone teaching maths in the primary years. In this study nearly half of students finishing primary school read the equals sign as 'work out the answer', and those who saw it as meaning 'the same value' did better."
+   "week_of": "2026-11-16"
   },
   {
    "url": "https://carlhendrick.substack.com/p/is-understanding-just-remembering",
    "title": "Is Understanding Just \"Remembering in Disguise\"?",
    "by": "Carl Hendrick (The Learning Dispatch)",
-   "why": "If you've ever heard memorisation and understanding set up as opposites, read this. Hendrick unpacks a new paper by John Sweller and colleagues arguing that understanding comes from remembering ideas that interact, which matters for how we plan explanations.",
+   "week_of": "2026-11-16",
    "image": "https://substackcdn.com/image/fetch/w_600,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2134887f-beef-457b-b28d-43e527106066_3200x1800.png"
   }
- ],
- "archive": []
+ ]
 }
