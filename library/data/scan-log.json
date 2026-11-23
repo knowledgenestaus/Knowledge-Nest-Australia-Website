@@ -1,5 +1,5 @@
 {
- "last_scan": "2026-11-21",
+ "last_scan": "2026-11-24",
  "note": "Kept by the regular library scan. feeds lists where each source was checked, passed_over lists links looked at and not proposed. Dedupe by title as well as link: the library lists Think Forward Educators webinars under their own site address, not YouTube. held_over lists items worth proposing that could not be fully checked; look at them again on the next run and then remove them.",
  "feeds": {
   "3-Star Learning Experiences": "https://3starlearningexperiences.wordpress.com/feed/",
@@ -77,10 +77,11 @@
   "Melissa and Lori Love Literacy (audio)": "https://rss.buzzsprout.com/287733.rss",
   "InnerDrive Science of Learning (audio)": "https://anchor.fm/s/10ace0d64/podcast/rss",
   "Mr Barton Maths Podcast": "https://www.mrbartonmaths.com/blog/feed/",
-  "Emina McLean blog": "https://www.eminamclean.com/blog-feed.xml"
+  "Emina McLean blog": "https://www.eminamclean.com/blog-feed.xml",
+  "Structured Literacy Podcast episode pages": "https://www.buzzsprout.com/1987785/episodes/<id>-<slug> (the feed gives no link; take the enclosure address without .mp3; the page has a transcript)"
  },
  "could_not_check": {
-  "AERO": "edresearch.edu.au needs a browser",
+  "AERO": "edresearch.edu.au shows a browser challenge, even in the built-in browser (24 November 2026)",
   "Evidence for Learning": "no feed found, YouTube channel quiet",
   "researchED": "no new uploads on the channel found",
   "Five from Five blog": "page loads but shows no dates",
@@ -88,9 +89,9 @@
   "Shanahan on Literacy": "feed did not parse",
   "Jamie Clark newsletter": "no feed found",
   "Peps Mccrea snacks": "feed did not parse",
-  "YouTube video pages": "blocked on 21 November 2026, so running times could not be read; channel feeds still work",
-  "Spelfabet": "feed timed out on 19 November 2026",
-  "Five from Five site": "site returned an error on 19 November 2026"
+  "YouTube video pages": "blocked on 21 and 24 November 2026 (429), in the browser as well, so running times could not be read; channel feeds still work",
+  "Five from Five site": "site returned an error on 19 November 2026",
+  "Lifelong Literacy (Lyn Stone)": "feed did not parse on 24 November 2026"
  },
  "passed_over": [
   {
@@ -328,18 +329,87 @@
   {
    "url": "https://podcasters.spotify.com/pod/show/adam3564/episodes/Is-it-ok-to-hate-being-a-form-tutor--Question-time-e3smiva",
    "why": "listener question chat about England"
+  },
+  {
+   "url": "https://fillingthepail.substack.com/p/confessions-of-an-explicit-teaching",
+   "why": "reply to other commentators"
+  },
+  {
+   "url": "https://vmnalex.substack.com/p/the-f2-mathematics-curriculum-update",
+   "why": "line-by-line notes on a curriculum revision, more news than lasting resource"
+  },
+  {
+   "url": "https://mutallyassuredinstruction.substack.com/p/death-by-dichotomy",
+   "why": "covers similar ground to the Shaun Brien post already proposed"
+  },
+  {
+   "url": "https://tipsforteachers.substack.com/p/research-bite-86-the-impact-of-teacher",
+   "why": "minor topic (teacher humour)"
+  },
+  {
+   "url": "https://marymyatt.substack.com/p/what-makes-it-safe-to-think-hard",
+   "why": "short newsletter update"
+  },
+  {
+   "url": "https://tomsherrington.substack.com/p/49-years-on-rituals-and-remembrance",
+   "why": "personal post"
+  },
+  {
+   "url": "https://teacherhead.com/2026/11/22/49-years-on-rituals-and-remembrance-grief-and-gratitude/",
+   "why": "personal post"
+  },
+  {
+   "url": "https://theeconomyofmeaning.com/2026/11/21/educational-meta-analyses-are-often-too-optimistic/",
+   "why": "good piece, held back so one source does not dominate the list"
+  },
+  {
+   "url": "https://theeconomyofmeaning.com/2026/11/22/ai-makes-it-easier-for-parents-to-complain-but-harder-to-have-a-real-conversation/",
+   "why": "outside the library's scope"
+  },
+  {
+   "url": "https://educationrickshaw.com/s6e3-christine-teahan-on-helping-parents-understand-how-children-learn/",
+   "why": "about communicating with parents, outside the library's scope"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/kieran-mackle/episodes/Can-a-Generalist-Really-Teach-Every-Subject-Well-e3so7us",
+   "why": "discussion of the English primary generalist model, first of an unfinished series"
+  },
+  {
+   "url": "https://www.teachermagazine.com/au_en/articles/why-ai-literacy-matters-for-teachers-and-students",
+   "why": "outside the library's scope"
+  },
+  {
+   "url": "https://www.spelfabet.com.au/2026/11/social-enterprise-accreditation-and-summer-groups/",
+   "why": "organisation news"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=M8RRNVqWtew",
+   "why": "US special education policy"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=KTGCnl3H7Jc",
+   "why": "about building an app"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=udVy1SCpoTg",
+   "why": "video copy of Structured Literacy Podcast S8 E5, proposed under its podcast address"
   }
  ],
  "held_over": [
   {
    "url": "https://www.youtube.com/watch?v=7slIXy8StOg",
    "title": "A Reading Universe Webinar: Grammatical Building Blocks (19 November 2026)",
-   "why": "looks a good fit for Learn, but the running time could not be read on 21 November. Check and propose next run"
+   "why": "looks a good fit for Learn, but YouTube video pages were blocked again on 24 November so the running time could not be read. Check and propose next run"
   },
   {
    "url": "https://www.youtube.com/watch?v=uSsexJc0nfo",
    "title": "The Reading League: Language Science and Syntax, with Julie Van Dyke (19 November 2026)",
-   "why": "looks a good fit for Learn, but the running time could not be read on 21 November. Check and propose next run"
+   "why": "looks a good fit for Learn, but YouTube video pages were blocked again on 24 November so the running time could not be read. Check and propose next run"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=1qg2ahi5QQA",
+   "title": "Reading Universe: Connecting Vocabulary to Content: \"Influential\" (21 November 2026)",
+   "why": "may be classroom footage for Watch, but the video page was blocked on 24 November so it could not be checked. Check next run"
   }
  ]
 }
