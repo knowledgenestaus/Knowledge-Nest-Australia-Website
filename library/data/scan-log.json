@@ -1,5 +1,5 @@
 {
- "last_scan": "2026-11-24",
+ "last_scan": "2026-11-26",
  "note": "Kept by the regular library scan. feeds lists where each source was checked, passed_over lists links looked at and not proposed. Dedupe by title as well as link: the library lists Think Forward Educators webinars under their own site address, not YouTube. held_over lists items worth proposing that could not be fully checked; look at them again on the next run and then remove them.",
  "feeds": {
   "3-Star Learning Experiences": "https://3starlearningexperiences.wordpress.com/feed/",
@@ -89,9 +89,10 @@
   "Shanahan on Literacy": "feed did not parse",
   "Jamie Clark newsletter": "no feed found",
   "Peps Mccrea snacks": "feed did not parse",
-  "YouTube video pages": "blocked on 21 and 24 November 2026 (429), in the browser as well, so running times could not be read; channel feeds still work",
+  "YouTube video pages": "blocked on 21, 24 and 26 November 2026 (429), so videos could not be watched or timed; channel feeds still work. Reading Universe videos can be checked on readinguniverse.org instead, which gives the running time and a transcript",
   "Five from Five site": "site returned an error on 19 November 2026",
-  "Lifelong Literacy (Lyn Stone)": "feed did not parse on 24 November 2026"
+  "Lifelong Literacy (Lyn Stone)": "feed read on 26 November 2026, nothing new since April",
+  "Teach Like a Champion blog": "feed returned nothing on 26 November 2026"
  },
  "passed_over": [
   {
@@ -413,23 +414,75 @@
   {
    "url": "https://podcasters.spotify.com/pod/show/mindthegap-edu/episodes/The-Digital-Delusion-Are-EdTech-and-AI-Undermining-Learning--with-Dr--Jared-Cooney-Horvath--Mind-the-Gap--Ep-132-S7-E6-e3ska48",
    "why": "proposed 24 November, Jo said no"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=1qg2ahi5QQA",
+   "why": "YouTube copy of the Reading Universe Influential vocabulary lesson, proposed under its readinguniverse.org address"
+  },
+  {
+   "url": "https://daviddidau.substack.com/p/how-to-make-lesson-slides-work",
+   "why": "paid subscribers only"
+  },
+  {
+   "url": "https://theeconomyofmeaning.com/2026/11/24/can-we-unlearn-educational-myths-new-research-offers-hope/",
+   "why": "general commentary about research and myths"
+  },
+  {
+   "url": "https://theeconomyofmeaning.com/2026/11/25/everyone-knows-what-science-is-until-you-ask/",
+   "why": "general commentary about research"
+  },
+  {
+   "url": "https://thenext30years.substack.com/p/skepticism-based-education",
+   "why": "opinion piece"
+  },
+  {
+   "url": "https://powerfulknowledge.substack.com/p/the-real-case-for-reading-and-writing",
+   "why": "opinion piece"
+  },
+  {
+   "url": "https://harriettjanetos.substack.com/p/dine-on-nine-give-thanks-for-phonics",
+   "why": "round-up of earlier posts"
+  },
+  {
+   "url": "https://dtwuva.substack.com/p/what-does-it-mean-for-a-phone-ban",
+   "why": "opinion piece on phone bans"
+  },
+  {
+   "url": "https://tipsforteachers.substack.com/p/whats-new-on-mr-barton-maths-1",
+   "why": "website update"
+  },
+  {
+   "url": "https://podcast.mrbartonmaths.com/236-hod-space-ep6-the-end-of-mathsconf-an-ai-misadventure-and-the-curriculum-review/",
+   "why": "news chat about England"
+  },
+  {
+   "url": "https://soundcloud.com/teacher-acer/flexible-fridays-reimagining",
+   "why": "timetabling, outside the library's scope"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=4XPK2Z6bV8I",
+   "why": "Steplab hub school promotion"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=ZqdvLAtL2Lg",
+   "why": "Steplab hub school promotion"
   }
  ],
  "held_over": [
   {
-   "url": "https://www.youtube.com/watch?v=7slIXy8StOg",
-   "title": "A Reading Universe Webinar: Grammatical Building Blocks (19 November 2026)",
-   "why": "looks a good fit for Learn, but YouTube video pages were blocked again on 24 November so the running time could not be read. Check and propose next run"
-  },
-  {
    "url": "https://www.youtube.com/watch?v=uSsexJc0nfo",
    "title": "The Reading League: Language Science and Syntax, with Julie Van Dyke (19 November 2026)",
-   "why": "looks a good fit for Learn, but YouTube video pages were blocked again on 24 November so the running time could not be read. Check and propose next run"
+   "why": "looks a good fit for Learn, but YouTube video pages were blocked again on 26 November so it could not be watched or timed. Check and propose next run"
   },
   {
-   "url": "https://www.youtube.com/watch?v=1qg2ahi5QQA",
-   "title": "Reading Universe: Connecting Vocabulary to Content: \"Influential\" (21 November 2026)",
-   "why": "may be classroom footage for Watch, but the video page was blocked on 24 November so it could not be checked. Check next run"
+   "url": "https://www.youtube.com/watch?v=5POxxmwKquA",
+   "title": "Reading Universe: Building a Simple Sentence (24 November 2026)",
+   "why": "likely classroom footage for Watch, but the YouTube page was blocked on 26 November and no readinguniverse.org page was found yet. Check next run"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=O-tRWBmRfq0",
+   "title": "Reading Universe: Quick Look: Five Finger Retell (23 November 2026)",
+   "why": "likely classroom footage for Watch, but the YouTube page was blocked on 26 November and no readinguniverse.org page was found yet. Check next run"
   }
  ]
 }
