@@ -4662,6 +4662,28 @@
    "audience": "Teachers",
    "region": "USA",
    "kind": "interview"
+  },
+  {
+   "title": "Teaching the grammatical building blocks (Reading Universe webinar)",
+   "url": "https://www.youtube.com/watch?v=7slIXy8StOg",
+   "by": "Reading Universe, with Nancy Chapel Eberhardt and Carla Stanford",
+   "meta": [
+    "About 1 hour",
+    "2026",
+    "USA"
+   ],
+   "areas": [
+    30,
+    10
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Nancy Chapel Eberhardt explains where grammar fits in the simple view of reading and why teaching what a word does in a sentence, before its label, helps students understand what they read. Carla Stanford then shares four research-based strategies with classroom videos, and Sarah Martin tours the free slides and lesson plans that go with them.",
+   "length": "30 to 60 minutes",
+   "audience": "Teachers",
+   "region": "USA",
+   "kind": "webinar"
   }
  ]
 }
