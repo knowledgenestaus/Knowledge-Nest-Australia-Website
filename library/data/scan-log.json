@@ -1,5 +1,5 @@
 {
- "last_scan": "2026-11-26",
+ "last_scan": "2026-11-28",
  "note": "Kept by the regular library scan. feeds lists where each source was checked, passed_over lists links looked at and not proposed. Dedupe by title as well as link: the library lists Think Forward Educators webinars under their own site address, not YouTube. held_over lists items worth proposing that could not be fully checked; look at them again on the next run and then remove them.",
  "feeds": {
   "3-Star Learning Experiences": "https://3starlearningexperiences.wordpress.com/feed/",
@@ -89,10 +89,11 @@
   "Shanahan on Literacy": "feed did not parse",
   "Jamie Clark newsletter": "no feed found",
   "Peps Mccrea snacks": "feed did not parse",
-  "YouTube video pages": "blocked on 21, 24 and 26 November 2026 (429), so videos could not be watched or timed; channel feeds still work. Reading Universe videos can be checked on readinguniverse.org instead, which gives the running time and a transcript",
+  "YouTube video pages": "blocked on 21, 24, 26 and 28 November 2026 (429), so videos could not be watched or timed; channel feeds still work. Reading Universe videos can be checked on readinguniverse.org instead, which gives the running time and a transcript",
   "Five from Five site": "site returned an error on 19 November 2026",
   "Lifelong Literacy (Lyn Stone)": "feed read on 26 November 2026, nothing new since April",
-  "Teach Like a Champion blog": "feed returned nothing on 26 November 2026"
+  "Teach Like a Champion blog": "feed read on 28 November 2026, nothing new since 1 November",
+  "Grattan": "site feed timed out on 28 November 2026"
  },
  "passed_over": [
   {
@@ -466,23 +467,55 @@
   {
    "url": "https://www.youtube.com/watch?v=ZqdvLAtL2Lg",
    "why": "Steplab hub school promotion"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/adam3564/episodes/Does-better-planning-result-in-better-behaviour--Question-time-e3t3esn",
+   "why": "listener question time on mixed topics"
+  },
+  {
+   "url": "https://theeconomyofmeaning.com/2026/11/27/how-flexible-can-teachers-be-if-the-system-isnt/",
+   "why": "review of teaching during crises, outside the library's scope"
+  },
+  {
+   "url": "https://theeconomyofmeaning.com/2026/11/26/who-exercises-the-least-boys-girls-and-their-parents-wallets/",
+   "why": "outside the library's scope"
+  },
+  {
+   "url": "https://www.teachermagazine.com/au_en/articles/research-news-ai-in-teaching-learning-and-assessment",
+   "why": "news round-up on AI"
+  },
+  {
+   "url": "https://mutallyassuredinstruction.substack.com/p/spiraling-up",
+   "why": "reflective piece on teacher perfectionism and failure"
+  },
+  {
+   "url": "https://marshallroberts.substack.com/p/what-do-psychiatrists-scientologists",
+   "why": "personal opinion on who can diagnose learning disorders"
+  },
+  {
+   "url": "https://scienceofreadingclassroom.substack.com/p/what-is-teachers-teach-teachers",
+   "why": "short promotion"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=K4-BZPfH60w",
+   "why": "video copy of Chalk & Talk Ep 85, proposed under its podcast address"
   }
  ],
  "held_over": [
   {
    "url": "https://www.youtube.com/watch?v=uSsexJc0nfo",
    "title": "The Reading League: Language Science and Syntax, with Julie Van Dyke (19 November 2026)",
-   "why": "looks a good fit for Learn, but YouTube video pages were blocked again on 26 November so it could not be watched or timed. Check and propose next run"
+   "why": "looks a good fit for Learn, but YouTube video pages were blocked again on 26 November so it could not be watched or timed. Still blocked on 28 November. Check next run"
   },
   {
    "url": "https://www.youtube.com/watch?v=5POxxmwKquA",
    "title": "Reading Universe: Building a Simple Sentence (24 November 2026)",
-   "why": "likely classroom footage for Watch, but the YouTube page was blocked on 26 November and no readinguniverse.org page was found yet. Check next run"
+   "why": "likely classroom footage for Watch, but the YouTube page was blocked on 26 November and no readinguniverse.org page was found yet. Still blocked on 28 November. Check next run"
   },
   {
    "url": "https://www.youtube.com/watch?v=O-tRWBmRfq0",
    "title": "Reading Universe: Quick Look: Five Finger Retell (23 November 2026)",
-   "why": "likely classroom footage for Watch, but the YouTube page was blocked on 26 November and no readinguniverse.org page was found yet. Check next run"
+   "why": "likely classroom footage for Watch, but the YouTube page was blocked on 26 November and no readinguniverse.org page was found yet. Still blocked on 28 November. Check next run"
   }
  ]
 }
