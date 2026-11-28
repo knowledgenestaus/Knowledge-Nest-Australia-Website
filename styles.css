@@ -994,3 +994,17 @@ html:not(.js) .nav-sub-toggle { display: none; }
 /* A fold says what it opens, and offers to close once open. */
 .lib-fold .lib-fold-hide, .lib-fold[open] .lib-fold-show { display: none; }
 .lib-fold[open] .lib-fold-hide { display: inline; }
+
+/* Key resources: the short pinned set that opens an area page */
+.lib-key { background: var(--sky-pale); border: 1px solid var(--sky); border-radius: 14px; padding: clamp(1rem, 3vw, 1.6rem); }
+.lib-key > h2 { margin-top: 0; }
+.lib-key > h3 { font-size: 1.15rem; margin: 1.4rem 0 0.7rem; }
+.lib-key > h3:first-of-type { margin-top: 0.4rem; }
+.lib-key .lib-card { background: var(--white); }
+.lib-key-note { font-size: 0.92rem; line-height: 1.45; color: var(--body); margin: 0.2rem 0 0.6rem; padding-left: 0.7rem; border-left: 3px solid var(--orange); }
+.lib-key-note-label { font-weight: 700; color: var(--ink); }
+/* On a phone the key set is a quick scan list: title, who made it, how long. Pictures and summaries stay on the full list below. */
+@media (max-width: 639px) {
+  .lib-key .lib-thumb, .lib-key .lib-kind, .lib-key .lib-summary, .lib-key .lib-card-pic { display: none; }
+  .lib-key .lib-grid { gap: 0.6rem; }
+}

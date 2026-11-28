@@ -127,6 +127,8 @@ def _load_featured():
     return data if isinstance(data, dict) else {}
 FEATURED = _load_featured()
 FEATURED_DAYS = 21   # after this many days from its week_of the panel is left out (and hidden in the browser), so a missed week never shows stale picks
+KEY = _load("key.json", {})   # key resources pinned at the top of an area page; see "Key resources" in the README
+KEY_ORDER = ("watch", "read", "research", "listen", "learn")   # by use: see it, read it, the research, then the long listens
 THUMBS = _load("thumbs.json", {})  # video url -> preview image url (linked, never copied); see tools/thumbs.py
 # Jo's must-follow Substacks, by title, shown first on the Read page. Leave empty until chosen.
 MUST_SUBSTACKS = []
@@ -1776,6 +1778,50 @@ def strand_sections(items, plan):
     return top + out, side
 
 
+def key_groups(n):
+    """The key resources chosen for area n, as (heading, entries) groups in display order. One group with no heading
+    for most areas; an area laid out by strand can list several headed groups. A link that matches nothing in the
+    library is left out (the build warns about it)."""
+    picks = KEY.get("areas", {}).get(str(n)) or []
+    by_url = {x["url"]: x for x in ENTRIES}
+    groups = picks if picks and isinstance(picks[0], dict) else [{"heading": "", "urls": picks}]
+    out = []
+    for g in groups:
+        found = [by_url[u] for u in g["urls"] if u in by_url]
+        if found:
+            out.append((g.get("heading", ""), found))
+    return out
+
+
+def key_section(a):
+    """The "Key resources" section that opens an area page: a short hand-picked set across formats, each card showing
+    its type, with a plain caution under a pick where key.json holds one. Only areas listed in key.json "show" get it."""
+    if a["n"] not in KEY.get("show", []):
+        return ""
+    groups = key_groups(a["n"])
+    if not groups:
+        return ""
+    notes = KEY.get("notes", {})
+
+    def one(x):
+        html = card(x, True, "h3")
+        note = notes.get(x["url"])
+        if note:   # the caution sits just above the card's foot line
+            html = html.replace('<p class="lib-card-foot">', '<p class="lib-key-note"><span class="lib-key-note-label">Worth knowing:</span> %s</p><p class="lib-card-foot">' % e(note), 1)
+        return html
+
+    total = sum(len(v) for _, v in groups)
+    body = ""
+    for heading, entries in groups:
+        if heading:
+            body += "<h3>%s</h3>" % e(heading)
+        body += '<div class="lib-grid">%s</div>' % "".join(one(x) for x in entries)
+    lead = ("A short set to begin with, chosen for the standing of the people behind them and for a mix of things to watch, "
+            "read and listen to. Everything in this area follows below.")
+    return ('<section class="lib-group lib-key" id="key" aria-labelledby="key-h"><h2 id="key-h">Key resources <span class="lib-count">%d</span></h2>'
+            '<p class="lib-group-lead">%s</p>%s</section>' % (total, lead, body))
+
+
 def build_areas():
     grouped = by_area(ENTRIES)
     for a in AREAS:
@@ -1787,10 +1833,11 @@ def build_areas():
         chips = ('<p class="lib-practices">%s%s</p>' % (label_html("Practices in this area:"), "".join("<em>%s</em>" % e(p[0].upper() + p[1:]) for p in a["practices"]))) if a["practices"] else ""
         lead = plan["intro"] if plan else " ".join(x for x in [a["about"], AREA_INTRO.get(a["n"], "")] if x)
         body = hero(a["domain"], a["name"], e(lead), crumbs=[("Library", "library.html"), (a["domain"], domain_page(a["domain"], {n: len(v) for n, v in grouped.items()}) if len(domain_areas(a["domain"], {n: len(v) for n, v in grouped.items()})) > 1 else "library.html#areas"), (a["name"], None)],
-                    extra=chips + ("" if plan else jump([(k, TYPES[k]["label"]) for k in present])), art=plan.get("art") if plan else None)
+                    extra=chips + ("" if plan else jump(([("key", "Key resources")] if key_section(a) else []) + [(k, TYPES[k]["label"]) for k in present])), art=plan.get("art") if plan else None)
         sections, strand_nav = "", ""
         if plan:
             sections, strand_nav = strand_sections(items, plan)
+        sections = key_section(a) + sections
         for k in ([] if plan else present):
             sub = [x for x in items if x["type"] == k]
             sections += '<section class="lib-group" id="%s"><h2>%s <span class="lib-count">%d</span></h2>%s</section>' % (k, TYPES[k]["label"], len(sub), folded_cards(sub, False, what=TYPES[k]["label"]))
@@ -2083,6 +2130,13 @@ def build_sitemap():
 def warnings():
     """Things worth a look before publishing. None of them stops the build."""
     out = []
+    # Key resources: every pick must match a library entry by link, and should sit in the area it is pinned to.
+    urls = {x["url"]: x for x in ENTRIES}
+    for n, picks in KEY.get("areas", {}).items():
+        flat = [u for g in picks for u in g["urls"]] if picks and isinstance(picks[0], dict) else picks
+        for u in flat:
+            if u not in urls:
+                out.append("key.json: a key resource for area %s matches nothing in the library: %s" % (n, u))
     # House style: running text has no colon before a list or clause, because the capital the colon rule adds would
     # land in the middle of a sentence. Reword with "covering", "including", "namely" or two sentences.
     prose = [("summary of '%s'" % x["title"], x.get("summary", "")) for x in ENTRIES]
