@@ -1,0 +1,345 @@
+{
+ "about": "Key resources pinned at the top of an area page. 'show' lists the area numbers whose pages display them (the Literacy pilot to begin with). 'areas' maps an area number to its picks in display order, by link; an area laid out by strand can use a list of {heading, urls} groups instead. 'notes' adds a plain caution under a pick, keyed by link.",
+ "show": [
+  33,
+  11,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  10
+ ],
+ "areas": {
+  "1": [
+   "https://researchschool.org.uk/clips-from-the-classroom/cognitive-science/learning-processes-in-the-primary-classroom",
+   "https://www.ambition.org.uk/research-and-insight/learning-what-is-it/",
+   "https://www.deansforimpact.org/tools-and-resources/the-science-of-learning",
+   "https://education.nsw.gov.au/about-us/education-data-and-research/cese/publications/literature-reviews/cognitive-load-theory.html",
+   "https://chalkandtalkpodcast.podbean.com/e/cognitive-load-theory-and-learning-math-with-john-sweller-ep-67/",
+   "https://theartofteaching.podbean.com/e/dr-daniel-t-willingham-why-don-t-students-like-school/",
+   "https://thinkforwardeducators.org/events/harnessing-the-science-of-learning"
+  ],
+  "2": [
+   "https://explicitinstruction.org/video-elementary/elementary-video-1/",
+   "https://www.edresearch.edu.au/guides-resources/videos/explicit-instruction-loxton-primary-school-video",
+   "https://newsletter.jamieleeclark.com/p/rosenshine-s-principles-of-instruction",
+   "https://www.aft.org/sites/default/files/Rosenshine.pdf",
+   "https://www.aft.org/sites/default/files/GuidedInstruction.pdf",
+   "https://www.ollielovell.com/johnhollingsworth/",
+   "https://www.youtube.com/watch?v=tr61IwVLvt4"
+  ],
+  "3": [
+   "https://researchschool.org.uk/clips-from-the-classroom/cognitive-science/using-retrieval-practice-in-year-3-science-lessons",
+   "https://www.edresearch.edu.au/guides-resources/videos/revisit-and-review-primary-and-secondary",
+   "https://www.jamieleeclark.com/s/RPP-CH",
+   "https://tipsforteachers.substack.com/p/research-bite-84-a-meta-analysis",
+   "https://www.aft.org/ae/fall2013/dunlosky",
+   "https://psychology.ecu.edu/wp-content/pv-uploads/sites/216/2019/03/Roediger-Karpicke-2006.pdf",
+   "https://chalkandtalkpodcast.podbean.com/e/desirable-difficulties-for-learning-with-elizabeth-bjork-and-robert-bjork-ep-66/"
+  ],
+  "4": [
+   "https://teachlikeachampion.org/blog/how-scott-wells-checks-for-understanding-as-his-students-read-with-video/",
+   "https://www.youtube.com/watch?v=0XgFqVwgVuc",
+   "https://www.jamieleeclark.com/s/CFU-Guide-TAPPLE.pdf",
+   "https://www.jamieleeclark.com/s/Responsive-Teaching.pdf",
+   "https://knowledgeforteachers.podbean.com/e/s02e10-bron-ryrie-jones-on-responsive-teaching-and-instructional-playbooks/",
+   "https://www.youtube.com/watch?v=nfAutEWaqOE"
+  ],
+  "23": [
+   "https://education.nsw.gov.au/teaching-and-learning/curriculum/explicit-teaching/explicit-teaching-snapshots-of-practice/checking-for-understanding-response-systems",
+   "https://teachlikeachampion.org/blog/scott-wells-models-the-foundations-of-a-successful-cold-call/",
+   "https://newsletter.jamieleeclark.com/p/mini-whiteboards-revisited",
+   "https://hailihughes.substack.com/p/why-i-hate-popsicle-sticks-for-cold",
+   "https://cbmt.franciscan.edu/wp-content/uploads/sites/32/2021/07/MacSuga-Gage-Simonsen-2015.pdf",
+   "https://shows.acast.com/pedagogy-to-practice/episodes/68de0ac77be17a7f01c06d0e",
+   "https://thinkforwardeducators.org/past-webinars-1/v/9629ld35jz4ksgw3bans32tpcryccc"
+  ],
+  "24": [
+   "https://education.nsw.gov.au/teaching-and-learning/curriculum/explicit-teaching/explicit-teaching-snapshots-of-practice/using-effective-feedback-teacher-feedback",
+   "https://substack.nomoremarking.com/p/but-my-students-like-written-comments",
+   "https://www.jamieleeclark.com/s/Whole-Class-Feedback-Guide.pdf",
+   "https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/feedback",
+   "https://www.youtube.com/watch?v=NvDSeapJx5A",
+   "https://thinkforwardeducators.org/past-webinars-1/v/x4fylmbp7t6xgflryhlpjtd2zkjc87"
+  ],
+  "5": [
+   "https://www.edresearch.edu.au/guides-resources/videos/gaining-all-students-attention-classroom-management-practice",
+   "https://www.youtube.com/watch?v=TGDhz4tLaoI",
+   "https://www.jamieleeclark.com/s/Routines.pdf",
+   "https://www.cis.org.au/wp-content/uploads/2023/10/AP55-update.pdf",
+   "https://education.nsw.gov.au/content/dam/main-education/about-us/educational-data/cese/2020-classroom-management-literature-review.pdf",
+   "https://knowledgeforteachers.podbean.com/e/s02e06-tom-bennett-on-running-the-room/"
+  ],
+  "18": [
+   "https://www.aft.org/ae/summer2005/willingham",
+   "https://hailihughes.substack.com/p/ten-lethal-mutations-of-educational",
+   "https://www.shankerinstitute.org/blog/interpreting-effect-sizes-education-research",
+   "https://files.eric.ed.gov/fulltext/ED442804.pdf",
+   "https://educationendowmentfoundation.org.uk/education-evidence/evidence-reviews/cognitive-science-approaches-in-the-classroom",
+   "https://chalkandtalkpodcast.podbean.com/e/why-does-education-resist-scientific-evidence-ep-84/",
+   "https://www.ollielovell.com/danielwillingham/"
+  ],
+  "33": [
+   "https://pamelasnow.blogspot.com/2020/01/updating-language-and-literacy-house.html",
+   "https://www.readingrockets.org/topics/about-reading/articles/simple-view-reading",
+   "https://www.thereadingleague.org/wp-content/uploads/2023/11/TRLC-Educators-and-Specialists-The-Reading-Rope-Key-Ideas-Behind-the-Metaphor.pdf",
+   "https://doi.org/10.1177/1529100618772271",
+   "https://research.acer.edu.au/tll_misc/5/",
+   "https://ro.ecu.edu.au/ajte/vol39/iss12/10/",
+   "https://knowledgeforteachers.podbean.com/e/s03e9-making-sense-of-the-science-of-reading-with-mandy-nayton/",
+   "https://features.apmreports.org/sold-a-story/"
+  ],
+  "11": [
+   "https://www.youtube.com/watch?v=eU547AGYUl4",
+   "https://www.ecu.edu.au/__data/assets/pdf_file/0010/663697/SA-DECS-Oral-lang-doc.pdf",
+   "https://doi.org/10.3109/17549507.2015.1112837",
+   "https://evidenceintoaction.podbean.com/e/oral-language-the-importance-of-subject-specific-talk-across-the-curriculum/",
+   "https://www.youtube.com/watch?v=OZ1dHS1X8jg",
+   "https://thinkforwardeducators.org/past-webinars-1/v/part-1-oral-language-skills-and-reading-instruction-teachers-carryon-essential-knowledge"
+  ],
+  "26": [
+   "https://readinguniverse.org/skill-explainer/phonemic-awareness/phoneme-segmentation-and-blending/video-see-phoneme-segmentation-and-blending-in-the-classroom",
+   "https://fivefromfive.com.au/phonemic-awareness/",
+   "https://www.spelfabet.com.au/2022/01/should-we-do-phoneme-awareness-activities-without-letters/",
+   "https://ies.ed.gov/ncee/wwc/PracticeGuide/21",
+   "https://www.youtube.com/watch?v=RBp2wNMz--A"
+  ],
+  "27": [
+   "https://www.youtube.com/watch?v=6G354mbFA_4",
+   "https://fivefromfive.com.au/phonics/",
+   "https://www.aft.org/ae/fall2023/ehri",
+   "https://www.buzzsprout.com/1987785/episodes/15314229-s3-e22-how-to-choose-a-phonics-program",
+   "https://www.youtube.com/watch?v=1rFSxx4V-84",
+   "https://www.youtube.com/watch?v=MaerOHwxRsA",
+   "https://www.youtube.com/watch?v=Ic3xq3mctog"
+  ],
+  "28": [
+   "https://researchschool.org.uk/clips-from-the-classroom/literacy/repeated-reading-as-an-intervention-in-year-3",
+   "https://fivefromfive.com.au/fluency/",
+   "https://thinkforwardeducators.org/s/Howdoyoulistentoyourstudentsread.pdf",
+   "https://evidenceintoaction.podbean.com/e/ep-10-teaching-reading-developing-fluency/",
+   "https://www.youtube.com/watch?v=pR917xoy2Y0"
+  ],
+  "29": [
+   "https://onlit.org/resource/explicit-vocabulary-instruction-demonstration/",
+   "https://fivefromfive.com.au/vocabulary/",
+   "https://www.aft.org/node/7545",
+   "https://www.ollielovell.com/margaretmckeown-vocab/",
+   "https://thinkforwardeducators.org/past-webinars-1/v/f8gfyjwjw23pg4rgce56sp3465tt5p"
+  ],
+  "30": [
+   "https://researchschool.org.uk/clips-from-the-classroom/literacy/modelling-reading-comprehension-in-the-primary-classroom",
+   "https://fivefromfive.com.au/blog/dont-discard-comprehension-strategies/",
+   "https://www.aft.org/ae/winter2021-2022/catts",
+   "https://doi.org/10.1080/02702711.2021.1888348",
+   "https://evidenceintoaction.podbean.com/e/ep-11-teaching-reading-the-reading-comprehension-house/",
+   "https://www.ollielovell.com/douglemov2/",
+   "https://www.youtube.com/watch?v=RiP-ijdxqEc"
+  ],
+  "31": [
+   "https://readinguniverse.org/skill-explainer/suffix-adding-rules/suffix-spelling-patterns-skill-explainer/videos-see-suffix-instruction-in-the-classroom",
+   "https://www.aft.org/ae/winter2008-2009/joshi_treiman_carreker_moats",
+   "https://www.buzzsprout.com/1987785/episodes/19030216-s7-e10-how-to-evaluate-spelling-instruction",
+   "https://www.youtube.com/watch?v=l-Q_n5V00v4",
+   "https://www.youtube.com/watch?v=Sjf9G_KtHj4",
+   "https://www.youtube.com/watch?v=wDJYbk4wHUI"
+  ],
+  "32": [
+   "https://researchschool.org.uk/clips-from-the-classroom/literacy/tackling-transcription-using-sentence-dictation",
+   "https://www.aft.org/ae/winter2009-2010/graham",
+   "https://theconversation.com/our-research-shows-children-produce-better-pieces-of-writing-by-hand-but-they-need-keyboard-skills-too-229380",
+   "https://newsletter.jamieleeclark.com/p/handwriting-is-thinking",
+   "https://education.nsw.gov.au/teaching-and-learning/curriculum/literacy-and-numeracy/professional-learning/podcasts/handwriting",
+   "https://readinguniverse.org/top-100-qas/is-handwriting-actually-important-for-writing"
+  ],
+  "10": [
+   "https://teachlikeachampion.org/blog/rebecca-sloots-building-ratio-and-great-writers-in-queensland/",
+   "https://www.edresearch.edu.au/guides-resources/practice-guides/sentence-combining",
+   "https://ies.ed.gov/ncee/wwc/PracticeGuide/17",
+   "https://www.edresearch.edu.au/resources/writing-and-writing-instruction",
+   "https://knowledgeforteachers.podbean.com/e/s02e04-dr-nathaniel-swain-on-developing-great-writing-skills/",
+   "https://www.ollielovell.com/judithhochman/",
+   "https://www.youtube.com/watch?v=jp4l-oBbgXQ"
+  ],
+  "34": [
+   "https://www.youtube.com/watch?v=bCfc39FHx8k",
+   "https://www.edresearch.edu.au/guides-resources/videos/explicit-instruction-maths-video",
+   "https://www.youtube.com/watch?v=uEV1Hsh5Qq0",
+   "https://www.ollielovell.com/davidmorkunas/",
+   "https://thinkforwardeducators.org/events/explicit-maths"
+  ],
+  "35": [
+   "https://www.youtube.com/watch?v=u1pPFzQmH2U",
+   "https://www.ncetm.org.uk/classroom-resources/lv-number-facts/",
+   "https://thinkforwardeducators.org/s/Maths-Daily-Review-Made-For-You.pdf",
+   "https://tipsforteachers.substack.com/p/research-bite-53-a-meta-analytic",
+   "https://knowledgeforteachers.podbean.com/e/s04e03-dr-brian-poncy-on-facts-on-fire-why-fluency-is-the-foundation-of-mathematical-thinking/",
+   "https://thinkforwardeducators.org/events/tonihatten-roberts-maths-network-nov22"
+  ],
+  "36": [
+   "https://researchschool.org.uk/clips-from-the-classroom/maths/manipulatives-which-why-how",
+   "https://www.ncetm.org.uk/classroom-resources/lv-multiplicative-reasoning/",
+   "https://ies.ed.gov/ncee/wwc/PracticeGuide/16",
+   "https://knowledgeforteachers.podbean.com/e/s02e05-sarah-powell-on-effective-word-problem-instruction/",
+   "https://thinkforwardeducators.org/past-webinars-1/v/rdmz7ddabww7dgwx552tja45erp9fn"
+  ],
+  "37": [
+   "https://www.ncetm.org.uk/classroom-resources/lv-multiplication/",
+   "https://www.ncetm.org.uk/classroom-resources/lv-fractions/",
+   "https://ies.ed.gov/ncee/wwc/PracticeGuide/15",
+   "https://ies.ed.gov/ncee/wwc/PracticeGuide/18",
+   "https://theartofteaching.podbean.com/e/dr-ange-rogers-pvat-building-teacher-expertise-and-the-power-of-place-value/",
+   "https://knowledgeforteachers.podbean.com/e/s02e19-professor-nancy-jordan-on-number-sense-early-numeracy-screeners-and-fractions/"
+  ],
+  "38": [
+   "https://intensiveintervention.org/resource/principles-designing-intervention-mathematics",
+   "https://ies.ed.gov/ncee/WWC/Docs/PracticeGuide/WWC2021006-Math-PG.pdf",
+   "https://cis.org.au/wp-content/uploads/2024/06/RR49-Screening-that-counts.pdf",
+   "https://chalkandtalkpodcast.podbean.com/e/universal-screening-in-math-with-amanda-vanderheyden-ep-50/",
+   "https://thinkforwardeducators.org/events/whats-important-for-maths-intervention",
+   "https://www.youtube.com/watch?v=4Yj9u2Vw1XI",
+   "https://thinkforwardeducators.org/past-webinars-1/v/zks98f5d22zrrg6stle5aypn3zhn2j"
+  ],
+  "39": [
+   "https://grattan.edu.au/report/the-maths-guarantee-a-guide-for-principals/",
+   "https://grattan.edu.au/report/maths-guarantee/",
+   "https://files.eric.ed.gov/fulltext/ED500486.pdf",
+   "https://www.cis.org.au/wp-content/uploads/2022/08/AP38-Myths-That-Undermine-Maths-Teaching-1.pdf",
+   "https://chalkandtalkpodcast.podbean.com/e/science-of-math-the-movement-everyones-talking-about-with-sarah-powell-ep-65/",
+   "https://www.youtube.com/watch?v=uvJj2wWKH2g"
+  ],
+  "6": [
+   "https://www.youtube.com/watch?v=Rd7OUNYnlZI",
+   "https://www.aft.org/ae/spring2006/willingham",
+   "https://marymyatt.substack.com/p/from-coverage-to-coherence",
+   "https://grattan.edu.au/wp-content/uploads/2022/10/Ending-the-lesson-lottery-Grattan-Report.pdf",
+   "https://www.ollielovell.com/donhirsch/",
+   "https://knowledgeforteachers.podbean.com/e/s03e19-natalie-wexler-on-the-knowledge-gap-and-what-lies-beyond-the-science-of-reading/",
+   "https://www.youtube.com/watch?v=W4uSMxxH9x0"
+  ],
+  "14": [
+   "https://edresearch.edu.au/resources/intro-multi-tiered-system-supports",
+   "https://www.edresearch.edu.au/resources/supporting-students-significantly-behind-literacy-and-numeracy",
+   "https://jmtss.org/index.php/jmtss/article/view/21",
+   "https://knowledgeforteachers.podbean.com/e/s03e17-from-intervention-to-inclusion-sarah-asome-on-making-every-tier-count/",
+   "https://www.youtube.com/watch?v=Q3AXOxTLxpk",
+   "https://thinkforwardeducators.org/past-webinars-1/v/p3j64xs3pfzga38br6jraxzn72t38n",
+   "https://www.youtube.com/watch?v=OiT0Ap8c-gk"
+  ],
+  "13": [
+   "https://markrshinnphd.substack.com/p/frequent-cbm-progress-monitoring",
+   "https://ies.ed.gov/ncee/wwc/PracticeGuide/3",
+   "https://www.ollielovell.com/daisychristodoulou/",
+   "https://knowledgeforteachers.podbean.com/e/s03e04-dr-matthew-burns-on-effective-assessment-using-data-to-drive-reading-maths-intervention/",
+   "https://www.youtube.com/watch?v=KEzv-X9neE4",
+   "https://www.youtube.com/watch?v=UUbqKbFbAWo",
+   "https://thinkforwardeducators.org/past-webinars-1/v/6l434hzypx8k39b9srxa5e297jdc83",
+   "https://players.brightcove.net/6110393209001/default_default/index.html?videoId=6405716283112"
+  ],
+  "16": [
+   "https://steplab.co/watch/great-teaching-unpacked-episode-4-embedding-development",
+   "https://arc.educationapps.vic.gov.au/learning/sites/evidence-to-action/12680/Better-classroom-decisions",
+   "https://annenberg.brown.edu/publications/effect-teacher-coaching-instruction-and-achievement-meta-analysis-causal-evidence",
+   "https://educationendowmentfoundation.org.uk/education-evidence/evidence-reviews/teacher-professional-development",
+   "https://www.ollielovell.com/joshgoodrich/",
+   "https://jonesandmclean.podbean.com/e/7-on-instructional-playbooks/",
+   "https://www.youtube.com/watch?v=vFIPOl7s9Ds"
+  ],
+  "19": [
+   "https://www.ambition.org.uk/blog/persistent-problems-school-leadership/",
+   "https://cdn.auckland.ac.nz/assets/education/about/research/LRG/Robinson,%20Lloyd%20%26%20Rowe%20(2008)%20The%20impact%20of%20leadership%20on%20student%20outcomes%20-%20An%20analysis%20of%20the%20differential%20effects%20of%20leadership%20types.pdf",
+   "https://www.wallacefoundation.org/knowledge-center/Documents/How-Principals-Affect-Students-and-Schools.pdf",
+   "https://www.ollielovell.com/stevecapp/",
+   "https://www.academy.vic.gov.au/resources/three-capabilities-leading-improvement-viviane-robinson",
+   "https://thinkforwardeducators.org/events/catalyst"
+  ],
+  "20": [
+   "https://www.youtube.com/watch?v=dRJJL8sXs1Y",
+   "https://hailihughes.substack.com/p/our-kids-cant-the-soft-bigotry-of",
+   "https://assets.publishing.service.gov.uk/media/5a7506e4ed915d3c7d529cec/Tom_Bennett_Independent_Review_of_Behaviour_in_Schools.pdf",
+   "https://www.ascd.org/el/articles/trust-in-schools-a-core-resource-for-school-reform",
+   "https://theartofteaching.podbean.com/e/ep-249-katharine-birbalsingh-britain-s-strictest-headmistress-on-school-culture-and-high-expectations/",
+   "https://www.youtube.com/watch?v=uhXKEr6itAE"
+  ],
+  "21": [
+   "https://hailihughes.substack.com/p/why-are-we-still-leaving-mentors",
+   "https://grattan.edu.au/report/making-time-for-great-teaching-how-better-government-policy-can-help/",
+   "https://www.youtube.com/watch?v=nUs1ghEAkuw",
+   "https://www.youtube.com/watch?v=tzajtF8QRkE",
+   "https://www.youtube.com/watch?v=-dhkbYIKIsA"
+  ],
+  "17": [
+   "https://www.edresearch.edu.au/resource-collections/implementation-schools-deliberate-and-structured-approach",
+   "https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/implementation",
+   "https://nirn.fpg.unc.edu/resource/implementation-research-a-synthesis-of-the-literature/",
+   "https://www.ollielovell.com/jonathansharples/",
+   "https://theartofteaching.podbean.com/e/ep-281-michael-rosenbrock-the-pruning-principle-saying-no-to-great-opportunities-and-making-implementation-work/",
+   "https://www.youtube.com/watch?v=RizgcorvUhk",
+   "https://thinkforwardeducators.org/events/changemanagement"
+  ],
+  "25": [
+   {
+    "heading": "General",
+    "urls": [
+     "https://www.youtube.com/watch?v=pK2JBp1rtk8",
+     "https://speldvic.org.au/information-for-teachers/",
+     "https://uldforparents.com/",
+     "https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/send",
+     "https://www.inclusioned.edu.au/practice/series/1878"
+    ]
+   },
+   {
+    "heading": "Dyslexia and reading difficulties",
+    "urls": [
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC7455053/",
+     "https://www.youtube.com/watch?v=OketeC-a1YU"
+    ]
+   },
+   {
+    "heading": "Language (developmental language disorder)",
+    "urls": [
+     "https://thedldproject.com/school-dld/",
+     "https://www.youtube.com/watch?v=JJE9ifuAl-E"
+    ]
+   },
+   {
+    "heading": "ADHD",
+    "urls": [
+     "https://adhdguideline.aadpa.com.au/adhd-for-educators/",
+     "https://www.rch.org.au/kidsinfo/fact_sheets/ADHD_ways_to_help_children_at_school_and_home/"
+    ]
+   },
+   {
+    "heading": "Autism",
+    "urls": [
+     "https://www.vic.gov.au/diverse-learners-hub/autism-student-resources",
+     "https://www.allplaylearn.org.au/primary/teacher/asd/"
+    ]
+   },
+   {
+    "heading": "Maths and writing difficulties",
+    "urls": [
+     "https://www.youtube.com/watch?v=imhRoqxSEhU",
+     "https://www.understood.org/en/articles/understanding-dysgraphia"
+    ]
+   }
+  ]
+ },
+ "notes": {
+  "https://www.aft.org/ae/fall2013/dunlosky": "Effects in classrooms are usually smaller than in the laboratory. Research Bite #84 beside it shows by how much.",
+  "https://www.cis.org.au/wp-content/uploads/2023/10/AP55-update.pdf": "A think-tank paper, not peer reviewed. Read it with the NSW literature review beside it.",
+  "https://features.apmreports.org/sold-a-story/": "A journalism series from the United States, in several episodes. It is not research.",
+  "https://www.ollielovell.com/judithhochman/": "The Writing Revolution is widely used but has had little formal evaluation. Karen Harris's SRSD, in the full list, has stronger trial evidence.",
+  "https://files.eric.ed.gov/fulltext/ED500486.pdf": "Long, and from 2008. Its strongest findings on explicit teaching are for students who struggle.",
+  "https://www.cis.org.au/wp-content/uploads/2022/08/AP38-Myths-That-Undermine-Maths-Teaching-1.pdf": "A think-tank analysis paper by maths intervention researchers.",
+  "https://www.edresearch.edu.au/resources/supporting-students-significantly-behind-literacy-and-numeracy": "Written about students in Years 7 to 9.",
+  "https://annenberg.brown.edu/publications/effect-teacher-coaching-instruction-and-achievement-meta-analysis-causal-evidence": "Effects were smaller in larger programs.",
+  "https://theartofteaching.podbean.com/e/ep-249-katharine-birbalsingh-britain-s-strictest-headmistress-on-school-culture-and-high-expectations/": "One school's account, not research.",
+  "https://uldforparents.com/": "Written for families.",
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC7455053/": "How researchers understand dyslexia, not how it is diagnosed. Diagnostic criteria have changed since it was written.",
+  "https://www.rch.org.au/kidsinfo/fact_sheets/ADHD_ways_to_help_children_at_school_and_home/": "Written for families as well as schools."
+ }
+}
