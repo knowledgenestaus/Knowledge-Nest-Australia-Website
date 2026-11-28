@@ -149,3 +149,12 @@ python3 library/build.py
 - **No restorative practice resources.** Jo does not consider restorative practice aligned with current research, so nothing that promotes it is listed, whoever made it.
 - **Nothing behind a paywall.** A link that meters or locks its article (Tes, paid-only Substack posts) is removed. Tools that need a free sign-up say so on the card.
 - **Voices** need a public, free home for the person's or organisation's work. People without one (for example John Sweller, Anne Castles, Jennifer Buckingham) are represented through Research, Learn and Listen instead.
+
+## Key resources at the top of an area page (pilot, November 2026)
+
+- **What it is.** A short, hand-picked set that opens an area page under the heading "Key resources": five by default and up to eight in a large area, across formats, shown in the order Watch, Read, Research, Listen, Learn. The area's full lists follow underneath, unchanged, so a key resource also appears in its own section further down.
+- **Where it shows.** Only on areas whose number is in `"show"` in `library/data/key.json`. The pilot is the ten Literacy areas. Picks for every other area are already in the file and appear as soon as their number is added to `"show"`.
+- **The data.** `"areas"` maps an area number to its picks by link, in display order. An area can instead hold a list of `{"heading": ..., "urls": [...]}` groups (Learning difficulties, disabilities and inclusion does). `"notes"` holds a plain caution for a pick, keyed by link, shown on the card as "Worth knowing".
+- **Rules Jo set.** No "start here" marker; one Education Research Reading Room episode per area at most; no pick pinned in two areas; one pick per creator in an area where possible; nothing by an excluded author.
+- **Checks.** The build prints a `WARNING` for a pick whose link matches nothing in the library.
+- **On a phone** the key set drops pictures and summaries so it reads as a quick list; they stay on the full lists below it.
