@@ -757,9 +757,7 @@
    ],
    "areas": [
     27,
-    26,
-    5,
-    2
+    26
    ],
    "tags": [
     "Free"
@@ -4809,24 +4807,6 @@
   },
   {
    "type": "listen",
-   "title": "087 Making Room for Impact (De-implementation)",
-   "url": "https://www.ollielovell.com/arranhamilton-dylanwiliam/",
-   "by": "Education Research Reading Room",
-   "meta": [
-    "with Arran Hamilton and Dylan Wiliam"
-   ],
-   "areas": [
-    17
-   ],
-   "tags": [
-    "Free"
-   ],
-   "summary": "Arran Hamilton and Dylan Wiliam discuss Making Room for Impact and de-implementation, the work of deciding what schools should stop doing to free time for what matters.",
-   "focus": "De-implementation",
-   "minutes": 130
-  },
-  {
-   "type": "listen",
    "title": "017 Critiquing meta-analysis",
    "url": "https://www.ollielovell.com/adriansimpson/",
    "by": "Education Research Reading Room",
@@ -5974,6 +5954,7 @@
     "with Sarah Powell"
    ],
    "areas": [
+    36,
     24
    ],
    "tags": [
@@ -7506,22 +7487,6 @@
    ],
    "tags": [],
    "summary": "A news report on a Victorian school where the principal moved away from seeking majority buy-in, and what followed for the school's improvement work."
-  },
-  {
-   "type": "read",
-   "title": "Leading for impact: Australian guidelines for school leadership development",
-   "url": "https://www.aitsl.edu.au/resources/collections/leading-for-impact",
-   "by": "AITSL",
-   "meta": [
-    "Guidelines and videos",
-    "Australia"
-   ],
-   "areas": [
-    19,
-    20
-   ],
-   "tags": [],
-   "summary": "AITSL's national guidelines for developing school leaders, with videos."
   },
   {
    "type": "read",
@@ -12313,32 +12278,6 @@
     "Free"
    ],
    "summary": "An introduction to the Disability Discrimination Act and the Disability Standards for Education, written with education law expert Professor Elizabeth Dickson. Covers educators' obligations, discrimination, harassment and victimisation.",
-   "bands": [
-    "F-2",
-    "3-6",
-    "Secondary"
-   ],
-   "subject": "Across subjects",
-   "region": "Australia"
-  },
-  {
-   "type": "read",
-   "strand": "Supporting students with additional needs",
-   "title": "Disability Standards for Education: Resources for teachers and leaders",
-   "url": "https://www.aitsl.edu.au/resources/collections/disability-standards-for-education",
-   "by": "AITSL",
-   "meta": [
-    "Resource collection",
-    "Australia"
-   ],
-   "areas": [
-    25,
-    19
-   ],
-   "tags": [
-    "Free"
-   ],
-   "summary": "AITSL's collection of elaborations and videos showing how the Disability Standards for Education connect to the Teacher Standards and what they ask of teachers and leaders.",
    "bands": [
     "F-2",
     "3-6",
@@ -20555,6 +20494,159 @@
    "region": "International",
    "date": "2025-12-09",
    "strand": "Metacognition and study strategies"
+  },
+  {
+   "type": "research",
+   "title": "Teacher Feedback to Improve Pupil Learning",
+   "url": "https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/feedback",
+   "by": "Education Endowment Foundation",
+   "meta": [
+    "2021",
+    "Guidance report"
+   ],
+   "areas": [
+    24
+   ],
+   "tags": [
+    "Free"
+   ],
+   "region": "UK",
+   "summary": "The EEF's guidance report on feedback. It concentrates on the principles of good feedback more than on whether it is written or spoken, and comes with a one-page poster of its recommendations."
+  },
+  {
+   "type": "research",
+   "title": "Myths That Undermine Maths Teaching",
+   "url": "https://www.cis.org.au/wp-content/uploads/2022/08/AP38-Myths-That-Undermine-Maths-Teaching-1.pdf",
+   "by": "Sarah Powell, Elizabeth Hughes and Corey Peltier, for the Centre for Independent Studies",
+   "meta": [
+    "2022",
+    "Analysis paper",
+    "Australia"
+   ],
+   "areas": [
+    39,
+    34
+   ],
+   "tags": [
+    "Free"
+   ],
+   "region": "Australia",
+   "summary": "Seven widely held beliefs about maths teaching, including that concepts must come before procedures and that timed tests cause maths anxiety, set against the evidence. The authors recommend explicit instruction and teaching concepts and procedures together."
+  },
+  {
+   "type": "research",
+   "title": "Screening That Counts: Why Australia needs universal early numeracy screening",
+   "url": "https://cis.org.au/wp-content/uploads/2024/06/RR49-Screening-that-counts.pdf",
+   "by": "Kelly Norris, for the Centre for Independent Studies",
+   "meta": [
+    "2024",
+    "Research report",
+    "Australia"
+   ],
+   "areas": [
+    38,
+    13
+   ],
+   "tags": [
+    "Free"
+   ],
+   "region": "Australia",
+   "strand": "Screening, diagnostic assessment and progress monitoring",
+   "summary": "Kelly Norris argues that the tools Australian schools use in early maths diagnose or measure achievement, not risk. She recommends a validated number sense screener given at least twice a year in Foundation and Year 1, inside a multi-tiered system of supports."
+  },
+  {
+   "type": "research",
+   "title": "Making time for great teaching: How better government policy can help",
+   "url": "https://grattan.edu.au/report/making-time-for-great-teaching-how-better-government-policy-can-help/",
+   "by": "Grattan Institute",
+   "meta": [
+    "2022",
+    "Report",
+    "Australia"
+   ],
+   "areas": [
+    21,
+    6
+   ],
+   "tags": [
+    "Free"
+   ],
+   "region": "Australia",
+   "summary": "Grattan's survey of 5,442 Australian teachers and leaders found more than 90 per cent lack time to prepare well for class. The report recommends shared, high-quality curriculum materials and more time for teachers to plan together."
+  },
+  {
+   "type": "listen",
+   "title": "Ep 50 Universal Screening in Math",
+   "url": "https://chalkandtalkpodcast.podbean.com/e/universal-screening-in-math-with-amanda-vanderheyden-ep-50/",
+   "by": "Chalk & Talk",
+   "meta": [
+    "with Amanda VanDerHeyden"
+   ],
+   "areas": [
+    38
+   ],
+   "tags": [
+    "Free"
+   ],
+   "focus": "Universal maths screening",
+   "minutes": 54,
+   "date": "2025-06-18",
+   "summary": "Anna Stokke talks with Amanda VanDerHeyden about universal screening in maths. They cover what it is, how to find a validated screener, common mistakes and how screening connects to intervention."
+  },
+  {
+   "type": "read",
+   "title": "Ask the Cognitive Scientist: Do Visual, Auditory, and Kinesthetic Learners Need Visual, Auditory, and Kinesthetic Instruction?",
+   "url": "https://www.aft.org/ae/summer2005/willingham",
+   "by": "Daniel Willingham",
+   "meta": [
+    "Article",
+    "2005",
+    "USA"
+   ],
+   "areas": [
+    18
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Daniel Willingham's American Educator article on learning styles, the most persistent myth in teaching."
+  },
+  {
+   "type": "read",
+   "title": "Taking Delight in Words",
+   "url": "https://www.aft.org/node/7545",
+   "by": "Isabel Beck, Margaret McKeown and Linda Kucan, American Educator",
+   "meta": [
+    "Article",
+    "2003",
+    "USA"
+   ],
+   "areas": [
+    29,
+    11
+   ],
+   "tags": [
+    "Free"
+   ],
+   "summary": "Isabel Beck, Margaret McKeown and Linda Kucan on building vocabulary through talk about words in the early years of school, written for American Educator."
+  },
+  {
+   "type": "research",
+   "title": "Writing and writing instruction",
+   "url": "https://www.edresearch.edu.au/resources/writing-and-writing-instruction",
+   "by": "AERO",
+   "meta": [
+    "Literature review",
+    "Australia"
+   ],
+   "areas": [
+    10
+   ],
+   "tags": [
+    "Free"
+   ],
+   "region": "Australia",
+   "summary": "AERO's review of the research on how writing develops and how it is taught, with the challenges in Australian classrooms and recommendations for curriculum, assessment and practice."
   }
  ],
  "shows": [
@@ -21719,13 +21811,6 @@
      "guest": "James Mannion",
      "focus": "Making change stick",
      "url": "https://www.ollielovell.com/jamesmannion2/"
-    },
-    {
-     "title": "087 Making Room for Impact (De-implementation)",
-     "by": "Education Research Reading Room",
-     "guest": "Arran Hamilton and Dylan Wiliam",
-     "focus": "De-implementation",
-     "url": "https://www.ollielovell.com/arranhamilton-dylanwiliam/"
     },
     {
      "title": "S04E09 Bridging the Knowing Doing Gap",
